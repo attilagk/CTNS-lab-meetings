@@ -1,0 +1,200 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{The Main Title Naming Key Concepts}
+\subtitle{A subtitle may be shorter and more technical}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\begin{frame}{Introduction}
+Experiment
+\begin{enumerate}
+\item sample from exposure $X$ and outcome $Y$
+\item infer $\beta_{XY}$: the \alert{direct} effect of $X$ on $Y$
+\end{enumerate}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+
+\includegraphics[scale=1.0]{figures/by-me/mendelian-randomization/confounding.pdf}
+\end{column}
+
+\begin{column}{0.7\textwidth}
+	\begin{center}
+Examples
+\end{center}
+
+\footnotesize
+\begin{tabular}{ccc}
+exposure $X$ & outcome $Y$ & confounder $U$ \\
+\hline
+activity $a$ level & AD & unobserved \\
+metabolite $m$ level & AD & unobserved \\
+gene $g$ expression & AD & unobserved \\
+\end{tabular}
+\end{column}
+\end{columns}
+\vfill
+\small
+Causal Bayesian network
+\begin{itemize}
+\item describes joint distribution of random variables ($X, Y, U$)
+\item directed acyclic graph (DAG)\\
+	(1) conditional independencies among variables\\
+	(2) direction: causality
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Randomization}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+No randomiz.~$\Rightarrow$ confounding
+\begin{itemize}
+\item observational experiment
+\item badly designed experiment
+\end{itemize}
+
+\includegraphics[scale=1.0]{figures/by-me/mendelian-randomization/confounding.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+Randomization
+\begin{itemize}
+\item $X$ independent~of $U$ given $Y$
+\item + blocking when $U$ is obs.
+\end{itemize}
+
+\includegraphics[scale=1.0]{figures/by-me/mendelian-randomization/randomization.pdf}
+\end{column}
+\end{columns}
+\vfill
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+%Confounded effect
+\includegraphics[width=0.8\columnwidth]{named-figure/regrplot-confounded.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+%Direct effect
+\includegraphics[width=0.8\columnwidth]{named-figure/regrplot-randomized.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Mendelian randomization}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+What is $Z$?
+\small
+\begin{itemize}
+\item instrument for $X$
+\item a genetic variant
+\end{itemize}
+
+\includegraphics[scale=1.0]{figures/by-me/mendelian-randomization/mendelian-randomization.pdf}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+Linear models
+	\small
+\begin{eqnarray*}
+	\mathrm{E}[Y|X, Z] &=& \beta_{XY} \mathrm{E}[X|Z] + \alpha_{XY} \\
+	\mathrm{E}[X|Z] &=& \beta_{ZX} Z + \alpha_{ZX} \\
+	\beta_{ZY} &=& \beta_{ZX} \beta_{XY}
+\end{eqnarray*}
+
+\vfill
+\normalsize
+\begin{center}
+Estimating $\beta_{XY}$
+\end{center}
+
+\includegraphics[scale=1.0]{figures/by-me/mendelian-randomization/beta-hat-geometric.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Application: TWAS\footnote{Transcriptome-Wide Association Studies}\footnote{Zhu,...,Yang 2016 Nature Genetics}}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+	\footnotesize
+\begin{description}
+\item[$Y$:] disease $d$ phenotype
+\item[$X$:] gene $g$ expression level
+\item[$Z$:] variant causal to $X, Y$
+\end{description}
+
+\includegraphics[width=1.0\columnwidth]{figures/from-others/jian-yang-2016-fig1a.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+Relevant extensions to MR
+\begin{itemize}
+\item binary outcome%(case/control)
+\item two sample%(GWAS and gene expression)
+\item summary statistics%(GWAS)
+\item multiple instruments/variants%(GWAS)
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Example}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+SMR\footnote{Summary-data based MR}\footnote{Zhu,...,Yang 2016 Nature Genetics}
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{figures/from-others/jian-yang-2016-fig5b.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

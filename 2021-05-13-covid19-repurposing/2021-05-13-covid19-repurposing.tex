@@ -1,0 +1,152 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{The Main Title Naming Key Concepts}
+\subtitle{A subtitle may be shorter and more technical}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\begin{frame}{Two related studies on drug repurposing}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Sci Transl Med 2017
+\item {\footnotesize The druggable genome and support for target identification and
+	validation in drug development}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Nature Medicine 2021
+\item {\footnotesize Actionable druggable genome-wide Mendelian randomization
+	identifies repurposing opportunities for COVID-19}
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{center}
+The relation
+\begin{enumerate}
+\item druggable genome
+\item GWAS
+\item authors
+\end{enumerate}
+\end{center}
+\end{frame}
+
+\begin{frame}{Druggable genes in GWAS intervals}
+\begin{itemize}
+\item druggable: ``potential to be modulated by a drug-like small
+	molecule''\footnote{Sci Transl Med 2017}
+\item 20\% of the 20,000 proteins coding genes are druggable
+\begin{itemize}
+\item structural similarity to approved drugs and their targets
+\end{itemize}
+\item 10\% of the 5,000 GWAS intervals contain druggable gene(s)
+\begin{itemize}
+\item GWAS catalog
+\end{itemize}
+\end{itemize}
+
+\vfill
+Resulting associations:\\
+druggable genes targets of licenced drugs --- indication/phenotype
+\begin{enumerate}
+\item rediscover targets of licenced drugs for known indication
+\item repurposing: ... for novel indication(s)
+\end{enumerate}
+\end{frame}
+
+\section{Sci Transl Med 2017}
+
+\begin{frame}{Repurposing opportunities}
+\includegraphics[height=0.8\textheight]{from-others/finan-2017-sci-transl-med-fig4.png}
+\end{frame}
+
+\begin{frame}{Case studies}
+\includegraphics[height=0.8\textheight]{from-others/finan-2017-sci-transl-med-fig6.png}
+\end{frame}
+
+\begin{frame}{Nature Medicine 2021 design}
+\includegraphics[height=0.8\textheight]{from-others/gaziano-2021-nature-med-fig1.png}
+\end{frame}
+
+\begin{frame}{Nature Medicine 2021 MR results}
+\includegraphics[width=1.0\textwidth]{from-others/gaziano-2021-nature-med-fig2.png}
+\end{frame}
+
+\begin{frame}{Data and tools}
+\begin{itemize}
+\item druggable, actionable genes
+\item GWAS summary statistics
+\item GTEx, \texttt{Matrix eQTL} R package, Nature Med 2021 Table S4
+\item \texttt{TwoSampleMR} R package
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reproducibility}{From the \texttt{TwoSampleMR} website}
+\begin{columns}[t]
+\begin{column}{0.7\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{from-others/twosamplemr_schematic_long-01A.png}
+\includegraphics[width=1.0\columnwidth]{from-others/twosamplemr_schematic_long-01B4.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\footnotesize
+\begin{description}
+\item[Exposure] $g$ expression, $g \in$ actionable genome
+\item[Outcome] COVID-19 hospitalization
+\end{description}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Only 1 variant for most MR experiments}
+\includegraphics[scale=0.6]{named-figure/ST7-hist.pdf}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
