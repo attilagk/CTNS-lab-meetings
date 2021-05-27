@@ -42,12 +42,17 @@
 \begin{frame}
 \begin{enumerate}
 \item candidate disease gene prioritization
-\item AD gene discovery with imputation-based TWAS\footnote{transcriptome-wide association study}
+\item AD gene discovery with transcriptomic imputation based TWAS\footnote{transcriptome-wide association study}
 	\begin{itemize}
 		\item principles, properties
-		\item application to AD
+		\item application to AD\\\tiny{Gerring et al 2020 Alzheimer's Research \& Therapy}
 	\end{itemize}
 \item dissecting direct \& mediated comorbidities
+\begin{itemize}
+\item sparse Bayesian direct multimorbidity map from UK Biobank
+\item application to depression\\
+	\tiny{Marx, Antal, et al 2017 PLoS Comp Biol}
+\end{itemize}
 \end{enumerate}
 \end{frame}
 
@@ -57,7 +62,42 @@
 \tiny{Nature reviews. Genetics, 2012, 13, 523-36}
 \end{frame}
 
-\begin{frame}{Imputation-based TWAS approach by GTEx}
+\begin{frame}{Transcriptome-wide association studies, TWAS}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\begin{center}
+Causal model:
+type II pleiotropy\\
+Effect of $X$ on $Y$?
+\end{center}
+
+\begin{center}
+\includegraphics[scale=1]{figures/by-me/mendelian-randomization/mendelian-randomization.pdf}
+\end{center}
+
+{\footnotesize
+\begin{tabular}{cl}
+$Y$ & trait (AD) \\
+$X$ & $g$ expression \\
+$Z$ & genetic variant \\
+\end{tabular}
+}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+Approaches
+\begin{enumerate}
+\item Mendelian randomization
+\item transcriptomic imputation based
+\end{enumerate}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Transcriptomic imputation based TWAS by GTEx}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 
@@ -73,18 +113,22 @@
 \tiny{Barbeira et al 2018 Nat Comm}
 \end{frame}
 
-\begin{frame}{Imputation-based TWAS more powerful than MR}
+\begin{frame}{Imputation based TWAS more powerful than MR}
 
 \includegraphics[height=0.8\textheight]{figures/from-others/veturi-2018-pac-symp-biocomput-Fig3.png}
+
+\tiny{Veturi \& Ritchie 2018 Pacific Symp Biocomp}
 \end{frame}
 
 \begin{frame}{LD $\Rightarrow$ false positives $\Rightarrow$ need for post-hoc
 	test}
 
 \includegraphics[height=0.8\textheight]{figures/from-others/manusco-2019-nat-genet-Fig1.png}
+
+\tiny{Mancuso et al 2019 Nat Genet}
 \end{frame}
 
-\begin{frame}{Application to AD}
+\begin{frame}{Application to AD \tiny{Gerring et al 2020 Alzheimer's Research \& Therapy}}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 Signif.~transcript associations\\
@@ -99,6 +143,65 @@ Post-hoc test ($y$ axis)
 \includegraphics[width=\columnwidth]{figures/from-others/gerring-2020-Fig2.png}
 \end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Sparse Bayesian direct multimorbidity map}
+\begin{columns}[t]
+\begin{column}{0.25\textwidth}
+
+\includegraphics[width=\columnwidth]{figures/by-me/mendelian-randomization/mendelian-randomization.pdf}
+\end{column}
+
+\begin{column}{0.75\textwidth}
+
+\includegraphics[width=\columnwidth]{figures/from-others/marx-2017-plos-comp-bio-Fig2c.png}
+
+\tiny{Marx, Antal, et al 2017 PLoS Comp Biol}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Probabilistic comorbidities}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+\begin{itemize}
+\item edge weight: posterior probability of direct comorbidity
+\item prior weights might be adjusted
+\item extensible with environmental variables
+\end{itemize}
+\end{column}
+
+\begin{column}{0.7\textwidth}
+
+\includegraphics[width=\columnwidth]{figures/from-others/marx-2017-plos-comp-bio-Fig8.png}
+
+\tiny{Marx, Antal, et al 2017 PLoS Comp Biol}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\begin{itemize}
+\item gene prioritization: worth the effort
+\begin{itemize}
+\item fusion of multiple gene scores
+\item leverage prior knowledge: gene/PPI networks, pathways
+\end{itemize}
+\item transcriptomic imputation based TWAS
+\begin{itemize}
+\item complementary to Mendelian randomization
+\item higher power but also high false pos.~rate
+\item recently applied to AD: results available\\\tiny{Gerring et al 2020 Alzheimer's Research \& Therapy}
+\end{itemize}
+\item Sparse Bayesian direct multimorbidity map
+\begin{itemize}
+\item powerful probabilistic framework
+\item applied to depression\\
+\tiny{Marx, Antal, et al 2017 PLoS Comp Biol}
+\normalsize
+\item clues for similar indications to AD
+\end{itemize}
+\end{itemize}
 \end{frame}
 
 \end{document}
