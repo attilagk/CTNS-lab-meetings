@@ -63,7 +63,7 @@ and AD found in statistically rigorous transcriptome-wide association studies
 \citep{Baird2021,Gerring2020,Jansen2019,Kunkle2019}.
 
 What follows is an outline of our proposed study including data and knowledge
-sources, methods, tools, and potential caveats.
+sources, methods, tools, expected results and limitations.
 
 \begin{figure}
 \begin{center}
@@ -79,12 +79,14 @@ topologically closer to and thus have larger impact on the red disease genes.}
 
 \section{Study Design}
 
-Fig.~\ref{fig:3modules} illustrates three disease modules in the human
-interactome.  A module is a subnetwork defined by a set of disease genes (nodes)
-and their interactions (edges). \cite{Cheng2018} constructed modules of
-cardiovascular diseases and searched for approved drug targets in ``nearby''
-modules of non-cardiovascular diseases, where distance is defined in terms of network
-topology.  We will apply this strategy to AD in the following steps:
+Fig.~\ref{fig:3modules} illustrates disease modules in the human interactome,
+which for the basis of drug-disease networks~(Fig.~\ref{fig:drug-disease-net})
+and drug repositioning opportunities.  A module is a subnetwork defined by a
+set of disease genes (nodes) and their interactions (edges). \cite{Cheng2018}
+constructed modules of cardiovascular diseases and searched for approved drug
+targets in ``nearby'' modules of non-cardiovascular diseases, where distance
+is defined in terms of network topology.  We will apply this strategy to AD in
+the following steps:
 
 \begin{enumerate}
 \item Obtain a recent human interactome.  
@@ -96,7 +98,7 @@ topology.  We will apply this strategy to AD in the following steps:
 	\item High confidence AD genes (seed genes)
 	\item Candidate AD genes
 \end{enumerate}
-\item construct a drug-AD network~\citep{Cheng2018}
+\item Construct a drug-AD network~\citep{Cheng2018}
 \end{enumerate}
 
 \subsection{Obtain a recent human interactome}
@@ -112,8 +114,14 @@ necessary.
 \subsection{Collect AD genes}
 
 We will infer the unknown set of AD genes with Endeavour from two gene sets: a
-high confidence AD genes (seed genes, Fig.~\ref{fig:endeavour}, step 2) and
-candidate AD genes (Fig.~\ref{fig:endeavour} step 4), see below.  Endeavour
+small set of high confidence AD genes (seed genes, step 2 in
+Fig.~\ref{fig:endeavour}, also see section~\ref{sec:AD-seed}) and a large set
+of candidate AD genes (step 4 in Fig.~\ref{fig:endeavour}, also see
+section~\ref{sec:AD-candidate}).  Endeavour will prioritize the candidate AD
+genes, which will allow us to include some of the top ranking genes in the AD
+gene set (of course we will include all the high confidence AD genes as well).
+
+Endeavour
 uses multiple configurable data sources from public data and knowledge bases
 (Fig.~\ref{fig:endeavour} step 3) when it builds a probabilistic model of a
 disease given a set of seed disease genes. One type of data source is PPI
@@ -129,6 +137,7 @@ gene and protein function, phenotypic information, and sequence based
 features~\citep{Tranchevent2016}).
 
 \subsubsection{High confidence AD genes}
+\label{sec:AD-seed}
 
 Multiple information sources and procedures will be used:
 
@@ -156,6 +165,7 @@ confidence AD genes.  If there are multiple plausible ways of integration we
 will carry out all and replicate our overall work for each of them.
 
 \subsection{Candidate AD genes}
+\label{sec:AD-candidate}
 
 We will consider $\approx$ 400 candidate AD genes at or near AD GWAS loci.
 
@@ -165,22 +175,73 @@ We will consider $\approx$ 400 candidate AD genes at or near AD GWAS loci.
 \label{fig:endeavour}
 \end{figure}
 
-\subsection{AD disease gene network}
+\subsection{Construct a drug-AD network}
 
 Once we infer AD genes they can mapped onto the human interactome to give rise
 to the AD module.  Then we will annotate the AD module and its vicinity in the
 network with approved drugs to obtain the drug-disease network for AD
-(Fig.~\ref{ref:drug-disease-net}).  Computing the network proximity between
+(Fig.~\ref{fig:drug-disease-net}).  Computing the network proximity between
 each of those drugs and the AD module~\citep{Cheng2018} and other information
 (drugs specificity, target binding affinity,...) will guide us in prioritizing
 the drugs connected to the AD module.
+
+\section{Expected results}
+
+The main goal of the proposed work is a list of drugs prioritized according to
+their expected therapeutic value for AD.  Note that such expectation is
+difficult to quantify due to limitations of the approach (see next section).
+
+An important intermediate result will be the AD module in the human
+interactome.  Extending this with other disease modules will allow discovering
+diseases directly, that is: pathomechanistically, related to AD.
+Comorbidities of AD have been extensively researched to gain insights to the
+etiology and treatment of AD~\citep{Santiago2021}.  GWAS have opened up
+genetic analyses like Mendelian randomization or LDSC regression to quantify
+pairwise relationships between AD and putatively related
+traits~\citep{Jansen2019,Kunkle2019}.  The interpretation of such pairwise AD-disease
+relations obtained from genetics, however, is less direct than that of
+AD-disease relations derived from PPI network based disease
+modules~\citep{Menche2015a}.  One reason is that proteins, in general, are more directly
+involved in disease etiology and pathology than their encoding genes.  Another
+is that AD-disease relations form disease \emph{network}~\citep{Menche2015a}
+together with the fact that inferring disease networks from pairwise
+statistics (such as pairwise genetic correlations) leads to a disease network with
+many false (``mediated'') edges while network based inference helps eliminate
+false edges~\citep{Marx2017}.  With our PPI based Alzheimer's and other
+disease modules we will be able to evade the pitfalls of both genetics and pairwise
+inference.
+
+\section{Limitations of the approach}
+
+There are several sources of uncertainty in the proposed approach, which
+pertain to either the edges or the nodes of the interactome and disease
+modules.  However, the approach of~\cite{Cheng2018} models disease modules
+deterministically.  This means that it can weight neither edges nore nodes
+according to the quality and quantity of available evidence.  As for edges it
+means that PPIs supported by relatively weak evidence must either be
+completely ignored or considered as equally plausible to PPIs supported by
+strong evidence.  Similarly, deterministic treatment of nodes means that low
+confidence AD genes must be either excluded from the AD module
+or, similarly to high confidence AD genes, included in it. (This is equivalent
+to ``cutting off'' the Endeavour-prioritized candidate AD genes at some
+arbitrary rank or p-value threshold.) Consequently the
+deterministic treatment of PPI and AD genes introduces substantial errors
+that propagate ultimately into the drug-AD network while remaining
+unquantified.  The lack of error quantification (estimation), then, hinders
+efficient prioritization of repurposing drug candidates.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{../figures/from-others/drug-disease-network-2018-Fig1.png}
 \end{center}
-\caption{Drug-disease network for cardiovascular diseases}
-\label{ref:drug-disease-net}
+\caption{Drug-disease network for cardiovascular diseases~\citep{Cheng2018}.
+The medium-large red nodes represent cardiovascular disease while the small,
+non-red, nodes represent drugs approved for non-cardiovascular indications.
+An edge between a cardiovascular disease and a drug expresses PPI-mediated connection
+between the drug's target and the cardiovascular disease's network module.
+Thicker edges mean that fewer PPI link a given drug to a given disease hence
+the repurposed drug is more likely to be effective.}
+\label{fig:drug-disease-net}
 \end{figure}
 
 \bibliography{library}
