@@ -1,0 +1,188 @@
+\documentclass[letterpaper]{article}
+%\documentclass[12pt,letterpaper]{article}
+%\setlength{\textwidth}{480pt}
+%\setlength{\textheight}{630pt}
+%\setlength{\voffset}{0pt}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, geometry, graphicx}
+\usepackage{natbib}
+%\usepackage{float}
+\usepackage{url}
+\bibliographystyle{plainnat}
+
+% https://tex.stackexchange.com/questions/6758/how-can-i-create-a-bibliography-like-a-section
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\section}{\section}{}{}
+
+\pagestyle{plain}
+
+\title{Network based drug repurposing for Alzheimer's disease}
+
+\author{Attila Jones,..., Madhav Thambisetty}
+
+\date{Clinical \& Translational Neuroscience Section}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Late onset Alzheimer's disease (AD) is a slowly progressing, highly heritable
+complex neurodegenerative disease, whose early and/or late pathological
+mechanisms are linked to immunity, APP and tau processing, and lipid
+metabolism \citep{DeStrooper2016}.  To this date AD is without efficient
+treatment so we recently announced the Drug Repurposing for Effective
+Alzheimer's Medicines (DREAM) study \citep{Desai2020}, in which we plan to
+find repurposable drugs based on proteomic, metabolomic and genomic findings
+by us \citep{JacksonA.Roberts2021} and many others.
+
+We will take the network approach to drug repurposing of \cite{Cheng2018},
+which exploits the general observation that modules of patho-mechanistically
+related diseases are topologically close to each other in the human
+interactome i.e~the human protein-protein interaction (PPI) network
+\citep{Menche2015a}, Fig.~\ref{fig:3modules}.  This approach identified new
+drug candidates for cardiovascular diseases that were validated by
+pharmacoepidemilogical procedures \citep{Cheng2018}.
+
+Crucial to the applicability of the approach to AD is \emph{a priori}
+knowledge of AD disease genes.  However, relatively few AD disease genes
+(e.g~APP, APOE) have been established by functional experiments, while GWAS on
+AD \citep{Jansen2019,Kunkle2019} implicated $\approx$ 400 candidate AD genes
+in 29 genome-wide significant loci owing to the polygenic nature of AD and the
+limitations of GWAS in separating functional gene-disease associations from
+noise.  Therefore we will extend the set of established AD genes with genes
+for which multiple types of evidence suggest involvement in AD pathomechanism.
+One such source is the \emph{incipient AD proteomic signature}, which we
+recently discovered with differential proteomic analyses in young
+APOE$\epsilon$4 carriers \citep{JacksonA.Roberts2021}, and which offers an
+opportunity for efficient, early intervention for AD. Another type of evidence
+is causality (also known as type II pleiotropy) between transcription level
+and AD found in statistically rigorous transcriptome-wide association studies
+\citep{Baird2021,Gerring2020,Jansen2019,Kunkle2019}.
+
+What follows is an outline of our proposed study including data and knowledge
+sources, methods, tools, and potential caveats.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{../figures/from-others/disease-modules-2015-Fig3abc.png}
+\end{center}
+\caption{Example for three disease modules (red, blue, gold) in the human
+	interactome \citep{Cheng2018}.  Successful drug repositioning to the red disease module is more likely
+from the overlapping gold disease module than from 
+the separated blue module because drug targets in the gold module are
+topologically closer to and thus have larger impact on the red disease genes.}
+\label{fig:3modules}
+\end{figure}
+
+\section{Study Design}
+
+Fig.~\ref{fig:3modules} illustrates three disease modules in the human
+interactome.  A module is a subnetwork defined by a set of disease genes (nodes)
+and their interactions (edges). \cite{Cheng2018} constructed modules of
+cardiovascular diseases and searched for approved drug targets in ``nearby''
+modules of non-cardiovascular diseases, where distance is defined in terms of network
+topology.  We will apply this strategy to AD in the following steps:
+
+\begin{enumerate}
+\item Obtain a recent human interactome.  
+\item Collect AD genes.  Since the set of AD genes is unknown
+	we will construct it using Endeavour, a gene prioritization tool
+	\citep{Tranchevent2016} and two input gene sets
+	(Fig.~\ref{fig:endeavour}):
+\begin{enumerate}
+	\item High confidence AD genes (seed genes)
+	\item Candidate AD genes
+\end{enumerate}
+\item construct a drug-AD network~\citep{Cheng2018}
+\end{enumerate}
+
+\subsection{Obtain a recent human interactome}
+
+This step is not straight forward because PPI network databases are incomplete
+because only a fraction of binary protein-protein interactions have been
+discovered. \cite{Cheng2018} used an interactome with 217161 interactions,
+whereas \cite{Bai2020} used one with 469993 interactions.  Also note that PPI
+are heterogeneous including binding, phosphorylation, metabolic and other type
+of interactions so that integration of multiple PPI databases might be
+necessary.
+
+\subsection{Collect AD genes}
+
+We will infer the unknown set of AD genes with Endeavour from two gene sets: a
+high confidence AD genes (seed genes, Fig.~\ref{fig:endeavour}, step 2) and
+candidate AD genes (Fig.~\ref{fig:endeavour} step 4), see below.  Endeavour
+uses multiple configurable data sources from public data and knowledge bases
+(Fig.~\ref{fig:endeavour} step 3) when it builds a probabilistic model of a
+disease given a set of seed disease genes. One type of data source is PPI
+databases.  We will carry out sensitivity analyses by varying seed AD genes
+and by including or excluding PPI data sources.  The rational for the former
+is that AD is a complex disease that involves several biological processes and
+cell types~\citep{DeStrooper2016}.  The latter, on the other hand, will help
+reveal to what extent certain network topology quantities such as
+``compactness'' of the
+inferred AD module are encoded in non-network data sources (bio-molecular
+pathways, chemical information, expression ontologies, expression profiles,
+gene and protein function, phenotypic information, and sequence based
+features~\citep{Tranchevent2016}).
+
+\subsubsection{High confidence AD genes}
+
+Multiple information sources and procedures will be used:
+
+\begin{enumerate}
+\item Biomedical literature
+\begin{enumerate}
+	\item Expert knowledge within our group
+	\item Text mining with Beegle~\citep{ElShal2016}
+\end{enumerate}
+\item The incipient AD proteomic signature~\citep{JacksonA.Roberts2021}
+\item TWAS: strong statistical evidence for gene expression to be causal to AD
+\begin{enumerate}
+	\item Mendelian Randomization with \emph{post-hoc} colocalization test~\citep{Baird2021,Kunkle2019}
+	\item Transcriptomic imputation based and other TWAS with \emph{post-hoc}
+		colocalization test~\citep{Gerring2020,Jansen2019}
+\end{enumerate}
+\item Additional gene mapping procedures like gene based GWAS, chromatin
+	interaction mapping~\citep{Jansen2019}, or ``annotation and gene-based testing for deleterious
+	coding, loss-of-function and splicing variants''~\citep{Kunkle2019}
+\end{enumerate}
+
+We will examine the descriptive statistical relationships among these various information
+sources to see how they can be integrated to give rise to a single set of high
+confidence AD genes.  If there are multiple plausible ways of integration we
+will carry out all and replicate our overall work for each of them.
+
+\subsection{Candidate AD genes}
+
+We will consider $\approx$ 400 candidate AD genes at or near AD GWAS loci.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/from-others/endeavour-2016-Fig1.jpg}
+\caption{Gene prioritization with Endeavour \citep{Tranchevent2016}}
+\label{fig:endeavour}
+\end{figure}
+
+\subsection{AD disease gene network}
+
+Once we infer AD genes they can mapped onto the human interactome to give rise
+to the AD module.  Then we will annotate the AD module and its vicinity in the
+network with approved drugs to obtain the drug-disease network for AD
+(Fig.~\ref{ref:drug-disease-net}).  Computing the network proximity between
+each of those drugs and the AD module~\citep{Cheng2018} and other information
+(drugs specificity, target binding affinity,...) will guide us in prioritizing
+the drugs connected to the AD module.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{../figures/from-others/drug-disease-network-2018-Fig1.png}
+\end{center}
+\caption{Drug-disease network for cardiovascular diseases}
+\label{ref:drug-disease-net}
+\end{figure}
+
+\bibliography{library}
+
+\end{document}
