@@ -15,9 +15,9 @@ test
 *.swp
 *.csv
 *.xlsx
-*/named-figure/*
-*/.ipynb_checkpoints/*
+**/named-figure/*
+**/.ipynb_checkpoints/*
 *.fls
 *.snm
-*/.latexrun.db
-*/.latexrun.db.lock
+*.latexrun.db
+*.latexrun.db.lock
