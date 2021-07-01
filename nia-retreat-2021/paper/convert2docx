@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+# https://medium.com/@zhelinchen91/how-to-convert-from-latex-to-ms-word-with-pandoc-f2045a762293
+TEX=${1:-nia-2021-paper.tex}
+DOCX=$(dirname $TEX)/$(basename $TEX .tex).docx
+pandoc $TEX --bibliography=library.bib -o $DOCX
