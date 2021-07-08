@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: attila-nia-retreat-2021.aux
+The style file: plainnat.bst
+Database file #1: library.bib
+You've used 5 entries,
+            2773 wiz_defined-function locations,
+            646 strings with 7223 characters,
+and the built_in function-call counts, 4881 in all, are:
+= -- 386
+> -- 546
+< -- 0
++ -- 182
+- -- 177
+* -- 522
+:= -- 819
+add.period$ -- 25
+call.type$ -- 5
+change.case$ -- 74
+chr.to.int$ -- 5
+cite$ -- 10
+duplicate$ -- 104
+empty$ -- 204
+format.name$ -- 182
+if$ -- 944
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 5
+newline$ -- 43
+num.names$ -- 20
+pop$ -- 130
+preamble$ -- 1
+purify$ -- 69
+quote$ -- 0
+skip$ -- 116
+stack$ -- 0
+substring$ -- 133
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 55
+warning$ -- 0
+while$ -- 22
+width$ -- 0
+write$ -- 91

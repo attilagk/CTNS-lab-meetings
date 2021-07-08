@@ -21,3 +21,4 @@ test
 *.snm
 *.latexrun.db
 *.latexrun.db.lock
+*.pptx

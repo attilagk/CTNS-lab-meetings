@@ -1,0 +1,70 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cheng et~al.(2018)Cheng, Desai, Handy, Wang, Schneeweiss, Barabási,
+  and Loscalzo]{Cheng2018}
+Feixiong Cheng, Rishi~J. Desai, Diane~E. Handy, Ruisheng Wang, Sebastian
+  Schneeweiss, Albert-László Barabási, and Joseph Loscalzo.
+\newblock Network-based approach to prediction and population-based validation
+  of in silico drug repurposing.
+\newblock \emph{Nature communications}, 9\penalty0 (30002366):\penalty0
+  2691--2691, July 2018.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-018-05116-5}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043492/}.
+
+\bibitem[Desai et~al.(2020)Desai, Varma, Gerhard, Segal, Mahesri, Chin,
+  Nonnenmacher, Gabbeta, Mammen, Varma, Horton, Kim, Schneeweiss, and
+  Thambisetty]{Desai2020}
+Rishi~J. Desai, Vijay~R. Varma, Tobias Gerhard, Jodi Segal, Mufaddal Mahesri,
+  Kristyn Chin, Edward Nonnenmacher, Avinash Gabbeta, Anup~M. Mammen, Sudhir
+  Varma, Daniel~B. Horton, Seoyoung~C. Kim, Sebastian Schneeweiss, and Madhav
+  Thambisetty.
+\newblock Targeting abnormal metabolism in alzheimer's disease: The drug
+  repurposing for effective alzheimer's medicines (dream) study.
+\newblock \emph{Alzheimer's & dementia (New York, N. Y.)}, 6\penalty0
+  (33304987):\penalty0 e12095--e12095, November 2020.
+\newblock ISSN 2352-8737.
+\newblock \doi{10.1002/trc2.12095}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7690721/}.
+
+\bibitem[Guney et~al.(2016)Guney, Menche, Vidal, and Barabási]{Guney2016}
+Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
+\newblock Network-based in silico drug efficacy screening.
+\newblock \emph{Nature communications}, 7\penalty0 (26831545):\penalty0
+  10331--10331, February 2016.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/ncomms10331}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4740350/}.
+
+\bibitem[Pletscher-Frankild et~al.(2015)Pletscher-Frankild, Pallejà, Tsafou,
+  Binder, and Jensen]{PletscherFrankild2015}
+Sune Pletscher-Frankild, Albert Pallejà, Kalliopi Tsafou, Janos~X. Binder, and
+  Lars~Juhl Jensen.
+\newblock Diseases: text mining and data integration of disease-gene
+  associations.
+\newblock \emph{Methods (San Diego, Calif.)}, 74:\penalty0 83--9, Mar 2015.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1046202314003831}.
+
+\bibitem[Roberts et~al.(2021)Roberts, Varma, An, Varma, Candia, Fantoni,
+  Tiwari, Anerillas, Williamson, Saito, Moaddel, Khadeer, Lovett, Tanaka,
+  Pletnikova, Troncoso, Bennett, Albert, Yu, Niu, Haroutunian, Zhang, Peng,
+  Croteau, Gorospe, Bohr, Resnick, Ferrucci, and
+  Thambisetty]{JacksonA.Roberts2021}
+Jackson~A. Roberts, Vijay~R. Varma, Yang An, Sudhir Varma, Julián Candia,
+  Giovanna Fantoni, Vinod Tiwari, Carlos Anerillas, Andrew Williamson, Atsushi
+  Saito, Ruin Moaddel, Mohammed Khadeer, Jacqueline Lovett, Toshiko Tanaka,
+  Olga Pletnikova, Juan~C. Troncoso, David~A. Bennett, Marilyn~S. Albert,
+  Kaiwen Yu, Mingming Niu, Vahram Haroutunian, Bin Zhang, Junmin Peng,
+  Deborah~L. Croteau, Myriam Gorospe, Vilhelm~A. Bohr, Susan~M. Resnick, Luigi
+  Ferrucci, and Madhav Thambisetty.
+\newblock A brain proteomic signature of incipient alzheimer's disease in young
+  apoe ε4 carriers.
+\newblock \emph{Submitted}, 2021.
+
+\end{thebibliography}
