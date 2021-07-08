@@ -71,26 +71,9 @@ Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
 \newblock \doi{10.1038/ncomms10331}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4740350/}.
 
-\bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
-  Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
-  Stringer, Aarsland, Almdahl, Andersen, Bergh, Bettella, Bjornsson, Brækhus,
-  Bråthen, de~Leeuw, Desikan, Djurovic, Dumitrescu, Fladby, Hohman, Jonsson,
-  Kiddle, Rongve, Saltvedt, Sando, Selbæk, Shoai, Skene, Snaedal, Stordal,
-  Ulstein, Wang, White, Hardy, Hjerling-Leffler, Sullivan, van~der Flier,
-  Dobson, Davis, Stefansson, Stefansson, Pedersen, Ripke, Andreassen, and
-  Posthuma]{Jansen2019}
-Iris~E. Jansen, Jeanne~E. Savage, Kyoko Watanabe, Julien Bryois, Dylan~M.
-  Williams, Stacy Steinberg, Julia Sealock, Ida~K. Karlsson, Sara Hägg,
-  Lavinia Athanasiu, Nicola Voyle, Petroula Proitsi, Aree Witoelar, Sven
-  Stringer, Dag Aarsland, Ina~S. Almdahl, Fred Andersen, Sverre Bergh,
-  Francesco Bettella, Sigurbjorn Bjornsson, Anne Brækhus, Geir Bråthen,
-  Christiaan de~Leeuw, Rahul~S. Desikan, Srdjan Djurovic, Logan Dumitrescu,
-  Tormod Fladby, Timothy~J. Hohman, Palmi~V. Jonsson, Steven~J. Kiddle, Arvid
-  Rongve, Ingvild Saltvedt, Sigrid~B. Sando, Geir Selbæk, Maryam Shoai,
-  Nathan~G. Skene, Jon Snaedal, Eystein Stordal, Ingun~D. Ulstein, Yunpeng
-  Wang, Linda~R. White, John Hardy, Jens Hjerling-Leffler, Patrick~F. Sullivan,
-  Wiesje~M. van~der Flier, Richard Dobson, Lea~K. Davis, Hreinn Stefansson,
-  Kari Stefansson, Nancy~L. Pedersen, Stephan Ripke, Ole~A. Andreassen, and
+\bibitem[Jansen et~al.(2019)Jansen, Savage, ..., Ripke, Andreassen, and
+  Posthuma]{Jansen2019a}
+Iris~E. Jansen, Jeanne~E. Savage, ..., Stephan Ripke, Ole~A. Andreassen, and
   Danielle Posthuma.
 \newblock Genome-wide meta-analysis identifies new loci and functional pathways
   influencing alzheimer's disease risk.

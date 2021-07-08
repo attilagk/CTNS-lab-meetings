@@ -17,15 +17,15 @@
 
 \block{Abstract}{
 \begin{multicols}{2}
-To this date Alzheimer's disease (AD) is without efficient
-treatment so we recently announced the Drug Repurposing for Effective
+We recently announced the Drug Repurposing for Effective
 Alzheimer's Medicines (DREAM) study \citep{Desai2020}, in which we plan to
 find repurposable drugs based on:
 
 \begin{enumerate}
-\item our novel proteomics study \citep{JacksonA.Roberts2021}
+\item our novel proteomics study \citep{JacksonA.Roberts2021} that describes
+	the \emph{incipient AD proteomic signature}
 \item transcriptome-wide association studies, TWAS, on AD
-	\citep{Baird2021,Gerring2020,Jansen2019,Kunkle2019a}
+	\citep{Baird2021,Gerring2020,Jansen2019a,Kunkle2019a}
 \item curated knowledge on established AD genes \citep{PletscherFrankild2015}
 \item network based drug repurposing approach \citep{Guney2016,Cheng2018}
 \end{enumerate}
@@ -36,17 +36,27 @@ Below we provide an overview on the approach and on the input data sets.
 
 \begin{columns}
 \column{0.55}
-\block{The approach: principles and utility}{
+\block{The approach: principles and previous applications}{
 \begin{multicols}{2}
-Hello World!
+We choose the approach to drug repurposing developed by
+\cite{Cheng2018} based on their earlier work~\citep{Guney2016}.
 
-\cite{Cheng2018},
+\cite{Cheng2018} showed that:
+\begin{itemize}
+\item cardiovascular (CV) disease genes form clusters, so-called \emph{disease
+	modules}, in the human protein-protein interactome (PPI)
+\item a few drugs approved for non-CV indications, like Hydroxychloroquine,
+	are proximal to the CAD (coronary artery disease) disease module
+\item Hydroxychloroquine's protective effect on CAD is supported by
+	pharmaco-epidemiology and an \emph{in vitro} assay
+%\item these evidence suggests Hydroxychloroquine might be repurposed for CAD
+\end{itemize}
 
-\includegraphics[width=1.0\columnwidth]{../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
+\includegraphics[width=0.8\columnwidth]{../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
 \end{multicols}
 }
 
-\block{The approach: details}{
+\block{Quantifying proximity of drug targets to disease genes}{
 
 \begin{multicols}{3}
 Definition of network proximity from a set of drug targets $T$ to a set of disease genes $S$:
@@ -60,7 +70,7 @@ where $d(s,t)$
 is the shortest path length between disease gene $s$ and drug target $t$.
 
 Interpretation: the average length of shortest paths taken from all drug
-targets to the disease genes.
+targets to the disease genes~\citep{Guney2016}.
 
 We present two examples in a toy network with fixed $S = \{B, D, E\}$ and
 varied $T$.
@@ -78,7 +88,7 @@ p &=& 0.987 \\
 \end{eqnarray*}
 
 
-\includegraphics[width=1.0\columnwidth]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
+\includegraphics[height=4in]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
 
 \pagebreak
 
@@ -92,37 +102,36 @@ z &=& -0.454 \\
 p &=& 0.324 \\
 \end{eqnarray*}
 
-
-\includegraphics[width=1.0\columnwidth]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
+\includegraphics[height=4in]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
 
 \end{multicols}
-
-%Above are two examples in a toy network with fixed $S = \{B, D, E\}$ and
-%varied $T$.
-%
-%\begin{flushright}
-%%{\Large Results}
-%%
-%\begin{tabular}{|c|c|c|}
-%Distal targets & & Proximal targets \\
-%\hline
-%3/2 & proximity $d$ & 1/2 \\
-%2.217 & standardized prox.~$z$ & -0.454 \\
-%0.987 & $p$ value & 0.324 \\
-%\hline
-%\end{tabular}
-%\end{flushright}
-}
-
-\column{0.45}
-
-\block{Planned workflow}{
-\includegraphics[width=0.4\columnwidth]{../figures/by-me/network-repos-flowchart/network-repos-flowchart.pdf}
 }
 
 \block{}{
 \tiny
 \bibliography{library}
+}
+
+\column{0.45}
+
+\block{Planned workflow}{
+\includegraphics[width=0.375\columnwidth]{../figures/by-me/network-repos-flowchart/network-repos-flowchart.pdf}
+}
+
+\block{High confidence AD gene sets}{
+%\begin{tabular}{rl}
+%Knowledge & established AD genes in knowledge bases complied by~\cite{PletscherFrankild2015} \\
+%TWAS & AD genes whose expression is inferred causal to AD by Mendelian randomization and similar techniques \\
+%Incipient proteo. & the \emph{incipient AD proteomic signature} described by us~\citep{JacksonA.Roberts2021} \\
+%\end{tabular}
+\begin{description}
+\item[Knowledge] AD genes in knowledge bases~\cite{PletscherFrankild2015} 
+\item[TWAS] AD genes whose expression is causal to AD inferred by 'omics
+\item[Incipient proteo.] \emph{incipient AD proteomic signature}~\citep{JacksonA.Roberts2021}
+\end{description}
+\begin{center}
+\includegraphics[width=0.35\columnwidth]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-twas-proteo-venn.pdf}
+\end{center}
 }
 
 \end{columns}
