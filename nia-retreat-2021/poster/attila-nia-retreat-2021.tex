@@ -1,10 +1,11 @@
 \documentclass[17pt,a1paper]{tikzposter} %Options for format can be included here
 \usepackage{multicol}
-\setlength{\columnsep}{1in}
+\setlength{\columnsep}{0.7cm}
 \usepackage{natbib}
 \bibliographystyle{plainnat}
+%\bibliographystyle{unsrtnat}
 \author{Attila Jones, ..., Madhav Thambisetty}
-\title{Network based drug repurposing for Alzheimer's disease}
+\title{Network based drug repurposing for Alzheimer's disease (AD)}
 
 \institute{Clinical \& Translational Neuroscience Section, Laboratory of Behavioral Neuroscience}
 
@@ -16,121 +17,114 @@
 
 \block{Abstract}{
 \begin{multicols}{2}
-To this date AD is without efficient
+To this date Alzheimer's disease (AD) is without efficient
 treatment so we recently announced the Drug Repurposing for Effective
 Alzheimer's Medicines (DREAM) study \citep{Desai2020}, in which we plan to
 find repurposable drugs based on:
 
-\begin{itemize}
+\begin{enumerate}
 \item our novel proteomics study \citep{JacksonA.Roberts2021}
-\item several TWAS (transcriptome-wide association studies)
+\item transcriptome-wide association studies, TWAS, on AD
+	\citep{Baird2021,Gerring2020,Jansen2019,Kunkle2019a}
 \item curated knowledge on established AD genes \citep{PletscherFrankild2015}
 \item network based drug repurposing approach \citep{Guney2016,Cheng2018}
-\end{itemize}
+\end{enumerate}
 
 Below we provide an overview on the approach and on the input data sets.
 \end{multicols}
 }
 
 \begin{columns}
-\column{0.5}
+\column{0.55}
 \block{The approach: principles and utility}{
+\begin{multicols}{2}
 Hello World!
 
 \cite{Cheng2018},
 
-\includegraphics[width=0.2\columnwidth]{../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
-
+\includegraphics[width=1.0\columnwidth]{../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
+\end{multicols}
 }
 
 \block{The approach: details}{
+
+\begin{multicols}{3}
 Definition of network proximity from a set of drug targets $T$ to a set of disease genes $S$:
-$d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),$
-%\begin{equation}
-%	d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),
-%\end{equation}
+%$d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),$
+
+\begin{equation}
+	d = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),
+\end{equation}
+
 where $d(s,t)$
 is the shortest path length between disease gene $s$ and drug target $t$.
 
 Interpretation: the average length of shortest paths taken from all drug
 targets to the disease genes.
 
-Below are two examples in a toy network with fixed $S = \{B, D, E\}$ and
+We present two examples in a toy network with fixed $S = \{B, D, E\}$ and
 varied $T$.
 
-\begin{multicols}{2}
+\pagebreak
 
 \begin{center}
-Distal targets:
-$T = \{C, H\}$
+{\Large Distal drug targets}
 \end{center}
+\begin{eqnarray*}
+T &=& \{C, H\} \\
+d &=& 3/2 \\
+z &=& 2.217 \\
+p &=& 0.987 \\
+\end{eqnarray*}
 
-\includegraphics[width=0.8\columnwidth]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
+
+\includegraphics[width=1.0\columnwidth]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
+
+\pagebreak
 
 \begin{center}
-Proximal drug targets:
-$T = \{E, J\}$
+{\Large Proximal drug targets}
 \end{center}
+\begin{eqnarray*}
+T &=& \{E, J\} \\
+d &=& 1/2 \\
+z &=& -0.454 \\
+p &=& 0.324 \\
+\end{eqnarray*}
 
-\includegraphics[width=0.8\columnwidth]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
+
+\includegraphics[width=1.0\columnwidth]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
 
 \end{multicols}
 
-\begin{center}
-%{\Large Results}
+%Above are two examples in a toy network with fixed $S = \{B, D, E\}$ and
+%varied $T$.
 %
-\begin{tabular}{|c|c|c|}
-Distal targets & & Proximal targets \\
-\hline
-3/2 & proximity $d$ & 1/2 \\
-2.217 & standardized prox.~$z$ & -0.454 \\
-0.987 & $p$ value & 0.324 \\
-\hline
-\end{tabular}
-\end{center}
+%\begin{flushright}
+%%{\Large Results}
+%%
+%\begin{tabular}{|c|c|c|}
+%Distal targets & & Proximal targets \\
+%\hline
+%3/2 & proximity $d$ & 1/2 \\
+%2.217 & standardized prox.~$z$ & -0.454 \\
+%0.987 & $p$ value & 0.324 \\
+%\hline
+%\end{tabular}
+%\end{flushright}
 }
 
-\column{0.5}
+\column{0.45}
 
 \block{Planned workflow}{
 \includegraphics[width=0.4\columnwidth]{../figures/by-me/network-repos-flowchart/network-repos-flowchart.pdf}
 }
 
 \block{}{
-\small
+\tiny
 \bibliography{library}
 }
 
 \end{columns}
 
 \end{document}
-
-
-
-
-\begin{columns}
-\column{0.5}
-\block{The approach: details}{
-Definition of the closest proximity $d_c$ or just $d$ as
-\begin{equation}
-	d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t)
-\end{equation}
-where $S$ is the set of disease genes, $T$ the set of drug targets, $d(s,t)$
-is the shortest path length between disease gene $s$ and drug target $t$.
-
-Interpretation: the average length of shortest paths taken from all drug
-targets to the disease genes.
-}
-
-\column{0.5}
-
-\block{}{
-\small
-\bibliography{library}
-}
-
-% RIGHT COLUMN
-\column{0.5}
-
-\end{columns}
-

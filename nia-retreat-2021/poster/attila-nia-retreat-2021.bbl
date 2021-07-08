@@ -1,9 +1,27 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baird et~al.(2021)Baird, Liu, Zheng, Sieberts, Perumal, Elsworth,
+  Richardson, Chen, Carrasquillo, Allen, Reddy, De~Jager, Ertekin-Taner,
+  Mangravite, Logsdon, Estrada, Haycock, Hemani, Runz, Smith, Gaunt, and
+  eQTL~working group]{Baird2021}
+Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
+  Benjamin Elsworth, Tom~G. Richardson, Chia-Yen Chen, Minerva~M. Carrasquillo,
+  Mariet Allen, Joseph~S. Reddy, Philip~L. De~Jager, Nilufer Ertekin-Taner,
+  Lara~M. Mangravite, Ben Logsdon, Karol Estrada, Philip~C. Haycock, Gibran
+  Hemani, Heiko Runz, George~Davey Smith, Tom~R. Gaunt, and A.~M. P.-A.~D.
+  eQTL~working group.
+\newblock Identifying drug targets for neurological and psychiatric disease via
+  genetics and the brain transcriptome.
+\newblock \emph{PLoS genetics}, 17\penalty0 (33417599):\penalty0
+  e1009224--e1009224, January 2021.
+\newblock ISSN 1553-7390.
+\newblock \doi{10.1371/journal.pgen.1009224}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
 
 \bibitem[Cheng et~al.(2018)Cheng, Desai, Handy, Wang, Schneeweiss, Barabási,
   and Loscalzo]{Cheng2018}
@@ -32,6 +50,18 @@ Rishi~J. Desai, Vijay~R. Varma, Tobias Gerhard, Jodi Segal, Mufaddal Mahesri,
 \newblock \doi{10.1002/trc2.12095}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7690721/}.
 
+\bibitem[Gerring et~al.(2020)Gerring, Lupton, Edey, Gamazon, and
+  Derks]{Gerring2020}
+Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
+  Eske~M. Derks.
+\newblock An analysis of genetically regulated gene expression across multiple
+  tissues implicates novel gene candidates in alzheimer's disease.
+\newblock \emph{Alzheimer's research & therapy}, 12\penalty0
+  (32299494):\penalty0 43--43, April 2020.
+\newblock ISSN 1758-9193.
+\newblock \doi{10.1186/s13195-020-00611-8}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/}.
+
 \bibitem[Guney et~al.(2016)Guney, Menche, Vidal, and Barabási]{Guney2016}
 Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
 \newblock Network-based in silico drug efficacy screening.
@@ -40,6 +70,49 @@ Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/ncomms10331}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4740350/}.
+
+\bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
+  Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
+  Stringer, Aarsland, Almdahl, Andersen, Bergh, Bettella, Bjornsson, Brækhus,
+  Bråthen, de~Leeuw, Desikan, Djurovic, Dumitrescu, Fladby, Hohman, Jonsson,
+  Kiddle, Rongve, Saltvedt, Sando, Selbæk, Shoai, Skene, Snaedal, Stordal,
+  Ulstein, Wang, White, Hardy, Hjerling-Leffler, Sullivan, van~der Flier,
+  Dobson, Davis, Stefansson, Stefansson, Pedersen, Ripke, Andreassen, and
+  Posthuma]{Jansen2019}
+Iris~E. Jansen, Jeanne~E. Savage, Kyoko Watanabe, Julien Bryois, Dylan~M.
+  Williams, Stacy Steinberg, Julia Sealock, Ida~K. Karlsson, Sara Hägg,
+  Lavinia Athanasiu, Nicola Voyle, Petroula Proitsi, Aree Witoelar, Sven
+  Stringer, Dag Aarsland, Ina~S. Almdahl, Fred Andersen, Sverre Bergh,
+  Francesco Bettella, Sigurbjorn Bjornsson, Anne Brækhus, Geir Bråthen,
+  Christiaan de~Leeuw, Rahul~S. Desikan, Srdjan Djurovic, Logan Dumitrescu,
+  Tormod Fladby, Timothy~J. Hohman, Palmi~V. Jonsson, Steven~J. Kiddle, Arvid
+  Rongve, Ingvild Saltvedt, Sigrid~B. Sando, Geir Selbæk, Maryam Shoai,
+  Nathan~G. Skene, Jon Snaedal, Eystein Stordal, Ingun~D. Ulstein, Yunpeng
+  Wang, Linda~R. White, John Hardy, Jens Hjerling-Leffler, Patrick~F. Sullivan,
+  Wiesje~M. van~der Flier, Richard Dobson, Lea~K. Davis, Hreinn Stefansson,
+  Kari Stefansson, Nancy~L. Pedersen, Stephan Ripke, Ole~A. Andreassen, and
+  Danielle Posthuma.
+\newblock Genome-wide meta-analysis identifies new loci and functional pathways
+  influencing alzheimer's disease risk.
+\newblock \emph{Nature genetics}, 51\penalty0 (30617256):\penalty0 404--413,
+  March 2019.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-018-0311-9}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6836675/}.
+
+\bibitem[Kunkle et~al.(2019)Kunkle, Grenier-Boley, Environmental Risk~in
+  AD/Defining~Genetic, and for Alzheimer’s Disease
+  Consortium~(GERAD/PERADES)]{Kunkle2019a}
+Brian~W. Kunkle, Genetic Grenier-Boley, ..., Polygenic Environmental Risk~in
+  AD/Defining~Genetic, and Environmental~Risk for Alzheimer’s Disease
+  Consortium~(GERAD/PERADES).
+\newblock Genetic meta-analysis of diagnosed alzheimer's disease identifies new
+  risk loci and implicates aβ, tau, immunity and lipid processing.
+\newblock \emph{Nature genetics}, 51\penalty0 (30820047):\penalty0 414--430,
+  March 2019.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-019-0358-2}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463297/}.
 
 \bibitem[Pletscher-Frankild et~al.(2015)Pletscher-Frankild, Pallejà, Tsafou,
   Binder, and Jensen]{PletscherFrankild2015}

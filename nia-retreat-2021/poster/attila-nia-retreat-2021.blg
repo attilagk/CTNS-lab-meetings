@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: attila-nia-retreat-2021.aux
 The style file: plainnat.bst
 Database file #1: library.bib
-You've used 5 entries,
+You've used 9 entries,
             2773 wiz_defined-function locations,
-            646 strings with 7223 characters,
-and the built_in function-call counts, 4881 in all, are:
-= -- 386
-> -- 546
+            692 strings with 10183 characters,
+and the built_in function-call counts, 10749 in all, are:
+= -- 830
+> -- 1314
 < -- 0
-+ -- 182
-- -- 177
-* -- 522
-:= -- 819
-add.period$ -- 25
-call.type$ -- 5
-change.case$ -- 74
-chr.to.int$ -- 5
-cite$ -- 10
-duplicate$ -- 104
-empty$ -- 204
-format.name$ -- 182
-if$ -- 944
++ -- 438
+- -- 429
+* -- 1182
+:= -- 1819
+add.period$ -- 49
+call.type$ -- 9
+change.case$ -- 170
+chr.to.int$ -- 9
+cite$ -- 18
+duplicate$ -- 188
+empty$ -- 376
+format.name$ -- 438
+if$ -- 2060
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 5
-newline$ -- 43
-num.names$ -- 20
-pop$ -- 130
+missing$ -- 9
+newline$ -- 75
+num.names$ -- 36
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 161
 quote$ -- 0
-skip$ -- 116
+skip$ -- 244
 stack$ -- 0
-substring$ -- 133
-swap$ -- 9
+substring$ -- 265
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 55
+type$ -- 99
 warning$ -- 0
-while$ -- 22
+while$ -- 42
 width$ -- 0
-write$ -- 91
+write$ -- 167
