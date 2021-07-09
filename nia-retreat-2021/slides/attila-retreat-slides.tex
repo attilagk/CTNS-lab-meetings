@@ -1,0 +1,119 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+%\title{Network based drug repurposing for Alzheimer's disease}
+\title{A multi-OMIC network based approach to drug repurposing for Alzheimer's}
+\subtitle{A subtitle may be shorter and more technical}
+\author{poster \#96}
+\date{}
+
+\begin{document}
+
+\begin{frame}{Network based drug repurposing for Alzheimer's disease}
+	{\emph{Attila Jones, Andrew Williamson, Vijay Varma, Jackson Roberts, Madhav Thambisetty}\\
+		Clinical \& Translational Neuroscience Section, Laboratory of Behavioral Neuroscience}
+	{\Large Alzheimer's disease (AD) gene sets:}
+\begin{enumerate}
+\item experimentally established AD genes from \alert{knowledge} bases
+\item statistical evidence from \alert{TWAS}, transcriptome-wide association studies
+\item an \alert{incipient proteo}mic AD signature (next talk)
+\end{enumerate}
+%\begin{description}
+%\item[Knowledge] experimentally established role in AD
+%\item[TWAS] statistical evidence from 4 omic studies
+%\item[Incipient proteo.] incipient AD proteomic signature (next talk)
+%\end{description}
+
+\begin{center}
+\includegraphics[scale=0.6]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-twas-proteo-venn.pdf}
+\end{center}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Network based drug repurposing for Alzheimer's disease}
+	{\emph{Attila Jones, Andrew Williamson, Vijay Varma, Jackson Roberts, Madhav Thambisetty}\\
+		Clinical \& Translational Neuroscience Section, Laboratory of Behavioral Neuroscience}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+{\small Cheng et al 2018 Nat Commun}
+
+\includegraphics[width=1.0\columnwidth]{../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item disease modules in the protein-protein
+	interactome
+\item targets proximal to disease module $\Rightarrow$ drug repurposing
+%\item Hydroxychloroquine (next talk): proximal to CAD module
+\item HCQ repurposing to CAD:
+	validated by Cheng et al%pharmaco-epid.~\& \emph{in vitro} assay
+\end{itemize}
+\vfill
+
+\begin{center}
+{\Large Plan:}
+\end{center}
+
+\begin{enumerate}
+\item apply to Alzheimer's
+\item experimental validation
+\begin{itemize}
+	\item[DREAM] {\tiny Drug Repurposing for Effective Alzheimer’s Medicine}
+	\item[PREVENT-AD] {\tiny Preclinical Validation of Emerging Novel Treatments for Alzheimer's Disease}
+\end{itemize}
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
