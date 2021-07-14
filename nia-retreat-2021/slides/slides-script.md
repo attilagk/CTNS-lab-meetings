@@ -9,6 +9,3 @@ Next slide please.  This slide explains how the protein-protein interaction netw
 Cheng et al found that Hydroxychloroquine, a drug approved for malaria and rheumatoid arthritis, acts proximally to these two disease modules by targeting TLR7 and TLR9.  This suggested that the drug could be repurposed for coronary artery disease.  Indeed, Cheng et al successfully confirmed that in validation experiments.  Interestingly, Hydroxychloroquine popped up also in our recent work, which Vijay talked about.
 
 We plan to use the network proximity approach to prioritize all approved drugs according to their repurposing potential for Alzheimer's disease.  We will then perform experimental validation as part of the DREAM prevent AD studies.  Furthermore, this network based approach might also clarify some patho-mechanisms of comorbidities at the molecular systems level.
-
-* IGAP consortium
-* send DISEASES knowledge AD to Madhav
