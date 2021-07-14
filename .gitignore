@@ -22,3 +22,4 @@ test
 *.latexrun.db
 *.latexrun.db.lock
 *.pptx
+*.png

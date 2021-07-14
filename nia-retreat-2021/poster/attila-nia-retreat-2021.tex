@@ -4,7 +4,7 @@
 \usepackage{natbib}
 \bibliographystyle{plainnat}
 %\bibliographystyle{unsrtnat}
-\author{Attila Jones, ..., Madhav Thambisetty}
+\author{Attila Jones, Andrew Williamson, Vijay Varma, Jackson Roberts, Madhav Thambisetty}
 \title{Network based drug repurposing for Alzheimer's disease (AD)}
 
 \institute{Clinical \& Translational Neuroscience Section, Laboratory of Behavioral Neuroscience}
@@ -15,7 +15,7 @@
 \begin{document}
 \maketitle
 
-\block{Abstract}{
+\block{1. Introduction}{
 \begin{multicols}{2}
 We recently announced the Drug Repurposing for Effective
 Alzheimer's Medicines (DREAM) study \citep{Desai2020}, in which we plan to
@@ -27,7 +27,7 @@ find repurposable drugs based on:
 \item transcriptome-wide association studies, TWAS, on AD
 	\citep{Baird2021,Gerring2020,Jansen2019a,Kunkle2019a}
 \item curated knowledge on established AD genes \citep{PletscherFrankild2015}
-\item network based drug repurposing approach \citep{Guney2016,Cheng2018}
+\item a network based drug repurposing approach \citep{Guney2016,Cheng2018}
 \end{enumerate}
 
 Below we provide an overview on the approach and on the input data sets.
@@ -36,7 +36,7 @@ Below we provide an overview on the approach and on the input data sets.
 
 \begin{columns}
 \column{0.55}
-\block{The approach: principles and previous applications}{
+\block{2. The approach: principles and previous applications}{
 \begin{multicols}{2}
 We choose the approach to drug repurposing developed by
 \cite{Cheng2018} based on their earlier work~\citep{Guney2016}.
@@ -46,7 +46,7 @@ We choose the approach to drug repurposing developed by
 \item cardiovascular (CV) disease genes form clusters, so-called \emph{disease
 	modules}, in the human protein-protein interactome (PPI)
 \item a few drugs approved for non-CV indications, like Hydroxychloroquine,
-	are proximal to the CAD (coronary artery disease) disease module
+	are proximal to the CAD (coronary artery disease) module
 \item Hydroxychloroquine's protective effect on CAD is supported by
 	pharmaco-epidemiology and an \emph{in vitro} assay
 %\item these evidence suggests Hydroxychloroquine might be repurposed for CAD
@@ -56,7 +56,7 @@ We choose the approach to drug repurposing developed by
 \end{multicols}
 }
 
-\block{Quantifying proximity of drug targets to disease genes}{
+\block{3. Quantifying proximity of drug targets to disease genes}{
 
 \begin{multicols}{3}
 Definition of network proximity from a set of drug targets $T$ to a set of disease genes $S$:
@@ -69,7 +69,7 @@ Definition of network proximity from a set of drug targets $T$ to a set of disea
 where $d(s,t)$
 is the shortest path length between disease gene $s$ and drug target $t$.
 
-Interpretation: the average length of shortest paths taken from all drug
+Interpretation: the average length of the shortest paths taken from all 
 targets to the disease genes~\citep{Guney2016}.
 
 We present two examples in a toy network with fixed $S = \{B, D, E\}$ and
@@ -114,11 +114,11 @@ p &=& 0.324 \\
 
 \column{0.45}
 
-\block{Planned workflow}{
+\block{4. Planned workflow}{
 \includegraphics[width=0.375\columnwidth]{../figures/by-me/network-repos-flowchart/network-repos-flowchart.pdf}
 }
 
-\block{High confidence AD gene sets}{
+\block{5. High confidence AD gene sets}{
 %\begin{tabular}{rl}
 %Knowledge & established AD genes in knowledge bases complied by~\cite{PletscherFrankild2015} \\
 %TWAS & AD genes whose expression is inferred causal to AD by Mendelian randomization and similar techniques \\
