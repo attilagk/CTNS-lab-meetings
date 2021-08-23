@@ -48,8 +48,8 @@
 \begin{column}{0.6\textwidth}
 
 \begin{tikzpicture}
-\path (0,0) node (drug) {drug $D$}
-	(-2,3) node[draw,fill=blue,semitransparent] (ind) {indication $X$}
+\path (0,0) node[draw] (drug) {drug $D$}
+	(-2,3) node[draw,fill=cyan,semitransparent] (ind) {indication $X$}
 	( 2,3) node[draw,fill=green,semitransparent] (alz) {Alzheimer's};
 \path[->] (drug) edge node[below,sloped,text width=3cm,text centered] {development, approval} node[above,sloped]
 	{step 1.} (ind);
@@ -61,12 +61,12 @@
 \begin{column}{0.4\textwidth}
 Approaches to repurposing
 \begin{enumerate}
-\item shared gene\\
+\item shared gene approach\\
 \begin{tikzpicture}
-\draw[fill=blue,semitransparent] (0,0) circle (0.5cm);
+\draw[fill=cyan,semitransparent] (0,0) circle (0.5cm);
 \draw[fill=green,semitransparent] (0.6,0) circle (0.6cm);
 \end{tikzpicture}
-\item network based
+\item network based appr.
 \begin{description}
 	\tiny
 \item[Guney,..., Barabási 2016] proximity
