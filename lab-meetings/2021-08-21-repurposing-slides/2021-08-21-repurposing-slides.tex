@@ -159,7 +159,7 @@ Goal: evaluate proximity for each target and AD gene set
 \includegraphics[width=1.0\textwidth]{../../../notebooks/2021-08-04-guney-tools/named-figure/proximity-d-z-p.pdf}
 \end{frame}
 
-\begin{frame}{High confidence AD gene sets}
+\begin{frame}{Our high confidence (HC) AD gene set}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 Subsets of HC AD gene set
@@ -173,12 +173,33 @@ Subsets of HC AD gene set
 \end{columns}
 \end{frame}
 
-\begin{frame}{Extending high confidence set with more AD genes}
-	{Candidate AD gene prioritization with, e.g., Endeavour}
-\includegraphics[width=\textwidth]{figures/from-others/endeavour-2016-Fig1.jpg}
+\begin{frame}{Extending HC AD set with top AD candidate genes}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+\begin{center}
+Constructing final AD gene set
+\end{center}
 
-\vfill
+\begin{tikzpicture}
+\footnotesize
+\draw (0,0) circle (0.3) (0,0.3) node[anchor=south,inner sep=0.0pt] {HC};
+\draw[dashed] (0,0.2) circle (0.5) (0,0.7) node[anchor=south,inner sep=0.0pt] {final};
+\draw (0,1.2) circle (1.5) (0,2.7) node[anchor=south,inner sep=0.0pt] {candidate};
+%\draw[] (0,0) node[draw,circle,inner sep=0.0pt] {HC};
+%\draw[] (2.0,0) node[draw,ellipse,inner sep=14.0pt] {candidate AD genes};
+\end{tikzpicture}
+\end{column}
+
+\begin{column}{0.75\textwidth}
+\begin{center}
+Example: prioritization with Endeavour
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{figures/from-others/endeavour-2016-Fig1.jpg}
+
 \tiny Tranchevent et al 2016
+\end{column}
+\end{columns}
 \end{frame}
 
 \end{document}
