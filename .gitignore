@@ -23,3 +23,5 @@ test
 *.latexrun.db.lock
 *.pptx
 *.png
+*/figures
+*/figures/*
