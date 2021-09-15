@@ -18,7 +18,7 @@
 % beamer styles
 \mode<presentation>{
 %\usetheme{Pittsburgh}
-\usetheme{Antibes}
+\usetheme{Boadilla}
 \usecolortheme{beaver}
 %\usecolortheme{seahorse}
 %\usefonttheme{structureitalicserif}
@@ -40,7 +40,6 @@
 \begin{document}
 
 \maketitle
-
 \begin{frame}{DREAM}{Drug Repurposing for Effective Alzheimer's Medicines}
 \begin{columns}[t]
 \begin{column}{0.4\textwidth}
@@ -126,10 +125,102 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{Network based proximity}
+\begin{frame}{Proximity in a toy network}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+disease gene set $S = \{$
+{\tiny
+\tikz{\node[white,circle,inner sep=1pt,fill=red] {B}}
+\tikz{\node[white,circle,inner sep=1pt,fill=red] {D}}
+\tikz{\node[white,rectangle,inner sep=2.5pt,fill=red] {E}}
+}
+$\}$
+
+target gene set $T = \{$
+{\tiny
+\tikz{\node[white,rectangle,inner sep=2.5pt,fill=blue] {J}}
+\tikz{\node[white,rectangle,inner sep=2.5pt,fill=red] {E}}
+}
+$\}$
+
+\begin{enumerate}
+\item<2-> raw distance
 \begin{equation*}
-	d = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),
+d = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t)
 \end{equation*}
+\item<3-> standardized distance
+\begin{equation*}
+z = \frac{d - \bar{d}_0}{s_0}
+\end{equation*}
+\item<4-> stat.~significance
+\begin{equation*}
+p = \Pr(z \le Z)
+\end{equation*}
+\end{enumerate}
+\end{column}
+
+\footnotesize
+\begin{column}{0.25\textwidth}
+
+\includegraphics<1->[width=1\columnwidth]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
+
+\begin{eqnarray*}
+\visible<2->{
+d &=& \frac{1}{2} (0 + 1) = 0.5 \\ }
+\visible<3->{
+z &=& -0.454 \\ }
+\visible<4->{
+p &=& 0.324 \\ }
+\end{eqnarray*}
+\end{column}
+\begin{column}{0.25\textwidth}
+
+\includegraphics<5>[width=1\columnwidth]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
+
+\visible<5>{
+\begin{eqnarray*}
+d &=& \frac{1}{2} (2 + 1) = 1.5 \\
+z &=& 2.217 \\
+p &=& 0.987 \\
+\end{eqnarray*}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Proximity in the human interactome}{Knowledge based AD genes}
+\end{frame}
+
+\begin{frame}{Including AD genes suggested by omics}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+\begin{center}
+\large
+Evidence types
+\end{center}
+\begin{itemize}
+\item TWAS
+\begin{itemize}
+\item MR or PrediXcan
+\item colocalization
+\end{itemize}
+\item PWAS
+\item GWGAS
+\item 3D chromatin,...
+\end{itemize}
+\end{column}
+
+\begin{column}{0.7\textwidth}
+\begin{center}
+\large
+TWAS
+\end{center}
+
+\includegraphics[width=\columnwidth]{figures/from-others/jian-yang-2016-fig1.png}
+
+{\tiny Zhu et al 2016 Nat Genet}
+\end{column}
+\end{columns}
 \end{frame}
 
 \end{document}
