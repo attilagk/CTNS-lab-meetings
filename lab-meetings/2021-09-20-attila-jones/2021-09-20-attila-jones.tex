@@ -40,7 +40,8 @@
 \begin{document}
 
 \maketitle
-\begin{frame}{DREAM}{Drug Repurposing for Effective Alzheimer's Medicines}
+
+\begin{frame}<1-5>[label=dream]{DREAM}{Drug Repurposing for Effective Alzheimer's Medicines}
 \begin{columns}[t]
 \begin{column}{0.4\textwidth}
 \begin{enumerate}
@@ -79,6 +80,14 @@
 
 \includegraphics<4>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
 
+\only<6>{Acknowledgements
+
+	\alert{NIA/CTNS} Madhav Thambisetty, Anjali Lathwal, group
+
+	\alert{U.~Chicago} Hae Kyung Im, Evan Wu
+	
+	\alert{NIA/LBN} staff \& IT
+}
 %\includegraphics<3>[width=0.2\columnwidth]{figures/from-others/gtex.png}
 \end{column}
 \end{columns}
@@ -148,11 +157,11 @@ $\}$
 \begin{equation*}
 d = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t)
 \end{equation*}
-\item<3-> standardized distance
+\item<3-> $z$-score
 \begin{equation*}
 z = \frac{d - \bar{d}_0}{s_0}
 \end{equation*}
-\item<4-> stat.~significance
+\item<4-> $p$-value
 \begin{equation*}
 p = \Pr(z \le Z)
 \end{equation*}
@@ -188,39 +197,113 @@ p &=& 0.987 \\
 \end{columns}
 \end{frame}
 
-\begin{frame}{Proximity in the human interactome}{Knowledge based AD genes}
+\begin{frame}<1>[label=prox]{Proximity in the human interactome}
+\includegraphics<1>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge.pdf}
+\includegraphics<2>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge-TWAS2plus-IAPS.pdf}
+
+%{\tiny asthma targets from Andrew Williamson,..., M Thambisetty, unpublished}
+{\tiny 
+\begin{description}
+\item[HCQ: hydroxychloroquine] Vijay Varma,..., M Thambisetty; ms in preparation
+\item[asthma drug targets] Andrew Williamson,..., M Thambisetty; ms in preparation
+\item[code] E.~Guney \url{https://github.com/emreg00/toolbox}
+\end{description}
+}
 \end{frame}
 
-\begin{frame}{Including AD genes suggested by omics}
-\begin{columns}[t]
-\begin{column}{0.4\textwidth}
+\begin{frame}{AD genes suggested by several TWAS$^\ast$}{$^\ast$transcriptome wide association studies}
+%\includegraphics[width=1\columnwidth]{../../../results//2021-07-01-high-conf-ADgenes/cluster-experiments-genes.pdf}
+\includegraphics[scale=0.5]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
+\includegraphics[scale=0.5]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/no-experiments-inferring-the-same-gene-2colors.pdf}
+
 \begin{center}
-\large
-Evidence types
 \end{center}
-\begin{itemize}
-\item TWAS
-\begin{itemize}
-\item MR or PrediXcan
-\item colocalization
-\end{itemize}
-\item PWAS
-\item GWGAS
-\item 3D chromatin,...
-\end{itemize}
+\end{frame}
+
+\begin{frame}{Extending the knowledge based AD gene set}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-twas-2plus-proteo-venn.pdf}
 \end{column}
 
-\begin{column}{0.7\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{center}
-\large
-TWAS
+IAPS: incipient AD proteomic signature
 \end{center}
 
-\includegraphics[width=\columnwidth]{figures/from-others/jian-yang-2016-fig1.png}
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{figures/from-others/jackson-APOE-Fig2c.png}
+\end{center}
 
-{\tiny Zhu et al 2016 Nat Genet}
+\begin{center}
+\tiny Roberts,..., Thambisetty 2021 Science Advances
+\end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
+\againframe<1-2>{prox}
+
+\begin{frame}{Summary}
+\begin{itemize}
+\item toward prioritizing drugs for AD
+\begin{itemize}
+\item network based approach\\
+\begin{tikzpicture}
+	\path[draw] (0,0) node[white,rectangle,inner sep=2.5pt,fill=red] {drug $A$} --
+	(1.75,0) node[white,rectangle,inner sep=2.5pt,fill=red] {targets $T_A$} --
+	node[anchor=south]{$d_A$}
+	(4,0) node[white,rectangle,inner sep=2.5pt,fill=gray] {AD genes} --
+	node[anchor=south]{$d_B$}
+	(10.25,0) node[white,rectangle,inner sep=2.5pt,fill=blue] {targets $T_B$} --
+	(12,0) node[white,rectangle,inner sep=2.5pt,fill=blue] {drug $B$};
+	;
+\end{tikzpicture}
+%\tikz{\node[white,rectangle,inner sep=2.5pt,fill=gray] {drug}}
+\item successful pilot test of 7 drugs
+\end{itemize}
+\item leveraging omic studies
+\begin{itemize}
+\item proteomics: IAPS gene set (CTNS)
+\item GWAS, TWAS (public + Im Lab)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\againframe<4,6>{dream}
+
 \end{document}
+
+%\begin{frame}{Including AD genes suggested by omics}
+%\begin{columns}[t]
+%\begin{column}{0.4\textwidth}
+%\begin{center}
+%\large
+%Evidence types
+%\end{center}
+%\begin{itemize}
+%\item TWAS
+%\begin{itemize}
+%\item MR or PrediXcan
+%\item colocalization
+%\end{itemize}
+%\item PWAS
+%\item GWGAS
+%\item 3D chromatin,...
+%\end{itemize}
+%\end{column}
+%
+%\begin{column}{0.7\textwidth}
+%\begin{center}
+%\large
+%TWAS
+%\end{center}
+%
+%\includegraphics[width=\columnwidth]{figures/from-others/jian-yang-2016-fig1.png}
+%
+%{\tiny Zhu et al 2016 Nat Genet}
+%\end{column}
+%\end{columns}
+%\end{frame}
+
