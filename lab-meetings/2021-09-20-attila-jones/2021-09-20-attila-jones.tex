@@ -45,13 +45,13 @@
 \begin{columns}[t]
 \begin{column}{0.4\textwidth}
 \begin{enumerate}
-\item<1-> AD risk genes
+\item<1-> collect AD genes
 \begin{itemize}
 \item<1> curated knowledge
 \item<2> our AD gene discoveries
 \item<3> public omic data
 \end{itemize}
-\item<4-> prioritize approved drugs
+\item<4-> prioritize all approved drugs
 \begin{itemize}
 \item<4> network based proximity
 \end{itemize}
@@ -80,38 +80,35 @@
 
 \includegraphics<4>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
 
-\only<6>{Acknowledgements
+\only<4>{\tiny The human interactome}
 
-	\alert{NIA/CTNS} Madhav Thambisetty, Anjali Lathwal, group
-
-	\alert{U.~Chicago} Hae Kyung Im, Evan Wu
-	
-	\alert{NIA/LBN} staff \& IT
-}
 %\includegraphics<3>[width=0.2\columnwidth]{figures/from-others/gtex.png}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Approaches to drug repurposing}
+\begin{frame}{Drug repurposing}
 \begin{columns}[t]
 \begin{column}{0.6\textwidth}
 
 \begin{tikzpicture}
-\path (0,0) node[draw] (drug) {drug $D$}
+\path (0,0) node[draw] (drug) {drug}
 	(-2,3) node[draw,fill=cyan,semitransparent] (ind) {indication $X$}
 	( 2,3) node[draw,fill=green,semitransparent] (alz) {Alzheimer's};
-\path[->] (drug) edge node[below,sloped,text width=3cm,text centered] {development, approval} node[above,sloped]
-	{step 1.} (ind);
+\path[->] (drug) edge node[below,sloped,text width=3cm,text centered] {approv
+	+ devel} node[above,sloped]
+	{1.} (ind);
 \path[->] (drug) edge node[below,sloped] {repurposing?} node[above,sloped]
-	{step 2.} (alz);
+	{2.} (alz);
 \end{tikzpicture}
 \end{column}
 
 \begin{column}{0.4\textwidth}
 \begin{enumerate}
 \item shared gene approach\\
-	\begin{tikzpicture}[scale=1.5]
+{\footnotesize
+Anjali Lathwal, CTNS} \\
+\begin{tikzpicture}[scale=1.5]
 \draw[fill=cyan,semitransparent] (0,0) circle (0.5cm);
 \draw[fill=green,semitransparent] (0.6,0) circle (0.6cm);
 \draw (0.275cm,0) node {$S$};
@@ -204,9 +201,9 @@ p &=& 0.987 \\
 %{\tiny asthma targets from Andrew Williamson,..., M Thambisetty, unpublished}
 {\tiny 
 \begin{description}
+\item[code] E.~Guney \url{https://github.com/emreg00/toolbox}
 \item[HCQ: hydroxychloroquine] Vijay Varma,..., M Thambisetty; ms in preparation
 \item[asthma drug targets] Andrew Williamson,..., M Thambisetty; ms in preparation
-\item[code] E.~Guney \url{https://github.com/emreg00/toolbox}
 \end{description}
 }
 \end{frame}
@@ -245,6 +242,8 @@ IAPS: incipient AD proteomic signature
 
 \againframe<1-2>{prox}
 
+\againframe<4,5>{dream}
+
 \begin{frame}{Summary}
 \begin{itemize}
 \item toward prioritizing drugs for AD
@@ -271,7 +270,14 @@ IAPS: incipient AD proteomic signature
 \end{itemize}
 \end{frame}
 
-\againframe<4,6>{dream}
+\begin{frame}{Acknowledgements}
+\begin{description}
+\item[NIA/CTNS] Madhav Thambisetty, Anjali Lathwal, Vijay Varma, Sayantani
+	Basu, Yang An, Jackson Roberts, Andrew Williamson
+\item[NIA/LBN] Melissa Kitner Triolo, Charlee Wert, IT
+\item[U.~Chicago] Hae Kyung Im, Evan Wu
+\end{description}
+\end{frame}
 
 \end{document}
 
