@@ -33,19 +33,20 @@
 
 % title, etc
 %\title{Drug Repurposing to Alzheimer's Disease Using TWAS and the PPI Network}
-\title{Network Based Drug Repurposing to Alzheimer's}
-\author{Attila Jones}
+\title{Omics Driven Drug Repurposing for Alzheimer's}
+\author{Anjali Lathwal, Attila Jones}
 \date{CTNS: Clinical \& Translational Neuroscience Section}
 
 \begin{document}
 
 \maketitle
 
-\begin{frame}<1-5>[label=dream]{DREAM}{Drug Repurposing for Effective Alzheimer's Medicines}
+\begin{frame}<1-5>[label=dream]{DREAM$^\ast$}{$^\ast$Drug Repurposing for Effective Alzheimer's Medicines}
 \begin{columns}[t]
 \begin{column}{0.4\textwidth}
 \begin{enumerate}
-\item<1-> collect AD genes
+\item<1-> collect AD genes\\
+{\tiny causal ($\approx 100$) \emph{vs}.~assoc. ($\approx 10,000$)}
 \begin{itemize}
 \item<1> curated knowledge
 \item<2> our AD gene discoveries
@@ -53,9 +54,10 @@
 \end{itemize}
 \item<4-> prioritize all approved drugs
 \begin{itemize}
-\item<4> network based proximity
+\item<4> shared gene approach
+\item<5> network approach
 \end{itemize}
-\item<5-> validate
+\item<6-> validate
 \begin{itemize}
 \item \emph{in vitro} essays
 \item pharmacoepidemiology
@@ -76,11 +78,13 @@
 
 \only<3>{\tiny Schwartzentruber et al 2021 Nat Genet}
 
-\includegraphics<4>[width=0.3\columnwidth]{figures/from-others/drugbank-logo.png}
+\includegraphics<4-5>[width=0.3\columnwidth]{figures/from-others/drugbank-logo.png}
 
-\includegraphics<4>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+\includegraphics<4>[]{figures/by-me/repos-shared-gene/repos-shared-gene.pdf}
 
-\only<4>{\tiny The human interactome}
+\includegraphics<5>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+
+\only<5>{\tiny The human interactome}
 
 %\includegraphics<3>[width=0.2\columnwidth]{figures/from-others/gtex.png}
 \end{column}
@@ -89,7 +93,7 @@
 
 \begin{frame}{Drug repurposing}
 \begin{columns}[t]
-\begin{column}{0.6\textwidth}
+\begin{column}{0.5\textwidth}
 
 \begin{tikzpicture}
 \path (0,0) node[draw] (drug) {drug}
@@ -103,24 +107,12 @@
 \end{tikzpicture}
 \end{column}
 
-\begin{column}{0.4\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{enumerate}
-\item shared gene approach\\
-{\footnotesize
-Anjali Lathwal, CTNS} \\
-\begin{tikzpicture}[scale=1.5]
-\draw[fill=cyan,semitransparent] (0,0) circle (0.5cm);
-\draw[fill=green,semitransparent] (0.6,0) circle (0.6cm);
-\draw (0.275cm,0) node {$S$};
-\draw (1.2cm,0) node[anchor=east] {AD};
-%\draw (0.6cm,0.6) node[anchor=south] {AD};
-\draw (-0.5cm,0.0) node[anchor=west] {$X$};
-\end{tikzpicture}
-
-%\footnotesize
-%shared genes $S = X \cap \mathrm{AD}$
+	\item<2-> shared gene approach---Anjali\\
+\includegraphics<2->[]{figures/by-me/repos-shared-gene/repos-shared-gene.pdf}
 \normalsize
-\item network based appr.
+\item<3> network approach---Attila
 \begin{description}
 \footnotesize
 \item[Guney,..., Barabási 2016] proximity
@@ -129,9 +121,10 @@ Anjali Lathwal, CTNS} \\
 \end{enumerate}
 \end{column}
 \end{columns}
+\includegraphics<3>[]{figures/by-me/repos-network/repos-network.pdf}
 \end{frame}
 
-\begin{frame}{Proximity in a toy network}
+\begin{frame}{Proximity on toy data}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 disease gene set $S = \{$
@@ -194,6 +187,29 @@ p &=& 0.987 \\
 \end{columns}
 \end{frame}
 
+\begin{frame}%{The real data}
+\begin{columns}[t]
+\begin{column}{0.25\textwidth}
+AD genes
+
+\includegraphics[width=0.9\columnwidth]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-venn.pdf}
+
+\includegraphics<1>[width=1\columnwidth]{../../../notebooks/2021-08-04-guney-tools/named-figure/degree-knowledge.pdf}
+
+\includegraphics<2>[width=1\columnwidth]{../../../notebooks/2021-08-04-guney-tools/named-figure/degree-knowledge-3genes.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+The human interactome\\
+{\footnotesize 217,160 interactions (edges)}
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+\end{column}
+\end{columns}
+\end{frame}
+
 \begin{frame}<1>[label=prox]{Proximity in the human interactome}
 \includegraphics<1>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge.pdf}
 \includegraphics<2>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge-TWAS2plus-IAPS.pdf}
@@ -240,28 +256,20 @@ IAPS: incipient AD proteomic signature
 \end{columns}
 \end{frame}
 
-\againframe<1-2>{prox}
+\againframe<2>{prox}
 
 \againframe<4,5>{dream}
 
 \begin{frame}{Summary}
 \begin{itemize}
 \item toward prioritizing drugs for AD
-\begin{itemize}
-\item network based approach\\
-\begin{tikzpicture}
-	\path[draw] (0,0) node[white,rectangle,inner sep=2.5pt,fill=red] {drug $A$} --
-	(1.75,0) node[white,rectangle,inner sep=2.5pt,fill=red] {targets $T_A$} --
-	node[anchor=south]{$d_A$}
-	(4,0) node[white,rectangle,inner sep=2.5pt,fill=gray] {AD genes} --
-	node[anchor=south]{$d_B$}
-	(10.25,0) node[white,rectangle,inner sep=2.5pt,fill=blue] {targets $T_B$} --
-	(12,0) node[white,rectangle,inner sep=2.5pt,fill=blue] {drug $B$};
-	;
-\end{tikzpicture}
-%\tikz{\node[white,rectangle,inner sep=2.5pt,fill=gray] {drug}}
-\item successful pilot test of 7 drugs
-\end{itemize}
+\begin{enumerate}
+\item shared gene approach: TODO
+\item network approach: successful pilot test of 7 drugs
+%\begin{itemize}
+%\item successful pilot test of 7 drugs
+%\end{itemize}
+\end{enumerate}
 \item leveraging omic studies
 \begin{itemize}
 \item proteomics: IAPS gene set (CTNS)
@@ -272,7 +280,7 @@ IAPS: incipient AD proteomic signature
 
 \begin{frame}{Acknowledgements}
 \begin{description}
-\item[NIA/CTNS] Madhav Thambisetty, Anjali Lathwal, Vijay Varma, Sayantani
+\item[NIA/CTNS] Madhav Thambisetty, Vijay Varma, Sayantani
 	Basu, Yang An, Jackson Roberts, Andrew Williamson
 \item[NIA/LBN] Melissa Kitner Triolo, Charlee Wert, IT
 \item[U.~Chicago] Hae Kyung Im, Evan Wu
@@ -312,4 +320,3 @@ IAPS: incipient AD proteomic signature
 %\end{column}
 %\end{columns}
 %\end{frame}
-
