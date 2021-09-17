@@ -41,23 +41,24 @@
 
 \maketitle
 
-\begin{frame}<1-5>[label=dream]{DREAM$^\ast$}{$^\ast$Drug Repurposing for Effective Alzheimer's Medicines}
+\begin{frame}<1-7>[label=dream]{DREAM$^\ast$}{$^\ast$Drug Repurposing for Effective Alzheimer's Medicines}
 \begin{columns}[t]
 \begin{column}{0.4\textwidth}
 \begin{enumerate}
 \item<1-> collect AD genes\\
-{\tiny causal ($\approx 100$) \emph{vs}.~assoc. ($\approx 10,000$)}
+{\tiny risk ($\approx 100$) \emph{vs}.~assoc. ($\approx 10,000$)}
 \begin{itemize}
 \item<1> curated knowledge
 \item<2> our AD gene discoveries
 \item<3> public omic data
+\item<4> association resources
 \end{itemize}
-\item<4-> prioritize all approved drugs
+\item<5-> prioritize all approved drugs
 \begin{itemize}
-\item<4> shared gene approach
-\item<5> network approach
+\item<5> shared gene approach
+\item<6> network approach
 \end{itemize}
-\item<6-> validate
+\item<7-> validate
 \begin{itemize}
 \item \emph{in vitro} essays
 \item pharmacoepidemiology
@@ -78,13 +79,15 @@
 
 \only<3>{\tiny Schwartzentruber et al 2021 Nat Genet}
 
-\includegraphics<4-5>[width=0.3\columnwidth]{figures/from-others/drugbank-logo.png}
+\includegraphics<5-6>[width=0.3\columnwidth]{figures/from-others/drugbank-logo.png}
 
-\includegraphics<4>[]{figures/by-me/repos-shared-gene/repos-shared-gene.pdf}
+\includegraphics<4>[width=0.5\columnwidth]{figures/from-others/disgenet-logo.png}
 
-\includegraphics<5>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+\includegraphics<5>[]{figures/by-me/repos-shared-gene/repos-shared-gene.pdf}
 
-\only<5>{\tiny The human interactome}
+\includegraphics<6>[width=0.5\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+
+\only<6>{\tiny The human interactome}
 
 %\includegraphics<3>[width=0.2\columnwidth]{figures/from-others/gtex.png}
 \end{column}
@@ -190,7 +193,7 @@ p &=& 0.987 \\
 \begin{frame}%{The real data}
 \begin{columns}[t]
 \begin{column}{0.25\textwidth}
-AD genes
+AD risk genes
 
 \includegraphics[width=0.9\columnwidth]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-venn.pdf}
 
@@ -224,7 +227,7 @@ The human interactome\\
 }
 \end{frame}
 
-\begin{frame}{AD genes suggested by several TWAS$^\ast$}{$^\ast$transcriptome wide association studies}
+\begin{frame}{AD risk genes suggested by several TWAS$^\ast$}{$^\ast$transcriptome wide association studies}
 %\includegraphics[width=1\columnwidth]{../../../results//2021-07-01-high-conf-ADgenes/cluster-experiments-genes.pdf}
 \includegraphics[scale=0.5]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
 \includegraphics[scale=0.5]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/no-experiments-inferring-the-same-gene-2colors.pdf}
@@ -233,7 +236,7 @@ The human interactome\\
 \end{center}
 \end{frame}
 
-\begin{frame}{Extending the knowledge based AD gene set}
+\begin{frame}{Extending the knowledge based AD risk gene set}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 
@@ -258,24 +261,20 @@ IAPS: incipient AD proteomic signature
 
 \againframe<2>{prox}
 
-\againframe<4,5>{dream}
+\againframe<6-7>{dream}
 
-\begin{frame}{Summary}
-\begin{itemize}
-\item toward prioritizing drugs for AD
-\begin{enumerate}
-\item shared gene approach: TODO
-\item network approach: successful pilot test of 7 drugs
-%\begin{itemize}
-%\item successful pilot test of 7 drugs
-%\end{itemize}
-\end{enumerate}
-\item leveraging omic studies
-\begin{itemize}
-\item proteomics: IAPS gene set (CTNS)
-\item GWAS, TWAS (public + Im Lab)
-\end{itemize}
-\end{itemize}
+\begin{frame}{Summary}{Towards prioritizing drugs for AD}
+\begin{tabular}{|c|c|c|}
+\hline
+& \multicolumn{2}{c|}{Approach} \\
+& shared gene & network \\
+\hline
+focus on & associations & mechanism \\
+leverages & GWAS, text mining & interactome, GWAS, TWAS \\
+``AD genes'' & $>1,000$ & $\approx 100$ \\
+results & some drug candidates & pilot accomplished \\
+\hline
+\end{tabular}
 \end{frame}
 
 \begin{frame}{Acknowledgements}

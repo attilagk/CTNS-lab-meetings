@@ -1,6 +1,6 @@
 ## DREAM
 
-Our group is working on study we call DREAM.  The idea is to repurpose drugs to Alzheimer's that have been developed and approved for other indications.  First, we plan we collect AD genes. By "AD genes" we mean genes that are not merely associated to but also causal to Alzheimer's.  Keep in mind that the vast majority of disease associated genes are not causal.
+Our group is working on study we call DREAM.  The idea is to repurpose drugs to Alzheimer's that have been developed and approved for other indications.  First, we plan we collect AD genes.  We will distinguish AD risk genes from AD associated genes.  While both type are statistically associated to AD, AD risk genes play mechanistic role in AD pathology, while AD associated genes not necessarily, and in fact most of them do not.
 
 To collect AD genes we use curated knowledge...
 
