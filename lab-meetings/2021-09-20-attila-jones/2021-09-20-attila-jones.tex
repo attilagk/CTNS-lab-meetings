@@ -135,7 +135,7 @@
 
 \againframe<3>{repurposing}
 
-\begin{frame}{Proximity on toy data}
+\begin{frame}{Quantifying repurposing potential in a toy gene network}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 disease gene set $S = \{$
@@ -200,6 +200,15 @@ p &=& 0.987 \\
 
 \begin{frame}%{The real data}
 \begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{center}
+The human interactome\\
+{\footnotesize 217,160 interactions (edges)}
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
+\end{column}
+
 \begin{column}{0.25\textwidth}
 AD risk genes
 
@@ -209,19 +218,10 @@ AD risk genes
 
 \includegraphics<2>[width=1\columnwidth]{../../../notebooks/2021-08-04-guney-tools/named-figure/degree-knowledge-3genes.pdf}
 \end{column}
-
-\begin{column}{0.5\textwidth}
-\begin{center}
-The human interactome\\
-{\footnotesize 217,160 interactions (edges)}
-\end{center}
-
-\includegraphics[width=1.0\columnwidth]{figures/from-others/rual-2005-interactome-Fig2b.png}
-\end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}<1>[label=prox]{Proximity in the human interactome}
+\begin{frame}<1>[label=prox]{Quantifying repurposing potential in the human interactome}
 \includegraphics<1>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge.pdf}
 \includegraphics<2>[scale=0.6]{../../../notebooks/2021-09-15-proximity-summary/named-figure/proximity-knowledge-TWAS2plus-IAPS.pdf}
 
