@@ -83,3 +83,12 @@ In summary Anjali and I talked about two approaches to evaluating drugs' potenti
 ## Acknowledgements
 
 I'd like to thank Madhav, Vijay, Sayantani, Yang, Jackson and Andrew for accepting and supporting me in the CTNS group.  I thank Melissa and Charlee for their help with my onboarding.  Finally I thank our collaborators at the University of Chicago for sharing unpublished TWAS results with us.
+
+
+## Madhav's suggestions
+
+* Validation
+* in vitro esays with cell culture based phenotypic screens; this method is explained in the Science advanced upcoming
+* pharmacoepidemiology as mentioned in the DREAM study
+* another type of validation: a newly approved study performed in CTNS: PREVENT-AD PREclinical Validation of EMererging and Novel Treatments for AD: we will test the top drugs in transgenic mouse model of AD
+* incipient AD multiomic signature
