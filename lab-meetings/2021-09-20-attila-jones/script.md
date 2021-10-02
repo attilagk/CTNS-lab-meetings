@@ -14,7 +14,7 @@ Second, we plan to search for Alzheimer's drug candidates among all approved dru
 
 ...and a network approach taken by me...
 
-Third, we plan to validate those drug candidates with in vitro essays and pharmacoepidemiology.
+Third, we plan to validate those drug candidates with three approaches: (1) in vitro essays  with cell culture based phenotypic screens, (2) pharmacoepidemiology and (3) in a transgenic mouse model for Alzheimer's
 
 ## Drug repurposing
 
@@ -64,7 +64,7 @@ In this pilot study we wanted to extend the knowledge based AD risk gene set wit
 
 ## Extending the knowledge based AD risk gene set
 
-The Venn diagram shows the knowledge based and TWAS2+ AD risk gene set.  The third gene set, IAPS is the incipient AD proteomic signature, which our group's latest published proteomic study found to be differentially expressed in young APOE carriers.  This suggested that these genes are linked to Alzheimer's pathogenesis.
+The Venn diagram shows the knowledge based and TWAS2+ AD risk gene set.  The third gene set, IAPS is the incipient AD proteomic signature (also called multiomic signature), which our group's latest combined proteomic and transcriptomic study found to be differentially expressed in young APOE carriers.  This suggested that these genes are linked to Alzheimer's pathogenesis.
 
 ## Quantifying repurposing potential in a toy gene network
 
