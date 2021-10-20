@@ -1,0 +1,96 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{The Main Title Naming Key Concepts}
+\subtitle{A subtitle may be shorter and more technical}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\begin{frame}{Bumetanide paper}
+%Experimental and real-world evidence supporting the computational repurposing
+%of bumetanide for APOE4-related Alzheimer’s disease
+%\vfill
+bumatenide
+\begin{itemize}
+\item approved for nephrotic syndrome, kidney diseases, cardiovascular
+  diseases
+\item phase 3: autism
+\end{itemize}
+\vfill
+present study
+\begin{itemize}
+\item repurposing potential for AD (APOE4)
+\item DE signature reversal
+\item rescue in APOE4-KI mice:
+\begin{itemize}
+\item synaptic transmission and potentiation
+\item spatial learning
+\item expression signature
+\end{itemize}
+\item rescue in J20/E4-KI mice:
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The signature reversal principle}
+\begin{itemize}
+%\item differential expression (DE) signature of disease
+\item \alert{Drugs that reverse DE\footnote{differential expression} signature
+	effectively treat disease.}
+\item causality
+\begin{enumerate}
+	\item signature $\rightarrow$ disease
+	\item signature $\leftarrow$ disease
+\end{enumerate}
+\item disease subtypes
+\end{itemize}
+\vfill
+\begin{itemize}
+\item resources: CMap/LINCS
+\item datasets, scoring metrics, query tools: clue.io, ...
+\end{itemize}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
