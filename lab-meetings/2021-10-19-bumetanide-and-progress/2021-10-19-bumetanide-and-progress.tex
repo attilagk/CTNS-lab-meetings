@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 %\documentclass[handout]{beamer}
 
 % language settings
@@ -39,36 +39,30 @@
 
 \begin{document}
 
-\begin{frame}{Bumetanide paper}
-%Experimental and real-world evidence supporting the computational repurposing
-%of bumetanide for APOE4-related Alzheimer’s disease
-%\vfill
-bumatenide
+\section{Bumetanide paper}
+
+\begin{frame}{Current \& ongoing work}
 \begin{itemize}
-\item approved for nephrotic syndrome, kidney diseases, cardiovascular
-  diseases
-\item phase 3: autism
+\item network based drug repurposing
+\begin{itemize}
+\item computing: NIAIRPCLOUD, NIH HPC (Biowulf)
+\item visualize target---AD gene pathways
+\item refine drug---target network: activities
 \end{itemize}
-\vfill
-present study
+\item NCI workshop: Rational Drug Discovery
 \begin{itemize}
-\item repurposing potential for AD (APOE4)
-\item DE signature reversal
-\item rescue in APOE4-KI mice:
-\begin{itemize}
-\item synaptic transmission and potentiation
-\item spatial learning
-\item expression signature
+\item ChEMBL
 \end{itemize}
-\item rescue in J20/E4-KI mice:
+\item drug repurposing with CMap\footnote{Connectivity Map}/
+  LINCS\footnote{Library of Integrated Network-based Cellular Signatures}
+\item Bumetanide paper
 \end{itemize}
 \end{frame}
 
-\begin{frame}{The signature reversal principle}
+\begin{frame}{The signature reversal (``flip'') principle}
 \begin{itemize}
 %\item differential expression (DE) signature of disease
-\item \alert{Drugs that reverse DE\footnote{differential expression} signature
-	effectively treat disease.}
+\item \alert{Drugs that reverse DE signature treat disease	more effectively.}
 \item causality
 \begin{enumerate}
 	\item signature $\rightarrow$ disease
@@ -76,11 +70,91 @@ present study
 \end{enumerate}
 \item disease subtypes
 \end{itemize}
-\vfill
+\end{frame}
+
+\begin{frame}{How it works}
 \begin{itemize}
-\item resources: CMap/LINCS
-\item datasets, scoring metrics, query tools: clue.io, ...
+  \item Can perturbation $B$ revert the transcriptomic signature of perturbation $A$?
+  \item $\widehat{\mathrm{corr}}(S_{A\alpha}, S_{B\beta}) < 0$ ?
 \end{itemize}
+\vfill
+\begin{tabular}{r|cc|}
+  \hline
+  perturbation & $A$ & $B$ \\
+  tissue/organism & $\alpha$ & $\beta$ \\
+  signature & $S_{A\alpha}$ & $S_{B\beta}$ \\
+  \hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{How it works: example}
+\begin{itemize}
+  \item Can drug $B$ revert the transcriptomic signature of Alzheimer's?
+  %\item $\widehat{\mathrm{corr}}(S_{A\alpha}, S_{B\beta}) < 0$ ?
+\end{itemize}
+\vfill
+\begin{tabular}{r|cc|}
+  & disease signature & drug signature \\
+  \hline
+  perturbation & Alzheimer's & drug $B$ \\
+  tissue & cortex & PC3 cell line \\
+  organism & human & human\\
+  signature & $U, D$: up, down genes & CMap \\
+  \hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{}
+\begin{columns}[t]
+\begin{column}{0.45\textwidth}
+CMap flavors: tools, methods
+\begin{enumerate}
+\item ?  (Sudhir)
+\item clue.io (Broad)
+\item L1000CDS2 (Mount Sinai)
+\item Sirota et al (Bumetanide study)
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.55\textwidth}
+
+  \includegraphics[width=\textwidth]{../../../notebooks/2021-10-04-CMap-discussion/named-figure/cmap-tools-consistency.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{CMap and network-based screen disagree}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+  input gene sets
+
+  \includegraphics[width=\textwidth]{../../../notebooks/2021-10-04-CMap-discussion/named-figure/sudhir-up-down-ADknowledge.pdf}
+
+  \vfill
+  linear regression
+  \begin{eqnarray*}
+    \hat{\beta} &=& -0.009 \\
+    \hat{\sigma} &=& 0.003 \\
+    p &=& 0.0007
+  \end{eqnarray*}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+
+  \includegraphics[width=\textwidth]{../../../notebooks/2021-10-04-CMap-discussion/named-figure/sudhir-lincs-rank.pdf}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item AD incipient proteomic signature
+      \begin{enumerate}
+        \item network-based screen
+        \item CMap
+      \end{enumerate}
+  \end{itemize}
 \end{frame}
 
 \end{document}
@@ -94,3 +168,26 @@ present study
 
 \end{column}
 \end{columns}
+
+\begin{frame}{CMap and network-based screen disagree}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+  \includegraphics[width=\textwidth]{../../../notebooks/2021-10-04-CMap-discussion/named-figure/sudhir-up-down-ADknowledge.pdf}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+
+  \includegraphics[width=\textwidth]{../../../notebooks/2021-10-04-CMap-discussion/named-figure/sudhir-lincs-rank.pdf}
+\end{column}
+
+\begin{column}{0.1\textwidth}
+
+  \begin{tabular}{rl}
+    $\hat{\beta}$ & -0.009 \\
+    $\hat{\sigma}$ & 0.003 \\
+    $p$ & 0.0007 \\
+  \end{tabular}
+\end{column}
+\end{columns}
+\end{frame}

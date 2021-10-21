@@ -21,6 +21,7 @@ test
 *.snm
 *.latexrun.db
 *.latexrun.db.lock
+*.fdb_latexmk
 *.pptx
 *.png
 */figures
