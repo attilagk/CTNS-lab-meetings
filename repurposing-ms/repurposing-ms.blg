@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: repurposing-ms.aux
 The style file: plainnat.bst
 Database file #1: repurposing-ms.bib
-Warning--there's a number but no volume in Gns2021
-You've used 3 entries,
+You've used 18 entries,
             2773 wiz_defined-function locations,
-            625 strings with 6348 characters,
-and the built_in function-call counts, 2692 in all, are:
-= -- 217
-> -- 297
-< -- 0
-+ -- 99
-- -- 96
-* -- 285
-:= -- 460
-add.period$ -- 18
-call.type$ -- 3
-change.case$ -- 41
-chr.to.int$ -- 3
-cite$ -- 7
-duplicate$ -- 62
-empty$ -- 109
-format.name$ -- 99
-if$ -- 517
+            783 strings with 29958 characters,
+and the built_in function-call counts, 55723 in all, are:
+= -- 3705
+> -- 8820
+< -- 3
++ -- 2940
+- -- 2922
+* -- 6461
+:= -- 9809
+add.period$ -- 99
+call.type$ -- 18
+change.case$ -- 1028
+chr.to.int$ -- 18
+cite$ -- 36
+duplicate$ -- 375
+empty$ -- 736
+format.name$ -- 2946
+if$ -- 10286
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 3
-newline$ -- 32
-num.names$ -- 12
-pop$ -- 70
+missing$ -- 18
+newline$ -- 143
+num.names$ -- 72
+pop$ -- 1975
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 1010
 quote$ -- 0
-skip$ -- 65
+skip$ -- 1182
 stack$ -- 0
-substring$ -- 41
-swap$ -- 5
+substring$ -- 473
+swap$ -- 33
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 33
-warning$ -- 1
-while$ -- 13
+type$ -- 198
+warning$ -- 0
+while$ -- 83
 width$ -- 0
-write$ -- 63
-(There was 1 warning)
+write$ -- 331

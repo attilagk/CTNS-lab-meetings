@@ -1,9 +1,188 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baird et~al.(2021)Baird, Liu, Zheng, Sieberts, Perumal, Elsworth,
+  Richardson, Chen, Carrasquillo, Allen, Reddy, De~Jager, Ertekin-Taner,
+  Mangravite, Logsdon, Estrada, Haycock, Hemani, Runz, Smith, Gaunt, and
+  eQTL~working group]{Baird2021}
+Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
+  Benjamin Elsworth, Tom~G. Richardson, Chia-Yen Chen, Minerva~M. Carrasquillo,
+  Mariet Allen, Joseph~S. Reddy, Philip~L. De~Jager, Nilufer Ertekin-Taner,
+  Lara~M. Mangravite, Ben Logsdon, Karol Estrada, Philip~C. Haycock, Gibran
+  Hemani, Heiko Runz, George~Davey Smith, Tom~R. Gaunt, and A.~M. P.-A.~D.
+  eQTL~working group.
+\newblock Identifying drug targets for neurological and psychiatric disease via
+  genetics and the brain transcriptome.
+\newblock \emph{PLoS genetics}, 17\penalty0 (33417599):\penalty0
+  e1009224--e1009224, January 2021.
+\newblock ISSN 1553-7390.
+\newblock \doi{10.1371/journal.pgen.1009224}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
+
+\bibitem[Barbeira et~al.(2018)Barbeira, Dickinson, Bonazzola, Zheng, Wheeler,
+  Torres, Torstenson, Shah, Garcia, Edwards, Stahl, Huckins, Aguet, Ardlie,
+  Cummings, Gelfand, Getz, Hadley, Handsaker, Huang, Kashin, Karczewski, Lek,
+  Li, MacArthur, Nedzel, Nguyen, Noble, Segrè, Trowbridge, Tukiainen, Abell,
+  Balliu, Barshir, Basha, Battle, Bogu, Brown, Brown, Castel, Chen, Chiang,
+  Conrad, Damani, Davis, Delaneau, Dermitzakis, Engelhardt, Eskin, Ferreira,
+  Frésard, Gamazon, Garrido-Martín, Gewirtz, Gliner, Gloudemans, Guigo, Hall,
+  Han, He, Hormozdiari, Howald, Jo, Kang, Kim, Kim-Hellmuth, Lappalainen, Li,
+  Li, Liu, Mangul, McCarthy, McDowell, Mohammadi, Monlong, Montgomery,
+  Muñoz-Aguirre, Ndungu, Nobel, Oliva, Ongen, Palowitch, Panousis, Papasaikas,
+  Park, Parsana, Payne, Peterson, Quan, Reverter, Sabatti, Saha, Sammeth,
+  Scott, Shabalin, Sodaei, Stephens, Stranger, Strober, Sul, Tsang, Urbut,
+  van~de Bunt, Wang, Wen, Wright, Xi, Yeger-Lotem, Zappala, Zaugg, Zhou, Akey,
+  Bates, Chan, Chen, Claussnitzer, Demanelis, Diegel, Doherty, Feinberg,
+  Fernando, Halow, Hansen, Haugen, Hickey, Hou, Jasmine, Jian, Jiang, Johnson,
+  Kaul, Kellis, Kibriya, Lee, Li, Li, Li, Lin, Lin, Linder, Linke, Liu,
+  Maurano, Molinie, Montgomery, Nelson, Neri, Oliva, Park, Pierce, Rinaldi,
+  Rizzardi, Sandstrom, Skol, Smith, Snyder, Stamatoyannopoulos, Stranger, Tang,
+  Tsang, Wang, Wang, Van~Wittenberghe, Wu, Zhang, Nierras, Branton, Carithers,
+  Guan, Moore, Rao, Vaught, Gould, Lockart, Martin, Struewing, Volpi,
+  Addington, Koester, Little, Brigham, Hasz, Hunter, Johns, Johnson, Kopen,
+  Leinweber, Lonsdale, McDonald, Mestichelli, Myer, Roe, Salvatore, Shad,
+  Thomas, Walters, Washington, Wheeler, Bridge, Foster, Gillard, Karasik,
+  Kumar, Miklos, Moser, Jewell, Montroy, Rohrer, Valley, Davis, Mash, Undale,
+  Smith, Tabor, Roche, McLean, Vatanian, Robinson, Sobin, Barcus, Valentino,
+  Qi, Hunter, Hariharan, Singh, Um, Matose, Tomaszewski, Barker, Mosavel,
+  Siminoff, Traino, Flicek, Juettemann, Ruffier, Sheppard, Taylor, Trevanion,
+  Zerbino, Craft, Goldman, Haeussler, Kent, Lee, Paten, Rosenbloom, Vivian,
+  Zhu, Nicolae, Cox, Im, Consortium, Laboratory, Group, (eGTEx) groups, Fund,
+  NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA, Site-NDrI, Site-rPCI, resource VArI,
+  of~Miami Brain Endowment~Bank, Management, Study, Visualization-EBI, and
+  Genome Browser Data Integration & Visualization-UCSC
+  Genomics~Institute]{Barbeira2018}
+Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
+  Heather~E. Wheeler, Jason~M. Torres, Eric~S. Torstenson, Kaanan~P. Shah,
+  Tzintzuni Garcia, Todd~L. Edwards, Eli~A. Stahl, Laura~M. Huckins, François
+  Aguet, Kristin~G. Ardlie, Beryl~B. Cummings, Ellen~T. Gelfand, Gad Getz, Kane
+  Hadley, Robert~E. Handsaker, Katherine~H. Huang, Seva Kashin, Konrad~J.
+  Karczewski, Monkol Lek, Xiao Li, Daniel~G. MacArthur, Jared~L. Nedzel,
+  Duyen~T. Nguyen, Michael~S. Noble, Ayellet~V. Segrè, Casandra~A. Trowbridge,
+  Taru Tukiainen, Nathan~S. Abell, Brunilda Balliu, Ruth Barshir, Omer Basha,
+  Alexis Battle, Gireesh~K. Bogu, Andrew Brown, Christopher~D. Brown,
+  Stephane~E. Castel, Lin~S. Chen, Colby Chiang, Donald~F. Conrad, Farhan~N.
+  Damani, Joe~R. Davis, Olivier Delaneau, Emmanouil~T. Dermitzakis, Barbara~E.
+  Engelhardt, Eleazar Eskin, Pedro~G. Ferreira, Laure Frésard, Eric~R.
+  Gamazon, Diego Garrido-Martín, Ariel D.~H. Gewirtz, Genna Gliner, Michael~J.
+  Gloudemans, Roderic Guigo, Ira~M. Hall, Buhm Han, Yuan He, Farhad
+  Hormozdiari, Cedric Howald, Brian Jo, Eun~Yong Kang, Yungil Kim, Sarah
+  Kim-Hellmuth, Tuuli Lappalainen, Gen Li, Xin Li, Boxiang Liu, Serghei Mangul,
+  Mark~I. McCarthy, Ian~C. McDowell, Pejman Mohammadi, Jean Monlong, Stephen~B.
+  Montgomery, Manuel Muñoz-Aguirre, Anne~W. Ndungu, Andrew~B. Nobel, Meritxell
+  Oliva, Halit Ongen, John~J. Palowitch, Nikolaos Panousis, Panagiotis
+  Papasaikas, YoSon Park, Princy Parsana, Anthony~J. Payne, Christine~B.
+  Peterson, Jie Quan, Ferran Reverter, Chiara Sabatti, Ashis Saha, Michael
+  Sammeth, Alexandra~J. Scott, Andrey~A. Shabalin, Reza Sodaei, Matthew
+  Stephens, Barbara~E. Stranger, Benjamin~J. Strober, Jae~Hoon Sul, Emily~K.
+  Tsang, Sarah Urbut, Martijn van~de Bunt, Gao Wang, Xiaoquan Wen, Fred~A.
+  Wright, Hualin~S. Xi, Esti Yeger-Lotem, Zachary Zappala, Judith~B. Zaugg,
+  Yi-Hui Zhou, Joshua~M. Akey, Daniel Bates, Joanne Chan, Lin~S. Chen, Melina
+  Claussnitzer, Kathryn Demanelis, Morgan Diegel, Jennifer~A. Doherty,
+  Andrew~P. Feinberg, Marian~S. Fernando, Jessica Halow, Kasper~D. Hansen, Eric
+  Haugen, Peter~F. Hickey, Lei Hou, Farzana Jasmine, Ruiqi Jian, Lihua Jiang,
+  Audra Johnson, Rajinder Kaul, Manolis Kellis, Muhammad~G. Kibriya, Kristen
+  Lee, Jin~Billy Li, Qin Li, Xiao Li, Jessica Lin, Shin Lin, Sandra Linder,
+  Caroline Linke, Yaping Liu, Matthew~T. Maurano, Benoit Molinie, Stephen~B.
+  Montgomery, Jemma Nelson, Fidencio~J. Neri, Meritxell Oliva, Yongjin Park,
+  Brandon~L. Pierce, Nicola~J. Rinaldi, Lindsay~F. Rizzardi, Richard Sandstrom,
+  Andrew Skol, Kevin~S. Smith, Michael~P. Snyder, John Stamatoyannopoulos,
+  Barbara~E. Stranger, Hua Tang, Emily~K. Tsang, Li~Wang, Meng Wang, Nicholas
+  Van~Wittenberghe, Fan Wu, Rui Zhang, Concepcion~R. Nierras, Philip~A.
+  Branton, Latarsha~J. Carithers, Ping Guan, Helen~M. Moore, Abhi Rao,
+  Jimmie~B. Vaught, Sarah~E. Gould, Nicole~C. Lockart, Casey Martin, Jeffery~P.
+  Struewing, Simona Volpi, Anjene~M. Addington, Susan~E. Koester, A.~Roger
+  Little, Lori~E. Brigham, Richard Hasz, Marcus Hunter, Christopher Johns, Mark
+  Johnson, Gene Kopen, William~F. Leinweber, John~T. Lonsdale, Alisa McDonald,
+  Bernadette Mestichelli, Kevin Myer, Brian Roe, Michael Salvatore, Saboor
+  Shad, Jeffrey~A. Thomas, Gary Walters, Michael Washington, Joseph Wheeler,
+  Jason Bridge, Barbara~A. Foster, Bryan~M. Gillard, Ellen Karasik, Rachna
+  Kumar, Mark Miklos, Michael~T. Moser, Scott~D. Jewell, Robert~G. Montroy,
+  Daniel~C. Rohrer, Dana~R. Valley, David~A. Davis, Deborah~C. Mash, Anita~H.
+  Undale, Anna~M. Smith, David~E. Tabor, Nancy~V. Roche, Jeffrey~A. McLean,
+  Negin Vatanian, Karna~L. Robinson, Leslie Sobin, Mary~E. Barcus, Kimberly~M.
+  Valentino, Liqun Qi, Steven Hunter, Pushpa Hariharan, Shilpi Singh, Ki~Sung
+  Um, Takunda Matose, Maria~M. Tomaszewski, Laura~K. Barker, Maghboeba Mosavel,
+  Laura~A. Siminoff, Heather~M. Traino, Paul Flicek, Thomas Juettemann, Magali
+  Ruffier, Dan Sheppard, Kieron Taylor, Stephen~J. Trevanion, Daniel~R.
+  Zerbino, Brian Craft, Mary Goldman, Maximilian Haeussler, W.~James Kent,
+  Christopher~M. Lee, Benedict Paten, Kate~R. Rosenbloom, John Vivian, Jingchun
+  Zhu, Dan~L. Nicolae, Nancy~J. Cox, Hae~Kyung Im, GTEx Consortium, Data
+  Analysis & Coordinating Center (LDACC)-Analysis Working~Group Laboratory,
+  Statistical Methods groups-Analysis~Working Group, Enhancing~GTEx (eGTEx)
+  groups, N.~I. H.~Common Fund, NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA,
+  Biospecimen Collection~Source Site-NDrI, Biospecimen Collection~Source
+  Site-rPCI, Biospecimen~Core resource VArI, Brain Bank repository-University
+  of~Miami Brain Endowment~Bank, Leidos Biomedical-Project Management, E.~L.
+  S.~I. Study, Genome Browser Data Integration~& Visualization-EBI, and
+  University of California Santa~Cruz Genome Browser Data Integration &
+  Visualization-UCSC Genomics~Institute.
+\newblock Exploring the phenotypic consequences of tissue specific gene
+  expression variation inferred from gwas summary statistics.
+\newblock \emph{Nature Communications}, 9\penalty0 (1):\penalty0 1825, 2018.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-018-03621-1}.
+\newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
+
+\bibitem[Bondi et~al.(2017)Bondi, Edmonds, and Salmon]{Bondi2017}
+Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.
+\newblock Alzheimer's disease: Past, present, and future.
+\newblock \emph{Journal of the International Neuropsychological Society :
+  JINS}, 23\penalty0 (29198280):\penalty0 818--831, October 2017.
+\newblock ISSN 1355-6177.
+\newblock \doi{10.1017/S135561771700100X}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5830188/}.
+
+\bibitem[Cao and Moult(2014)]{Cao2014}
+Chen Cao and John Moult.
+\newblock Gwas and drug targets.
+\newblock \emph{BMC genomics}, 15 Suppl 4:\penalty0 S5, 2014.
+\newblock ISSN 1471-2164.
+\newblock \doi{10.1186/1471-2164-15-S4-S5}.
+
+\bibitem[Davey~Smith and Hemani(2014)]{DaveySmith2014}
+George Davey~Smith and Gibran Hemani.
+\newblock Mendelian randomization: genetic anchors for causal inference in
+  epidemiological studies.
+\newblock \emph{Human molecular genetics}, 23\penalty0 (25064373):\penalty0
+  R89--R98, September 2014.
+\newblock ISSN 0964-6906.
+\newblock \doi{10.1093/hmg/ddu328}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4170722/}.
+
+\bibitem[De~Strooper and Karran(2016)]{DeStrooper2016}
+Bart De~Strooper and Eric Karran.
+\newblock The cellular phase of alzheimer's disease.
+\newblock \emph{Cell}, 164:\penalty0 603--15, Feb 2016.
+\newblock \doi{https://doi.org/10.1016/j.cell.2015.12.056}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0092867415017201?via=ihub}.
+
+\bibitem[Finan et~al.(2017)Finan, Gaulton, Kruger, Lumbers, Shah, Engmann,
+  Galver, Kelley, Karlsson, Santos, Overington, Hingorani, and
+  Casas]{Finan2017}
+Chris Finan, Anna Gaulton, Felix~A. Kruger, R.~Thomas Lumbers, Tina Shah,
+  Jorgen Engmann, Luana Galver, Ryan Kelley, Anneli Karlsson, Rita Santos,
+  John~P. Overington, Aroon~D. Hingorani, and Juan~P. Casas.
+\newblock The druggable genome and support for target identification and
+  validation in drug development.
+\newblock \emph{Science translational medicine}, 9\penalty0
+  (28356508):\penalty0 eaag1166, March 2017.
+\newblock ISSN 1946-6234.
+\newblock \doi{10.1126/scitranslmed.aag1166}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6321762/}.
+
+\bibitem[Floris et~al.(2018)Floris, Olla, Schlessinger, and Cucca]{Floris2018}
+Matteo Floris, Stefania Olla, David Schlessinger, and Francesco Cucca.
+\newblock Genetic-driven druggable target identification and validation.
+\newblock \emph{Trends in genetics : TIG}, 34:\penalty0 558--570, July 2018.
+\newblock ISSN 0168-9525.
+\newblock \doi{10.1016/j.tig.2018.04.004}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6088790/}.
 
 \bibitem[Gerring et~al.(2020)Gerring, Lupton, Edey, Gamazon, and
   Derks]{Gerring2020}
@@ -17,32 +196,317 @@ Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
 \newblock \doi{10.1186/s13195-020-00611-8}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/}.
 
-\bibitem[Gns et~al.(2021)Gns, Rajalekshmi, and Burri]{Gns2021}
-Hema~Sree Gns, Saraswathy~Ganesan Rajalekshmi, and Raghunadha~R. Burri.
-\newblock Revelation of pivotal genes pertinent to alzheimer's pathogenesis: A
-  methodical evaluation of 32 geo datasets.
-\newblock \emph{Journal of molecular neuroscience : MN}, \penalty0
-  (34668150):\penalty0 1--20, October 2021.
-\newblock ISSN 0895-8696.
-\newblock \doi{10.1007/s12031-021-01919-2}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526053/}.
+\bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
+  Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
+  Stringer, Aarsland, Almdahl, Andersen, Bergh, Bettella, Bjornsson, Brækhus,
+  Bråthen, de~Leeuw, Desikan, Djurovic, Dumitrescu, Fladby, Hohman, Jonsson,
+  Kiddle, Rongve, Saltvedt, Sando, Selbæk, Shoai, Skene, Snaedal, Stordal,
+  Ulstein, Wang, White, Hardy, Hjerling-Leffler, Sullivan, van~der Flier,
+  Dobson, Davis, Stefansson, Stefansson, Pedersen, Ripke, Andreassen, and
+  Posthuma]{Jansen2019}
+Iris~E. Jansen, Jeanne~E. Savage, Kyoko Watanabe, Julien Bryois, Dylan~M.
+  Williams, Stacy Steinberg, Julia Sealock, Ida~K. Karlsson, Sara Hägg,
+  Lavinia Athanasiu, Nicola Voyle, Petroula Proitsi, Aree Witoelar, Sven
+  Stringer, Dag Aarsland, Ina~S. Almdahl, Fred Andersen, Sverre Bergh,
+  Francesco Bettella, Sigurbjorn Bjornsson, Anne Brækhus, Geir Bråthen,
+  Christiaan de~Leeuw, Rahul~S. Desikan, Srdjan Djurovic, Logan Dumitrescu,
+  Tormod Fladby, Timothy~J. Hohman, Palmi~V. Jonsson, Steven~J. Kiddle, Arvid
+  Rongve, Ingvild Saltvedt, Sigrid~B. Sando, Geir Selbæk, Maryam Shoai,
+  Nathan~G. Skene, Jon Snaedal, Eystein Stordal, Ingun~D. Ulstein, Yunpeng
+  Wang, Linda~R. White, John Hardy, Jens Hjerling-Leffler, Patrick~F. Sullivan,
+  Wiesje~M. van~der Flier, Richard Dobson, Lea~K. Davis, Hreinn Stefansson,
+  Kari Stefansson, Nancy~L. Pedersen, Stephan Ripke, Ole~A. Andreassen, and
+  Danielle Posthuma.
+\newblock Genome-wide meta-analysis identifies new loci and functional pathways
+  influencing alzheimer's disease risk.
+\newblock \emph{Nature genetics}, 51\penalty0 (30617256):\penalty0 404--413,
+  March 2019.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-018-0311-9}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6836675/}.
 
-\bibitem[Johnson et~al.(2022)Johnson, Carter, Dammer, Duong, Gerasimov, Liu,
-  Liu, Betarbet, Ping, Yin, Serrano, Beach, Peng, De~Jager, Haroutunian, Zhang,
-  Gaiteri, Bennett, Gearing, Wingo, Wingo, Lah, Levey, and
-  Seyfried]{Johnson2022}
-Erik C.~B. Johnson, E.~Kathleen Carter, Eric~B. Dammer, Duc~M. Duong,
-  Ekaterina~S. Gerasimov, Yue Liu, Jiaqi Liu, Ranjita Betarbet, Lingyan Ping,
-  Luming Yin, Geidy~E. Serrano, Thomas~G. Beach, Junmin Peng, Philip~L.
-  De~Jager, Vahram Haroutunian, Bin Zhang, Chris Gaiteri, David~A. Bennett,
-  Marla Gearing, Thomas~S. Wingo, Aliza~P. Wingo, James~J. Lah, Allan~I. Levey,
-  and Nicholas~T. Seyfried.
-\newblock Large-scale deep multi-layer analysis of alzheimer’s disease brain
-  reveals strong proteomic disease-related changes not observed at the rna
-  level.
-\newblock \emph{Nature Neuroscience}, 2022.
-\newblock ISSN 1546-1726.
-\newblock \doi{10.1038/s41593-021-00999-y}.
-\newblock URL \url{https://doi.org/10.1038/s41593-021-00999-y}.
+\bibitem[Kunkle et~al.(2019)Kunkle, Grenier-Boley, Sims, Bis, Damotte, Naj,
+  Boland, Vronskaya, van~der Lee, Amlie-Wolf, Bellenguez, Frizatti, Chouraki,
+  Martin, Sleegers, Badarinarayan, Jakobsdottir, Hamilton-Nelson, Moreno-Grau,
+  Olaso, Raybould, Chen, Kuzma, Hiltunen, Morgan, Ahmad, Vardarajan, Epelbaum,
+  Hoffmann, Boada, Beecham, Garnier, Harold, Fitzpatrick, Valladares, Moutet,
+  Gerrish, Smith, Qu, Bacq, Denning, Jian, Zhao, Del~Zompo, Fox, Choi, Mateo,
+  Hughes, Adams, Malamon, Sanchez-Garcia, Patel, Brody, Dombroski, Naranjo,
+  Daniilidou, Eiriksdottir, Mukherjee, Wallon, Uphill, Aspelund, Cantwell,
+  Garzia, Galimberti, Hofer, Butkiewicz, Fin, Scarpini, Sarnowski, Bush,
+  Meslage, Kornhuber, White, Song, Barber, Engelborghs, Sordon, Voijnovic,
+  Adams, Vandenberghe, Mayhaus, Cupples, Albert, De~Deyn, Gu, Himali, Beekly,
+  Squassina, Hartmann, Orellana, Blacker, Rodriguez-Rodriguez, Lovestone,
+  Garcia, Doody, Munoz-Fernadez, Sussams, Lin, Fairchild, Benito, Holmes,
+  Karamujić-Čomić, Frosch, Thonberg, Maier, Roshchupkin, Ghetti, Giedraitis,
+  Kawalia, Li, Huebinger, Kilander, Moebus, Hernández, Kamboh, Brundin,
+  Turton, Yang, Katz, Concari, Lord, Beiser, Keene, Helisalmi, Kloszewska,
+  Kukull, Koivisto, Lynch, Tarraga, Larson, Haapasalo, Lawlor, Mosley, Lipton,
+  Solfrizzi, Gill, Longstreth, Montine, Frisardi, Diez-Fairen, Rivadeneira,
+  Petersen, Deramecourt, Alvarez, Salani, Ciaramella, Boerwinkle, Reiman,
+  Fievet, Rotter, Reisch, Hanon, Cupidi, Andre~Uitterlinden, Royall, Dufouil,
+  Maletta, de~Rojas, Sano, Brice, Cecchetti, George-Hyslop, Ritchie, Tsolaki,
+  Tsuang, Dubois, Craig, Wu, Soininen, Avramidou, Albin, Fratiglioni, Germanou,
+  Apostolova, Keller, Koutroumani, Arnold, Panza, Gkatzima, Asthana, Hannequin,
+  Whitehead, Atwood, Caffarra, Hampel, Quintela, Carracedo, Lannfelt,
+  Rubinsztein, Barnes, Pasquier, Frölich, Barral, McGuinness, Beach, Johnston,
+  Becker, Passmore, Bigio, Schott, Bird, Warren, Boeve, Lupton, Bowen, Proitsi,
+  Boxer, Powell, Burke, Kauwe, Burns, Mancuso, Buxbaum, Bonuccelli, Cairns,
+  McQuillin, Cao, Livingston, Carlson, Bass, Carlsson, Hardy, Carney, Bras,
+  Carrasquillo, Guerreiro, Allen, Chui, Fisher, Masullo, Crocco, DeCarli,
+  Bisceglio, Dick, Ma, Duara, Graff-Radford, Evans, Hodges, Faber, Scherer,
+  Fallon, Riemenschneider, Fardo, Heun, Farlow, Kölsch, Ferris, Leber, Foroud,
+  Heuser, Galasko, Giegling, Gearing, Hüll, Geschwind, Gilbert, Morris, Green,
+  Mayo, Growdon, Feulner, Hamilton, Harrell, Drichel, Honig, Cushion,
+  Huentelman, Hollingworth, Hulette, Hyman, Marshall, Jarvik, Meggy, Abner,
+  Menzies, Jin, Leonenko, Real, Jun, Baldwin, Grozeva, Karydas, Russo, Kaye,
+  Kim, Jessen, Kowall, Vellas, Kramer, Vardy, LaFerla, Jöckel, Lah, Dichgans,
+  Leverenz, Mann, Levey, Pickering-Brown, Lieberman, Klopp, Lunetta, Wichmann,
+  Lyketsos, Morgan, Marson, Brown, Martiniuk, Medway, Mash, Nöthen, Masliah,
+  Hooper, McCormick, Daniele, McCurry, Bayer, McDavid, Gallacher, McKee,
+  van~den Bussche, Mesulam, Brayne, Miller, Riedel-Heller, Miller, Miller,
+  Al-Chalabi, Morris, Shaw, Myers, Wiltfang, O'Bryant, Olichney, Alvarez,
+  Parisi, Singleton, Paulson, Collinge, Perry, Mead, Peskind, Cribbs, Rossor,
+  Pierce, Ryan, Poon, Nacmias, Potter, Sorbi, Quinn, Sacchinelli, Raj,
+  Spalletta, Raskind, Caltagirone, Bossù, Orfei, Reisberg, Clarke, Reitz,
+  Smith, Ringman, Warden, Roberson, Wilcock, Rogaeva, Bruni, Rosen, Gallo,
+  Rosenberg, Ben-Shlomo, Sager, Mecocci, Saykin, Pastor, Cuccaro, Vance,
+  Schneider, Schneider, Slifer, Seeley, Smith, Sonnen, Spina, Stern, Swerdlow,
+  Tang, Tanzi, Trojanowski, Troncoso, Van~Deerlin, Van~Eldik, Vinters,
+  Vonsattel, Weintraub, Welsh-Bohmer, Wilhelmsen, Williamson, Wingo, Woltjer,
+  Wright, Yu, Yu, Saba, Pilotto, Bullido, Peters, Crane, Bennett, Bosco, Coto,
+  Boccardi, De~Jager, Lleo, Warner, Lopez, Ingelsson, Deloukas, Cruchaga,
+  Graff, Gwilliam, Fornage, Goate, Sanchez-Juan, Kehoe, Amin, Ertekin-Taner,
+  Berr, Debette, Love, Launer, Younkin, Dartigues, Corcoran, Ikram, Dickson,
+  Nicolas, Campion, Tschanz, Schmidt, Hakonarson, Clarimon, Munger, Schmidt,
+  Farrer, Van~Broeckhoven, C~O'Donovan, DeStefano, Jones, Haines, Deleuze,
+  Owen, Gudnason, Mayeux, Escott-Price, Psaty, Ramirez, Wang, Ruiz, van Duijn,
+  Holmans, Seshadri, Williams, Amouyel, Schellenberg, Lambert, Pericak-Vance,
+  (ADGC), (EADI), for Heart, in~Genomic Epidemiology Consortium~(CHARGE),
+  Genetic, Environmental Risk~in AD/Defining~Genetic, and for Alzheimer’s
+  Disease Consortium~(GERAD/PERADES)]{Kunkle2019}
+Brian~W. Kunkle, Benjamin Grenier-Boley, Rebecca Sims, Joshua~C. Bis, Vincent
+  Damotte, Adam~C. Naj, Anne Boland, Maria Vronskaya, Sven~J. van~der Lee,
+  Alexandre Amlie-Wolf, Céline Bellenguez, Aura Frizatti, Vincent Chouraki,
+  Eden~R. Martin, Kristel Sleegers, Nandini Badarinarayan, Johanna
+  Jakobsdottir, Kara~L. Hamilton-Nelson, Sonia Moreno-Grau, Robert Olaso,
+  Rachel Raybould, Yuning Chen, Amanda~B. Kuzma, Mikko Hiltunen, Taniesha
+  Morgan, Shahzad Ahmad, Badri~N. Vardarajan, Jacques Epelbaum, Per Hoffmann,
+  Merce Boada, Gary~W. Beecham, Jean-Guillaume Garnier, Denise Harold,
+  Annette~L. Fitzpatrick, Otto Valladares, Marie-Laure Moutet, Amy Gerrish,
+  Albert~V. Smith, Liming Qu, Delphine Bacq, Nicola Denning, Xueqiu Jian,
+  Yi~Zhao, Maria Del~Zompo, Nick~C. Fox, Seung-Hoan Choi, Ignacio Mateo,
+  Joseph~T. Hughes, Hieab~H. Adams, John Malamon, Florentino Sanchez-Garcia,
+  Yogen Patel, Jennifer~A. Brody, Beth~A. Dombroski, Maria Candida~Deniz
+  Naranjo, Makrina Daniilidou, Gudny Eiriksdottir, Shubhabrata Mukherjee, David
+  Wallon, James Uphill, Thor Aspelund, Laura~B. Cantwell, Fabienne Garzia,
+  Daniela Galimberti, Edith Hofer, Mariusz Butkiewicz, Bertrand Fin, Elio
+  Scarpini, Chloe Sarnowski, Will~S. Bush, Stéphane Meslage, Johannes
+  Kornhuber, Charles~C. White, Yuenjoo Song, Robert~C. Barber, Sebastiaan
+  Engelborghs, Sabrina Sordon, Dina Voijnovic, Perrie~M. Adams, Rik
+  Vandenberghe, Manuel Mayhaus, L.~Adrienne Cupples, Marilyn~S. Albert,
+  Peter~P. De~Deyn, Wei Gu, Jayanadra~J. Himali, Duane Beekly, Alessio
+  Squassina, Annette~M. Hartmann, Adelina Orellana, Deborah Blacker, Eloy
+  Rodriguez-Rodriguez, Simon Lovestone, Melissa~E. Garcia, Rachelle~S. Doody,
+  Carmen Munoz-Fernadez, Rebecca Sussams, Honghuang Lin, Thomas~J. Fairchild,
+  Yolanda~A. Benito, Clive Holmes, Hata Karamujić-Čomić, Matthew~P. Frosch,
+  Hakan Thonberg, Wolfgang Maier, Gennady Roshchupkin, Bernardino Ghetti,
+  Vilmantas Giedraitis, Amit Kawalia, Shuo Li, Ryan~M. Huebinger, Lena
+  Kilander, Susanne Moebus, Isabel Hernández, M.~Ilyas Kamboh, RoseMarie
+  Brundin, James Turton, Qiong Yang, Mindy~J. Katz, Letizia Concari, Jenny
+  Lord, Alexa~S. Beiser, C.~Dirk Keene, Seppo Helisalmi, Iwona Kloszewska,
+  Walter~A. Kukull, Anne~Maria Koivisto, Aoibhinn Lynch, Lluís Tarraga,
+  Eric~B. Larson, Annakaisa Haapasalo, Brian Lawlor, Thomas~H. Mosley,
+  Richard~B. Lipton, Vincenzo Solfrizzi, Michael Gill, Jr~Longstreth, W~T,
+  Thomas~J. Montine, Vincenza Frisardi, Monica Diez-Fairen, Fernando
+  Rivadeneira, Ronald~C. Petersen, Vincent Deramecourt, Ignacio Alvarez,
+  Francesca Salani, Antonio Ciaramella, Eric Boerwinkle, Eric~M. Reiman,
+  Nathalie Fievet, Jerome~I. Rotter, Joan~S. Reisch, Olivier Hanon, Chiara
+  Cupidi, A.~G. Andre~Uitterlinden, Donald~R. Royall, Carole Dufouil,
+  Raffaele~Giovanni Maletta, Itziar de~Rojas, Mary Sano, Alexis Brice, Roberta
+  Cecchetti, Peter~St George-Hyslop, Karen Ritchie, Magda Tsolaki, Debby~W.
+  Tsuang, Bruno Dubois, David Craig, Chuang-Kuo Wu, Hilkka Soininen, Despoina
+  Avramidou, Roger~L. Albin, Laura Fratiglioni, Antonia Germanou, Liana~G.
+  Apostolova, Lina Keller, Maria Koutroumani, Steven~E. Arnold, Francesco
+  Panza, Olymbia Gkatzima, Sanjay Asthana, Didier Hannequin, Patrice Whitehead,
+  Craig~S. Atwood, Paolo Caffarra, Harald Hampel, Inés Quintela, Ángel
+  Carracedo, Lars Lannfelt, David~C. Rubinsztein, Lisa~L. Barnes, Florence
+  Pasquier, Lutz Frölich, Sandra Barral, Bernadette McGuinness, Thomas~G.
+  Beach, Janet~A. Johnston, James~T. Becker, Peter Passmore, Eileen~H. Bigio,
+  Jonathan~M. Schott, Thomas~D. Bird, Jason~D. Warren, Bradley~F. Boeve,
+  Michelle~K. Lupton, James~D. Bowen, Petra Proitsi, Adam Boxer, John~F.
+  Powell, James~R. Burke, John S.~K. Kauwe, Jeffrey~M. Burns, Michelangelo
+  Mancuso, Joseph~D. Buxbaum, Ubaldo Bonuccelli, Nigel~J. Cairns, Andrew
+  McQuillin, Chuanhai Cao, Gill Livingston, Chris~S. Carlson, Nicholas~J. Bass,
+  Cynthia~M. Carlsson, John Hardy, Regina~M. Carney, Jose Bras, Minerva~M.
+  Carrasquillo, Rita Guerreiro, Mariet Allen, Helena~C. Chui, Elizabeth Fisher,
+  Carlo Masullo, Elizabeth~A. Crocco, Charles DeCarli, Gina Bisceglio, Malcolm
+  Dick, Li~Ma, Ranjan Duara, Neill~R. Graff-Radford, Denis~A. Evans, Angela
+  Hodges, Kelley~M. Faber, Martin Scherer, Kenneth~B. Fallon, Matthias
+  Riemenschneider, David~W. Fardo, Reinhard Heun, Martin~R. Farlow, Heike
+  Kölsch, Steven Ferris, Markus Leber, Tatiana~M. Foroud, Isabella Heuser,
+  Douglas~R. Galasko, Ina Giegling, Marla Gearing, Michael Hüll, Daniel~H.
+  Geschwind, John~R. Gilbert, John Morris, Robert~C. Green, Kevin Mayo, John~H.
+  Growdon, Thomas Feulner, Ronald~L. Hamilton, Lindy~E. Harrell, Dmitriy
+  Drichel, Lawrence~S. Honig, Thomas~D. Cushion, Matthew~J. Huentelman, Paul
+  Hollingworth, Christine~M. Hulette, Bradley~T. Hyman, Rachel Marshall,
+  Gail~P. Jarvik, Alun Meggy, Erin Abner, Georgina~E. Menzies, Lee-Way Jin,
+  Ganna Leonenko, Luis~M. Real, Gyungah~R. Jun, Clinton~T. Baldwin, Detelina
+  Grozeva, Anna Karydas, Giancarlo Russo, Jeffrey~A. Kaye, Ronald Kim, Frank
+  Jessen, Neil~W. Kowall, Bruno Vellas, Joel~H. Kramer, Emma Vardy, Frank~M.
+  LaFerla, Karl-Heinz Jöckel, James~J. Lah, Martin Dichgans, James~B.
+  Leverenz, David Mann, Allan~I. Levey, Stuart Pickering-Brown, Andrew~P.
+  Lieberman, Norman Klopp, Kathryn~L. Lunetta, H.-Erich Wichmann,
+  Constantine~G. Lyketsos, Kevin Morgan, Daniel~C. Marson, Kristelle Brown,
+  Frank Martiniuk, Christopher Medway, Deborah~C. Mash, Markus~M. Nöthen,
+  Eliezer Masliah, Nigel~M. Hooper, Wayne~C. McCormick, Antonio Daniele,
+  Susan~M. McCurry, Anthony Bayer, Andrew~N. McDavid, John Gallacher, Ann~C.
+  McKee, Hendrik van~den Bussche, Marsel Mesulam, Carol Brayne, Bruce~L.
+  Miller, Steffi Riedel-Heller, Carol~A. Miller, Joshua~W. Miller, Ammar
+  Al-Chalabi, John~C. Morris, Christopher~E. Shaw, Amanda~J. Myers, Jens
+  Wiltfang, Sid O'Bryant, John~M. Olichney, Victoria Alvarez, Joseph~E. Parisi,
+  Andrew~B. Singleton, Henry~L. Paulson, John Collinge, William~R. Perry, Simon
+  Mead, Elaine Peskind, David~H. Cribbs, Martin Rossor, Aimee Pierce,
+  Natalie~S. Ryan, Wayne~W. Poon, Benedetta Nacmias, Huntington Potter, Sandro
+  Sorbi, Joseph~F. Quinn, Eleonora Sacchinelli, Ashok Raj, Gianfranco
+  Spalletta, Murray Raskind, Carlo Caltagirone, Paola Bossù, Maria~Donata
+  Orfei, Barry Reisberg, Robert Clarke, Christiane Reitz, A.~David Smith,
+  John~M. Ringman, Donald Warden, Erik~D. Roberson, Gordon Wilcock, Ekaterina
+  Rogaeva, Amalia~Cecilia Bruni, Howard~J. Rosen, Maura Gallo, Roger~N.
+  Rosenberg, Yoav Ben-Shlomo, Mark~A. Sager, Patrizia Mecocci, Andrew~J.
+  Saykin, Pau Pastor, Michael~L. Cuccaro, Jeffery~M. Vance, Julie~A. Schneider,
+  Lori~S. Schneider, Susan Slifer, William~W. Seeley, Amanda~G. Smith,
+  Joshua~A. Sonnen, Salvatore Spina, Robert~A. Stern, Russell~H. Swerdlow,
+  Mitchell Tang, Rudolph~E. Tanzi, John~Q. Trojanowski, Juan~C. Troncoso,
+  Vivianna~M. Van~Deerlin, Linda~J. Van~Eldik, Harry~V. Vinters, Jean~Paul
+  Vonsattel, Sandra Weintraub, Kathleen~A. Welsh-Bohmer, Kirk~C. Wilhelmsen,
+  Jennifer Williamson, Thomas~S. Wingo, Randall~L. Woltjer, Clinton~B. Wright,
+  Chang-En Yu, Lei Yu, Yasaman Saba, Alberto Pilotto, Maria~J. Bullido, Oliver
+  Peters, Paul~K. Crane, David Bennett, Paola Bosco, Eliecer Coto, Virginia
+  Boccardi, Phil~L. De~Jager, Alberto Lleo, Nick Warner, Oscar~L. Lopez, Martin
+  Ingelsson, Panagiotis Deloukas, Carlos Cruchaga, Caroline Graff, Rhian
+  Gwilliam, Myriam Fornage, Alison~M. Goate, Pascual Sanchez-Juan, Patrick~G.
+  Kehoe, Najaf Amin, Nilifur Ertekin-Taner, Claudine Berr, Stéphanie Debette,
+  Seth Love, Lenore~J. Launer, Steven~G. Younkin, Jean-Francois Dartigues,
+  Chris Corcoran, M.~Arfan Ikram, Dennis~W. Dickson, Gael Nicolas, Dominique
+  Campion, JoAnn Tschanz, Helena Schmidt, Hakon Hakonarson, Jordi Clarimon, Ron
+  Munger, Reinhold Schmidt, Lindsay~A. Farrer, Christine Van~Broeckhoven,
+  Michael C~O'Donovan, Anita~L. DeStefano, Lesley Jones, Jonathan~L. Haines,
+  Jean-Francois Deleuze, Michael~J. Owen, Vilmundur Gudnason, Richard Mayeux,
+  Valentina Escott-Price, Bruce~M. Psaty, Alfredo Ramirez, Li-San Wang, Agustin
+  Ruiz, Cornelia~M. van Duijn, Peter~A. Holmans, Sudha Seshadri, Julie
+  Williams, Phillippe Amouyel, Gerard~D. Schellenberg, Jean-Charles Lambert,
+  Margaret~A. Pericak-Vance, Alzheimer Disease Genetics~Consortium (ADGC),
+  European Alzheimer’s Disease~Initiative (EADI), Cohorts for Heart,
+  Aging~Research in~Genomic Epidemiology Consortium~(CHARGE), Genetic,
+  Polygenic Environmental Risk~in AD/Defining~Genetic, and Environmental~Risk
+  for Alzheimer’s Disease Consortium~(GERAD/PERADES).
+\newblock Genetic meta-analysis of diagnosed alzheimer's disease identifies new
+  risk loci and implicates aβ, tau, immunity and lipid processing.
+\newblock \emph{Nature genetics}, 51\penalty0 (30820047):\penalty0 414--430,
+  March 2019.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-019-0358-2}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463297/}.
+
+\bibitem[Lawlor et~al.(2008)Lawlor, Harbord, Sterne, Timpson, and
+  Smith]{Lawlor2008}
+Debbie~A. Lawlor, Roger~M. Harbord, Jonathan A.~C. Sterne, Nic Timpson, and
+  George~Davey Smith.
+\newblock Mendelian randomization: Using genes as instruments for making causal
+  inferences in epidemiology.
+\newblock \emph{Statistics in Medicine}, 27\penalty0 (8):\penalty0 1133--1163,
+  2008.
+\newblock \doi{10.1002/sim.3034}.
+
+\bibitem[Masters et~al.(2015)Masters, Bateman, Blennow, Rowe, Sperling, and
+  Cummings]{Masters2015}
+Colin~L. Masters, Randall Bateman, Kaj Blennow, Christopher~C. Rowe, Reisa~A.
+  Sperling, and Jeffrey~L. Cummings.
+\newblock Alzheimer's disease.
+\newblock \emph{Nature reviews. Disease primers}, 1:\penalty0 15056, Oct 2015.
+\newblock URL \url{https://www.nature.com/articles/nrdp201556}.
+
+\bibitem[Schwartzentruber et~al.(2021)Schwartzentruber, Cooper, Liu,
+  Barrio-Hernandez, Bello, Kumasaka, Young, Franklin, Johnson, Estrada,
+  Gaffney, Beltrao, and Bassett]{Schwartzentruber2021}
+Jeremy Schwartzentruber, Sarah Cooper, Jimmy~Z. Liu, Inigo Barrio-Hernandez,
+  Erica Bello, Natsuhiko Kumasaka, Adam M.~H. Young, Robin J.~M. Franklin, Toby
+  Johnson, Karol Estrada, Daniel~J. Gaffney, Pedro Beltrao, and Andrew Bassett.
+\newblock Genome-wide meta-analysis, fine-mapping and integrative
+  prioritization implicate new alzheimer's disease risk genes.
+\newblock \emph{Nature genetics}, 53\penalty0 (33589840):\penalty0 392--402,
+  March 2021.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-020-00776-w}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610386/}.
+
+\bibitem[Wen et~al.(2017)Wen, Pique-Regi, and Luca]{Wen2017}
+Xiaoquan Wen, Roger Pique-Regi, and Francesca Luca.
+\newblock Integrating molecular qtl data into genome-wide genetic association
+  analysis: Probabilistic assessment of enrichment and colocalization.
+\newblock \emph{PLOS Genetics}, 13\penalty0 (3):\penalty0 e1006646, March 2017.
+\newblock \doi{10.1371/journal.pgen.1006646}.
+\newblock URL \url{https://doi.org/10.1371/journal.pgen.1006646}.
+
+\bibitem[Wightman et~al.(2021)Wightman, Jansen, Savage, Shadrin, Bahrami,
+  Holland, Rongve, Børte, Winsvold, Drange, Martinsen, Skogholt, Willer,
+  Bråthen, Bosnes, Nielsen, Fritsche, Thomas, Pedersen, Gabrielsen, Johnsen,
+  Meisingset, Zhou, Proitsi, Hodges, Dobson, Velayudhan, Sealock, Davis,
+  Pedersen, Reynolds, Karlsson, Magnusson, Stefansson, Thordardottir, Jonsson,
+  Snaedal, Zettergren, Skoog, Kern, Waern, Zetterberg, Blennow, Stordal, Hveem,
+  Zwart, Athanasiu, Selnes, Saltvedt, Sando, Ulstein, Djurovic, Fladby,
+  Aarsland, Selbæk, Ripke, Stefansson, Andreassen, and Posthuma]{Wightman2021}
+Douglas~P. Wightman, Iris~E. Jansen, Jeanne~E. Savage, Alexey~A. Shadrin,
+  Shahram Bahrami, Dominic Holland, Arvid Rongve, Sigrid Børte, Bendik~S.
+  Winsvold, Ole~Kristian Drange, Amy~E. Martinsen, Anne~Heidi Skogholt, Cristen
+  Willer, Geir Bråthen, Ingunn Bosnes, Jonas~Bille Nielsen, Lars~G. Fritsche,
+  Laurent~F. Thomas, Linda~M. Pedersen, Maiken~E. Gabrielsen, Marianne~Bakke
+  Johnsen, Tore~Wergeland Meisingset, Wei Zhou, Petroula Proitsi, Angela
+  Hodges, Richard Dobson, Latha Velayudhan, Julia~M. Sealock, Lea~K. Davis,
+  Nancy~L. Pedersen, Chandra~A. Reynolds, Ida~K. Karlsson, Sigurdur Magnusson,
+  Hreinn Stefansson, Steinunn Thordardottir, Palmi~V. Jonsson, Jon Snaedal,
+  Anna Zettergren, Ingmar Skoog, Silke Kern, Margda Waern, Henrik Zetterberg,
+  Kaj Blennow, Eystein Stordal, Kristian Hveem, John-Anker Zwart, Lavinia
+  Athanasiu, Per Selnes, Ingvild Saltvedt, Sigrid~B. Sando, Ingun Ulstein,
+  Srdjan Djurovic, Tormod Fladby, Dag Aarsland, Geir Selbæk, Stephan Ripke,
+  Kari Stefansson, Ole~A. Andreassen, and Danielle Posthuma.
+\newblock A genome-wide association study with 1,126,563 individuals identifies
+  new risk loci for alzheimer's disease.
+\newblock \emph{Nature genetics}, 53:\penalty0 1276--1282, Sep 2021.
+\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/34493870/}.
+
+\bibitem[Wingo et~al.(2021)Wingo, Liu, Gerasimov, Gockley, Logsdon, Duong,
+  Dammer, Robins, Beach, Reiman, Epstein, De~Jager, Lah, Bennett, Seyfried,
+  Levey, and Wingo]{Wingo2021}
+Aliza~P. Wingo, Yue Liu, Ekaterina~S. Gerasimov, Jake Gockley, Benjamin~A.
+  Logsdon, Duc~M. Duong, Eric~B. Dammer, Chloe Robins, Thomas~G. Beach, Eric~M.
+  Reiman, Michael~P. Epstein, Philip~L. De~Jager, James~J. Lah, David~A.
+  Bennett, Nicholas~T. Seyfried, Allan~I. Levey, and Thomas~S. Wingo.
+\newblock Integrating human brain proteomes with genome-wide association data
+  implicates new proteins in alzheimer's disease pathogenesis.
+\newblock \emph{Nature genetics}, 53\penalty0 (33510477):\penalty0 143--146,
+  February 2021.
+\newblock ISSN 1061-4036.
+\newblock \doi{10.1038/s41588-020-00773-z}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8130821/}.
+
+\bibitem[Zhang et~al.(2020)Zhang, Sidorenko, Couvy-Duchesne, Marioni, Wright,
+  Goate, Marcora, Huang, Porter, Laws, Biomarkers, Study, Sachdev, Mather,
+  Armstrong, Thalamuthu, Brodaty, Yengo, Yang, Wray, McRae, and
+  Visscher]{Zhang2020}
+Qian Zhang, Julia Sidorenko, Baptiste Couvy-Duchesne, Riccardo~E. Marioni,
+  Margaret~J. Wright, Alison~M. Goate, Edoardo Marcora, Kuan-Lin Huang,
+  Tenielle Porter, Simon~M. Laws, Australian~Imaging Biomarkers,
+  Lifestyle~(AIBL) Study, Perminder~S. Sachdev, Karen~A. Mather, Nicola~J.
+  Armstrong, Anbupalam Thalamuthu, Henry Brodaty, Loic Yengo, Jian Yang,
+  Naomi~R. Wray, Allan~F. McRae, and Peter~M. Visscher.
+\newblock Risk prediction of late-onset alzheimer's disease implies an
+  oligogenic architecture.
+\newblock \emph{Nature communications}, 11\penalty0 (32968074):\penalty0
+  4799--4799, September 2020.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-020-18534-1}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7511365/}.
 
 \end{thebibliography}
