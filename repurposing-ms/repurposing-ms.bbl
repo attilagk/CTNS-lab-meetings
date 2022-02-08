@@ -1,0 +1,48 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gerring et~al.(2020)Gerring, Lupton, Edey, Gamazon, and
+  Derks]{Gerring2020}
+Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
+  Eske~M. Derks.
+\newblock An analysis of genetically regulated gene expression across multiple
+  tissues implicates novel gene candidates in alzheimer's disease.
+\newblock \emph{Alzheimer's research & therapy}, 12\penalty0
+  (32299494):\penalty0 43--43, April 2020.
+\newblock ISSN 1758-9193.
+\newblock \doi{10.1186/s13195-020-00611-8}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/}.
+
+\bibitem[Gns et~al.(2021)Gns, Rajalekshmi, and Burri]{Gns2021}
+Hema~Sree Gns, Saraswathy~Ganesan Rajalekshmi, and Raghunadha~R. Burri.
+\newblock Revelation of pivotal genes pertinent to alzheimer's pathogenesis: A
+  methodical evaluation of 32 geo datasets.
+\newblock \emph{Journal of molecular neuroscience : MN}, \penalty0
+  (34668150):\penalty0 1--20, October 2021.
+\newblock ISSN 0895-8696.
+\newblock \doi{10.1007/s12031-021-01919-2}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8526053/}.
+
+\bibitem[Johnson et~al.(2022)Johnson, Carter, Dammer, Duong, Gerasimov, Liu,
+  Liu, Betarbet, Ping, Yin, Serrano, Beach, Peng, De~Jager, Haroutunian, Zhang,
+  Gaiteri, Bennett, Gearing, Wingo, Wingo, Lah, Levey, and
+  Seyfried]{Johnson2022}
+Erik C.~B. Johnson, E.~Kathleen Carter, Eric~B. Dammer, Duc~M. Duong,
+  Ekaterina~S. Gerasimov, Yue Liu, Jiaqi Liu, Ranjita Betarbet, Lingyan Ping,
+  Luming Yin, Geidy~E. Serrano, Thomas~G. Beach, Junmin Peng, Philip~L.
+  De~Jager, Vahram Haroutunian, Bin Zhang, Chris Gaiteri, David~A. Bennett,
+  Marla Gearing, Thomas~S. Wingo, Aliza~P. Wingo, James~J. Lah, Allan~I. Levey,
+  and Nicholas~T. Seyfried.
+\newblock Large-scale deep multi-layer analysis of alzheimer’s disease brain
+  reveals strong proteomic disease-related changes not observed at the rna
+  level.
+\newblock \emph{Nature Neuroscience}, 2022.
+\newblock ISSN 1546-1726.
+\newblock \doi{10.1038/s41593-021-00999-y}.
+\newblock URL \url{https://doi.org/10.1038/s41593-021-00999-y}.
+
+\end{thebibliography}
