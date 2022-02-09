@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -161,6 +161,217 @@ Feixiong Cheng, Rishi~J. Desai, Diane~E. Handy, Ruisheng Wang, Sebastian
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/s41467-018-05116-5}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043492/}.
+
+\bibitem[Consortium et~al.(2018)Consortium, Anttila, Bulik-Sullivan, Finucane,
+  Walters, Bras, Duncan, Escott-Price, Falcone, Gormley, Malik, Patsopoulos,
+  Ripke, Wei, Yu, Lee, Turley, Grenier-Boley, Chouraki, Kamatani, Berr,
+  Letenneur, Hannequin, Amouyel, Boland, Deleuze, Duron, Vardarajan, Reitz,
+  Goate, Huentelman, Kamboh, Larson, Rogaeva, St~George-Hyslop, Hakonarson,
+  Kukull, Farrer, Barnes, Beach, Demirci, Head, Hulette, Jicha, Kauwe, Kaye,
+  Leverenz, Levey, Lieberman, Pankratz, Poon, Quinn, Saykin, Schneider, Smith,
+  Sonnen, Stern, Van~Deerlin, Van~Eldik, Harold, Russo, Rubinsztein, Bayer,
+  Tsolaki, Proitsi, Fox, Hampel, Owen, Mead, Passmore, Morgan, Nöthen, Rossor,
+  Lupton, Hoffmann, Kornhuber, Lawlor, McQuillin, Al-Chalabi, Bis, Ruiz, Boada,
+  Seshadri, Beiser, Rice, van~der Lee, De~Jager, Geschwind, Riemenschneider,
+  Riedel-Heller, Rotter, Ransmayr, Hyman, Cruchaga, Alegret, Winsvold, Palta,
+  Farh, Cuenca-Leon, Furlotte, Kurth, Ligthart, Terwindt, Freilinger, Ran,
+  Gordon, Borck, Adams, Lehtimäki, Wedenoja, Buring, Schürks, Hrafnsdottir,
+  Hottenga, Penninx, Artto, Kaunisto, Vepsäläinen, Martin, Montgomery, Kurki,
+  Hämäläinen, Huang, Huang, Sandor, Webber, Muller-Myhsok, Schreiber,
+  Salomaa, Loehrer, Göbel, Macaya, Pozo-Rosich, Hansen, Werge, Kaprio,
+  Metspalu, Kubisch, Ferrari, Belin, van~den Maagdenberg, Zwart, Boomsma,
+  Eriksson, Olesen, Chasman, Nyholt, Avbersek, Baum, Berkovic, Bradfield,
+  Buono, Catarino, Cossette, De~Jonghe, Depondt, Dlugos, Ferraro, French,
+  Hjalgrim, Jamnadas-Khoda, Kälviäinen, Kunz, Lerche, Leu, Lindhout, Lo,
+  Lowenstein, McCormack, Møller, Molloy, Ng, Oliver, Privitera, Radtke,
+  Ruppert, Sander, Schachter, Schankin, Scheffer, Schoch, Sisodiya, Smith,
+  Sperling, Striano, Surges, Thomas, Visscher, Whelan, Zara, Heinzen, Marson,
+  Becker, Stroink, Zimprich, Gasser, Gibbs, Heutink, Martinez, Morris, Sharma,
+  Ryten, Mok, Pulit, Bevan, Holliday, Attia, Battey, Boncoraglio, Thijs, Chen,
+  Mitchell, Rothwell, Sharma, Sudlow, Vicente, Markus, Kourkoulis, Pera,
+  Raffeld, Silliman, Boraska~Perica, Thornton, Huckins, William~Rayner, Lewis,
+  Gratacos, Rybakowski, Keski-Rahkonen, Raevuori, Hudson, Reichborn-Kjennerud,
+  Monteleone, Karwautz, Mannik, Baker, O'Toole, Trace, Davis, Helder, Ehrlich,
+  Herpertz-Dahlmann, Danner, van Elburg, Clementi, Forzan, Docampo, Lissowska,
+  Hauser, Tortorella, Maj, Gonidakis, Tziouvas, Papezova, Yilmaz, Wagner,
+  Cohen-Woods, Herms, Julià, Rabionet, Dick, Ripatti, Andreassen, Espeseth,
+  Lundervold, Steen, Pinto, Scherer, Aschauer, Schosser, Alfredsson, Padyukov,
+  Halmi, Mitchell, Strober, Bergen, Kaye, Szatkiewicz, Cormand, Ramos-Quiroga,
+  Sánchez-Mora, Ribasés, Casas, Hervas, Arranz, Haavik, Zayats, Johansson,
+  Williams, Dempfle, Rothenberger, Kuntsi, Oades, Banaschewski, Franke,
+  Buitelaar, Arias~Vasquez, Doyle, Reif, Lesch, Freitag, Rivero, Palmason,
+  Romanos, Langley, Rietschel, Witt, Dalsgaard, Børglum, Waldman, Wilmot,
+  Molly, Bau, Crosbie, Schachar, Loo, McGough, Grevet, Medland, Robinson,
+  Weiss, Bacchelli, Bailey, Bal, Battaglia, Betancur, Bolton, Cantor,
+  Celestino-Soper, Dawson, De~Rubeis, Duque, Green, Klauck, Leboyer, Levitt,
+  Maestrini, Mane, De-Luca, Parr, Regan, Reichenberg, Sandin, Vorstman,
+  Wassink, Wijsman, Cook, Santangelo, Delorme, Rogé, Magalhaes, Arking,
+  Schulze, Thompson, Strohmaier, Matthews, Melle, Morris, Blackwood, McIntosh,
+  Bergen, Schalling, Jamain, Maaser, Fischer, Reinbold, Fullerton,
+  Guzman-Parra, Mayoral, Schofield, Cichon, Mühleisen, Degenhardt, Schumacher,
+  Bauer, Mitchell, Gershon, Rice, Potash, Zandi, Craddock, Ferrier, Alda,
+  Rouleau, Turecki, Ophoff, Pato, Anjorin, Stahl, Leber, Czerski, Cruceanu,
+  Jones, Posthuma, Andlauer, Forstner, Streit, Baune, Air, Sinnamon, Wray,
+  MacIntyre, Porteous, Homuth, Rivera, Grove, Middeldorp, Hickie, Pergadia,
+  Mehta, Smit, Jansen, de~Geus, Dunn, Li, Nauck, Schoevers, Beekman, Knowles,
+  Viktorin, Arnold, Barr, Bedoya-Berrio, Bienvenu, Brentani, Burton, Camarena,
+  Cappi, Cath, Cavallini, Cusi, Darrow, Denys, Derks, Dietrich, Fernandez,
+  Figee, Freimer, Gerber, Grados, Greenberg, Hanna, Hartmann, Hirschtritt,
+  Hoekstra, Huang, Huyser, Illmann, Jenike, Kuperman, Leventhal, Lochner, Lyon,
+  Macciardi, Madruga-Garrido, Malaty, Maras, McGrath, Miguel, Mir, Nestadt,
+  Nicolini, Okun, Pakstis, Paschou, Piacentini, Pittenger, Plessen, Ramensky,
+  Ramos, Reus, Richter, Riddle, Robertson, Roessner, Rosário, Samuels, Sandor,
+  Stein, Tsetsos, Van~Nieuwerburgh, Weatherall, Wendland, Wolanczyk, Worbe,
+  Zai, Goes, McLaughlin, Nestadt, Grabe, Depienne, Konkashbaev, Lanzagorta,
+  Valencia-Duarte, Bramon, Buccola, Cahn, Cairns, Chong, Cohen, Crespo-Facorro,
+  Crowley, Davidson, DeLisi, Dinan, Donohoe, Drapeau, Duan, Haan, Hougaard,
+  Karachanak-Yankova, Khrunin, Klovins, Kučinskas, Lee Chee~Keong, Limborska,
+  Loughland, Lönnqvist, Maher, Mattheisen, McDonald, Murphy, Nenadic, van Os,
+  Pantelis, Pato, Petryshen, Quested, Roussos, Sanders, Schall, Schwab, Sim,
+  So, Stögmann, Subramaniam, Toncheva, Waddington, Walters, Weiser, Cheng,
+  Cloninger, Curtis, Gejman, Henskens, Mattingsdal, Oh, Scott, Webb, Breen,
+  Churchhouse, Bulik, Daly, Dichgans, Faraone, Guerreiro, Holmans, Kendler,
+  Koeleman, Mathews, Price, Scharf, Sklar, Williams, Wood, Cotsapas, Palotie,
+  Smoller, Sullivan, Rosand, Corvin, Neale, Schott, Anney, Elia,
+  Grigoroiu-Serbanescu, Edenberg, and Murray]{Consortium2018}
+Brainstorm Consortium, Verneri Anttila, Brendan Bulik-Sullivan, Hilary~K.
+  Finucane, Raymond~K. Walters, Jose Bras, Laramie Duncan, Valentina
+  Escott-Price, Guido~J. Falcone, Padhraig Gormley, Rainer Malik, Nikolaos~A.
+  Patsopoulos, Stephan Ripke, Zhi Wei, Dongmei Yu, Phil~H. Lee, Patrick Turley,
+  Benjamin Grenier-Boley, Vincent Chouraki, Yoichiro Kamatani, Claudine Berr,
+  Luc Letenneur, Didier Hannequin, Philippe Amouyel, Anne Boland,
+  Jean-François Deleuze, Emmanuelle Duron, Badri~N. Vardarajan, Christiane
+  Reitz, Alison~M. Goate, Matthew~J. Huentelman, M.~Ilyas Kamboh, Eric~B.
+  Larson, Ekaterina Rogaeva, Peter St~George-Hyslop, Hakon Hakonarson,
+  Walter~A. Kukull, Lindsay~A. Farrer, Lisa~L. Barnes, Thomas~G. Beach,
+  F.~Yesim Demirci, Elizabeth Head, Christine~M. Hulette, Gregory~A. Jicha,
+  John S.~K. Kauwe, Jeffrey~A. Kaye, James~B. Leverenz, Allan~I. Levey,
+  Andrew~P. Lieberman, Vernon~S. Pankratz, Wayne~W. Poon, Joseph~F. Quinn,
+  Andrew~J. Saykin, Lon~S. Schneider, Amanda~G. Smith, Joshua~A. Sonnen,
+  Robert~A. Stern, Vivianna~M. Van~Deerlin, Linda~J. Van~Eldik, Denise Harold,
+  Giancarlo Russo, David~C. Rubinsztein, Anthony Bayer, Magda Tsolaki, Petra
+  Proitsi, Nick~C. Fox, Harald Hampel, Michael~J. Owen, Simon Mead, Peter
+  Passmore, Kevin Morgan, Markus~M. Nöthen, Martin Rossor, Michelle~K. Lupton,
+  Per Hoffmann, Johannes Kornhuber, Brian Lawlor, Andrew McQuillin, Ammar
+  Al-Chalabi, Joshua~C. Bis, Agustin Ruiz, Mercè Boada, Sudha Seshadri, Alexa
+  Beiser, Kenneth Rice, Sven~J. van~der Lee, Philip~L. De~Jager, Daniel~H.
+  Geschwind, Matthias Riemenschneider, Steffi Riedel-Heller, Jerome~I. Rotter,
+  Gerhard Ransmayr, Bradley~T. Hyman, Carlos Cruchaga, Montserrat Alegret,
+  Bendik Winsvold, Priit Palta, Kai-How Farh, Ester Cuenca-Leon, Nicholas
+  Furlotte, Tobias Kurth, Lannie Ligthart, Gisela~M. Terwindt, Tobias
+  Freilinger, Caroline Ran, Scott~D. Gordon, Guntram Borck, Hieab H.~H. Adams,
+  Terho Lehtimäki, Juho Wedenoja, Julie~E. Buring, Markus Schürks, Maria
+  Hrafnsdottir, Jouke-Jan Hottenga, Brenda Penninx, Ville Artto, Mari Kaunisto,
+  Salli Vepsäläinen, Nicholas~G. Martin, Grant~W. Montgomery, Mitja~I. Kurki,
+  Eija Hämäläinen, Hailiang Huang, Jie Huang, Cynthia Sandor, Caleb Webber,
+  Bertram Muller-Myhsok, Stefan Schreiber, Veikko Salomaa, Elizabeth Loehrer,
+  Hartmut Göbel, Alfons Macaya, Patricia Pozo-Rosich, Thomas Hansen, Thomas
+  Werge, Jaakko Kaprio, Andres Metspalu, Christian Kubisch, Michel~D. Ferrari,
+  Andrea~C. Belin, Arn M. J.~M. van~den Maagdenberg, John-Anker Zwart, Dorret
+  Boomsma, Nicholas Eriksson, Jes Olesen, Daniel~I. Chasman, Dale~R. Nyholt,
+  Andreja Avbersek, Larry Baum, Samuel Berkovic, Jonathan Bradfield, Russell~J.
+  Buono, Claudia~B. Catarino, Patrick Cossette, Peter De~Jonghe, Chantal
+  Depondt, Dennis Dlugos, Thomas~N. Ferraro, Jacqueline French, Helle Hjalgrim,
+  Jennifer Jamnadas-Khoda, Reetta Kälviäinen, Wolfram~S. Kunz, Holger Lerche,
+  Costin Leu, Dick Lindhout, Warren Lo, Daniel Lowenstein, Mark McCormack,
+  Rikke~S. Møller, Anne Molloy, Ping-Wing Ng, Karen Oliver, Michael Privitera,
+  Rodney Radtke, Ann-Kathrin Ruppert, Thomas Sander, Steven Schachter,
+  Christoph Schankin, Ingrid Scheffer, Susanne Schoch, Sanjay~M. Sisodiya,
+  Philip Smith, Michael Sperling, Pasquale Striano, Rainer Surges, G.~Neil
+  Thomas, Frank Visscher, Christopher~D. Whelan, Federico Zara, Erin~L.
+  Heinzen, Anthony Marson, Felicitas Becker, Hans Stroink, Fritz Zimprich,
+  Thomas Gasser, Raphael Gibbs, Peter Heutink, Maria Martinez, Huw~R. Morris,
+  Manu Sharma, Mina Ryten, Kin~Y. Mok, Sara Pulit, Steve Bevan, Elizabeth
+  Holliday, John Attia, Thomas Battey, Giorgio Boncoraglio, Vincent Thijs,
+  Wei-Min Chen, Braxton Mitchell, Peter Rothwell, Pankaj Sharma, Cathie Sudlow,
+  Astrid Vicente, Hugh Markus, Christina Kourkoulis, Joana Pera, Miriam
+  Raffeld, Scott Silliman, Vesna Boraska~Perica, Laura~M. Thornton, Laura~M.
+  Huckins, N.~William~Rayner, Cathryn~M. Lewis, Monica Gratacos, Filip
+  Rybakowski, Anna Keski-Rahkonen, Anu Raevuori, James~I. Hudson, Ted
+  Reichborn-Kjennerud, Palmiero Monteleone, Andreas Karwautz, Katrin Mannik,
+  Jessica~H. Baker, Julie~K. O'Toole, Sara~E. Trace, Oliver S.~P. Davis,
+  Sietske~G. Helder, Stefan Ehrlich, Beate Herpertz-Dahlmann, Unna~N. Danner,
+  Annemarie~A. van Elburg, Maurizio Clementi, Monica Forzan, Elisa Docampo,
+  Jolanta Lissowska, Joanna Hauser, Alfonso Tortorella, Mario Maj, Fragiskos
+  Gonidakis, Konstantinos Tziouvas, Hana Papezova, Zeynep Yilmaz, Gudrun
+  Wagner, Sarah Cohen-Woods, Stefan Herms, Antonio Julià, Raquel Rabionet,
+  Danielle~M. Dick, Samuli Ripatti, Ole~A. Andreassen, Thomas Espeseth,
+  Astri~J. Lundervold, Vidar~M. Steen, Dalila Pinto, Stephen~W. Scherer, Harald
+  Aschauer, Alexandra Schosser, Lars Alfredsson, Leonid Padyukov, Katherine~A.
+  Halmi, James Mitchell, Michael Strober, Andrew~W. Bergen, Walter Kaye,
+  Jin~Peng Szatkiewicz, Bru Cormand, Josep~Antoni Ramos-Quiroga, Cristina
+  Sánchez-Mora, Marta Ribasés, Miguel Casas, Amaia Hervas, Maria~Jesús
+  Arranz, Jan Haavik, Tetyana Zayats, Stefan Johansson, Nigel Williams, Astrid
+  Dempfle, Aribert Rothenberger, Jonna Kuntsi, Robert~D. Oades, Tobias
+  Banaschewski, Barbara Franke, Jan~K. Buitelaar, Alejandro Arias~Vasquez,
+  Alysa~E. Doyle, Andreas Reif, Klaus-Peter Lesch, Christine Freitag, Olga
+  Rivero, Haukur Palmason, Marcel Romanos, Kate Langley, Marcella Rietschel,
+  Stephanie~H. Witt, Soeren Dalsgaard, Anders~D. Børglum, Irwin Waldman, Beth
+  Wilmot, Nikolas Molly, Claiton H.~D. Bau, Jennifer Crosbie, Russell Schachar,
+  Sandra~K. Loo, James~J. McGough, Eugenio~H. Grevet, Sarah~E. Medland, Elise
+  Robinson, Lauren~A. Weiss, Elena Bacchelli, Anthony Bailey, Vanessa Bal,
+  Agatino Battaglia, Catalina Betancur, Patrick Bolton, Rita Cantor, Patrícia
+  Celestino-Soper, Geraldine Dawson, Silvia De~Rubeis, Frederico Duque, Andrew
+  Green, Sabine~M. Klauck, Marion Leboyer, Pat Levitt, Elena Maestrini,
+  Shrikant Mane, Daniel~Moreno De-Luca, Jeremy Parr, Regina Regan, Abraham
+  Reichenberg, Sven Sandin, Jacob Vorstman, Thomas Wassink, Ellen Wijsman,
+  Edwin Cook, Susan Santangelo, Richard Delorme, Bernadette Rogé, Tiago
+  Magalhaes, Dan Arking, Thomas~G. Schulze, Robert~C. Thompson, Jana
+  Strohmaier, Keith Matthews, Ingrid Melle, Derek Morris, Douglas Blackwood,
+  Andrew McIntosh, Sarah~E. Bergen, Martin Schalling, Stéphane Jamain, Anna
+  Maaser, Sascha~B. Fischer, Céline~S. Reinbold, Janice~M. Fullerton, José
+  Guzman-Parra, Fermin Mayoral, Peter~R. Schofield, Sven Cichon, Thomas~W.
+  Mühleisen, Franziska Degenhardt, Johannes Schumacher, Michael Bauer,
+  Philip~B. Mitchell, Elliot~S. Gershon, John Rice, James~B. Potash, Peter~P.
+  Zandi, Nick Craddock, I.~Nicol Ferrier, Martin Alda, Guy~A. Rouleau, Gustavo
+  Turecki, Roel Ophoff, Carlos Pato, Adebayo Anjorin, Eli Stahl, Markus Leber,
+  Piotr~M. Czerski, Cristiana Cruceanu, Ian~R. Jones, Danielle Posthuma, Till
+  F.~M. Andlauer, Andreas~J. Forstner, Fabian Streit, Bernhard~T. Baune, Tracy
+  Air, Grant Sinnamon, Naomi~R. Wray, Donald~J. MacIntyre, David Porteous,
+  Georg Homuth, Margarita Rivera, Jakob Grove, Christel~M. Middeldorp, Ian
+  Hickie, Michele Pergadia, Divya Mehta, Johannes~H. Smit, Rick Jansen, Eco
+  de~Geus, Erin Dunn, Qingqin~S. Li, Matthias Nauck, Robert~A. Schoevers,
+  Aartjan~Tf Beekman, James~A. Knowles, Alexander Viktorin, Paul Arnold,
+  Cathy~L. Barr, Gabriel Bedoya-Berrio, O.~Joseph Bienvenu, Helena Brentani,
+  Christie Burton, Beatriz Camarena, Carolina Cappi, Danielle Cath, Maria
+  Cavallini, Daniele Cusi, Sabrina Darrow, Damiaan Denys, Eske~M. Derks, Andrea
+  Dietrich, Thomas Fernandez, Martijn Figee, Nelson Freimer, Gloria Gerber,
+  Marco Grados, Erica Greenberg, Gregory~L. Hanna, Andreas Hartmann, Matthew~E.
+  Hirschtritt, Pieter~J. Hoekstra, Alden Huang, Chaim Huyser, Cornelia Illmann,
+  Michael Jenike, Samuel Kuperman, Bennett Leventhal, Christine Lochner,
+  Gholson~J. Lyon, Fabio Macciardi, Marcos Madruga-Garrido, Irene~A. Malaty,
+  Athanasios Maras, Lauren McGrath, Eurípedes~C. Miguel, Pablo Mir, Gerald
+  Nestadt, Humberto Nicolini, Michael~S. Okun, Andrew Pakstis, Peristera
+  Paschou, John Piacentini, Christopher Pittenger, Kerstin Plessen, Vasily
+  Ramensky, Eliana~M. Ramos, Victor Reus, Margaret~A. Richter, Mark~A. Riddle,
+  Mary~M. Robertson, Veit Roessner, Maria Rosário, Jack~F. Samuels, Paul
+  Sandor, Dan~J. Stein, Fotis Tsetsos, Filip Van~Nieuwerburgh, Sarah
+  Weatherall, Jens~R. Wendland, Tomasz Wolanczyk, Yulia Worbe, Gwyneth Zai,
+  Fernando~S. Goes, Nicole McLaughlin, Paul~S. Nestadt, Hans-Jorgen Grabe,
+  Christel Depienne, Anuar Konkashbaev, Nuria Lanzagorta, Ana Valencia-Duarte,
+  Elvira Bramon, Nancy Buccola, Wiepke Cahn, Murray Cairns, Siow~A. Chong,
+  David Cohen, Benedicto Crespo-Facorro, James Crowley, Michael Davidson, Lynn
+  DeLisi, Timothy Dinan, Gary Donohoe, Elodie Drapeau, Jubao Duan, Lieuwe Haan,
+  David Hougaard, Sena Karachanak-Yankova, Andrey Khrunin, Janis Klovins,
+  Vaidutis Kučinskas, Jimmy Lee Chee~Keong, Svetlana Limborska, Carmel
+  Loughland, Jouko Lönnqvist, Brion Maher, Manuel Mattheisen, Colm McDonald,
+  Kieran~C. Murphy, Igor Nenadic, Jim van Os, Christos Pantelis, Michele Pato,
+  Tracey Petryshen, Digby Quested, Panos Roussos, Alan~R. Sanders, Ulrich
+  Schall, Sibylle~G. Schwab, Kang Sim, Hon-Cheong So, Elisabeth Stögmann,
+  Mythily Subramaniam, Draga Toncheva, John Waddington, James Walters, Mark
+  Weiser, Wei Cheng, Robert Cloninger, David Curtis, Pablo~V. Gejman, Frans
+  Henskens, Morten Mattingsdal, Sang-Yun Oh, Rodney Scott, Bradley Webb, Gerome
+  Breen, Claire Churchhouse, Cynthia~M. Bulik, Mark Daly, Martin Dichgans,
+  Stephen~V. Faraone, Rita Guerreiro, Peter Holmans, Kenneth~S. Kendler, Bobby
+  Koeleman, Carol~A. Mathews, Alkes Price, Jeremiah Scharf, Pamela Sklar, Julie
+  Williams, Nicholas~W. Wood, Chris Cotsapas, Aarno Palotie, Jordan~W. Smoller,
+  Patrick Sullivan, Jonathan Rosand, Aiden Corvin, Benjamin~M. Neale,
+  Jonathan~M. Schott, Richard Anney, Josephine Elia, Maria
+  Grigoroiu-Serbanescu, Howard~J. Edenberg, and Robin Murray.
+\newblock Analysis of shared heritability in common disorders of the brain.
+\newblock \emph{Science (New York, N.Y.)}, 360, June 2018.
+\newblock ISSN 1095-9203.
+\newblock \doi{10.1126/science.aap8757}.
 
 \bibitem[Davey~Smith and Hemani(2014)]{DaveySmith2014}
 George Davey~Smith and Gibran Hemani.
@@ -520,6 +731,19 @@ Colin~L. Masters, Randall Bateman, Kaj Blennow, Christopher~C. Rowe, Reisa~A.
 \newblock \emph{Nature reviews. Disease primers}, 1:\penalty0 15056, Oct 2015.
 \newblock URL \url{https://www.nature.com/articles/nrdp201556}.
 
+\bibitem[Pushpakom et~al.(2019)Pushpakom, Iorio, Eyers, Escott, Hopper, Wells,
+  Doig, Guilliams, Latimer, McNamee, Norris, Sanseau, Cavalla, and
+  Pirmohamed]{Pushpakom2019}
+Sudeep Pushpakom, Francesco Iorio, Patrick~A. Eyers, K.~Jane Escott, Shirley
+  Hopper, Andrew Wells, Andrew Doig, Tim Guilliams, Joanna Latimer, Christine
+  McNamee, Alan Norris, Philippe Sanseau, David Cavalla, and Munir Pirmohamed.
+\newblock Drug repurposing: progress, challenges and recommendations.
+\newblock \emph{Nature Reviews Drug Discovery}, 18\penalty0 (1):\penalty0
+  41--58, 2019.
+\newblock ISSN 1474-1784.
+\newblock \doi{10.1038/nrd.2018.168}.
+\newblock URL \url{https://doi.org/10.1038/nrd.2018.168}.
+
 \bibitem[Roberts~Jackson et~al.(2021)Roberts~Jackson, Varma~Vijay, Yang,
   Sudhir, Julián, Giovanna, Vinod, Carlos, Andrew, Atsushi, Tina, Irene, Ruin,
   Mohammed, Jacqueline, Toshiko, Olga, Troncoso~Juan, Bennett~David,
@@ -538,6 +762,15 @@ A.~Roberts~Jackson, R.~Varma~Vijay, An~Yang, Varma Sudhir, Candia Julián,
   2021.
 \newblock \doi{10.1126/sciadv.abi8178}.
 \newblock URL \url{https://doi.org/10.1126/sciadv.abi8178}.
+
+\bibitem[Santiago and Potashkin(2021)]{Santiago2021}
+Jose~A. Santiago and Judith~A. Potashkin.
+\newblock The impact of disease comorbidities in alzheimer's disease.
+\newblock \emph{Frontiers in aging neuroscience}, 13\penalty0
+  (33643025):\penalty0 631770--631770, February 2021.
+\newblock ISSN 1663-4365.
+\newblock \doi{10.3389/fnagi.2021.631770}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906983/}.
 
 \bibitem[Schwartzentruber et~al.(2021)Schwartzentruber, Cooper, Liu,
   Barrio-Hernandez, Bello, Kumasaka, Young, Franklin, Johnson, Estrada,
