@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: repurposing-ms.aux
 The style file: plainnat.bst
 Database file #1: repurposing-ms.bib
-You've used 18 entries,
+You've used 28 entries,
             2773 wiz_defined-function locations,
-            783 strings with 29958 characters,
-and the built_in function-call counts, 55723 in all, are:
-= -- 3705
-> -- 8820
-< -- 3
-+ -- 2940
-- -- 2922
-* -- 6461
-:= -- 9809
-add.period$ -- 99
-call.type$ -- 18
-change.case$ -- 1028
-chr.to.int$ -- 18
-cite$ -- 36
-duplicate$ -- 375
-empty$ -- 736
-format.name$ -- 2946
-if$ -- 10286
+            878 strings with 34968 characters,
+and the built_in function-call counts, 66584 in all, are:
+= -- 4561
+> -- 10092
+< -- 4
++ -- 3364
+- -- 3336
+* -- 7639
+:= -- 11632
+add.period$ -- 153
+call.type$ -- 28
+change.case$ -- 1196
+chr.to.int$ -- 28
+cite$ -- 56
+duplicate$ -- 584
+empty$ -- 1156
+format.name$ -- 3372
+if$ -- 12391
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 143
-num.names$ -- 72
-pop$ -- 1975
+missing$ -- 28
+newline$ -- 217
+num.names$ -- 112
+pop$ -- 2267
 preamble$ -- 1
-purify$ -- 1010
+purify$ -- 1168
 quote$ -- 0
-skip$ -- 1182
+skip$ -- 1437
 stack$ -- 0
-substring$ -- 473
-swap$ -- 33
+substring$ -- 766
+swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
+type$ -- 308
 warning$ -- 0
-while$ -- 83
+while$ -- 129
 width$ -- 0
-write$ -- 331
+write$ -- 509

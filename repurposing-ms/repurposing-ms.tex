@@ -27,6 +27,8 @@
 
 \maketitle
 
+\section{Introduction}
+
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
 societies but effective treatment is still
@@ -40,23 +42,58 @@ progress~\citep{DeStrooper2016}.
 Genome-wide association studies (GWAS) on AD discovered $\approx 40$ risk loci
 to date~\citep{Jansen2019,Kunkle2019,Schwartzentruber2021,Wightman2021}
 suggesting polygenic, or at least oligogenic~\citep{Zhang2020}, mechanism
-involving 100 or even fewer causal genes.  Unfortunately, translating GWAS to
+involving 100 or somewhat fewer causal genes.  Unfortunately, translating GWAS to
 efficient AD drugs has been prevented so far by several obstacles: (1) the
 identity of causal genes within risk loci is unclear except for a few like
-APOE4 TODO: ref; (2) GWAS, in general, cannot detect all causal
-genes~\citep{Cao2014}; (3) not all causal AD genes may be
-druggable~\citep{Floris2018,Finan2017}.
+APOE4 TODO: ref; (2) GWAS, in general, cannot detect all causal genes; (3) not
+all causal AD genes may be
+druggable~\citep{Cao2014,Lau2020,Floris2018,Finan2017}.  The first obstacle
+was addressed by several transcriptome- or proteome-wide association
+studies (TWAS/PWAS) on
+AD~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wingo2021},
+which combined Mendelian randomization~\citep{DaveySmith2014,Lawlor2008},
+imputation techniques~\citep{Barbeira2018}, or Bayesian
+colocalization~\citep{Wen2017} with large transcriptomic or proteomic data
+sets.  However, the causal genes discovered by these recent TWAS/PWAS remain
+until now without experimental validation.  Also, it is unclear how concordant
+discoveries these methodologically different studies resulted in.
 
-Several transcriptome- or
-proteome-wide association studies (TWAS/PWAS) on
-AD~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wingo2021}
-tackled the first obstacle alone by combining Mendelian
-randomization~\citep{DaveySmith2014,Lawlor2008}, imputation
-techniques~\citep{Barbeira2018}, or Bayesian colocalization~\citep{Wen2017}
-with large transcriptomic or proteomic data sets but the results of
-these TWAS/PWAS are divergent owing to methodological heterogeneity.
-Differentially expressed genes and their modules
-second obstacle to translating GWAS
+Analysis of differentially expressed genes (DEGs) from transcriptomic and
+proteomic profiling of diseased and control samples is a complementary
+approach to GWAS that has been extensively applied to AD at various disease
+stages, tissues and cell types TODO: ref.  Such studies implicated hundreds to
+thousands of genes in AD but nominating drug targets is hindered by the
+difficulty of dissecting causal or driver genes from the large number of
+correlated genes.  With that aim a number of studies in the AMP-AD program~\citep{Greenwood2020}
+nominated hundreds of putative targets based
+in great part on DEG discovery.  The genetic component of gene expression may
+confound transcriptomic profiling but received little attention except for a
+few studies that controlled for the genotype of
+APOE4~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose $\epsilon 4$ isoform
+is the single strongest genetic risk factor for AD.
+
+In this study we first conduct a TWAS on AD using the latest, largest GWAS and
+transcriptomic data sets and meta analyze that with previous TWAS results as
+well as with DEGs from transcriptomic profiling with known APOE4 genotypes.
+Then, we address the obstacles to translating GWAS and transcriptomic results
+on AD by network proximity based drug repurposing~\citep{Cheng2018}.  In
+contrast to better known, correlative, approaches like the connectivity map,
+CMap~\citep{Lamb2006}, the network proximity approach models a drug's effect
+on disease genes mechanistically by considering the topological details of the
+human interactome, i.e the network of protein-protein and gene-gene
+interactions~\citep{Guney2016,Barabasi2011}.  By evaluating network proximity
+to AD genes for each of $\approx 2400$ approved or phase 3 drugs, we nominate
+TODO: $X, Y, Z$ for repurposing to AD.
+
+\section{Discussion}
+
+Recent drug repurposing studies on AD~\citep{Taubes2021,Fang2021}
+
+Selection of AD genes: TWAS and APOE4 controlled DEGs
+
+Network proximity vs CMap
+
+
 
 \bibliography{repurposing-ms}
 \end{document}
