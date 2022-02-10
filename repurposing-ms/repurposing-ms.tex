@@ -45,7 +45,7 @@ suggesting polygenic, or at least oligogenic~\citep{Zhang2020}, mechanism
 involving 100 or somewhat fewer causal genes.  Unfortunately, translating GWAS to
 efficient AD drugs has been prevented so far by several obstacles: (1) the
 identity of causal genes within risk loci is unclear except for a few like
-APOE4 TODO: ref; (2) GWAS, in general, cannot detect all causal genes; (3) not
+Apoe tODO: ref; (2) GWAS, in general, cannot detect all causal genes; (3) not
 all causal AD genes may be
 druggable~\citep{Cao2014,Lau2020,Floris2018,Finan2017}.  The first obstacle
 was addressed by several transcriptome- or proteome-wide association
@@ -69,13 +69,13 @@ program~\citep{Greenwood2020} nominated hundreds of putative targets based in
 great part on DEG discovery.  Genetically regulated components of gene
 expression may confound transcriptomic profiling but this received little attention
 except for a few studies that controlled for the genotype of
-APOE4~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose $\epsilon 4$
+APOE~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose $\epsilon 4$
 isoform is the single strongest genetic risk factor for AD.
 
 In this study we first conduct a TWAS using~\citep{Barbeira2018} on AD using the
 latest, largest GWAS and transcriptomic data sets and meta analyze that with
 previous TWAS results as well as with DEGs from transcriptomic profiling with
-known APOE4 genotypes.  We then collect DEGs from APOE4-controlled
+known APOE genotypes.  We then collect DEGs from APOE-controlled
 transcriptomic studies on AD.  Building on these multiple gene sets we then
 address the obstacles to translating GWAS and transcriptomic results on AD by
 network proximity based drug repurposing~\citep{Cheng2018}.  In contrast to
@@ -99,21 +99,13 @@ AD.  Rather than compiling a single AD gene set from multiple studies, we
 opted for evaluating the proximity of any drug separately for multiple AD gene
 sets and aggregate the multiple proximity values subsequently (see Discussion).
 
-We set out by obtaining an AD gene set from multiple TWAS.  Besides collecting
+We set out by obtaining AD gene sets from multiple TWAS.  Besides collecting
 AD genes from previous TWA and PWA studies (TODO: supplementary table) we
 conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
 the largest AD-GWAS to date~\citep{Schwartzentruber2021}.  TODO: describe
 here the results of Haky et al: number of significant genes (check with Haky
 et al on FDR); find interesting novel genes based on their membership in
 AD-relevant pathways.
-
-We conservatively took the top 30 genes and investigated their agreement with top gene
-sets from previous TWAS or PWAS.  Hierarchical clustering of studies based on
-shared genes (Fig.~\ref{fig:twas-clustermap}) showed a fairly low agreement for all
-pairs of studies (TODO: mean and stdev Jaccard index).  The most
-similar study pair was our present TWAS and the fine mapping of~\cite{Jansen2019}.  The least
-similarity was between the sole PWAS in our collection and all the other
-studies.
 
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
@@ -124,52 +116,39 @@ studies.
 \label{fig:twas-clustermap}
 \end{figure}
 
-\begin{table}
-  \footnotesize
-\begin{tabular}{cc}
-  gene       & supporting studies \\
-  \hline
-  CR1        & 6\\
-  PVR        & 5\\
-  BIN1       & 5\\
-  MS4A6A     & 4\\
-  CLU        & 4\\
-  PTK2B      & 4\\
-  ABCA7      & 3\\
-  ACE        & 3\\
-  TOMM40     & 3\\
-  HLA-DRB1   & 3\\
-  CLPTM1     & 3\\
-  MS4A4A     & 3\\
-  HLA-DRA    & 2\\
-  PICALM     & 2\\
-  HLA-DQA1   & 2\\
-  APOC4      & 2\\
-  CASS4      & 2\\
-  PVRIG      & 2\\
-  NECTIN2    & 2\\
-  APOC1      & 2\\
-  EPHA1      & 2\\
-  PRSS36     & 2\\
-  SPI1       & 2\\
-  CEACAM19   & 2\\
-  CCDC6      & 2\\
-  TAS2R60    & 2\\
-  TSPAN14    & 2\\
-  KAT8       & 2\\
-  APOE       & 2\\
-\end{tabular}
-\caption{
-Genes supported by multiple TWAS and fine mapping studies.  TODO: more info
-needs to be added to this table: pathways involving genes, experimental
-studies
-}
-\label{tab:twas-genes}
-\end{table}
+We conservatively took the top 30 genes and investigated their agreement with
+top gene sets from previous TWAS or PWAS.  Hierarchical clustering of studies
+based on shared genes (Fig.~\ref{fig:twas-clustermap}) showed a fairly low
+agreement for all pairs of studies (TODO: mean and stdev Jaccard index).  The
+most similar study pair was our present TWAS and the fine mapping
+of~\cite{Jansen2019}, which helps validate our novel TWAS results.  As might
+be expected, the least similarity was between the sole PWAS in our collection
+and all the other studies.
 
 \subsection{Divergent AD gene sets and drug rankings}
 
+\begin{figure}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
+\caption{
+  Sensitivity of drug repurposing score to input AD gene set. (A) Pairwise
+  similarity of AD gene sets used as inputs for network proximity based drug
+  screen.  (B) Correlation of the corresponding proximity scores.
+TODO: remove DESudhir, since that wasn't used for the aggregated drug ranking;
+TODO: find a better colormap
+}
+\label{fig:divergent-results}
+\end{figure}
+
 \subsection{Aggregated drug ranking and computational validation}
+
+\begin{figure}
+\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\caption{
+Validation: rediscovery of existing phase 1--4 drugs for AD.
+}
+\label{fig:ad-drug-rediscovery}
+\end{figure}
 
 \subsection{Experimental validation}
 
@@ -177,9 +156,11 @@ studies
 
 Computational drug repurposing is a rapidly evolving
 field~\citep{Pushpakom2019}.  During our present investigations two drug
-repurposing studies on AD were published~\citep{Taubes2021,Fang2021}.
+repurposing studies on AD were published~\citep{Taubes2021,Fang2021}.  Here we
+found considerable differences in drug repurposing scores and rankings
+gene sets.  This 
 
-Selection of AD genes: TWAS and APOE4 controlled DEGs
+Selection of AD genes: TWAS and APOE controlled DEGs
 \begin{itemize}
 \item S-MultiXcan borrows statistical strength from multiple tissue types; we used
 a predictive model of gene expression built on the latest version to date of
@@ -222,3 +203,56 @@ correlations, comorbidities of AD~\citep{Consortium2018,Santiago2021}.
 \renewcommand{\figurename}{Supplementary Figure} % nice
 \makeatother
 \end{document}
+
+\begin{figure}[p]
+\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\caption{
+Rediscovery of existing phase 1--4 drugs for AD and other indications.
+}
+\label{fig:ad-drug-rediscovery-multi}
+\end{figure}
+
+
+\begin{table}
+  \footnotesize
+\begin{tabular}{cc}
+  gene       & supporting TWAS \\
+  \hline
+  CR1        & 6\\
+  PVR        & 5\\
+  BIN1       & 5\\
+  MS4A6A     & 4\\
+  CLU        & 4\\
+  PTK2B      & 4\\
+  ABCA7      & 3\\
+  ACE        & 3\\
+  TOMM40     & 3\\
+  HLA-DRB1   & 3\\
+  CLPTM1     & 3\\
+  MS4A4A     & 3\\
+  HLA-DRA    & 2\\
+  PICALM     & 2\\
+  HLA-DQA1   & 2\\
+  APOC4      & 2\\
+  CASS4      & 2\\
+  PVRIG      & 2\\
+  NECTIN2    & 2\\
+  APOC1      & 2\\
+  EPHA1      & 2\\
+  PRSS36     & 2\\
+  SPI1       & 2\\
+  CEACAM19   & 2\\
+  CCDC6      & 2\\
+  TAS2R60    & 2\\
+  TSPAN14    & 2\\
+  KAT8       & 2\\
+  APOE       & 2\\
+\end{tabular}
+\caption{
+Genes supported by multiple TWAS and fine mapping studies.  TODO: more info
+needs to be added to this table: pathways involving genes, experimental
+studies
+}
+\label{tab:twas-genes}
+\end{table}
+
