@@ -65,7 +65,8 @@ stages, tissues and cell types TODO: ref.  Such studies implicated hundreds to
 thousands of genes in AD but nominating drug targets is hindered by the
 difficulty of dissecting causal or driver genes from the large number of
 correlated genes.  With that aim a number of studies in the AMP-AD
-program~\citep{Greenwood2020} nominated hundreds of putative targets based in
+program~\citep{Greenwood2020} nominated hundreds of putative
+targets~(https://agora.adknowledgeportal.org) based in
 great part on DEG discovery.  Genetically regulated components of gene
 expression may confound transcriptomic profiling but this received little attention
 except for a few studies that controlled for the genotype of
@@ -110,22 +111,59 @@ AD-relevant pathways.
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
 \caption{
-  TODO: maybe a supplementary table on the exact methods (with ref) and
-  tissues?  TODO: color genes supported by multiple studies differently
+Similarity of TWA/PWA studies on AD in terms of shared genes.
+  TODO: color genes supported by multiple studies differently
 }
 \label{fig:twas-clustermap}
 \end{figure}
 
 We conservatively took the top 30 genes and investigated their agreement with
-top gene sets from previous TWAS or PWAS.  Hierarchical clustering of studies
+top gene sets from seven previous TWAS and one previous PWAS.  Hierarchical clustering of studies
 based on shared genes (Fig.~\ref{fig:twas-clustermap}) showed a fairly low
 agreement for all pairs of studies (TODO: mean and stdev Jaccard index).  The
 most similar study pair was our present TWAS and the fine mapping
 of~\cite{Jansen2019}, which helps validate our novel TWAS results.  As might
-be expected, the least similarity was between the sole PWAS in our collection
+be expected, the least similarity was found between the only PWAS in our collection
 and all the other studies.
 
 \subsection{Divergent AD gene sets and drug rankings}
+
+We aggregated the nine TWAS/PWAS studies analyzed above by taking genes
+supported by two or more studies.  The resulting set of 29 genes, designated
+as TWAS2+, was used as input to a network proximity based computational
+repurposing screen of 2413 drugs in phase 3 or 4 (approved) for some
+indication (TODO: Methods).  The standardized proximity score, $Z$, reached
+its minimum at $-6.49$ at drugs with the sole target ACE (TODO: supplementary
+table) providing strong evidence ($p=4\times 10^{-11}$) for the repurposing
+potential of these drugs to AD given the input TWAS2+ AD gene set.
+
+\begin{table}
+\footnotesize
+\begin{tabular}{cll}
+name     & description & reference  \\
+\hline
+TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
+knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\end{tabular}
+\caption{
+Input AD gene sets to drug repurposing screens of this study.
+}
+\label{tab:genesets}
+\end{table}
+
+However we expected our TWAS2+ gene set far from complete in terms of
+causal AD genes, which likely resulted in many false discoveries in the
+drug screen above.  Therefore, we repeated the screen given several alternative AD gene
+sets (Table~\ref{tab:genesets}) with a dual goal: (1) to assess the
+sensitivity of the approach to its input AD gene set
+(Fig.~\ref{fig:divergent-results}) and (2) to produce multiple ranked lists of
+drugs for subsequent rank aggregation (Table~\ref{tab:top-drugs}).
 
 \begin{figure}
 \includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
@@ -142,6 +180,23 @@ TODO: find a better colormap
 
 \subsection{Aggregated drug ranking and computational validation}
 
+\begin{table}
+\footnotesize
+\begin{tabular}{cccc}
+drug     & aggregate rank & targets & previous indication(s)  \\
+\hline
+TODO & TODO & TODO & TODO \\
+TODO & TODO & TODO & TODO \\
+TODO & TODO & TODO & TODO \\
+TODO & TODO & TODO & TODO \\
+\end{tabular}
+\caption{
+Top drugs resulted by the aggregation of multiple network proximity based
+screens (cf.~Table~\ref{tab:genesets})
+}
+\label{tab:top-drugs}
+\end{table}
+
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
 \caption{
@@ -154,11 +209,11 @@ Validation: rediscovery of existing phase 1--4 drugs for AD.
 
 \section{Discussion}
 
-Computational drug repurposing is a rapidly evolving
-field~\citep{Pushpakom2019}.  During our present investigations two drug
-repurposing studies on AD were published~\citep{Taubes2021,Fang2021}.  Here we
-found considerable differences in drug repurposing scores and rankings
-gene sets.  This 
+Computational drug repurposing is a new, rapidly evolving
+field with a multitude of varied approaches applicable to a growing, diverse
+multi-omic body of data and curated knowledge~\citep{Pushpakom2019}.  During our present study two drug
+repurposing studies on AD were published: \cite{Fang2021} nominated sildenafil
+while~\cite{Taubes2021} bumetanide.
 
 Selection of AD genes: TWAS and APOE controlled DEGs
 \begin{itemize}

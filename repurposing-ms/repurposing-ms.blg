@@ -4,44 +4,44 @@ The top-level auxiliary file: repurposing-ms.aux
 The style file: plainnat.bst
 Database file #1: repurposing-ms.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-You've used 32 entries,
+You've used 33 entries,
             2773 wiz_defined-function locations,
-            915 strings with 48354 characters,
-and the built_in function-call counts, 98061 in all, are:
-= -- 6527
-> -- 15504
+            924 strings with 48680 characters,
+and the built_in function-call counts, 98641 in all, are:
+= -- 6576
+> -- 15552
 < -- 5
-+ -- 5168
-- -- 5136
-* -- 11364
-:= -- 17253
-add.period$ -- 175
-call.type$ -- 32
-change.case$ -- 1808
-chr.to.int$ -- 32
-cite$ -- 64
-duplicate$ -- 666
-empty$ -- 1310
-format.name$ -- 5178
-if$ -- 18113
++ -- 5184
+- -- 5151
+* -- 11421
+:= -- 17347
+add.period$ -- 179
+call.type$ -- 33
+change.case$ -- 1816
+chr.to.int$ -- 33
+cite$ -- 66
+duplicate$ -- 687
+empty$ -- 1347
+format.name$ -- 5194
+if$ -- 18231
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 247
-num.names$ -- 128
-pop$ -- 3473
+missing$ -- 33
+newline$ -- 253
+num.names$ -- 132
+pop$ -- 3486
 preamble$ -- 1
-purify$ -- 1776
+purify$ -- 1783
 quote$ -- 0
-skip$ -- 2085
+skip$ -- 2101
 stack$ -- 0
-substring$ -- 848
-swap$ -- 55
+substring$ -- 862
+swap$ -- 57
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 363
 warning$ -- 0
-while$ -- 146
+while$ -- 150
 width$ -- 0
-write$ -- 581
+write$ -- 596
