@@ -157,7 +157,7 @@ Input AD gene sets to drug repurposing screens of this study.
 \label{tab:genesets}
 \end{table}
 
-However we expected our TWAS2+ gene set far from complete in terms of
+However, we expected our TWAS2+ gene set far from complete in terms of
 causal AD genes, which likely resulted in many false discoveries in the
 drug screen above.  Therefore, we repeated the screen given several alternative AD gene
 sets (Table~\ref{tab:genesets}) with a dual goal: (1) to assess the
@@ -209,11 +209,22 @@ Validation: rediscovery of existing phase 1--4 drugs for AD.
 
 \section{Discussion}
 
-Computational drug repurposing is a new, rapidly evolving
-field with a multitude of varied approaches applicable to a growing, diverse
-multi-omic body of data and curated knowledge~\citep{Pushpakom2019}.  During our present study two drug
+Computational drug repurposing is a new, rapidly evolving field without
+established standards and with a multitude of varied approaches applicable to
+a growing, diverse multi-omic body of data and curated
+knowledge~\citep{Pushpakom2019}.  During our present investigations two drug
 repurposing studies on AD were published: \cite{Fang2021} nominated sildenafil
-while~\cite{Taubes2021} bumetanide.
+while~\cite{Taubes2021} bumetanide.  These two works differed both in their
+definition of AD genes as well as in the approach used to score and rank
+drugs: \cite{Taubes2021} combined APOE genotype-specific DEGs with
+CMap~\citep{Lamb2006}, while \cite{Fang2021} used DEGs without known APOE
+genotype, as well as knowledge-based AD genes, as inputs to a network
+proximity based drug repurposing screen~\citep{Cheng2018}.  In this paper we
+show that, while the input gene sets have considerable effect on network
+proximity based drug scores, the latter still show significant correlation.
+Surprisingly, we also find that, even given the same input gene set, the
+network proximity approach taken by \cite{Fang2021} and CMap used by
+\cite{Taubes2021} leads to fully discordant, uncorrelated results.
 
 Selection of AD genes: TWAS and APOE controlled DEGs
 \begin{itemize}
@@ -257,16 +268,35 @@ correlations, comorbidities of AD~\citep{Consortium2018,Santiago2021}.
 \makeatletter 
 \renewcommand{\figurename}{Supplementary Figure} % nice
 \makeatother
-\end{document}
 
 \begin{figure}[p]
-\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\includegraphics[scale=0.4]{../../results/2022-01-14-rank-aggregation/kendall-distance.png}
+\caption{
+Several rank aggregation algorithms' performance assessed by modified Kendall
+distance.
+}
+\label{fig:rank-diff}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
+\caption{
+Difference of drug rank between the final, aggregated list and the list
+resulting from each network proximity based drug screen.
+}
+\label{fig:rank-diff}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
 \caption{
 Rediscovery of existing phase 1--4 drugs for AD and other indications.
 }
 \label{fig:ad-drug-rediscovery-multi}
 \end{figure}
 
+\end{document}
 
 \begin{table}
   \footnotesize
