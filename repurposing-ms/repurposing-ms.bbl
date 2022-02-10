@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -133,6 +133,16 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/s41467-018-03621-1}.
 \newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
+
+\bibitem[Barbeira et~al.(2019)Barbeira, Pividori, Zheng, Wheeler, Nicolae, and
+  Im]{Barbeira2019a}
+Alvaro~N. Barbeira, Milton Pividori, Jiamao Zheng, Heather~E. Wheeler, Dan~L.
+  Nicolae, and Hae~Kyung Im.
+\newblock Integrating predicted transcriptome from multiple tissues improves
+  association detection.
+\newblock \emph{PLOS Genetics}, 15\penalty0 (1):\penalty0 1--20, 01 2019.
+\newblock \doi{10.1371/journal.pgen.1007889}.
+\newblock URL \url{https://doi.org/10.1371/journal.pgen.1007889}.
 
 \bibitem[Bondi et~al.(2017)Bondi, Edmonds, and Salmon]{Bondi2017}
 Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.

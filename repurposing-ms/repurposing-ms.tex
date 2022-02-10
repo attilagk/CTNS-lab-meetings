@@ -52,7 +52,7 @@ was addressed by several transcriptome- or proteome-wide association
 studies (TWAS/PWAS) on
 AD~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wingo2021},
 which combined Mendelian randomization~\citep{DaveySmith2014,Lawlor2008},
-imputation techniques~\citep{Barbeira2018}, or Bayesian
+imputation techniques~\citep{Barbeira2018,Barbeira2019a}, or Bayesian
 colocalization~\citep{Wen2017} with large transcriptomic or proteomic data
 sets.  However, the causal genes discovered by these recent TWAS/PWAS remain
 until now without experimental validation.  Also, it is unclear how concordant
@@ -72,12 +72,14 @@ except for a few studies that controlled for the genotype of
 APOE4~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose $\epsilon 4$
 isoform is the single strongest genetic risk factor for AD.
 
-In this study we first conduct a TWAS on AD using the latest, largest GWAS and
-transcriptomic data sets and meta analyze that with previous TWAS results as
-well as with DEGs from transcriptomic profiling with known APOE4 genotypes.
-Then, we address the obstacles to translating GWAS and transcriptomic results
-on AD by network proximity based drug repurposing~\citep{Cheng2018}.  In
-contrast to better known, correlative, approaches like the connectivity map,
+In this study we first conduct a TWAS using~\citep{Barbeira2018} on AD using the
+latest, largest GWAS and transcriptomic data sets and meta analyze that with
+previous TWAS results as well as with DEGs from transcriptomic profiling with
+known APOE4 genotypes.  We then collect DEGs from APOE4-controlled
+transcriptomic studies on AD.  Building on these multiple gene sets we then
+address the obstacles to translating GWAS and transcriptomic results on AD by
+network proximity based drug repurposing~\citep{Cheng2018}.  In contrast to
+better known, correlative, approaches like the connectivity map,
 CMap~\citep{Lamb2006}, the network proximity approach models a drug's effect
 on disease genes mechanistically by considering the topological details of the
 human interactome, i.e the network of protein-protein and gene-gene
@@ -88,6 +90,30 @@ TODO: $X, Y, Z$ for repurposing to AD.
 \section{Results}
 
 \subsection{Meta-analysis of present and previous TWAS results}
+
+Given an AD gene set, the network structure of the human interactome, and a
+network formed by drugs and their targets (drug-target network), topological
+proximity of a given drug to the AD gene set can be
+quantified\citep{Guney2016} and used as evidence for repurposing that drug for
+AD.  Rather than compiling a single AD gene set from multiple studies, we
+opted for evaluating the proximity of any drug separately for multiple AD gene
+sets and aggregate the multiple proximity values subsequently (see Discussion).
+
+We set out by obtaining an AD gene set from multiple TWAS.  Besides collecting
+AD genes from previous TWA and PWA studies (TODO: supplementary table) we
+conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
+the largest AD-GWAS to date~\citep{Schwartzentruber2021}.  TODO: describe
+here the results of Haky et al: number of significant genes (check with Haky
+et al on FDR); find interesting novel genes based on their membership in
+AD-relevant pathways.
+
+We conservatively took the top 30 genes and investigated their agreement with top gene
+sets from previous TWAS or PWAS.  Hierarchical clustering of studies based on
+shared genes (Fig.~\ref{fig:twas-clustermap}) showed a fairly low agreement for all
+pairs of studies (TODO: mean and stdev Jaccard index).  The most
+similar study pair was our present TWAS and the fine mapping of~\cite{Jansen2019}.  The least
+similarity was between the sole PWAS in our collection and all the other
+studies.
 
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
@@ -150,10 +176,18 @@ studies
 \section{Discussion}
 
 Computational drug repurposing is a rapidly evolving
-field~\citep{Pushpakom2019}.  Recent drug repurposing studies on
-AD~\citep{Taubes2021,Fang2021}
+field~\citep{Pushpakom2019}.  During our present investigations two drug
+repurposing studies on AD were published~\citep{Taubes2021,Fang2021}.
 
 Selection of AD genes: TWAS and APOE4 controlled DEGs
+\begin{itemize}
+\item S-MultiXcan borrows statistical strength from multiple tissue types; we used
+a predictive model of gene expression built on the latest version to date of
+the entire GTEx data set
+\item we found a relatively close agreement between our TWAS and that of
+\cite{Jansen2019} despite
+several methodological differences between these two studies 
+\end{itemize}
 
 Network proximity vs CMap
 
@@ -175,4 +209,16 @@ correlations, comorbidities of AD~\citep{Consortium2018,Santiago2021}.
 \subsection{Rank aggregation}
 
 \bibliography{repurposing-ms}
+
+\section*{Supplementary Material}
+
+\setcounter{table}{0}
+\makeatletter 
+\renewcommand{\figurename}{Supplementary Table} % nice
+\makeatother
+
+\setcounter{figure}{0}
+\makeatletter 
+\renewcommand{\figurename}{Supplementary Figure} % nice
+\makeatother
 \end{document}

@@ -19,6 +19,7 @@ Network proximity calculations	repurposing-ms/repurposing-ms.tex	/^\\subsection{
 Rank aggregation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rank aggregation}$/;"	b
 Results	repurposing-ms/repurposing-ms.tex	/^\\section{Results}$/;"	s
 Sci Transl Med 2017	lab-meetings/2021-05-13-covid19-repurposing/2021-05-13-covid19-repurposing.tex	/^\\section{Sci Transl Med 2017}$/;"	s
+Supplementary Material	repurposing-ms/repurposing-ms.tex	/^\\section*{Supplementary Material}$/;"	s
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_citation_influence.tex.project.vim	/^let b:LevelDict = {}$/;"	v
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_normal.tex.project.vim	/^let b:LevelDict = {}$/;"	v
