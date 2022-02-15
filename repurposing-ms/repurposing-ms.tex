@@ -173,14 +173,12 @@ drugs for subsequent rank aggregation (Table~\ref{tab:top-drugs}).
   Sensitivity of drug repurposing score to input AD gene set. (A) Pairwise
   similarity of AD gene sets used as inputs for network proximity based drug
   screen.  (B) Correlation of the corresponding proximity scores.
-TODO: remove DESudhir, since that wasn't used for the aggregated drug ranking;
-TODO: find a better colormap?
 }
 \label{fig:divergent-results}
 \end{figure}
 
-Our collection of AD gene sets was quite varied and the Jaccard index for each
-pair of sets was TODO: $x$ (AD DE APOE3-APOE3, AD DE APOE4-APOE4) or lower
+Our collection of AD gene sets was quite varied evidenced by low Jaccard index
+(range: 0 to 2.) or lower
 highlighting the impact of methodological differences in how these gene sets
 were derived (Fig.~\ref{fig:divergent-results} left). The low concordance of
 gene sets translated to low concordance between the corresponding drug
@@ -199,11 +197,15 @@ we omitted the results obtained with CMap from subsequent analyses.
 
 \subsection{Aggregated drug ranking}
 
-Assuming our AD gene sets were all equally relevant to the disease, we
+Assuming our eight AD gene sets were all equally relevant to the disease, we
 aggregated the corresponding drug rankings giving uniform weight to all gene
 sets (Table~\ref{tab:genesets}).  After evaluating performance of seven rank
-aggregation algorithms, the best performing one gave us a single ranked list
-of the top 605 drugs (TODO: supplementary table).
+aggregation algorithms (Fig.~S\ref{fig:kendall-dist}), the best performing one
+gave us a single final ranked list of the top 605 drugs (TODO: supplementary table).
+The very top ranked ($\le 30$) drugs on the final list also tended to be top ranked
+on five out of eight input rankings; the remaining three turned out the ones
+conditioned on AD gene sets derived from non-neuronal preparations and DEGs in
+AD vs.~non-pathological APOE3/APOE3 individuals (Fig.~S\ref{fig:rank-diff}).
 
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
@@ -217,7 +219,7 @@ As a computational validation test of the aggregated ranking we asked how much
 more frequent were drugs in any clinical phase for AD among the top $t$ ranked
 drugs relative to those among the bottom $1808$ drugs.  This ``AD drug''
 rediscovery approach showed 2--3-fold enrichment of AD indication among the
-top $\le 200$ drugs validating our approach
+top $t \le 200$ drugs validating our approach
 (Fig.~\ref{fig:ad-drug-rediscovery}).  Interestingly several, but not all,
 other common indications showed a similar enrichment pattern
 (Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
@@ -320,7 +322,6 @@ repurposing and side effects~\citep{Ye2014}.
 \caption{
 Z score of 2413 drugs (points) based on various input AD gene sets (rows and
 columns).
-TODO: remove unnecessary panels
 }
 \label{fig:prox-z-scatterplot-m}
 \end{figure}
@@ -334,11 +335,10 @@ Drug repurposing scores obtained by network proximity approach and CMap
 \end{figure}
 
 \begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-celltype-sudhir.png}
+\includegraphics[scale=0.4]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-celltype-apoe4-apoe4.png}
 \caption{
 Drug repurposing scores obtained by network proximity approach and CMap in
 given the cell type of the CMap expression profiling.
-TODO: make a version for AD DE APOE4-APOE4
 }
 \label{fig:proxim-cmap-celltype}
 \end{figure}
@@ -358,7 +358,7 @@ TODO: remove Sudhir's?
 Several rank aggregation algorithms' performance assessed by modified Kendall
 distance.
 }
-\label{fig:rank-diff}
+\label{fig:kendall-dist}
 \end{figure}
 
 \begin{figure}[p]
