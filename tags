@@ -10,7 +10,7 @@ Discussion	repurposing-ms/repurposing-ms.tex	/^\\section{Discussion}$/;"	s
 Experimental validation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Experimental validation}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
 Limitations of the approach	nia-retreat-2021/paper/nia-2021-paper.tex	/^\\section{Limitations of the approach}$/;"	s
-Meta analysis of present and previous TWAS results	repurposing-ms/repurposing-ms.tex	/^\\subsection{Meta-analysis of present and previous TWAS results}$/;"	b
+Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
 Results	repurposing-ms/repurposing-ms.tex	/^\\section{Results}$/;"	s
 Sci Transl Med 2017	lab-meetings/2021-05-13-covid19-repurposing/2021-05-13-covid19-repurposing.tex	/^\\section{Sci Transl Med 2017}$/;"	s
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_citation_influence.tex.project.vim	/^let b:LevelDict = {}$/;"	v
