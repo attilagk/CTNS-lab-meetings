@@ -42,14 +42,14 @@ progress~\citep{DeStrooper2016}.
 Genome-wide association studies (GWAS) on AD discovered $\approx 40$ risk loci
 to date~\citep{Jansen2019,Kunkle2019,Schwartzentruber2021,Wightman2021}
 suggesting polygenic, or at least oligogenic~\citep{Zhang2020}, mechanism
-involving 100 or somewhat fewer causal genes.  Unfortunately, translating GWAS to
-efficient AD drugs has been prevented so far by several obstacles: (1) the
+involving 100 or somewhat fewer causal genes.  Unfortunately, translating GWAS
+to efficient AD drugs has been prevented so far by several obstacles: (1) the
 identity of causal genes within risk loci is unclear except for a few like
-Apoe tODO: ref; (2) GWAS, in general, cannot detect all causal genes; (3) not
-all causal AD genes may be
+APOE~\citep{Yamazaki2019}; (2) GWAS, in general, cannot detect all causal
+genes; (3) not all causal AD genes may be
 druggable~\citep{Cao2014,Lau2020,Floris2018,Finan2017}.  The first obstacle
-was addressed by several transcriptome- or proteome-wide association
-studies (TWAS/PWAS) on
+was addressed by several transcriptome- or proteome-wide association studies
+(TWAS/PWAS) on
 AD~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wingo2021},
 which combined Mendelian randomization~\citep{DaveySmith2014,Lawlor2008},
 imputation techniques~\citep{Barbeira2018,Barbeira2019a}, or Bayesian
@@ -70,23 +70,23 @@ targets~(https://agora.adknowledgeportal.org) based in
 great part on DEG discovery.  Genetically regulated components of gene
 expression may confound transcriptomic profiling but this received little attention
 except for a few studies that controlled for the genotype of
-APOE~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose $\epsilon 4$
+APOE~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose APOE4
 isoform is the single strongest genetic risk factor for AD.
 
-In this study we first conduct a TWAS using~\citep{Barbeira2018} on AD using the
-latest, largest GWAS and transcriptomic data sets and meta analyze that with
-previous TWAS results as well as with DEGs from transcriptomic profiling with
-known APOE genotypes.  We then collect DEGs from APOE-controlled
-transcriptomic studies on AD.  Building on these multiple gene sets we then
-address the obstacles to translating GWAS and transcriptomic results on AD by
-network proximity based drug repurposing~\citep{Cheng2018}.  In contrast to
-phenomenological, correlative, approaches like the connectivity map,
-CMap~\citep{Lamb2006}, the network proximity approach models a drug's effect
-on disease genes mechanistically by considering the topological details of the
-human interactome, i.e the network of protein-protein and gene-gene
-interactions~\citep{Guney2016,Barabasi2011}.  By evaluating network proximity
-to AD genes for each of $\approx 2400$ approved or phase 3 drugs, we nominate
-TODO: $X, Y, Z$ for repurposing to AD.
+In this study we first conduct a TWAS on AD with transcriptomic
+imputation~\citep{Barbeira2018} using the latest, largest GWAS and
+gene expression data sets and meta analyze that with previous TWAS results as
+well as with DEGs from transcriptomic profiling with known APOE genotypes.  We
+then collect DEGs from APOE-controlled transcriptomic studies on AD.  Building
+on these multiple gene sets we then address the obstacles to translating GWAS
+and transcriptomic results on AD by network proximity based drug
+repurposing~\citep{Cheng2018}.  In contrast to phenomenological, correlative,
+approaches like the connectivity map, CMap~\citep{Lamb2006}, the network
+proximity approach models a drug's effect on disease genes mechanistically by
+considering the topological details of the human interactome, i.e the network
+of protein-protein and gene-gene interactions~\citep{Guney2016,Barabasi2011}.
+By evaluating network proximity to AD genes for each of $\approx 2400$
+approved or phase 3 drugs, we nominate TODO: $X, Y, Z$ for repurposing to AD.
 
 \section{Results}
 
@@ -104,12 +104,12 @@ Discussion).
 We set out by obtaining AD gene sets from multiple TWAS.  Besides collecting
 AD genes from previous TWA and PWA studies (TODO: supplementary table) we
 conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
-the largest AD-GWAS to date~\citep{Schwartzentruber2021}.  S-MultiXcan borrows
-statistical strength from multiple tissue types; we used a predictive model of
-gene expression built on the latest version to date of the entire GTEx data
-set.  TODO: describe here the results of Haky et al: number of significant
-genes (check with Haky et al on FDR); find interesting novel genes based on
-their membership in AD-relevant pathways.
+the two largest AD-GWAS to date~\citep{Schwartzentruber2021,Wightman2021}.
+S-MultiXcan borrows statistical strength from multiple tissue types; we used a
+predictive model of gene expression built on all tissues of the GTEx data set
+or on only brain tissues.  TODO: describe here the results of Haky et al:
+number of significant genes (check with Haky et al on FDR); find interesting
+novel genes based on their membership in AD-relevant pathways.
 
 \begin{figure}
 \includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
@@ -208,7 +208,7 @@ gave us a single final ranked list of the top 605 drugs (TODO: supplementary tab
 The very top ranked ($\le 30$) drugs on the final list also tended to be top ranked
 on five out of eight input rankings.  This unexpected convergence between
 essentially non-overlapping input gene
-sets~(cf.~Fig.~\ref{fig:divergent-results} helps validate our drug repurposing approach.
+sets~(cf.~Fig.~\ref{fig:divergent-results}) helps validate our drug repurposing approach.
 The remaining three ranked lists turned out the ones
 conditioned on AD gene sets derived from non-neuronal preparations and DEGs in
 AD vs.~non-pathological APOE3/APOE3 individuals (Fig.~S\ref{fig:rank-diff}).
@@ -223,7 +223,7 @@ Validation: rediscovery of existing phase 1--4 drugs for AD.
 
 As a computational validation test of the aggregated ranking we asked how much
 more frequent were drugs in any clinical phase for AD among the top $t$ ranked
-drugs relative to those among the bottom $1808$ drugs.  This ``AD drug''
+drugs relative to those among the bottom $1808$ drugs.  This AD drug
 rediscovery approach showed 2--3-fold enrichment of AD indication among the
 top $t \le 200$ drugs validating our approach
 (Fig.~\ref{fig:ad-drug-rediscovery}).  Interestingly several, but not all,
@@ -283,7 +283,7 @@ on a diverse collection of AD gene sets that included a curated knowledge
 based gene set, meta-analyzed, aggregated gene sets from TWAS and PWAS as well
 as DEG sets from transcriptomic studies controlling for APOE genotype and
 other genetic factors~\citep{Lin2018}.  These varied AD gene sources are
-expected to induce markedly varying bias into our drug repurposing screen: for
+expected to introduce markedly varying bias into our drug repurposing screen: for
 instance, the TWAS based gene set is small as it only contains genes with
 strong statistical evidence for causal involvement in AD but likely misses
 many other causal genes, while the DEG sets are large and likely inflated with
@@ -310,8 +310,11 @@ comorbidities of AD~\citep{Santiago2021}.  Such overlap between different
 drugs' indications is also consistent with the known relationship between drug
 repurposing and side effects~\citep{Ye2014}.  Further research is needed to
 dissect relationships between genetic correlations, comorbidities, side
-effects, protein and gene network proximity, etc to be able to harness and
-integrate these into the next generation of drug repurposing screens.
+effects, protein and gene network topology, etc to be able to harness these and
+integrate into drug repurposing techniques.  That, in combination with
+expanding multi-celltype, multi-omic characterization of AD and its molecular
+subtypes~\citep{Neff2021}, will herald a new generation of drugs for
+Alzheimer's disease.
 
 \section{Methods}
 

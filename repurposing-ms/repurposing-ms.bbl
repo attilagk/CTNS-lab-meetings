@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -733,6 +733,21 @@ Yuan-Ta Lin, Jinsoo Seo, Fan Gao, Heather~M. Feldman, Hsin-Lan Wen, Jay Penney,
 \newblock \doi{10.1016/j.neuron.2018.05.008}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6023751/}.
 
+\bibitem[Lopes et~al.(2022)Lopes, Snijders, Humphrey, Allan, Sneeboer, Navarro,
+  Schilder, Vialle, Parks, Missall, van Zuiden, Gigase, Kübler, van Berlekom,
+  Hicks, Bӧttcher, Priller, Kahn, de~Witte, and Raj]{Lopes2022}
+Katia de~Paiva Lopes, Gijsje J.~L. Snijders, Jack Humphrey, Amanda Allan,
+  Marjolein A.~M. Sneeboer, Elisa Navarro, Brian~M. Schilder, Ricardo~A.
+  Vialle, Madison Parks, Roy Missall, Welmoed van Zuiden, Frederieke A.~J.
+  Gigase, Raphael Kübler, Amber~Berdenis van Berlekom, Emily~M. Hicks, Chotima
+  Bӧttcher, Josef Priller, René~S. Kahn, Lot~D. de~Witte, and Towfique Raj.
+\newblock Genetic analysis of the human microglial transcriptome across brain
+  regions, aging and disease pathologies.
+\newblock \emph{Nature Genetics}, 54\penalty0 (1):\penalty0 4--17, 2022.
+\newblock ISSN 1546-1718.
+\newblock \doi{10.1038/s41588-021-00976-y}.
+\newblock URL \url{https://doi.org/10.1038/s41588-021-00976-y}.
+
 \bibitem[Masters et~al.(2015)Masters, Bateman, Blennow, Rowe, Sperling, and
   Cummings]{Masters2015}
 Colin~L. Masters, Randall Bateman, Kaj Blennow, Christopher~C. Rowe, Reisa~A.
@@ -740,6 +755,36 @@ Colin~L. Masters, Randall Bateman, Kaj Blennow, Christopher~C. Rowe, Reisa~A.
 \newblock Alzheimer's disease.
 \newblock \emph{Nature reviews. Disease primers}, 1:\penalty0 15056, Oct 2015.
 \newblock URL \url{https://www.nature.com/articles/nrdp201556}.
+
+\bibitem[Mathys et~al.(2019)Mathys, Davila-Velderrain, Peng, Gao, Mohammadi,
+  Young, Menon, He, Abdurrob, Jiang, Martorell, Ransohoff, Hafler, Bennett,
+  Kellis, and Tsai]{Mathys2019}
+Hansruedi Mathys, Jose Davila-Velderrain, Zhuyu Peng, Fan Gao, Shahin
+  Mohammadi, Jennie~Z. Young, Madhvi Menon, Liang He, Fatema Abdurrob, Xueqiao
+  Jiang, Anthony~J. Martorell, Richard~M. Ransohoff, Brian~P. Hafler, David~A.
+  Bennett, Manolis Kellis, and Li-Huei Tsai.
+\newblock Single-cell transcriptomic analysis of alzheimer's disease.
+\newblock \emph{Nature}, 570\penalty0 (31042697):\penalty0 332--337, June 2019.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/s41586-019-1195-2}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865822/}.
+
+\bibitem[Neff et~al.(2021)Neff, Wang, Vatansever, Guo, Ming, Wang, Wang,
+  Horgusluoglu-Moloch, Song, Li, Castranio, Tcw, Ho, Goate, Fossati, Noggle,
+  Gandy, Ehrlich, Katsel, Schadt, Cai, Brennand, Haroutunian, and
+  Zhang]{Neff2021}
+Ryan~A. Neff, Minghui Wang, Sezen Vatansever, Lei Guo, Chen Ming, Qian Wang,
+  Erming Wang, Emrin Horgusluoglu-Moloch, Won-Min Song, Aiqun Li, Emilie~L.
+  Castranio, Julia Tcw, Lap Ho, Alison Goate, Valentina Fossati, Scott Noggle,
+  Sam Gandy, Michelle~E. Ehrlich, Pavel Katsel, Eric Schadt, Dongming Cai,
+  Kristen~J. Brennand, Vahram Haroutunian, and Bin Zhang.
+\newblock Molecular subtyping of alzheimer's disease using rna sequencing data
+  reveals novel mechanisms and targets.
+\newblock \emph{Science advances}, 7\penalty0 (33523961):\penalty0 eabb5398,
+  January 2021.
+\newblock ISSN 2375-2548.
+\newblock \doi{10.1126/sciadv.abb5398}.
+\newblock URL \url{https://www.science.org/doi/10.1126/sciadv.abb5398}.
 
 \bibitem[Pletscher-Frankild et~al.(2015)Pletscher-Frankild, Pallejà, Tsafou,
   Binder, and Jensen]{PletscherFrankild2015}
@@ -872,6 +917,17 @@ Aliza~P. Wingo, Yue Liu, Ekaterina~S. Gerasimov, Jake Gockley, Benjamin~A.
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/s41588-020-00773-z}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8130821/}.
+
+\bibitem[Yamazaki et~al.(2019)Yamazaki, Zhao, Caulfield, Liu, and
+  Bu]{Yamazaki2019}
+Yu~Yamazaki, Na~Zhao, Thomas~R. Caulfield, Chia-Chen Liu, and Guojun Bu.
+\newblock Apolipoprotein e and alzheimer disease: pathobiology and targeting
+  strategies.
+\newblock \emph{Nature Reviews Neurology}, 15\penalty0 (9):\penalty0 501--518,
+  2019.
+\newblock ISSN 1759-4766.
+\newblock \doi{10.1038/s41582-019-0228-7}.
+\newblock URL \url{https://doi.org/10.1038/s41582-019-0228-7}.
 
 \bibitem[Ye et~al.(2014)Ye, Liu, and Wei]{Ye2014}
 Hao Ye, Qi~Liu, and Jia Wei.
