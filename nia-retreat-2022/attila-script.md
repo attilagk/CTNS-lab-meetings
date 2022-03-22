@@ -1,0 +1,9 @@
+Hello, I will present our work to find Drug Repurposing Opportunities for Alzheimer’s Disease from Multiomics.
+
+We estimate the efficacy of a given drug with network proximity.  Network proximity is a quantity defined in terms of gene interaction network topology between the drugs targets (shown as blue square nodes) and disease genes (shown as red and purple round nodes).  Thus, given a list of drugs and their targets, as well as a set of Alzheimer's disease genes (AD genes) we may computationally screen the drugs for repurposing opportunities for Alzheimer's.  This approach is systems-based, mechanistic, and therefore expected to yield more accurate results than some other approaches.
+
+Our workflow, centered at network proximity calculations, uses a rich set of information from multiple omic modalities: genome and transcriptome-wide association studies (GWAS, TWAS), transcriptomics (differentially expressed genes), and interactomics (gene-gene and drug-target networks).  Once we scored about twentyfour-hundred drugs with network proximity, we selected a few top drugs with our expert review.  Next slide please.
+
+The four selected top drugs include anticholelithogenics and anti-urolithics meaning they prevent gallstones and kidney stones.  Three of the drugs target RGS4, or Regulator of G-protein signaling 4, which has been found to be associated with schizophrenia and bipolar disorder.  Other targets include NTCP2, or Ileal bile acid transporter.  We are currently performing cell based assays to find experimental support for the utility of these drugs for Alzheimer's disease.
+
+Moreover, we already validated our entire drug screen computationally.  The graph shows a 2 to 3-fold rediscovery rate of existing AD drugs among top drugs relative to rediscovery rate among bottom drugs, which indicates that our drug ranking is indeed relevant for Alzheimer's disease.  More details in our poster.  Thank you.
