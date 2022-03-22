@@ -1,13 +1,16 @@
 \documentclass[17pt,a1paper]{tikzposter} %Options for format can be included here
+\usepackage{tikz}
 \usepackage{multicol}
 \setlength{\columnsep}{0.7cm}
 \usepackage{natbib}
 \bibliographystyle{plainnat}
 %\bibliographystyle{unsrtnat}
-\author{Attila Jones, Andrew Williamson, Vijay Varma, Jackson Roberts, Madhav Thambisetty}
-\title{Network based drug repurposing for Alzheimer's disease (AD)}
+\author{Attila Jones$^1$, Evan Wu$^2$, Sudhir Varma, Hae Kyung Im$^2$, Madhav Thambisetty$^1$}
+\title{Drug Repurposing Opportunities for Alzheimer’s Disease from
+	Multiomics}
 
-\institute{Clinical \& Translational Neuroscience Section, Laboratory of Behavioral Neuroscience}
+\institute{$1$: Clinical \& Translational Neuroscience Section, LBN, $2$: University
+	of~Chicago}
 
  %Choose Layout
 \usetheme{Default}
@@ -18,16 +21,20 @@
 \block{1. Introduction}{
 \begin{multicols}{2}
 We recently announced the Drug Repurposing for Effective
-Alzheimer's Medicines (DREAM) study \citep{Desai2020}, in which we plan to
+Alzheimer's Medicines (DREAM) study
+%\citep{Desai2020}
+, in which we plan to
 find repurposable drugs based on:
 
 \begin{enumerate}
-\item our novel proteomics study \citep{JacksonA.Roberts2021} that describes
+\item our novel proteomics study
+	%\citep{JacksonA.Roberts2021}
+	that describes
 	the \emph{incipient AD proteomic signature}
 \item transcriptome-wide association studies, TWAS, on AD
-	\citep{Baird2021,Gerring2020,Jansen2019a,Kunkle2019a}
-\item curated knowledge on established AD genes \citep{PletscherFrankild2015}
-\item a network based drug repurposing approach \citep{Guney2016,Cheng2018}
+	%\citep{Baird2021,Gerring2020,Jansen2019a,Kunkle2019a}
+\item curated knowledge on established AD genes %\citep{PletscherFrankild2015}
+\item a network based drug repurposing approach %\citep{Guney2016,Cheng2018}
 \end{enumerate}
 
 Below we provide an overview on the approach and on the input data sets.
@@ -38,100 +45,55 @@ Below we provide an overview on the approach and on the input data sets.
 \column{0.55}
 \block{2. Network proximity predicts efficacy}{
 \begin{multicols}{2}
+	Network proximity (Guney et al Nat Commun Vol 7, No 26831545)
+%\citep{Cheng2018}
+is a quantity defined in terms of gene interaction network
+topology between some drug's targets (\tikz \node[square, fill=blue]{};)  and
+disease genes (\tikz \node[circle, fill=red!80!black]{}; or \tikz \node[circle,
+fill=purple!70!black]{};)
 We choose the approach to drug repurposing developed by
-\cite{Cheng2018} based on their earlier work~\citep{Guney2016}.
+based on their earlier work
+%\citep{Guney2016}.
 
-\cite{Cheng2018} showed that:
-\begin{itemize}
-\item cardiovascular (CV) disease genes form clusters, so-called \emph{disease
-	modules}, in the human protein-protein interactome (PPI)
-\item a few drugs approved for non-CV indications, like Hydroxychloroquine,
-	are proximal to the CAD (coronary artery disease) module
-\item Hydroxychloroquine's protective effect on CAD is supported by
-	pharmaco-epidemiology and an \emph{in vitro} assay
-%\item these evidence suggests Hydroxychloroquine might be repurposed for CAD
-\end{itemize}
-
-\includegraphics[width=0.8\columnwidth]{../../../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
-\end{multicols}
-}
-
-\block{3. Quantifying proximity of drug targets to disease genes}{
-
-\begin{multicols}{3}
-Definition of network proximity from a set of drug targets $T$ to a set of disease genes $S$:
-%$d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),$
-
-\begin{equation}
-	d = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t),
-\end{equation}
-
-where $d(s,t)$
-is the shortest path length between disease gene $s$ and drug target $t$.
-
-Interpretation: the average length of the shortest paths taken from all 
-targets to the disease genes~\citep{Guney2016}.
-
-We present two examples in a toy network with fixed $S = \{B, D, E\}$ and
-varied $T$.
-
-\pagebreak
-
-\begin{center}
-{\Large Distal drug targets}
-\end{center}
-\begin{eqnarray*}
-T &=& \{C, H\} \\
-d &=& 3/2 \\
-z &=& 2.217 \\
-p &=& 0.987 \\
-\end{eqnarray*}
-
-
-\includegraphics[height=4in]{../../../results/2021-06-14-proximity/toy-distal-arrow.png}
-
-\pagebreak
-
-\begin{center}
-{\Large Proximal drug targets}
-\end{center}
-\begin{eqnarray*}
-T &=& \{E, J\} \\
-d &=& 1/2 \\
-z &=& -0.454 \\
-p &=& 0.324 \\
-\end{eqnarray*}
-
-\includegraphics[height=4in]{../../../results/2021-06-14-proximity/toy-proximal-arrow.png}
+showed that:
+%\begin{itemize}
+%\item cardiovascular (CV) disease genes form clusters, so-called \emph{disease
+%	modules}, in the human protein-protein interactome (PPI)
+%\item a few drugs approved for non-CV indications, like Hydroxychloroquine,
+%	are proximal to the CAD (coronary artery disease) module
+%\item Hydroxychloroquine's protective effect on CAD is supported by
+%	pharmaco-epidemiology and an \emph{in vitro} assay
+%%\item these evidence suggests Hydroxychloroquine might be repurposed for CAD
+%\end{itemize}
 
 \end{multicols}
+\includegraphics[width=0.3\columnwidth]{../../../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
 }
 
-\block{}{
-\tiny
-\bibliography{library}
+\block{3. Workflow}{
+
+\includegraphics[width=0.5\columnwidth]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
 }
 
 \column{0.45}
 
-\block{4. Planned workflow}{
-\includegraphics[width=0.375\columnwidth]{../figures/by-me/network-repos-flowchart/network-repos-flowchart.pdf}
+\block{4. Top selected drugs}{
 }
 
-\block{5. High confidence AD gene sets}{
+\block{5. Validation}{
 %\begin{tabular}{rl}
 %Knowledge & established AD genes in knowledge bases complied by~\cite{PletscherFrankild2015} \\
 %TWAS & AD genes whose expression is inferred causal to AD by Mendelian randomization and similar techniques \\
 %Incipient proteo. & the \emph{incipient AD proteomic signature} described by us~\citep{JacksonA.Roberts2021} \\
 %\end{tabular}
-\begin{description}
-\item[Knowledge] AD genes in knowledge bases~\cite{PletscherFrankild2015} 
-\item[TWAS] AD genes whose expression is causal to AD inferred by 'omics
-\item[Incipient proteo.] \emph{incipient AD proteomic signature}~\citep{JacksonA.Roberts2021}
-\end{description}
 \begin{center}
-\includegraphics[width=0.35\columnwidth]{../../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/knowledge-twas-proteo-venn.pdf}
+\includegraphics[width=0.35\columnwidth]{../../../CTNS/notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
 \end{center}
+}
+
+\block{}{
+\small
+\bibliography{library}
 }
 
 \end{columns}
