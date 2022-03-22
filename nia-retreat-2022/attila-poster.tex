@@ -1,4 +1,4 @@
-\documentclass[17pt,a1paper]{tikzposter} %Options for format can be included here
+\documentclass[a1paper]{tikzposter} %Options for format can be included here
 \usepackage{tikz}
 \usepackage{multicol}
 \setlength{\columnsep}{0.7cm}
@@ -6,8 +6,7 @@
 \bibliographystyle{plainnat}
 %\bibliographystyle{unsrtnat}
 \author{Attila Jones$^1$, Evan Wu$^2$, Sudhir Varma, Hae Kyung Im$^2$, Madhav Thambisetty$^1$}
-\title{Drug Repurposing Opportunities for Alzheimer’s Disease from
-	Multiomics}
+\title{Drug Repurposing to Alzheimer’s from Multiomics}
 
 \institute{$1$: Clinical \& Translational Neuroscience Section, LBN, $2$: University
 	of~Chicago}
@@ -19,82 +18,84 @@
 \maketitle
 
 \block{1. Introduction}{
-\begin{multicols}{2}
-We recently announced the Drug Repurposing for Effective
-Alzheimer's Medicines (DREAM) study
-%\citep{Desai2020}
-, in which we plan to
-find repurposable drugs based on:
-
-\begin{enumerate}
-\item our novel proteomics study
-	%\citep{JacksonA.Roberts2021}
-	that describes
-	the \emph{incipient AD proteomic signature}
-\item transcriptome-wide association studies, TWAS, on AD
-	%\citep{Baird2021,Gerring2020,Jansen2019a,Kunkle2019a}
-\item curated knowledge on established AD genes %\citep{PletscherFrankild2015}
-\item a network based drug repurposing approach %\citep{Guney2016,Cheng2018}
-\end{enumerate}
-
-Below we provide an overview on the approach and on the input data sets.
-\end{multicols}
+	%\Large
+	Alzheimer's is a polygenic disease without efficient treatment.
+Repurposing drugs from other disease indications to Alzheimer's is an
+attractive approach but it comes with the challenge of finding 
+repurposeable drugs.  In this work we score ca.~2,400 drugs for their
+repurposeability using multiomic information sources and a systems-based,
+mechanistic network model.
 }
 
 \begin{columns}
 \column{0.55}
 \block{2. Network proximity predicts efficacy}{
-\begin{multicols}{2}
-	Network proximity (Guney et al Nat Commun Vol 7, No 26831545)
-%\citep{Cheng2018}
-is a quantity defined in terms of gene interaction network
-topology between some drug's targets (\tikz \node[square, fill=blue]{};)  and
+	Network proximity
+is a quantity defined between some drug's targets (\tikz \node[square,
+fill=blue]{}; below)  and
 disease genes (\tikz \node[circle, fill=red!80!black]{}; or \tikz \node[circle,
-fill=purple!70!black]{};)
-We choose the approach to drug repurposing developed by
-based on their earlier work
-%\citep{Guney2016}.
+fill=purple!70!black]{};) in terms of gene interaction network
+topology.
+Previous work suggested that network proximity can
+predict drug efficacy and thus can be used to screen drugs for repurposing
+oportunities.
 
-showed that:
-%\begin{itemize}
-%\item cardiovascular (CV) disease genes form clusters, so-called \emph{disease
-%	modules}, in the human protein-protein interactome (PPI)
-%\item a few drugs approved for non-CV indications, like Hydroxychloroquine,
-%	are proximal to the CAD (coronary artery disease) module
-%\item Hydroxychloroquine's protective effect on CAD is supported by
-%	pharmaco-epidemiology and an \emph{in vitro} assay
-%%\item these evidence suggests Hydroxychloroquine might be repurposed for CAD
-%\end{itemize}
+{\small
+	Nature Comm Vol 7 26831545, Nature Comm Vol 9 30002366
+}
 
-\end{multicols}
 \includegraphics[width=0.3\columnwidth]{../../../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a.png}
 }
 
 \block{3. Workflow}{
+\includegraphics[width=0.45\columnwidth]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
 
-\includegraphics[width=0.5\columnwidth]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+Our workflow, centered at network proximity calculations, uses a rich set of
+information from multiple omic modalities: genome and transcriptome-wide
+association studies (GWAS, TWAS), transcriptomics (differentially expressed
+genes), and interactomics (gene-gene and drug-target networks).
 }
 
 \column{0.45}
 
-\block{4. Top selected drugs}{
+\block{4. Selected top drugs}{
+\begin{tabular}{rll}
+	rank & indication class    & targets \\
+	\hline
+	4    &                     & RGS4, GPR84 \\
+	28   & Anticholelithogenic & RGS4, NTCP2 \\
+	51   & Anti-Urolithic      & CP3A4, RGS4 \\
+	322  & Anti-Urolithic      & GEMI, LMNA, PLK1, ... \\
+	\hline
+\end{tabular}
+\vfill
+\small
+\emph{anticholelithogenics}: prevents gallstones, \emph{anti-urolithics}
+prevents kidney stones, \emph{RGS4}: Regulator of G-protein signaling 4,
+\emph{GPR84}: G-protein coupled receptor 84, \emph{NTCP2}: Ileal bile acid
+transporter, \emph{CP3A4}: Cytochrome P450 3A4, \emph{GEMI}: Geminin,
+\emph{LMNA}: Prelamin-A/C, \emph{PLK1}: Serine/threonine-protein kinase PLK1
 }
 
-\block{5. Validation}{
-%\begin{tabular}{rl}
-%Knowledge & established AD genes in knowledge bases complied by~\cite{PletscherFrankild2015} \\
-%TWAS & AD genes whose expression is inferred causal to AD by Mendelian randomization and similar techniques \\
-%Incipient proteo. & the \emph{incipient AD proteomic signature} described by us~\citep{JacksonA.Roberts2021} \\
-%\end{tabular}
+\block{5. Computational validation}{
 \begin{center}
 \includegraphics[width=0.35\columnwidth]{../../../CTNS/notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
 \end{center}
+
+Here we validate our network proximity based drug ranking by showing that the
+top-$t$ drugs are enriched in ones developed for Alzheimer's.
+}
+
+%\bibliography{attila-poster}
+
+\block{6. Experimental validation}{
+In a collaboration we are currently testing the four selected top drugs in cell
+based assays for their ability to rescue Alzheimer's-like cellular phenotypes.
 }
 
 \block{}{
-\small
-\bibliography{library}
-}
+We thank Vijay Varma, Yang An, Jackson Roberts for feedback and the NIH HPC
+group for excellent service.}
 
 \end{columns}
 
