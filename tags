@@ -6,49 +6,35 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 AD gene sets	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{AD gene sets}$/;"	b
 AD gene sets	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{AD gene sets}$/;"	b
-AD gene sets	repurposing-ms/repurposing-ms.tex	/^\\subsection{AD gene sets}$/;"	b
 Aggregated drug ranking	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Aggregated drug ranking}$/;"	b
 Aggregated drug ranking	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Aggregated drug ranking}$/;"	b
-Aggregated drug ranking	repurposing-ms/repurposing-ms.tex	/^\\subsection{Aggregated drug ranking}$/;"	b
 Bumetanide paper	lab-meetings/2021-10-19-bumetanide-and-progress/2021-10-19-bumetanide-and-progress.tex	/^\\section{Bumetanide paper}$/;"	s
 CMap analyses	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{CMap analyses}$/;"	b
-CMap analyses	repurposing-ms/repurposing-ms.tex	/^\\subsection{CMap analyses}$/;"	b
 Discussion	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Discussion}$/;"	s
-Discussion	repurposing-ms/repurposing-ms.tex	/^\\section{Discussion}$/;"	s
 Drug target network	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Drug-target network}$/;"	b
 Drug target network	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Drug-target network}$/;"	b
-Drug target network	repurposing-ms/repurposing-ms.tex	/^\\subsection{Drug-target network}$/;"	b
 Experimental validation	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Experimental validation}$/;"	b
 Experimental validation	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Experimental validation}$/;"	b
-Experimental validation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Experimental validation}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
-Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
 Limitations of the approach	nia-retreat-2021/paper/nia-2021-paper.tex	/^\\section{Limitations of the approach}$/;"	s
 Methods	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Methods}$/;"	s
 Methods	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Methods}$/;"	s
-Methods	repurposing-ms/repurposing-ms.tex	/^\\section{Methods}$/;"	s
 Network proximity calculations	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Network proximity calculations}$/;"	b
-Network proximity calculations	repurposing-ms/repurposing-ms.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
 Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
-Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Rank aggregation}$/;"	b
-Rank aggregation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rank aggregation}$/;"	b
 Results	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Results}$/;"	s
-Results	repurposing-ms/repurposing-ms.tex	/^\\section{Results}$/;"	s
 Sci Transl Med 2017	lab-meetings/2021-05-13-covid19-repurposing/2021-05-13-covid19-repurposing.tex	/^\\section{Sci Transl Med 2017}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-supp.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v1.tex	/^\\section*{Supplementary Material}$/;"	s
-Supplementary Material	repurposing-ms/repurposing-ms.tex	/^\\section*{Supplementary Material}$/;"	s
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
-TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_citation_influence.tex.project.vim	/^let b:LevelDict = {}$/;"	v
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_normal.tex.project.vim	/^let b:LevelDict = {}$/;"	v
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_pca2.tex.project.vim	/^let b:LevelDict = {}$/;"	v

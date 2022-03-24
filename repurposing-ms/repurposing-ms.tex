@@ -32,63 +32,106 @@
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
 societies but effective treatment is still
-missing~\citep{Bondi2017,Masters2015}.  This is, in great part,
-due to our poor understanding of the disease's early molecular etiology,
-which potentially involves a multitude of cellular pathways and cell types,
-and which becomes gradually confounded by a large number of compensatory
-and degenerative pathologies over the decades-long disease
-progress~\citep{DeStrooper2016}.
+missing~\citep{Bondi2017,Masters2015}.  Repurposing drugs across disease
+indications is a resourceful, rapid pharmacological
+approach~\citep{Pushpakom2019} that is just beginning to be applied to
+AD~\citep{Fang2021,Taubes2021}.
 
-Genome-wide association studies (GWAS) on AD discovered $\approx 40$ risk loci
-to date~\citep{Jansen2019,Kunkle2019,Schwartzentruber2021,Wightman2021}
-suggesting polygenic, or at least oligogenic~\citep{Zhang2020}, mechanism
-involving 100 or somewhat fewer causal genes.  Unfortunately, translating GWAS
-to efficient AD drugs has been prevented so far by several obstacles: (1) the
-identity of causal genes within risk loci is unclear except for a few like
-APOE~\citep{Yamazaki2019}; (2) GWAS, in general, cannot detect all causal
-genes; (3) not all causal AD genes may be
-druggable~\citep{Cao2014,Lau2020,Floris2018,Finan2017}.  The first obstacle
-was addressed by several transcriptome- or proteome-wide association studies
-(TWAS/PWAS) on
-AD~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wingo2021},
-which combined Mendelian randomization~\citep{DaveySmith2014,Lawlor2008},
-imputation techniques~\citep{Barbeira2018,Barbeira2019a}, or Bayesian
-colocalization~\citep{Wen2017} with large transcriptomic or proteomic data
-sets.  However, the causal genes discovered by these recent TWAS/PWAS remain
-until now without experimental validation.  Also, it is unclear how concordant
-discoveries these methodologically different studies resulted in.
+However, drug repurposing to AD is hindered by our limited understanding of
+the disease's early molecular etiology, which potentially involves multitude
+of cellular pathways and cell types, and which becomes gradually confounded by
+a large number of compensatory and degenerative pathologies over the
+decades-long disease progress~\citep{DeStrooper2016}.  In this work we tackle
+this problem in two ways.  Firstly, we collect mechanistic information on AD from previous genome-
+and transcriptome- and proteome-wide association studies (GWAS, TWAS,
+PWAS)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021};
+from conducting a novel TWAS, and from differentially expressed genes (DEGs)
+with controlled APOE genotype~\citep{Taubes2021,Lin2018}.
 
-Analysis of differentially expressed genes (DEGs) from transcriptomic and
-proteomic profiling of diseased and control samples is a complementary
-approach to GWAS that has been extensively applied to AD at various disease
-stages, tissues and cell types TODO: ref.  Such studies implicated hundreds to
-thousands of genes in AD but nominating drug targets is hindered by the
-difficulty of dissecting causal or driver genes from the large number of
-correlated genes.  With that aim a number of studies in the AMP-AD
-program~\citep{Greenwood2020} nominated hundreds of putative
-targets~(https://agora.adknowledgeportal.org) based in
-great part on DEG discovery.  Genetically regulated components of gene
-expression may confound transcriptomic profiling but this received little attention
-except for a few studies that controlled for the genotype of
-APOE~\citep{Taubes2021,Lin2018,RobertsJackson2021}, whose APOE4
-isoform is the single strongest genetic risk factor for AD.
-
-In this study we first conduct a TWAS on AD with transcriptomic
-imputation~\citep{Barbeira2018} using the latest, largest GWAS and
-gene expression data sets and meta analyze that with previous TWAS results as
-well as with DEGs from transcriptomic profiling with known APOE genotypes.  We
-then collect DEGs from APOE-controlled transcriptomic studies on AD.  Building
-on these multiple gene sets we then address the obstacles to translating GWAS
-and transcriptomic results on AD by network proximity based drug
-repurposing~\citep{Cheng2018}.  In contrast to phenomenological, correlative,
-approaches like the connectivity map, CMap~\citep{Lamb2006}, the network
-proximity approach models a drug's effect on disease genes mechanistically by
-considering the topological details of the human interactome, i.e the network
-of protein-protein and gene-gene interactions~\citep{Guney2016,Barabasi2011}.
-By evaluating network proximity to AD genes for each of $\approx 2400$
-approved or phase 3 drugs, we nominate TODO: $X, Y, Z$ for repurposing to AD.
+Secondly, we exploit rich, mechanistic information represented by the human
+interactome and by a drug-target network we extract from
+ChEMBL~\citep{Gaulton2017}.  We combine these two resources by evaluating, for
+each drug, network proximity~\citep{Guney2016}, which was
+shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
+used, but merely correlative, approaches to computational drug repurposing
+such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
+and computational validation of the network proximity screen as well as
+experimental validation of four top ranking drugs.
 
 \section{Results}
+
+\subsection{Overview of the network proximity screen}
+
+We performed a network proximity based drug repurposing screen on 2413
+approved or phase 3 drugs (Fig.~\ref{fig:workflow}A).  For each drug we
+computed eight values of network proximity given eight sets of AD genes that
+we derived from eight distinct information sources (one curated knowledge
+based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
+resulted in eight distinct lists of the same 2413 drugs ranked according to
+network proximity (Fig.~\ref{fig:workflow}).  Interestingly, the pairwise
+correlations between the  eight lists of network proximity was markedly high
+(Fig.~\ref{fig:workflow}C) given the low Jaccard index of the corresponding
+pairs of AD gene sets (Fig.~\ref{fig:workflow}B).
+
+\begin{figure}
+\hspace{0.05\textwidth}A
+
+\includegraphics[scale=1.0]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+
+\hspace{0.05\textwidth}B\hspace{0.5\textwidth}C
+
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
+\caption{
+A) Workflow of computational drug repurposing to Alzheimer's disease.  B)
+Eight highly dissimilar sets of AD genes were input to the workflow.  These
+eight sets resulted in eight lists of the same 2413 drugs ranked according to
+their network proximity values.  C) These lists showed markedly high
+correlation with each other given the marked dissimilarity of the
+corresponding AD gene sets.
+}
+\label{fig:workflow}
+\end{figure}
+
+Assuming our eight AD gene sets were all equally relevant to Alzheimer's
+disease, we aggregated the corresponding drug rankings giving uniform weight
+to all gene sets.  This yielded a single final ranked list of the top 605
+drugs (TODO: supplementary table).  The very top ranked ($\le 30$) drugs on
+the final list also tended to be top ranked on five out of eight input
+rankings.  This unexpected convergence between essentially non-overlapping
+input gene sets~(cf.~Fig.~\ref{fig:divergent-results}B) helps validate our drug
+repurposing approach.
+
+\subsection{Selected top drugs}
+
+We selected four top ranking compounds for further investigation
+(Table~\ref{tab:top-drugs}) based on permeability to blood brain barrier,
+druglikeness (rule of five) and associated disease indications (excluding
+drugs investigated for AD).  Three of these have been approved
+anticholelithogenics or anti-urolithics (preventing gallstones or kidney
+stones); the fourth, Arundine, is in phase 3 trials for cervical cancer.
+RGS4 (Regulator Of G-Protein Signalling 4) is targeted by three of the four
+drugs and is associated to psychiatric disorders.  Other notable targets
+include the Alzheimer-associated GPR84, which is also involved in G-protein
+signalling; NTCP2, transporter of bile acid, whose metabolism has been linked
+to AD~\citep{Varma2021}.
+
+\begin{table}
+\footnotesize
+\begin{tabular}{llrll}
+  name                   & ChEMBL ID     & rank & indication class    & targets \\
+	\hline
+Arundine                 & CHEMBL446452  & 4    &                     & RGS4, GPR84 \\
+Chenodiol                & CHEMBL240597  & 28   & Anticholelithogenic & RGS4, NTCP2 \\
+Cysteamine               & CHEMBL602     & 51   & Anti-Urolithic      & CP3A4, RGS4 \\
+Cysteamine hydrochloride & CHEMBL1256137 & 322  & Anti-Urolithic      & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
+\end{tabular}
+\caption{
+Top drugs resulted by the aggregation of multiple network proximity based
+screens (cf.~Table~\ref{tab:top-drugs})
+}
+\label{tab:top-drugs}
+\end{table}
 
 \subsection{Present TWAS and meta-analysis with previous TWAS results}
 
@@ -141,25 +184,6 @@ its minimum at $-6.49$ at drugs with the sole target ACE (TODO: supplementary
 table) providing strong evidence ($p=4\times 10^{-11}$) for the repurposing
 potential of these drugs to AD given the input TWAS2+ AD gene set.
 
-\begin{table}
-\footnotesize
-\begin{tabular}{cll}
-name     & description & reference  \\
-\hline
-TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
-knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
-agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
-AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
-AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
-APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
-APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
-APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
-\end{tabular}
-\caption{
-Input AD gene sets to drug repurposing screens of this study.
-}
-\label{tab:genesets}
-\end{table}
 
 However, we expected our TWAS2+ gene set far from complete in terms of
 causal AD genes, which likely resulted in many false discoveries in the
@@ -234,23 +258,6 @@ TODO: describe post-hoc selection criteria and the selected top drugs
 (Table~\ref{tab:top-drugs}).  TODO: analyze what pathways (GO, etc) are
 involved (how useful would this be?).
 
-\begin{table}
-\footnotesize
-\begin{tabular}{cccc}
-drug     & aggregate rank & targets & previous indication(s)  \\
-\hline
-TODO & TODO & TODO & TODO \\
-TODO & TODO & TODO & TODO \\
-TODO & TODO & TODO & TODO \\
-TODO & TODO & TODO & TODO \\
-\end{tabular}
-\caption{
-Top drugs resulted by the aggregation of multiple network proximity based
-screens (cf.~Table~\ref{tab:genesets})
-}
-\label{tab:top-drugs}
-\end{table}
-
 \subsection{Experimental validation}
 
 TODO
@@ -320,6 +327,25 @@ Alzheimer's disease.
 
 \subsection{AD gene sets}
 
+\begin{table}
+\footnotesize
+\begin{tabular}{cll}
+name     & description & reference  \\
+\hline
+TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
+knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\end{tabular}
+\caption{
+Input AD gene sets to drug repurposing screens of this study.
+}
+\label{tab:genesets}
+\end{table}
 \subsection{TWAS on AD using PrediXcan}
 
 \subsection{Drug-target network}
@@ -343,6 +369,16 @@ Alzheimer's disease.
 \makeatletter 
 \renewcommand{\figurename}{Supplementary Figure} % nice
 \makeatother
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
+\caption{
+Difference of drug rank between the final, aggregated list and the list
+resulting from each network proximity based drug screen.
+}
+\label{fig:rank-diff}
+\end{figure}
 
 \begin{figure}[p]
 \includegraphics[scale=0.28]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/prox-z-scatterplot_matrix.png}
@@ -386,16 +422,6 @@ Several rank aggregation algorithms' performance assessed by modified Kendall
 distance.
 }
 \label{fig:kendall-dist}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
-\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
-\caption{
-Difference of drug rank between the final, aggregated list and the list
-resulting from each network proximity based drug screen.
-}
-\label{fig:rank-diff}
 \end{figure}
 
 \begin{figure}[p]

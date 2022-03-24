@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{38}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,12 @@ Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
 \newblock ISSN 1553-7390.
 \newblock \doi{10.1371/journal.pgen.1009224}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
+
+\bibitem[Barabási et~al.(2011)Barabási, Gulbahce, and Loscalzo]{Barabasi2011}
+Albert-László Barabási, Natali Gulbahce, and Joseph Loscalzo.
+\newblock Network medicine: a network-based approach to human disease.
+\newblock \emph{Nature reviews. Genetics}, 12:\penalty0 56--68, Jan 2011.
+\newblock URL \url{https://barabasi.com/f/320.pdf}.
 
 \bibitem[Barbeira et~al.(2018)Barbeira, Dickinson, Bonazzola, Zheng, Wheeler,
   Torres, Torstenson, Shah, Garcia, Edwards, Stahl, Huckins, Aguet, Ardlie,
@@ -128,6 +134,16 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
 \newblock \doi{10.1038/s41467-018-03621-1}.
 \newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
 
+\bibitem[Barbeira et~al.(2019)Barbeira, Pividori, Zheng, Wheeler, Nicolae, and
+  Im]{Barbeira2019a}
+Alvaro~N. Barbeira, Milton Pividori, Jiamao Zheng, Heather~E. Wheeler, Dan~L.
+  Nicolae, and Hae~Kyung Im.
+\newblock Integrating predicted transcriptome from multiple tissues improves
+  association detection.
+\newblock \emph{PLOS Genetics}, 15\penalty0 (1):\penalty0 1--20, 01 2019.
+\newblock \doi{10.1371/journal.pgen.1007889}.
+\newblock URL \url{https://doi.org/10.1371/journal.pgen.1007889}.
+
 \bibitem[Bondi et~al.(2017)Bondi, Edmonds, and Salmon]{Bondi2017}
 Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.
 \newblock Alzheimer's disease: Past, present, and future.
@@ -136,6 +152,13 @@ Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.
 \newblock ISSN 1355-6177.
 \newblock \doi{10.1017/S135561771700100X}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5830188/}.
+
+\bibitem[Cao and Moult(2014)]{Cao2014}
+Chen Cao and John Moult.
+\newblock Gwas and drug targets.
+\newblock \emph{BMC genomics}, 15 Suppl 4:\penalty0 S5, 2014.
+\newblock ISSN 1471-2164.
+\newblock \doi{10.1186/1471-2164-15-S4-S5}.
 
 \bibitem[Cheng et~al.(2018)Cheng, Desai, Handy, Wang, Schneeweiss, Barabási,
   and Loscalzo]{Cheng2018}
@@ -360,6 +383,16 @@ Brainstorm Consortium, Verneri Anttila, Brendan Bulik-Sullivan, Hilary~K.
 \newblock ISSN 1095-9203.
 \newblock \doi{10.1126/science.aap8757}.
 
+\bibitem[Davey~Smith and Hemani(2014)]{DaveySmith2014}
+George Davey~Smith and Gibran Hemani.
+\newblock Mendelian randomization: genetic anchors for causal inference in
+  epidemiological studies.
+\newblock \emph{Human molecular genetics}, 23\penalty0 (25064373):\penalty0
+  R89--R98, September 2014.
+\newblock ISSN 0964-6906.
+\newblock \doi{10.1093/hmg/ddu328}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4170722/}.
+
 \bibitem[De~Strooper and Karran(2016)]{DeStrooper2016}
 Bart De~Strooper and Eric Karran.
 \newblock The cellular phase of alzheimer's disease.
@@ -381,16 +414,27 @@ Jiansong Fang, Pengyue Zhang, Yadi Zhou, Chien-Wei Chiang, Juan Tan, Yuan Hou,
 \newblock \doi{10.1038/s43587-021-00138-z}.
 \newblock URL \url{https://doi.org/10.1038/s43587-021-00138-z}.
 
-\bibitem[Gaulton et~al.(2017)Gaulton, Hersey, Nowotka, Bento, Chambers, Mendez,
-  Mutowo, Atkinson, Bellis, Cibrián-Uhalte, Davies, Dedman, Karlsson,
-  Magariños, Overington, Papadatos, Smit, and Leach]{Gaulton2017}
-Anna Gaulton, Anne Hersey, Michał Nowotka, A.~Patrícia Bento, Jon Chambers,
-  David Mendez, Prudence Mutowo, Francis Atkinson, Louisa~J. Bellis, Elena
-  Cibrián-Uhalte, Mark Davies, Nathan Dedman, Anneli Karlsson, María~Paula
-  Magariños, John~P. Overington, George Papadatos, Ines Smit, and Andrew~R.
-  Leach.
-\newblock The chembl database in 2017.
-\newblock \emph{Nucleic acids research}, 45:\penalty0 D945--D954, Jan 2017.
+\bibitem[Finan et~al.(2017)Finan, Gaulton, Kruger, Lumbers, Shah, Engmann,
+  Galver, Kelley, Karlsson, Santos, Overington, Hingorani, and
+  Casas]{Finan2017}
+Chris Finan, Anna Gaulton, Felix~A. Kruger, R.~Thomas Lumbers, Tina Shah,
+  Jorgen Engmann, Luana Galver, Ryan Kelley, Anneli Karlsson, Rita Santos,
+  John~P. Overington, Aroon~D. Hingorani, and Juan~P. Casas.
+\newblock The druggable genome and support for target identification and
+  validation in drug development.
+\newblock \emph{Science translational medicine}, 9\penalty0
+  (28356508):\penalty0 eaag1166, March 2017.
+\newblock ISSN 1946-6234.
+\newblock \doi{10.1126/scitranslmed.aag1166}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6321762/}.
+
+\bibitem[Floris et~al.(2018)Floris, Olla, Schlessinger, and Cucca]{Floris2018}
+Matteo Floris, Stefania Olla, David Schlessinger, and Francesco Cucca.
+\newblock Genetic-driven druggable target identification and validation.
+\newblock \emph{Trends in genetics : TIG}, 34:\penalty0 558--570, July 2018.
+\newblock ISSN 0168-9525.
+\newblock \doi{10.1016/j.tig.2018.04.004}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6088790/}.
 
 \bibitem[Gerring et~al.(2020)Gerring, Lupton, Edey, Gamazon, and
   Derks]{Gerring2020}
@@ -403,6 +447,21 @@ Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
 \newblock ISSN 1758-9193.
 \newblock \doi{10.1186/s13195-020-00611-8}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/}.
+
+\bibitem[Greenwood et~al.(2020)Greenwood, Montgomery, Kauer, Woo, Leanza,
+  Poehlman, Gockley, Sieberts, Bradic, Logsdon, Peters, Omberg, and
+  Mangravite]{Greenwood2020}
+Anna~K. Greenwood, Kelsey~S. Montgomery, Nicole Kauer, Kara~H. Woo, Zoe~J.
+  Leanza, William~L. Poehlman, Jake Gockley, Solveig~K. Sieberts, Ljubomir
+  Bradic, Benjamin~A. Logsdon, Mette~A. Peters, Larsson Omberg, and Lara~M.
+  Mangravite.
+\newblock The ad knowledge portal: A repository for multi-omic data on
+  alzheimer's disease and aging.
+\newblock \emph{Current Protocols in Human Genetics}, 108\penalty0
+  (1):\penalty0 e105, 2020.
+\newblock \doi{https://doi.org/10.1002/cphg.105}.
+\newblock URL
+  \url{https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/cphg.105}.
 
 \bibitem[Guney et~al.(2016)Guney, Menche, Vidal, and Barabási]{Guney2016}
 Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
@@ -640,6 +699,25 @@ Justin Lamb, Emily~D. Crawford, David Peck, Joshua~W. Modell, Irene~C. Blat,
 \newblock \doi{10.1126/science.1132939}.
 \newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1132939}.
 
+\bibitem[Lau and So(2020)]{Lau2020}
+Alexandria Lau and Hon-Cheong So.
+\newblock Turning genome-wide association study findings into opportunities for
+  drug repositioning.
+\newblock \emph{Computational and structural biotechnology journal},
+  18:\penalty0 1639--1650, 2020.
+\newblock ISSN 2001-0370.
+\newblock \doi{10.1016/j.csbj.2020.06.015}.
+
+\bibitem[Lawlor et~al.(2008)Lawlor, Harbord, Sterne, Timpson, and
+  Smith]{Lawlor2008}
+Debbie~A. Lawlor, Roger~M. Harbord, Jonathan A.~C. Sterne, Nic Timpson, and
+  George~Davey Smith.
+\newblock Mendelian randomization: Using genes as instruments for making causal
+  inferences in epidemiology.
+\newblock \emph{Statistics in Medicine}, 27\penalty0 (8):\penalty0 1133--1163,
+  2008.
+\newblock \doi{10.1002/sim.3034}.
+
 \bibitem[Lin et~al.(2018)Lin, Seo, Gao, Feldman, Wen, Penney, Cam, Gjoneska,
   Raja, Cheng, Rueda, Kritskiy, Abdurrob, Peng, Milo, Yu, Elmsaouri, Dey, Ko,
   Yankner, and Tsai]{Lin2018}
@@ -731,6 +809,25 @@ Sudeep Pushpakom, Francesco Iorio, Patrick~A. Eyers, K.~Jane Escott, Shirley
 \newblock \doi{10.1038/nrd.2018.168}.
 \newblock URL \url{https://doi.org/10.1038/nrd.2018.168}.
 
+\bibitem[Roberts~Jackson et~al.(2021)Roberts~Jackson, Varma~Vijay, Yang,
+  Sudhir, Julián, Giovanna, Vinod, Carlos, Andrew, Atsushi, Tina, Irene, Ruin,
+  Mohammed, Jacqueline, Toshiko, Olga, Troncoso~Juan, Bennett~David,
+  Albert~Marilyn, Kaiwen, Mingming, Vahram, Bin, Junmin, Croteau~Deborah,
+  Resnick~Susan, Myriam, Bohr~Vilhelm, Luigi, and Madhav]{RobertsJackson2021}
+A.~Roberts~Jackson, R.~Varma~Vijay, An~Yang, Varma Sudhir, Candia Julián,
+  Fantoni Giovanna, Tiwari Vinod, Anerillas Carlos, Williamson Andrew, Saito
+  Atsushi, Loeffler Tina, Schilcher Irene, Moaddel Ruin, Khadeer Mohammed,
+  Lovett Jacqueline, Tanaka Toshiko, Pletnikova Olga, C.~Troncoso~Juan,
+  A.~Bennett~David, S.~Albert~Marilyn, Yu~Kaiwen, Niu Mingming, Haroutunian
+  Vahram, Zhang Bin, Peng Junmin, L.~Croteau~Deborah, M.~Resnick~Susan, Gorospe
+  Myriam, A.~Bohr~Vilhelm, Ferrucci Luigi, and Thambisetty Madhav.
+\newblock A brain proteomic signature of incipient alzheimer’s disease in
+  young apoe ε4 carriers identifies novel drug targets.
+\newblock \emph{Science Advances}, 7\penalty0 (46):\penalty0 eabi8178, November
+  2021.
+\newblock \doi{10.1126/sciadv.abi8178}.
+\newblock URL \url{https://doi.org/10.1126/sciadv.abi8178}.
+
 \bibitem[Santiago and Potashkin(2021)]{Santiago2021}
 Jose~A. Santiago and Judith~A. Potashkin.
 \newblock The impact of disease comorbidities in alzheimer's disease.
@@ -770,6 +867,14 @@ Alice Taubes, Phil Nova, Kelly~A. Zalocusky, Idit Kosti, Mesude Bicak, Misha~Y.
 \newblock ISSN 2662-8465.
 \newblock \doi{10.1038/s43587-021-00122-7}.
 \newblock URL \url{https://doi.org/10.1038/s43587-021-00122-7}.
+
+\bibitem[Wen et~al.(2017)Wen, Pique-Regi, and Luca]{Wen2017}
+Xiaoquan Wen, Roger Pique-Regi, and Francesca Luca.
+\newblock Integrating molecular qtl data into genome-wide genetic association
+  analysis: Probabilistic assessment of enrichment and colocalization.
+\newblock \emph{PLOS Genetics}, 13\penalty0 (3):\penalty0 e1006646, March 2017.
+\newblock \doi{10.1371/journal.pgen.1006646}.
+\newblock URL \url{https://doi.org/10.1371/journal.pgen.1006646}.
 
 \bibitem[Wightman et~al.(2021)Wightman, Jansen, Savage, Shadrin, Bahrami,
   Holland, Rongve, Børte, Winsvold, Drange, Martinsen, Skogholt, Willer,
@@ -813,6 +918,17 @@ Aliza~P. Wingo, Yue Liu, Ekaterina~S. Gerasimov, Jake Gockley, Benjamin~A.
 \newblock \doi{10.1038/s41588-020-00773-z}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8130821/}.
 
+\bibitem[Yamazaki et~al.(2019)Yamazaki, Zhao, Caulfield, Liu, and
+  Bu]{Yamazaki2019}
+Yu~Yamazaki, Na~Zhao, Thomas~R. Caulfield, Chia-Chen Liu, and Guojun Bu.
+\newblock Apolipoprotein e and alzheimer disease: pathobiology and targeting
+  strategies.
+\newblock \emph{Nature Reviews Neurology}, 15\penalty0 (9):\penalty0 501--518,
+  2019.
+\newblock ISSN 1759-4766.
+\newblock \doi{10.1038/s41582-019-0228-7}.
+\newblock URL \url{https://doi.org/10.1038/s41582-019-0228-7}.
+
 \bibitem[Ye et~al.(2014)Ye, Liu, and Wei]{Ye2014}
 Hao Ye, Qi~Liu, and Jia Wei.
 \newblock Construction of drug network based on side effects and its
@@ -820,5 +936,23 @@ Hao Ye, Qi~Liu, and Jia Wei.
 \newblock \emph{PLOS ONE}, 9\penalty0 (2):\penalty0 1--10, 02 2014.
 \newblock \doi{10.1371/journal.pone.0087864}.
 \newblock URL \url{https://doi.org/10.1371/journal.pone.0087864}.
+
+\bibitem[Zhang et~al.(2020)Zhang, Sidorenko, Couvy-Duchesne, Marioni, Wright,
+  Goate, Marcora, Huang, Porter, Laws, Biomarkers, Study, Sachdev, Mather,
+  Armstrong, Thalamuthu, Brodaty, Yengo, Yang, Wray, McRae, and
+  Visscher]{Zhang2020}
+Qian Zhang, Julia Sidorenko, Baptiste Couvy-Duchesne, Riccardo~E. Marioni,
+  Margaret~J. Wright, Alison~M. Goate, Edoardo Marcora, Kuan-Lin Huang,
+  Tenielle Porter, Simon~M. Laws, Australian~Imaging Biomarkers,
+  Lifestyle~(AIBL) Study, Perminder~S. Sachdev, Karen~A. Mather, Nicola~J.
+  Armstrong, Anbupalam Thalamuthu, Henry Brodaty, Loic Yengo, Jian Yang,
+  Naomi~R. Wray, Allan~F. McRae, and Peter~M. Visscher.
+\newblock Risk prediction of late-onset alzheimer's disease implies an
+  oligogenic architecture.
+\newblock \emph{Nature communications}, 11\penalty0 (32968074):\penalty0
+  4799--4799, September 2020.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-020-18534-1}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7511365/}.
 
 \end{thebibliography}

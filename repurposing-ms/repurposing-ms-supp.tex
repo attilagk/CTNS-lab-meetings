@@ -111,15 +111,6 @@ or on only brain tissues.  TODO: describe here the results of Haky et al:
 number of significant genes (check with Haky et al on FDR); find interesting
 novel genes based on their membership in AD-relevant pathways.
 
-\begin{figure}
-\includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
-\caption{
-Similarity of TWA/PWA studies on AD in terms of shared genes.
-  TODO: color genes supported by multiple studies differently
-}
-\label{fig:twas-clustermap}
-\end{figure}
-
 We conservatively took the top 30 genes and investigated their agreement with
 top gene sets from seven previous TWAS and one previous PWAS.  Hierarchical
 clustering of studies based on shared genes (Fig.~\ref{fig:twas-clustermap})
@@ -169,17 +160,6 @@ sensitivity of the approach to its input AD gene set
 (Fig.~\ref{fig:divergent-results}) and (2) to produce multiple ranked lists of
 drugs for subsequent rank aggregation (Table~\ref{tab:top-drugs}).
 
-\begin{figure}
-\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
-\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
-\caption{
-  Sensitivity of drug repurposing score to input AD gene set. (A) Pairwise
-  similarity of AD gene sets used as inputs for network proximity based drug
-  screen.  (B) Correlation of the corresponding proximity scores.
-}
-\label{fig:divergent-results}
-\end{figure}
-
 Our collection of AD gene sets was quite varied evidenced by low Jaccard index
 for pairs of sets (range: 0 to 0.28), which
 highlights the impact of methodological differences in how these gene sets
@@ -212,14 +192,6 @@ sets~(cf.~Fig.~\ref{fig:divergent-results}) helps validate our drug repurposing 
 The remaining three ranked lists turned out the ones
 conditioned on AD gene sets derived from non-neuronal preparations and DEGs in
 AD vs.~non-pathological APOE3/APOE3 individuals (Fig.~S\ref{fig:rank-diff}).
-
-\begin{figure}
-\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
-\caption{
-Validation: rediscovery of existing phase 1--4 drugs for AD.
-}
-\label{fig:ad-drug-rediscovery}
-\end{figure}
 
 As a computational validation test of the aggregated ranking we asked how much
 more frequent were drugs in any clinical phase for AD among the top $t$ ranked
