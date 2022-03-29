@@ -545,6 +545,22 @@ PMC7164172[pmcid]},
   url       = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/},
 }
 
+@Article{Varma2021,
+  author    = {Varma, Vijay R. and Wang, Youjin and An, Yang and Varma, Sudhir and Bilgel, Murat and Doshi, Jimit and Legido-Quigley, Cristina and Delgado, João C. and Oommen, Anup M. and Roberts, Jackson A. and Wong, Dean F. and Davatzikos, Christos and Resnick, Susan M. and Troncoso, Juan C. and Pletnikova, Olga and O’Brien, Richard and Hak, Eelko and Baak, Brenda N. and Pfeiffer, Ruth and Baloni, Priyanka and Mohmoudiandehkordi, Siamak and Nho, Kwangsik and Kaddurah-Daouk, Rima and Bennett, David A. and Gadalla, Shahinaz M. and Thambisetty, Madhav},
+  journal   = {PLOS Medicine},
+  title     = {Bile acid synthesis, modulation, and dementia: A metabolomic, transcriptomic, and pharmacoepidemiologic study},
+  year      = {2021},
+  month     = may,
+  number    = {5},
+  pages     = {e1003615},
+  volume    = {18},
+  abstract  = {Vijay Varma and co-workers study cholesterol and bile acid metabolism in dementia.},
+  doi       = {10.1371/journal.pmed.1003615},
+  groups    = {CTNS lab, repurposing-ms},
+  publisher = {Public Library of Science},
+  url       = {https://doi.org/10.1371/journal.pmed.1003615},
+}
+
 @Article{Cheng2018,
   author    = {Cheng, Feixiong and Desai, Rishi J. and Handy, Diane E. and Wang, Ruisheng and Schneeweiss, Sebastian and Barabási, Albert-László and Loscalzo, Joseph},
   journal   = {Nature communications},

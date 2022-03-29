@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -770,6 +770,24 @@ Alice Taubes, Phil Nova, Kelly~A. Zalocusky, Idit Kosti, Mesude Bicak, Misha~Y.
 \newblock ISSN 2662-8465.
 \newblock \doi{10.1038/s43587-021-00122-7}.
 \newblock URL \url{https://doi.org/10.1038/s43587-021-00122-7}.
+
+\bibitem[Varma et~al.(2021)Varma, Wang, An, Varma, Bilgel, Doshi,
+  Legido-Quigley, Delgado, Oommen, Roberts, Wong, Davatzikos, Resnick,
+  Troncoso, Pletnikova, O’Brien, Hak, Baak, Pfeiffer, Baloni,
+  Mohmoudiandehkordi, Nho, Kaddurah-Daouk, Bennett, Gadalla, and
+  Thambisetty]{Varma2021}
+Vijay~R. Varma, Youjin Wang, Yang An, Sudhir Varma, Murat Bilgel, Jimit Doshi,
+  Cristina Legido-Quigley, João~C. Delgado, Anup~M. Oommen, Jackson~A.
+  Roberts, Dean~F. Wong, Christos Davatzikos, Susan~M. Resnick, Juan~C.
+  Troncoso, Olga Pletnikova, Richard O’Brien, Eelko Hak, Brenda~N. Baak, Ruth
+  Pfeiffer, Priyanka Baloni, Siamak Mohmoudiandehkordi, Kwangsik Nho, Rima
+  Kaddurah-Daouk, David~A. Bennett, Shahinaz~M. Gadalla, and Madhav
+  Thambisetty.
+\newblock Bile acid synthesis, modulation, and dementia: A metabolomic,
+  transcriptomic, and pharmacoepidemiologic study.
+\newblock \emph{PLOS Medicine}, 18\penalty0 (5):\penalty0 e1003615, May 2021.
+\newblock \doi{10.1371/journal.pmed.1003615}.
+\newblock URL \url{https://doi.org/10.1371/journal.pmed.1003615}.
 
 \bibitem[Wightman et~al.(2021)Wightman, Jansen, Savage, Shadrin, Bahrami,
   Holland, Rongve, Børte, Winsvold, Drange, Martinsen, Skogholt, Willer,
