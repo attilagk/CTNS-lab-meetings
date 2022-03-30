@@ -332,14 +332,14 @@ Third, we used... TODO: ask Sudhir what implementation he used.
 
 \subsection{Rank aggregation}
 
-As Fig.~\ref{fig:workflow} shows we aggregated 8 lists of network
+As Fig.~\ref{fig:workflow} shows, we aggregated 8 lists of network
 proximity-ranked drugs into a single list with rank aggregation algorithms.
-We performed rank aggregation with the TopKList R package%\citep{Schimek2015}
-several times, each
-time with different algorithm.  Then we assessed those algorithm's performance
-with Modified Kendall Distance (Fig.~S\ref{fig:kendall-dist}) and found the
-MC3 algorithm to perform the best.  Finally, we used the MC3-aggregated list
-in our workflow.
+We performed rank aggregation with the TopKLists R package
+%\citep{Schimek2015}
+several times, each time with different algorithm.  Then we assessed those
+algorithm's performance with Modified Kendall Distance and found the MC3
+algorithm to perform the best (Fig.~S\ref{fig:kendall-dist}).  Finally, we
+used the MC3-aggregated list in our workflow.
 
 \bibliography{repurposing-ms}
 
@@ -427,47 +427,3 @@ Rediscovery of existing phase 1--4 drugs for AD and other indications.
 \end{figure}
 
 \end{document}
-
-\begin{table}
-  \footnotesize
-\begin{tabular}{cc}
-  gene       & supporting TWAS \\
-  \hline
-  CR1        & 6\\
-  PVR        & 5\\
-  BIN1       & 5\\
-  MS4A6A     & 4\\
-  CLU        & 4\\
-  PTK2B      & 4\\
-  ABCA7      & 3\\
-  ACE        & 3\\
-  TOMM40     & 3\\
-  HLA-DRB1   & 3\\
-  CLPTM1     & 3\\
-  MS4A4A     & 3\\
-  HLA-DRA    & 2\\
-  PICALM     & 2\\
-  HLA-DQA1   & 2\\
-  APOC4      & 2\\
-  CASS4      & 2\\
-  PVRIG      & 2\\
-  NECTIN2    & 2\\
-  APOC1      & 2\\
-  EPHA1      & 2\\
-  PRSS36     & 2\\
-  SPI1       & 2\\
-  CEACAM19   & 2\\
-  CCDC6      & 2\\
-  TAS2R60    & 2\\
-  TSPAN14    & 2\\
-  KAT8       & 2\\
-  APOE       & 2\\
-\end{tabular}
-\caption{
-Genes supported by multiple TWAS and fine mapping studies.  TODO: more info
-needs to be added to this table: pathways involving genes, experimental
-studies
-}
-\label{tab:twas-genes}
-\end{table}
-
