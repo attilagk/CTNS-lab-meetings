@@ -1,0 +1,429 @@
+\documentclass[letterpaper]{article}
+%\documentclass[12pt,letterpaper]{article}
+%\setlength{\textwidth}{480pt}
+%\setlength{\textheight}{630pt}
+%\setlength{\voffset}{0pt}
+
+\usepackage{amsmath, geometry, graphicx}
+\usepackage{natbib}
+%\usepackage{float}
+\usepackage{url,hyperref}
+\bibliographystyle{plainnat}
+
+% https://tex.stackexchange.com/questions/6758/how-can-i-create-a-bibliography-like-a-section
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\section*}{\section}{}{}
+
+\pagestyle{plain}
+
+\title{Novel Drug Repurposing Opportunities for Alzheimer's Disease from
+  Genomic Fine Mapping and Transcriptomic Disease Signatures}
+
+\author{Attila Jones, Evan Wu, Sudhir Varma, ..., Hae Kyung Im, Madhav Thambisetty}
+
+\date{National Institute on Aging, NIH}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
+common form of dementia affecting a growing number of individuals in ageing
+societies but effective treatment is still
+missing~\citep{Bondi2017,Masters2015}.  Repurposing drugs across disease
+indications is a resourceful, rapid pharmacological
+approach~\citep{Pushpakom2019} that is just beginning to be applied to
+AD~\citep{Fang2021,Taubes2021}.
+
+However, drug repurposing to AD is hindered by our limited understanding of
+the disease's early molecular etiology, which potentially involves multitude
+of cellular pathways and cell types, and which becomes gradually confounded by
+a large number of compensatory and degenerative pathologies over the
+decades-long disease progress~\citep{DeStrooper2016}.  In this work we tackle
+this problem in two ways.  Firstly, we collect mechanistic information on AD from previous genome-
+and transcriptome- and proteome-wide association studies (GWAS, TWAS,
+PWAS)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021};
+from conducting a novel TWAS, and from differentially expressed genes (DEGs)
+with controlled APOE genotype~\citep{Taubes2021,Lin2018}.
+
+Secondly, we exploit rich, mechanistic information represented by the human
+interactome and by a drug-target network we extract from
+ChEMBL~\citep{Gaulton2017}.  We combine these two resources by evaluating, for
+each drug, network proximity~\citep{Guney2016}, which was
+shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
+used, but merely correlative, approaches to computational drug repurposing
+such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
+and computational validation of the network proximity screen as well as
+experimental validation of four top ranking drugs.
+
+\section{Results}
+
+\subsection{Overview of the network proximity screen}
+
+We performed a network proximity based drug repurposing screen on 2413
+approved or phase 3 drugs (Fig.~\ref{fig:workflow}A).  For each drug we
+computed eight values of network proximity given eight sets of AD genes that
+we derived from eight distinct information sources (one curated knowledge
+based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
+resulted in eight distinct lists of the same 2413 drugs ranked according to
+network proximity (Fig.~\ref{fig:workflow}).  The pairwise
+correlations between the eight lists of network proximity was markedly high
+(Fig.~\ref{fig:workflow}C) relative to the low Jaccard index of the corresponding
+pairs of AD gene sets (Fig.~\ref{fig:workflow}B) suggesting that our
+gene sets, although largely non-overlapping, are close to each other in the
+network's topology and therefore overlap in terms of function.
+
+\begin{figure}
+\hspace{0.05\textwidth}A
+
+\includegraphics[scale=1.0]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+
+\hspace{0.05\textwidth}B\hspace{0.5\textwidth}C
+
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
+\caption{
+A) Workflow of computational drug repurposing to Alzheimer's disease.  B)
+Eight highly dissimilar sets of AD genes were input to the workflow.  These
+eight sets resulted in eight lists of the same 2413 drugs ranked according to
+their network proximity values.  C) These lists showed markedly high
+correlation with each other given the marked dissimilarity of the
+corresponding AD gene sets.
+}
+\label{fig:workflow}
+\end{figure}
+
+Assuming our eight AD gene sets were all equally relevant to Alzheimer's
+disease, we aggregated the corresponding drug rankings giving uniform weight
+to all gene sets.  This yielded a single final ranked list of the top 605
+drugs (TODO: supplementary table).  The very top ranked ($\le 30$) drugs on
+the final list also tended to be top ranked on five out of eight input
+rankings (Fig.~S\ref{fig:rank-diff}).  This unexpected convergence between
+essentially non-overlapping input gene
+sets~(cf.~Fig.~\ref{fig:workflow}B) helps validate our drug
+repurposing approach.
+
+\subsection{Selected top drugs}
+
+We selected four top ranking compounds for further investigation
+(Table~\ref{tab:top-drugs}) based on permeability to blood brain barrier,
+druglikeness (rule of five) and associated disease indications (excluding
+drugs investigated for AD).  Three of these have been approved
+anticholelithogenics or anti-urolithics (preventing gallstones or kidney
+stones); the fourth, Arundine, is in phase 3 trials for cervical cancer.
+RGS4 (Regulator Of G-Protein Signalling 4) is targeted by three of the four
+drugs and is associated to psychiatric disorders.  Other notable targets
+include the Alzheimer-associated GPR84, which is also involved in G-protein
+signalling; and NTCP2, transporter of bile acid, whose metabolism has been linked
+to AD~\citep{Varma2021}.
+
+\begin{table}
+\footnotesize
+\begin{tabular}{llrll}
+  name                   & ChEMBL ID     & rank & indication class    & targets \\
+	\hline
+Arundine                 & CHEMBL446452  & 4    &                     & RGS4, GPR84 \\
+Chenodiol                & CHEMBL240597  & 28   & Anticholelithogenic & RGS4, NTCP2 \\
+Cysteamine               & CHEMBL602     & 51   & Anti-Urolithic      & CP3A4, RGS4 \\
+Cysteamine hydrochloride & CHEMBL1256137 & 322  & Anti-Urolithic      & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
+\end{tabular}
+\caption{
+Top drugs resulted by the aggregation of multiple network proximity based
+screens (cf.~Table~\ref{tab:top-drugs})
+}
+\label{tab:top-drugs}
+\end{table}
+
+\subsection{Computational validation of network based screen}
+
+To validate our network based screen we asked to what extent the top ranked
+drugs were enriched in drugs already investigated or approved for AD.  To that
+end we examined the rediscovery rate for the top-$t$ drugs relative to that
+for the bottom-$1808$ drugs (see Methods for definitions).
+Fig.~\ref{fig:ad-drug-rediscovery} shows that rediscovery rate for the top-$t$
+drugs was about $2--3$-fold relative to that for the bottom drugs depending on
+the threshold $t$, which validates our approach.  Interestingly several, but
+not all, other common indications showed a similar enrichment pattern
+(Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
+
+\begin{figure}
+\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\caption{
+Computational validation: relative rediscovery rate of drugs already investigated or
+approved for AD in the top-$t$ drugs ranked by network proximity.  The relative
+rediscovery rate being $>1$ validates our network based screen.
+}
+\label{fig:ad-drug-rediscovery}
+\end{figure}
+
+We also checked the agreement between our network proximity based results
+above and the results we obtained by using CMap with the same input AD gene
+set.  Strikingly, we found no agreement between the two even when we
+conditioned on the various cell types of the CMap data set
+(Fig.~S\ref{fig:proxim-cmap},~S\ref{fig:proxim-cmap-celltype}).  Moreover,
+different implementations of CMap yielded considerably different results
+(Fig.~S\ref{fig:cmap-cmap}).  Given these conflicting observations and the
+more realistic, systems-based, mechanistic modeling assumptions behind the
+network approach, we omitted all results obtained with CMap from our study.
+
+\subsection{Experimental validation}
+
+TODO
+
+\section{Discussion}
+
+Computational drug repurposing is a new, rapidly evolving field without
+established standards and with a multitude of varied approaches applicable to
+a growing, diverse multi-omic body of data and curated
+knowledge~\citep{Pushpakom2019}.  During our present investigations two drug
+repurposing studies on AD were published: \cite{Fang2021} nominated sildenafil
+while~\cite{Taubes2021} bumetanide.  These two works differed both in their
+definition of AD genes as well as in the approach used to score and rank
+drugs: \cite{Taubes2021} analyzed APOE genotype-specific DEGs with
+CMap~\citep{Lamb2006}, while \cite{Fang2021} used knowledge-based AD genes, as
+well as DEGs without known APOE genotype, as inputs to a network proximity
+based drug repurposing screen~\citep{Cheng2018}.  In this paper we show that,
+while the input gene sets have considerable effect on network proximity based
+drug scores, the latter still show significant correlation.  Surprisingly, we
+also find that the network proximity approach taken by \cite{Fang2021} and
+CMap used by \cite{Taubes2021} leads to fully discordant, uncorrelated
+results.  Moreover, we find that various published implementation of CMap lead
+to quite different, albeit still correlated, results.  These observations
+caution about methodological details.
+
+Although the present study shares several methodological limitations with
+those of \cite{Fang2021,Taubes2021}, we may argue to have carried out the most
+carefully designed drug repurposing screen to date on AD.  We based our screen
+on a diverse collection of AD gene sets that included a curated knowledge
+based gene set, meta-analyzed, aggregated gene sets from TWAS and PWAS as well
+as DEG sets from transcriptomic studies controlling for APOE genotype and
+other genetic factors~\citep{Lin2018}.  These varied AD gene sources are
+expected to introduce markedly varying bias into our drug repurposing screen: for
+instance, the TWAS based gene set is small as it only contains genes with
+strong statistical evidence for causal involvement in AD but likely misses
+many other causal genes, while the DEG sets are large and likely inflated with
+many genes that are not causal to AD.  It is easy to see how combination of
+such diverse gene sets prior to the screen may further worsen the associated
+biases. To prevent that, we conducted multiple screens, each conditioned on a
+gene set and performed \emph{a posteriori} rank aggregation.  The rank
+aggregation strategy also revealed that even some non-overlapping AD gene sets
+resulted lead to the discovery of highly overlapping sets of very top drugs
+demonstrating the robustness of our workflow.  Interestingly, the non-neuronal
+AD gene sets were exception of this tendency pointing at the value of further
+characterization of non-neuronal cells in
+AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
+
+TODO: Top drugs and selected top drugs.  Drugs nominated
+by~\cite{Fang2021,Taubes2021}.
+
+Our computational validation, based on the rediscovery of drugs previously
+developed or repurposed for AD, revealed the enrichment of our top ranked
+drugs for also some common non-AD indications.  Genetic correlations between
+disease phenotypes~\citep{Consortium2018}, market-driven selection biases, and
+other factors may underlie not only this observation but also the known
+comorbidities of AD~\citep{Santiago2021}.  Such overlap between different
+drugs' indications is also consistent with the known relationship between drug
+repurposing and side effects~\citep{Ye2014}.  Further research is needed to
+dissect relationships between genetic correlations, comorbidities, side
+effects, protein and gene network topology, etc to be able to harness these and
+integrate into drug repurposing techniques.  That, in combination with
+expanding multi-celltype, multi-omic characterization of AD and its molecular
+subtypes~\citep{Neff2021}, will herald a new generation of drugs for
+Alzheimer's disease.
+
+\section{Methods}
+
+\subsection{AD gene sets}
+
+Given an AD gene set, the network structure of the human interactome, and
+another network formed by drugs and their targets (drug-target network), the
+topological proximity of a given drug to the AD gene set can be
+quantified\citep{Guney2016} and used as evidence for repurposing that drug for
+AD.  Rather than compiling a single AD gene set from multiple studies, we
+opted for evaluating the proximity of any drug separately for multiple AD gene
+sets and aggregate the multiple proximity values subsequently (see
+Discussion).  Table~\ref{tab:genesets} summarizes the AD gene sets used in
+this study.  The genes contained in each set are listed in Table~S1.
+
+\begin{table}
+\footnotesize
+\begin{tabular}{cll}
+name     & description & reference  \\
+\hline
+TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
+knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\end{tabular}
+\caption{
+Input AD gene sets to drug repurposing screens of this study.
+}
+\label{tab:genesets}
+\end{table}
+
+\subsection{Previous and novel TWAS on AD}
+
+We obtained AD gene sets from multiple TWAS.  Besides collecting
+AD genes from previous transcriptome- and proteome-wide association studies
+(TWAS, PWAS) we
+conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
+the two largest AD-GWAS to date~\citep{Schwartzentruber2021,Wightman2021}.
+S-MultiXcan borrows statistical strength from multiple tissue types; we used a
+predictive model of gene expression built on all tissues of the GTEx data set
+or on only brain tissues.
+%TODO: describe here the results of Haky et al:
+%number of significant genes (check with Haky et al on FDR); find interesting
+%novel genes based on their membership in AD-relevant pathways.
+
+We conservatively took the top 30 genes and investigated their agreement with
+top gene sets from seven previous TWAS and one previous PWAS (see Table~S2
+listing genes contained in each set).  Hierarchical clustering of studies
+based on shared genes (Fig.~S\ref{fig:twas-clustermap}) showed a fairly low
+agreement for all pairs of studies.  The most similar study pair was our
+present TWAS and the fine mapping of~\cite{Jansen2019} despite several
+methodological differences between these two studies, which helps validate our
+novel TWAS results.  As might be expected, the least similarity was found
+between the only PWAS in our collection and all the other studies.
+
+\subsection{Drug-target network}
+
+We queried ChEMBL~\citep{Gaulton2017} (v29, July 2021) for phase 3 and 4 drugs
+and those of their targets that satisfied the following conditions: (1) the
+target is a human protein (2) its average $-\log_{10}\mathrm{Activity}$ or
+$p\mathrm{Activity}$ is $\ge 5$, which corresponds to $\le 10 \mu M$
+following~\cite{Cheng2018}.  Average $p\mathrm{Activity}$ activity is defined
+as $\sum_{i=1}^n p\mathrm{Activity}_i \ge 5$, where $n$ is the number of
+activity measurements for a given drug-protein pair and $\mathrm{Activity}_i$
+is the standard value of the $i$-th measurement stored in the
+activities.standard\_value SQL variable.  See
+\href{https://github.com/attilagk/CTNS-notebook/blob/main/2021-10-24-chembl-query/drug_target_avg_activity.sql}{our SQLite script} for implementation.
+
+\subsection{Network proximity calculations}
+
+\cite{Guney2016} developed the network proximity method for in silico drug efficacy screening.  It
+quantifies the topological proximity $d$ in the interactome of the set $T$ of a drug's target genes
+to the set $S$ of disease genes: 
+
+\begin{equation}
+  d(S, T) = \frac{1}{|T|}\sum_{t \in T} \min_{s \in S} d(s, t)
+\end{equation}
+where $d(s,t)$ is the shortest path length between disease gene $s$ and drug
+target $t$.  The equation can be interpreted as the average length of shortest
+paths taken from all targets of a drug to all the disease genes.
+
+We used \href{https://github.com/attilagk/guney_code}{our modified clone} of
+the original, now obsolete, implementation of \cite{Guney2016}, which allows
+running the code under Python~3.
+
+\subsection{CMap analyses}
+
+Since there are several implementations of CMap (Connectivity Map) analysis was carried out with several tools.  First, we used
+\url{https://clue.io/} \citep{Lamb2006} and, for each drug, averaged
+``norm\_cs'',
+the normalized connectivity scores.  Second, we used L1000CDS$^2$ at
+\url{https://maayanlab.cloud/L1000CDS2} and the averaged ``score'' variable.
+Third, we used... TODO: ask Sudhir what implementation he used.
+
+\subsection{Rank aggregation}
+
+As Fig.~\ref{fig:workflow} shows, we aggregated 8 lists of network
+proximity-ranked drugs into a single list with rank aggregation algorithms.
+We performed rank aggregation with the TopKLists R package
+%\citep{Schimek2015}
+several times, each time with different algorithm.  Then we assessed those
+algorithm's performance with Modified Kendall Distance and found the MC3
+algorithm to perform the best (Fig.~S\ref{fig:kendall-dist}).  Finally, we
+used the MC3-aggregated list in our workflow.
+
+\bibliography{repurposing-ms}
+
+\newpage
+\section*{Supplementary Material}
+
+\setcounter{table}{0}
+\makeatletter 
+\renewcommand{\figurename}{Supplementary Table} % nice
+\makeatother
+
+\setcounter{figure}{0}
+\makeatletter 
+\renewcommand{\figurename}{Supplementary Figure} % nice
+\makeatother
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
+\caption{
+Difference of drug rank between the final, aggregated list and the list
+resulting from each network proximity based drug screen.
+}
+\label{fig:rank-diff}
+\end{figure}
+
+%\begin{figure}[p]
+%\includegraphics[scale=0.28]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/prox-z-scatterplot_matrix.png}
+%\caption{
+%Z score of 2413 drugs (points) based on various input AD gene sets (rows and
+%columns).
+%}
+%\label{fig:prox-z-scatterplot-m}
+%\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
+\caption{
+Similarity of TWA/PWA studies on AD in terms of shared genes.
+}
+\label{fig:twas-clustermap}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.6]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-apoe4apoe4.png}
+\caption{
+Drug repurposing scores obtained by network proximity approach and CMap
+}
+\label{fig:proxim-cmap}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-celltype-apoe4-apoe4.png}
+\caption{
+Drug repurposing scores obtained by network proximity approach and CMap in
+given the cell type of the CMap expression profiling.
+}
+\label{fig:proxim-cmap-celltype}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.6]{../../notebooks/2021-10-04-CMap-discussion/named-figure/cmap-tools-consistency.pdf}
+\caption{
+Results under different implementations of CMap.
+TODO: remove Sudhir's?
+}
+\label{fig:cmap-cmap}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../results/2022-01-14-rank-aggregation/kendall-distance.png}
+\caption{
+Several rank aggregation algorithms' performance assessed by modified Kendall
+distance.
+}
+\label{fig:kendall-dist}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\caption{
+Rediscovery of existing phase 1--4 drugs for AD and other indications.
+}
+\label{fig:ad-drug-rediscovery-multi}
+\end{figure}
+
+\end{document}
