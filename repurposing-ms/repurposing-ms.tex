@@ -323,7 +323,23 @@ running the code under Python~3.
 
 \subsection{CMap analyses}
 
+Since there are several implementations of CMap (Connectivity Map) analysis was carried out with several tools.  First, we used
+\url{https://clue.io/} \citep{Lamb2006} and, for each drug, averaged
+``norm\_cs'',
+the normalized connectivity scores.  Second, we used L1000CDS$^2$ at
+\url{https://maayanlab.cloud/L1000CDS2} and the averaged ``score'' variable.
+Third, we used... TODO: ask Sudhir what implementation he used.
+
 \subsection{Rank aggregation}
+
+As Fig.~\ref{fig:workflow} shows we aggregated 8 lists of network
+proximity-ranked drugs into a single list with rank aggregation algorithms.
+We performed rank aggregation with the TopKList R package%\citep{Schimek2015}
+several times, each
+time with different algorithm.  Then we assessed those algorithm's performance
+with Modified Kendall Distance (Fig.~S\ref{fig:kendall-dist}) and found the
+MC3 algorithm to perform the best.  Finally, we used the MC3-aggregated list
+in our workflow.
 
 \bibliography{repurposing-ms}
 
