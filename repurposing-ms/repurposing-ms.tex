@@ -70,27 +70,29 @@ based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
 resulted in eight distinct lists of the same 2413 drugs ranked according to
 network proximity (Fig.~\ref{fig:workflow}).  The pairwise
 correlations between the eight lists of network proximity was markedly high
-(Fig.~\ref{fig:workflow}C) relative to the low Jaccard index of the corresponding
-pairs of AD gene sets (Fig.~\ref{fig:workflow}B) suggesting that our
+(Fig.~\ref{fig:workflow}D) relative to the low Jaccard index of the corresponding
+pairs of AD gene sets (Fig.~\ref{fig:workflow}C) suggesting that our
 gene sets, although largely non-overlapping, are close to each other in the
 network's topology and therefore overlap in terms of function.
 
 \begin{figure}
-\hspace{0.05\textwidth}A
+\hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
 
-\includegraphics[scale=1.0]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+\includegraphics[scale=0.85]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+\includegraphics[scale=0.85]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
 
-\hspace{0.05\textwidth}B\hspace{0.5\textwidth}C
+\hspace{0.05\textwidth}C\hspace{0.5\textwidth}D
 
 \includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
 \includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
 \caption{
-A) Workflow of computational drug repurposing to Alzheimer's disease.  B)
-Eight highly dissimilar sets of AD genes were input to the workflow.  These
-eight sets resulted in eight lists of the same 2413 drugs ranked according to
-their network proximity values.  C) These lists showed markedly high
-correlation with each other given the marked dissimilarity of the
-corresponding AD gene sets.
+  A) Workflow of computational drug repurposing to Alzheimer's disease. B)
+  Scheme of network proximity-based screen for drugs repurposeable for
+  Alzheimer's disease.  Drug C) Eight highly dissimilar sets of AD genes were
+  input to the workflow.  These eight sets resulted in eight lists of the same
+  2413 drugs ranked according to their network proximity values.  D) These
+  lists showed markedly high correlation with each other given the marked
+  dissimilarity of the corresponding AD gene sets.
 }
 \label{fig:workflow}
 \end{figure}
@@ -102,7 +104,7 @@ drugs (TODO: supplementary table).  The very top ranked ($\le 30$) drugs on
 the final list also tended to be top ranked on five out of eight input
 rankings (Fig.~S\ref{fig:rank-diff}).  This unexpected convergence between
 essentially non-overlapping input gene
-sets~(cf.~Fig.~\ref{fig:workflow}B) helps validate our drug
+sets~(cf.~Fig.~\ref{fig:workflow}C) helps validate our drug
 repurposing approach.
 
 \subsection{Selected top drugs}
