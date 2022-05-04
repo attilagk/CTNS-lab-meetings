@@ -31,49 +31,63 @@
 
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
-societies but effective treatment is still
-missing~\citep{Bondi2017,Masters2015}.  Repurposing drugs across disease
-indications is a resourceful, rapid pharmacological
-approach~\citep{Pushpakom2019} that is just beginning to be applied to
-AD~\citep{Fang2021,Taubes2021}.
+societies for which effective treatments are
+unavailable~\citep{Bondi2017,Masters2015}.  Repurposing drugs approved for other indications is
+a promising approach  towards identification of effective disease-modifying AD
+treatments~\citep{Pushpakom2019,Fang2021,Taubes2021}.  One of the key
+milestones of the National Plan for Alzheimer’s Disease is to ``Initiate
+research programs for translational bioinformatics and network pharmacology to
+support rational drug repositioning''~\citep{Aging}.
 
-However, drug repurposing to AD is hindered by our limited understanding of
-the disease's early molecular etiology, which potentially involves multitude
-of cellular pathways and cell types, and which becomes gradually confounded by
-a large number of compensatory and degenerative pathologies over the
-decades-long disease progress~\citep{DeStrooper2016}.  In this work we tackle
-this problem in two ways.  Firstly, we collect mechanistic information on AD from previous genome-
-and transcriptome- and proteome-wide association studies (GWAS, TWAS,
-PWAS)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021};
-from conducting a novel TWAS, and from differentially expressed genes (DEGs)
-with controlled APOE genotype~\citep{Taubes2021,Lin2018}.
+However, drug discovery in AD is hindered by our limited understanding of the
+early etiological triggers of the disease, which potentially implicate a
+multitude of cellular pathways and cell types, and which becomes gradually
+confounded by a large number of compensatory and degenerative pathologies over
+the decades-long disease progression~\citep{DeStrooper2016}.  In this work we
+attempted to address this challenge in two ways.  Firstly, we derive plausible
+mechanistic insights into AD from previous genome- and transcriptome- and
+proteome-wide association studies (GWAS, TWAS,
+PWAS)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021}
+comparing AD and control samples, including analyses of differentially
+expressed genes expression (DEGs) in APOE3/3 versus APOE4/4 individuals as
+well as from comparison of DEGs in iPSC-derived neurons, astrocytes and
+microglia from APOE3/3 versus APOE4/4
+individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
 
-Secondly, we exploit rich, mechanistic information represented by the human
-interactome and by a drug-target network we extract from
-ChEMBL~\citep{Gaulton2017}.  We combine these two resources by evaluating, for
-each drug, network proximity~\citep{Guney2016}, which was
+Secondly, we exploit rich, mechanistic information represented by two
+interconnected networks: (1) the network formed by all drugs and their target
+genes (drug-target network) and (2) the human gene-gene interaction network
+(known as the interactome), whose Alzheimer's disease
+module~\citep{Barabasi2011} is defined by a set of AD genes,
+Fig~\ref{fig:workflow}B.  Given these networks, we estimate the efficacy of
+each drug for AD by evaluating network proximity~\citep{Guney2016}, which is
+based on the drug's network topological distance from the AD module and thus
+estimates the drug's effect on AD genes.  Network proximity was
 shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
 used, but merely correlative, approaches to computational drug repurposing
 such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
 and computational validation of the network proximity screen as well as
-experimental validation of four top ranking drugs.
+experimental validation of some top ranking drugs.
 
 \section{Results}
 
 \subsection{Overview of the network proximity screen}
 
-We performed a network proximity based drug repurposing screen on 2413
-approved or phase 3 drugs (Fig.~\ref{fig:workflow}A).  For each drug we
-computed eight values of network proximity given eight sets of AD genes that
-we derived from eight distinct information sources (one curated knowledge
-based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
-resulted in eight distinct lists of the same 2413 drugs ranked according to
-network proximity (Fig.~\ref{fig:workflow}).  The pairwise
-correlations between the eight lists of network proximity was markedly high
-(Fig.~\ref{fig:workflow}D) relative to the low Jaccard index of the corresponding
-pairs of AD gene sets (Fig.~\ref{fig:workflow}C) suggesting that our
-gene sets, although largely non-overlapping, are close to each other in the
-network's topology and therefore overlap in terms of function.
+Drugs with low values of network proximity to AD genes are good candidates for
+repurposing to AD.  We performed a network proximity based drug repurposing
+screen on 2413 approved or phase 3 drugs (Fig.~\ref{fig:workflow}A).  For each
+drug we computed eight values of network proximity given eight sets of AD
+genes that we derived from eight distinct information sources (one curated
+knowledge based source and seven multi-omic sources,
+Table~\ref{tab:genesets}).  This resulted in eight distinct lists of the same
+2413 drugs ranked according to increasing network proximity
+(Fig.~\ref{fig:workflow}) so that top ranking drugs could be considered for
+repurposing.
+
+Although the eight input AD gene sets had little overlap with each other
+(Fig.~\ref{fig:workflow}C), the resulting eight lists of network proximity had
+markedly high correlations (Fig.~\ref{fig:workflow}D) so that the eight lists
+of drug rankings shared substantial similarity.
 
 \begin{figure}
 \hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
@@ -86,18 +100,21 @@ network's topology and therefore overlap in terms of function.
 \includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
 \includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
 \caption{
-  A) Workflow of computational drug repurposing to Alzheimer's disease. B)
-  Scheme of network proximity-based screen for drugs repurposeable for
-  Alzheimer's disease.  Drug C) Eight highly dissimilar sets of AD genes were
-  input to the workflow.  These eight sets resulted in eight lists of the same
-  2413 drugs ranked according to their network proximity values.  D) These
-  lists showed markedly high correlation with each other given the marked
-  dissimilarity of the corresponding AD gene sets.
+  A) Workflow of computational drug repurposing to Alzheimer's disease (AD).
+  B) Scheme of network proximity-based drug screen for AD.  Drug 4 and 5 are
+  likely efficient for AD because they target either directly an AD gene (drug
+  4) or a gene interacting with AD genes (drug 5).  On the other hand, drugs
+  1--3 only target genes at least three interactions away from AD genes and
+  therefore are likely not efficient for AD.  C) Eight highly dissimilar sets
+  of AD genes were input to the workflow.  These eight sets resulted in eight
+  lists of the same 2413 drugs ranked according to increasing network
+  proximity values.  D) These lists showed high correlation with each other
+  relative to the observed dissimilarity of the corresponding AD gene sets.
 }
 \label{fig:workflow}
 \end{figure}
 
-Assuming our eight AD gene sets were all equally relevant to Alzheimer's
+Assuming our eight input AD gene sets were all equally relevant to Alzheimer's
 disease, we aggregated the corresponding drug rankings giving uniform weight
 to all gene sets.  This yielded a single final ranked list of the top 605
 drugs (TODO: supplementary table).  The very top ranked ($\le 30$) drugs on
