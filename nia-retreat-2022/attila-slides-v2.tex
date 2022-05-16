@@ -1,0 +1,109 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+%\title{Network based drug repurposing for Alzheimer's disease}
+%\title{A multi-OMIC network based approach to drug repurposing for Alzheimer's}
+\subtitle{A subtitle may be shorter and more technical}
+\author{poster \#1}
+\date{Attila Jones}
+
+\begin{document}
+
+\begin{frame}{Drug Repurposing Opportunities for Alzheimer’s Disease from
+	Multiomics}
+	{\emph{Attila Jones$^1$, Evan Wu$^2$, Sudhir Varma, Hae Kyung Im$^2$, Madhav Thambisetty$^1$}\\
+		$1$: Clinical \& Translational Neuroscience Section, LBN, $2$: University
+	of~Chicago}
+
+\begin{columns}[t]
+\begin{column}{0.35\textwidth}
+\begin{center}
+	Network proximity $\sim$
+	efficiacy
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
+\end{column}
+
+\begin{column}{0.7\textwidth}
+\begin{center}
+	Workflow
+\end{center}
+
+\includegraphics[width=\columnwidth]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Results}
+	
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{center}
+	Selected top drugs
+\end{center}
+\footnotesize
+\begin{tabular}{rll}
+	rank & indication class    & targets \\
+	\hline
+	4    & Neuroprotective     & RGS4, GPR84 \\
+	28   & Anticholelithogenic & RGS4, NTCP2 \\
+	51   & Anti-Urolithic      & CP3A4, RGS4 \\
+	%322  & Anti-Urolithic      & GEMI, LMNA, PLK1, ... \\
+\end{tabular}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+	Experimental validation\\
+\end{center}
+
+\includegraphics[width=0.8\columnwidth]{../../../figures/from-others/CTNS-cell-culture-screen.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
