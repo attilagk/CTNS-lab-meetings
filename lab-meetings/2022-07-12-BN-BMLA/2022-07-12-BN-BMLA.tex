@@ -1,0 +1,213 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{The Main Title Naming Key Concepts}
+\subtitle{A subtitle may be shorter and more technical}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\begin{frame}{An inspiring study by Peter Antal's group using Bayesian
+  networks}
+\begin{center}
+\includegraphics[height=0.7\textheight]{figures/bn-bmla-2014-pnas-fig3.jpeg}
+\end{center}
+
+\begin{center}
+\tiny{Juhasz, ..., Antal et al PNAS 2014}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{A Bayesian network}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{figures/bn-intro-sprinkler.png}
+
+\begin{center}
+\tiny{Murphy 1998}
+\end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item Bayesian network \(\neq\) Bayesian statistics
+  \item graph: dependency structure
+  \begin{description}
+    \item[nodes] random variables
+    \item[edges/verteces] dependencies (causality)
+  \end{description}
+  \item conditional independence
+  \begin{itemize}
+    \item WetGrass \(\perp\) Cloudy \(|\) Sprinkler, Rain
+  \end{itemize}
+\end{itemize}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{The Markov blanket of variable $A$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figures/markov-blanket-wikipedia.png}
+\end{center}
+
+\begin{center}
+\tiny{Wikipedia}
+\end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+  \item<1> Markov blanket interpretations
+  \begin{itemize}
+    \item conditional~independence
+    \item information
+    \item strong/weak relevance
+  \end{itemize}
+  \item<2> application examples if \(A = \{ control, MCI, AD \} \)
+  \begin{itemize}
+    \item find the most informative set of biomarkers
+    \item find strongly relevant target genes and environmental variables
+  \end{itemize}
+  \item<3> the task
+  \begin{itemize}
+    \item learn dependency graph from observations of $A$ and other
+    variables
+  \end{itemize}
+\end{enumerate}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian inference of the Bayesian network's dependency structure}
+  \[
+  \mathrm{data} \overset{MCMC}{\to} P_M(\mathrm{full.Bayesian.network} \, M \, | \, \mathrm{data})
+  \overset{\text{avg.}}{\to} P_v(\mathrm{single.dependency} \, v \, | \, \mathrm{data})
+  \]
+
+\begin{center}
+  Example: coronary heart disease
+
+  \tiny{Madigan et al 1996}
+\end{center}
+
+\begin{columns}[t]
+\begin{column}{0.6\textwidth}
+
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{figures/bma-dag-madigan-1996-coronary-heart-dis.png}
+\end{center}
+
+\vfill
+
+{\small
+\begin{tabular}{r|cc}
+  & complexity & informative $P$ \\
+  \hline
+  \hline
+  full Bayesian network $M$ & \checkmark\checkmark &  \\
+  ??? & \checkmark & \checkmark \\
+  single dependency $v$ &  & \checkmark\checkmark \\
+  \hline
+\end{tabular}
+}
+
+\end{column}
+
+\begin{column}{0.4\textwidth}
+
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{figures/bma-dag-madigan-1996-coronary-heart-dis-table.png}
+\end{center}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Optimal compromise between complexity \& informativeness}
+  {BN-BMLA: \emph{B}ayesian \emph{n}etwork based \emph{B}ayesian \emph{m}ultilevel
+  \emph{a}nalsys}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  $k$-sub-Markov blanket sets ($k$-subMBS)
+
+\includegraphics[width=1.0\columnwidth]{figures/antal-book-fig3.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  informativeness decreases with $k$
+
+\includegraphics[width=1.0\columnwidth]{figures/antal-book-fig11.png}
+\end{column}
+\end{columns}
+\begin{center}
+  \tiny{Antal et al 2014}
+\end{center}
+\end{frame}
+
+\begin{frame}{Summary}
+\begin{itemize}
+  \item Bayesian networks can represent any dependency structure of variables (genetic variants, expression
+    levels, environmental exposures, phenotypes)
+  \item Learning dependency structures from observations...
+  \begin{itemize}
+    \item ...typically leaves much uncertainty
+    \item The BN-BMLA technique can increase local certainty tailored to
+      specific hypotheses
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

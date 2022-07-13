@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,12 @@ Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
 \newblock ISSN 1553-7390.
 \newblock \doi{10.1371/journal.pgen.1009224}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
+
+\bibitem[Barabási et~al.(2011)Barabási, Gulbahce, and Loscalzo]{Barabasi2011}
+Albert-László Barabási, Natali Gulbahce, and Joseph Loscalzo.
+\newblock Network medicine: a network-based approach to human disease.
+\newblock \emph{Nature reviews. Genetics}, 12:\penalty0 56--68, Jan 2011.
+\newblock URL \url{https://barabasi.com/f/320.pdf}.
 
 \bibitem[Barbeira et~al.(2018)Barbeira, Dickinson, Bonazzola, Zheng, Wheeler,
   Torres, Torstenson, Shah, Garcia, Edwards, Stahl, Huckins, Aguet, Ardlie,
@@ -148,6 +154,12 @@ Feixiong Cheng, Rishi~J. Desai, Diane~E. Handy, Ruisheng Wang, Sebastian
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/s41467-018-05116-5}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043492/}.
+
+\bibitem[Cheng et~al.(2019)Cheng, Kovács, and Barabási]{Cheng2019}
+Feixiong Cheng, István~A. Kovács, and Albert-László Barabási.
+\newblock Network-based prediction of drug combinations.
+\newblock \emph{Nature communications}, 10:\penalty0 1197, Mar 2019.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6416394/}.
 
 \bibitem[Consortium et~al.(2018)Consortium, Anttila, Bulik-Sullivan, Finucane,
   Walters, Bras, Duncan, Escott-Price, Falcone, Gormley, Malik, Patsopoulos,
