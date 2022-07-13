@@ -187,16 +187,29 @@
 \end{frame}
 
 \begin{frame}{Summary}
-\begin{itemize}
-  \item Bayesian networks can represent any dependency structure of variables (genetic variants, expression
-    levels, environmental exposures, phenotypes)
+\begin{enumerate}
+  \item Bayesian networks can represent any dependency structure of variables
+  \begin{itemize}
+    \item genetic variants, expressionlevels, environmental exposures, phenotypes
+  \end{itemize}
   \item Learning dependency structures from observations...
   \begin{itemize}
     \item ...typically leaves much uncertainty
-    \item The BN-BMLA technique can increase local certainty tailored to
-      specific hypotheses
   \end{itemize}
-\end{itemize}
+  \item BN-BMLA technique (Antal et al)...
+  \begin{itemize}
+    \item increase local certainty by decreasing the complexity of hypotheses \emph{as much as needed}!
+  \end{itemize}
+  \item<2-> since BN-BMLA is Bayesian statistics...
+  \begin{itemize}
+    \item posterior prob.:~simple interpretation
+    \item built-in correction for multiple
+      hypothesis testing
+    \item causes of multivariate phenotypes (complex mental tests) can be investigated
+    \item adjustable granularity of effects: SNPs $\to$ genes $\to$ pathways (ontology)
+    \item difficult: MCMC needed
+  \end{itemize}
+\end{enumerate}
 \end{frame}
 
 
