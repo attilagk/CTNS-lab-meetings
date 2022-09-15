@@ -1,0 +1,175 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Network Pharmacology for Alzheimer's disease: New Work}
+\subtitle{A subtitle may be shorter and more technical}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\section{Introduction}
+
+\begin{frame}{Key concepts}
+\begin{columns}[t]
+\begin{column}{0.6\textwidth}
+\begin{center}
+  Network propagation
+
+\includegraphics[width=\columnwidth]{figures/network-propagation-2017-nature.png}
+\end{center}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{center}
+  Network modules
+
+\includegraphics[width=\columnwidth]{figures/community-detection-in-networks-2016-Physics-Report-fig4.jpg}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[label=pascal]{Pascal: gene and pathway scoring algorithm}
+\includegraphics[height=0.75\textheight]{figures/pascal-j-comp-bio-2016-fig1.png}
+
+{\tiny Lamparter et al 2016 PLoS Comp Biol}
+\end{frame}
+
+%\begin{frame}{Network propagation}
+%\includegraphics[height=0.7\textheight]{figures/network-propagation-2017-nature.png}
+%\end{frame}
+
+\begin{frame}{Network propagation, Pascal: drug target identification for Hyperlipidaemia}
+\includegraphics[height=0.7\textheight]{figures/network-pathwhay-expansion-2020-scientific-reports-fig5.png}
+
+{\tiny MacNamara et al 2020 Scientific Reports}
+\end{frame}
+
+\begin{frame}{Network modules: drug target identification}
+  \includegraphics[height=0.7\textheight]{figures/dream-network-module-2019-nature-methods-fig6ab.png}
+
+{\tiny Choodbar et al 2019 Nature Methods}
+\end{frame}
+
+\begin{frame}[label=plans]{Planned work in AD drug discovery}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  Network propagation
+\begin{enumerate}
+  \item seed genes
+  \begin{itemize}
+    \item \alert{top Pascal genes, latest AD-GWAS}
+    \item knowledge-based, TWAS,... AD gene sets
+  \end{itemize}
+  \item gene network
+  \begin{itemize}
+    \item PPI, signalling, co-expression modules
+  \end{itemize}
+  \item drug-target network
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Network modules
+\begin{enumerate}
+  \item network modules
+  \begin{itemize}
+    \item \alert{consensus PPI module (DREAM)}
+    \item other PPI, signalling, co-expression modules
+    \item \alert{pathways: GO, KEGG,...}
+  \end{itemize}
+  \item \alert{module associations to AD (Pascal)}
+  \item functional interpretation of top modules
+  \begin{itemize}
+    \item \alert{GSEA: GO, KEGG,... pathways}
+    \item other (find resources, tools)
+  \end{itemize}
+  \item drug-target network
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Results: network propagation}
+
+\againframe{pascal}
+
+\begin{frame}{Gene association scores to AD}{A.J, work in progress}
+\begin{center}
+\includegraphics<1>[scale=0.4]{../../../notebooks/2022-08-11-pascal/named-figure/Pascal-top1000-gene-pval-geneset-membership.pdf}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2022-08-11-pascal/named-figure/Pascal-top40-gene-pval-geneset-membership.pdf}
+\end{center}
+\end{frame}
+
+\againframe{plans}
+
+\section{Results: network modules}
+
+\begin{frame}{Consensus network modules of the DREAM challenge}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[height=0.7\textheight]{figures/dream-network-module-2019-nature-methods-fig1.png}
+
+{\tiny Choodbar et al 2019 Nature Methods}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item several network types (PPI, signalling, co-expression
+  \item performance: num.~associated pathways consistent with assiciated
+    phenotype
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\againframe{pascal}
+
+\begin{frame}{Pathway association scores to AD}{A.J, work in progress}
+  See Excel sheet
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
