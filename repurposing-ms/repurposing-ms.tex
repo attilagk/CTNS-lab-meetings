@@ -54,6 +54,22 @@ well as from comparison of DEGs in iPSC-derived neurons, astrocytes and
 microglia from APOE3/3 versus APOE4/4
 individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
 
+\begin{figure}
+\hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
+
+\includegraphics[scale=0.85]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+\includegraphics[scale=0.85]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
+\caption{
+  A) Workflow of computational drug repurposing to Alzheimer's disease (AD).
+  B) Scheme of network proximity-based drug screen for AD.  Drug 4 and 5 are
+  likely efficient for AD because they target either directly an AD gene (drug
+  4) or a gene interacting with AD genes (drug 5).  On the other hand, drugs
+  1--3 only target genes at least three interactions away from AD genes and
+  therefore are likely not efficient for AD.
+}
+\label{fig:workflow}
+\end{figure}
+
 Secondly, we exploit rich, mechanistic information represented by two
 interconnected networks: (1) the network formed by all drugs and their target
 genes (drug-target network) and (2) the human gene-gene interaction network
@@ -66,63 +82,115 @@ estimates the drug's effect on AD genes.  Network proximity was
 shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
 used, but merely correlative, approaches to computational drug repurposing
 such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
-and computational validation of the network proximity screen as well as
+and computational validation of the network proximity based drug screen as well as
 experimental validation of some top ranking drugs.
 
 \section{Results}
 
-\subsection{Overview of the network proximity screen}
+\subsection{Network proximity based drug screen}
 
-Drugs with low values of network proximity to AD genes are good candidates for
-repurposing to AD.  We performed a network proximity based drug repurposing
-screen on 2413 approved or phase 3 drugs (Fig.~\ref{fig:workflow}A).  For each
-drug we computed eight values of network proximity given eight sets of AD
-genes that we derived from eight distinct information sources (one curated
-knowledge based source and seven multi-omic sources,
-Table~\ref{tab:genesets}).  This resulted in eight distinct lists of the same
-2413 drugs ranked according to increasing network proximity
-(Fig.~\ref{fig:workflow}) so that top ranking drugs could be considered for
-repurposing.
+Drugs with low values of network proximity to AD genes were previously shown
+to be good candidates for repurposing to AD~\citep{Cheng2018}.  We performed a
+network proximity based drug repurposing screen on 2413 approved or phase 3
+drugs (Fig.~\ref{fig:workflow}A).  For each drug we computed eight values of
+network proximity given eight sets of AD genes that we derived from eight
+distinct information sources (one curated knowledge based source and seven
+multi-omic sources, Table~\ref{tab:genesets}).  This resulted in eight
+distinct lists of the same 2413 drugs ranked according to increasing network
+proximity (Fig.~\ref{fig:workflow}) so that top ranking drugs could be
+considered for repurposing.
+
+\begin{table}
+\footnotesize
+\begin{tabular}{cll}
+name     & description & reference  \\
+\hline
+TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
+knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\end{tabular}
+\caption{
+Input AD gene sets to drug repurposing screens of this study.
+}
+\label{tab:genesets}
+\end{table}
 
 Although the eight input AD gene sets had little overlap with each other
-(Fig.~\ref{fig:workflow}C), the resulting eight lists of network proximity had
-markedly high correlations (Fig.~\ref{fig:workflow}D) so that the eight lists
-of drug rankings shared substantial similarity.
+(Fig.~\ref{fig:screen}A), the resulting eight lists of network proximity had
+markedly high correlations (Fig.~\ref{fig:screen}B) so that the eight lists
+of drug rankings shared substantial similarity.  This suggests that the
+input AD gene sets, although hardly overlapping, are still close enough to
+each other in the network's topology to result in similar drug rankings
+(Fig.~\ref{fig:screen}C right), which helps validate our approach.
 
 \begin{figure}
 \hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
 
-\includegraphics[scale=0.85]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
-\includegraphics[scale=0.85]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-input-AD-sets.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
 
 \hspace{0.05\textwidth}C\hspace{0.5\textwidth}D
 
-\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-index-input-AD-sets.pdf}
-\includegraphics[scale=0.5]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
-\caption{
-  A) Workflow of computational drug repurposing to Alzheimer's disease (AD).
-  B) Scheme of network proximity-based drug screen for AD.  Drug 4 and 5 are
-  likely efficient for AD because they target either directly an AD gene (drug
-  4) or a gene interacting with AD genes (drug 5).  On the other hand, drugs
-  1--3 only target genes at least three interactions away from AD genes and
-  therefore are likely not efficient for AD.  C) Eight highly dissimilar sets
-  of AD genes were input to the workflow.  These eight sets resulted in eight
-  lists of the same 2413 drugs ranked according to increasing network
-  proximity values.  D) These lists showed high correlation with each other
-  relative to the observed dissimilarity of the corresponding AD gene sets.
+\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap.png}
+\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap-topk.png}
+
+\caption{Scoring and ranking 2413 drugs based on their network proximity to
+  various AD gene sets.  A) Eight AD gene sets were input to the workflow.
+  Jaccard indices quantifying shared genes show that the sets are highly
+  dissimilar to each other.  B) The resulting network proximity scores of all
+  screened drugs, in contrast, are fairly similar across the different input
+  AD gene sets.  C-D) The separate drug rankings across imput AD gene sets
+  were aggregated into a single final ranking, which is color coded (yellow:
+  top drugs, blue: bottom drugs).  Note that the area delimited by red
+  rectangle in C) is expanded into D).
 }
-\label{fig:workflow}
+\label{fig:screen}
 \end{figure}
 
 Assuming our eight input AD gene sets were all equally relevant to Alzheimer's
 disease, we aggregated the corresponding drug rankings giving uniform weight
 to all gene sets.  This yielded a single final ranked list of the top 605
-drugs (TODO: supplementary table).  The very top ranked ($\le 30$) drugs on
-the final list also tended to be top ranked on five out of eight input
-rankings (Fig.~S\ref{fig:rank-diff}).  This unexpected convergence between
-essentially non-overlapping input gene
-sets~(cf.~Fig.~\ref{fig:workflow}C) helps validate our drug
-repurposing approach.
+drugs (Fig.~\ref{fig:screen}C, TODO: supplementary table).  The very top
+ranked ($\le 30$) drugs on the final list also tended to be top ranked on five
+out of eight input rankings (Fig.~\ref{fig:screen}D,
+Fig.~S\ref{fig:rank-diff}).
+
+\subsection{Top drugs and computational validation}
+
+To validate our network based screen we asked to what extent the top ranked
+drugs were enriched in drugs already investigated or approved for AD.  To that
+end we examined the rediscovery rate for the top-$t$ drugs relative to that
+for the bottom-$1808$ drugs (see Methods for definitions).
+Fig.~\ref{fig:ad-drug-rediscovery} shows that rediscovery rate for the top-$t$
+drugs was about $2-3$-fold relative to that for the bottom drugs depending on
+the threshold $t$, which validates our approach.  Interestingly several, but
+not all, other common indications showed a similar enrichment pattern
+(Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
+
+\begin{figure}
+\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\caption{
+Computational validation: relative rediscovery rate of drugs already investigated or
+approved for AD in the top-$t$ drugs ranked by network proximity.  The relative
+rediscovery rate being $>1$ validates our network based screen.
+}
+\label{fig:ad-drug-rediscovery}
+\end{figure}
+
+We also checked the agreement between our network proximity based results
+above and the results we obtained by using CMap with the same input AD gene
+set.  Strikingly, we found no agreement between the two even when we
+conditioned on the various cell types of the CMap data set
+(Fig.~S\ref{fig:proxim-cmap},~S\ref{fig:proxim-cmap-celltype}).  Moreover,
+different implementations of CMap yielded considerably different results
+(Fig.~S\ref{fig:cmap-cmap}).  Given these conflicting observations and the
+more realistic, systems-based, mechanistic modeling assumptions behind the
+network approach, we omitted all results obtained with CMap from our study.
 
 \subsection{Selected top drugs}
 
@@ -154,38 +222,6 @@ screens (cf.~Table~\ref{tab:top-drugs})
 }
 \label{tab:top-drugs}
 \end{table}
-
-\subsection{Computational validation of network based screen}
-
-To validate our network based screen we asked to what extent the top ranked
-drugs were enriched in drugs already investigated or approved for AD.  To that
-end we examined the rediscovery rate for the top-$t$ drugs relative to that
-for the bottom-$1808$ drugs (see Methods for definitions).
-Fig.~\ref{fig:ad-drug-rediscovery} shows that rediscovery rate for the top-$t$
-drugs was about $2--3$-fold relative to that for the bottom drugs depending on
-the threshold $t$, which validates our approach.  Interestingly several, but
-not all, other common indications showed a similar enrichment pattern
-(Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
-
-\begin{figure}
-\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
-\caption{
-Computational validation: relative rediscovery rate of drugs already investigated or
-approved for AD in the top-$t$ drugs ranked by network proximity.  The relative
-rediscovery rate being $>1$ validates our network based screen.
-}
-\label{fig:ad-drug-rediscovery}
-\end{figure}
-
-We also checked the agreement between our network proximity based results
-above and the results we obtained by using CMap with the same input AD gene
-set.  Strikingly, we found no agreement between the two even when we
-conditioned on the various cell types of the CMap data set
-(Fig.~S\ref{fig:proxim-cmap},~S\ref{fig:proxim-cmap-celltype}).  Moreover,
-different implementations of CMap yielded considerably different results
-(Fig.~S\ref{fig:cmap-cmap}).  Given these conflicting observations and the
-more realistic, systems-based, mechanistic modeling assumptions behind the
-network approach, we omitted all results obtained with CMap from our study.
 
 \subsection{Experimental validation}
 
@@ -265,26 +301,6 @@ opted for evaluating the proximity of any drug separately for multiple AD gene
 sets and aggregate the multiple proximity values subsequently (see
 Discussion).  Table~\ref{tab:genesets} summarizes the AD gene sets used in
 this study.  The genes contained in each set are listed in Table~S1.
-
-\begin{table}
-\footnotesize
-\begin{tabular}{cll}
-name     & description & reference  \\
-\hline
-TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
-knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
-agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
-AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
-AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
-APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
-APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
-APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
-\end{tabular}
-\caption{
-Input AD gene sets to drug repurposing screens of this study.
-}
-\label{tab:genesets}
-\end{table}
 
 \subsection{Previous and novel TWAS on AD}
 
