@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -60,7 +60,7 @@ Albert-László Barabási, Natali Gulbahce, and Joseph Loscalzo.
   Zhu, Nicolae, Cox, Im, Consortium, Laboratory, Group, (eGTEx) groups, Fund,
   NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA, Site-NDrI, Site-rPCI, resource VArI,
   of~Miami Brain Endowment~Bank, Management, Study, Visualization-EBI, and
-  Genome Browser Data Integration & Visualization-UCSC
+  Genome Browser Data Integration \& Visualization-UCSC
   Genomics~Institute]{Barbeira2018}
 Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
   Heather~E. Wheeler, Jason~M. Torres, Eric~S. Torstenson, Kaanan~P. Shah,
@@ -118,14 +118,14 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
   Zerbino, Brian Craft, Mary Goldman, Maximilian Haeussler, W.~James Kent,
   Christopher~M. Lee, Benedict Paten, Kate~R. Rosenbloom, John Vivian, Jingchun
   Zhu, Dan~L. Nicolae, Nancy~J. Cox, Hae~Kyung Im, GTEx Consortium, Data
-  Analysis & Coordinating Center (LDACC)-Analysis Working~Group Laboratory,
+  Analysis \& Coordinating Center (LDACC)-Analysis Working~Group Laboratory,
   Statistical Methods groups-Analysis~Working Group, Enhancing~GTEx (eGTEx)
   groups, N.~I. H.~Common Fund, NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA,
   Biospecimen Collection~Source Site-NDrI, Biospecimen Collection~Source
   Site-rPCI, Biospecimen~Core resource VArI, Brain Bank repository-University
   of~Miami Brain Endowment~Bank, Leidos Biomedical-Project Management, E.~L.
-  S.~I. Study, Genome Browser Data Integration~& Visualization-EBI, and
-  University of California Santa~Cruz Genome Browser Data Integration &
+  S.~I. Study, Genome Browser Data Integration~\& Visualization-EBI, and
+  University of California Santa~Cruz Genome Browser Data Integration \&
   Visualization-UCSC Genomics~Institute.
 \newblock Exploring the phenotypic consequences of tissue specific gene
   expression variation inferred from gwas summary statistics.
@@ -133,6 +133,17 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/s41467-018-03621-1}.
 \newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
+
+\bibitem[Biersack(2020)]{Biersack2020}
+Bernhard Biersack.
+\newblock 3,3’-diindolylmethane and its derivatives: nature-inspired
+  strategies tackling drug resistant tumors by regulation of signal
+  transduction, transcription factors and micrornas.
+\newblock \emph{Cancer Drug Resistance}, 3\penalty0 (4):\penalty0 867--878,
+  2020.
+\newblock ISSN 2578-532X.
+\newblock \doi{10.20517/cdr.2020.53}.
+\newblock URL \url{http://dx.doi.org/10.20517/cdr.2020.53}.
 
 \bibitem[Bondi et~al.(2017)Bondi, Edmonds, and Salmon]{Bondi2017}
 Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.
@@ -372,6 +383,33 @@ Brainstorm Consortium, Verneri Anttila, Brendan Bulik-Sullivan, Hilary~K.
 \newblock ISSN 1095-9203.
 \newblock \doi{10.1126/science.aap8757}.
 
+\bibitem[De~Miranda et~al.(2013)De~Miranda, Miller, Hansen, Lunghofer, Safe,
+  Gustafson, Colagiovanni, and Tjalkens]{DeMiranda2013}
+Briana~R. De~Miranda, James~A. Miller, Ryan~J. Hansen, Paul~J. Lunghofer,
+  Stephen Safe, Daniel~L. Gustafson, Dorothy Colagiovanni, and Ronald~B.
+  Tjalkens.
+\newblock Neuroprotective efficacy and pharmacokinetic behavior of novel
+  anti-inflammatory para-phenyl substituted diindolylmethanes in a mouse model
+  of parkinson{\textquoteright}s disease.
+\newblock \emph{Journal of Pharmacology and Experimental Therapeutics},
+  345\penalty0 (1):\penalty0 125--138, 2013.
+\newblock ISSN 0022-3565.
+\newblock \doi{10.1124/jpet.112.201558}.
+\newblock URL \url{https://jpet.aspetjournals.org/content/345/1/125}.
+
+\bibitem[De~Miranda et~al.(2014)De~Miranda, Popichak, Hammond, Miller, Safe,
+  and Tjalkens]{DeMiranda2014}
+Briana~R. De~Miranda, Katriana~A. Popichak, Sean~L. Hammond, James~A. Miller,
+  Stephen Safe, and Ronald~B. Tjalkens.
+\newblock {Novel Para-Phenyl Substituted Diindolylmethanes Protect Against MPTP
+  Neurotoxicity and Suppress Glial Activation in a Mouse Model of Parkinson’s
+  Disease}.
+\newblock \emph{Toxicological Sciences}, 143\penalty0 (2):\penalty0 360--373,
+  11 2014.
+\newblock ISSN 1096-6080.
+\newblock \doi{10.1093/toxsci/kfu236}.
+\newblock URL \url{https://doi.org/10.1093/toxsci/kfu236}.
+
 \bibitem[De~Strooper and Karran(2016)]{DeStrooper2016}
 Bart De~Strooper and Eric Karran.
 \newblock The cellular phase of alzheimer's disease.
@@ -410,7 +448,7 @@ Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
   Eske~M. Derks.
 \newblock An analysis of genetically regulated gene expression across multiple
   tissues implicates novel gene candidates in alzheimer's disease.
-\newblock \emph{Alzheimer's research & therapy}, 12\penalty0
+\newblock \emph{Alzheimer's research \& therapy}, 12\penalty0
   (32299494):\penalty0 43--43, April 2020.
 \newblock ISSN 1758-9193.
 \newblock \doi{10.1186/s13195-020-00611-8}.
@@ -631,7 +669,7 @@ Brian~W. Kunkle, Benjamin Grenier-Boley, Rebecca Sims, Joshua~C. Bis, Vincent
   Polygenic Environmental Risk~in AD/Defining~Genetic, and Environmental~Risk
   for Alzheimer’s Disease Consortium~(GERAD/PERADES).
 \newblock Genetic meta-analysis of diagnosed alzheimer's disease identifies new
-  risk loci and implicates aβ, tau, immunity and lipid processing.
+  risk loci and implicates a$\beta$, tau, immunity and lipid processing.
 \newblock \emph{Nature genetics}, 51\penalty0 (30820047):\penalty0 414--430,
   March 2019.
 \newblock ISSN 1061-4036.
@@ -652,6 +690,14 @@ Justin Lamb, Emily~D. Crawford, David Peck, Joshua~W. Modell, Irene~C. Blat,
 \newblock \doi{10.1126/science.1132939}.
 \newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1132939}.
 
+\bibitem[Lee et~al.(2019)Lee, Yoo, Baek, Li, Sok, and Kim]{Lee2019}
+Bo~Dam Lee, Jae-Myung Yoo, Seong~Yeon Baek, Fu~Yi Li, Dai-Eun Sok, and Mee~Ree
+  Kim.
+\newblock 3,3'-diindolylmethane promotes bdnf and antioxidant enzyme formation
+  via trkb/akt pathway activation for neuroprotection against oxidative
+  stress-induced apoptosis in hippocampal neuronal cells.
+\newblock \emph{Antioxidants (Basel, Switzerland)}, 9, Dec 2019.
+
 \bibitem[Lin et~al.(2018)Lin, Seo, Gao, Feldman, Wen, Penney, Cam, Gjoneska,
   Raja, Cheng, Rueda, Kritskiy, Abdurrob, Peng, Milo, Yu, Elmsaouri, Dey, Ko,
   Yankner, and Tsai]{Lin2018}
@@ -669,12 +715,13 @@ Yuan-Ta Lin, Jinsoo Seo, Fan Gao, Heather~M. Feldman, Hsin-Lan Wen, Jay Penney,
 
 \bibitem[Lopes et~al.(2022)Lopes, Snijders, Humphrey, Allan, Sneeboer, Navarro,
   Schilder, Vialle, Parks, Missall, van Zuiden, Gigase, Kübler, van Berlekom,
-  Hicks, Bӧttcher, Priller, Kahn, de~Witte, and Raj]{Lopes2022}
+  Hicks, B\"{o}ttcher, Priller, Kahn, de~Witte, and Raj]{Lopes2022}
 Katia de~Paiva Lopes, Gijsje J.~L. Snijders, Jack Humphrey, Amanda Allan,
   Marjolein A.~M. Sneeboer, Elisa Navarro, Brian~M. Schilder, Ricardo~A.
   Vialle, Madison Parks, Roy Missall, Welmoed van Zuiden, Frederieke A.~J.
   Gigase, Raphael Kübler, Amber~Berdenis van Berlekom, Emily~M. Hicks, Chotima
-  Bӧttcher, Josef Priller, René~S. Kahn, Lot~D. de~Witte, and Towfique Raj.
+  B\"{o}ttcher, Josef Priller, René~S. Kahn, Lot~D. de~Witte, and Towfique
+  Raj.
 \newblock Genetic analysis of the human microglial transcriptome across brain
   regions, aging and disease pathologies.
 \newblock \emph{Nature Genetics}, 54\penalty0 (1):\penalty0 4--17, 2022.
@@ -722,7 +769,8 @@ Ryan~A. Neff, Minghui Wang, Sezen Vatansever, Lei Guo, Chen Ming, Qian Wang,
 
 \bibitem[NIH/NIA()]{Aging}
 NIH/NIA.
-\newblock Translational & clinical research – pharmacological, milestone 7.b.
+\newblock Translational \& clinical research – pharmacological, milestone
+  7.b.
 \newblock URL
   \url{https://www.nia.nih.gov/research/milestones/translational-clinical-research-pharmacological/milestone-7-b}.
 
@@ -748,6 +796,15 @@ Sudeep Pushpakom, Francesco Iorio, Patrick~A. Eyers, K.~Jane Escott, Shirley
 \newblock ISSN 1474-1784.
 \newblock \doi{10.1038/nrd.2018.168}.
 \newblock URL \url{https://doi.org/10.1038/nrd.2018.168}.
+
+\bibitem[Rzemieniec et~al.(2019)Rzemieniec, Wnuk, Lasoń, Bilecki, and
+  Kajta]{Rzemieniec2019}
+J.~Rzemieniec, A.~Wnuk, W.~Lasoń, W.~Bilecki, and M.~Kajta.
+\newblock The neuroprotective action of 3,3'-diindolylmethane against ischemia
+  involves an inhibition of apoptosis and autophagy that depends on hdac and
+  ahr/cyp1a1 but not er$\alpha$/cyp19a1 signaling.
+\newblock \emph{Apoptosis : an international journal on programmed cell death},
+  24:\penalty0 435--452, Jun 2019.
 
 \bibitem[Santiago and Potashkin(2021)]{Santiago2021}
 Jose~A. Santiago and Judith~A. Potashkin.
