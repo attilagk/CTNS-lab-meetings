@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,18 @@ Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
 \newblock ISSN 1553-7390.
 \newblock \doi{10.1371/journal.pgen.1009224}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
+
+\bibitem[Baloni et~al.(2020)Baloni, Funk, Yan, Yurkovich, Kueider-Paisley, Nho,
+  Heinken, Jia, Mahmoudiandehkordi, Louie, Saykin, Arnold, Kastenmüller,
+  Griffiths, Thiele, Kaddurah-Daouk, and Price]{Baloni2020}
+Priyanka Baloni, Cory~C. Funk, Jingwen Yan, James~T. Yurkovich, Alexandra
+  Kueider-Paisley, Kwangsik Nho, Almut Heinken, Wei Jia, Siamak
+  Mahmoudiandehkordi, Gregory Louie, Andrew~J. Saykin, Matthias Arnold, Gabi
+  Kastenmüller, William~J. Griffiths, Ines Thiele, Rima Kaddurah-Daouk, and
+  Nathan~D. Price.
+\newblock Metabolic network analysis reveals altered bile acid synthesis and
+  metabolism in alzheimer's disease.
+\newblock \emph{Cell reports. Medicine}, 1:\penalty0 100138, Nov 2020.
 
 \bibitem[Barabási et~al.(2011)Barabási, Gulbahce, and Loscalzo]{Barabasi2011}
 Albert-László Barabási, Natali Gulbahce, and Joseph Loscalzo.
@@ -134,6 +146,18 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
 \newblock \doi{10.1038/s41467-018-03621-1}.
 \newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
 
+\bibitem[Besouw et~al.(2013)Besouw, Masereeuw, {van den Heuvel}, and
+  Levtchenko]{Besouw2013}
+Martine Besouw, Rosalinde Masereeuw, Lambert {van den Heuvel}, and Elena
+  Levtchenko.
+\newblock Cysteamine: an old drug with new potential.
+\newblock \emph{Drug Discovery Today}, 18\penalty0 (15):\penalty0 785--792,
+  2013.
+\newblock ISSN 1359-6446.
+\newblock \doi{https://doi.org/10.1016/j.drudis.2013.02.003}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S135964461300038X}.
+
 \bibitem[Biersack(2020)]{Biersack2020}
 Bernhard Biersack.
 \newblock 3,3’-diindolylmethane and its derivatives: nature-inspired
@@ -171,6 +195,32 @@ Feixiong Cheng, István~A. Kovács, and Albert-László Barabási.
 \newblock Network-based prediction of drug combinations.
 \newblock \emph{Nature communications}, 10:\penalty0 1197, Mar 2019.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6416394/}.
+
+\bibitem[Chowdari et~al.(2002)Chowdari, Mirnics, Semwal, Wood, Lawrence,
+  Bhatia, Deshpande, B.K., Ferrell, Middleton, Devlin, Levitt, Lewis, and
+  Nimgaonkar]{Chowdari2002}
+Kodavali~V. Chowdari, Karoly Mirnics, Prachi Semwal, Joel Wood, Elizabeth
+  Lawrence, Triptish Bhatia, Smita~N. Deshpande, Thelma B.K., Robert~E.
+  Ferrell, Frank~A. Middleton, Bernie Devlin, Pat Levitt, David~A. Lewis, and
+  Vishwajit~L. Nimgaonkar.
+\newblock { Association and linkage analyses of RGS4 polymorphisms in
+  schizophrenia }.
+\newblock \emph{Human Molecular Genetics}, 11\penalty0 (12):\penalty0
+  1373--1380, 06 2002.
+\newblock ISSN 0964-6906.
+\newblock \doi{10.1093/hmg/11.12.1373}.
+\newblock URL \url{https://doi.org/10.1093/hmg/11.12.1373}.
+
+\bibitem[Cicchetti et~al.(2019)Cicchetti, David, Siddu, and
+  Denis]{Cicchetti2019}
+F.~Cicchetti, L.S. David, A.~Siddu, and H.L. Denis.
+\newblock Cysteamine as a novel disease-modifying compound for parkinson's
+  disease: Over a decade of research supporting a clinical trial.
+\newblock \emph{Neurobiology of Disease}, 130:\penalty0 104530, 2019.
+\newblock ISSN 0969-9961.
+\newblock \doi{https://doi.org/10.1016/j.nbd.2019.104530}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0969996119301986}.
 
 \bibitem[Consortium et~al.(2018)Consortium, Anttila, Bulik-Sullivan, Finucane,
   Walters, Bras, Duncan, Escott-Price, Falcone, Gormley, Malik, Patsopoulos,
@@ -492,6 +542,17 @@ Iris~E. Jansen, Jeanne~E. Savage, Kyoko Watanabe, Julien Bryois, Dylan~M.
 \newblock \doi{10.1038/s41588-018-0311-9}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6836675/}.
 
+\bibitem[Keene et~al.(2002)Keene, Rodrigues, Eich, Chhabra, Steer, and
+  Low]{Keene2002}
+C.~Dirk Keene, Cecilia M.~P. Rodrigues, Tacjana Eich, Manik~S. Chhabra,
+  Clifford~J. Steer, and Walter~C. Low.
+\newblock Tauroursodeoxycholic acid, a bile acid, is neuroprotective in a
+  transgenic animal model of huntington's disease.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
+  (16):\penalty0 10671--10676, 2002.
+\newblock \doi{10.1073/pnas.162362299}.
+\newblock URL \url{https://www.pnas.org/doi/abs/10.1073/pnas.162362299}.
+
 \bibitem[Kunkle et~al.(2019)Kunkle, Grenier-Boley, Sims, Bis, Damotte, Naj,
   Boland, Vronskaya, van~der Lee, Amlie-Wolf, Bellenguez, Frizatti, Chouraki,
   Martin, Sleegers, Badarinarayan, Jakobsdottir, Hamilton-Nelson, Moreno-Grau,
@@ -774,6 +835,16 @@ NIH/NIA.
 \newblock URL
   \url{https://www.nia.nih.gov/research/milestones/translational-clinical-research-pharmacological/milestone-7-b}.
 
+\bibitem[Paul and Snyder(2019)]{Paul2019}
+Bindu~D. Paul and Solomon~H. Snyder.
+\newblock Therapeutic applications of cysteamine and cystamine in
+  neurodegenerative and neuropsychiatric diseases.
+\newblock \emph{Frontiers in Neurology}, 10, 2019.
+\newblock ISSN 1664-2295.
+\newblock \doi{10.3389/fneur.2019.01315}.
+\newblock URL
+  \url{https://www.frontiersin.org/articles/10.3389/fneur.2019.01315}.
+
 \bibitem[Pletscher-Frankild et~al.(2015)Pletscher-Frankild, Pallejà, Tsafou,
   Binder, and Jensen]{PletscherFrankild2015}
 Sune Pletscher-Frankild, Albert Pallejà, Kalliopi Tsafou, Janos~X. Binder, and
@@ -828,6 +899,17 @@ Jeremy Schwartzentruber, Sarah Cooper, Jimmy~Z. Liu, Inigo Barrio-Hernandez,
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/s41588-020-00776-w}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610386/}.
+
+\bibitem[Sekar et~al.(2016)Sekar, Bialas, de~Rivera, Davis, Hammond, Kamitaki,
+  Tooley, Presumey, Baum, Van~Doren, Genovese, Rose, Handsaker, Daly, Carroll,
+  Stevens, and McCarroll]{Sekar2016a}
+Aswin Sekar, Allison~R. Bialas, Heather de~Rivera, Avery Davis, Timothy~R.
+  Hammond, Nolan Kamitaki, Katherine Tooley, Jessy Presumey, Matthew Baum,
+  Vanessa Van~Doren, Giulio Genovese, Samuel~A. Rose, Robert~E. Handsaker,
+  Mark~J. Daly, Michael~C. Carroll, Beth Stevens, and Steven~A. McCarroll.
+\newblock Schizophrenia risk from complex variation of complement component 4.
+\newblock \emph{Nature}, 530:\penalty0 177--83, Feb 2016.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature16549}.
 
 \bibitem[Taubes et~al.(2021)Taubes, Nova, Zalocusky, Kosti, Bicak, Zilberter,
   Hao, Yoon, Oskotsky, Pineda, Chen, Aery~Jones, Choudhary, Grone, Balestra,
