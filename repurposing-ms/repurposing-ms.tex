@@ -8,6 +8,7 @@
 \usepackage{natbib}
 %\usepackage{float}
 \usepackage{url,hyperref}
+\usepackage{booktabs}
 \bibliographystyle{plainnat}
 
 % https://tex.stackexchange.com/questions/6758/how-can-i-create-a-bibliography-like-a-section
@@ -19,7 +20,7 @@
 \title{Novel Drug Repurposing Opportunities for Alzheimer's Disease from
   Genomic Fine Mapping and Transcriptomic Disease Signatures}
 
-\author{Attila Jones, Evan Wu, Sudhir Varma, ..., Hae Kyung Im, Madhav Thambisetty}
+  \author{Attila Jones, Evan Wu, Sudhir Varma, Tina(?), ..., Hae Kyung Im, Madhav Thambisetty}
 
 \date{National Institute on Aging, NIH}
 
@@ -61,7 +62,7 @@ individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
 \includegraphics[scale=0.85]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
 \caption{
   A) Workflow of computational drug repurposing to Alzheimer's disease (AD).
-  B) Scheme of network proximity-based drug screen for AD.  Drug 4 and 5 are
+  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5 are
   likely efficient for AD because they target either directly an AD gene (drug
   4) or a gene interacting with AD genes (drug 5).  On the other hand, drugs
   1--3 only target genes at least three interactions away from AD genes and
@@ -82,20 +83,21 @@ estimates the drug's effect on AD genes.  Network proximity was
 shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
 used, but merely correlative, approaches to computational drug repurposing
 such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
-and computational validation of the network proximity based drug screen as well as
-experimental validation of some top ranking drugs.
+and computational validation of our network proximity based drug screen as well as
+experimental validation of three selected top ranking drugs.
 
 \section{Results}
 
-\subsection{Network proximity based drug screen}
+\subsection{Computational drug screen: evaluating network proximity}
 
-Drugs with low values of network proximity to AD genes were previously shown
-to be good candidates for repurposing to AD~\citep{Cheng2018}.  We performed a
-network proximity based drug repurposing screen on 2413 approved or phase 3
-drugs (Fig.~\ref{fig:workflow}A).  For each drug we computed eight values of
-network proximity given eight sets of AD genes that we derived from eight
-distinct information sources (one curated knowledge based source and seven
-multi-omic sources, Table~\ref{tab:genesets}).  This resulted in eight
+Drugs with low network proximity score for any given set of disease genes were
+previously shown to be good candidates for repurposing to that
+disease~\citep{Cheng2018}.  We performed a network proximity based drug
+repurposing screen for AD on 2413 approved or phase 3 drugs from ChEMBL
+(Fig.~\ref{fig:workflow}A).  For each drug we computed eight values of network
+proximity given eight sets of AD genes that we derived from eight
+complementary information sources (one curated knowledge based source and
+seven multi-omic sources, Table~\ref{tab:genesets}).  This resulted in eight
 distinct lists of the same 2413 drugs ranked according to increasing network
 proximity (Fig.~\ref{fig:workflow}) so that top ranking drugs could be
 considered for repurposing.
@@ -103,7 +105,7 @@ considered for repurposing.
 \begin{table}
 \footnotesize
 \begin{tabular}{cll}
-name     & description & reference  \\
+Name     & Description & Reference  \\
 \hline
 TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & (TODO: Supp Table)  \\
 knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
@@ -115,13 +117,13 @@ APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin20
 APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
 \end{tabular}
 \caption{
-Input AD gene sets to drug repurposing screens of this study.
+AD gene sets used as inputs to drug repurposing screens of this study.
 }
 \label{tab:genesets}
 \end{table}
 
 Although the eight input AD gene sets had little overlap with each other
-(Fig.~\ref{fig:screen}A), the resulting eight lists of network proximity had
+(Fig.~\ref{fig:screen}A), the resulting eight vectors of network proximity had
 markedly high correlations (Fig.~\ref{fig:screen}B) so that the eight lists
 of drug rankings shared substantial similarity.  This suggests that the
 input AD gene sets, although hardly overlapping, are still close enough to
@@ -136,8 +138,8 @@ each other in the network's topology to result in similar drug rankings
 
 \hspace{0.05\textwidth}C\hspace{0.5\textwidth}D
 
-\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap.png}
-\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap-topk.png}
+\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2022-01-14-top-drugs/named-figure/separate-aggregate-ranks-heatmap-topk.pdf}
 
 \caption{Scoring and ranking 2413 drugs based on their network proximity to
   various AD gene sets.  A) Eight AD gene sets were input to the workflow.
@@ -192,10 +194,10 @@ different implementations of CMap yielded considerably different results
 more realistic, systems-based, mechanistic modeling assumptions behind the
 network approach, we omitted all results obtained with CMap from our study.
 
-\subsection{Selected top drugs}
+\subsection{Selected top ranking drugs}
 
 We selected four top ranking compounds for further investigation
-(Table~\ref{tab:top-drugs}) based on evidence from \emph{in vivo} animal
+(Table~\ref{tab:selected-drugs}) based on evidence from \emph{in vivo} animal
 experiments or cell based assays that suggest applicability to AD and other
 neurodegenerative diseases (below).
 
@@ -230,72 +232,108 @@ Chenodiol is a bile acid, and thus plausibly linked to
 AD based on recent evidence by us and others~\citep{Varma2021,Baloni2020}.
 
 Our third and fourth selected top drugs were Cysteamine and Cysteamine-HCl.
-Cysteamine, a derivative of the amino acid cysteine.  Cysteamine can traverse
-the blood brain barrier, was approved for cystinosis and eye diseases, and
-more recently it has been extensively investigated as a potential
-drug for neurodegenerative diseases, specifically Huntingon's and Parkinson's
-diseases due to its neuroprotective activity~\citep{Besouw2013,Paul2019}.
-Previous evidence for Cysteamine's potential utility for AD includes its
-favorable effect on the impaired cognitive abilities of APP-Psen1
-mice~\citep{Cicchetti2019}.
+Cysteamine, whose targets also include RGS4, a derivative of the amino acid
+cysteine.  Cysteamine can traverse the blood brain barrier, was approved for
+cystinosis and eye diseases, and more recently it has been extensively investigated as a potential drug for neurodegenerative diseases, specifically Huntingon's and Parkinson's diseases due to its neuroprotective activity~\citep{Besouw2013,Paul2019}.  Previous evidence for Cysteamine's potential utility for AD includes its favorable effect on the impaired
+cognitive abilities of APP-Psen1 mice~\citep{Cicchetti2019}.
 
 \begin{table}
 \footnotesize
-\begin{tabular}{llrll}
-  name                   & ChEMBL ID     & rank & indication class    & targets \\
-	\hline
-Arundine                 & CHEMBL446452  & 4    &                     & RGS4, GPR84 \\
-Chenodiol                & CHEMBL240597  & 28   & Anticholelithogenic & RGS4, NTCP2 \\
-Cysteamine               & CHEMBL602     & 51   & Anti-Urolithic      & CP3A4, RGS4 \\
-Cysteamine hydrochloride & CHEMBL1256137 & 322  & Anti-Urolithic      & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
+\begin{tabular}{p{0.2\textwidth} | p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+%\begin{tabular}{l | p{3cm} p{3cm} p{3cm}}
+\toprule
+                                              Name &                           Arundine &              Chenodiol &                          Cysteamine \\
+\midrule
+                                  Alternative form &                                    &                        &                      Cysteamine-HCl \\
+                                           Synonym &               3,3-Diindolylmethane &  Chenodeoxycholic acid &                            Cystagon \\
+                                         ChEMBL ID &                       CHEMBL446452 &           CHEMBL240597 &                           CHEMBL602 \\
+                              Approved indications &          cervical cancer, phase 3 & cholesterol gallstones &            cystinosis, eye diseases \\
+\midrule
+\multicolumn{4}{l}{\scshape Gene targets} \\
+                                      %Gene targets &                                    &                        &                                     \\
+                                     ChEMBL, human &                        RGS4, GPR84 &            RGS4, NTCP2 &                         RGS4, CP3A4 \\
+%                        ChEMBL, human (alt. form) &                                    &                        & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
+                                             Other &                                AHR &                        &                                     \\
+\midrule
+\multicolumn{4}{l}{\scshape AD-relevance, present study} \\
+                             Rank among 2413 screened drugs &                                  4 &                     28 &                                  51 \\
+\midrule
+\multicolumn{4}{l}{\scshape AD-relevance, previous studies} \\
+                                  In vivo evidence & \cite{DeMiranda2013,DeMiranda2014} &       \cite{Keene2002} &                \cite{Cicchetti2019} \\
+                                 In vitro evidence &      \cite{Lee2019,Rzemieniec2019} &                        &          \cite{Besouw2013,Paul2019} \\
+\bottomrule
 \end{tabular}
 \caption{
 Top drugs resulted by the aggregation of multiple network proximity based
-screens (cf.~Table~\ref{tab:top-drugs})
+screens 
 }
-\label{tab:top-drugs}
+\label{tab:selected-drugs}
 \end{table}
 
 \subsection{Experimental validation}
 
 We performed a series of AD-relevant cell based assays to investigate the
-effect of the three selected drugs introduced above: Arundine, Chenodiol and
-Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}; note that Cysteamine-HCl is
-shortened to ``Cysteamine'' in the figure).  While none of the drugs protected
-primary cultured neurons from Amyloid-$\beta$ (A$\beta$)-induced toxicity (MTT
-assay, Fig.~\ref{fig:cell-based-assays}A), (A$\beta$) clearance in BV2 cells
-was improved by both Arundine and Chenodiol but worsened by Cysteamine-HCl
-(Fig.~\ref{fig:cell-based-assays}B).  Fig.~\ref{fig:cell-based-assays}C shows
-that Secretion of all three A$\beta$ species tested in H4 cells was
-significantly decreased by both Arundine and Chenodiol, which further supports
-these drugs' potential for AD treatment; Cysteamine-HCl, on the other hand,
+utility of three of the four selected drugs introduced above: Arundine,
+Chenodiol and Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}; note that
+Cysteamine-HCl is shortened to ``Cysteamine'' in the figure).  While none of
+the drugs protected primary cultured neurons from Amyloid-$\beta$
+(A$\beta$)-induced toxicity (MTT assay, Fig.~\ref{fig:cell-based-assays}A),
+(A$\beta$) clearance in BV2 cells was improved by both Arundine and Chenodiol
+but worsened by Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}B).
+Fig.~\ref{fig:cell-based-assays}C shows that secretion of all three A$\beta$
+species tested in H4 cells was significantly decreased by both Arundine and
+Chenodiol, which further supports these drugs' potential for AD treatment
+(Fig.~\ref{fig:cell-based-assays}C); Cysteamine-HCl, on the other hand,
 decreased only one species (A$\beta$1-42).  Neither Tau phosphorylation,
 measured as pTau231 level, nor total Tau was significantly changed
 (Fig.~\ref{fig:cell-based-assays}D), which suggests that none of the selected
 drugs appears to improve Tau-dependent AD pathophysiology (although note the
-unexpected, significant, increase of pTau231:Tau ratio for Arundine.  The same
-conclusion is supported by Fig.~\ref{fig:cell-based-assays}H. Contrary to that
-conclusion, however, the pTau231/Tau ratio was significantly increased by
-Arundine (Fig.~\ref{fig:cell-based-assays}D) indicating its possibly pro-AD
-effect besides its contra-AD effects presented above.  BV2 cells were
-protected from lipopolysaccharide (LPS) induced neuroinflammation by Chenodiol
-as measured by the MTT assay (Fig.~\ref{fig:cell-based-assays}E), while
-Arundine had no effect and Cysteamine even increased cell death.  On the other
-hand, Arundine was the only drug that protected cells from LPS-induced
-TNF-$\alpha$ increase (Fig.~\ref{fig:cell-based-assays}E).  In the same
-neuroinflammation model, interleukins (IL-10, IL-1b, IL-6) were not changed by
-any of the drugs except for a weakly significant increase by Chenodiol
+unexpected, significant, increase of pTau231:Tau ratio for Arundine).  The
+same conclusion is supported by Fig.~\ref{fig:cell-based-assays}H showing
+unchanged Tau aggregation in a cell-free assay. BV2 cells were protected from
+lipopolysaccharide (LPS) induced neuroinflammation by Chenodiol as measured by
+the MTT assay (Fig.~\ref{fig:cell-based-assays}E), while Arundine had no
+effect and Cysteamine even increased cell death.  On the other hand, Arundine
+was the only drug that protected cells from LPS-induced TNF-$\alpha$ increase
+(Fig.~\ref{fig:cell-based-assays}E).  In the same neuroinflammation model,
+interleukins (IL-10, IL-1b, IL-6) were not changed by any of the drugs except
+for a weakly significant increase by Chenodiol
 (Fig.~\ref{fig:cell-based-assays}E).  Only Arundine protected primary neurones
 from any aspect of trophic factor withdrawal (PI cell death,
 Fig.~\ref{fig:cell-based-assays}G); in contrast, Chenodiol and Cysteamine-HCl
 actually promoted certain aspects of cell death (LDH, MTT,
 PI~Fig.~\ref{fig:cell-based-assays}G).  Finally, none of the drugs impacted
 various assays of neurogenesis and neurite outgrowth in primary cultured
-neurons (Fig.~\ref{fig:cell-based-assays}H).
+neurons (Fig.~\ref{fig:cell-based-assays}F).
+
+Taken these experimental results together, Arundine and Chenodiol, but not
+Cysteamine-HCl, exhibited several AD-relevant neuroprotective properties.
 
 \begin{figure}
 \includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays.pdf}
-\caption{TODO
+\caption{Cell-based assays: testing AD-relevant protective effects of three
+  selected top drugs from the present computational screen: Chenodiol,
+  Cysteamine-HCl (shortened to ``Cysteamine'' in this figure), and Arundine.
+  TODO: ask Tina about details: Throughout panels A-H tested drug
+  concentrations were $c_1 = ?$, $c_2 = ?$, $c_3 = ?$, $c_4 = ?$, $c_5 = ?$,
+  $c_6 = ?$.  Statistically significant effects are marked with $\ast$,
+  $\ast\ast$, $\ast\ast\ast$, and with increasingly deeper blue or red,
+  denoting $p < ?$, $p < ?$,  $p < ?$, respectively.
+  A) Amyloid-$\beta$ (A$\beta$)-induced toxicity combined with the MTT assay
+  of cell viability in primary cultured neurons.
+  B) A$\beta$ clearance in BV2 cells; improved clearance is indicated by
+  increased A$\beta$ in lysate, decreased A$\beta$ in supernatant and
+  decreased supernatant:lysate ratio.
+  C) Secretion of three A$\beta$ species in H4 cells.
+  D) pTau231 and total Tau level.
+  E) Lipopolysaccharide (LPS) induced neuroinflammation in BV2 cells; MTT
+  assay of cell viability and the following citokine levels: interleukins
+  (IL-10, IL1b, IL-6), the chemokine KC/GRO, and tumor necrosis factor
+  (TNF)-$\alpha$.
+  F) Assays of neurogenesis and neurite outgrowth in primary cultured neurons.
+  G) Assays of cell death, viability and apoptosis in response to trophic
+  factor withdrawal in primary neurones.
+  H) Tau aggregation (cell-free).
 }
 \label{fig:cell-based-assays}
 \end{figure}
@@ -462,12 +500,12 @@ used the MC3-aggregated list in our workflow.
 
 \setcounter{table}{0}
 \makeatletter 
-\renewcommand{\figurename}{Supplementary Table} % nice
+\renewcommand{\figurename}{Table S} % nice
 \makeatother
 
 \setcounter{figure}{0}
 \makeatletter 
-\renewcommand{\figurename}{Supplementary Figure} % nice
+\renewcommand{\figurename}{Figure S} % nice
 \makeatother
 
 \begin{figure}[p]

@@ -1,0 +1,14 @@
+Name	Arundine	Chenodiol	Cysteamine
+Alternative form			Cysteamine-HCl
+Synonym	"3,3-Diindolylmethane"	Chenodeoxycholic acid	Cystagon
+ChEMBL ID	CHEMBL446452	CHEMBL240597	CHEMBL602
+Approved indications	cervical cancer (phase 3)	cholesterol gallstones	"cystinosis, eye diseases"
+Gene targets			
+"ChEMBL, human"	"RGS4, GPR84"	"RGS4, NTCP2"	"RGS4, CP3A4"
+"ChEMBL, human (alt. form)"			"GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1"
+Other	AHR		
+"AD-relevance, present study: network proximity based drug screen"			
+Rank among 2413 drugs	4	28	51
+"AD-relevance, previous studies"			
+In vivo evidence	"\cite{DeMiranda2013,DeMiranda2014}"	\cite{Keene2002}	\cite{Cicchetti2019}
+In vitro evidence	"\cite{Lee2019,Rzemieniec2019}"		"\cite{Besouw2013,Paul2019}"
