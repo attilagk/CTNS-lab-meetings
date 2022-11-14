@@ -17,7 +17,6 @@ CMap analyses	repurposing-ms/repurposing-ms.tex	/^\\subsection{CMap analyses}$/;
 Computational drug screen evaluating network proximity	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Computational drug screen: evaluating network proximity}$/;"	b
 Computational drug screen evaluating network proximity	repurposing-ms/repurposing-ms.tex	/^\\subsection{Computational drug screen: evaluating network proximity}$/;"	b
 Computational validation	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Computational validation}$/;"	b
-Computational validation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Computational validation}$/;"	b
 Computational validation of network based screen	repurposing-ms/repurposing-ms-v2.tex	/^\\subsection{Computational validation of network based screen}$/;"	b
 Discussion	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Discussion}$/;"	s
@@ -57,6 +56,7 @@ Selected top ranking drugs	repurposing-ms/repurposing-ms.tex	/^\\subsection{Sele
 Supplementary Material	repurposing-ms/repurposing-ms-supp.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v1.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v2.tex	/^\\section*{Supplementary Material}$/;"	s
+Supplementary Material	repurposing-ms/repurposing-ms.tex	/^\\section*{Supplementary Material}$/;"	s
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 b:LevelDict	lab-meetings/2021-05-13-covid19-repurposing/from-others/tikz-bayesnet/model_citation_influence.tex.project.vim	/^let b:LevelDict = {}$/;"	v

@@ -30,6 +30,8 @@
 
 \section{Introduction}
 
+Hello World!
+
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
 societies for which effective treatments are
@@ -75,16 +77,17 @@ Secondly, we exploit rich, mechanistic information represented by two
 interconnected networks: (1) the network formed by all drugs and their target
 genes (drug-target network) and (2) the human gene-gene interaction network
 (known as the interactome), whose Alzheimer's disease
-module~\citep{Barabasi2011} is defined by a set of AD genes,
-Fig~\ref{fig:workflow}B.  Given these networks, we estimate the efficacy of
-each drug for AD by evaluating network proximity~\citep{Guney2016}, which is
-based on the drug's network topological distance from the AD module and thus
-estimates the drug's effect on AD genes.  Network proximity was
-shown~\citep{Cheng2018} to be a powerful, systems-level, alternative to wider
-used, but merely correlative, approaches to computational drug repurposing
-such as the connectivity map, CMap~\citep{Lamb2006}.  We present the results
-and computational validation of our network proximity based drug screen as well as
-experimental validation of three selected top ranking drugs.
+module~\citep{Barabasi2011} is defined by AD genes, a set of genes
+mechanistically involved in AD, Fig~\ref{fig:workflow}B.  Given these
+networks, we estimate the efficacy of each drug for AD by evaluating network
+proximity~\citep{Guney2016}, which is based on the drug's network topological
+distance from the AD module and thus estimates the drug's effect on AD genes.
+Network proximity was shown~\citep{Cheng2018} to be a powerful, systems-level,
+alternative to wider used, but merely correlative, approaches to computational
+drug repurposing such as the connectivity map, CMap~\citep{Lamb2006}.  We
+present the results and computational validation of our network proximity
+based drug screen as well as experimental validation of three selected top
+ranking drugs.
 
 \section{Results}
 
@@ -93,14 +96,14 @@ experimental validation of three selected top ranking drugs.
 Drugs with low network proximity score for any given set of disease genes were
 previously shown to be good candidates for repurposing to that
 disease~\citep{Cheng2018}.  We performed a network proximity based drug
-repurposing screen for AD on 2413 approved or phase 3 drugs from ChEMBL
-(Fig.~\ref{fig:workflow}A).  For each drug we computed eight values of network
-proximity given eight sets of AD genes that we derived from eight
-complementary information sources (one curated knowledge based source and
-seven multi-omic sources, Table~\ref{tab:genesets}).  This resulted in eight
-distinct lists of the same 2413 drugs ranked according to increasing network
-proximity (Fig.~\ref{fig:workflow}) so that top ranking drugs could be
-considered for repurposing.
+repurposing screen for AD on 2413 drugs from ChEMBL either approved by the FDA
+or in phase 3 clinical trials (Fig.~\ref{fig:workflow}A).  For each drug we
+computed eight values of network proximity given eight sets of AD genes that
+we derived from eight complementary information sources (one curated knowledge
+based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
+resulted in eight distinct lists of the same 2413 drugs ranked according to
+increasing network proximity (Fig.~\ref{fig:workflow}) so that top ranking
+drugs could be considered for repurposing.
 
 \begin{table}
 \footnotesize
@@ -128,11 +131,16 @@ Table~S\ref{tab:genes-in-genesets}.
 
 Although the eight input AD gene sets had little overlap with each other
 (Fig.~\ref{fig:screen}A), the resulting eight vectors of network proximity had
-markedly high correlations (Fig.~\ref{fig:screen}B) so that the eight lists
-of drug rankings shared substantial similarity.  This suggests that the
-input AD gene sets, although hardly overlapping, are still close enough to
-each other in the network's topology to result in similar drug rankings
-(Fig.~\ref{fig:screen}C right), which helps validate our approach.
+markedly high correlations (Fig.~\ref{fig:screen}B) so that the eight lists of
+drug rankings shared substantial similarity (Fig.~\ref{fig:screen}C right).
+This suggests that even though the input AD gene sets share only a few genes,
+the corresponding network modules are close enough to one another in network
+topological space to exhibit similar network proximity to any given drug.
+
+%TODO: Discussion how does it help validate our approach
+%the input AD gene sets, although hardly overlapping, are still close enough to
+%each other in the network's topology to result in similar drug rankings
+%(Fig.~\ref{fig:screen}C right), which helps validate our approach.
 
 \begin{figure}
 \hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
@@ -172,11 +180,15 @@ To validate our network based screen we asked to what extent the top ranked
 drugs were enriched in drugs already investigated or approved for AD.  To that
 end we examined the rediscovery rate for the top-$t$ drugs relative to that
 for the bottom-$1808$ drugs (see Methods for definitions).
-Fig.~S\ref{fig:ad-drug-rediscovery} shows that rediscovery rate for the top-$t$
-drugs was about $2-3$-fold relative to that for the bottom drugs depending on
-the threshold $t$.  This finding validates our approach.  Interestingly several, but
-not all, other common indications showed a similar enrichment pattern
-(Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
+Fig.~S\ref{fig:ad-drug-rediscovery} shows that rediscovery rate for the
+top-$t$ drugs was about $2-3$-fold relative to that for the bottom drugs
+depending on the threshold $t$.  This finding validates our approach.
+Several, but not all, other common indications showed a similar enrichment
+pattern (Fig.~S\ref{fig:ad-drug-rediscovery-multi}).  Interestingly, our
+approach tended to rediscover drugs developed for various forms of neoplasm
+and cancer while failed to rediscover drugs for neuropsychiatric indications
+like Parkinson's disease, schizophrenia and major depressive disorder
+(Fig.~S\ref{fig:ad-drug-rediscovery-multi}). % TODO: discuss result in Discussion
 
 We also checked the agreement between our network proximity based results
 above and the results we obtained by using CMap with the same input AD gene
@@ -186,7 +198,8 @@ conditioned on the various cell types of the CMap data set
 different implementations of CMap yielded considerably different results
 (Fig.~S\ref{fig:cmap-cmap}).  Given these conflicting observations and the
 more realistic, systems-based, mechanistic modeling assumptions behind the
-network approach, we omitted all results obtained with CMap from our study.
+network approach, we did not analyze the results obtained with CMap any
+further.
 
 \subsection{Selected top ranking drugs}
 
@@ -198,7 +211,7 @@ neurodegenerative diseases (below).
 Arundine, also known as 3,3-diindolylmethane, is the dimeric product of the
 natural product indole-3-carbinol.  While Arundine has been mostly
 investigated in the context of drug resistant tumors~\citep{Biersack2020}, its
-closed analogs have been found to cross the blood-brain barrier and protect
+close analogs have been found to cross the blood-brain barrier and protect
 mice from MPTP-induced neurotoxicity and
 neurodegeneration~\citep{DeMiranda2013} by suppressing
 gliosis~\citep{DeMiranda2014}, a key hallmark of AD~\citep{DeStrooper2016}.
@@ -220,7 +233,7 @@ neuropsychological disorder, which shares substantial heritability with
 AD~\citep{Consortium2018} and in which, like in AD, autoimmune pathways have
 been found to play significant role~\citep{Sekar2016a}.  RGS4 is notable
 because it is also targeted by Chenodiol, another of our selected top-ranking
-drugs.  Chenodiol, or anthropodeoxycholic acid, has been shown to be
+drugs.  Chenodiol, or Chenodeoxycholic acid, has been shown to be
 neuroprotective in Huntington's disease~\citep{Keene2002}.  Moreover,
 Chenodiol is a bile acid, and thus plausibly linked to
 AD based on recent evidence by us and others~\citep{Varma2021,Baloni2020}.
@@ -273,7 +286,7 @@ selected top ranked drugs and (some of) the AD genes in the gene-gene
 interaction network used for the present computational drug screen.
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{../../results/2021-06-14-proximity/toy-proximal-arrow.png}
+\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
   \caption{Shortest paths between selected drug(s) and AD genes in the
     gene-gene interaction network.  TODO: make figure (the present figure is
     just a placeholder).
@@ -283,45 +296,50 @@ interaction network used for the present computational drug screen.
 
 \subsection{Experimental validation}
 
-We performed a series of AD-relevant cell based assays to investigate the
-utility of three of the four selected drugs introduced above: Arundine,
-Chenodiol and Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}; note that
-Cysteamine-HCl is shortened to ``Cysteamine'' in the figure).  While none of
-the drugs protected primary cultured neurons from Amyloid-$\beta$
-(A$\beta$)-induced toxicity (MTT assay, Fig.~\ref{fig:cell-based-assays}A),
+We performed an extensive set of AD-relevant cell based phenotypic assays
+($23$ assays) to investigate the utility of three of the four selected drugs
+introduced above: Arundine, Chenodiol and Cysteamine-HCl
+(Fig.~\ref{fig:cell-based-assays}.  (Note that Cysteamine-HCl is shortened to
+``Cysteamine'' in the figure.)  For each assay we determined \emph{a priori}
+whether the effect of a hypothetical, ideal neuroprotective drug would
+increase or decrease the assay's outcome (Table~S\ref{tab:protect-sign}).
+Using that information, we then evaluated each drug's neuroprotective utility
+for each assay (Fig.~\ref{fig:cell-based-assays}, also see below).
+
+Amyloid-$\beta$
 (A$\beta$) clearance in BV2 cells was improved by both Arundine and Chenodiol
-but worsened by Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}B).
-Fig.~\ref{fig:cell-based-assays}C shows that secretion of all three A$\beta$
+but worsened by Cysteamine-HCl (Fig.~\ref{fig:cell-based-assays}A).
+Fig.~\ref{fig:cell-based-assays}B shows that secretion of all three A$\beta$
 species tested in H4 cells was significantly decreased by both Arundine and
 Chenodiol, which further supports these drugs' potential for AD treatment
-(Fig.~\ref{fig:cell-based-assays}C); Cysteamine-HCl, on the other hand,
+(Fig.~\ref{fig:cell-based-assays}B); Cysteamine-HCl, on the other hand,
 decreased only one species (A$\beta$1-42).  Neither Tau phosphorylation,
 measured as pTau231 level, nor total Tau was significantly changed
-(Fig.~\ref{fig:cell-based-assays}D), which suggests that none of the selected
+(Fig.~\ref{fig:cell-based-assays}C), which suggests that none of the selected
 drugs appears to improve Tau-dependent AD pathophysiology (although note the
 unexpected, significant, increase of pTau231:Tau ratio for Arundine).  The
 same conclusion is supported by Fig.~\ref{fig:cell-based-assays}H showing
 unchanged Tau aggregation in a cell-free assay. BV2 cells were protected from
 lipopolysaccharide (LPS) induced neuroinflammation by Chenodiol as measured by
-the MTT assay (Fig.~\ref{fig:cell-based-assays}E), while Arundine had no
+the MTT assay (Fig.~\ref{fig:cell-based-assays}D), while Arundine had no
 effect and Cysteamine even increased cell death.  On the other hand, Arundine
 was the only drug that protected cells from LPS-induced TNF-$\alpha$ increase
-(Fig.~\ref{fig:cell-based-assays}E).  In the same neuroinflammation model,
+(Fig.~\ref{fig:cell-based-assays}D).  In the same neuroinflammation model,
 interleukins (IL-10, IL-1b, IL-6) were not changed by any of the drugs except
 for a weakly significant increase by Chenodiol
-(Fig.~\ref{fig:cell-based-assays}E).  Only Arundine protected primary neurones
+(Fig.~\ref{fig:cell-based-assays}D).  Only Arundine protected primary neurones
 from any aspect of trophic factor withdrawal (PI cell death,
-Fig.~\ref{fig:cell-based-assays}G); in contrast, Chenodiol and Cysteamine-HCl
+Fig.~\ref{fig:cell-based-assays}F); in contrast, Chenodiol and Cysteamine-HCl
 actually promoted certain aspects of cell death (LDH, MTT,
-PI~Fig.~\ref{fig:cell-based-assays}G).  Finally, none of the drugs impacted
+PI~Fig.~\ref{fig:cell-based-assays}F).  Finally, none of the drugs impacted
 various assays of neurogenesis and neurite outgrowth in primary cultured
-neurons (Fig.~\ref{fig:cell-based-assays}F).
+neurons (Fig.~\ref{fig:cell-based-assays}e).
 
 Taken these experimental results together, Arundine and Chenodiol, but not
-Cysteamine-HCl, exhibited several AD-relevant neuroprotective properties.
+Cysteamine-HCl, exhibit several AD-relevant neuroprotective properties.
 
 \begin{figure}
-\includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays.pdf}
+\includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays-simplified.pdf}
 \caption{Results of cell-based assays: testing AD-relevant protective effects of three
   selected top drugs from the present computational screen: Chenodiol,
   Cysteamine-HCl (shortened to ``Cysteamine'' in this figure), and Arundine.
@@ -330,21 +348,18 @@ Cysteamine-HCl, exhibited several AD-relevant neuroprotective properties.
   $c_6 = ?$.  Statistically significant effects are marked with $\ast$,
   $\ast\ast$, $\ast\ast\ast$, and with increasingly deeper blue or red,
   denoting $p < ?$, $p < ?$,  $p < ?$, respectively.
-  A) Amyloid-$\beta$ (A$\beta$)-induced toxicity combined with the MTT assay
-  of cell viability in primary cultured neurons.
-  B) A$\beta$ clearance in BV2 cells; improved clearance is indicated by
+  A) A$\beta$ clearance in BV2 cells; improved clearance is indicated by
   increased A$\beta$ in lysate, decreased A$\beta$ in supernatant and
   decreased supernatant:lysate ratio.
-  C) Secretion of three A$\beta$ species in H4 cells.
-  D) pTau231 and total Tau level.
-  E) Lipopolysaccharide (LPS) induced neuroinflammation in BV2 cells; MTT
+  B) Secretion of three A$\beta$ species in H4 cells.
+  C) pTau231 and total Tau level.
+  D) Lipopolysaccharide (LPS) induced neuroinflammation in BV2 cells; MTT
   assay of cell viability and the following citokine levels: interleukins
   (IL-10, IL1b, IL-6), the chemokine KC/GRO, and tumor necrosis factor
   (TNF)-$\alpha$.
-  F) Assays of neurogenesis and neurite outgrowth in primary cultured neurons.
-  G) Assays of cell death, viability and apoptosis in response to trophic
+  E) Assays of neurogenesis and neurite outgrowth in primary cultured neurons.
+  F) Assays of cell death, viability and apoptosis in response to trophic
   factor withdrawal in primary neurones.
-  H) Tau aggregation (cell-free).
 }
 \label{fig:cell-based-assays}
 \end{figure}
@@ -388,7 +403,7 @@ biases. To prevent that, we conducted multiple screens, each conditioned on a
 gene set and performed \emph{a posteriori} rank aggregation.  The rank
 aggregation strategy also revealed that even some non-overlapping AD gene sets
 resulted lead to the discovery of highly overlapping sets of very top drugs
-demonstrating the robustness of our workflow.  Interestingly, the non-neuronal
+demonstrating the robustness of our workflow.  Notably, the non-neuronal
 AD gene sets were exception of this tendency pointing at the value of further
 characterization of non-neuronal cells in
 AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
@@ -507,7 +522,12 @@ used the MC3-aggregated list in our workflow.
 
 \subsection{Cell-based assays}
 
-TODO: ask Tina for a methodological description.
+We tested whether our selected drugs can rescue molecular phenotypes relevant
+to Alzheimer's disease including tau phosphorylation, A$\beta$1-42 clearance,
+A$\beta$ secretion, A$\beta$ toxicity, lipopolysaccharide (LPS)-induced
+neuroinflammation, cell death due to trophic factor withdrawal and neurite
+outgrowth and neurogenesis. In all assays described below, cells treated with
+drugs were compared to either the vehicle control (VC) or lesion control.
 
 \bibliography{repurposing-ms}
 
@@ -543,6 +563,45 @@ TODO: ask Tina for a methodological description.
   targets is also indicated.
 }
 \label{tab:ranked-drugs}
+\end{table}
+
+\begin{table}[p]
+\begin{tabular}{llr}
+\toprule
+                              &                   &  ideal effect: increase (1) or decrease (-1)\\
+class & assay &                                                                      \\
+\midrule
+A)  A$\beta$ clearance & Abeta in Lysate &                                                  1 \\
+                              & Abeta in SN &                                                 -1 \\
+                              & ratio &                                                 -1 \\
+B)  A$\beta$ secretion & Ab1-38 &                                                 -1 \\
+                              & Ab1-40 &                                                 -1 \\
+                              & Ab1-42 &                                                 -1 \\
+C)  Tau phosphorylation & pTau231 &                                                 -1 \\
+                              & ratio &                                                 -1 \\
+                              & total Tau &                                                  1 \\
+D)  LPS neuroinflammation & IL-10 &                                                 -1 \\
+                              & IL-1b &                                                 -1 \\
+                              & IL-6 &                                                 -1 \\
+                              & KC/GRO &                                                 -1 \\
+                              & MTT &                                                  1 \\
+                              & TNF-a &                                                 -1 \\
+E)  Neurogenesis, neurite outgrowth & BrdU positive neurons &                                                  1 \\
+                              & average longest neurite &                                                  1 \\
+                              & number of branches &                                                  1 \\
+                              & total neurite area &                                                  1 \\
+F)  Trophic factor withdrawal & LDH (cell death) &                                                 -1 \\
+                              & MTT (viability) &                                                  1 \\
+                              & PI (cell death) &                                                 -1 \\
+                              & YOPRO (apoptosis) &                                                 -1 \\
+\bottomrule
+\end{tabular}
+\caption{
+  Ideal, neuroprotective, effect for each assay.  Ideal effect is the
+  direction of effect of an ideal, hypothetical, neuroprotective drug on a
+  given assay.
+}
+\label{tab:protect-sign}
 \end{table}
 
 \begin{figure}[p]
