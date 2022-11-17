@@ -64,11 +64,11 @@ individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
 \includegraphics[scale=0.85]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network.pdf}
 \caption{
   A) Workflow of computational drug repurposing to Alzheimer's disease (AD).
-  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5 are
-  likely efficient for AD because they target either directly an AD gene (drug
-  4) or a gene interacting with AD genes (drug 5).  On the other hand, drugs
-  1--3 only target genes at least three interactions away from AD genes and
-  therefore are likely not efficient for AD.
+  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5
+  are likely efficient for AD because they target either directly or
+  indirectly an AD gene (i.e a gene mechanistically involved in AD).  On the other
+  hand, drugs 1--3 only target genes at least three interactions away from AD
+  genes and therefore are likely not efficient for AD.
 }
 \label{fig:workflow}
 \end{figure}
@@ -241,7 +241,11 @@ AD based on recent evidence by us and others~\citep{Varma2021,Baloni2020}.
 Our third and fourth selected top drugs were Cysteamine and Cysteamine-HCl.
 Cysteamine, whose targets also include RGS4, a derivative of the amino acid
 cysteine.  Cysteamine can traverse the blood brain barrier, was approved for
-cystinosis and eye diseases, and more recently it has been extensively investigated as a potential drug for neurodegenerative diseases, specifically Huntingon's and Parkinson's diseases due to its neuroprotective activity~\citep{Besouw2013,Paul2019}.  Previous evidence for Cysteamine's potential utility for AD includes its favorable effect on the impaired
+cystinosis and eye diseases, and more recently it has been extensively
+investigated as a potential drug for neurodegenerative diseases, specifically
+Huntingon's and Parkinson's diseases due to its neuroprotective
+activity~\citep{Besouw2013,Paul2019}.  Previous evidence for Cysteamine's
+potential utility for AD includes its favorable effect on the impaired
 cognitive abilities of APP-Psen1 mice~\citep{Cicchetti2019}.
 
 \begin{table}
@@ -281,9 +285,36 @@ and targets GEMI, LMNA, PLK1, BLM, NF2L2, and TYDP1 (ChEMBL, human).
 \label{tab:selected-drugs}
 \end{table}
 
-Fig.~\ref{fig:drug-AD-genes-network} shows molecular pathways connecting the
-selected top ranked drugs and (some of) the AD genes in the gene-gene
-interaction network used for the present computational drug screen.
+%\subsection{Molecular pathways from the selected drugs to AD genes}
+\subsection{Hypothetical molecular pathways linking selected drugs to AD}
+
+Next we aimed at elucidating hypothetical, AD-relevant molecular mechanisms of
+the selected drugs.  We searched for all shortest pathways from each selected
+drug to each AD gene set in the same interactome and drug-target network that
+we used for our network proximity based drug screen.  The shortest path
+length, defined as the least number of gene-gene interactions connecting a
+given target to a given AD gene, ranged typically from 2 to 4 for most
+combinations of target and AD gene set (Fig.~S\ref{fig:shortest-path-lengths},
+Fig.~S\ref{fig:shortest-path-bar-knowledge}-S\ref{fig:shortest-path-bar-APOE3-4
+DE microglia}).  However, in the case of RGS4, targeted by all three selected
+drugs (Table~\ref{tab:selected-drugs}), the shortest path length to some AD
+genes was 1 meaning that RGS4 directly interacts with these genes: with ERBB3
+in the agora2+ set, with GNAI2 in the AD DE APOE3-APOE3 set, with CALM1 and
+GNAI2 in the AD DE APOE4-APOE4 set, and with PLCB1 in the APOE3-4 DE neuron
+set (Table~S\ref{tab:nearest-ADgenes},
+Fig.~S\ref{fig:shortest-path-bar-knowledge}-S\ref{fig:shortest-path-bar-APOE3-4
+DE microglia}).  Moreover, target RGS4 is part of two of the largest AD gene
+sets of our study, AD DE APOE3-APOE3 and AD DE APOE4-APOE4, which corresponded
+to shortest path length of zero (Table~S\ref{tab:nearest-ADgenes}).
+
+As noted above, for most AD gene sets---especially for the smaller sized,
+higher confidence sets---the shortest paths between targets and AD genes were
+found to be of length 2 or more implying mediator genes along the paths from
+targets to AD genes (Fig.~S\ref{fig:shortest-path-lengths}).  Inspecting
+$>100$ paths of length 2 connecting targets revealed that the most frequent mediator genes
+are UBC, EGFR, CALM1, STUB1, PRKCA, and PRKACA (TODO: make histogram).
+This is illustrated by Fig.~\ref{fig:drug-AD-genes-network}, in which
+target to AD gene paths of length 2 are indicated by thick edges.
 
 \begin{figure}
 \includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
@@ -526,8 +557,114 @@ We tested whether our selected drugs can rescue molecular phenotypes relevant
 to Alzheimer's disease including tau phosphorylation, A$\beta$1-42 clearance,
 A$\beta$ secretion, A$\beta$ toxicity, lipopolysaccharide (LPS)-induced
 neuroinflammation, cell death due to trophic factor withdrawal and neurite
-outgrowth and neurogenesis. In all assays described below, cells treated with
-drugs were compared to either the vehicle control (VC) or lesion control.
+outgrowth and neurogenesis~\citep{Varma2020,Desai2022a}. In all assays
+described below, cells treated with drugs were compared to either the vehicle
+control (VC) or lesion control.
+
+Statistical analysis was performed in GraphPad Prism. Group differences
+were evaluated for each test item separately by one-way analysis of variance
+(ANOVA) followed by Dunnett's multiple comparison test versus vehicle or
+lesion control.
+
+\subsubsection{A$\beta$ clearance}
+
+For A$\beta$ clearance assay, 20,000 BV2 cells per well (uncoated 96-well
+plates) were plated out. After changing cells to treatment medium, drug
+compounds were administered 1 hour before A$\beta$ stimulation (Bachem,
+4061966; final concentration in well, 200 ng/ml; dilutions in medium). Cells
+treated with vehicle and cells treated with A$\beta$ alone served as controls.
+After 3 hours of A$\beta$ stimulation, cell supernatants were collected for
+the A$\beta$ measurement and cells were carefully washed twice with PBS and
+thereafter lysed in 35 $\mu$l of cell lysis buffer (50 mM tris-HCl, pH 7.4,
+150 mM NaCl, 5 mM EDTA, and 1\% SDS) supplemented with protease inhibitors.
+Supernatants and cell lysates were analyzed for human A$\beta$42 with the MSD
+V-PLEX Human A$\beta$42 Peptide (6E10) Kit (K151LBE, Mesoscale Discovery). The
+immune assay was carried out according to the manual, and plates were read on
+MESO QuickPlex SQ 120.
+
+\subsubsection{A$\beta$ secretion}
+
+H4-hAPP cells were cultivated in Opti-MEM supplemented with 10\% FCS, 1\%
+penicillin/streptomycin, hygromycin B (200 $\mu$g/ml), and blasticidin S (2.5
+$\mu$g/ml).  H4-hAPP cells were seeded into 96-well plates (2 $\times$ 104
+cells per well). On the next day, cells in 96-well plates were treated with
+compounds, reference item [400 nM
+N-[N-(3,5-difluorophenacetyl-l-alanyl)]-S-phenylglycine t-butyl ester (DAPT)],
+or vehicle. Twenty-four hours later, supernatants were collected for further
+A$\beta$ measurements by MSD [V-PLEX A$\beta$ Peptide Panel 1 (6E10) Kit,
+K15200E, Mesoscale Discovery].
+
+\subsubsection{Tau phosphorylation}
+
+SH-SY5Y-hTau441(V337M/R406W) cells were maintained in culture medium [DMEM
+medium, 10\% FCS, 1\% nonessential amino acids (NEAA), 1\% l-glutamine,
+gentamycin (100 $\mu$g/ml), and geneticin G-418 (300 $\mu$g/ml)] and
+differentiated with 10 $\mu$M retinoic acid for 5 days changing medium every 2
+to 3 days. Before the treatment, cells were seeded onto 24-well plates at a
+cell density of 2 $\times$ 105 cells per well on day one of in vitro culture
+(DIV1). Drug compounds were applied on DIV2. After 24 hours of incubation
+(DIV3), cells on 24-well plates were harvested in 60 $\mu$l of RIPA buffer [50
+mM tris (pH 7.4), 1\% NP-40, 0.25\% Na-deoxycholate, 150 mM NaCl, 1 mM EDTA
+supplemented with freshly added 1 $\mu$M NaF, 0.2 mM Na-orthovanadate, 80
+$\mu$M glycerophosphate, protease (Calbiochem), and phosphatase
+(Sigma-Aldrich) inhibitor cocktail]. Protein concentration was determined by
+BCA assay (Pierce, Thermo Fisher Scientific), and samples were adjusted to a
+uniform total protein concentration. Total tau and phosphorylated tau were
+determined by immunosorbent assay from Mesoscale Discovery
+[Phospho(Thr231)/Total Tau Kit K15121D, Mesoscale Discovery].
+
+\subsubsection{LPS-induced neuroinflammation}
+
+The murine microglial cell line BV2 was cultivated in Dulbecco’s modified
+Eagle's medium (DMEM) medium supplemented with 10\% fetal calf serum (FCS),
+1\% penicillin/streptomycin, and 2 mM l-glutamine (culture medium). For LPS
+stimulation assay, 5000 BV2 cells per well (uncoated 96-well plates) were
+plated out and the medium was changed to treatment medium (DMEM, 5\% FCS, and
+2 mM l-glutamine). After changing cells to treatment medium, drug compounds
+were administered 1 hour before LPS stimulation [Sigma-Aldrich; L6529; 1 mg/ml
+stock in ddH2O; final concentration in well, 100 ng/ml (dilutions in medium)].
+Cells treated with vehicle, cells treated with LPS alone, and cells treated
+with LPS plus reference item (dexamethasone, 10 $\mu$M; Sigma-Aldrich, D4902)
+served as controls. After 24 hours of stimulation, cell supernatants were
+collected for the cytokine measurement (V-PLEX Proinflammatory Panel 1 Mouse
+Kit, K15048D, Mesoscale) and cells were subjected to
+3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assay.
+
+\subsubsection{Neurite outgrowth and neurogenesis}
+
+Primary hippocampal neurons were prepared from E18.5 timed pregnant
+C57BL/6JRccHsd mice as previously described. Cells were seeded in
+poly-D-lysine pre-coated 96-well plates at a density of 2.6 $\times$ 104
+cells/well in medium (Neurobasal,
+2\% B-27, 0.5 mM glutamine, 25 $\mu$M glutamate,
+1\% Penicillin–Streptomycin). Directly on DIV1, the drug of interest or VC was
+applied. On DIV2, 10 $\mu$M Bromodeuxyuridine (BrdU; B5002 Sigma Aldrich) was
+added and cells were fixed after additional 24h. Cells were permeabilized with
+0.1\% Triton-X and incubated with primary Beta Tubulin Isotype III (T8660,
+Sigma Aldrich) and BrdU antibodies (MAS25$\circ$C, AHrlan-Sera Lab) overnight
+at 4$\circ$C. Afterwards, cells were washed two times with PBS and incubated
+with fluorescently labelled secondary antibodies and DAPI for 1.5 h at room
+temperature (RT) in the dark. Cells were rinsed three times with PBS and
+imaged with the Cytation 5 Multimode reader (BioTek) at 10 $\times$
+magnification (six images per well). BrdU-positive cells were counted as a
+marker of neurogenesis and Beta Tubulin Isotype III signal was used for
+macro-based quantification of neurite outgrowth.
+
+\subsubsection{Trophic factor withdrawal}
+
+Primary cortical neurons from embryonic day 18 (E18) C57Bl/6 mice were
+prepared as previously described. On the day of preparation (DIV1), cortical
+neurons were seeded on poly-d-lysine precoated 96-well plates at a density of
+3 $\times$ 104 cells per well. Every 4 to 6 days, a half medium exchange using full
+medium (Neurobasal, 2\% B-27, 0.5 mM glutamine, and 1\% penicillin-streptomycin)
+was carried out. On DIV8, a full medium exchange to B-27 free medium
+(Neurobasal, 0.5 mM glutamine, and 1\% penicillin-streptomycin) was performed
+and drug compounds were applied thereafter. The experiment was carried out
+with six technical replicates per condition, and vehicle-treated cells
+served as control. After 28 hours on B-27–free medium, cells were subjected to
+YO-PRO/propidium iodide (PI) and MTT as well as lactate dehydrogenase (LDH)
+assay.
+
 
 \bibliography{repurposing-ms}
 
@@ -563,6 +700,28 @@ drugs were compared to either the vehicle control (VC) or lesion control.
   targets is also indicated.
 }
 \label{tab:ranked-drugs}
+\end{table}
+
+\begin{table}[p]
+\begin{tabular}{lrlrr}
+\toprule
+{} &  CYP3A4 &          RGS4 &  SLC10A2 &  shortest path length \\
+\midrule
+AD DE APOE3-APOE3 &         &          RGS4 &          &                     0 \\
+AD DE APOE4-APOE4 &         &          RGS4 &          &                     0 \\
+agora2+           &         &         ERBB3 &          &                     1 \\
+AD DE APOE3-APOE3 &         &         GNAI2 &          &                     1 \\
+AD DE APOE4-APOE4 &         &  CALM1; GNAI2 &          &                     1 \\
+APOE3-4 DE neuron &         &         PLCB1 &          &                     1 \\
+\bottomrule
+\end{tabular}
+\caption{
+  Nearest AD gene(s) to a given target.  Shortest path length
+  of 0 and 1 mean that the target is identical to or directly interacts with
+  the AD gene listed, respectively.  Path lengths $\ge 2$ are not considered
+  here.
+}
+\label{tab:nearest-ADgenes}
 \end{table}
 
 \begin{table}[p]
@@ -682,6 +841,87 @@ rediscovery rate being $>1$ validates our network based screen.
 Rediscovery of existing phase 1--4 drugs for AD and other indications.
 }
 \label{fig:ad-drug-rediscovery-multi}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-gsets-hist_noHCl.pdf}
+\caption{
+  Shortest path length distribution from a given drug target (columns) to a given AD gene
+  set (rows) across all genes in the set.
+}
+\label{fig:shortest-path-lengths}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-knowledge.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the knowledge based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-knowledge}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-TWAS2+.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the TWAS2+ based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-TWAS2+}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-agora2+.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the agora2+ based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-agora2+}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.15]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-AD DE APOE3-APOE3.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the AD DE APOE3-APOE3 based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-AD DE APOE3-APOE3}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.15]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-AD DE APOE4-APOE4.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the AD DE APOE4-APOE4 based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-AD DE APOE4-APOE4}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE neuron.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the APOE3-4 DE neuron based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-APOE3-4 DE neuron}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.3]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE astrocyte.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the APOE3-4 DE astrocyte based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-APOE3-4 DE astrocyte}
+\end{figure}
+
+\begin{figure}[p]
+\includegraphics[scale=0.3]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE microglia.pdf}
+\caption{
+  Shortest path lengths from drug targets to genes of the APOE3-4 DE microglia based AD
+  gene set.
+}
+\label{fig:shortest-path-bar-APOE3-4 DE microglia}
 \end{figure}
 
 \end{document}

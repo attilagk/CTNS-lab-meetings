@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -468,6 +468,21 @@ Bart De~Strooper and Eric Karran.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0092867415017201?via=ihub}.
 
+\bibitem[Desai et~al.(2022)Desai, Mahesri, Lee, Varma, Loeffler, Schilcher,
+  Gerhard, Segal, Ritchey, Horton, Kim, Schneeweiss, and
+  Thambisetty]{Desai2022a}
+Rishi~J Desai, Mufaddal Mahesri, Su~Been Lee, Vijay~R Varma, Tina Loeffler,
+  Irene Schilcher, Tobias Gerhard, Jodi~B Segal, Mary~E Ritchey, Daniel~B
+  Horton, Seoyoung~C Kim, Sebastian Schneeweiss, and Madhav Thambisetty.
+\newblock {No association between initiation of phosphodiesterase-5 inhibitors
+  and risk of incident Alzheimer’s disease and related dementia: results from
+  the Drug Repurposing for Effective Alzheimer’s Medicines study}.
+\newblock \emph{Brain Communications}, 4\penalty0 (5), 10 2022.
+\newblock ISSN 2632-1297.
+\newblock \doi{10.1093/braincomms/fcac247}.
+\newblock URL \url{https://doi.org/10.1093/braincomms/fcac247}.
+\newblock fcac247.
+
 \bibitem[Fang et~al.(2021)Fang, Zhang, Zhou, Chiang, Tan, Hou, Stauffer, Li,
   Pieper, Cummings, and Cheng]{Fang2021}
 Jiansong Fang, Pengyue Zhang, Yadi Zhou, Chien-Wei Chiang, Juan Tan, Yuan Hou,
@@ -936,6 +951,15 @@ Alice Taubes, Phil Nova, Kelly~A. Zalocusky, Idit Kosti, Mesude Bicak, Misha~Y.
 \newblock ISSN 2662-8465.
 \newblock \doi{10.1038/s43587-021-00122-7}.
 \newblock URL \url{https://doi.org/10.1038/s43587-021-00122-7}.
+
+\bibitem[Varma(2020)]{Varma2020}
+Sudhir Varma.
+\newblock Blind estimation and correction of microarray batch effect.
+\newblock \emph{PloS one}, 15\penalty0 (32271844):\penalty0 e0231446--e0231446,
+  April 2020.
+\newblock ISSN 1932-6203.
+\newblock \doi{10.1371/journal.pone.0231446}.
+\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145015/}.
 
 \bibitem[Varma et~al.(2021)Varma, Wang, An, Varma, Bilgel, Doshi,
   Legido-Quigley, Delgado, Oommen, Roberts, Wong, Davatzikos, Resnick,
