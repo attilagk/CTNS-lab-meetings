@@ -107,17 +107,19 @@ drugs could be considered for repurposing.
 
 \begin{table}
 \footnotesize
-\begin{tabular}{cll}
-Name     & Description & Reference  \\
-\hline
-TWAS2+   & genes supported by $\ge 2$ AD-TWAS/PWAS & See caption  \\
-knowledge& curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
-agora2+  & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
-AD DE APOE3-APOE3 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
-AD DE APOE4-APOE4 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
-APOE3-4 DE neuron & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
-APOE3-4 DE astrocyte & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
-APOE3-4 DE microglia & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\begin{tabular}{rrll}
+\toprule
+AD gene set          &Size & Description & Reference  \\
+\hline                     
+knowledge            &  27 & curated AD genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+TWAS2+               &  32 & geneb supported by $\ge 2$ AD-TWAS/PWAS & See caption  \\
+agora2+              &  64 & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3    & 277 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4    & 274 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron    &  46 & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & 128 & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & 140 & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\bottomrule
 \end{tabular}
 \caption{
 AD gene sets used as inputs to drug repurposing screens of this study.  For
@@ -250,10 +252,13 @@ cognitive abilities of APP-Psen1 mice~\citep{Cicchetti2019}.
 
 \begin{table}
 \footnotesize
-\begin{tabular}{p{0.2\textwidth} | p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+\begin{tabular}{r|c|c|c}
+%\begin{tabular}{p{0.2\textwidth} | p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
 %\begin{tabular}{l | p{3cm} p{3cm} p{3cm}}
 \toprule
                                               Name &                           Arundine &              Chenodiol &                          Cysteamine \\
+\midrule
+\multicolumn{4}{c}{\scshape General information} \\
 \midrule
                                   Alternative form &
                                                    &                        & Cysteamine-HCl$^\ast$ \\
@@ -261,23 +266,26 @@ cognitive abilities of APP-Psen1 mice~\citep{Cicchetti2019}.
                                          ChEMBL ID &                       CHEMBL446452 &           CHEMBL240597 &                           CHEMBL602 \\
                               Approved indications &          cervical cancer, phase 3 & cholesterol gallstones &            cystinosis, eye diseases \\
 \midrule
-\multicolumn{4}{l}{\scshape Target genes} \\
+\multicolumn{4}{c}{\scshape Target genes} \\
+\midrule
                                       %Gene targets &                                    &                        &                                     \\
-                                     ChEMBL, human &                        RGS4, GPR84 &            RGS4, NTCP2 &                         RGS4, CP3A4 \\
+   In present screen &
+   RGS4 &            RGS4, SLC10A2 &                         RGS4, CYP3A4 \\
 %                        ChEMBL, human (alt. form) &                                    &                        & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
                                              Other &                                AHR &                        &                                     \\
 \midrule
-\multicolumn{4}{l}{\scshape AD-relevance, present study} \\
-                             Rank among 2413 screened drugs &                                  4 &                     28 &                                  51 \\
+\multicolumn{4}{c}{\scshape Relevance to Alzheimer's disease} \\
 \midrule
-\multicolumn{4}{l}{\scshape AD-relevance, previous studies} \\
-                                  In vivo evidence & \cite{DeMiranda2013,DeMiranda2014} &       \cite{Keene2002} &                \cite{Cicchetti2019} \\
-                                 In vitro evidence &      \cite{Lee2019,Rzemieniec2019} &                        &          \cite{Besouw2013,Paul2019} \\
+                                             Rank (present screen)  &                                  4 &                     28 &                                  51 \\
+%\midrule
+%\multicolumn{4}{l}{\scshape AD-relevance, previous studies} \\
+               \emph{In vivo} evidence & \cite{DeMiranda2013,DeMiranda2014} &       \cite{Keene2002} &                \cite{Cicchetti2019} \\
+               \emph{In vitro} evidence &      \cite{Lee2019,Rzemieniec2019} &                        &          \cite{Besouw2013,Paul2019} \\
 \bottomrule
 \end{tabular}
 \caption{
 Selected drugs ranked high in our present computational screen of 2413 drugs
-from ChEMBL.  Notes: Targets were taken from ChEMBL filtering for human
+from ChEMBL.  Notes: Targets in the present screen were taken from ChEMBL filtering for human
 experiments. ``Other'' targets refer to those we found manually in the
 biomedical literature. $^\ast$Cysteamine-HCl (CHEMBL1256137) was ranked 323
 and targets GEMI, LMNA, PLK1, BLM, NF2L2, and TYDP1 (ChEMBL, human).
@@ -294,18 +302,23 @@ drug to each AD gene set in the same interactome and drug-target network that
 we used for our network proximity based drug screen.  The shortest path
 length, defined as the least number of gene-gene interactions connecting a
 given target to a given AD gene, ranged typically from 2 to 4 for most
-combinations of target and AD gene set (Fig.~S\ref{fig:shortest-path-lengths},
-Fig.~S\ref{fig:shortest-path-bar-knowledge}-S\ref{fig:shortest-path-bar-APOE3-4
-DE microglia}).  However, in the case of RGS4, targeted by all three selected
-drugs (Table~\ref{tab:selected-drugs}), the shortest path length to some AD
-genes was 1 meaning that RGS4 directly interacts with these genes: with ERBB3
-in the agora2+ set, with GNAI2 in the AD DE APOE3-APOE3 set, with CALM1 and
-GNAI2 in the AD DE APOE4-APOE4 set, and with PLCB1 in the APOE3-4 DE neuron
-set (Table~S\ref{tab:nearest-ADgenes},
-Fig.~S\ref{fig:shortest-path-bar-knowledge}-S\ref{fig:shortest-path-bar-APOE3-4
-DE microglia}).  Moreover, target RGS4 is part of two of the largest AD gene
-sets of our study, AD DE APOE3-APOE3 and AD DE APOE4-APOE4, which corresponded
-to shortest path length of zero (Table~S\ref{tab:nearest-ADgenes}).
+combinations of target and AD gene set
+(Fig.~S\ref{fig:shortest-path-lengths}).
+
+We primarily focused on paths of length 2 as these are both short enough and were found
+frequent enough to explain a drug's hypothetical protective effect for AD.
+Such paths have the form: $\mathrm{target} \rightarrow \mathrm{mediator}
+\rightarrow \mathrm{AD gene}$
+
+However, in the case of RGS4,
+targeted by all three selected drugs (Table~\ref{tab:selected-drugs}), the
+shortest path length to some AD genes was 1 meaning that RGS4 directly
+interacts with these genes: with ERBB3 in the agora2+ set, with GNAI2 in the
+AD DE APOE3-APOE3 set, with CALM1 and GNAI2 in the AD DE APOE4-APOE4 set, and
+with PLCB1 in the APOE3-4 DE neuron set (Table~S\ref{tab:nearest-ADgenes}).
+Moreover, target RGS4 is part of two of the largest AD gene sets of our study,
+AD DE APOE3-APOE3 and AD DE APOE4-APOE4, which corresponded to shortest path
+length of zero (Table~S\ref{tab:nearest-ADgenes}).
 
 As noted above, for most AD gene sets---especially for the smaller sized,
 higher confidence sets---the shortest paths between targets and AD genes were
@@ -725,6 +738,44 @@ APOE3-4 DE neuron &         &         PLCB1 &          &                     1 \
 \end{table}
 
 \begin{table}[p]
+\begin{tabular}{ll|rrrrrrrr}
+\toprule
+       &       &   \multicolumn{8}{c}{AD gene set$^\ast$} \\
+       &       &   A &   B &   C &    D &    E &   F &   G &   H \\
+target & mediator &     &     &     &      &      &     &     &     \\
+\midrule
+RGS4 & EGFR &   4 &   2 &   0 &    0 &    0 &   0 &   8 &   6 \\
+       & CALM1 &   3 &   0 &   0 &    0 &    0 &   0 &   0 &   3 \\
+       & GNAO1 &   1 &   0 &   0 &    0 &    0 &   0 &   1 &   1 \\
+       & ERBB3 &   0 &   1 &   0 &    0 &    0 &   0 &   1 &   0 \\
+       & GNAI1 &   0 &   0 &   0 &    0 &    0 &   0 &   1 &   1 \\
+       & GNAQ &   0 &   0 &   0 &    0 &    0 &   0 &   2 &   0 \\
+       & COPB1 &   1 &   0 &   0 &    0 &    0 &   0 &   0 &   0 \\
+       & GNAI2 &   0 &   0 &   0 &    0 &    0 &   0 &   1 &   0 \\
+\midrule
+SLC10A2 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
+\midrule
+CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
+       & PRKACA &   4 &   1 &   6 &   16 &   17 &   3 &   7 &   5 \\
+       & PRKCA &   4 &   0 &   4 &   15 &   16 &   3 &   7 &   5 \\
+       & STUB1 &   3 &   2 &   2 &    5 &    5 &   0 &   2 &   1 \\
+       & AMFR &   0 &   0 &   1 &    2 &    2 &   0 &   0 &   0 \\
+       & GK &   1 &   0 &   0 &    0 &    0 &   0 &   0 &   1 \\
+       & CYB5A &   0 &   0 &   0 &    0 &    1 &   0 &   0 &   0 \\
+\bottomrule
+\end{tabular}
+\caption{
+  Number of AD genes $g$ interacting with a given mediator gene and forming
+  network paths of the form: $\mathrm{drug} \rightarrow \mathrm{target}
+  \rightarrow \mathrm{mediator} \rightarrow g$.  $^\ast$Code for AD gene sets:
+  A: knowledge, B: TWAS2+, C: agora2+, D: AD DE APOE3-APOE3, E: AD DE
+  APOE4-APOE4, F: APOE3-4 DE neuron, G: APOE3-4 DE astrocyte, H: APOE3-4 DE
+  microglia.
+}
+\label{tab:mediators}
+\end{table}
+
+\begin{table}[p]
 \begin{tabular}{llr}
 \toprule
                               &                   &  ideal effect: increase (1) or decrease (-1)\\
@@ -852,76 +903,5 @@ Rediscovery of existing phase 1--4 drugs for AD and other indications.
 \label{fig:shortest-path-lengths}
 \end{figure}
 
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-knowledge.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the knowledge based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-knowledge}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-TWAS2+.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the TWAS2+ based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-TWAS2+}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-agora2+.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the agora2+ based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-agora2+}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.15]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-AD DE APOE3-APOE3.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the AD DE APOE3-APOE3 based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-AD DE APOE3-APOE3}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.15]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-AD DE APOE4-APOE4.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the AD DE APOE4-APOE4 based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-AD DE APOE4-APOE4}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE neuron.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the APOE3-4 DE neuron based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-APOE3-4 DE neuron}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.3]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE astrocyte.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the APOE3-4 DE astrocyte based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-APOE3-4 DE astrocyte}
-\end{figure}
-
-\begin{figure}[p]
-\includegraphics[scale=0.3]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-barh_noHCl-APOE3-4 DE microglia.pdf}
-\caption{
-  Shortest path lengths from drug targets to genes of the APOE3-4 DE microglia based AD
-  gene set.
-}
-\label{fig:shortest-path-bar-APOE3-4 DE microglia}
-\end{figure}
 
 \end{document}
