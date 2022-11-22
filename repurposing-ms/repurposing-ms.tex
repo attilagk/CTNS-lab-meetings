@@ -30,8 +30,6 @@
 
 \section{Introduction}
 
-Hello World!
-
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
 societies for which effective treatments are
@@ -305,29 +303,54 @@ given target to a given AD gene, ranged typically from 2 to 4 for most
 combinations of target and AD gene set
 (Fig.~S\ref{fig:shortest-path-lengths}).
 
-We primarily focused on paths of length 2 as these are both short enough and were found
-frequent enough to explain a drug's hypothetical protective effect for AD.
-Such paths have the form: $\mathrm{target} \rightarrow \mathrm{mediator}
-\rightarrow \mathrm{AD gene}$
+We primarily focused on paths of length 2 as these are both short enough and
+were found frequent enough (Fig.~S\ref{fig:shortest-path-lengths}) to explain
+a drug's hypothetical protective effect for AD.  Such paths have the form:
+$\mathrm{target} \rightarrow \mathrm{mediator} \rightarrow \mathrm{AD gene}$,
+where \emph{mediator} is a gene transmitting the drug's effect between a target
+and an AD gene (Fig.~\ref{fig:drug-AD-genes-network} thick, colored edges).
+The mediator interacting with the most AD genes is UBC encoding Ubiquitin C
+(Fig.~\ref{fig:drug-AD-genes-network} green edges, Table
+S\ref{tab:mediators}). Mediator UBC interacts both with the Cysteamine target
+CYP3A4 and with the Chenodiol target SLC10A2.  Target CYP3A4 has serveral
+other mediators that interact with multiple AD genes: ubiquitin ligases STUB1
+and AMFR as well as PRKCA/PRKACA encoding for subunits of protein kinase-C
+(Table S\ref{tab:mediators}, Fig.~\ref{fig:drug-AD-genes-network}).
 
-However, in the case of RGS4,
-targeted by all three selected drugs (Table~\ref{tab:selected-drugs}), the
-shortest path length to some AD genes was 1 meaning that RGS4 directly
-interacts with these genes: with ERBB3 in the agora2+ set, with GNAI2 in the
-AD DE APOE3-APOE3 set, with CALM1 and GNAI2 in the AD DE APOE4-APOE4 set, and
-with PLCB1 in the APOE3-4 DE neuron set (Table~S\ref{tab:nearest-ADgenes}).
-Moreover, target RGS4 is part of two of the largest AD gene sets of our study,
-AD DE APOE3-APOE3 and AD DE APOE4-APOE4, which corresponded to shortest path
-length of zero (Table~S\ref{tab:nearest-ADgenes}).
+Mediators for RGS4 include receptor tyrosine protein kinases EGFR and ERBB3,
+as well as CALM1 (calmodulin 1), COPB1 (coatomer protein complex subunit
+$\beta$), and genes encoding for various G protein subunits (Table
+S\ref{tab:mediators}, Fig.~\ref{fig:drug-AD-genes-network}).  Among these
+mediators EGFR interacts with the most AD genes, including well-established
+knowledge based AD genes of crucial relevance to AD: APP (amyloid precursor
+protein, amyloid-$\beta$), MAPT (tau), SNCA---$\alpha$-synuclein
+(Fig.~\ref{fig:drug-AD-genes-network}); also including AD genes strongly
+supported by functional genomics studies (TWAS2+ AD gene set): PICALM and
+PTK2B.
 
-As noted above, for most AD gene sets---especially for the smaller sized,
-higher confidence sets---the shortest paths between targets and AD genes were
-found to be of length 2 or more implying mediator genes along the paths from
-targets to AD genes (Fig.~S\ref{fig:shortest-path-lengths}).  Inspecting
-$>100$ paths of length 2 connecting targets revealed that the most frequent mediator genes
-are UBC, EGFR, CALM1, STUB1, PRKCA, and PRKACA (TODO: make histogram).
-This is illustrated by Fig.~\ref{fig:drug-AD-genes-network}, in which
-target to AD gene paths of length 2 are indicated by thick edges.
+A few paths were of the form $\mathrm{target} \rightarrow \mathrm{AD gene}$
+(path length 1).  This was the case only for target RGS4 and 4 genes in 4
+relatively large AD gene sets (Table~S\ref{tab:nearest-ADgenes}).  Three of
+these four genes---ERBB3, GNAI2, CALM1---were noted above as mediators in the
+context of other, smaller, AD gene sets.  Moreover, RGS4 was found to be an AD
+gene itself (path length$=0$) that belongs to the two largest AD gene sets
+(Table~S\ref{tab:nearest-ADgenes}).
+
+These observations altogether suggest that the selected drugs might modulate
+multiple key AD genes through several molecular mechanisms: (1)
+ubiquitination, (2) protein kinase-C dependent phosphorylation, (3) receptor
+tyrosine kinase-dependent and (4) G-protein dependent signal transduction, (5)
+Ca$^{2+}$-calmodulin, and (5) the coatomer complex.  We shall return to the
+relevance of these mechanisms to AD in the present Discussion.
+
+%As noted above, for most AD gene sets---especially for the smaller sized,
+%higher confidence sets---the shortest paths between targets and AD genes were
+%found to be of length 2 or more implying mediator genes along the paths from
+%targets to AD genes (Fig.~S\ref{fig:shortest-path-lengths}).  Inspecting
+%$>100$ paths of length 2 connecting targets revealed that the most frequent mediator genes
+%are UBC, EGFR, CALM1, STUB1, PRKCA, and PRKACA (TODO: make histogram).
+%This is illustrated by Fig.~\ref{fig:drug-AD-genes-network}, in which
+%target to AD gene paths of length 2 are indicated by thick edges.
 
 \begin{figure}
 \includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
@@ -698,12 +721,14 @@ assay.
 
 \begin{table}[p]
 \caption{
+  See file Table-S1.xlsx
   Genes of the AD gene sets used as inputs to the present computational drug screen.
 }
 \label{tab:genes-in-genesets}
 \end{table}
 
 \begin{table}[p]
+  See file Table-S2.csv
 \caption{
   The 2413 drugs ranked according to their network proximity to each of the eight
   AD gene sets used as input.  The drugs' final, aggregate rank is also shown
@@ -713,28 +738,6 @@ assay.
   targets is also indicated.
 }
 \label{tab:ranked-drugs}
-\end{table}
-
-\begin{table}[p]
-\begin{tabular}{lrlrr}
-\toprule
-{} &  CYP3A4 &          RGS4 &  SLC10A2 &  shortest path length \\
-\midrule
-AD DE APOE3-APOE3 &         &          RGS4 &          &                     0 \\
-AD DE APOE4-APOE4 &         &          RGS4 &          &                     0 \\
-agora2+           &         &         ERBB3 &          &                     1 \\
-AD DE APOE3-APOE3 &         &         GNAI2 &          &                     1 \\
-AD DE APOE4-APOE4 &         &  CALM1; GNAI2 &          &                     1 \\
-APOE3-4 DE neuron &         &         PLCB1 &          &                     1 \\
-\bottomrule
-\end{tabular}
-\caption{
-  Nearest AD gene(s) to a given target.  Shortest path length
-  of 0 and 1 mean that the target is identical to or directly interacts with
-  the AD gene listed, respectively.  Path lengths $\ge 2$ are not considered
-  here.
-}
-\label{tab:nearest-ADgenes}
 \end{table}
 
 \begin{table}[p]
@@ -773,6 +776,33 @@ CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
   microglia.
 }
 \label{tab:mediators}
+\end{table}
+
+\begin{table}[p]
+\begin{tabular}{cc||c|c|c}
+\toprule
+shortest path length   & AD gene set         &  \multicolumn{3}{c}{target}        \\
+\midrule
+                       &   {}                &  CYP3A4 &          RGS4 &  SLC10A2 \\
+\midrule
+                    0  &   AD DE APOE3-APOE3 &    -    &          RGS4 &    -     \\
+                    0  &   AD DE APOE4-APOE4 &    -    &          RGS4 &    -     \\
+\midrule
+                    1  &   agora2+           &    -    &         ERBB3 &    -     \\
+                    1  &   AD DE APOE3-APOE3 &    -    &         GNAI2 &    -     \\
+                    1  &   AD DE APOE4-APOE4 &    -    &  CALM1; GNAI2 &    -     \\
+                    1  &   APOE3-4 DE neuron &    -    &         PLCB1 &    -     \\
+\bottomrule
+\end{tabular}
+\caption{
+  AD genes $g$ that are either targets ($\mathrm{target} = g$; shortest path length $=0$) or directly
+  interact with a target ($\mathrm{target} \rightarrow g$; shortest path length $=1$).
+  Nearest AD gene(s) to a given target.  For paths of the form $\mathrm{target}
+  \rightarrow \mathrm{mediator} \rightarrow
+  \mathrm{mediator}_n \rightarrow g$ (shortest path length $= 2$) see Table
+  S\ref{tab:mediators}.
+}
+\label{tab:nearest-ADgenes}
 \end{table}
 
 \begin{table}[p]
