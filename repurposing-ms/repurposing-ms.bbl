@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -684,6 +684,18 @@ Ashok~N. Hegde, Spencer~G. Smith, Lindsey~M. Duke, Allison Pourquoi, and
 \newblock URL
   \url{https://www.frontiersin.org/articles/10.3389/fnagi.2019.00324}.
 
+\bibitem[Iturria-Medina et~al.(2022)Iturria-Medina, Adewale, Khan, Ducharme,
+  Rosa-Neto, O’Donnell, Petyuk, Gauthier, Jager, Breitner, and
+  Bennett]{IturriaMedina2022}
+Yasser Iturria-Medina, Quadri Adewale, Ahmed~F. Khan, Simon Ducharme, Pedro
+  Rosa-Neto, Kieran O’Donnell, Vladislav~A. Petyuk, Serge Gauthier, Philip
+  L.~De Jager, John Breitner, and David~A. Bennett.
+\newblock Unified epigenomic, transcriptomic, proteomic, and metabolomic
+  taxonomy of alzheimer\&\#x2019;s disease progression and heterogeneity.
+\newblock \emph{Science Advances}, 8\penalty0 (46):\penalty0 eabo6764, 2022.
+\newblock \doi{10.1126/sciadv.abo6764}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/sciadv.abo6764}.
+
 \bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
   Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
   Stringer, Aarsland, Almdahl, Andersen, Bergh, Bettella, Bjornsson, Brækhus,
@@ -907,6 +919,20 @@ Brian~W. Kunkle, Benjamin Grenier-Boley, Rebecca Sims, Joshua~C. Bis, Vincent
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/s41588-019-0358-2}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463297/}.
+
+\bibitem[Kuo et~al.(2022)Kuo, Schrack, Levine, Shardell, Simonsick, Chia,
+  Moore, Tanaka, An, Karikkineth, AlGhatrif, Elango, Zukley, Egan, de~Cabo,
+  Resnick, and Ferrucci]{Kuo2022}
+Pei-Lun Kuo, Jennifer~A. Schrack, Morgan~E. Levine, Michelle~D. Shardell,
+  Eleanor~M. Simonsick, Chee~W. Chia, Ann~Zenobia Moore, Toshiko Tanaka, Yang
+  An, Ajoy Karikkineth, Majd AlGhatrif, Palchamy Elango, Linda~M. Zukley,
+  Josephine~M. Egan, Rafael de~Cabo, Susan~M. Resnick, and Luigi Ferrucci.
+\newblock Longitudinal phenotypic aging metrics in the baltimore longitudinal
+  study of aging.
+\newblock \emph{Nature Aging}, 2\penalty0 (7):\penalty0 635--643, 2022.
+\newblock ISSN 2662-8465.
+\newblock \doi{10.1038/s43587-022-00243-7}.
+\newblock URL \url{https://doi.org/10.1038/s43587-022-00243-7}.
 
 \bibitem[Lamb et~al.(2006)Lamb, Crawford, Peck, Modell, Blat, Wrobel, Lerner,
   Brunet, Subramanian, Ross, Reich, Hieronymus, Wei, Armstrong, Haggarty,
@@ -1146,7 +1172,22 @@ Sudhir Varma.
 \newblock \doi{10.1371/journal.pone.0231446}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145015/}.
 
-\bibitem[Varma et~al.(2021)Varma, Wang, An, Varma, Bilgel, Doshi,
+\bibitem[Varma et~al.(2021{\natexlab{a}})Varma, Büşra~Lüleci, Oommen, Varma,
+  Blackshear, Griswold, An, Roberts, O’Brien, Pletnikova, Troncoso, Bennett,
+  Çakır, Legido-Quigley, and Thambisetty]{Varma2021a}
+Vijay~R. Varma, H.~Büşra~Lüleci, Anup~M. Oommen, Sudhir Varma, Chad~T.
+  Blackshear, Michael~E. Griswold, Yang An, Jackson~A. Roberts, Richard
+  O’Brien, Olga Pletnikova, Juan~C. Troncoso, David~A. Bennett, Tunahan
+  Çakır, Cristina Legido-Quigley, and Madhav Thambisetty.
+\newblock Abnormal brain cholesterol homeostasis in alzheimer’s disease--a
+  targeted metabolomic and transcriptomic study.
+\newblock \emph{npj Aging and Mechanisms of Disease}, 7\penalty0 (1):\penalty0
+  11, 2021{\natexlab{a}}.
+\newblock ISSN 2056-3973.
+\newblock \doi{10.1038/s41514-021-00064-9}.
+\newblock URL \url{https://doi.org/10.1038/s41514-021-00064-9}.
+
+\bibitem[Varma et~al.(2021{\natexlab{b}})Varma, Wang, An, Varma, Bilgel, Doshi,
   Legido-Quigley, Delgado, Oommen, Roberts, Wong, Davatzikos, Resnick,
   Troncoso, Pletnikova, O’Brien, Hak, Baak, Pfeiffer, Baloni,
   Mohmoudiandehkordi, Nho, Kaddurah-Daouk, Bennett, Gadalla, and
@@ -1160,7 +1201,8 @@ Vijay~R. Varma, Youjin Wang, Yang An, Sudhir Varma, Murat Bilgel, Jimit Doshi,
   Thambisetty.
 \newblock Bile acid synthesis, modulation, and dementia: A metabolomic,
   transcriptomic, and pharmacoepidemiologic study.
-\newblock \emph{PLOS Medicine}, 18\penalty0 (5):\penalty0 e1003615, May 2021.
+\newblock \emph{PLOS Medicine}, 18\penalty0 (5):\penalty0 e1003615, May
+  2021{\natexlab{b}}.
 \newblock \doi{10.1371/journal.pmed.1003615}.
 \newblock URL \url{https://doi.org/10.1371/journal.pmed.1003615}.
 
@@ -1215,13 +1257,5 @@ Aliza~P. Wingo, Yue Liu, Ekaterina~S. Gerasimov, Jake Gockley, Benjamin~A.
 \newblock ISSN 1061-4036.
 \newblock \doi{10.1038/s41588-020-00773-z}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8130821/}.
-
-\bibitem[Ye et~al.(2014)Ye, Liu, and Wei]{Ye2014}
-Hao Ye, Qi~Liu, and Jia Wei.
-\newblock Construction of drug network based on side effects and its
-  application for drug repositioning.
-\newblock \emph{PLOS ONE}, 9\penalty0 (2):\penalty0 1--10, 02 2014.
-\newblock \doi{10.1371/journal.pone.0087864}.
-\newblock URL \url{https://doi.org/10.1371/journal.pone.0087864}.
 
 \end{thebibliography}

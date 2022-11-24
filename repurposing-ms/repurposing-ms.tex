@@ -136,11 +136,6 @@ This suggests that even though the input AD gene sets share only a few genes,
 the corresponding network modules are close enough to one another in network
 topological space to exhibit similar network proximity to any given drug.
 
-%TODO: Discussion how does it help validate our approach
-%the input AD gene sets, although hardly overlapping, are still close enough to
-%each other in the network's topology to result in similar drug rankings
-%(Fig.~\ref{fig:screen}C right), which helps validate our approach.
-
 \begin{figure}
 \hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
 
@@ -187,7 +182,7 @@ pattern (Fig.~S\ref{fig:ad-drug-rediscovery-multi}).  Interestingly, our
 approach tended to rediscover drugs developed for various forms of neoplasm
 and cancer while failed to rediscover drugs for neuropsychiatric indications
 like Parkinson's disease, schizophrenia and major depressive disorder
-(Fig.~S\ref{fig:ad-drug-rediscovery-multi}). % TODO: discuss result in Discussion
+(Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
 
 We also checked the agreement between our network proximity based results
 above and the results we obtained by using CMap with the same input AD gene
@@ -297,6 +292,17 @@ given target to a given AD gene, ranged typically from 2 to 4 for most
 combinations of target and AD gene set
 (Fig.~S\ref{fig:shortest-path-lengths}).
 
+\begin{figure}
+\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
+\caption{Hypothetical molecular mechanisms linking drugs (red nodes), targets
+  (salmon nodes) and AD genes (light blue nodes).  Targets interact with AD
+  genes via mediators (salmon) like UBC (ubiquitin C), EGFR, or CALM1
+  (calmodulin 1).  Such target$\rightarrow$mediator$\rightarrow$AD gene paths
+  are highlighted with colored, thick edges.
+}
+\label{fig:drug-AD-genes-network}
+\end{figure}
+
 We primarily focused on paths of length 2 as these are both short enough and
 were found frequent enough (Fig.~S\ref{fig:shortest-path-lengths}) to explain
 a drug's hypothetical protective effect for AD.  Such paths have the form:
@@ -337,24 +343,6 @@ tyrosine kinase-dependent and (4) G-protein dependent signal transduction, (5)
 Ca$^{2+}$-calmodulin, and (5) the coatomer complex.  We shall return to the
 relevance of these mechanisms to AD in the present Discussion.
 
-%As noted above, for most AD gene sets---especially for the smaller sized,
-%higher confidence sets---the shortest paths between targets and AD genes were
-%found to be of length 2 or more implying mediator genes along the paths from
-%targets to AD genes (Fig.~S\ref{fig:shortest-path-lengths}).  Inspecting
-%$>100$ paths of length 2 connecting targets revealed that the most frequent mediator genes
-%are UBC, EGFR, CALM1, STUB1, PRKCA, and PRKACA (TODO: make histogram).
-%This is illustrated by Fig.~\ref{fig:drug-AD-genes-network}, in which
-%target to AD gene paths of length 2 are indicated by thick edges.
-
-\begin{figure}
-\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
-  \caption{Shortest paths between selected drug(s) and AD genes in the
-    gene-gene interaction network.  TODO: make figure (the present figure is
-    just a placeholder).
-}
-\label{fig:drug-AD-genes-network}
-\end{figure}
-
 \subsection{Experimental validation}
 
 We performed an extensive set of AD-relevant cell based phenotypic assays
@@ -366,6 +354,35 @@ whether the effect of a hypothetical, ideal neuroprotective drug would
 increase or decrease the assay's outcome (Table~S\ref{tab:protect-sign}).
 Using that information, we then evaluated each drug's neuroprotective utility
 for each assay (Fig.~\ref{fig:cell-based-assays}, also see below).
+
+\begin{figure}
+\includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays-simplified.pdf}
+\caption{Results of cell-based assays: testing AD-relevant protective effects of three
+  selected top drugs from the present computational screen: Chenodiol,
+  Cysteamine-HCl (shortened to ``Cysteamine'' in this figure), and Arundine.
+  Drug effect in a given assay is either statistically not significant (n.s,
+  $p \ge 0.05$, yellow), or significantly protective (green) or adverse (red).
+  %TODO: ask Tina about details: Throughout panels A-H tested drug
+  %concentrations were $c_1 = ?$, $c_2 = ?$, $c_3 = ?$, $c_4 = ?$, $c_5 = ?$,
+  %$c_6 = ?$.  Statistically significant effects are marked with $\ast$,
+  %$\ast\ast$, $\ast\ast\ast$, and with increasingly deeper blue or red,
+  %denoting $p < ?$, $p < ?$,  $p < ?$, respectively.
+  A) A$\beta$ clearance in BV2 cells; improved clearance is indicated by
+  increased A$\beta$ in lysate, decreased A$\beta$ in supernatant and
+  decreased supernatant:lysate ratio.
+  B) Secretion of three A$\beta$ species in H4 cells.
+  C) pTau231 and total Tau level.
+  D) Lipopolysaccharide (LPS) induced neuroinflammation in BV2 cells; MTT
+  assay of cell viability and the following citokine levels: interleukins
+  (IL-10, IL1b, IL-6), the chemokine KC/GRO, and tumor necrosis factor
+  (TNF)-$\alpha$.
+  E) Assays of neurogenesis and neurite outgrowth in primary cultured neurons.
+  F) Assays of cell death, viability and apoptosis in response to trophic
+  factor withdrawal in primary neurones.
+}
+\label{fig:cell-based-assays}
+\end{figure}
+
 
 Amyloid-$\beta$
 (A$\beta$) clearance in BV2 cells was improved by both Arundine and Chenodiol
@@ -399,33 +416,6 @@ neurons (Fig.~\ref{fig:cell-based-assays}e).
 Taken these experimental results together, Arundine and Chenodiol, but not
 Cysteamine-HCl, exhibit several AD-relevant neuroprotective properties.
 
-\begin{figure}
-\includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays-simplified.pdf}
-\caption{Results of cell-based assays: testing AD-relevant protective effects of three
-  selected top drugs from the present computational screen: Chenodiol,
-  Cysteamine-HCl (shortened to ``Cysteamine'' in this figure), and Arundine.
-  TODO: ask Tina about details: Throughout panels A-H tested drug
-  concentrations were $c_1 = ?$, $c_2 = ?$, $c_3 = ?$, $c_4 = ?$, $c_5 = ?$,
-  $c_6 = ?$.  Statistically significant effects are marked with $\ast$,
-  $\ast\ast$, $\ast\ast\ast$, and with increasingly deeper blue or red,
-  denoting $p < ?$, $p < ?$,  $p < ?$, respectively.
-  A) A$\beta$ clearance in BV2 cells; improved clearance is indicated by
-  increased A$\beta$ in lysate, decreased A$\beta$ in supernatant and
-  decreased supernatant:lysate ratio.
-  B) Secretion of three A$\beta$ species in H4 cells.
-  C) pTau231 and total Tau level.
-  D) Lipopolysaccharide (LPS) induced neuroinflammation in BV2 cells; MTT
-  assay of cell viability and the following citokine levels: interleukins
-  (IL-10, IL1b, IL-6), the chemokine KC/GRO, and tumor necrosis factor
-  (TNF)-$\alpha$.
-  E) Assays of neurogenesis and neurite outgrowth in primary cultured neurons.
-  F) Assays of cell death, viability and apoptosis in response to trophic
-  factor withdrawal in primary neurones.
-}
-\label{fig:cell-based-assays}
-\end{figure}
-
-
 \section{Discussion}
 
 We have presented here novel repurposing opportunities for AD using evidence
@@ -440,7 +430,7 @@ associated with schizophrenia~\citep{Chowdari2002}, one of the best
 genetically characterized neuropsychological disorder, which shares
 substantial heritability with AD~\citep{Consortium2018} and in which, like in
 AD, autoimmune pathways have been found to play significant
-nrole~\citep{Sekar2016a}.  Moreover, RGS4 is among the hundreds of
+nrole~\citep{Sekar2016a}.  Moreover, RGS4 is among the few hundred
 differentially expressed genes in human brains affected by AD
 \cite{Taubes2021}.
 
@@ -519,25 +509,41 @@ AD gene sets were exception of this tendency pointing at the value of further
 characterization of non-neuronal cells in
 AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
 
-TODO: Top drugs and selected top drugs.  Drugs nominated
-by~\cite{Fang2021,Taubes2021}.
+%Our computational validation, based on the rediscovery of drugs previously
+%developed or repurposed for AD, revealed the enrichment of our top ranked
+%drugs for also some common non-AD indications.  Genetic correlations between
+%disease phenotypes~\citep{Consortium2018}, market-driven selection biases, and
+%other factors may underlie not only this observation but also the known
+%comorbidities of AD~\citep{Santiago2021}.  Such overlap between different
+%drugs' indications is also consistent with the known relationship between drug
+%repurposing and side effects~\citep{Ye2014}.  Further research is needed to
+%dissect relationships between genetic correlations, comorbidities, side
+%effects, protein and gene network topology, etc to be able to harness these and
+%integrate into drug repurposing techniques.  That, in combination with
+%expanding multi-celltype, multi-omic characterization of AD and its molecular
+%subtypes~\citep{Neff2021}, will herald a new generation of drugs for
+%Alzheimer's disease.
 
-Our computational validation, based on the rediscovery of drugs previously
-developed or repurposed for AD, revealed the enrichment of our top ranked
-drugs for also some common non-AD indications.  Genetic correlations between
-disease phenotypes~\citep{Consortium2018}, market-driven selection biases, and
-other factors may underlie not only this observation but also the known
-comorbidities of AD~\citep{Santiago2021}.  Such overlap between different
-drugs' indications is also consistent with the known relationship between drug
-repurposing and side effects~\citep{Ye2014}.  Further research is needed to
-dissect relationships between genetic correlations, comorbidities, side
-effects, protein and gene network topology, etc to be able to harness these and
-integrate into drug repurposing techniques.  That, in combination with
-expanding multi-celltype, multi-omic characterization of AD and its molecular
-subtypes~\citep{Neff2021}, will herald a new generation of drugs for
-Alzheimer's disease.
+Even though this work utilizes extensive molecular knowledge on AD
+pathomechanism, drug-target interactions, and gene-gene interactions, some
+methodological limitations call for future studies.  Ever larger GWAS and
+functional genomic studies will continue discovering AD genes with increasing
+accuracy.  But the conceptual challenge for network pharmacology and
+computational drug repurposing is to model AD more realistically.  This
+involves observing and accurately modeling decade-long disease
+progression~\cite{Kuo2022,IturriaMedina2022}, AD
+subtypes~\citep{Neff2021}, metabolic pathways~\cite{Varma2021a}, cell type
+specific AD pathways~\citep{Mathys2019,Neff2021}, interactions between cells
+of various types~\citep{DeStrooper2016}, and mechanisms shared with other
+diseases~\citep{Consortium2018,Santiago2021}.
 
-
+TODOs
+\begin{itemize}
+  \item Discussion: what have I missed?
+  \item Methods: ask Sudhir about details of his CoMap analysis
+  \item Ask Vijay or Tina to decipher the drug concentrations for cell based
+    assays
+\end{itemize}
 
 \section{Methods}
 
@@ -555,18 +561,13 @@ this study.  The genes contained in each set are listed in Table~S1.
 
 \subsection{Previous and novel TWAS on AD}
 
-We obtained AD gene sets from multiple TWAS.  Besides collecting
-AD genes from previous transcriptome- and proteome-wide association studies
-(TWAS, PWAS) we
+We obtained AD gene sets from multiple TWAS.  Besides collecting AD genes from
+previous transcriptome- and proteome-wide association studies (TWAS, PWAS) we
 conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
 the two largest AD-GWAS to date~\citep{Schwartzentruber2021,Wightman2021}.
 S-MultiXcan borrows statistical strength from multiple tissue types; we used a
 predictive model of gene expression built on all tissues of the GTEx data set
 or on only brain tissues.
-TODO: describe here the results of Haky et al:
-number of significant genes (check with Haky et al on FDR)
-%find interesting
-%novel genes based on their membership in AD-relevant pathways.
 
 We conservatively took the top 30 genes and investigated their agreement with
 top gene sets from seven previous TWAS and one previous PWAS (see Table~S2
@@ -766,8 +767,8 @@ assay.
 \makeatother
 
 \begin{table}[p]
-\caption{
   See file Table-S1.xlsx
+\caption{
   Genes of the AD gene sets used as inputs to the present computational drug screen.
 }
 \label{tab:genes-in-genesets}
@@ -827,9 +828,11 @@ CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
 \begin{table}[p]
 \begin{tabular}{cc||c|c|c}
 \toprule
-shortest path length   & AD gene set         &  \multicolumn{3}{c}{target}        \\
+                       &                     &  \multicolumn{3}{c}{target}        \\
 \midrule
                        &   {}                &  CYP3A4 &          RGS4 &  SLC10A2 \\
+\midrule
+shortest path length   & AD gene set         &  \multicolumn{3}{c}{AD genes}        \\
 \midrule
                     0  &   AD DE APOE3-APOE3 &    -    &          RGS4 &    -     \\
                     0  &   AD DE APOE4-APOE4 &    -    &          RGS4 &    -     \\
@@ -981,5 +984,3 @@ Rediscovery of existing phase 1--4 drugs for AD and other indications.
 
 
 \end{document}
-
-
