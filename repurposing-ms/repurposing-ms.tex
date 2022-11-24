@@ -27,7 +27,6 @@
 \begin{document}
 
 \maketitle
-
 \section{Introduction}
 
 Late onset Alzheimer's disease (AD) is a neurodegenerative disorder and the most
@@ -46,14 +45,14 @@ multitude of cellular pathways and cell types, and which becomes gradually
 confounded by a large number of compensatory and degenerative pathologies over
 the decades-long disease progression~\citep{DeStrooper2016}.  In this work we
 attempted to address this challenge in two ways.  Firstly, we derive plausible
-mechanistic insights into AD from previous genome- and transcriptome- and
+mechanistic insights into AD from previous genome-, transcriptome- and
 proteome-wide association studies (GWAS, TWAS,
 PWAS)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021}
 comparing AD and control samples, including analyses of differentially
 expressed genes expression (DEGs) in APOE3/3 versus APOE4/4 individuals as
 well as from comparison of DEGs in iPSC-derived neurons, astrocytes and
 microglia from APOE3/3 versus APOE4/4
-individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
+individuals~\citep{Taubes2021,Lin2018}~(Fig.~\ref{fig:workflow}A).
 
 \begin{figure}
 \hspace{0.05\textwidth}A\hspace{0.7\textwidth}B
@@ -72,12 +71,12 @@ individuals~\citep{Taubes2021,Lin2018}~(\ref{fig:workflow}A).
 \end{figure}
 
 Secondly, we exploit rich, mechanistic information represented by two
-interconnected networks: (1) the network formed by all drugs and their target
-genes (drug-target network) and (2) the human gene-gene interaction network
-(known as the interactome), whose Alzheimer's disease
-module~\citep{Barabasi2011} is defined by AD genes, a set of genes
-mechanistically involved in AD, Fig~\ref{fig:workflow}B.  Given these
-networks, we estimate the efficacy of each drug for AD by evaluating network
+interconnected networks (Fig~\ref{fig:workflow}B): (1) the network formed by
+all drugs and their target genes (drug-target network) and (2) the human
+gene-gene interaction network (known as the interactome), whose Alzheimer's
+disease module~\citep{Barabasi2011} is defined by AD genes, a set of genes
+mechanistically involved in AD.  Given these networks, we estimate the
+efficacy of each drug for AD by evaluating network
 proximity~\citep{Guney2016}, which is based on the drug's network topological
 distance from the AD module and thus estimates the drug's effect on AD genes.
 Network proximity was shown~\citep{Cheng2018} to be a powerful, systems-level,
@@ -97,10 +96,10 @@ disease~\citep{Cheng2018}.  We performed a network proximity based drug
 repurposing screen for AD on 2413 drugs from ChEMBL either approved by the FDA
 or in phase 3 clinical trials (Fig.~\ref{fig:workflow}A).  For each drug we
 computed eight values of network proximity given eight sets of AD genes that
-we derived from eight complementary information sources (one curated knowledge
+we derived from eight complementary information sources (one curated, knowledge
 based source and seven multi-omic sources, Table~\ref{tab:genesets}).  This
 resulted in eight distinct lists of the same 2413 drugs ranked according to
-increasing network proximity (Fig.~\ref{fig:workflow}) so that top ranking
+increasing network proximity (Fig.~\ref{fig:workflow}A) so that top ranking
 drugs could be considered for repurposing.
 
 \begin{table}
@@ -227,11 +226,7 @@ Therefore, the Arundine-AHR interaction represents an additional piece of
 evidence for the potential utility of Arundine in AD treatment.
 
 One of the Arundine target that our analysis did account for is the RGS4 gene
-(regulator of G-protein signalling 4). RGS4 was found to be associated with
-schizophrenia~\citep{Chowdari2002}, one of the best genetically characterized
-neuropsychological disorder, which shares substantial heritability with
-AD~\citep{Consortium2018} and in which, like in AD, autoimmune pathways have
-been found to play significant role~\citep{Sekar2016a}.  RGS4 is notable
+(regulator of G-protein signalling 4). RGS4 is notable
 because it is also targeted by Chenodiol, another of our selected top-ranking
 drugs.  Chenodiol, or Chenodeoxycholic acid, has been shown to be
 neuroprotective in Huntington's disease~\citep{Keene2002}.  Moreover,
@@ -258,11 +253,10 @@ cognitive abilities of APP-Psen1 mice~\citep{Cicchetti2019}.
 \midrule
 \multicolumn{4}{c}{\scshape General information} \\
 \midrule
-                                  Alternative form &
-                                                   &                        & Cysteamine-HCl$^\ast$ \\
                                            Synonym &               3,3-Diindolylmethane &  Chenodeoxycholic acid &                            Cystagon \\
                                          ChEMBL ID &                       CHEMBL446452 &           CHEMBL240597 &                           CHEMBL602 \\
                               Approved indications &          cervical cancer, phase 3 & cholesterol gallstones &            cystinosis, eye diseases \\
+                                  Alternative form &                                    &                        & Cysteamine-HCl$^\ast$ \\
 \midrule
 \multicolumn{4}{c}{\scshape Target genes} \\
 \midrule
@@ -434,6 +428,56 @@ Cysteamine-HCl, exhibit several AD-relevant neuroprotective properties.
 
 \section{Discussion}
 
+We have presented here novel repurposing opportunities for AD using evidence
+from network pharmacology analyses, which showed that Arundine, Chenodiol and
+Cysteamine act proximally to established AD genes in the human interactome of
+genes.  In agreement with this, we found experimental support in cell based
+essays for several neuroprotective properties of Arundine and Chenodiol.  Our
+present work also reveals several plausible molecular mechanisms for these
+drugs' hypothetical neuroprotective action in AD.  All three potential AD drugs
+target RGS4 (Regulator Of G-Protein Signalling 4).  RGS4 was found to be
+associated with schizophrenia~\citep{Chowdari2002}, one of the best
+genetically characterized neuropsychological disorder, which shares
+substantial heritability with AD~\citep{Consortium2018} and in which, like in
+AD, autoimmune pathways have been found to play significant
+nrole~\citep{Sekar2016a}.  Moreover, RGS4 is among the hundreds of
+differentially expressed genes in human brains affected by AD
+\cite{Taubes2021}.
+
+Our network analysis revealed the receptor tyrosine kinase EGFR as the key
+molecular link between RGS4 and crucial AD genes like APP (producing
+A$\beta$), MAPT (tau), SNCA ($\alpha$-synuclein) and PICALM.
+Interaction between RGS4 and EGFR might play a role in the known crosstalk
+between EGFR and GPCRs~\cite{Wang2016c}.  Moreoveer, EGFR's driver role in
+several forms of cancer~\cite{Sigismund2018} meshes with our current finding
+that our present drug repurposing screen tended to rediscover drugs previously
+tested or approved not only for AD but also for various neoplasms and cancers.
+While the network proximity based screen in this study suggested EGFR as a
+novel regulator of previously known AD genes, at the time of our analyses
+there was little additional evidence for this notion.  A more recent GWAS,
+however, discovered AD-associated SNPs regulating EGFR expression,
+establishing EGFR as a novel AD gene~\cite{Bellenguez2022}.  One of those
+SNPs, rs76928645, was found to be associated also to the thalamus' volume,
+which provides a genetic link between brain shrinkage and cognitive decline in
+AD~\cite{Elvsaashagen2021}.  Besides EGFR, our network analysis implicates
+other genes, notably CALM1, that link drug target gene RGS4 to key AD genes.
+Binding of calmodulinb to ryanodine receptor was recently found to be
+neuroprotective in AD~\cite{Nakamura2021}.
+
+AHR (aryl hydrocarbon receptor) is known as another target of Arundine.
+Evidence for this comes exclusively from animal experiments, hence
+Arundine--AHR binding was not included in our drug--target network (Methods)
+underlying our network based drug screen.  Still, AHR might be another drug
+target highly relevant to AD because the Arundine--AHR interaction was shown
+to protect cultured neurons in an experimental model for chronic
+neuroinflammatory diseases like AD or Parkinson's
+disease~\cite{Rzemieniec2019}.  We also found that SLC10A2 and
+CYP3A4---targeted by Chenodiol and Cysteamine, respectively---might transmit
+drug action to AD genes through mechanisms of ubiquitination and, in the case
+of CYP3A4, through PKC-dependent phosphorylation, where both mechanisms have
+been implicated in AD and related
+phenotypes~\cite{Reis2022,Hegde2019,Alfonso2016}.
+
 Computational drug repurposing is a new, rapidly evolving field without
 established standards and with a multitude of varied approaches applicable to
 a growing, diverse multi-omic body of data and curated
@@ -492,6 +536,8 @@ integrate into drug repurposing techniques.  That, in combination with
 expanding multi-celltype, multi-omic characterization of AD and its molecular
 subtypes~\citep{Neff2021}, will herald a new generation of drugs for
 Alzheimer's disease.
+
+
 
 \section{Methods}
 
@@ -935,3 +981,5 @@ Rediscovery of existing phase 1--4 drugs for AD and other indications.
 
 
 \end{document}
+
+

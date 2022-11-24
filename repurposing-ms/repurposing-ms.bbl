@@ -1,9 +1,21 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alfonso et~al.(2016)Alfonso, Callender, Hooli, Antal, Mullin, Sherman,
+  Lesné, Leitges, Newton, Tanzi, and Malinow]{Alfonso2016}
+Stephanie~I. Alfonso, Julia~A. Callender, Basavaraj Hooli, Corina~E. Antal,
+  Kristina Mullin, Mathew~A. Sherman, Sylvain~E. Lesné, Michael Leitges,
+  Alexandra~C. Newton, Rudolph~E. Tanzi, and Roberto Malinow.
+\newblock Gain-of-function mutations in protein kinase c\&\#x3b1;
+  (pkc\&\#x3b1;) may promote synaptic defects in alzheimer\&\#x2019;s disease.
+\newblock \emph{Science Signaling}, 9\penalty0 (427):\penalty0 ra47--ra47,
+  2016.
+\newblock \doi{10.1126/scisignal.aaf6209}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/scisignal.aaf6209}.
 
 \bibitem[Baird et~al.(2021)Baird, Liu, Zheng, Sieberts, Perumal, Elsworth,
   Richardson, Chen, Carrasquillo, Allen, Reddy, De~Jager, Ertekin-Taner,
@@ -145,6 +157,127 @@ Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/s41467-018-03621-1}.
 \newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
+
+\bibitem[Bellenguez et~al.(2022)Bellenguez, Küçükali, Jansen, Kleineidam,
+  Moreno-Grau, Amin, Naj, Campos-Martin, Grenier-Boley, Andrade, Holmans,
+  Boland, Damotte, van~der Lee, Costa, Kuulasmaa, Yang, de~Rojas, Bis, Yaqub,
+  Prokic, Chapuis, Ahmad, Giedraitis, Aarsland, Garcia-Gonzalez, Abdelnour,
+  Alarcón-Martín, Alcolea, Alegret, Alvarez, Álvarez, Armstrong, Tsolaki,
+  Antúnez, Appollonio, Arcaro, Archetti, Pastor, Arosio, Athanasiu, Bailly,
+  Banaj, Baquero, Barral, Beiser, Pastor, Below, Benchek, Benussi, Berr, Besse,
+  Bessi, Binetti, Bizarro, Blesa, Boada, Boerwinkle, Borroni, Boschi, Bossù,
+  Bråthen, Bressler, Bresner, Brodaty, Brookes, Brusco, Buiza-Rueda, Bûrger,
+  Burholt, Bush, Calero, Cantwell, Chene, Chung, Cuccaro, Carracedo, Cecchetti,
+  Cervera-Carles, Charbonnier, Chen, Chillotti, Ciccone, Claassen, Clark,
+  Conti, Corma-Gómez, Costantini, Custodero, Daian, Dalmasso, Daniele,
+  Dardiotis, Dartigues, de~Deyn, de~Paiva~Lopes, de~Witte, Debette, Deckert,
+  del Ser, Denning, DeStefano, Dichgans, Diehl-Schmid, Diez-Fairen, Rossi,
+  Djurovic, Duron, Düzel, Dufouil, Eiriksdottir, Engelborghs, Escott-Price,
+  Espinosa, Ewers, Faber, Fabrizio, Nielsen, Fardo, Farotti, Fenoglio,
+  Fernández-Fuertes, Ferrari, Ferreira, Ferri, Fin, Fischer, Fladby,
+  Fließbach, Fongang, Fornage, Fortea, Foroud, Fostinelli, Fox,
+  Franco-Macías, Bullido, Frank-García, Froelich, Fulton-Howard, Galimberti,
+  García-Alberca, García-González, Garcia-Madrona, Garcia-Ribas, Ghidoni,
+  Giegling, Giorgio, Goate, Goldhardt, Gomez-Fonseca, González-Pérez, Graff,
+  Grande, Green, Grimmer, Grünblatt, Grunin, Gudnason, Guetta-Baranes,
+  Haapasalo, Hadjigeorgiou, Haines, Hamilton-Nelson, Hampel, Hanon, Hardy,
+  Hartmann, Hausner, Harwood, Heilmann-Heimbach, Helisalmi, Heneka, Hernández,
+  Herrmann, Hoffmann, Holmes, Holstege, Vilas, Hulsman, Humphrey, Biessels,
+  Jian, Johansson, Jun, Kastumata, Kauwe, Kehoe, Kilander, Ståhlbom,
+  Kivipelto, Koivisto, Kornhuber, Kosmidis, Kukull, Kuksa, Kunkle, Kuzma, Lage,
+  Laukka, Launer, Lauria, Lee, Lehtisalo, Lerch, Lleó, Longstreth, Lopez,
+  de~Munain, Love, Löwemark, Luckcuck, Lunetta, Ma, Macías, MacLeod, Maier,
+  Mangialasche, Spallazzi, Marquié, Marshall, Martin, Montes, Rodríguez,
+  Masullo, Mayeux, Mead, Mecocci, Medina, Meggy, Mehrabian, Mendoza,
+  Menéndez-González, Mir, Moebus, Mol, Molina-Porcel, Montrreal, Morelli,
+  Moreno, Morgan, Mosley, Nöthen, Muchnik, Mukherjee, Nacmias, Ngandu,
+  Nicolas, Nordestgaard, Olaso, Orellana, Orsini, Ortega, Padovani, Paolo,
+  Papenberg, Parnetti, Pasquier, Pastor, Peloso, Pérez-Cordón, Pérez-Tur,
+  Pericard, Peters, Pijnenburg, Pineda, Piñol-Ripoll, Pisanu, Polak, Popp,
+  Posthuma, Priller, Puerta, Quenez, Quintela, Thomassen, Rábano, Rainero,
+  Rajabli, Ramakers, Real, Reinders, Reitz, Reyes-Dumeyer, Ridge,
+  Riedel-Heller, Riederer, Roberto, Rodriguez-Rodriguez, Rongve, Allende,
+  Rosende-Roca, Royo, Rubino, Rujescu, Sáez, Sakka, Saltvedt, Sanabria, and
+  Sánchez-Arjona]{Bellenguez2022}
+Céline Bellenguez, Fahri Küçükali, Iris~E. Jansen, Luca Kleineidam, Sonia
+  Moreno-Grau, Najaf Amin, Adam~C. Naj, Rafael Campos-Martin, Benjamin
+  Grenier-Boley, Victor Andrade, Peter~A. Holmans, Anne Boland, Vincent
+  Damotte, Sven~J. van~der Lee, Marcos~R. Costa, Teemu Kuulasmaa, Qiong Yang,
+  Itziar de~Rojas, Joshua~C. Bis, Amber Yaqub, Ivana Prokic, Julien Chapuis,
+  Shahzad Ahmad, Vilmantas Giedraitis, Dag Aarsland, Pablo Garcia-Gonzalez,
+  Carla Abdelnour, Emilio Alarcón-Martín, Daniel Alcolea, Montserrat Alegret,
+  Ignacio Alvarez, Victoria Álvarez, Nicola~J. Armstrong, Anthoula Tsolaki,
+  Carmen Antúnez, Ildebrando Appollonio, Marina Arcaro, Silvana Archetti,
+  Alfonso~Arias Pastor, Beatrice Arosio, Lavinia Athanasiu, Henri Bailly,
+  Nerisa Banaj, Miquel Baquero, Sandra Barral, Alexa Beiser, Ana~Belén Pastor,
+  Jennifer~E. Below, Penelope Benchek, Luisa Benussi, Claudine Berr, Céline
+  Besse, Valentina Bessi, Giuliano Binetti, Alessandra Bizarro, Rafael Blesa,
+  Mercè Boada, Eric Boerwinkle, Barbara Borroni, Silvia Boschi, Paola Bossù,
+  Geir Bråthen, Jan Bressler, Catherine Bresner, Henry Brodaty, Keeley~J.
+  Brookes, Luis~Ignacio Brusco, Dolores Buiza-Rueda, Katharina Bûrger, Vanessa
+  Burholt, William~S. Bush, Miguel Calero, Laura~B. Cantwell, Geneviève Chene,
+  Jaeyoon Chung, Michael~L. Cuccaro, Ángel Carracedo, Roberta Cecchetti, Laura
+  Cervera-Carles, Camille Charbonnier, Hung-Hsin Chen, Caterina Chillotti,
+  Simona Ciccone, Jurgen A. H.~R. Claassen, Christopher Clark, Elisa Conti,
+  Anaïs Corma-Gómez, Emanuele Costantini, Carlo Custodero, Delphine Daian,
+  Maria~Carolina Dalmasso, Antonio Daniele, Efthimios Dardiotis, Jean-François
+  Dartigues, Peter~Paul de~Deyn, Katia de~Paiva~Lopes, Lot~D. de~Witte,
+  Stéphanie Debette, Jürgen Deckert, Teodoro del Ser, Nicola Denning, Anita
+  DeStefano, Martin Dichgans, Janine Diehl-Schmid, Mónica Diez-Fairen,
+  Paolo~Dionigi Rossi, Srdjan Djurovic, Emmanuelle Duron, Emrah Düzel, Carole
+  Dufouil, Gudny Eiriksdottir, Sebastiaan Engelborghs, Valentina Escott-Price,
+  Ana Espinosa, Michael Ewers, Kelley~M. Faber, Tagliavini Fabrizio,
+  Sune~Fallgaard Nielsen, David~W. Fardo, Lucia Farotti, Chiara Fenoglio, Marta
+  Fernández-Fuertes, Raffaele Ferrari, Catarina~B. Ferreira, Evelyn Ferri,
+  Bertrand Fin, Peter Fischer, Tormod Fladby, Klaus Fließbach, Bernard
+  Fongang, Myriam Fornage, Juan Fortea, Tatiana~M. Foroud, Silvia Fostinelli,
+  Nick~C. Fox, Emlio Franco-Macías, María~J. Bullido, Ana Frank-García, Lutz
+  Froelich, Brian Fulton-Howard, Daniela Galimberti, Jose~Maria
+  García-Alberca, Pablo García-González, Sebastian Garcia-Madrona, Guillermo
+  Garcia-Ribas, Roberta Ghidoni, Ina Giegling, Giaccone Giorgio, Alison~M.
+  Goate, Oliver Goldhardt, Duber Gomez-Fonseca, Antonio González-Pérez,
+  Caroline Graff, Giulia Grande, Emma Green, Timo Grimmer, Edna Grünblatt,
+  Michelle Grunin, Vilmundur Gudnason, Tamar Guetta-Baranes, Annakaisa
+  Haapasalo, Georgios Hadjigeorgiou, Jonathan~L. Haines, Kara~L.
+  Hamilton-Nelson, Harald Hampel, Olivier Hanon, John Hardy, Annette~M.
+  Hartmann, Lucrezia Hausner, Janet Harwood, Stefanie Heilmann-Heimbach, Seppo
+  Helisalmi, Michael~T. Heneka, Isabel Hernández, Martin~J. Herrmann, Per
+  Hoffmann, Clive Holmes, Henne Holstege, Raquel~Huerto Vilas, Marc Hulsman,
+  Jack Humphrey, Geert~Jan Biessels, Xueqiu Jian, Charlotte Johansson,
+  Gyungah~R. Jun, Yuriko Kastumata, John Kauwe, Patrick~G. Kehoe, Lena
+  Kilander, Anne~Kinhult Ståhlbom, Miia Kivipelto, Anne Koivisto, Johannes
+  Kornhuber, Mary~H. Kosmidis, Walter~A. Kukull, Pavel~P. Kuksa, Brian~W.
+  Kunkle, Amanda~B. Kuzma, Carmen Lage, Erika~J. Laukka, Lenore Launer,
+  Alessandra Lauria, Chien-Yueh Lee, Jenni Lehtisalo, Ondrej Lerch, Alberto
+  Lleó, William Longstreth, Oscar Lopez, Adolfo~Lopez de~Munain, Seth Love,
+  Malin Löwemark, Lauren Luckcuck, Kathryn~L. Lunetta, Yiyi Ma, Juan Macías,
+  Catherine~A. MacLeod, Wolfgang Maier, Francesca Mangialasche, Marco
+  Spallazzi, Marta Marquié, Rachel Marshall, Eden~R. Martin, Angel~Martín
+  Montes, Carmen~Martínez Rodríguez, Carlo Masullo, Richard Mayeux, Simon
+  Mead, Patrizia Mecocci, Miguel Medina, Alun Meggy, Shima Mehrabian, Silvia
+  Mendoza, Manuel Menéndez-González, Pablo Mir, Susanne Moebus, Merel Mol,
+  Laura Molina-Porcel, Laura Montrreal, Laura Morelli, Fermin Moreno, Kevin
+  Morgan, Thomas Mosley, Markus~M. Nöthen, Carolina Muchnik, Shubhabrata
+  Mukherjee, Benedetta Nacmias, Tiia Ngandu, Gael Nicolas, Børge~G.
+  Nordestgaard, Robert Olaso, Adelina Orellana, Michela Orsini, Gemma Ortega,
+  Alessandro Padovani, Caffarra Paolo, Goran Papenberg, Lucilla Parnetti,
+  Florence Pasquier, Pau Pastor, Gina Peloso, Alba Pérez-Cordón, Jordi
+  Pérez-Tur, Pierre Pericard, Oliver Peters, Yolande A.~L. Pijnenburg, Juan~A.
+  Pineda, Gerard Piñol-Ripoll, Claudia Pisanu, Thomas Polak, Julius Popp,
+  Danielle Posthuma, Josef Priller, Raquel Puerta, Olivier Quenez, Inés
+  Quintela, Jesper~Qvist Thomassen, Alberto Rábano, Innocenzo Rainero, Farid
+  Rajabli, Inez Ramakers, Luis~M. Real, Marcel J.~T. Reinders, Christiane
+  Reitz, Dolly Reyes-Dumeyer, Perry Ridge, Steffi Riedel-Heller, Peter
+  Riederer, Natalia Roberto, Eloy Rodriguez-Rodriguez, Arvid Rongve,
+  Irene~Rosas Allende, Maitée Rosende-Roca, Jose~Luis Royo, Elisa Rubino, Dan
+  Rujescu, María~Eugenia Sáez, Paraskevi Sakka, Ingvild Saltvedt, Ángela
+  Sanabria, and María~Bernal Sánchez-Arjona.
+\newblock New insights into the genetic etiology of alzheimer’s disease and
+  related dementias.
+\newblock \emph{Nature Genetics}, 54\penalty0 (4):\penalty0 412--436, 2022.
+\newblock ISSN 1546-1718.
+\newblock \doi{10.1038/s41588-022-01024-z}.
+\newblock URL \url{https://doi.org/10.1038/s41588-022-01024-z}.
 
 \bibitem[Besouw et~al.(2013)Besouw, Masereeuw, {van den Heuvel}, and
   Levtchenko]{Besouw2013}
@@ -483,6 +616,18 @@ Rishi~J Desai, Mufaddal Mahesri, Su~Been Lee, Vijay~R Varma, Tina Loeffler,
 \newblock URL \url{https://doi.org/10.1093/braincomms/fcac247}.
 \newblock fcac247.
 
+\bibitem[Elvsåshagen et~al.(2021)Elvsåshagen, Shadrin, Frei, van~der Meer,
+  Bahrami, Kumar, Smeland, Westlye, Andreassen, and Kaufmann]{Elvsaashagen2021}
+Torbjørn Elvsåshagen, Alexey Shadrin, Oleksandr Frei, Dennis van~der Meer,
+  Shahram Bahrami, Vinod~Jangir Kumar, Olav Smeland, Lars~T. Westlye, Ole~A.
+  Andreassen, and Tobias Kaufmann.
+\newblock The genetic architecture of the human thalamus and its overlap with
+  ten common brain disorders.
+\newblock \emph{Nature Communications}, 12\penalty0 (1):\penalty0 2909, 2021.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-021-23175-z}.
+\newblock URL \url{https://doi.org/10.1038/s41467-021-23175-z}.
+
 \bibitem[Fang et~al.(2021)Fang, Zhang, Zhou, Chiang, Tan, Hou, Stauffer, Li,
   Pieper, Cummings, and Cheng]{Fang2021}
 Jiansong Fang, Pengyue Zhang, Yadi Zhou, Chien-Wei Chiang, Juan Tan, Yuan Hou,
@@ -527,6 +672,17 @@ Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
 \newblock ISSN 2041-1723.
 \newblock \doi{10.1038/ncomms10331}.
 \newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4740350/}.
+
+\bibitem[Hegde et~al.(2019)Hegde, Smith, Duke, Pourquoi, and Vaz]{Hegde2019}
+Ashok~N. Hegde, Spencer~G. Smith, Lindsey~M. Duke, Allison Pourquoi, and
+  Savannah Vaz.
+\newblock Perturbations of ubiquitin-proteasome-mediated proteolysis in aging
+  and alzheimer’s disease.
+\newblock \emph{Frontiers in Aging Neuroscience}, 11, 2019.
+\newblock ISSN 1663-4365.
+\newblock \doi{10.3389/fnagi.2019.00324}.
+\newblock URL
+  \url{https://www.frontiersin.org/articles/10.3389/fnagi.2019.00324}.
 
 \bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
   Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
@@ -835,6 +991,17 @@ Fanwang Meng, Yang Xi, Jinfeng Huang, and Paul~W. Ayers.
 \newblock \doi{10.1038/s41597-021-01069-5}.
 \newblock URL \url{https://doi.org/10.1038/s41597-021-01069-5}.
 
+\bibitem[Nakamura et~al.(2021)Nakamura, Yamamoto, Xu, Kobayashi, Tanaka,
+  Tamitani, Saito, Saido, and Yano]{Nakamura2021}
+Yoshihide Nakamura, Takeshi Yamamoto, Xiaojuan Xu, Shigeki Kobayashi, Shinji
+  Tanaka, Masaki Tamitani, Takashi Saito, Takaomi~C. Saido, and Masafumi Yano.
+\newblock Enhancing calmodulin binding to ryanodine receptor is crucial to
+  limit neuronal cell loss in alzheimer disease.
+\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 7289, 2021.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-021-86822-x}.
+\newblock URL \url{https://doi.org/10.1038/s41598-021-86822-x}.
+
 \bibitem[Neff et~al.(2021)Neff, Wang, Vatansever, Guo, Ming, Wang, Wang,
   Horgusluoglu-Moloch, Song, Li, Castranio, Tcw, Ho, Goate, Fossati, Noggle,
   Gandy, Ehrlich, Katsel, Schadt, Cai, Brennand, Haroutunian, and
@@ -892,6 +1059,18 @@ Sudeep Pushpakom, Francesco Iorio, Patrick~A. Eyers, K.~Jane Escott, Shirley
 \newblock \doi{10.1038/nrd.2018.168}.
 \newblock URL \url{https://doi.org/10.1038/nrd.2018.168}.
 
+\bibitem[Reis et~al.(2022)Reis, Patrun, Ackl, Winter, Scheifele, Danek, and
+  Nolte]{Reis2022}
+Marlen~Colleen Reis, Julia Patrun, Nibal Ackl, Pia Winter, Maximilian
+  Scheifele, Adrian Danek, and Dagmar Nolte.
+\newblock A severe dementia syndrome caused by intron retention and cryptic
+  splice site activation in stub1 and exacerbated by tbp repeat expansions.
+\newblock \emph{Frontiers in Molecular Neuroscience}, 15, 2022.
+\newblock ISSN 1662-5099.
+\newblock \doi{10.3389/fnmol.2022.878236}.
+\newblock URL
+  \url{https://www.frontiersin.org/articles/10.3389/fnmol.2022.878236}.
+
 \bibitem[Rzemieniec et~al.(2019)Rzemieniec, Wnuk, Lasoń, Bilecki, and
   Kajta]{Rzemieniec2019}
 J.~Rzemieniec, A.~Wnuk, W.~Lasoń, W.~Bilecki, and M.~Kajta.
@@ -934,6 +1113,12 @@ Aswin Sekar, Allison~R. Bialas, Heather de~Rivera, Avery Davis, Timothy~R.
 \newblock Schizophrenia risk from complex variation of complement component 4.
 \newblock \emph{Nature}, 530:\penalty0 177--83, Feb 2016.
 \newblock URL \url{http://www.nature.com/doifinder/10.1038/nature16549}.
+
+\bibitem[Sigismund et~al.(2018)Sigismund, Avanzato, and
+  Lanzetti]{Sigismund2018}
+Sara Sigismund, Daniele Avanzato, and Letizia Lanzetti.
+\newblock Emerging functions of the egfr in cancer.
+\newblock \emph{Molecular oncology}, 12:\penalty0 3--20, Jan 2018.
 
 \bibitem[Taubes et~al.(2021)Taubes, Nova, Zalocusky, Kosti, Bicak, Zilberter,
   Hao, Yoon, Oskotsky, Pineda, Chen, Aery~Jones, Choudhary, Grone, Balestra,
@@ -978,6 +1163,16 @@ Vijay~R. Varma, Youjin Wang, Yang An, Sudhir Varma, Murat Bilgel, Jimit Doshi,
 \newblock \emph{PLOS Medicine}, 18\penalty0 (5):\penalty0 e1003615, May 2021.
 \newblock \doi{10.1371/journal.pmed.1003615}.
 \newblock URL \url{https://doi.org/10.1371/journal.pmed.1003615}.
+
+\bibitem[Wang(2016)]{Wang2016c}
+Zhixiang Wang.
+\newblock Transactivation of epidermal growth factor receptor by g
+  protein-coupled receptors: Recent progress, challenges and future research.
+\newblock \emph{International Journal of Molecular Sciences}, 17\penalty0 (1),
+  2016.
+\newblock ISSN 1422-0067.
+\newblock \doi{10.3390/ijms17010095}.
+\newblock URL \url{https://www.mdpi.com/1422-0067/17/1/95}.
 
 \bibitem[Wightman et~al.(2021)Wightman, Jansen, Savage, Shadrin, Bahrami,
   Holland, Rongve, Børte, Winsvold, Drange, Martinsen, Skogholt, Willer,
