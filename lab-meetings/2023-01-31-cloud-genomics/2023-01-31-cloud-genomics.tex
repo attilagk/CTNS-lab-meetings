@@ -1,0 +1,120 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Warsaw}
+\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usecolortheme{seahorse}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Cloud Genomics}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}[plain]
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[height=1.0\textheight]{../../../../figures/from-others/Genome-Characterization-Pipeline-infographic-2019.png}
+\end{center}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+
+\includegraphics[height=1.0\textheight]{../../../../figures/from-others/Iceberg.jpeg}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A computational pipeline for sequencing data}
+\includegraphics[height=0.75\textheight]{../../../../figures/from-others/Hardware-acceleration-of-genomics-data-analysis-Fig1.png}
+
+{\tiny Robinson et al 2021 Bioinformatics}
+\end{frame}
+
+\begin{frame}{High performance computing}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  Computer clusters (Biowulf)
+
+\includegraphics[width=\textwidth]{../../../../figures/from-others/biowulf-systems-overview.png}
+
+{\tiny \url{https://hpc.nih.gov/systems/}}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Cloud computing
+
+\includegraphics[width=0.9\textwidth]{../../../../figures/from-others/cloud-computing.png}
+
+{\tiny \url{https://en.wikipedia.org/wiki/Cloud_computing}}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{\textcolor{BlueGreen}{User} and \textcolor{orange}{provider}
+  responsibilities: three service models}
+\includegraphics[height=0.75\textheight]{../../../../figures/from-others/Building-cloud-computing-environments-for-genome-analysis-in-Japan-Fig2.png}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{../../../../figures/from-others/cloud_computing-cloud_management_02-f.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Application: studying somatic mosaicism in the brain}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{../../../../figures/from-others/wang-genome-biology-2021-Fig4.png}
+
+{\tiny Wang,...,Jones, et al 2021 Genome Biology}
+\end{center}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
