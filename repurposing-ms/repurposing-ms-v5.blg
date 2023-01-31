@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: repurposing-ms-v5.aux
+The style file: plainnat.bst
+Database file #1: repurposing-ms.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty year in Aging
+You've used 56 entries,
+            2773 wiz_defined-function locations,
+            1113 strings with 64786 characters,
+and the built_in function-call counts, 132042 in all, are:
+= -- 8968
+> -- 20176
+< -- 7
++ -- 6729
+- -- 6672
+* -- 15126
+:= -- 23131
+add.period$ -- 300
+call.type$ -- 56
+change.case$ -- 2392
+chr.to.int$ -- 55
+cite$ -- 113
+duplicate$ -- 1157
+empty$ -- 2216
+format.name$ -- 6734
+if$ -- 24553
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 55
+newline$ -- 420
+num.names$ -- 224
+pop$ -- 4550
+preamble$ -- 1
+purify$ -- 2336
+quote$ -- 0
+skip$ -- 2877
+stack$ -- 0
+substring$ -- 1250
+swap$ -- 89
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 616
+warning$ -- 1
+while$ -- 238
+width$ -- 0
+write$ -- 997
+(There was 1 warning)

@@ -1024,6 +1024,22 @@ PMC6023751[pmcid]},
   url      = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6023751/},
 }
 
+@Article{Varma2021a,
+  author   = {Varma, Vijay R. and Büşra Lüleci, H. and Oommen, Anup M. and Varma, Sudhir and Blackshear, Chad T. and Griswold, Michael E. and An, Yang and Roberts, Jackson A. and O’Brien, Richard and Pletnikova, Olga and Troncoso, Juan C. and Bennett, David A. and Çakır, Tunahan and Legido-Quigley, Cristina and Thambisetty, Madhav},
+  journal  = {npj Aging and Mechanisms of Disease},
+  title    = {Abnormal brain cholesterol homeostasis in Alzheimer’s disease--a targeted metabolomic and transcriptomic study},
+  year     = {2021},
+  issn     = {2056-3973},
+  number   = {1},
+  pages    = {11},
+  volume   = {7},
+  abstract = {The role of brain cholesterol metabolism in Alzheimer’s disease (AD) remains unclear. Peripheral and brain cholesterol levels are largely independent due to the impermeability of the blood brain barrier (BBB), highlighting the importance of studying the role of brain cholesterol homeostasis in AD. We first tested whether metabolite markers of brain cholesterol biosynthesis and catabolism were altered in AD and associated with AD pathology using linear mixed-effects models in two brain autopsy samples from the Baltimore Longitudinal Study of Aging (BLSA) and the Religious Orders Study (ROS). We next tested whether genetic regulators of brain cholesterol biosynthesis and catabolism were altered in AD using the ANOVA test in publicly available brain tissue transcriptomic datasets. Finally, using regional brain transcriptomic data, we performed genome-scale metabolic network modeling to assess alterations in cholesterol biosynthesis and catabolism reactions in AD. We show that AD is associated with pervasive abnormalities in cholesterol biosynthesis and catabolism. Using transcriptomic data from Parkinson’s disease (PD) brain tissue samples, we found that gene expression alterations identified in AD were not observed in PD, suggesting that these changes may be specific to AD. Our results suggest that reduced de novo cholesterol biosynthesis may occur in response to impaired enzymatic cholesterol catabolism and efflux to maintain brain cholesterol levels in AD. This is accompanied by the accumulation of nonenzymatically generated cytotoxic oxysterols. Our results set the stage for experimental studies to address whether abnormalities in cholesterol metabolism are plausible therapeutic targets in AD.},
+  doi      = {10.1038/s41514-021-00064-9},
+  groups   = {repurposing-ms},
+  refid    = {Varma2021},
+  url      = {https://doi.org/10.1038/s41514-021-00064-9},
+}
+
 @Article{Wightman2021,
   author                 = {Wightman, Douglas P. and Jansen, Iris E. and Savage, Jeanne E. and Shadrin, Alexey A. and Bahrami, Shahram and Holland, Dominic and Rongve, Arvid and Børte, Sigrid and Winsvold, Bendik S. and Drange, Ole Kristian and Martinsen, Amy E. and Skogholt, Anne Heidi and Willer, Cristen and Bråthen, Geir and Bosnes, Ingunn and Nielsen, Jonas Bille and Fritsche, Lars G. and Thomas, Laurent F. and Pedersen, Linda M. and Gabrielsen, Maiken E. and Johnsen, Marianne Bakke and Meisingset, Tore Wergeland and Zhou, Wei and Proitsi, Petroula and Hodges, Angela and Dobson, Richard and Velayudhan, Latha and Sealock, Julia M. and Davis, Lea K. and Pedersen, Nancy L. and Reynolds, Chandra A. and Karlsson, Ida K. and Magnusson, Sigurdur and Stefansson, Hreinn and Thordardottir, Steinunn and Jonsson, Palmi V. and Snaedal, Jon and Zettergren, Anna and Skoog, Ingmar and Kern, Silke and Waern, Margda and Zetterberg, Henrik and Blennow, Kaj and Stordal, Eystein and Hveem, Kristian and Zwart, John-Anker and Athanasiu, Lavinia and Selnes, Per and Saltvedt, Ingvild and Sando, Sigrid B. and Ulstein, Ingun and Djurovic, Srdjan and Fladby, Tormod and Aarsland, Dag and Selbæk, Geir and Ripke, Stephan and Stefansson, Kari and Andreassen, Ole A. and Posthuma, Danielle},
   journal                = {Nature genetics},

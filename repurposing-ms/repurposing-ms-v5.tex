@@ -421,23 +421,21 @@ neurons (Fig.~\ref{fig:cell-based-assays}e).
 
 We have presented here novel repurposing opportunities for AD using evidence
 from network pharmacology analyses, which showed that Arundine, Chenodiol and
-Cysteamine act proximally to established AD risk genes in the human
-interactome of genes.  In agreement with this, we found experimental support
-in cell culrture-based phenotypic essays suggesting that for Arundine and
-Chenodiol may correct key molecular abnormalities in AD.  Our present work
-also reveals several plausible molecular mechanisms for the the potential
-therapeutic actions of these drugs in AD
-(Fig.~\ref{fig:drug-AD-genes-network}).  All three potential AD drugs target
-RGS4 (Regulator Of G-Protein Signalling 4).  RGS4 was found to be associated
-with schizophrenia~\citep{Chowdari2002}, one of the best genetically
-characterized neuropsychological disorder, which shares substantial
-heritability with AD~\citep{Consortium2018} and in which, similar to AD,
-autoimmune pathways have been found to play significant
+Cysteamine act proximally to established AD genes in the human interactome of
+genes.  In agreement with this, we found experimental support in cell based
+essays for several neuroprotective properties of Arundine and Chenodiol.  Our
+present work also reveals several plausible molecular mechanisms for these
+drugs' hypothetical neuroprotective action in AD.  All three potential AD drugs
+target RGS4 (Regulator Of G-Protein Signalling 4).  RGS4 was found to be
+associated with schizophrenia~\citep{Chowdari2002}, one of the best
+genetically characterized neuropsychological disorder, which shares
+substantial heritability with AD~\citep{Consortium2018} and in which, like in
+AD, autoimmune pathways have been found to play significant
 nrole~\citep{Sekar2016a}.  Moreover, RGS4 is among the few hundred
-differentially expressed genes in the brain in AD
+differentially expressed genes in human brains affected by AD
 \cite{Taubes2021}.
 
-Our network analysis also revealed the receptor tyrosine kinase EGFR as the key
+Our network analysis revealed the receptor tyrosine kinase EGFR as the key
 molecular link between RGS4 and crucial AD genes like APP (producing
 A$\beta$), MAPT (tau), SNCA ($\alpha$-synuclein) and PICALM.  Interaction
 between RGS4 and EGFR might play a role in the known crosstalk between EGFR
@@ -449,12 +447,12 @@ the network proximity based screen in this study suggested EGFR as a novel
 regulator of previously known AD genes, at the time of our analyses there was
 little additional evidence for this notion.  A more recent GWAS, however,
 discovered AD-associated SNPs regulating EGFR expression, establishing EGFR as
-a novel AD risk gene~\cite{Bellenguez2022}.  One of those SNPs, rs76928645, was
+a novel AD gene~\cite{Bellenguez2022}.  One of those SNPs, rs76928645, was
 found to be associated also to the thalamus' volume, which provides a genetic
 link between brain shrinkage and cognitive decline in
 AD~\cite{Elvsaashagen2021}.  Besides EGFR, our network analysis implicates
-other genes, notably CALM1 (calmodulin 1), that link the drug target gene RGS4 to
-key AD risk genes.  Binding of calmodulin to ryanodine receptor was recently found
+other genes, notably CALM1 (calmodulin 1), that link drug target gene RGS4 to
+key AD genes.  Binding of calmodulin to ryanodine receptor was recently found
 to be neuroprotective in AD~\cite{Nakamura2021}.
 
 AHR (aryl hydrocarbon receptor) is known as another target of Arundine.
@@ -465,50 +463,52 @@ target highly relevant to AD because the Arundine--AHR interaction was shown
 to protect cultured neurons in an experimental model for chronic
 neuroinflammatory diseases like AD or Parkinson's
 disease~\cite{Rzemieniec2019}.  We also found that SLC10A2 and
-CYP3A4---targeted by Chenodiol and Cysteamine, respectively---may act through
-ubiquitination and, in the case of CYP3A4, also through PKC-dependent
-phosphorylation.  Both mechanisms have been implicated in AD and related
+CYP3A4---targeted by Chenodiol and Cysteamine, respectively---might transmit
+drug action to AD genes through mechanisms of ubiquitination and, in the case
+of CYP3A4, through PKC-dependent phosphorylation, where both mechanisms have
+been implicated in AD and related
 phenotypes~\cite{Reis2022,Hegde2019,Alfonso2016}.
 
 Computational drug repurposing is a new, rapidly evolving field without
 established standards and with a multitude of varied approaches applicable to
-a growing, diverse multi-omic datasets and curated
-knowledge~\citep{Pushpakom2019}. Recent computational approaches to drug
-repurposing in AD have reported on the discovery of
-sildenafil~\citep{Fang2021} and bumetanide~\citep{Taubes2021} as candidate AD
-drugs.
-Although our present study shares some methodological limitations with
-those of \cite{Fang2021,Taubes2021}, key strengths of our analyses include:
-\begin{enumerate}
-  \item We based our screen on a more diverse collection of AD gene sets than
-    either \cite{Taubes2021} or \cite{Fang2021}.  Like these authors, we also
-    used gene sets from knowledge bases and DEGs from transcriptomic studies.
-    But our work is unique in that it also leverages results of the most
-    recent genomic fine mapping studies (GWAS, TWAS and PWAS) on AD, which
-    detect causative AD risk genes with much higher specificity than DEG
-    analyses~\citep{Zhu2018,Lau2020}.
-\item We and~\cite{Fang2021} used a systems-based network pharmacology
-  approach~\citep{Guney2016,Cheng2018}, which exploits the rich information in
-  available drug-target and gene-gene networks to identify drugs that are
-  mechanistically supported to target putative disease pathways in AD.  In
-  contrast, \cite{Taubes2021} used CMap, a merely correlative
-  approach~\citep{Lamb2006}, which cannot incorporate existing knowledge on
-  the molecular pathomechanisms of AD.  Intrestingly, our present work also
-  shows that these two approaches to fully discordant, uncorrelated results.
-  Moreover, besides the aforementioned shortcoming of CMap, we find that its
-  various published implementations lead to quite different, albeit still
-  correlated, results.
-\item We aggregated results of multiple drug screens (each conditioned on a
-  different gene set) with a probabilistic rank aggregation algorithm with an
-  optimality criterion.  \cite{Fang2021} also carried multiple screens but
-  their aggregation was a less principled, ad-hoc method.  Notably, our rank
-  aggregation strategy also revealed that even some non-overlapping AD gene
-  sets resulted lead to the discovery of highly overlapping sets of very top
-  drugs demonstrating the robustness of our workflow.  The non-neuronal AD
-  gene sets were exception of this tendency pointing at the value of further
-  characterization of non-neuronal cells in
-  AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
-\end{enumerate}
+a growing, diverse multi-omic body of data and curated
+knowledge~\citep{Pushpakom2019}.  During our present investigations two drug
+repurposing studies on AD were published: \cite{Fang2021} nominated sildenafil
+while~\cite{Taubes2021} bumetanide.  These two works differed both in their
+definition of AD genes as well as in the approach used to score and rank
+drugs: \cite{Taubes2021} analyzed APOE genotype-specific DEGs with
+CMap~\citep{Lamb2006}, while \cite{Fang2021} used knowledge-based AD genes, as
+well as DEGs without known APOE genotype, as inputs to a network proximity
+based drug repurposing screen~\citep{Cheng2018}.  In this paper we show that,
+while the input gene sets have considerable effect on network proximity based
+drug scores, the latter still show significant correlation.  Surprisingly, we
+also find that the network proximity approach taken by \cite{Fang2021} and
+CMap used by \cite{Taubes2021} leads to fully discordant, uncorrelated
+results.  Moreover, we find that various published implementation of CMap lead
+to quite different, albeit still correlated, results.  These observations
+caution about methodological details.
+
+Although the present study shares several methodological limitations with
+those of \cite{Fang2021,Taubes2021}, we may argue to have carried out the most
+carefully designed drug repurposing screen to date on AD.  We based our screen
+on a diverse collection of AD gene sets that included a curated knowledge
+based gene set, meta-analyzed, aggregated gene sets from TWAS and PWAS as well
+as DEG sets from transcriptomic studies controlling for APOE genotype and
+other genetic factors~\citep{Lin2018}.  These varied AD gene sources are
+expected to introduce markedly varying bias into our drug repurposing screen: for
+instance, the TWAS based gene set is small as it only contains genes with
+strong statistical evidence for causal involvement in AD but likely misses
+many other causal genes, while the DEG sets are large and likely inflated with
+many genes that are not causal to AD.  It is easy to see how combination of
+such diverse gene sets prior to the screen may further worsen the associated
+biases. To prevent that, we conducted multiple screens, each conditioned on a
+gene set and performed \emph{a posteriori} rank aggregation.  The rank
+aggregation strategy also revealed that even some non-overlapping AD gene sets
+resulted lead to the discovery of highly overlapping sets of very top drugs
+demonstrating the robustness of our workflow.  Notably, the non-neuronal
+AD gene sets were exception of this tendency pointing at the value of further
+characterization of non-neuronal cells in
+AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
 
 %Our computational validation, based on the rediscovery of drugs previously
 %developed or repurposed for AD, revealed the enrichment of our top ranked

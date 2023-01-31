@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -948,15 +948,6 @@ Justin Lamb, Emily~D. Crawford, David Peck, Joshua~W. Modell, Irene~C. Blat,
 \newblock \doi{10.1126/science.1132939}.
 \newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1132939}.
 
-\bibitem[Lau and So(2020)]{Lau2020}
-Alexandria Lau and Hon-Cheong So.
-\newblock Turning genome-wide association study findings into opportunities for
-  drug repositioning.
-\newblock \emph{Computational and structural biotechnology journal},
-  18:\penalty0 1639--1650, 2020.
-\newblock ISSN 2001-0370.
-\newblock \doi{10.1016/j.csbj.2020.06.015}.
-
 \bibitem[Lee et~al.(2019)Lee, Yoo, Baek, Li, Sok, and Kim]{Lee2019}
 Bo~Dam Lee, Jae-Myung Yoo, Seong~Yeon Baek, Fu~Yi Li, Dai-Eun Sok, and Mee~Ree
   Kim.
@@ -1277,17 +1268,5 @@ Yu~Yamazaki, Na~Zhao, Thomas~R. Caulfield, Chia-Chen Liu, and Guojun Bu.
 \newblock ISSN 1759-4766.
 \newblock \doi{10.1038/s41582-019-0228-7}.
 \newblock URL \url{https://doi.org/10.1038/s41582-019-0228-7}.
-
-\bibitem[Zhu et~al.(2018)Zhu, Zheng, Zhang, Wu, Trzaskowski, Maier, Robinson,
-  McGrath, Visscher, Wray, and Yang]{Zhu2018}
-Zhihong Zhu, Zhili Zheng, Futao Zhang, Yang Wu, Maciej Trzaskowski, Robert
-  Maier, Matthew~R. Robinson, John~J. McGrath, Peter~M. Visscher, Naomi~R.
-  Wray, and Jian Yang.
-\newblock Causal associations between risk factors and common diseases inferred
-  from gwas summary data.
-\newblock \emph{Nature Communications}, 9\penalty0 (1):\penalty0 224, 2018.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-017-02317-2}.
-\newblock URL \url{https://doi.org/10.1038/s41467-017-02317-2}.
 
 \end{thebibliography}
