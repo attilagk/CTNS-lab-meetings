@@ -19,10 +19,10 @@
 
 % beamer styles
 \mode<presentation>{
-%\usetheme{Warsaw}
-\usetheme{Antibes}
-\usecolortheme{beaver}
-%\usecolortheme{seahorse}
+\usetheme{Madrid}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{dove}
 %\usefonttheme{structureitalicserif}
 \setbeamercovered{transparent}
 }
@@ -36,7 +36,7 @@
 
 % title, etc
 \title{Cloud Genomics}
-\subtitle{}
+\subtitle{A primer}
 \author{Attila Jones}
 \date{}
 
@@ -70,7 +70,7 @@
 \begin{frame}{High performance computing}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
-  Computer clusters (Biowulf)
+  Supercomputers, clusters
 
 \includegraphics[width=\textwidth]{../../../../figures/from-others/biowulf-systems-overview.png}
 
@@ -78,7 +78,7 @@
 \end{column}
 
 \begin{column}{0.5\textwidth}
-  Cloud computing
+  Cloud computing: on demand platform
 
 \includegraphics[width=0.9\textwidth]{../../../../figures/from-others/cloud-computing.png}
 
@@ -89,15 +89,32 @@
 
 \begin{frame}{\textcolor{BlueGreen}{User} and \textcolor{orange}{provider}
   responsibilities: three service models}
-\includegraphics[height=0.75\textheight]{../../../../figures/from-others/Building-cloud-computing-environments-for-genome-analysis-in-Japan-Fig2.png}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/Building-cloud-computing-environments-for-genome-analysis-in-Japan-Fig2.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \begin{itemize}
+    \item NIA IRP Cloud\\
+      {\footnotesize Course: Linux for Scientists using NIAIRP Cloud Computing}
+    \item Cloud Life Sciences\\
+    {\footnotesize \url{https://cloud.google.com/life-sciences}}
+    \item Amazon Omics\\
+      {\footnotesize \url{https://aws.amazon.com/omics/}}
+  \end{itemize}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/Amazon-Omics.png}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}[plain]
+\begin{frame}{Marketed as simple. Mind-bogglingly complex.}
 \begin{center}
 \includegraphics[width=0.85\textwidth]{../../../../figures/from-others/cloud_computing-cloud_management_02-f.png}
 \end{center}
 \end{frame}
-
 
 \begin{frame}{Application: studying somatic mosaicism in the brain}
 \begin{center}
