@@ -1,0 +1,112 @@
+\documentclass[a1paper,17pt]{tikzposter} %Options for format can be included here
+\usepackage{tikz}
+\usepackage{multicol}
+\setlength{\columnsep}{0.7cm}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+%\bibliographystyle{unsrtnat}
+\author{Attila Jones$^1$, Evan Wu$^2$, Sudhir Varma, Hae Kyung Im$^2$, Madhav Thambisetty$^1$}
+\title{Drug Repurposing to Alzheimer’s from Multiomics}
+
+\institute{$1$: Clinical \& Translational Neuroscience Section, LBN, $2$: University
+	of~Chicago}
+
+ %Choose Layout
+\usetheme{Default}
+
+\begin{document}
+\maketitle
+
+\block{1. Introduction}{
+\begin{multicols}{2}
+	\Large
+	Alzheimer's is a polygenic disease without efficient treatment.
+Repurposing drugs from other disease indications to Alzheimer's is an
+attractive approach but it comes with the challenge of finding 
+repurposeable drugs.  In this work we score ca.~2,400 drugs for their
+repurposeability using multiomic information sources and a systems-based,
+mechanistic network model.
+\end{multicols}
+}
+
+\begin{columns}
+\column{0.50}
+
+\block{2. Workflow}{
+\includegraphics[width=0.45\columnwidth]{../../../figures/by-me/repurposing-study-desing/repurposing-study-design.pdf}
+
+Our workflow uses a rich set of
+information from multiple omic modalities: genome and transcriptome-wide
+association studies (GWAS, TWAS), transcriptomics (differentially expressed
+genes), and interactomics (gene-gene and drug-target networks).  The workflow
+is centered at network proximity calculations.
+}
+
+\block{3. Network proximity predicts efficacy}{
+	Network proximity
+is a quantity defined between some drug's targets (\tikz \node[square,
+fill=blue]{}; below)  and
+disease genes (\tikz \node[circle, fill=red!80!black]{}; or \tikz \node[circle,
+fill=purple!70!black]{};) in terms of gene interaction network
+topology.
+Previous work suggested that network proximity can
+predict drug efficacy and thus can be used to screen drugs for repurposing
+oportunities.
+
+{\small
+	Nature Comm Vol 7 26831545, Nature Comm Vol 9 30002366
+}
+
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{../../../figures/from-others/cheng-desai-2018-Nat-comm-Fig4a-nolabel.png}
+\end{center}
+}
+
+\block{4. Selected top drugs}{
+\begin{tabular}{rll}
+	rank & indication class    & targets \\
+	\hline
+	4    & Neuroprotective     & RGS4, GPR84 \\
+	28   & Anticholelithogenic & RGS4, NTCP2 \\
+	51   & Anti-Urolithic      & CP3A4, RGS4 \\
+	%322  & Anti-Urolithic      & GEMI, LMNA, PLK1, ... \\
+	\hline
+\end{tabular}
+\vfill
+\small
+\emph{anticholelithogenics}: prevents gallstones, \emph{anti-urolithics}
+prevents kidney stones, \emph{RGS4}: Regulator of G-protein signaling 4,
+\emph{GPR84}: G-protein coupled receptor 84, \emph{NTCP2}: Ileal bile acid
+transporter, \emph{CP3A4}: Cytochrome P450 3A4, \emph{GEMI}: Geminin,
+\emph{LMNA}: Prelamin-A/C, \emph{PLK1}: Serine/threonine-protein kinase PLK1
+}
+
+\column{0.5}
+
+\block{5. Computational validation}{
+\begin{center}
+\includegraphics[width=0.35\columnwidth]{../../../CTNS/notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\end{center}
+
+Here we validate our network proximity based drug ranking by showing that the
+top-$t$ drugs are enriched in drugs developed for Alzheimer's.
+}
+
+%\bibliography{attila-poster}
+
+\block{6. Experimental validation}{
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{../../../figures/from-others/CTNS-cell-culture-screen.png}
+\end{center}
+
+We are currently testing the top ranked drugs in cell culture
+based assays for their ability to rescue Alzheimer's-like cellular phenotypes.
+}
+
+\block{7. Acknowledgements}{
+We thank Vijay Varma, Yang An, Jackson Roberts for feedback and the NIH HPC
+group for excellent service.}
+
+\end{columns}
+
+\end{document}
