@@ -1,0 +1,189 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Bayesian inference of metabolic flux changes in AD subtypes}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+
+\begin{frame}{Active and inactive reactions in context specific GEMs} 
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=0.9\columnwidth]{../../../../figures/from-others/opdam-et-al-2017-cell-systems-cover-fig.jpg}
+
+{\tiny Opdam et al 2017 Cell Systems}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+Sample-specific GEMs, MSSM cohort
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/heatmap-m-control-m-AD.png}
+
+{\tiny B\"{u}\c{s}ra, Attila,..., unpublished}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Subtypes and cohorts}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+Sample-specific GEMs from transcriptomic AD subtypes
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/heatmap-m-control-m-AD-subtypes.png}
+
+{\tiny B\"{u}\c{s}ra, Attila,..., unpublished}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Subtype-subtype distances
+%\begin{equation*}
+%  d(A,B) = m^{-1} \sum_{i=1}^m \bigg | \log_2
+%  \frac{\mathrm{odds}_i(A)}{\mathrm{odds}_i(B)} \bigg |
+%\end{equation*}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/distance-matrix-subtypes-cohorts.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Previous analyses I.: single reactions}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+Contingency table for each $(r,c)$
+  \begin{description}
+    \item[$r$] reaction
+    \item[$c$] comparison (e.g m-AD vs m-control)
+  \end{description}
+
+\begin{center}
+\begin{tabular}{c|cc|}
+& AD & ctr \\
+\hline
+active & $a$ & $b$ \\
+inactive & $c$ & $d$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+  \item Fisher exact test $H_0$: no flux change
+  \item effect size
+$
+  \mathrm{OR} = \frac{a/c}{b/d}
+$
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/volcano-m-AD_m-AD-B2.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Previous analyses II.: aggregation to subsystems}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+\begin{center}
+  Subsystems in GEM
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/n-reactions-ecdf.pdf}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{center}
+  Aggregated results.\\
+  \scriptsize Statistical significance?
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{../../../collaborations/AD-subgrouping-tunahan/busra_manuscript_rev1/busra-fig2.pdf}
+\end{column}
+\begin{column}{0.3\textwidth}
+\begin{center}
+  Bias
+\end{center}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/altered-vs-all-reactions-in-subsystems-m-AD-B2.pdf}
+%  \setbeamerfont{itemize/enumerate subbody}{size=\scriptsize}
+%  \begin{itemize}
+%    \footnotesize
+%    \item Underlying statistical procedures
+%    \begin{enumerate}
+%      \item count reactions with $H_0$ rejected at $\alpha = 0.05$
+%      \item use counts to compare subtypes and subsystems
+%    \end{enumerate}
+%  \item Shortcomings
+%    \begin{itemize}
+%      \item effect size?
+%      \item significance?
+%      \item bias: size of subsystems
+%    \end{itemize}
+%  \end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
