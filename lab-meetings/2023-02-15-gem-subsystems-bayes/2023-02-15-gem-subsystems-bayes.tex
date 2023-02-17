@@ -91,10 +91,10 @@ Sample-specific GEMs from transcriptomic AD subtypes
 \begin{frame}{Previous analyses I.: single reactions}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
-Contingency table for each $(r,c)$
+Contingency table for each $(r,k)$
   \begin{description}
     \item[$r$] reaction
-    \item[$c$] comparison (e.g m-AD vs m-control)
+    \item[$k$] comparison (e.g m-AD vs m-control)
   \end{description}
 
 \begin{center}
@@ -107,13 +107,13 @@ inactive & $c$ & $d$ \\
 \end{tabular}
 \end{center}
 
-\begin{itemize}
+\begin{enumerate}
   \item Fisher exact test $H_0$: no flux change
   \item effect size
 $
   \mathrm{OR} = \frac{a/c}{b/d}
 $
-\end{itemize}
+\end{enumerate}
 \end{column}
 
 \begin{column}{0.5\textwidth}
@@ -166,13 +166,24 @@ $
 \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Directly modeling reaction state $Y$ for an entire subsystem}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
+  Three components of variation
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/Carnitine-shuttle-endoplasmic-reticular.png}
 \end{column}
 
 \begin{column}{0.5\textwidth}
-
+  Logistic regression with mixed effects
+\begin{eqnarray*}
+Y &\sim& \mathrm{Bin}(n=2, \pi) \\
+\pi &=& \mathrm{logit}^{-1} (\underbrace{\alpha + \overbrace{x
+    \alert{\beta}}^\text{Dx}}_\text{fixed effects} + \underbrace{\overbrace{z_1
+b_1}^\text{samples} + \overbrace{z_2 b_2}^\text{reactions}}_\text{random
+effects}) \\
+    \beta &=& \log \frac{\pi_{x=1} / (1 - \pi_{x=1})}{\pi_{x=0} / (1 - \pi_{x=0})} = \log \mathrm{OR}
+\end{eqnarray*}
 \end{column}
 \end{columns}
 \end{frame}
