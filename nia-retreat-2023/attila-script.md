@@ -2,4 +2,4 @@ Drug repurposing (also called drug repositioning, reprofiling or re-tasking) is 
 
 We selected three drugs with high proximity score that have been found to exert neuroprotective actions by previous studies.  Our network analysis revealed that the three drugs are connected to long-established AD risk genes like APP, tau, APOE, PSEN1-2, through mediator genes that were implicated in AD by recent genomic studies.  Next slide please.
 
-We next performed experimental validation of the three selected drugs.  We found that two of the drugs had neuroprotective properties in cell based assays for amyloid-beta clearance and secretion.  In future research we are planning to subject these drugs to further experimental validation.
+We next performed experimental validation of the three selected drugs.  We found that two of the drugs had favorable properties in cell based assays for amyloid-beta clearance and secretion.  In future research we are planning to subject these drugs to further experimental validation.

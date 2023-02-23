@@ -59,36 +59,14 @@
 \begin{column}{0.5\textwidth}
 Sample-specific GEMs, MSSM cohort
 
-\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/heatmap-m-control-m-AD.png}
-
-{\tiny B\"{u}\c{s}ra, Attila,..., unpublished}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Subtypes and cohorts}
-\begin{columns}[t]
-\begin{column}{0.5\textwidth}
-Sample-specific GEMs from transcriptomic AD subtypes
-
 \includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/heatmap-m-control-m-AD-subtypes.png}
 
 {\tiny B\"{u}\c{s}ra, Attila,..., unpublished}
 \end{column}
-
-\begin{column}{0.5\textwidth}
-  Subtype-subtype distances
-%\begin{equation*}
-%  d(A,B) = m^{-1} \sum_{i=1}^m \bigg | \log_2
-%  \frac{\mathrm{odds}_i(A)}{\mathrm{odds}_i(B)} \bigg |
-%\end{equation*}
-
-\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/distance-matrix-subtypes-cohorts.pdf}
-\end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Previous analyses I.: single reactions}
+\begin{frame}{Previous statistics I.: effect of AD on single reactions}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 Contingency table for each $(r,k)$
@@ -118,12 +96,15 @@ $
 
 \begin{column}{0.5\textwidth}
 
-\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/volcano-m-AD_m-AD-B2.pdf}
+\includegraphics<1>[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/distance-matrix-subtypes-cohorts.pdf}
+
+\includegraphics<2>[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/volcano-m-AD_m-AD-B2.pdf}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Previous analyses II.: aggregation to subsystems}
+\begin{frame}{Previous statistics II.: \# signif.~affected reactions per subsystem}
+  {Limitations: sub-optimal aggregation, unknown significance, strong bias}
 \begin{columns}[t]
 \begin{column}{0.3\textwidth}
 \begin{center}
@@ -135,33 +116,17 @@ $
 
 \begin{column}{0.4\textwidth}
 \begin{center}
-  Aggregated results.\\
-  \scriptsize Statistical significance?
+  \# signif.~affected reactions
 \end{center}
 
 \includegraphics[width=1.0\columnwidth]{../../../collaborations/AD-subgrouping-tunahan/busra_manuscript_rev1/busra-fig2.pdf}
 \end{column}
 \begin{column}{0.3\textwidth}
 \begin{center}
-  Bias
+  Strong bias
 \end{center}
 
 \includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/altered-vs-all-reactions-in-subsystems-m-AD-B2.pdf}
-%  \setbeamerfont{itemize/enumerate subbody}{size=\scriptsize}
-%  \begin{itemize}
-%    \footnotesize
-%    \item Underlying statistical procedures
-%    \begin{enumerate}
-%      \item count reactions with $H_0$ rejected at $\alpha = 0.05$
-%      \item use counts to compare subtypes and subsystems
-%    \end{enumerate}
-%  \item Shortcomings
-%    \begin{itemize}
-%      \item effect size?
-%      \item significance?
-%      \item bias: size of subsystems
-%    \end{itemize}
-%  \end{itemize}
 \end{column}
 \end{columns}
 \end{frame}
@@ -184,9 +149,76 @@ b_1}^\text{samples} + \overbrace{z_2 b_2}^\text{reactions}}_\text{random
 effects}) \\
     \beta &=& \log \frac{\pi_{x=1} / (1 - \pi_{x=1})}{\pi_{x=0} / (1 - \pi_{x=0})} = \log \mathrm{OR}
 \end{eqnarray*}
+
+\alert{limitation: directionality}
 \end{column}
 \end{columns}
 \end{frame}
+
+\begin{frame}{Posterior estimate $\beta$ of the $\log$ odds-ratio}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+  Credible intervals (CI)
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/CI-prior-posterior_Carnitine-shuttle-mitochondrial.pdf}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+  The most affected subsystems in m-AD-B2
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/posterior-OR-top-bottom-subsystems.pdf}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Bayesian hypothesis testing}
+  {Bayes factor: the evidence for $H_1$ w.r.t $H_0$, \; \(\mathrm{BF} =
+  \frac{\text{marginal likelihood under } H_1}{\text{marginal likelihood under } H_0} \)}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/Bayes-factor-posterior_Carnitine-shuttle-mitochondrial.pdf}
+
+\includegraphics<2>[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/Carnitine-shuttle-mitochondrial-Fatty-acid-oxidation.png}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/marginal-likelihood-M0-vs-M1.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Affected subsystems in the B2 AD subtype (MSSM)}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-02-10-gem-subsystems/named-figure/volcano-plot_m-AD-B2.pdf}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+{\tiny
+  \input{../../../results/2023-02-10-gem-subsystems/summary.tex}
+}
+
+\includegraphics[width=1.0\columnwidth]{../../../../figures/from-others/carnitine-neuroprotection-neurochem-research-Fig2.png}
+
+{\tiny Ferreira \& McKenna, Neurochem Res 2017}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TODOs}
+\begin{itemize}
+  \item BF bias? VB algorithm
+  \item aggregation of subtypes
+  \item subtype specificity
+\end{itemize}
+\end{frame}
+
 
 \end{document}
 
