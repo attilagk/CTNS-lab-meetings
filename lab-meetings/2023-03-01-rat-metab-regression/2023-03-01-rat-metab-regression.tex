@@ -1,0 +1,74 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Age-dependent metabolic associations to cognitive performance in rats}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\begin{frame}{Revised heatmap: clustered reactions} 
+\includegraphics[scale=0.55]{../../../notebooks/2023-02-06-AD-subtypes-active-reactions/named-figure/rxn-clustermap-m-control-m-AD-subtypes.png}
+\end{frame}
+
+
+\titlepage
+
+
+\begin{frame}{Conditional effect of LIscore on metabolites given age group} 
+\includegraphics[scale=0.5]{../../../notebooks/2022-12-13-rat-metabolites/named-figure/volcano-M4-LIscore-young-aged.pdf}
+\end{frame}
+
+
+\begin{frame}{How ageing modifies the effect of LIscore on metabolites} 
+\includegraphics[scale=0.5]{../../../notebooks/2022-12-13-rat-metabolites/named-figure/volcano-M5-age-LIscore-interaction.pdf}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
