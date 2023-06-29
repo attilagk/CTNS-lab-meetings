@@ -1,0 +1,141 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Screening preclinical compounds}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}[label=chembl-stats]{Preclinical compounds; investigational
+  \& approved drugs}
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{../../../../figures/from-others/chembl-v33-stats.png}
+
+  {\tiny ChEMBL v33}
+\end{center}
+\end{frame}
+
+\begin{frame}{Network pharmacology based screen of approved drugs}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+  drug-target interaction (DTI) network,...
+  
+
+  \includegraphics[scale=1.0]{../../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network-scores.pdf}
+\end{column}
+
+\begin{column}{0.6\columnwidth}
+  3 top scoring drugs + network
+
+\includegraphics[width=1.0\columnwidth]{../../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
+\end{column}
+\end{columns}
+
+  {\tiny Jones et al in preparation}
+\end{frame}
+
+\begin{frame}{Drug-target interaction networks}
+\begin{columns}[t]
+\begin{column}{0.6\columnwidth}
+
+  \includegraphics<1>[width=\columnwidth]{../../../../figures/from-others/tanoli-2020-fig2a.jpeg}
+  \includegraphics<2>[width=\columnwidth]{../../../../figures/from-others/yildirim-2007-fig2.png}
+
+  %{\tiny Tanoli et al 2020}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+  \item (overlapping) databases: PubChem, ChEMBL, DrugBank, DGI, DTC,...
+  \item DTI (edge) properties: heterogenous, quali/quantitative (pChEMBL, DGI
+    scores)
+  \item DTI (edge) distro: drug classes, non-uniform missingness
+\end{itemize}
+
+{\Large  \alert{problem \#1: sparseness}}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../../figures/from-others/chembl-v33-stats.png}
+
+{\tiny ChEMBL v33}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \Large
+
+  Main problems with preclinical compounds
+
+\begin{enumerate}
+  \item sparseness of DTI $\Rightarrow$ use predicted targets in ChEMBL
+  \item computational feasibility
+\end{enumerate}
+
+%\includegraphics[width=1.0\columnwidth]{../../../../figures/from-others/goel-2022-fig1.png}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Brute force vs subsampling (docking as an example task)}
+\includegraphics[height=0.8\textheight]{../../../../figures/from-others/goel-2022-fig4.png}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
