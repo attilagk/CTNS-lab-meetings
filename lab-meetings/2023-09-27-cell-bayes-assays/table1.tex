@@ -1,0 +1,36 @@
+\documentclass[tikz]{standalone}
+
+\begin{document}
+
+\begin{tabular}{llrrr}
+ &  & TI21 & TI22 & TI26 \\
+\multirow[c]{10}{*}{LPS} & IFN-γ & \background-color#100000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#ffffff \color#000000 1.00 \\
+ & IL-10 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#350000 \color#f1f1f1 0.06 & \background-color#5f0000 \color#f1f1f1 0.13 \\
+ & IL-12p70 & \background-color#100000 \color#f1f1f1 0.01 & \background-color#250000 \color#f1f1f1 0.04 & \background-color#fff400 \color#000000 0.73 \\
+ & IL-1β & \background-color#3c0000 \color#f1f1f1 0.07 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & IL-2 & \background-color#0d0000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#180000 \color#f1f1f1 0.02 \\
+ & IL-4 & \background-color#ffffff \color#000000 1.00 & \background-color#000000 \color#f1f1f1 nan & \background-color#ffffff \color#000000 1.00 \\
+ & IL-5 & \background-color#250000 \color#f1f1f1 0.04 & \background-color#100000 \color#f1f1f1 0.01 & \background-color#ffff5e \color#000000 0.84 \\
+ & IL-6 & \background-color#0d0000 \color#f1f1f1 0.01 & \background-color#250000 \color#f1f1f1 0.04 & \background-color#350000 \color#f1f1f1 0.06 \\
+ & KC/GRO & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#ff0000 \color#f1f1f1 0.37 \\
+ & TNF-α & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#150000 \color#f1f1f1 0.02 & \background-color#440000 \color#f1f1f1 0.09 \\
+Abeta Toxicity & Viability [% VC] & \background-color#810000 \color#f1f1f1 0.18 & \background-color#740000 \color#f1f1f1 0.16 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+\multirow[c]{3}{*}{Abeta release} & Aβ38 & \background-color#fff100 \color#000000 0.73 & \background-color#590000 \color#f1f1f1 0.12 & \background-color#370000 \color#f1f1f1 0.07 \\
+ & Aβ40 & \background-color#ffffa4 \color#000000 0.91 & \background-color#a50000 \color#f1f1f1 0.23 & \background-color#370000 \color#f1f1f1 0.07 \\
+ & Aβ42 & \background-color#ffff36 \color#000000 0.80 & \background-color#860000 \color#f1f1f1 0.18 & \background-color#3c0000 \color#f1f1f1 0.07 \\
+\multirow[c]{2}{*}{Abeta clearance} & Aβ42 SN & \background-color#4c0000 \color#f1f1f1 0.10 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#ff0500 \color#f1f1f1 0.37 \\
+ & Aβ42 Ly & \background-color#fffffb \color#000000 0.99 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#ffff89 \color#000000 0.88 \\
+\multirow[c]{4}{*}{GF withdrawal} & PI & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#2d0000 \color#f1f1f1 0.05 \\
+ & YOPRO & \background-color#100000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & MTT & \background-color#120000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & LDH & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+\multirow[c]{3}{*}{Tau phosphorylation} & Tau [pg/µg prot] & \background-color#2d0000 \color#f1f1f1 0.05 & \background-color#ff2500 \color#f1f1f1 0.42 & \background-color#c20000 \color#f1f1f1 0.27 \\
+ & pTau (T231) & \background-color#1d0000 \color#f1f1f1 0.03 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#200000 \color#f1f1f1 0.03 \\
+ & ratio & \background-color#120000 \color#f1f1f1 0.01 & \background-color#100000 \color#f1f1f1 0.01 & \background-color#3a0000 \color#f1f1f1 0.07 \\
+\multirow[c]{4}{*}{NOG} & total neurite length & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & Number of branch points & \background-color#0b0000 \color#f1f1f1 0.00 & \background-color#0d0000 \color#f1f1f1 0.00 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & Neurogenesis & \background-color#610000 \color#f1f1f1 0.13 & \background-color#120000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+ & average neurite length & \background-color#100000 \color#f1f1f1 0.01 & \background-color#100000 \color#f1f1f1 0.01 & \background-color#0b0000 \color#f1f1f1 0.00 \\
+\end{tabular}
+\end{document}
+

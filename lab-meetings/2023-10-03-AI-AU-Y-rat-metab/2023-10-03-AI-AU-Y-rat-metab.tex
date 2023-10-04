@@ -1,0 +1,180 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+%\usetheme{default}
+\usetheme{Boadilla}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Cognitive resilience and metabolomics in a rat model}
+\subtitle{}
+\author{Sadhana Suri, Vijay Varma, Attila Jones}
+\date{Oct 4, 2023}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Data overview}
+\begin{columns}[c]
+\begin{column}{0.4\textwidth}
+
+\begin{center}
+\includegraphics[scale=0.4]{../../../notebooks/2023-03-03-Y-AU-AI-boxplots/named-figure/LIscore-stripplot.pdf}
+\end{center}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+\includegraphics[scale=0.35]{../../../notebooks/2022-12-12-rat-metabolites/named-figure/heatmap-blood.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Metab.~levels change more with aging than with cognitive
+  impairment (CI)}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+
+\includegraphics<2>[scale=0.35]{../../../notebooks/2022-11-09-rat-metabolites/named-figure/volcano-plots-oxybile-3.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1->[scale=0.35]{../../../notebooks/2022-12-12-rat-metabolites/named-figure/2way-clustermap-blood.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{\tikz[every node/.style={scale=0.5}]{\path (0,0) node (Y) {Y} (2,1) node (AU) {AU} (2,0.4) node (AI) {AI};
+  \draw[dashed,->](Y) -- (AU);
+  \draw[dashed,->](Y) -- (AI);
+  \draw[->](-0.3, -0.3) -- node[above,rotate=90]{metab.~level} (-0.3, 1);
+  \draw[->](-0.3, -0.3) -- node[below,rotate=0]{aging} (2.5, -0.3);
+  }}
+%\begin{frame}{\tikz{\path[draw,->](0,0) node[fill=white,shape=rectangle]{Y} --(2,1) node[fill=white,shape=rectangle]{AU};
+%\path[draw,->](0,0) node[fill=white,shape=rectangle]{Y} --(2,0.4) node[fill=white,shape=rectangle]{AI};}}
+\begin{columns}[c]
+\begin{column}{0.55\textwidth}
+
+\includegraphics[scale=0.35]{../../../notebooks/2022-11-09-rat-metabolites/named-figure/volcano-plots-oxybile-3.pdf}
+\end{column}
+\begin{column}{0.45\textwidth}
+
+\begin{center}
+\includegraphics[scale=0.35]{../../../notebooks/2023-03-03-Y-AU-AI-boxplots/named-figure/violinplot-rank2.pdf}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{The most significantly changed metabolites with CI in aged rats}
+\begin{columns}[b]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2022-11-09-rat-metabolites/named-figure/volcano-plots-aged-oxybile.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{figure/top12.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Modeling metabolite level $M$ for entire metabolite classes}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  
+\includegraphics[scale=0.4]{../../../notebooks/2022-11-09-rat-metabolites/named-figure/effect_size-violinplot-blood-AU_vs_Y.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+  Mixed model
+\end{center}
+
+\begin{tabular}{c|c|c}
+  variation of $M$ & explained by & effects \\
+  \hline
+  between-class & age, CI, age$\times$CI & fixed \\
+  within-class & metab.~species$\times$CI & random \\
+\end{tabular}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Insights from mixed models}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figure/mixed-model-results.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Summary}
+  \begin{itemize}
+    \item<1-> metabolic profiling of young (Y) and aged rats w/o CI (AI, AU)
+      \begin{itemize}
+        \item focus: free oxysterols (FO), bile acids (BA)
+      \end{itemize}
+    \item<2-> Most metabolite's level $M$ changes more with aging than with
+      CI\\
+\tikz[every node/.style={scale=0.5}]{\path (0,0) node (Y) {YI,YU} (2,1) node (AU) {AU} (2,0.4) node (AI) {AI};
+  \draw[dashed,->](Y) -- (AU);
+  \draw[dashed,->](Y) -- (AI);
+  \draw[->](-0.3, -0.3) -- node[above,rotate=90]{metab.~level} (-0.3, 1);
+  \draw[->](-0.3, -0.3) -- node[below,rotate=0]{aging} (2.5, -0.3);
+  }
+      \begin{enumerate}
+        \item $M$ increases with age
+        \item $M$ does not change with CI in young rats
+        \item $M$ decreases with CI in aged rats
+      \begin{itemize}
+        \item Free oxysterols (FO) $>$ Bile acids (BA)
+        \item Enzymatic FO $>$ Non-enzymatic FO
+      \end{itemize}
+      \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

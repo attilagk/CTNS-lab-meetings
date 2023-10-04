@@ -1,0 +1,162 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Bayesian analysis of cell based assays}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Motivation}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2022-09-21-cell-based-assays/named-figure/heatmap-agg-assay.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \begin{itemize}
+    \item effect size?
+  \begin{itemize}
+    \item assumption:\\neuroprotectivity $\propto -\log p$-value
+  \end{itemize}
+    \item dose-dependence?
+  \begin{itemize}
+    \item Dunnett's test: $c_1 \overset{H_0^{(c_1)}}{\leftrightarrow} \mathrm{ctr} \overset{H_0^{(c_2)}}{\leftrightarrow} c_2$
+  \end{itemize}
+    \item aggregation?
+  \end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{TI1: Amiloride, TI21: Chenodiol/TUDCA, TI26: Arundine}{TNF$\alpha$ assay, iPSC-derived microglia }
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+\small
+\begin{tabular}{rcc}
+  Test & Comparison & $p\text{-val}|H_0$  \\
+  \hline
+  Tina et al & & \\
+  \hline
+  ANOVA & multiple & 0.14 \\
+  Bartlett's & multiple & $<10^{-4}$ \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_1$ & 0.39 \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_2$ & 0.92 \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_3$ & 0.93 \\
+  \hline
+  \end{tabular}
+  %$P(H_1|\mathrm{data})$
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+\includegraphics<1>[width=0.8\columnwidth]{figures/TI26_TNF.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/P_H1-barchart.pdf}
+%\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/data-TI26-TNF.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian inference: }{Example: Chenodiol/TUDCA/TI21, A$\beta$
+  release assay in H4 neuroglioma cells}
+\begin{columns}[b]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-4.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian inference: }{Example: Chenodiol/TUDCA/TI21, A$\beta$
+  release assay in H4 neuroglioma cells}
+\begin{columns}[b]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H1-prob-posterior-vs-prior}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[height=1.0\textheight]{../../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\begin{center}
+  \only<1>{A\beta clearance, BV2}
+  \only<2>{A\beta secretion, H4}
+  \only<3>{LPS neuroinflam., BV2}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_Aβ42-SN.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_Aβ40.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_TNF-α.pdf}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
