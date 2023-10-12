@@ -46,108 +46,148 @@
 
 \titlepage
 
-\begin{frame}{Motivation}
+\begin{frame}<1>[label=summary]{\alt<1>{Introduction}{Summary}}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
 
-\includegraphics[width=1.0\columnwidth]{../../../notebooks/2022-09-21-cell-based-assays/named-figure/heatmap-agg-assay.pdf}
+\begin{tabular}{c|c}
+\hline
+Old approach & New approach \\
+\hline
+frequentist & Bayesian \\
+2-sample test & regression \\
+\hline
+\end{tabular}
+
+\vspace{2em}
+
+\begin{itemize}
+\item<1-> Expectations (New approach)
+\begin{itemize}
+  \item more powerful
+  \item more robust (batch effects, false discoveries)
+  \item easy aggregation over assays
+  \item $P(H_1)$: direct interpretation
+  \item hard to implement
+\end{itemize}
+\item<2> Findings (New approach)
+\begin{itemize}
+  \item some agreements with Old approach
+  \item fitted curves validate New approach
+\end{itemize}
+\end{itemize}
 \end{column}
 
 \begin{column}{0.5\textwidth}
-  \begin{itemize}
-    \item effect size?
-  \begin{itemize}
-    \item assumption:\\neuroprotectivity $\propto -\log p$-value
-  \end{itemize}
-    \item dose-dependence?
-  \begin{itemize}
-    \item Dunnett's test: $c_1 \overset{H_0^{(c_1)}}{\leftrightarrow} \mathrm{ctr} \overset{H_0^{(c_2)}}{\leftrightarrow} c_2$
-  \end{itemize}
-    \item aggregation?
-  \end{itemize}
+
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
+
+\vspace{2em}
+
+\begin{itemize}
+%\item<2> Chenodiol, Arundine: some strong protective effects
+%\begin{itemize}
+%  \item A$\beta$ clearance
+%  \item A$\beta$ release
+%  \item LPS neuroinflammation
+%\end{itemize}
+%\item<2> however, adverse effects weaken the protective ones
+%\begin{itemize}
+%  \item A$\beta$ clearance
+%  \item A$\beta$ release
+%  \item LPS neuroinflammation
+%\end{itemize}
+\item<2> next up: comprehensive analysis of 25+ compounds
+\end{itemize}
+
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{TI1: Amiloride, TI21: Chenodiol/TUDCA, TI26: Arundine}{TNF$\alpha$ assay, iPSC-derived microglia }
+\begin{frame}{Bayesian regression}{Fold change $\mathrm{FC}_y$, hypotheses,
+  prior \& posterior probabilities}
 \begin{columns}[t]
-\begin{column}{0.4\textwidth}
-
-\small
-\begin{tabular}{rcc}
-  Test & Comparison & $p\text{-val}|H_0$  \\
-  \hline
-  Tina et al & & \\
-  \hline
-  ANOVA & multiple & 0.14 \\
-  Bartlett's & multiple & $<10^{-4}$ \\
-  Dunnett's & $\mathrm{LC} \leftrightarrow c_1$ & 0.39 \\
-  Dunnett's & $\mathrm{LC} \leftrightarrow c_2$ & 0.92 \\
-  Dunnett's & $\mathrm{LC} \leftrightarrow c_3$ & 0.93 \\
-  \hline
-  \end{tabular}
-  %$P(H_1|\mathrm{data})$
-\end{column}
-
-\begin{column}{0.6\textwidth}
-
-\includegraphics<1>[width=0.8\columnwidth]{figures/TI26_TNF.pdf}
-\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/P_H1-barchart.pdf}
-%\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/data-TI26-TNF.pdf}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Bayesian inference: }{Example: Chenodiol/TUDCA/TI21, A$\beta$
-  release assay in H4 neuroglioma cells}
-\begin{columns}[b]
 \begin{column}{0.5\textwidth}
 
 \includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
 \end{column}
 \begin{column}{0.5\textwidth}
 
-\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-4.pdf}
+%\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-violin-vertical.pdf}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Bayesian inference: }{Example: Chenodiol/TUDCA/TI21, A$\beta$
-  release assay in H4 neuroglioma cells}
-\begin{columns}[b]
-\begin{column}{0.5\textwidth}
-
-\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
-\end{column}
-\begin{column}{0.5\textwidth}
-
-\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
-\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H1-prob-posterior-vs-prior}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}[plain]
-\begin{columns}[t]
-\begin{column}{0.5\textwidth}
-
-\includegraphics[height=1.0\textheight]{../../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays.pdf}
-\end{column}
-
-\begin{column}{0.5\textwidth}
-
+\begin{frame}{Posterior probability densities of fold change $\mathrm{FC}_y$}
 \begin{center}
-  \only<1>{A\beta clearance, BV2}
-  \only<2>{A\beta secretion, H4}
-  \only<3>{LPS neuroinflam., BV2}
-
-\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_Aβ42-SN.pdf}
-\includegraphics<2>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_Aβ40.pdf}
-\includegraphics<3>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/data_plot_TNF-α.pdf}
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/violin-posterior-pdf-legend.pdf}
 \end{center}
+\end{frame}
+
+\begin{frame}{Posterior probability of a protective, a neutral, and an adverse effect}% $\{H_i\}$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
 \end{column}
 \end{columns}
 \end{frame}
+
+\begin{frame}{Aggregating results accross assays and experiments}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian vs.~Frequentist test of drug effect}
+\begin{center}
+\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter.pdf}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Bayesian vs.~Frequentist test of $H_1$: protective effect}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color-H1.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H1-Dunnett-true.png}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H1-Bayes-true.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian vs.~Frequentist test of $H_2$: adverse effect}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color-H2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H2-Dunnett-true.png}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H2-Bayes-true.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\againframe{summary}
 
 
 \end{document}
