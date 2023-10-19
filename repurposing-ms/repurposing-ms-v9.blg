@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: repurposing-ms-v9.aux
+The style file: plainnat.bst
+Database file #1: repurposing-ms.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+You've used 49 entries,
+            2773 wiz_defined-function locations,
+            1049 strings with 60855 characters,
+and the built_in function-call counts, 123949 in all, are:
+= -- 8347
+> -- 19174
+< -- 7
++ -- 6394
+- -- 6345
+* -- 14232
+:= -- 21754
+add.period$ -- 259
+call.type$ -- 49
+change.case$ -- 2262
+chr.to.int$ -- 49
+cite$ -- 98
+duplicate$ -- 1011
+empty$ -- 1939
+format.name$ -- 6400
+if$ -- 23000
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 48
+newline$ -- 365
+num.names$ -- 196
+pop$ -- 4323
+preamble$ -- 1
+purify$ -- 2213
+quote$ -- 0
+skip$ -- 2689
+stack$ -- 0
+substring$ -- 1101
+swap$ -- 77
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 539
+warning$ -- 0
+while$ -- 208
+width$ -- 0
+write$ -- 867
