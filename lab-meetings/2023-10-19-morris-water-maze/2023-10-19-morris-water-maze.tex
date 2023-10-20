@@ -1,0 +1,192 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Analyzing Morris Water Maze Experiments}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\section{Our data}
+
+\begin{frame}{Introduction}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item WT and 5xFAD mice $\pm$ drug $X$
+  \item Morris water maze 
+  \begin{itemize}
+    \item day 1-4 training probes (5): learning
+    \item day 5 test probes (2): memory
+    \item WT--5xFAD difference is variable
+    \item the best statistical approaches?
+  \end{itemize}
+  \item Y maze
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/MorrisWaterMaze.svg.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Training trials}
+\begin{center}
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Latency-s.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Distance-m.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Floating.pdf}
+\includegraphics<4>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Thigmotaxis.pdf}
+\includegraphics<5>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Velocity-m-s.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Probe trial}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/target-quadrant-barplot.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\begin{itemize}
+  \item alternative outcome $y$: target Q crossings
+  \item alternative experiment: Y-maze
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Similar studies}
+
+\begin{frame}{5xFAD learning and memory are age- and sex-dependent}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/mwm-5xFAD-Fig6A-F.png}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/mwm-5xFAD-Fig6G-J.png}
+\end{column}
+\end{columns}
+\begin{center}
+\tiny \url{https://doi.org/10.1111/gbb.12794}
+\end{center}
+\end{frame}
+
+\begin{frame}{Sensitivity analysis}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+%\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\includegraphics[width=1.0\columnwidth]{../../../../figures/from-others/mwm-measure-sensitivity-Fig5A.png}
+\end{column}
+\begin{column}{0.6\textwidth}
+
+%\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
+\includegraphics[width=1.0\columnwidth]{../../../../figures/from-others/mwm-measure-sensitivity-Fig5B.png}
+\end{column}
+\end{columns}
+\begin{center}
+\tiny \url{https://doi.org/10.3389/neuro.07.004.2009}
+\end{center}
+\end{frame}
+
+\section{Preliminary analysis}
+
+\begin{frame}{A better way of modeling fraction in quadrants}
+\begin{center}
+\includegraphics<1>[height=0.7\textheight]{../../../../figures/from-others/mwm-dirichlet-Fig1.png}
+\only<2>{
+\begin{eqnarray}
+  \Lambda &=& 2 \times \left( \sup_{\alpha \in H_1} \log f(y | \alpha) -
+    \sup_{\alpha' \in H_0} \log f(y | \alpha') \right) \\
+    \alpha &=& g(x) \\ 
+    g &=& \mathrm{?}
+\end{eqnarray}
+}
+\includegraphics<3>[height=0.7\textheight]{../../../../figures/from-others/mwm-dirichlet-Fig5.png}
+
+Limitation: the method ``cannot compare memory abilities between several
+groups of animals''
+
+\tiny \url{https://doi.org/10.12688/f1000research.20072.2}
+\end{center}
+
+\end{frame}
+\begin{frame}{Application to our data}
+\begin{columns}[t]
+\begin{column}{0.33\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/dirichlet-plot-group-A.png}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/dirichlet-plot-group-B.png}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/dirichlet-plot-group-C.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\againframe{summary}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

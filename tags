@@ -116,6 +116,8 @@ Network proximity calculations	repurposing-ms/repurposing-ms-v7.tex	/^\\subsecti
 Network proximity calculations	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms.tex	/^\\subsection{Network proximity calculations}$/;"	b
+Our data	lab-meetings/2023-10-19-morris-water-maze/2023-10-19-morris-water-maze.tex	/^\\section{Our data}$/;"	s
+Preliminary analysis	lab-meetings/2023-10-19-morris-water-maze/2023-10-19-morris-water-maze.tex	/^\\section{Preliminary analysis}$/;"	s
 Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
 Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
 Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v2.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
@@ -141,6 +143,7 @@ Sci Transl Med 2017	lab-meetings/2021-05-13-covid19-repurposing/2021-05-13-covid
 Selected top drugs	repurposing-ms/repurposing-ms-v2.tex	/^\\subsection{Selected top drugs}$/;"	b
 Selected top ranking drugs	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Selected top ranking drugs}$/;"	b
 Selected top ranking drugs	repurposing-ms/repurposing-ms-v4.tex	/^\\subsection{Selected top ranking drugs}$/;"	b
+Similar studies	lab-meetings/2023-10-19-morris-water-maze/2023-10-19-morris-water-maze.tex	/^\\section{Similar studies}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-supp.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v1.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v2.tex	/^\\section*{Supplementary Material}$/;"	s
