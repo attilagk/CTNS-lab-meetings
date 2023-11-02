@@ -1,0 +1,142 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Training in Morris' Water Maze: Inferring Treatment Effects}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Introduction}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item WT and 5xFAD mice $\pm$ drug $X$
+  \item Morris water maze 
+  \begin{itemize}
+    \item day 1-4 training probes: \alerg{escape latency} appears as a sensitive outcome
+    \item day 5 test probes: avg.~distance to platform
+  \end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/MorrisWaterMaze.svg.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Escape latency reports learning performance during training}
+\begin{center}
+\includegraphics[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/training-Latency-s.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Considerations}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+\begin{itemize}
+  \item<1> latency $\sim$ training day: non-linear relationship
+  \item<1> variability across individual mice, cohorts
+  \item<2> censored data
+  \item<3> sex, swimming velocity
+  \item<3> distance, floating, thigmotaxis
+\end{itemize}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/fraction-of-censored-latencies.pdf}
+\includegraphics<3>[scale=0.4]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/data-train-corr-plot-matrix.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+%\begin{frame}
+%\begin{center}
+%\includegraphics[width=0.9\textwidth]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/M_2FE_Rintcp_IRN}
+%\end{center}
+%\end{frame}
+
+\begin{frame}{Goodness of fit for various models}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item<1> censored error distribution
+  \item<2> family of error distribution
+  \item<3> covariates
+  \item<4> random effect terms
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-all.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-errordist.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-covariates.pdf}
+\includegraphics<4>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-randomfx.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\includegraphics[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/mcmc-trace-M_2FE_Rday_IRN.pdf}
+\end{frame}
+
+
+\begin{frame}
+\includegraphics[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-94pct_CI.pdf}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
