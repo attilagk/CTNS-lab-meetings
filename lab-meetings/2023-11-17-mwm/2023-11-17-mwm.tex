@@ -1,0 +1,156 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Training in Morris' Water Maze: Inferring Treatment Effects}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Introduction}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item WT and 5xFAD mice $\pm$ drug $X$
+  \item Morris water maze 
+  \begin{itemize}
+    \item day 1-4 training probes: \alerg{escape latency} appears as a sensitive outcome
+    \item day 5 test probes: avg.~distance to platform
+  \end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/MorrisWaterMaze.svg.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Escape latency reports learning performance during training}
+\begin{center}
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-Amiloride-10.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-Amiloride-12.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-HCQ.pdf}
+\includegraphics<4>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-HCQ-nano.pdf}
+\includegraphics<5>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-S-HCQ.pdf}
+\includegraphics<6>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-R-HCQ.pdf}
+\includegraphics<7>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-TUDCA.pdf}
+\includegraphics<8>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/latency-TUDCA-WT.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Statistical modeling}
+\begin{columns}[t]
+\begin{column}{0.4\textwidth}
+
+\begin{itemize}
+  \small
+  \item latency $\sim$ training day: non-linear relationship
+  \item variability across individual mice, cohorts
+  \item censored data
+  \item sex, swimming velocity
+  \item distance, floating, thigmotaxis
+  \item<2> M\_2FE\_Rintcp\textbar IRN
+\begin{eqnarray*}
+  \log(\mu) &=& \beta_0 + \overbrace{\beta_1 x_1}^\text{drug, gt} +
+  \overbrace{\beta_2 x_2}^\text{day} + \overbrace{\gamma z}^\text{IRN} \\
+  \mu &=& \lambda \Gamma(1 + 1/k) \\
+  Y &\sim& \text{Weibull}(k, \lambda)
+\end{eqnarray*}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.6\textwidth}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/fraction-of-censored-latencies-CO28152.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-all.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Posterior distribution of drug/genotype effect parameter $\beta_1$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  Marginal posterior distribution
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-07-5xfad-maze-latency/named-figure/condition-posteriors-study1.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Joint posterior distribution
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-07-5xfad-maze-latency/named-figure/drug-genotype-effect-amiloride.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Main results \& conclusions}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-07-5xfad-maze-latency/named-figure/posterior-mean-genotype-and-drug-effects.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item WT performs clearly better than 5xFAD
+  \item No drug improves 5xFAD's performance
+  \begin{itemize}
+    \item no improvement of WT's performance (by TUDCA)
+  \end{itemize}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
