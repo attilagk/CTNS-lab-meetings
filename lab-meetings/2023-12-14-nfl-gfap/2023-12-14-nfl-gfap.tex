@@ -1,0 +1,156 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{NF-L and GFAP levels in drug treated 5xFAD mice}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Introduction}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+Treatments
+
+\begin{enumerate}
+  \item 5xFAD
+  \begin{enumerate}
+    \item Saline
+    \item Amiloride
+    \item HCQ
+    \item HCQ nano
+    \item R-HCQ
+    \item S-HCQ
+    \item TUDCA
+  \end{enumerate}
+  \item WT
+  \begin{enumerate}
+    \item Saline
+    \item TUDCA
+    \item DMSO
+  \end{enumerate}
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+Experiments
+
+\begin{itemize}
+  \item NF-L \emph{in vivo} over 12 weeks
+  \item NF-L in terminal plasma and CSF
+  \item GFAP in terminal plasma
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{NF-L in vivo: WT vs 5xFAD}
+\begin{center}
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-wt-tg.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{NF-L in vivo: treatments, 5xFAD background}
+\includegraphics[scale=0.4]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg.pdf}
+\end{frame}
+
+\begin{frame}{NF-L in vivo: treatments, WT background}
+\begin{center}
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-wt.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{NF-L and GFAP in terminal plasma and CSF}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-boxplot-wt-tg.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NFL-terminal-CSF-scatter.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/GFAP-boxplot-wt-tg.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{NF-L and GFAP in terminal plasma, treated 5xFAD}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-boxplot-treatments-tg.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/GFAP-boxplot-treatments-tg.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{NF-L and GFAP in terminal plasma, treated WT}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-boxplot-treatments-wt.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/GFAP-boxplot-treatments-wt.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
