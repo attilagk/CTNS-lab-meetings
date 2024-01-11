@@ -97,7 +97,19 @@ Experiments
 
 \begin{frame}{Fold change of NF-L at 4 weeks relative to 0 week: linear and log
   scale}
+\begin{columns}[t]
+\begin{column}{0.6\textwidth}
+  
 \includegraphics[scale=0.4]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-stripplot-linear-log-scale.pdf}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+  \item approx.~normally dist
+  \item approx.~equal variance
+\end{itemize}
+\end{column}
+\end{columns}
 \end{frame}
 
 %\begin{frame}{Progression: NF-L change at 4, 8, 12 weeks relative to 0 week}
@@ -107,11 +119,58 @@ Experiments
 \includegraphics[scale=0.4]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg.pdf}
 \end{frame}
 
-\begin{frame}{Main results}
-\includegraphics[scale=0.4]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-drugeffect-tg-week-4-8.pdf}
+\begin{frame}{Model}
+  The effect of treatment $j$ relative to Saline treatment on NF-L fold change
+  (week 0-$k$ change):
+\begin{eqnarray}
+  \frac{\mathrm{Nfl}_i \; | \; k \, \mathrm{week}}{\mathrm{Nfl}_i \; | \; 0 \,
+  \mathrm{week}} &=& \beta_{\mathrm{Saline}} + \beta_{j} x_{ij} + \epsilon_i
+  \\
+  \epsilon_i &\sim& \mathcal{N}(0, \sigma)
+\end{eqnarray}
+
+Interpretation
+\begin{description}
+\item[$\beta_{j} = 0$] no effect, $H_0J$
+\item[$\beta_{j} > 0$] adverse effect
+\item[$\beta_{j} < 0$] desired effect
+\item[$\beta_{j} = - \beta_{\mathrm{Saline}}$] full effect (desired)
+\end{description}
 \end{frame}
 
+\begin{frame}{Conditional estimation of effect $\beta_j$ given a $k$-week of treatment $j$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
 
+\includegraphics[scale=0.3]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-drugeffect-tg-week-4.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.3]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-drugeffect-tg-week-8.pdf}
+\includegraphics<2>[scale=0.3]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-drugeffect-tg-week-12.pdf}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Main results: 4 and 8 week treatment combined}
+\begin{columns}[t]
+\begin{column}{0.55\textwidth}
+
+\includegraphics[scale=0.35]{../../../notebooks/2024-01-05-5xfad-nfl-frequentist/named-figure/nfl-drugeffect-tg-week-4-8.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics<2>[width=\columnwidth]{../../../resources/QPS/5xFAD-mouse/CO28152_Report_final-Fig20.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\includegraphics[scale=0.4]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg.pdf}
+\end{frame}
 
 \end{document}
 
