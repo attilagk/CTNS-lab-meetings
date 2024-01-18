@@ -1,0 +1,198 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Bayesian analysis of cell based assays}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Example: Arundine/IL26, TNF$\alpha$ assay in iPSC-derived microglia }
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\begin{tabular}{rcc}
+  Test & Comparison & $p\text{-val}|H_0$  \\
+  \hline
+  Tina et al & & \\
+  \hline
+  ANOVA & multiple & 0.14 \\
+  Bartlett's & multiple & $<10^{-4}$ \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_1$ & 0.39 \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_2$ & 0.92 \\
+  Dunnett's & $\mathrm{LC} \leftrightarrow c_3$ & 0.93 \\
+  \hline
+  \alert{New: CTNS} & & \\
+  \hline
+  Spearman's & correlation & $0.0051$ \\
+  Bayesian  & regression & $P(H_1) = 0.999$ \\
+  \hline
+  \end{tabular}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[width=1.0\columnwidth]{figures/TI26_TNF.pdf}
+\begin{itemize}
+  \item<2> nonlinear regresssion $\mu \sim g(x; \alert{\mathrm{FC}_y})$
+  \begin{itemize}
+    \item $\mathrm{FC}_y$: fold change of activity
+    \item hypothesis testing
+  \end{itemize}
+  \item<2> motivation
+\begin{itemize}
+  \item power
+  \item robustness %(batch effects, false discoveries)
+  \item aggregation
+  \begin{enumerate}
+    \item concentrations (regression)
+    \item assays (Bayesian)
+  \end{enumerate}
+  \item $P(H_1)$: direct interpretation
+\end{itemize}
+
+\end{itemize}
+  %$P(H_1|\mathrm{data})$
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian inference in general}
+
+\includegraphics[width=0.8\textwidth]{~/figures/Fisher-Bayes-cartoon.jpeg}
+\end{frame}
+
+\begin{frame}{Bayesian inference of $\mathrm{FC}_y$ and hypothesis testing}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+%\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-violin-vertical.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Posterior probability densities of fold change $\mathrm{FC}_y$}
+\begin{center}
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/violin-posterior-pdf-legend.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Posterior probability of a protective, a neutral, and an adverse effect}% $\{H_i\}$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Aggregating results accross assays and experiments}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+%\begin{frame}{Bayesian vs.~Frequentist test of drug effect}
+%\begin{center}
+%\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter.pdf}
+%\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color.pdf}
+%\end{center}
+%\end{frame}
+
+\begin{frame}{Bayesian vs.~Frequentist test of $H_1$: protective effect}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color-H1.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H1-Dunnett-true.png}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H1-Bayes-true.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian vs.~Frequentist test of $H_2$: adverse effect}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-scatter-numbered-color-H2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H2-Dunnett-true.png}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/dunnett-bayes-curves-H2-Bayes-true.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\againframe{summary}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
