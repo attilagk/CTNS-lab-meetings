@@ -1,0 +1,156 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Bayesian dose-response analysis of Arundine analogs}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Arundine and its analogs}
+\begin{columns}[t]
+\begin{column}{0.33\textwidth}
+\begin{center}
+  Arundine\\
+  \footnotesize{3,3-Diindolylmethane}
+
+  \includegraphics[width=\columnwidth]{figures/Arundine.png}
+\end{center}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+\begin{center}
+  DIM-C-pPhOCH3\\
+  \footnotesize{1,1-Bis(3'-indolyl)-1-(p-hydroxyphenyl)methane}
+
+  \includegraphics[width=\columnwidth]{figures/DIM-C-pPhOCH3.png}
+\end{center}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+\begin{center}
+  C-DIM12\\
+  \footnotesize{3,3'-[(4-Chlorophenyl)methylene]bis[1H-indole]}
+
+  \includegraphics[width=\columnwidth]{figures/C-DIM12.png}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian dose-response analysis}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{~/figures/from-others/dose-response-curve-stimulation-wikipedia.jpg}
+
+\tiny{\url{https://en.wikipedia.org/wiki/Dose-response\_relationship}}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{~/figures/from-others/Fisher-Bayes-cartoon.jpeg}
+
+\tiny{\url{https://agostontorok.github.io/2017/03/26/bayes_vs_frequentist/}}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian regression}{Fold change $\mathrm{FC}_y$, hypotheses,
+  prior \& posterior probabilities}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+%\includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-complex-sigmoid-2.pdf}
+\includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-violin-vertical.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Posterior probability densities of fold change $\mathrm{FC}_y$}
+\begin{center}
+\includegraphics[scale=0.4]{../../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/violin-posterior-pdf-legend.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Posterior probability of a protective, a neutral, and an adverse effect}% $\{H_i\}$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Aggregating results accross assays and experiments}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H102_posteriors-barchart.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[scale=0.4]{../../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H102_posteriors-exper-mean-barchart.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
