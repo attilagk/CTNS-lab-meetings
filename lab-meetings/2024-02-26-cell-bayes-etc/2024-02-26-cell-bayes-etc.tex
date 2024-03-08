@@ -46,6 +46,21 @@
 
 \titlepage
 
+\begin{frame}{Outline}
+\begin{enumerate}
+  \item Intro: Bayesian inference of dose-response relationship
+  \item Accidental discovery: mislabeled data
+  \item Benefits of Bayesian regression over frequentist local analysis (QPS)
+  \begin{itemize}
+    \item fewer false positives
+    \item more power
+  \end{itemize}
+  \item Goodness of fit: Markov chain Monte Carlo diagnostics
+  \item Results
+\end{enumerate}
+\end{frame}
+
+
 \begin{frame}{Bayesian dose-response analysis}
 \begin{columns}[t]
 \begin{column}{0.5\textwidth}
@@ -90,6 +105,21 @@
 \end{frame}
 
 
+\begin{frame}{Bayesian regression helps eliminate false positives}
+\begin{flushright}
+\includegraphics<1>[width=0.9\textwidth]{../../../resources/cell-based-assays/figures/CO28151-TI15-Ab-release.png}
+\includegraphics<2>[width=0.9\textwidth]{../../../resources/cell-based-assays/figures/CO28151-TI10-Ab-release.png}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/freqres-Ab-release-H4-TI1.pdf}
+\end{flushright}
+
+\begin{flushright}
+\includegraphics<1>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI15.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI10.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI1.pdf}
+\end{flushright}
+\end{frame}
+
+
 \begin{frame}{Bayesian regression is more powerful}
 \begin{flushright}
 \includegraphics<1>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/freqres-Ab-clearance-BV2-TI6.pdf}
@@ -107,21 +137,6 @@
 \end{frame}
 
 
-\begin{frame}{Bayesian regression helps eliminate false positives}
-\begin{flushright}
-\includegraphics<1>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/freqres-Ab-release-H4-TI1.pdf}
-\includegraphics<2>[width=0.9\textwidth]{../../../resources/cell-based-assays/figures/CO28151-TI10-Ab-release.png}
-\includegraphics<3>[width=0.9\textwidth]{../../../resources/cell-based-assays/figures/CO28151-TI15-Ab-release.png}
-\end{flushright}
-
-\begin{flushright}
-\includegraphics<1>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI1.pdf}
-\includegraphics<2>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI10.pdf}
-\includegraphics<3>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-TI15.pdf}
-\end{flushright}
-\end{frame}
-
-
 \begin{frame}{Goodness of fit: Markov chain Monte Carlo diagnostics}
 \includegraphics[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/ess.pdf}
 \includegraphics[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/rhat-noyticklabels.pdf}
@@ -129,21 +144,49 @@
 \end{frame}
 
 
-\begin{frame}{}
+\begin{frame}{Detailed results}
+\includegraphics[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102.pdf}
+\end{frame}
+
+
+\begin{frame}{Aggregated results}
+\includegraphics<1>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102-exper-mean.pdf}
+\begin{center}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102-grand-mean.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-BF.pdf}
+\includegraphics<4>[scale=0.5]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-BF-sorted.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Bayesian and frequentist scores}
+\begin{center}
+\includegraphics<1>[scale=0.5]{../../../notebooks/2024-03-04-cell-bayes-vs-frequentist/named-figure/posterior-vs-dunnettscore-spearman.pdf}
+\includegraphics<2>[scale=0.5]{../../../notebooks/2024-03-04-cell-bayes-vs-frequentist/named-figure/BF-vs-dunnettscore-spearman.pdf}
+\includegraphics<3>[scale=0.5]{../../../notebooks/2024-03-04-cell-bayes-vs-frequentist/named-figure/TI-BF-vs-dunnettscore-spearman.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Next steps}
+  \begin{itemize}
+    \item data correction and cleaning (QPS)
+    \item extend analysis to all drugs and assays
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Sampled curves}
 \begin{columns}[t]
 \begin{column}{0.465\textwidth}
 
-\includegraphics<1>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102.pdf}
-\includegraphics<2->[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102-nolegend.pdf}
+\includegraphics<1->[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/barchart-H102-nolegend.pdf}
 \end{column}
 
 \begin{column}{0.5\textwidth}
 
-\includegraphics<2>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-clearance-BV2-Ly.pdf}
-\includegraphics<3>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-clearance-BV2-SN.pdf}
-\includegraphics<4>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab38.pdf}
-\includegraphics<5>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab40.pdf}
-\includegraphics<6>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab42.pdf}
+\includegraphics<1>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-clearance-BV2-Ly.pdf}
+\includegraphics<2>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-clearance-BV2-SN.pdf}
+\includegraphics<3>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab38.pdf}
+\includegraphics<4>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab40.pdf}
+\includegraphics<5>[scale=0.4]{../../../notebooks/2024-02-14-cell-bayes/named-figure/sampled-curves-Ab-release-H4-Ab42.pdf}
 \end{column}
 \end{columns}
 \end{frame}
