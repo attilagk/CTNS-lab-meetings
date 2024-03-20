@@ -1,1294 +1,2784 @@
-\begin{thebibliography}{58}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+%% BioMed_Central_Bib_Style_v1.01
 
-\bibitem[Alfonso et~al.(2016)Alfonso, Callender, Hooli, Antal, Mullin, Sherman,
-  Lesné, Leitges, Newton, Tanzi, and Malinow]{Alfonso2016}
-Stephanie~I. Alfonso, Julia~A. Callender, Basavaraj Hooli, Corina~E. Antal,
-  Kristina Mullin, Mathew~A. Sherman, Sylvain~E. Lesné, Michael Leitges,
-  Alexandra~C. Newton, Rudolph~E. Tanzi, and Roberto Malinow.
-\newblock Gain-of-function mutations in protein kinase c\&\#x3b1;
-  (pkc\&\#x3b1;) may promote synaptic defects in alzheimer\&\#x2019;s disease.
-\newblock \emph{Science Signaling}, 9\penalty0 (427):\penalty0 ra47--ra47,
-  2016.
-\newblock \doi{10.1126/scisignal.aaf6209}.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/scisignal.aaf6209}.
+\begin{thebibliography}{49}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
 
-\bibitem[Baird et~al.(2021)Baird, Liu, Zheng, Sieberts, Perumal, Elsworth,
-  Richardson, Chen, Carrasquillo, Allen, Reddy, De~Jager, Ertekin-Taner,
-  Mangravite, Logsdon, Estrada, Haycock, Hemani, Runz, Smith, Gaunt, and
-  eQTL~working group]{Baird2021}
-Denis~A. Baird, Jimmy~Z. Liu, Jie Zheng, Solveig~K. Sieberts, Thanneer Perumal,
-  Benjamin Elsworth, Tom~G. Richardson, Chia-Yen Chen, Minerva~M. Carrasquillo,
-  Mariet Allen, Joseph~S. Reddy, Philip~L. De~Jager, Nilufer Ertekin-Taner,
-  Lara~M. Mangravite, Ben Logsdon, Karol Estrada, Philip~C. Haycock, Gibran
-  Hemani, Heiko Runz, George~Davey Smith, Tom~R. Gaunt, and A.~M. P.-A.~D.
-  eQTL~working group.
-\newblock Identifying drug targets for neurological and psychiatric disease via
-  genetics and the brain transcriptome.
-\newblock \emph{PLoS genetics}, 17\penalty0 (33417599):\penalty0
-  e1009224--e1009224, January 2021.
-\newblock ISSN 1553-7390.
-\newblock \doi{10.1371/journal.pgen.1009224}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7819609/}.
+%%% 1
+\bibitem[\protect\citeauthoryear{Bondi et~al.}{2017}]{Bondi2017}
+\begin{barticle}
+\bauthor{\bsnm{Bondi}, \binits{M.W.}},
+\bauthor{\bsnm{Edmonds}, \binits{E.C.}},
+\bauthor{\bsnm{Salmon}, \binits{D.P.}}:
+\batitle{Alzheimer's disease: Past, present, and future}.
+\bjtitle{Journal of the International Neuropsychological Society : JINS}
+\bvolume{23}(\bissue{29198280}),
+\bfpage{818}--\blpage{831}
+(\byear{2017})
+\doiurl{10.1017/S135561771700100X}
+\end{barticle}
+\endbibitem
 
-\bibitem[Baloni et~al.(2020)Baloni, Funk, Yan, Yurkovich, Kueider-Paisley, Nho,
-  Heinken, Jia, Mahmoudiandehkordi, Louie, Saykin, Arnold, Kastenmüller,
-  Griffiths, Thiele, Kaddurah-Daouk, and Price]{Baloni2020}
-Priyanka Baloni, Cory~C. Funk, Jingwen Yan, James~T. Yurkovich, Alexandra
-  Kueider-Paisley, Kwangsik Nho, Almut Heinken, Wei Jia, Siamak
-  Mahmoudiandehkordi, Gregory Louie, Andrew~J. Saykin, Matthias Arnold, Gabi
-  Kastenmüller, William~J. Griffiths, Ines Thiele, Rima Kaddurah-Daouk, and
-  Nathan~D. Price.
-\newblock Metabolic network analysis reveals altered bile acid synthesis and
-  metabolism in alzheimer's disease.
-\newblock \emph{Cell reports. Medicine}, 1:\penalty0 100138, Nov 2020.
-\newblock \doi{https://doi.org/10.1016/j.xcrm.2020.100138}.
+%%% 2
+\bibitem[\protect\citeauthoryear{Masters et~al.}{2015}]{Masters2015}
+\begin{barticle}
+\bauthor{\bsnm{Masters}, \binits{C.L.}},
+\bauthor{\bsnm{Bateman}, \binits{R.}},
+\bauthor{\bsnm{Blennow}, \binits{K.}},
+\bauthor{\bsnm{Rowe}, \binits{C.C.}},
+\bauthor{\bsnm{Sperling}, \binits{R.A.}},
+\bauthor{\bsnm{Cummings}, \binits{J.L.}}:
+\batitle{Alzheimer's disease.}
+\bjtitle{Nature reviews. Disease primers}
+\bvolume{1},
+\bfpage{15056}
+(\byear{2015})
+\end{barticle}
+\endbibitem
 
-\bibitem[Barabási et~al.(2011)Barabási, Gulbahce, and Loscalzo]{Barabasi2011}
-Albert-László Barabási, Natali Gulbahce, and Joseph Loscalzo.
-\newblock Network medicine: a network-based approach to human disease.
-\newblock \emph{Nature reviews. Genetics}, 12:\penalty0 56--68, Jan 2011.
-\newblock URL \url{https://barabasi.com/f/320.pdf}.
+%%% 3
+\bibitem[\protect\citeauthoryear{Pushpakom et~al.}{2019}]{Pushpakom2019}
+\begin{barticle}
+\bauthor{\bsnm{Pushpakom}, \binits{S.}},
+\bauthor{\bsnm{Iorio}, \binits{F.}},
+\bauthor{\bsnm{Eyers}, \binits{P.A.}},
+\bauthor{\bsnm{Escott}, \binits{K.J.}},
+\bauthor{\bsnm{Hopper}, \binits{S.}},
+\bauthor{\bsnm{Wells}, \binits{A.}},
+\bauthor{\bsnm{Doig}, \binits{A.}},
+\bauthor{\bsnm{Guilliams}, \binits{T.}},
+\bauthor{\bsnm{Latimer}, \binits{J.}},
+\bauthor{\bsnm{McNamee}, \binits{C.}},
+\bauthor{\bsnm{Norris}, \binits{A.}},
+\bauthor{\bsnm{Sanseau}, \binits{P.}},
+\bauthor{\bsnm{Cavalla}, \binits{D.}},
+\bauthor{\bsnm{Pirmohamed}, \binits{M.}}:
+\batitle{Drug repurposing: progress, challenges and recommendations}.
+\bjtitle{Nature Reviews Drug Discovery}
+\bvolume{18}(\bissue{1}),
+\bfpage{41}--\blpage{58}
+(\byear{2019})
+\doiurl{10.1038/nrd.2018.168}
+\end{barticle}
+\endbibitem
 
-\bibitem[Barbeira et~al.(2018)Barbeira, Dickinson, Bonazzola, Zheng, Wheeler,
-  Torres, Torstenson, Shah, Garcia, Edwards, Stahl, Huckins, Aguet, Ardlie,
-  Cummings, Gelfand, Getz, Hadley, Handsaker, Huang, Kashin, Karczewski, Lek,
-  Li, MacArthur, Nedzel, Nguyen, Noble, Segrè, Trowbridge, Tukiainen, Abell,
-  Balliu, Barshir, Basha, Battle, Bogu, Brown, Brown, Castel, Chen, Chiang,
-  Conrad, Damani, Davis, Delaneau, Dermitzakis, Engelhardt, Eskin, Ferreira,
-  Frésard, Gamazon, Garrido-Martín, Gewirtz, Gliner, Gloudemans, Guigo, Hall,
-  Han, He, Hormozdiari, Howald, Jo, Kang, Kim, Kim-Hellmuth, Lappalainen, Li,
-  Li, Liu, Mangul, McCarthy, McDowell, Mohammadi, Monlong, Montgomery,
-  Muñoz-Aguirre, Ndungu, Nobel, Oliva, Ongen, Palowitch, Panousis, Papasaikas,
-  Park, Parsana, Payne, Peterson, Quan, Reverter, Sabatti, Saha, Sammeth,
-  Scott, Shabalin, Sodaei, Stephens, Stranger, Strober, Sul, Tsang, Urbut,
-  van~de Bunt, Wang, Wen, Wright, Xi, Yeger-Lotem, Zappala, Zaugg, Zhou, Akey,
-  Bates, Chan, Chen, Claussnitzer, Demanelis, Diegel, Doherty, Feinberg,
-  Fernando, Halow, Hansen, Haugen, Hickey, Hou, Jasmine, Jian, Jiang, Johnson,
-  Kaul, Kellis, Kibriya, Lee, Li, Li, Li, Lin, Lin, Linder, Linke, Liu,
-  Maurano, Molinie, Montgomery, Nelson, Neri, Oliva, Park, Pierce, Rinaldi,
-  Rizzardi, Sandstrom, Skol, Smith, Snyder, Stamatoyannopoulos, Stranger, Tang,
-  Tsang, Wang, Wang, Van~Wittenberghe, Wu, Zhang, Nierras, Branton, Carithers,
-  Guan, Moore, Rao, Vaught, Gould, Lockart, Martin, Struewing, Volpi,
-  Addington, Koester, Little, Brigham, Hasz, Hunter, Johns, Johnson, Kopen,
-  Leinweber, Lonsdale, McDonald, Mestichelli, Myer, Roe, Salvatore, Shad,
-  Thomas, Walters, Washington, Wheeler, Bridge, Foster, Gillard, Karasik,
-  Kumar, Miklos, Moser, Jewell, Montroy, Rohrer, Valley, Davis, Mash, Undale,
-  Smith, Tabor, Roche, McLean, Vatanian, Robinson, Sobin, Barcus, Valentino,
-  Qi, Hunter, Hariharan, Singh, Um, Matose, Tomaszewski, Barker, Mosavel,
-  Siminoff, Traino, Flicek, Juettemann, Ruffier, Sheppard, Taylor, Trevanion,
-  Zerbino, Craft, Goldman, Haeussler, Kent, Lee, Paten, Rosenbloom, Vivian,
-  Zhu, Nicolae, Cox, Im, Consortium, Laboratory, Group, (eGTEx) groups, Fund,
-  NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA, Site-NDrI, Site-rPCI, resource VArI,
-  of~Miami Brain Endowment~Bank, Management, Study, Visualization-EBI, and
-  Genome Browser Data Integration \& Visualization-UCSC
-  Genomics~Institute]{Barbeira2018}
-Alvaro~N. Barbeira, Scott~P. Dickinson, Rodrigo Bonazzola, Jiamao Zheng,
-  Heather~E. Wheeler, Jason~M. Torres, Eric~S. Torstenson, Kaanan~P. Shah,
-  Tzintzuni Garcia, Todd~L. Edwards, Eli~A. Stahl, Laura~M. Huckins, François
-  Aguet, Kristin~G. Ardlie, Beryl~B. Cummings, Ellen~T. Gelfand, Gad Getz, Kane
-  Hadley, Robert~E. Handsaker, Katherine~H. Huang, Seva Kashin, Konrad~J.
-  Karczewski, Monkol Lek, Xiao Li, Daniel~G. MacArthur, Jared~L. Nedzel,
-  Duyen~T. Nguyen, Michael~S. Noble, Ayellet~V. Segrè, Casandra~A. Trowbridge,
-  Taru Tukiainen, Nathan~S. Abell, Brunilda Balliu, Ruth Barshir, Omer Basha,
-  Alexis Battle, Gireesh~K. Bogu, Andrew Brown, Christopher~D. Brown,
-  Stephane~E. Castel, Lin~S. Chen, Colby Chiang, Donald~F. Conrad, Farhan~N.
-  Damani, Joe~R. Davis, Olivier Delaneau, Emmanouil~T. Dermitzakis, Barbara~E.
-  Engelhardt, Eleazar Eskin, Pedro~G. Ferreira, Laure Frésard, Eric~R.
-  Gamazon, Diego Garrido-Martín, Ariel D.~H. Gewirtz, Genna Gliner, Michael~J.
-  Gloudemans, Roderic Guigo, Ira~M. Hall, Buhm Han, Yuan He, Farhad
-  Hormozdiari, Cedric Howald, Brian Jo, Eun~Yong Kang, Yungil Kim, Sarah
-  Kim-Hellmuth, Tuuli Lappalainen, Gen Li, Xin Li, Boxiang Liu, Serghei Mangul,
-  Mark~I. McCarthy, Ian~C. McDowell, Pejman Mohammadi, Jean Monlong, Stephen~B.
-  Montgomery, Manuel Muñoz-Aguirre, Anne~W. Ndungu, Andrew~B. Nobel, Meritxell
-  Oliva, Halit Ongen, John~J. Palowitch, Nikolaos Panousis, Panagiotis
-  Papasaikas, YoSon Park, Princy Parsana, Anthony~J. Payne, Christine~B.
-  Peterson, Jie Quan, Ferran Reverter, Chiara Sabatti, Ashis Saha, Michael
-  Sammeth, Alexandra~J. Scott, Andrey~A. Shabalin, Reza Sodaei, Matthew
-  Stephens, Barbara~E. Stranger, Benjamin~J. Strober, Jae~Hoon Sul, Emily~K.
-  Tsang, Sarah Urbut, Martijn van~de Bunt, Gao Wang, Xiaoquan Wen, Fred~A.
-  Wright, Hualin~S. Xi, Esti Yeger-Lotem, Zachary Zappala, Judith~B. Zaugg,
-  Yi-Hui Zhou, Joshua~M. Akey, Daniel Bates, Joanne Chan, Lin~S. Chen, Melina
-  Claussnitzer, Kathryn Demanelis, Morgan Diegel, Jennifer~A. Doherty,
-  Andrew~P. Feinberg, Marian~S. Fernando, Jessica Halow, Kasper~D. Hansen, Eric
-  Haugen, Peter~F. Hickey, Lei Hou, Farzana Jasmine, Ruiqi Jian, Lihua Jiang,
-  Audra Johnson, Rajinder Kaul, Manolis Kellis, Muhammad~G. Kibriya, Kristen
-  Lee, Jin~Billy Li, Qin Li, Xiao Li, Jessica Lin, Shin Lin, Sandra Linder,
-  Caroline Linke, Yaping Liu, Matthew~T. Maurano, Benoit Molinie, Stephen~B.
-  Montgomery, Jemma Nelson, Fidencio~J. Neri, Meritxell Oliva, Yongjin Park,
-  Brandon~L. Pierce, Nicola~J. Rinaldi, Lindsay~F. Rizzardi, Richard Sandstrom,
-  Andrew Skol, Kevin~S. Smith, Michael~P. Snyder, John Stamatoyannopoulos,
-  Barbara~E. Stranger, Hua Tang, Emily~K. Tsang, Li~Wang, Meng Wang, Nicholas
-  Van~Wittenberghe, Fan Wu, Rui Zhang, Concepcion~R. Nierras, Philip~A.
-  Branton, Latarsha~J. Carithers, Ping Guan, Helen~M. Moore, Abhi Rao,
-  Jimmie~B. Vaught, Sarah~E. Gould, Nicole~C. Lockart, Casey Martin, Jeffery~P.
-  Struewing, Simona Volpi, Anjene~M. Addington, Susan~E. Koester, A.~Roger
-  Little, Lori~E. Brigham, Richard Hasz, Marcus Hunter, Christopher Johns, Mark
-  Johnson, Gene Kopen, William~F. Leinweber, John~T. Lonsdale, Alisa McDonald,
-  Bernadette Mestichelli, Kevin Myer, Brian Roe, Michael Salvatore, Saboor
-  Shad, Jeffrey~A. Thomas, Gary Walters, Michael Washington, Joseph Wheeler,
-  Jason Bridge, Barbara~A. Foster, Bryan~M. Gillard, Ellen Karasik, Rachna
-  Kumar, Mark Miklos, Michael~T. Moser, Scott~D. Jewell, Robert~G. Montroy,
-  Daniel~C. Rohrer, Dana~R. Valley, David~A. Davis, Deborah~C. Mash, Anita~H.
-  Undale, Anna~M. Smith, David~E. Tabor, Nancy~V. Roche, Jeffrey~A. McLean,
-  Negin Vatanian, Karna~L. Robinson, Leslie Sobin, Mary~E. Barcus, Kimberly~M.
-  Valentino, Liqun Qi, Steven Hunter, Pushpa Hariharan, Shilpi Singh, Ki~Sung
-  Um, Takunda Matose, Maria~M. Tomaszewski, Laura~K. Barker, Maghboeba Mosavel,
-  Laura~A. Siminoff, Heather~M. Traino, Paul Flicek, Thomas Juettemann, Magali
-  Ruffier, Dan Sheppard, Kieron Taylor, Stephen~J. Trevanion, Daniel~R.
-  Zerbino, Brian Craft, Mary Goldman, Maximilian Haeussler, W.~James Kent,
-  Christopher~M. Lee, Benedict Paten, Kate~R. Rosenbloom, John Vivian, Jingchun
-  Zhu, Dan~L. Nicolae, Nancy~J. Cox, Hae~Kyung Im, GTEx Consortium, Data
-  Analysis \& Coordinating Center (LDACC)-Analysis Working~Group Laboratory,
-  Statistical Methods groups-Analysis~Working Group, Enhancing~GTEx (eGTEx)
-  groups, N.~I. H.~Common Fund, NIH/NCI, NIH/NHGrI, NIH/NIMH, NIH/NIDA,
-  Biospecimen Collection~Source Site-NDrI, Biospecimen Collection~Source
-  Site-rPCI, Biospecimen~Core resource VArI, Brain Bank repository-University
-  of~Miami Brain Endowment~Bank, Leidos Biomedical-Project Management, E.~L.
-  S.~I. Study, Genome Browser Data Integration~\& Visualization-EBI, and
-  University of California Santa~Cruz Genome Browser Data Integration \&
-  Visualization-UCSC Genomics~Institute.
-\newblock Exploring the phenotypic consequences of tissue specific gene
-  expression variation inferred from gwas summary statistics.
-\newblock \emph{Nature Communications}, 9\penalty0 (1):\penalty0 1825, 2018.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-018-03621-1}.
-\newblock URL \url{https://doi.org/10.1038/s41467-018-03621-1}.
+%%% 4
+\bibitem[\protect\citeauthoryear{Fang et~al.}{2021}]{Fang2021}
+\begin{barticle}
+\bauthor{\bsnm{Fang}, \binits{J.}},
+\bauthor{\bsnm{Zhang}, \binits{P.}},
+\bauthor{\bsnm{Zhou}, \binits{Y.}},
+\bauthor{\bsnm{Chiang}, \binits{C.-W.}},
+\bauthor{\bsnm{Tan}, \binits{J.}},
+\bauthor{\bsnm{Hou}, \binits{Y.}},
+\bauthor{\bsnm{Stauffer}, \binits{S.}},
+\bauthor{\bsnm{Li}, \binits{L.}},
+\bauthor{\bsnm{Pieper}, \binits{A.A.}},
+\bauthor{\bsnm{Cummings}, \binits{J.}},
+\bauthor{\bsnm{Cheng}, \binits{F.}}:
+\batitle{Endophenotype-based in silico network medicine discovery combined with
+  insurance record data mining identifies sildenafil as a candidate drug for
+  alzheimer’s disease}.
+\bjtitle{Nature Aging}
+\bvolume{1}(\bissue{12}),
+\bfpage{1175}--\blpage{1188}
+(\byear{2021})
+\doiurl{10.1038/s43587-021-00138-z}
+\end{barticle}
+\endbibitem
 
-\bibitem[Bellenguez et~al.(2022)Bellenguez, Küçükali, Jansen, Kleineidam,
-  Moreno-Grau, Amin, Naj, Campos-Martin, Grenier-Boley, Andrade, Holmans,
-  Boland, Damotte, van~der Lee, Costa, Kuulasmaa, Yang, de~Rojas, Bis, Yaqub,
-  Prokic, Chapuis, Ahmad, Giedraitis, Aarsland, Garcia-Gonzalez, Abdelnour,
-  Alarcón-Martín, Alcolea, Alegret, Alvarez, Álvarez, Armstrong, Tsolaki,
-  Antúnez, Appollonio, Arcaro, Archetti, Pastor, Arosio, Athanasiu, Bailly,
-  Banaj, Baquero, Barral, Beiser, Pastor, Below, Benchek, Benussi, Berr, Besse,
-  Bessi, Binetti, Bizarro, Blesa, Boada, Boerwinkle, Borroni, Boschi, Bossù,
-  Bråthen, Bressler, Bresner, Brodaty, Brookes, Brusco, Buiza-Rueda, Bûrger,
-  Burholt, Bush, Calero, Cantwell, Chene, Chung, Cuccaro, Carracedo, Cecchetti,
-  Cervera-Carles, Charbonnier, Chen, Chillotti, Ciccone, Claassen, Clark,
-  Conti, Corma-Gómez, Costantini, Custodero, Daian, Dalmasso, Daniele,
-  Dardiotis, Dartigues, de~Deyn, de~Paiva~Lopes, de~Witte, Debette, Deckert,
-  del Ser, Denning, DeStefano, Dichgans, Diehl-Schmid, Diez-Fairen, Rossi,
-  Djurovic, Duron, Düzel, Dufouil, Eiriksdottir, Engelborghs, Escott-Price,
-  Espinosa, Ewers, Faber, Fabrizio, Nielsen, Fardo, Farotti, Fenoglio,
-  Fernández-Fuertes, Ferrari, Ferreira, Ferri, Fin, Fischer, Fladby,
-  Fließbach, Fongang, Fornage, Fortea, Foroud, Fostinelli, Fox,
-  Franco-Macías, Bullido, Frank-García, Froelich, Fulton-Howard, Galimberti,
-  García-Alberca, García-González, Garcia-Madrona, Garcia-Ribas, Ghidoni,
-  Giegling, Giorgio, Goate, Goldhardt, Gomez-Fonseca, González-Pérez, Graff,
-  Grande, Green, Grimmer, Grünblatt, Grunin, Gudnason, Guetta-Baranes,
-  Haapasalo, Hadjigeorgiou, Haines, Hamilton-Nelson, Hampel, Hanon, Hardy,
-  Hartmann, Hausner, Harwood, Heilmann-Heimbach, Helisalmi, Heneka, Hernández,
-  Herrmann, Hoffmann, Holmes, Holstege, Vilas, Hulsman, Humphrey, Biessels,
-  Jian, Johansson, Jun, Kastumata, Kauwe, Kehoe, Kilander, Ståhlbom,
-  Kivipelto, Koivisto, Kornhuber, Kosmidis, Kukull, Kuksa, Kunkle, Kuzma, Lage,
-  Laukka, Launer, Lauria, Lee, Lehtisalo, Lerch, Lleó, Longstreth, Lopez,
-  de~Munain, Love, Löwemark, Luckcuck, Lunetta, Ma, Macías, MacLeod, Maier,
-  Mangialasche, Spallazzi, Marquié, Marshall, Martin, Montes, Rodríguez,
-  Masullo, Mayeux, Mead, Mecocci, Medina, Meggy, Mehrabian, Mendoza,
-  Menéndez-González, Mir, Moebus, Mol, Molina-Porcel, Montrreal, Morelli,
-  Moreno, Morgan, Mosley, Nöthen, Muchnik, Mukherjee, Nacmias, Ngandu,
-  Nicolas, Nordestgaard, Olaso, Orellana, Orsini, Ortega, Padovani, Paolo,
-  Papenberg, Parnetti, Pasquier, Pastor, Peloso, Pérez-Cordón, Pérez-Tur,
-  Pericard, Peters, Pijnenburg, Pineda, Piñol-Ripoll, Pisanu, Polak, Popp,
-  Posthuma, Priller, Puerta, Quenez, Quintela, Thomassen, Rábano, Rainero,
-  Rajabli, Ramakers, Real, Reinders, Reitz, Reyes-Dumeyer, Ridge,
-  Riedel-Heller, Riederer, Roberto, Rodriguez-Rodriguez, Rongve, Allende,
-  Rosende-Roca, Royo, Rubino, Rujescu, Sáez, Sakka, Saltvedt, Sanabria, and
-  Sánchez-Arjona]{Bellenguez2022}
-Céline Bellenguez, Fahri Küçükali, Iris~E. Jansen, Luca Kleineidam, Sonia
-  Moreno-Grau, Najaf Amin, Adam~C. Naj, Rafael Campos-Martin, Benjamin
-  Grenier-Boley, Victor Andrade, Peter~A. Holmans, Anne Boland, Vincent
-  Damotte, Sven~J. van~der Lee, Marcos~R. Costa, Teemu Kuulasmaa, Qiong Yang,
-  Itziar de~Rojas, Joshua~C. Bis, Amber Yaqub, Ivana Prokic, Julien Chapuis,
-  Shahzad Ahmad, Vilmantas Giedraitis, Dag Aarsland, Pablo Garcia-Gonzalez,
-  Carla Abdelnour, Emilio Alarcón-Martín, Daniel Alcolea, Montserrat Alegret,
-  Ignacio Alvarez, Victoria Álvarez, Nicola~J. Armstrong, Anthoula Tsolaki,
-  Carmen Antúnez, Ildebrando Appollonio, Marina Arcaro, Silvana Archetti,
-  Alfonso~Arias Pastor, Beatrice Arosio, Lavinia Athanasiu, Henri Bailly,
-  Nerisa Banaj, Miquel Baquero, Sandra Barral, Alexa Beiser, Ana~Belén Pastor,
-  Jennifer~E. Below, Penelope Benchek, Luisa Benussi, Claudine Berr, Céline
-  Besse, Valentina Bessi, Giuliano Binetti, Alessandra Bizarro, Rafael Blesa,
-  Mercè Boada, Eric Boerwinkle, Barbara Borroni, Silvia Boschi, Paola Bossù,
-  Geir Bråthen, Jan Bressler, Catherine Bresner, Henry Brodaty, Keeley~J.
-  Brookes, Luis~Ignacio Brusco, Dolores Buiza-Rueda, Katharina Bûrger, Vanessa
-  Burholt, William~S. Bush, Miguel Calero, Laura~B. Cantwell, Geneviève Chene,
-  Jaeyoon Chung, Michael~L. Cuccaro, Ángel Carracedo, Roberta Cecchetti, Laura
-  Cervera-Carles, Camille Charbonnier, Hung-Hsin Chen, Caterina Chillotti,
-  Simona Ciccone, Jurgen A. H.~R. Claassen, Christopher Clark, Elisa Conti,
-  Anaïs Corma-Gómez, Emanuele Costantini, Carlo Custodero, Delphine Daian,
-  Maria~Carolina Dalmasso, Antonio Daniele, Efthimios Dardiotis, Jean-François
-  Dartigues, Peter~Paul de~Deyn, Katia de~Paiva~Lopes, Lot~D. de~Witte,
-  Stéphanie Debette, Jürgen Deckert, Teodoro del Ser, Nicola Denning, Anita
-  DeStefano, Martin Dichgans, Janine Diehl-Schmid, Mónica Diez-Fairen,
-  Paolo~Dionigi Rossi, Srdjan Djurovic, Emmanuelle Duron, Emrah Düzel, Carole
-  Dufouil, Gudny Eiriksdottir, Sebastiaan Engelborghs, Valentina Escott-Price,
-  Ana Espinosa, Michael Ewers, Kelley~M. Faber, Tagliavini Fabrizio,
-  Sune~Fallgaard Nielsen, David~W. Fardo, Lucia Farotti, Chiara Fenoglio, Marta
-  Fernández-Fuertes, Raffaele Ferrari, Catarina~B. Ferreira, Evelyn Ferri,
-  Bertrand Fin, Peter Fischer, Tormod Fladby, Klaus Fließbach, Bernard
-  Fongang, Myriam Fornage, Juan Fortea, Tatiana~M. Foroud, Silvia Fostinelli,
-  Nick~C. Fox, Emlio Franco-Macías, María~J. Bullido, Ana Frank-García, Lutz
-  Froelich, Brian Fulton-Howard, Daniela Galimberti, Jose~Maria
-  García-Alberca, Pablo García-González, Sebastian Garcia-Madrona, Guillermo
-  Garcia-Ribas, Roberta Ghidoni, Ina Giegling, Giaccone Giorgio, Alison~M.
-  Goate, Oliver Goldhardt, Duber Gomez-Fonseca, Antonio González-Pérez,
-  Caroline Graff, Giulia Grande, Emma Green, Timo Grimmer, Edna Grünblatt,
-  Michelle Grunin, Vilmundur Gudnason, Tamar Guetta-Baranes, Annakaisa
-  Haapasalo, Georgios Hadjigeorgiou, Jonathan~L. Haines, Kara~L.
-  Hamilton-Nelson, Harald Hampel, Olivier Hanon, John Hardy, Annette~M.
-  Hartmann, Lucrezia Hausner, Janet Harwood, Stefanie Heilmann-Heimbach, Seppo
-  Helisalmi, Michael~T. Heneka, Isabel Hernández, Martin~J. Herrmann, Per
-  Hoffmann, Clive Holmes, Henne Holstege, Raquel~Huerto Vilas, Marc Hulsman,
-  Jack Humphrey, Geert~Jan Biessels, Xueqiu Jian, Charlotte Johansson,
-  Gyungah~R. Jun, Yuriko Kastumata, John Kauwe, Patrick~G. Kehoe, Lena
-  Kilander, Anne~Kinhult Ståhlbom, Miia Kivipelto, Anne Koivisto, Johannes
-  Kornhuber, Mary~H. Kosmidis, Walter~A. Kukull, Pavel~P. Kuksa, Brian~W.
-  Kunkle, Amanda~B. Kuzma, Carmen Lage, Erika~J. Laukka, Lenore Launer,
-  Alessandra Lauria, Chien-Yueh Lee, Jenni Lehtisalo, Ondrej Lerch, Alberto
-  Lleó, William Longstreth, Oscar Lopez, Adolfo~Lopez de~Munain, Seth Love,
-  Malin Löwemark, Lauren Luckcuck, Kathryn~L. Lunetta, Yiyi Ma, Juan Macías,
-  Catherine~A. MacLeod, Wolfgang Maier, Francesca Mangialasche, Marco
-  Spallazzi, Marta Marquié, Rachel Marshall, Eden~R. Martin, Angel~Martín
-  Montes, Carmen~Martínez Rodríguez, Carlo Masullo, Richard Mayeux, Simon
-  Mead, Patrizia Mecocci, Miguel Medina, Alun Meggy, Shima Mehrabian, Silvia
-  Mendoza, Manuel Menéndez-González, Pablo Mir, Susanne Moebus, Merel Mol,
-  Laura Molina-Porcel, Laura Montrreal, Laura Morelli, Fermin Moreno, Kevin
-  Morgan, Thomas Mosley, Markus~M. Nöthen, Carolina Muchnik, Shubhabrata
-  Mukherjee, Benedetta Nacmias, Tiia Ngandu, Gael Nicolas, Børge~G.
-  Nordestgaard, Robert Olaso, Adelina Orellana, Michela Orsini, Gemma Ortega,
-  Alessandro Padovani, Caffarra Paolo, Goran Papenberg, Lucilla Parnetti,
-  Florence Pasquier, Pau Pastor, Gina Peloso, Alba Pérez-Cordón, Jordi
-  Pérez-Tur, Pierre Pericard, Oliver Peters, Yolande A.~L. Pijnenburg, Juan~A.
-  Pineda, Gerard Piñol-Ripoll, Claudia Pisanu, Thomas Polak, Julius Popp,
-  Danielle Posthuma, Josef Priller, Raquel Puerta, Olivier Quenez, Inés
-  Quintela, Jesper~Qvist Thomassen, Alberto Rábano, Innocenzo Rainero, Farid
-  Rajabli, Inez Ramakers, Luis~M. Real, Marcel J.~T. Reinders, Christiane
-  Reitz, Dolly Reyes-Dumeyer, Perry Ridge, Steffi Riedel-Heller, Peter
-  Riederer, Natalia Roberto, Eloy Rodriguez-Rodriguez, Arvid Rongve,
-  Irene~Rosas Allende, Maitée Rosende-Roca, Jose~Luis Royo, Elisa Rubino, Dan
-  Rujescu, María~Eugenia Sáez, Paraskevi Sakka, Ingvild Saltvedt, Ángela
-  Sanabria, and María~Bernal Sánchez-Arjona.
-\newblock New insights into the genetic etiology of alzheimer’s disease and
-  related dementias.
-\newblock \emph{Nature Genetics}, 54\penalty0 (4):\penalty0 412--436, 2022.
-\newblock ISSN 1546-1718.
-\newblock \doi{10.1038/s41588-022-01024-z}.
-\newblock URL \url{https://doi.org/10.1038/s41588-022-01024-z}.
+%%% 5
+\bibitem[\protect\citeauthoryear{Taubes et~al.}{2021}]{Taubes2021}
+\begin{barticle}
+\bauthor{\bsnm{Taubes}, \binits{A.}},
+\bauthor{\bsnm{Nova}, \binits{P.}},
+\bauthor{\bsnm{Zalocusky}, \binits{K.A.}},
+\bauthor{\bsnm{Kosti}, \binits{I.}},
+\bauthor{\bsnm{Bicak}, \binits{M.}},
+\bauthor{\bsnm{Zilberter}, \binits{M.Y.}},
+\bauthor{\bsnm{Hao}, \binits{Y.}},
+\bauthor{\bsnm{Yoon}, \binits{S.Y.}},
+\bauthor{\bsnm{Oskotsky}, \binits{T.}},
+\bauthor{\bsnm{Pineda}, \binits{S.}},
+\bauthor{\bsnm{Chen}, \binits{B.}},
+\bauthor{\bsnm{Aery~Jones}, \binits{E.A.}},
+\bauthor{\bsnm{Choudhary}, \binits{K.}},
+\bauthor{\bsnm{Grone}, \binits{B.}},
+\bauthor{\bsnm{Balestra}, \binits{M.E.}},
+\bauthor{\bsnm{Chaudhry}, \binits{F.}},
+\bauthor{\bsnm{Paranjpe}, \binits{I.}},
+\bauthor{\bsnm{De~Freitas}, \binits{J.}},
+\bauthor{\bsnm{Koutsodendris}, \binits{N.}},
+\bauthor{\bsnm{Chen}, \binits{N.}},
+\bauthor{\bsnm{Wang}, \binits{C.}},
+\bauthor{\bsnm{Chang}, \binits{W.}},
+\bauthor{\bsnm{An}, \binits{A.}},
+\bauthor{\bsnm{Glicksberg}, \binits{B.S.}},
+\bauthor{\bsnm{Sirota}, \binits{M.}},
+\bauthor{\bsnm{Huang}, \binits{Y.}}:
+\batitle{Experimental and real-world evidence supporting the computational
+  repurposing of bumetanide for apoe4-related alzheimer’s disease}.
+\bjtitle{Nature Aging}
+\bvolume{1}(\bissue{10}),
+\bfpage{932}--\blpage{947}
+(\byear{2021})
+\doiurl{10.1038/s43587-021-00122-7}
+\end{barticle}
+\endbibitem
 
-\bibitem[Besouw et~al.(2013)Besouw, Masereeuw, {van den Heuvel}, and
-  Levtchenko]{Besouw2013}
-Martine Besouw, Rosalinde Masereeuw, Lambert {van den Heuvel}, and Elena
-  Levtchenko.
-\newblock Cysteamine: an old drug with new potential.
-\newblock \emph{Drug Discovery Today}, 18\penalty0 (15):\penalty0 785--792,
-  2013.
-\newblock ISSN 1359-6446.
-\newblock \doi{https://doi.org/10.1016/j.drudis.2013.02.003}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S135964461300038X}.
+%%% 6
+\bibitem[\protect\citeauthoryear{NIH/NIA}{2016}]{NIH/NIA}
+\begin{botherref}
+\oauthor{\bsnm{NIH/NIA}}:
+Drug Repurposing: Translational Bioinformatics And Network Pharmacology
+(2016).
+\url{https://www.nia.nih.gov/research/milestones/translational-clinical-research/pharmacological/milestone-7-b}
+\end{botherref}
+\endbibitem
 
-\bibitem[Biersack(2020)]{Biersack2020}
-Bernhard Biersack.
-\newblock 3,3’-diindolylmethane and its derivatives: nature-inspired
+%%% 7
+\bibitem[\protect\citeauthoryear{Yamazaki et~al.}{2019}]{Yamazaki2019}
+\begin{barticle}
+\bauthor{\bsnm{Yamazaki}, \binits{Y.}},
+\bauthor{\bsnm{Zhao}, \binits{N.}},
+\bauthor{\bsnm{Caulfield}, \binits{T.R.}},
+\bauthor{\bsnm{Liu}, \binits{C.-C.}},
+\bauthor{\bsnm{Bu}, \binits{G.}}:
+\batitle{Apolipoprotein e and alzheimer disease: pathobiology and targeting
+  strategies}.
+\bjtitle{Nature Reviews Neurology}
+\bvolume{15}(\bissue{9}),
+\bfpage{501}--\blpage{518}
+(\byear{2019})
+\doiurl{10.1038/s41582-019-0228-7}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{De~Strooper and Karran}{2016}]{DeStrooper2016}
+\begin{barticle}
+\bauthor{\bsnm{De~Strooper}, \binits{B.}},
+\bauthor{\bsnm{Karran}, \binits{E.}}:
+\batitle{The cellular phase of alzheimer's disease.}
+\bjtitle{Cell}
+\bvolume{164},
+\bfpage{603}--\blpage{15}
+(\byear{2016})
+\doiurl{10.1016/j.cell.2015.12.056}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Jansen et~al.}{2019}]{Jansen2019}
+\begin{barticle}
+\bauthor{\bsnm{Jansen}, \binits{I.E.}},
+\bauthor{\bsnm{Savage}, \binits{J.E.}},
+\bauthor{\bsnm{Watanabe}, \binits{K.}},
+\bauthor{\bsnm{Bryois}, \binits{J.}},
+\bauthor{\bsnm{Williams}, \binits{D.M.}},
+\bauthor{\bsnm{Steinberg}, \binits{S.}},
+\bauthor{\bsnm{Sealock}, \binits{J.}},
+\bauthor{\bsnm{Karlsson}, \binits{I.K.}},
+\bauthor{\bsnm{Hägg}, \binits{S.}},
+\bauthor{\bsnm{Athanasiu}, \binits{L.}},
+\bauthor{\bsnm{Voyle}, \binits{N.}},
+\bauthor{\bsnm{Proitsi}, \binits{P.}},
+\bauthor{\bsnm{Witoelar}, \binits{A.}},
+\bauthor{\bsnm{Stringer}, \binits{S.}},
+\bauthor{\bsnm{Aarsland}, \binits{D.}},
+\bauthor{\bsnm{Almdahl}, \binits{I.S.}},
+\bauthor{\bsnm{Andersen}, \binits{F.}},
+\bauthor{\bsnm{Bergh}, \binits{S.}},
+\bauthor{\bsnm{Bettella}, \binits{F.}},
+\bauthor{\bsnm{Bjornsson}, \binits{S.}},
+\bauthor{\bsnm{Brækhus}, \binits{A.}},
+\bauthor{\bsnm{Bråthen}, \binits{G.}},
+\bauthor{\bsnm{Leeuw}, \binits{C.}},
+\bauthor{\bsnm{Desikan}, \binits{R.S.}},
+\bauthor{\bsnm{Djurovic}, \binits{S.}},
+\bauthor{\bsnm{Dumitrescu}, \binits{L.}},
+\bauthor{\bsnm{Fladby}, \binits{T.}},
+\bauthor{\bsnm{Hohman}, \binits{T.J.}},
+\bauthor{\bsnm{Jonsson}, \binits{P.V.}},
+\bauthor{\bsnm{Kiddle}, \binits{S.J.}},
+\bauthor{\bsnm{Rongve}, \binits{A.}},
+\bauthor{\bsnm{Saltvedt}, \binits{I.}},
+\bauthor{\bsnm{Sando}, \binits{S.B.}},
+\bauthor{\bsnm{Selbæk}, \binits{G.}},
+\bauthor{\bsnm{Shoai}, \binits{M.}},
+\bauthor{\bsnm{Skene}, \binits{N.G.}},
+\bauthor{\bsnm{Snaedal}, \binits{J.}},
+\bauthor{\bsnm{Stordal}, \binits{E.}},
+\bauthor{\bsnm{Ulstein}, \binits{I.D.}},
+\bauthor{\bsnm{Wang}, \binits{Y.}},
+\bauthor{\bsnm{White}, \binits{L.R.}},
+\bauthor{\bsnm{Hardy}, \binits{J.}},
+\bauthor{\bsnm{Hjerling-Leffler}, \binits{J.}},
+\bauthor{\bsnm{Sullivan}, \binits{P.F.}},
+\bauthor{\bsnm{Flier}, \binits{W.M.}},
+\bauthor{\bsnm{Dobson}, \binits{R.}},
+\bauthor{\bsnm{Davis}, \binits{L.K.}},
+\bauthor{\bsnm{Stefansson}, \binits{H.}},
+\bauthor{\bsnm{Stefansson}, \binits{K.}},
+\bauthor{\bsnm{Pedersen}, \binits{N.L.}},
+\bauthor{\bsnm{Ripke}, \binits{S.}},
+\bauthor{\bsnm{Andreassen}, \binits{O.A.}},
+\bauthor{\bsnm{Posthuma}, \binits{D.}}:
+\batitle{Genome-wide meta-analysis identifies new loci and functional pathways
+  influencing alzheimer's disease risk}.
+\bjtitle{Nature genetics}
+\bvolume{51}(\bissue{30617256}),
+\bfpage{404}--\blpage{413}
+(\byear{2019})
+\doiurl{10.1038/s41588-018-0311-9}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Kunkle et~al.}{2019}]{Kunkle2019}
+\begin{barticle}
+\bauthor{\bsnm{Kunkle}, \binits{B.W.}},
+\bauthor{\bsnm{Grenier-Boley}, \binits{B.}},
+\bauthor{\bsnm{Sims}, \binits{R.}},
+\bauthor{\bsnm{Bis}, \binits{J.C.}},
+\bauthor{\bsnm{Damotte}, \binits{V.}},
+\bauthor{\bsnm{Naj}, \binits{A.C.}},
+\bauthor{\bsnm{Boland}, \binits{A.}},
+\bauthor{\bsnm{Vronskaya}, \binits{M.}},
+\bauthor{\bsnm{Lee}, \binits{S.J.}},
+\bauthor{\bsnm{Amlie-Wolf}, \binits{A.}},
+\bauthor{\bsnm{Bellenguez}, \binits{C.}},
+\bauthor{\bsnm{Frizatti}, \binits{A.}},
+\bauthor{\bsnm{Chouraki}, \binits{V.}},
+\bauthor{\bsnm{Martin}, \binits{E.R.}},
+\bauthor{\bsnm{Sleegers}, \binits{K.}},
+\bauthor{\bsnm{Badarinarayan}, \binits{N.}},
+\bauthor{\bsnm{Jakobsdottir}, \binits{J.}},
+\bauthor{\bsnm{Hamilton-Nelson}, \binits{K.L.}},
+\bauthor{\bsnm{Moreno-Grau}, \binits{S.}},
+\bauthor{\bsnm{Olaso}, \binits{R.}},
+\bauthor{\bsnm{Raybould}, \binits{R.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Kuzma}, \binits{A.B.}},
+\bauthor{\bsnm{Hiltunen}, \binits{M.}},
+\bauthor{\bsnm{Morgan}, \binits{T.}},
+\bauthor{\bsnm{Ahmad}, \binits{S.}},
+\bauthor{\bsnm{Vardarajan}, \binits{B.N.}},
+\bauthor{\bsnm{Epelbaum}, \binits{J.}},
+\bauthor{\bsnm{Hoffmann}, \binits{P.}},
+\bauthor{\bsnm{Boada}, \binits{M.}},
+\bauthor{\bsnm{Beecham}, \binits{G.W.}},
+\bauthor{\bsnm{Garnier}, \binits{J.-G.}},
+\bauthor{\bsnm{Harold}, \binits{D.}},
+\bauthor{\bsnm{Fitzpatrick}, \binits{A.L.}},
+\bauthor{\bsnm{Valladares}, \binits{O.}},
+\bauthor{\bsnm{Moutet}, \binits{M.-L.}},
+\bauthor{\bsnm{Gerrish}, \binits{A.}},
+\bauthor{\bsnm{Smith}, \binits{A.V.}},
+\bauthor{\bsnm{Qu}, \binits{L.}},
+\bauthor{\bsnm{Bacq}, \binits{D.}},
+\bauthor{\bsnm{Denning}, \binits{N.}},
+\bauthor{\bsnm{Jian}, \binits{X.}},
+\bauthor{\bsnm{Zhao}, \binits{Y.}},
+\bauthor{\bsnm{Del~Zompo}, \binits{M.}},
+\bauthor{\bsnm{Fox}, \binits{N.C.}},
+\bauthor{\bsnm{Choi}, \binits{S.-H.}},
+\bauthor{\bsnm{Mateo}, \binits{I.}},
+\bauthor{\bsnm{Hughes}, \binits{J.T.}},
+\bauthor{\bsnm{Adams}, \binits{H.H.}},
+\bauthor{\bsnm{Malamon}, \binits{J.}},
+\bauthor{\bsnm{Sanchez-Garcia}, \binits{F.}},
+\bauthor{\bsnm{Patel}, \binits{Y.}},
+\bauthor{\bsnm{Brody}, \binits{J.A.}},
+\bauthor{\bsnm{Dombroski}, \binits{B.A.}},
+\bauthor{\bsnm{Naranjo}, \binits{M.C.D.}},
+\bauthor{\bsnm{Daniilidou}, \binits{M.}},
+\bauthor{\bsnm{Eiriksdottir}, \binits{G.}},
+\bauthor{\bsnm{Mukherjee}, \binits{S.}},
+\bauthor{\bsnm{Wallon}, \binits{D.}},
+\bauthor{\bsnm{Uphill}, \binits{J.}},
+\bauthor{\bsnm{Aspelund}, \binits{T.}},
+\bauthor{\bsnm{Cantwell}, \binits{L.B.}},
+\bauthor{\bsnm{Garzia}, \binits{F.}},
+\bauthor{\bsnm{Galimberti}, \binits{D.}},
+\bauthor{\bsnm{Hofer}, \binits{E.}},
+\bauthor{\bsnm{Butkiewicz}, \binits{M.}},
+\bauthor{\bsnm{Fin}, \binits{B.}},
+\bauthor{\bsnm{Scarpini}, \binits{E.}},
+\bauthor{\bsnm{Sarnowski}, \binits{C.}},
+\bauthor{\bsnm{Bush}, \binits{W.S.}},
+\bauthor{\bsnm{Meslage}, \binits{S.}},
+\bauthor{\bsnm{Kornhuber}, \binits{J.}},
+\bauthor{\bsnm{White}, \binits{C.C.}},
+\bauthor{\bsnm{Song}, \binits{Y.}},
+\bauthor{\bsnm{Barber}, \binits{R.C.}},
+\bauthor{\bsnm{Engelborghs}, \binits{S.}},
+\bauthor{\bsnm{Sordon}, \binits{S.}},
+\bauthor{\bsnm{Voijnovic}, \binits{D.}},
+\bauthor{\bsnm{Adams}, \binits{P.M.}},
+\bauthor{\bsnm{Vandenberghe}, \binits{R.}},
+\bauthor{\bsnm{Mayhaus}, \binits{M.}},
+\bauthor{\bsnm{Cupples}, \binits{L.A.}},
+\bauthor{\bsnm{Albert}, \binits{M.S.}},
+\bauthor{\bsnm{De~Deyn}, \binits{P.P.}},
+\bauthor{\bsnm{Gu}, \binits{W.}},
+\bauthor{\bsnm{Himali}, \binits{J.J.}},
+\bauthor{\bsnm{Beekly}, \binits{D.}},
+\bauthor{\bsnm{Squassina}, \binits{A.}},
+\bauthor{\bsnm{Hartmann}, \binits{A.M.}},
+\bauthor{\bsnm{Orellana}, \binits{A.}},
+\bauthor{\bsnm{Blacker}, \binits{D.}},
+\bauthor{\bsnm{Rodriguez-Rodriguez}, \binits{E.}},
+\bauthor{\bsnm{Lovestone}, \binits{S.}},
+\bauthor{\bsnm{Garcia}, \binits{M.E.}},
+\bauthor{\bsnm{Doody}, \binits{R.S.}},
+\bauthor{\bsnm{Munoz-Fernadez}, \binits{C.}},
+\bauthor{\bsnm{Sussams}, \binits{R.}},
+\bauthor{\bsnm{Lin}, \binits{H.}},
+\bauthor{\bsnm{Fairchild}, \binits{T.J.}},
+\bauthor{\bsnm{Benito}, \binits{Y.A.}},
+\bauthor{\bsnm{Holmes}, \binits{C.}},
+\bauthor{\bsnm{Karamujić-Čomić}, \binits{H.}},
+\bauthor{\bsnm{Frosch}, \binits{M.P.}},
+\bauthor{\bsnm{Thonberg}, \binits{H.}},
+\bauthor{\bsnm{Maier}, \binits{W.}},
+\bauthor{\bsnm{Roshchupkin}, \binits{G.}},
+\bauthor{\bsnm{Ghetti}, \binits{B.}},
+\bauthor{\bsnm{Giedraitis}, \binits{V.}},
+\bauthor{\bsnm{Kawalia}, \binits{A.}},
+\bauthor{\bsnm{Li}, \binits{S.}},
+\bauthor{\bsnm{Huebinger}, \binits{R.M.}},
+\bauthor{\bsnm{Kilander}, \binits{L.}},
+\bauthor{\bsnm{Moebus}, \binits{S.}},
+\bauthor{\bsnm{Hernández}, \binits{I.}},
+\bauthor{\bsnm{Kamboh}, \binits{M.I.}},
+\bauthor{\bsnm{Brundin}, \binits{R.}},
+\bauthor{\bsnm{Turton}, \binits{J.}},
+\bauthor{\bsnm{Yang}, \binits{Q.}},
+\bauthor{\bsnm{Katz}, \binits{M.J.}},
+\bauthor{\bsnm{Concari}, \binits{L.}},
+\bauthor{\bsnm{Lord}, \binits{J.}},
+\bauthor{\bsnm{Beiser}, \binits{A.S.}},
+\bauthor{\bsnm{Keene}, \binits{C.D.}},
+\bauthor{\bsnm{Helisalmi}, \binits{S.}},
+\bauthor{\bsnm{Kloszewska}, \binits{I.}},
+\bauthor{\bsnm{Kukull}, \binits{W.A.}},
+\bauthor{\bsnm{Koivisto}, \binits{A.M.}},
+\bauthor{\bsnm{Lynch}, \binits{A.}},
+\bauthor{\bsnm{Tarraga}, \binits{L.}},
+\bauthor{\bsnm{Larson}, \binits{E.B.}},
+\bauthor{\bsnm{Haapasalo}, \binits{A.}},
+\bauthor{\bsnm{Lawlor}, \binits{B.}},
+\bauthor{\bsnm{Mosley}, \binits{T.H.}},
+\bauthor{\bsnm{Lipton}, \binits{R.B.}},
+\bauthor{\bsnm{Solfrizzi}, \binits{V.}},
+\bauthor{\bsnm{Gill}, \binits{M.}},
+\bauthor{\bsnm{Longstreth}, \binits{J.} \bsuffix{W~T}},
+\bauthor{\bsnm{Montine}, \binits{T.J.}},
+\bauthor{\bsnm{Frisardi}, \binits{V.}},
+\bauthor{\bsnm{Diez-Fairen}, \binits{M.}},
+\bauthor{\bsnm{Rivadeneira}, \binits{F.}},
+\bauthor{\bsnm{Petersen}, \binits{R.C.}},
+\bauthor{\bsnm{Deramecourt}, \binits{V.}},
+\bauthor{\bsnm{Alvarez}, \binits{I.}},
+\bauthor{\bsnm{Salani}, \binits{F.}},
+\bauthor{\bsnm{Ciaramella}, \binits{A.}},
+\bauthor{\bsnm{Boerwinkle}, \binits{E.}},
+\bauthor{\bsnm{Reiman}, \binits{E.M.}},
+\bauthor{\bsnm{Fievet}, \binits{N.}},
+\bauthor{\bsnm{Rotter}, \binits{J.I.}},
+\bauthor{\bsnm{Reisch}, \binits{J.S.}},
+\bauthor{\bsnm{Hanon}, \binits{O.}},
+\bauthor{\bsnm{Cupidi}, \binits{C.}},
+\bauthor{\bsnm{Andre~Uitterlinden}, \binits{A.G.}},
+\bauthor{\bsnm{Royall}, \binits{D.R.}},
+\bauthor{\bsnm{Dufouil}, \binits{C.}},
+\bauthor{\bsnm{Maletta}, \binits{R.G.}},
+\bauthor{\bsnm{Rojas}, \binits{I.}},
+\bauthor{\bsnm{Sano}, \binits{M.}},
+\bauthor{\bsnm{Brice}, \binits{A.}},
+\bauthor{\bsnm{Cecchetti}, \binits{R.}},
+\bauthor{\bsnm{George-Hyslop}, \binits{P.S.}},
+\bauthor{\bsnm{Ritchie}, \binits{K.}},
+\bauthor{\bsnm{Tsolaki}, \binits{M.}},
+\bauthor{\bsnm{Tsuang}, \binits{D.W.}},
+\bauthor{\bsnm{Dubois}, \binits{B.}},
+\bauthor{\bsnm{Craig}, \binits{D.}},
+\bauthor{\bsnm{Wu}, \binits{C.-K.}},
+\bauthor{\bsnm{Soininen}, \binits{H.}},
+\bauthor{\bsnm{Avramidou}, \binits{D.}},
+\bauthor{\bsnm{Albin}, \binits{R.L.}},
+\bauthor{\bsnm{Fratiglioni}, \binits{L.}},
+\bauthor{\bsnm{Germanou}, \binits{A.}},
+\bauthor{\bsnm{Apostolova}, \binits{L.G.}},
+\bauthor{\bsnm{Keller}, \binits{L.}},
+\bauthor{\bsnm{Koutroumani}, \binits{M.}},
+\bauthor{\bsnm{Arnold}, \binits{S.E.}},
+\bauthor{\bsnm{Panza}, \binits{F.}},
+\bauthor{\bsnm{Gkatzima}, \binits{O.}},
+\bauthor{\bsnm{Asthana}, \binits{S.}},
+\bauthor{\bsnm{Hannequin}, \binits{D.}},
+\bauthor{\bsnm{Whitehead}, \binits{P.}},
+\bauthor{\bsnm{Atwood}, \binits{C.S.}},
+\bauthor{\bsnm{Caffarra}, \binits{P.}},
+\bauthor{\bsnm{Hampel}, \binits{H.}},
+\bauthor{\bsnm{Quintela}, \binits{I.}},
+\bauthor{\bsnm{Carracedo}, \binits{�.}},
+\bauthor{\bsnm{Lannfelt}, \binits{L.}},
+\bauthor{\bsnm{Rubinsztein}, \binits{D.C.}},
+\bauthor{\bsnm{Barnes}, \binits{L.L.}},
+\bauthor{\bsnm{Pasquier}, \binits{F.}},
+\bauthor{\bsnm{Frölich}, \binits{L.}},
+\bauthor{\bsnm{Barral}, \binits{S.}},
+\bauthor{\bsnm{McGuinness}, \binits{B.}},
+\bauthor{\bsnm{Beach}, \binits{T.G.}},
+\bauthor{\bsnm{Johnston}, \binits{J.A.}},
+\bauthor{\bsnm{Becker}, \binits{J.T.}},
+\bauthor{\bsnm{Passmore}, \binits{P.}},
+\bauthor{\bsnm{Bigio}, \binits{E.H.}},
+\bauthor{\bsnm{Schott}, \binits{J.M.}},
+\bauthor{\bsnm{Bird}, \binits{T.D.}},
+\bauthor{\bsnm{Warren}, \binits{J.D.}},
+\bauthor{\bsnm{Boeve}, \binits{B.F.}},
+\bauthor{\bsnm{Lupton}, \binits{M.K.}},
+\bauthor{\bsnm{Bowen}, \binits{J.D.}},
+\bauthor{\bsnm{Proitsi}, \binits{P.}},
+\bauthor{\bsnm{Boxer}, \binits{A.}},
+\bauthor{\bsnm{Powell}, \binits{J.F.}},
+\bauthor{\bsnm{Burke}, \binits{J.R.}},
+\bauthor{\bsnm{Kauwe}, \binits{J.S.K.}},
+\bauthor{\bsnm{Burns}, \binits{J.M.}},
+\bauthor{\bsnm{Mancuso}, \binits{M.}},
+\bauthor{\bsnm{Buxbaum}, \binits{J.D.}},
+\bauthor{\bsnm{Bonuccelli}, \binits{U.}},
+\bauthor{\bsnm{Cairns}, \binits{N.J.}},
+\bauthor{\bsnm{McQuillin}, \binits{A.}},
+\bauthor{\bsnm{Cao}, \binits{C.}},
+\bauthor{\bsnm{Livingston}, \binits{G.}},
+\bauthor{\bsnm{Carlson}, \binits{C.S.}},
+\bauthor{\bsnm{Bass}, \binits{N.J.}},
+\bauthor{\bsnm{Carlsson}, \binits{C.M.}},
+\bauthor{\bsnm{Hardy}, \binits{J.}},
+\bauthor{\bsnm{Carney}, \binits{R.M.}},
+\bauthor{\bsnm{Bras}, \binits{J.}},
+\bauthor{\bsnm{Carrasquillo}, \binits{M.M.}},
+\bauthor{\bsnm{Guerreiro}, \binits{R.}},
+\bauthor{\bsnm{Allen}, \binits{M.}},
+\bauthor{\bsnm{Chui}, \binits{H.C.}},
+\bauthor{\bsnm{Fisher}, \binits{E.}},
+\bauthor{\bsnm{Masullo}, \binits{C.}},
+\bauthor{\bsnm{Crocco}, \binits{E.A.}},
+\bauthor{\bsnm{DeCarli}, \binits{C.}},
+\bauthor{\bsnm{Bisceglio}, \binits{G.}},
+\bauthor{\bsnm{Dick}, \binits{M.}},
+\bauthor{\bsnm{Ma}, \binits{L.}},
+\bauthor{\bsnm{Duara}, \binits{R.}},
+\bauthor{\bsnm{Graff-Radford}, \binits{N.R.}},
+\bauthor{\bsnm{Evans}, \binits{D.A.}},
+\bauthor{\bsnm{Hodges}, \binits{A.}},
+\bauthor{\bsnm{Faber}, \binits{K.M.}},
+\bauthor{\bsnm{Scherer}, \binits{M.}},
+\bauthor{\bsnm{Fallon}, \binits{K.B.}},
+\bauthor{\bsnm{Riemenschneider}, \binits{M.}},
+\bauthor{\bsnm{Fardo}, \binits{D.W.}},
+\bauthor{\bsnm{Heun}, \binits{R.}},
+\bauthor{\bsnm{Farlow}, \binits{M.R.}},
+\bauthor{\bsnm{Kölsch}, \binits{H.}},
+\bauthor{\bsnm{Ferris}, \binits{S.}},
+\bauthor{\bsnm{Leber}, \binits{M.}},
+\bauthor{\bsnm{Foroud}, \binits{T.M.}},
+\bauthor{\bsnm{Heuser}, \binits{I.}},
+\bauthor{\bsnm{Galasko}, \binits{D.R.}},
+\bauthor{\bsnm{Giegling}, \binits{I.}},
+\bauthor{\bsnm{Gearing}, \binits{M.}},
+\bauthor{\bsnm{Hüll}, \binits{M.}},
+\bauthor{\bsnm{Geschwind}, \binits{D.H.}},
+\bauthor{\bsnm{Gilbert}, \binits{J.R.}},
+\bauthor{\bsnm{Morris}, \binits{J.}},
+\bauthor{\bsnm{Green}, \binits{R.C.}},
+\bauthor{\bsnm{Mayo}, \binits{K.}},
+\bauthor{\bsnm{Growdon}, \binits{J.H.}},
+\bauthor{\bsnm{Feulner}, \binits{T.}},
+\bauthor{\bsnm{Hamilton}, \binits{R.L.}},
+\bauthor{\bsnm{Harrell}, \binits{L.E.}},
+\bauthor{\bsnm{Drichel}, \binits{D.}},
+\bauthor{\bsnm{Honig}, \binits{L.S.}},
+\bauthor{\bsnm{Cushion}, \binits{T.D.}},
+\bauthor{\bsnm{Huentelman}, \binits{M.J.}},
+\bauthor{\bsnm{Hollingworth}, \binits{P.}},
+\bauthor{\bsnm{Hulette}, \binits{C.M.}},
+\bauthor{\bsnm{Hyman}, \binits{B.T.}},
+\bauthor{\bsnm{Marshall}, \binits{R.}},
+\bauthor{\bsnm{Jarvik}, \binits{G.P.}},
+\bauthor{\bsnm{Meggy}, \binits{A.}},
+\bauthor{\bsnm{Abner}, \binits{E.}},
+\bauthor{\bsnm{Menzies}, \binits{G.E.}},
+\bauthor{\bsnm{Jin}, \binits{L.-W.}},
+\bauthor{\bsnm{Leonenko}, \binits{G.}},
+\bauthor{\bsnm{Real}, \binits{L.M.}},
+\bauthor{\bsnm{Jun}, \binits{G.R.}},
+\bauthor{\bsnm{Baldwin}, \binits{C.T.}},
+\bauthor{\bsnm{Grozeva}, \binits{D.}},
+\bauthor{\bsnm{Karydas}, \binits{A.}},
+\bauthor{\bsnm{Russo}, \binits{G.}},
+\bauthor{\bsnm{Kaye}, \binits{J.A.}},
+\bauthor{\bsnm{Kim}, \binits{R.}},
+\bauthor{\bsnm{Jessen}, \binits{F.}},
+\bauthor{\bsnm{Kowall}, \binits{N.W.}},
+\bauthor{\bsnm{Vellas}, \binits{B.}},
+\bauthor{\bsnm{Kramer}, \binits{J.H.}},
+\bauthor{\bsnm{Vardy}, \binits{E.}},
+\bauthor{\bsnm{LaFerla}, \binits{F.M.}},
+\bauthor{\bsnm{Jöckel}, \binits{K.-H.}},
+\bauthor{\bsnm{Lah}, \binits{J.J.}},
+\bauthor{\bsnm{Dichgans}, \binits{M.}},
+\bauthor{\bsnm{Leverenz}, \binits{J.B.}},
+\bauthor{\bsnm{Mann}, \binits{D.}},
+\bauthor{\bsnm{Levey}, \binits{A.I.}},
+\bauthor{\bsnm{Pickering-Brown}, \binits{S.}},
+\bauthor{\bsnm{Lieberman}, \binits{A.P.}},
+\bauthor{\bsnm{Klopp}, \binits{N.}},
+\bauthor{\bsnm{Lunetta}, \binits{K.L.}},
+\bauthor{\bsnm{Wichmann}, \binits{H.-E.}},
+\bauthor{\bsnm{Lyketsos}, \binits{C.G.}},
+\bauthor{\bsnm{Morgan}, \binits{K.}},
+\bauthor{\bsnm{Marson}, \binits{D.C.}},
+\bauthor{\bsnm{Brown}, \binits{K.}},
+\bauthor{\bsnm{Martiniuk}, \binits{F.}},
+\bauthor{\bsnm{Medway}, \binits{C.}},
+\bauthor{\bsnm{Mash}, \binits{D.C.}},
+\bauthor{\bsnm{Nöthen}, \binits{M.M.}},
+\bauthor{\bsnm{Masliah}, \binits{E.}},
+\bauthor{\bsnm{Hooper}, \binits{N.M.}},
+\bauthor{\bsnm{McCormick}, \binits{W.C.}},
+\bauthor{\bsnm{Daniele}, \binits{A.}},
+\bauthor{\bsnm{McCurry}, \binits{S.M.}},
+\bauthor{\bsnm{Bayer}, \binits{A.}},
+\bauthor{\bsnm{McDavid}, \binits{A.N.}},
+\bauthor{\bsnm{Gallacher}, \binits{J.}},
+\bauthor{\bsnm{McKee}, \binits{A.C.}},
+\bauthor{\bsnm{Bussche}, \binits{H.}},
+\bauthor{\bsnm{Mesulam}, \binits{M.}},
+\bauthor{\bsnm{Brayne}, \binits{C.}},
+\bauthor{\bsnm{Miller}, \binits{B.L.}},
+\bauthor{\bsnm{Riedel-Heller}, \binits{S.}},
+\bauthor{\bsnm{Miller}, \binits{C.A.}},
+\bauthor{\bsnm{Miller}, \binits{J.W.}},
+\bauthor{\bsnm{Al-Chalabi}, \binits{A.}},
+\bauthor{\bsnm{Morris}, \binits{J.C.}},
+\bauthor{\bsnm{Shaw}, \binits{C.E.}},
+\bauthor{\bsnm{Myers}, \binits{A.J.}},
+\bauthor{\bsnm{Wiltfang}, \binits{J.}},
+\bauthor{\bsnm{O'Bryant}, \binits{S.}},
+\bauthor{\bsnm{Olichney}, \binits{J.M.}},
+\bauthor{\bsnm{Alvarez}, \binits{V.}},
+\bauthor{\bsnm{Parisi}, \binits{J.E.}},
+\bauthor{\bsnm{Singleton}, \binits{A.B.}},
+\bauthor{\bsnm{Paulson}, \binits{H.L.}},
+\bauthor{\bsnm{Collinge}, \binits{J.}},
+\bauthor{\bsnm{Perry}, \binits{W.R.}},
+\bauthor{\bsnm{Mead}, \binits{S.}},
+\bauthor{\bsnm{Peskind}, \binits{E.}},
+\bauthor{\bsnm{Cribbs}, \binits{D.H.}},
+\bauthor{\bsnm{Rossor}, \binits{M.}},
+\bauthor{\bsnm{Pierce}, \binits{A.}},
+\bauthor{\bsnm{Ryan}, \binits{N.S.}},
+\bauthor{\bsnm{Poon}, \binits{W.W.}},
+\bauthor{\bsnm{Nacmias}, \binits{B.}},
+\bauthor{\bsnm{Potter}, \binits{H.}},
+\bauthor{\bsnm{Sorbi}, \binits{S.}},
+\bauthor{\bsnm{Quinn}, \binits{J.F.}},
+\bauthor{\bsnm{Sacchinelli}, \binits{E.}},
+\bauthor{\bsnm{Raj}, \binits{A.}},
+\bauthor{\bsnm{Spalletta}, \binits{G.}},
+\bauthor{\bsnm{Raskind}, \binits{M.}},
+\bauthor{\bsnm{Caltagirone}, \binits{C.}},
+\bauthor{\bsnm{Bossù}, \binits{P.}},
+\bauthor{\bsnm{Orfei}, \binits{M.D.}},
+\bauthor{\bsnm{Reisberg}, \binits{B.}},
+\bauthor{\bsnm{Clarke}, \binits{R.}},
+\bauthor{\bsnm{Reitz}, \binits{C.}},
+\bauthor{\bsnm{Smith}, \binits{A.D.}},
+\bauthor{\bsnm{Ringman}, \binits{J.M.}},
+\bauthor{\bsnm{Warden}, \binits{D.}},
+\bauthor{\bsnm{Roberson}, \binits{E.D.}},
+\bauthor{\bsnm{Wilcock}, \binits{G.}},
+\bauthor{\bsnm{Rogaeva}, \binits{E.}},
+\bauthor{\bsnm{Bruni}, \binits{A.C.}},
+\bauthor{\bsnm{Rosen}, \binits{H.J.}},
+\bauthor{\bsnm{Gallo}, \binits{M.}},
+\bauthor{\bsnm{Rosenberg}, \binits{R.N.}},
+\bauthor{\bsnm{Ben-Shlomo}, \binits{Y.}},
+\bauthor{\bsnm{Sager}, \binits{M.A.}},
+\bauthor{\bsnm{Mecocci}, \binits{P.}},
+\bauthor{\bsnm{Saykin}, \binits{A.J.}},
+\bauthor{\bsnm{Pastor}, \binits{P.}},
+\bauthor{\bsnm{Cuccaro}, \binits{M.L.}},
+\bauthor{\bsnm{Vance}, \binits{J.M.}},
+\bauthor{\bsnm{Schneider}, \binits{J.A.}},
+\bauthor{\bsnm{Schneider}, \binits{L.S.}},
+\bauthor{\bsnm{Slifer}, \binits{S.}},
+\bauthor{\bsnm{Seeley}, \binits{W.W.}},
+\bauthor{\bsnm{Smith}, \binits{A.G.}},
+\bauthor{\bsnm{Sonnen}, \binits{J.A.}},
+\bauthor{\bsnm{Spina}, \binits{S.}},
+\bauthor{\bsnm{Stern}, \binits{R.A.}},
+\bauthor{\bsnm{Swerdlow}, \binits{R.H.}},
+\bauthor{\bsnm{Tang}, \binits{M.}},
+\bauthor{\bsnm{Tanzi}, \binits{R.E.}},
+\bauthor{\bsnm{Trojanowski}, \binits{J.Q.}},
+\bauthor{\bsnm{Troncoso}, \binits{J.C.}},
+\bauthor{\bsnm{Van~Deerlin}, \binits{V.M.}},
+\bauthor{\bsnm{Van~Eldik}, \binits{L.J.}},
+\bauthor{\bsnm{Vinters}, \binits{H.V.}},
+\bauthor{\bsnm{Vonsattel}, \binits{J.P.}},
+\bauthor{\bsnm{Weintraub}, \binits{S.}},
+\bauthor{\bsnm{Welsh-Bohmer}, \binits{K.A.}},
+\bauthor{\bsnm{Wilhelmsen}, \binits{K.C.}},
+\bauthor{\bsnm{Williamson}, \binits{J.}},
+\bauthor{\bsnm{Wingo}, \binits{T.S.}},
+\bauthor{\bsnm{Woltjer}, \binits{R.L.}},
+\bauthor{\bsnm{Wright}, \binits{C.B.}},
+\bauthor{\bsnm{Yu}, \binits{C.-E.}},
+\bauthor{\bsnm{Yu}, \binits{L.}},
+\bauthor{\bsnm{Saba}, \binits{Y.}},
+\bauthor{\bsnm{Pilotto}, \binits{A.}},
+\bauthor{\bsnm{Bullido}, \binits{M.J.}},
+\bauthor{\bsnm{Peters}, \binits{O.}},
+\bauthor{\bsnm{Crane}, \binits{P.K.}},
+\bauthor{\bsnm{Bennett}, \binits{D.}},
+\bauthor{\bsnm{Bosco}, \binits{P.}},
+\bauthor{\bsnm{Coto}, \binits{E.}},
+\bauthor{\bsnm{Boccardi}, \binits{V.}},
+\bauthor{\bsnm{De~Jager}, \binits{P.L.}},
+\bauthor{\bsnm{Lleo}, \binits{A.}},
+\bauthor{\bsnm{Warner}, \binits{N.}},
+\bauthor{\bsnm{Lopez}, \binits{O.L.}},
+\bauthor{\bsnm{Ingelsson}, \binits{M.}},
+\bauthor{\bsnm{Deloukas}, \binits{P.}},
+\bauthor{\bsnm{Cruchaga}, \binits{C.}},
+\bauthor{\bsnm{Graff}, \binits{C.}},
+\bauthor{\bsnm{Gwilliam}, \binits{R.}},
+\bauthor{\bsnm{Fornage}, \binits{M.}},
+\bauthor{\bsnm{Goate}, \binits{A.M.}},
+\bauthor{\bsnm{Sanchez-Juan}, \binits{P.}},
+\bauthor{\bsnm{Kehoe}, \binits{P.G.}},
+\bauthor{\bsnm{Amin}, \binits{N.}},
+\bauthor{\bsnm{Ertekin-Taner}, \binits{N.}},
+\bauthor{\bsnm{Berr}, \binits{C.}},
+\bauthor{\bsnm{Debette}, \binits{S.}},
+\bauthor{\bsnm{Love}, \binits{S.}},
+\bauthor{\bsnm{Launer}, \binits{L.J.}},
+\bauthor{\bsnm{Younkin}, \binits{S.G.}},
+\bauthor{\bsnm{Dartigues}, \binits{J.-F.}},
+\bauthor{\bsnm{Corcoran}, \binits{C.}},
+\bauthor{\bsnm{Ikram}, \binits{M.A.}},
+\bauthor{\bsnm{Dickson}, \binits{D.W.}},
+\bauthor{\bsnm{Nicolas}, \binits{G.}},
+\bauthor{\bsnm{Campion}, \binits{D.}},
+\bauthor{\bsnm{Tschanz}, \binits{J.}},
+\bauthor{\bsnm{Schmidt}, \binits{H.}},
+\bauthor{\bsnm{Hakonarson}, \binits{H.}},
+\bauthor{\bsnm{Clarimon}, \binits{J.}},
+\bauthor{\bsnm{Munger}, \binits{R.}},
+\bauthor{\bsnm{Schmidt}, \binits{R.}},
+\bauthor{\bsnm{Farrer}, \binits{L.A.}},
+\bauthor{\bsnm{Van~Broeckhoven}, \binits{C.}},
+\bauthor{\bsnm{C~O'Donovan}, \binits{M.}},
+\bauthor{\bsnm{DeStefano}, \binits{A.L.}},
+\bauthor{\bsnm{Jones}, \binits{L.}},
+\bauthor{\bsnm{Haines}, \binits{J.L.}},
+\bauthor{\bsnm{Deleuze}, \binits{J.-F.}},
+\bauthor{\bsnm{Owen}, \binits{M.J.}},
+\bauthor{\bsnm{Gudnason}, \binits{V.}},
+\bauthor{\bsnm{Mayeux}, \binits{R.}},
+\bauthor{\bsnm{Escott-Price}, \binits{V.}},
+\bauthor{\bsnm{Psaty}, \binits{B.M.}},
+\bauthor{\bsnm{Ramirez}, \binits{A.}},
+\bauthor{\bsnm{Wang}, \binits{L.-S.}},
+\bauthor{\bsnm{Ruiz}, \binits{A.}},
+\bauthor{\bsnm{Duijn}, \binits{C.M.}},
+\bauthor{\bsnm{Holmans}, \binits{P.A.}},
+\bauthor{\bsnm{Seshadri}, \binits{S.}},
+\bauthor{\bsnm{Williams}, \binits{J.}},
+\bauthor{\bsnm{Amouyel}, \binits{P.}},
+\bauthor{\bsnm{Schellenberg}, \binits{G.D.}},
+\bauthor{\bsnm{Lambert}, \binits{J.-C.}},
+\bauthor{\bsnm{Pericak-Vance}, \binits{M.A.}},
+\bauthor{\bsnm{(ADGC)}, \binits{A.D.G.C.}},
+\bauthor{\bsnm{(EADI)}, \binits{E.A.D.I.}},
+\bauthor{\bsnm{Heart}, \binits{C.}},
+\bauthor{\bsnm{Genomic Epidemiology Consortium~(CHARGE)}, \binits{A.R.}},
+\bauthor{\bsnm{Genetic}},
+\bauthor{\bsnm{AD/Defining~Genetic}, \binits{P.}},
+\bauthor{\bsnm{Alzheimer’s Disease Consortium~(GERAD/PERADES)},
+  \binits{E.R.}}:
+\batitle{Genetic meta-analysis of diagnosed alzheimer's disease identifies new
+  risk loci and implicates a$\beta$, tau, immunity and lipid processing}.
+\bjtitle{Nature genetics}
+\bvolume{51}(\bissue{30820047}),
+\bfpage{414}--\blpage{430}
+(\byear{2019})
+\doiurl{10.1038/s41588-019-0358-2}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Gerring et~al.}{2020}]{Gerring2020}
+\begin{barticle}
+\bauthor{\bsnm{Gerring}, \binits{Z.F.}},
+\bauthor{\bsnm{Lupton}, \binits{M.K.}},
+\bauthor{\bsnm{Edey}, \binits{D.}},
+\bauthor{\bsnm{Gamazon}, \binits{E.R.}},
+\bauthor{\bsnm{Derks}, \binits{E.M.}}:
+\batitle{An analysis of genetically regulated gene expression across multiple
+  tissues implicates novel gene candidates in alzheimer's disease}.
+\bjtitle{Alzheimer's research \& therapy}
+\bvolume{12}(\bissue{32299494}),
+\bfpage{43}--\blpage{43}
+(\byear{2020})
+\doiurl{10.1186/s13195-020-00611-8}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Baird et~al.}{2021}]{Baird2021}
+\begin{barticle}
+\bauthor{\bsnm{Baird}, \binits{D.A.}},
+\bauthor{\bsnm{Liu}, \binits{J.Z.}},
+\bauthor{\bsnm{Zheng}, \binits{J.}},
+\bauthor{\bsnm{Sieberts}, \binits{S.K.}},
+\bauthor{\bsnm{Perumal}, \binits{T.}},
+\bauthor{\bsnm{Elsworth}, \binits{B.}},
+\bauthor{\bsnm{Richardson}, \binits{T.G.}},
+\bauthor{\bsnm{Chen}, \binits{C.-Y.}},
+\bauthor{\bsnm{Carrasquillo}, \binits{M.M.}},
+\bauthor{\bsnm{Allen}, \binits{M.}},
+\bauthor{\bsnm{Reddy}, \binits{J.S.}},
+\bauthor{\bsnm{De~Jager}, \binits{P.L.}},
+\bauthor{\bsnm{Ertekin-Taner}, \binits{N.}},
+\bauthor{\bsnm{Mangravite}, \binits{L.M.}},
+\bauthor{\bsnm{Logsdon}, \binits{B.}},
+\bauthor{\bsnm{Estrada}, \binits{K.}},
+\bauthor{\bsnm{Haycock}, \binits{P.C.}},
+\bauthor{\bsnm{Hemani}, \binits{G.}},
+\bauthor{\bsnm{Runz}, \binits{H.}},
+\bauthor{\bsnm{Smith}, \binits{G.D.}},
+\bauthor{\bsnm{Gaunt}, \binits{T.R.}},
+\bauthor{\bsnm{group}, \binits{A.M.P.-A.D.}}:
+\batitle{Identifying drug targets for neurological and psychiatric disease via
+  genetics and the brain transcriptome}.
+\bjtitle{PLoS genetics}
+\bvolume{17}(\bissue{33417599}),
+\bfpage{1009224}--\blpage{1009224}
+(\byear{2021})
+\doiurl{10.1371/journal.pgen.1009224}
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Schwartzentruber
+  et~al.}{2021}]{Schwartzentruber2021}
+\begin{barticle}
+\bauthor{\bsnm{Schwartzentruber}, \binits{J.}},
+\bauthor{\bsnm{Cooper}, \binits{S.}},
+\bauthor{\bsnm{Liu}, \binits{J.Z.}},
+\bauthor{\bsnm{Barrio-Hernandez}, \binits{I.}},
+\bauthor{\bsnm{Bello}, \binits{E.}},
+\bauthor{\bsnm{Kumasaka}, \binits{N.}},
+\bauthor{\bsnm{Young}, \binits{A.M.H.}},
+\bauthor{\bsnm{Franklin}, \binits{R.J.M.}},
+\bauthor{\bsnm{Johnson}, \binits{T.}},
+\bauthor{\bsnm{Estrada}, \binits{K.}},
+\bauthor{\bsnm{Gaffney}, \binits{D.J.}},
+\bauthor{\bsnm{Beltrao}, \binits{P.}},
+\bauthor{\bsnm{Bassett}, \binits{A.}}:
+\batitle{Genome-wide meta-analysis, fine-mapping and integrative prioritization
+  implicate new alzheimer's disease risk genes}.
+\bjtitle{Nature genetics}
+\bvolume{53}(\bissue{33589840}),
+\bfpage{392}--\blpage{402}
+(\byear{2021})
+\doiurl{10.1038/s41588-020-00776-w}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Wightman et~al.}{2021}]{Wightman2021}
+\begin{barticle}
+\bauthor{\bsnm{Wightman}, \binits{D.P.}},
+\bauthor{\bsnm{Jansen}, \binits{I.E.}},
+\bauthor{\bsnm{Savage}, \binits{J.E.}},
+\bauthor{\bsnm{Shadrin}, \binits{A.A.}},
+\bauthor{\bsnm{Bahrami}, \binits{S.}},
+\bauthor{\bsnm{Holland}, \binits{D.}},
+\bauthor{\bsnm{Rongve}, \binits{A.}},
+\bauthor{\bsnm{Børte}, \binits{S.}},
+\bauthor{\bsnm{Winsvold}, \binits{B.S.}},
+\bauthor{\bsnm{Drange}, \binits{O.K.}},
+\bauthor{\bsnm{Martinsen}, \binits{A.E.}},
+\bauthor{\bsnm{Skogholt}, \binits{A.H.}},
+\bauthor{\bsnm{Willer}, \binits{C.}},
+\bauthor{\bsnm{Bråthen}, \binits{G.}},
+\bauthor{\bsnm{Bosnes}, \binits{I.}},
+\bauthor{\bsnm{Nielsen}, \binits{J.B.}},
+\bauthor{\bsnm{Fritsche}, \binits{L.G.}},
+\bauthor{\bsnm{Thomas}, \binits{L.F.}},
+\bauthor{\bsnm{Pedersen}, \binits{L.M.}},
+\bauthor{\bsnm{Gabrielsen}, \binits{M.E.}},
+\bauthor{\bsnm{Johnsen}, \binits{M.B.}},
+\bauthor{\bsnm{Meisingset}, \binits{T.W.}},
+\bauthor{\bsnm{Zhou}, \binits{W.}},
+\bauthor{\bsnm{Proitsi}, \binits{P.}},
+\bauthor{\bsnm{Hodges}, \binits{A.}},
+\bauthor{\bsnm{Dobson}, \binits{R.}},
+\bauthor{\bsnm{Velayudhan}, \binits{L.}},
+\bauthor{\bsnm{Sealock}, \binits{J.M.}},
+\bauthor{\bsnm{Davis}, \binits{L.K.}},
+\bauthor{\bsnm{Pedersen}, \binits{N.L.}},
+\bauthor{\bsnm{Reynolds}, \binits{C.A.}},
+\bauthor{\bsnm{Karlsson}, \binits{I.K.}},
+\bauthor{\bsnm{Magnusson}, \binits{S.}},
+\bauthor{\bsnm{Stefansson}, \binits{H.}},
+\bauthor{\bsnm{Thordardottir}, \binits{S.}},
+\bauthor{\bsnm{Jonsson}, \binits{P.V.}},
+\bauthor{\bsnm{Snaedal}, \binits{J.}},
+\bauthor{\bsnm{Zettergren}, \binits{A.}},
+\bauthor{\bsnm{Skoog}, \binits{I.}},
+\bauthor{\bsnm{Kern}, \binits{S.}},
+\bauthor{\bsnm{Waern}, \binits{M.}},
+\bauthor{\bsnm{Zetterberg}, \binits{H.}},
+\bauthor{\bsnm{Blennow}, \binits{K.}},
+\bauthor{\bsnm{Stordal}, \binits{E.}},
+\bauthor{\bsnm{Hveem}, \binits{K.}},
+\bauthor{\bsnm{Zwart}, \binits{J.-A.}},
+\bauthor{\bsnm{Athanasiu}, \binits{L.}},
+\bauthor{\bsnm{Selnes}, \binits{P.}},
+\bauthor{\bsnm{Saltvedt}, \binits{I.}},
+\bauthor{\bsnm{Sando}, \binits{S.B.}},
+\bauthor{\bsnm{Ulstein}, \binits{I.}},
+\bauthor{\bsnm{Djurovic}, \binits{S.}},
+\bauthor{\bsnm{Fladby}, \binits{T.}},
+\bauthor{\bsnm{Aarsland}, \binits{D.}},
+\bauthor{\bsnm{Selbæk}, \binits{G.}},
+\bauthor{\bsnm{Ripke}, \binits{S.}},
+\bauthor{\bsnm{Stefansson}, \binits{K.}},
+\bauthor{\bsnm{Andreassen}, \binits{O.A.}},
+\bauthor{\bsnm{Posthuma}, \binits{D.}}:
+\batitle{A genome-wide association study with 1,126,563 individuals identifies
+  new risk loci for alzheimer's disease.}
+\bjtitle{Nature genetics}
+\bvolume{53},
+\bfpage{1276}--\blpage{1282}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Wingo et~al.}{2021}]{Wingo2021}
+\begin{barticle}
+\bauthor{\bsnm{Wingo}, \binits{A.P.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Gerasimov}, \binits{E.S.}},
+\bauthor{\bsnm{Gockley}, \binits{J.}},
+\bauthor{\bsnm{Logsdon}, \binits{B.A.}},
+\bauthor{\bsnm{Duong}, \binits{D.M.}},
+\bauthor{\bsnm{Dammer}, \binits{E.B.}},
+\bauthor{\bsnm{Robins}, \binits{C.}},
+\bauthor{\bsnm{Beach}, \binits{T.G.}},
+\bauthor{\bsnm{Reiman}, \binits{E.M.}},
+\bauthor{\bsnm{Epstein}, \binits{M.P.}},
+\bauthor{\bsnm{De~Jager}, \binits{P.L.}},
+\bauthor{\bsnm{Lah}, \binits{J.J.}},
+\bauthor{\bsnm{Bennett}, \binits{D.A.}},
+\bauthor{\bsnm{Seyfried}, \binits{N.T.}},
+\bauthor{\bsnm{Levey}, \binits{A.I.}},
+\bauthor{\bsnm{Wingo}, \binits{T.S.}}:
+\batitle{Integrating human brain proteomes with genome-wide association data
+  implicates new proteins in alzheimer's disease pathogenesis}.
+\bjtitle{Nature genetics}
+\bvolume{53}(\bissue{33510477}),
+\bfpage{143}--\blpage{146}
+(\byear{2021})
+\doiurl{10.1038/s41588-020-00773-z}
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Lin et~al.}{2018}]{Lin2018}
+\begin{barticle}
+\bauthor{\bsnm{Lin}, \binits{Y.-T.}},
+\bauthor{\bsnm{Seo}, \binits{J.}},
+\bauthor{\bsnm{Gao}, \binits{F.}},
+\bauthor{\bsnm{Feldman}, \binits{H.M.}},
+\bauthor{\bsnm{Wen}, \binits{H.-L.}},
+\bauthor{\bsnm{Penney}, \binits{J.}},
+\bauthor{\bsnm{Cam}, \binits{H.P.}},
+\bauthor{\bsnm{Gjoneska}, \binits{E.}},
+\bauthor{\bsnm{Raja}, \binits{W.K.}},
+\bauthor{\bsnm{Cheng}, \binits{J.}},
+\bauthor{\bsnm{Rueda}, \binits{R.}},
+\bauthor{\bsnm{Kritskiy}, \binits{O.}},
+\bauthor{\bsnm{Abdurrob}, \binits{F.}},
+\bauthor{\bsnm{Peng}, \binits{Z.}},
+\bauthor{\bsnm{Milo}, \binits{B.}},
+\bauthor{\bsnm{Yu}, \binits{C.J.}},
+\bauthor{\bsnm{Elmsaouri}, \binits{S.}},
+\bauthor{\bsnm{Dey}, \binits{D.}},
+\bauthor{\bsnm{Ko}, \binits{T.}},
+\bauthor{\bsnm{Yankner}, \binits{B.A.}},
+\bauthor{\bsnm{Tsai}, \binits{L.-H.}}:
+\batitle{Apoe4 causes widespread molecular and cellular alterations associated
+  with alzheimer's disease phenotypes in human ipsc-derived brain cell types}.
+\bjtitle{Neuron}
+\bvolume{98}(\bissue{29861287}),
+\bfpage{1141}--\blpage{11547}
+(\byear{2018})
+\doiurl{10.1016/j.neuron.2018.05.008}
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Barabási et~al.}{2011}]{Barabasi2011}
+\begin{barticle}
+\bauthor{\bsnm{Barabási}, \binits{A.-L.}},
+\bauthor{\bsnm{Gulbahce}, \binits{N.}},
+\bauthor{\bsnm{Loscalzo}, \binits{J.}}:
+\batitle{Network medicine: a network-based approach to human disease.}
+\bjtitle{Nature reviews. Genetics}
+\bvolume{12},
+\bfpage{56}--\blpage{68}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Guney et~al.}{2016}]{Guney2016}
+\begin{barticle}
+\bauthor{\bsnm{Guney}, \binits{E.}},
+\bauthor{\bsnm{Menche}, \binits{J.}},
+\bauthor{\bsnm{Vidal}, \binits{M.}},
+\bauthor{\bsnm{Barabási}, \binits{A.-L.}}:
+\batitle{Network-based in silico drug efficacy screening}.
+\bjtitle{Nature communications}
+\bvolume{7}(\bissue{26831545}),
+\bfpage{10331}--\blpage{10331}
+(\byear{2016})
+\doiurl{10.1038/ncomms10331}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Cheng et~al.}{2018}]{Cheng2018}
+\begin{barticle}
+\bauthor{\bsnm{Cheng}, \binits{F.}},
+\bauthor{\bsnm{Desai}, \binits{R.J.}},
+\bauthor{\bsnm{Handy}, \binits{D.E.}},
+\bauthor{\bsnm{Wang}, \binits{R.}},
+\bauthor{\bsnm{Schneeweiss}, \binits{S.}},
+\bauthor{\bsnm{Barabási}, \binits{A.-L.}},
+\bauthor{\bsnm{Loscalzo}, \binits{J.}}:
+\batitle{Network-based approach to prediction and population-based validation
+  of in silico drug repurposing}.
+\bjtitle{Nature communications}
+\bvolume{9}(\bissue{30002366}),
+\bfpage{2691}--\blpage{2691}
+(\byear{2018})
+\doiurl{10.1038/s41467-018-05116-5}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Biersack}{2020}]{Biersack2020}
+\begin{barticle}
+\bauthor{\bsnm{Biersack}, \binits{B.}}:
+\batitle{3,3’-diindolylmethane and its derivatives: nature-inspired
   strategies tackling drug resistant tumors by regulation of signal
-  transduction, transcription factors and micrornas.
-\newblock \emph{Cancer Drug Resistance}, 3\penalty0 (4):\penalty0 867--878,
-  2020.
-\newblock ISSN 2578-532X.
-\newblock \doi{10.20517/cdr.2020.53}.
-\newblock URL \url{http://dx.doi.org/10.20517/cdr.2020.53}.
+  transduction, transcription factors and micrornas}.
+\bjtitle{Cancer Drug Resistance}
+\bvolume{3}(\bissue{4}),
+\bfpage{867}--\blpage{878}
+(\byear{2020})
+\doiurl{10.20517/cdr.2020.53}
+\end{barticle}
+\endbibitem
 
-\bibitem[Bondi et~al.(2017)Bondi, Edmonds, and Salmon]{Bondi2017}
-Mark~W. Bondi, Emily~C. Edmonds, and David~P. Salmon.
-\newblock Alzheimer's disease: Past, present, and future.
-\newblock \emph{Journal of the International Neuropsychological Society :
-  JINS}, 23\penalty0 (29198280):\penalty0 818--831, October 2017.
-\newblock ISSN 1355-6177.
-\newblock \doi{10.1017/S135561771700100X}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5830188/}.
-
-\bibitem[Cheng et~al.(2018)Cheng, Desai, Handy, Wang, Schneeweiss, Barabási,
-  and Loscalzo]{Cheng2018}
-Feixiong Cheng, Rishi~J. Desai, Diane~E. Handy, Ruisheng Wang, Sebastian
-  Schneeweiss, Albert-László Barabási, and Joseph Loscalzo.
-\newblock Network-based approach to prediction and population-based validation
-  of in silico drug repurposing.
-\newblock \emph{Nature communications}, 9\penalty0 (30002366):\penalty0
-  2691--2691, July 2018.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-018-05116-5}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6043492/}.
-
-\bibitem[Cheng et~al.(2019)Cheng, Kovács, and Barabási]{Cheng2019}
-Feixiong Cheng, István~A. Kovács, and Albert-László Barabási.
-\newblock Network-based prediction of drug combinations.
-\newblock \emph{Nature communications}, 10:\penalty0 1197, Mar 2019.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6416394/}.
-
-\bibitem[Chowdari et~al.(2002)Chowdari, Mirnics, Semwal, Wood, Lawrence,
-  Bhatia, Deshpande, B.K., Ferrell, Middleton, Devlin, Levitt, Lewis, and
-  Nimgaonkar]{Chowdari2002}
-Kodavali~V. Chowdari, Karoly Mirnics, Prachi Semwal, Joel Wood, Elizabeth
-  Lawrence, Triptish Bhatia, Smita~N. Deshpande, Thelma B.K., Robert~E.
-  Ferrell, Frank~A. Middleton, Bernie Devlin, Pat Levitt, David~A. Lewis, and
-  Vishwajit~L. Nimgaonkar.
-\newblock { Association and linkage analyses of RGS4 polymorphisms in
-  schizophrenia }.
-\newblock \emph{Human Molecular Genetics}, 11\penalty0 (12):\penalty0
-  1373--1380, 06 2002.
-\newblock ISSN 0964-6906.
-\newblock \doi{10.1093/hmg/11.12.1373}.
-\newblock URL \url{https://doi.org/10.1093/hmg/11.12.1373}.
-
-\bibitem[Cicchetti et~al.(2019)Cicchetti, David, Siddu, and
-  Denis]{Cicchetti2019}
-F.~Cicchetti, L.S. David, A.~Siddu, and H.L. Denis.
-\newblock Cysteamine as a novel disease-modifying compound for parkinson's
-  disease: Over a decade of research supporting a clinical trial.
-\newblock \emph{Neurobiology of Disease}, 130:\penalty0 104530, 2019.
-\newblock ISSN 0969-9961.
-\newblock \doi{https://doi.org/10.1016/j.nbd.2019.104530}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0969996119301986}.
-
-\bibitem[Consortium et~al.(2018)Consortium, Anttila, Bulik-Sullivan, Finucane,
-  Walters, Bras, Duncan, Escott-Price, Falcone, Gormley, Malik, Patsopoulos,
-  Ripke, Wei, Yu, Lee, Turley, Grenier-Boley, Chouraki, Kamatani, Berr,
-  Letenneur, Hannequin, Amouyel, Boland, Deleuze, Duron, Vardarajan, Reitz,
-  Goate, Huentelman, Kamboh, Larson, Rogaeva, St~George-Hyslop, Hakonarson,
-  Kukull, Farrer, Barnes, Beach, Demirci, Head, Hulette, Jicha, Kauwe, Kaye,
-  Leverenz, Levey, Lieberman, Pankratz, Poon, Quinn, Saykin, Schneider, Smith,
-  Sonnen, Stern, Van~Deerlin, Van~Eldik, Harold, Russo, Rubinsztein, Bayer,
-  Tsolaki, Proitsi, Fox, Hampel, Owen, Mead, Passmore, Morgan, Nöthen, Rossor,
-  Lupton, Hoffmann, Kornhuber, Lawlor, McQuillin, Al-Chalabi, Bis, Ruiz, Boada,
-  Seshadri, Beiser, Rice, van~der Lee, De~Jager, Geschwind, Riemenschneider,
-  Riedel-Heller, Rotter, Ransmayr, Hyman, Cruchaga, Alegret, Winsvold, Palta,
-  Farh, Cuenca-Leon, Furlotte, Kurth, Ligthart, Terwindt, Freilinger, Ran,
-  Gordon, Borck, Adams, Lehtimäki, Wedenoja, Buring, Schürks, Hrafnsdottir,
-  Hottenga, Penninx, Artto, Kaunisto, Vepsäläinen, Martin, Montgomery, Kurki,
-  Hämäläinen, Huang, Huang, Sandor, Webber, Muller-Myhsok, Schreiber,
-  Salomaa, Loehrer, Göbel, Macaya, Pozo-Rosich, Hansen, Werge, Kaprio,
-  Metspalu, Kubisch, Ferrari, Belin, van~den Maagdenberg, Zwart, Boomsma,
-  Eriksson, Olesen, Chasman, Nyholt, Avbersek, Baum, Berkovic, Bradfield,
-  Buono, Catarino, Cossette, De~Jonghe, Depondt, Dlugos, Ferraro, French,
-  Hjalgrim, Jamnadas-Khoda, Kälviäinen, Kunz, Lerche, Leu, Lindhout, Lo,
-  Lowenstein, McCormack, Møller, Molloy, Ng, Oliver, Privitera, Radtke,
-  Ruppert, Sander, Schachter, Schankin, Scheffer, Schoch, Sisodiya, Smith,
-  Sperling, Striano, Surges, Thomas, Visscher, Whelan, Zara, Heinzen, Marson,
-  Becker, Stroink, Zimprich, Gasser, Gibbs, Heutink, Martinez, Morris, Sharma,
-  Ryten, Mok, Pulit, Bevan, Holliday, Attia, Battey, Boncoraglio, Thijs, Chen,
-  Mitchell, Rothwell, Sharma, Sudlow, Vicente, Markus, Kourkoulis, Pera,
-  Raffeld, Silliman, Boraska~Perica, Thornton, Huckins, William~Rayner, Lewis,
-  Gratacos, Rybakowski, Keski-Rahkonen, Raevuori, Hudson, Reichborn-Kjennerud,
-  Monteleone, Karwautz, Mannik, Baker, O'Toole, Trace, Davis, Helder, Ehrlich,
-  Herpertz-Dahlmann, Danner, van Elburg, Clementi, Forzan, Docampo, Lissowska,
-  Hauser, Tortorella, Maj, Gonidakis, Tziouvas, Papezova, Yilmaz, Wagner,
-  Cohen-Woods, Herms, Julià, Rabionet, Dick, Ripatti, Andreassen, Espeseth,
-  Lundervold, Steen, Pinto, Scherer, Aschauer, Schosser, Alfredsson, Padyukov,
-  Halmi, Mitchell, Strober, Bergen, Kaye, Szatkiewicz, Cormand, Ramos-Quiroga,
-  Sánchez-Mora, Ribasés, Casas, Hervas, Arranz, Haavik, Zayats, Johansson,
-  Williams, Dempfle, Rothenberger, Kuntsi, Oades, Banaschewski, Franke,
-  Buitelaar, Arias~Vasquez, Doyle, Reif, Lesch, Freitag, Rivero, Palmason,
-  Romanos, Langley, Rietschel, Witt, Dalsgaard, Børglum, Waldman, Wilmot,
-  Molly, Bau, Crosbie, Schachar, Loo, McGough, Grevet, Medland, Robinson,
-  Weiss, Bacchelli, Bailey, Bal, Battaglia, Betancur, Bolton, Cantor,
-  Celestino-Soper, Dawson, De~Rubeis, Duque, Green, Klauck, Leboyer, Levitt,
-  Maestrini, Mane, De-Luca, Parr, Regan, Reichenberg, Sandin, Vorstman,
-  Wassink, Wijsman, Cook, Santangelo, Delorme, Rogé, Magalhaes, Arking,
-  Schulze, Thompson, Strohmaier, Matthews, Melle, Morris, Blackwood, McIntosh,
-  Bergen, Schalling, Jamain, Maaser, Fischer, Reinbold, Fullerton,
-  Guzman-Parra, Mayoral, Schofield, Cichon, Mühleisen, Degenhardt, Schumacher,
-  Bauer, Mitchell, Gershon, Rice, Potash, Zandi, Craddock, Ferrier, Alda,
-  Rouleau, Turecki, Ophoff, Pato, Anjorin, Stahl, Leber, Czerski, Cruceanu,
-  Jones, Posthuma, Andlauer, Forstner, Streit, Baune, Air, Sinnamon, Wray,
-  MacIntyre, Porteous, Homuth, Rivera, Grove, Middeldorp, Hickie, Pergadia,
-  Mehta, Smit, Jansen, de~Geus, Dunn, Li, Nauck, Schoevers, Beekman, Knowles,
-  Viktorin, Arnold, Barr, Bedoya-Berrio, Bienvenu, Brentani, Burton, Camarena,
-  Cappi, Cath, Cavallini, Cusi, Darrow, Denys, Derks, Dietrich, Fernandez,
-  Figee, Freimer, Gerber, Grados, Greenberg, Hanna, Hartmann, Hirschtritt,
-  Hoekstra, Huang, Huyser, Illmann, Jenike, Kuperman, Leventhal, Lochner, Lyon,
-  Macciardi, Madruga-Garrido, Malaty, Maras, McGrath, Miguel, Mir, Nestadt,
-  Nicolini, Okun, Pakstis, Paschou, Piacentini, Pittenger, Plessen, Ramensky,
-  Ramos, Reus, Richter, Riddle, Robertson, Roessner, Rosário, Samuels, Sandor,
-  Stein, Tsetsos, Van~Nieuwerburgh, Weatherall, Wendland, Wolanczyk, Worbe,
-  Zai, Goes, McLaughlin, Nestadt, Grabe, Depienne, Konkashbaev, Lanzagorta,
-  Valencia-Duarte, Bramon, Buccola, Cahn, Cairns, Chong, Cohen, Crespo-Facorro,
-  Crowley, Davidson, DeLisi, Dinan, Donohoe, Drapeau, Duan, Haan, Hougaard,
-  Karachanak-Yankova, Khrunin, Klovins, Kučinskas, Lee Chee~Keong, Limborska,
-  Loughland, Lönnqvist, Maher, Mattheisen, McDonald, Murphy, Nenadic, van Os,
-  Pantelis, Pato, Petryshen, Quested, Roussos, Sanders, Schall, Schwab, Sim,
-  So, Stögmann, Subramaniam, Toncheva, Waddington, Walters, Weiser, Cheng,
-  Cloninger, Curtis, Gejman, Henskens, Mattingsdal, Oh, Scott, Webb, Breen,
-  Churchhouse, Bulik, Daly, Dichgans, Faraone, Guerreiro, Holmans, Kendler,
-  Koeleman, Mathews, Price, Scharf, Sklar, Williams, Wood, Cotsapas, Palotie,
-  Smoller, Sullivan, Rosand, Corvin, Neale, Schott, Anney, Elia,
-  Grigoroiu-Serbanescu, Edenberg, and Murray]{Consortium2018}
-Brainstorm Consortium, Verneri Anttila, Brendan Bulik-Sullivan, Hilary~K.
-  Finucane, Raymond~K. Walters, Jose Bras, Laramie Duncan, Valentina
-  Escott-Price, Guido~J. Falcone, Padhraig Gormley, Rainer Malik, Nikolaos~A.
-  Patsopoulos, Stephan Ripke, Zhi Wei, Dongmei Yu, Phil~H. Lee, Patrick Turley,
-  Benjamin Grenier-Boley, Vincent Chouraki, Yoichiro Kamatani, Claudine Berr,
-  Luc Letenneur, Didier Hannequin, Philippe Amouyel, Anne Boland,
-  Jean-François Deleuze, Emmanuelle Duron, Badri~N. Vardarajan, Christiane
-  Reitz, Alison~M. Goate, Matthew~J. Huentelman, M.~Ilyas Kamboh, Eric~B.
-  Larson, Ekaterina Rogaeva, Peter St~George-Hyslop, Hakon Hakonarson,
-  Walter~A. Kukull, Lindsay~A. Farrer, Lisa~L. Barnes, Thomas~G. Beach,
-  F.~Yesim Demirci, Elizabeth Head, Christine~M. Hulette, Gregory~A. Jicha,
-  John S.~K. Kauwe, Jeffrey~A. Kaye, James~B. Leverenz, Allan~I. Levey,
-  Andrew~P. Lieberman, Vernon~S. Pankratz, Wayne~W. Poon, Joseph~F. Quinn,
-  Andrew~J. Saykin, Lon~S. Schneider, Amanda~G. Smith, Joshua~A. Sonnen,
-  Robert~A. Stern, Vivianna~M. Van~Deerlin, Linda~J. Van~Eldik, Denise Harold,
-  Giancarlo Russo, David~C. Rubinsztein, Anthony Bayer, Magda Tsolaki, Petra
-  Proitsi, Nick~C. Fox, Harald Hampel, Michael~J. Owen, Simon Mead, Peter
-  Passmore, Kevin Morgan, Markus~M. Nöthen, Martin Rossor, Michelle~K. Lupton,
-  Per Hoffmann, Johannes Kornhuber, Brian Lawlor, Andrew McQuillin, Ammar
-  Al-Chalabi, Joshua~C. Bis, Agustin Ruiz, Mercè Boada, Sudha Seshadri, Alexa
-  Beiser, Kenneth Rice, Sven~J. van~der Lee, Philip~L. De~Jager, Daniel~H.
-  Geschwind, Matthias Riemenschneider, Steffi Riedel-Heller, Jerome~I. Rotter,
-  Gerhard Ransmayr, Bradley~T. Hyman, Carlos Cruchaga, Montserrat Alegret,
-  Bendik Winsvold, Priit Palta, Kai-How Farh, Ester Cuenca-Leon, Nicholas
-  Furlotte, Tobias Kurth, Lannie Ligthart, Gisela~M. Terwindt, Tobias
-  Freilinger, Caroline Ran, Scott~D. Gordon, Guntram Borck, Hieab H.~H. Adams,
-  Terho Lehtimäki, Juho Wedenoja, Julie~E. Buring, Markus Schürks, Maria
-  Hrafnsdottir, Jouke-Jan Hottenga, Brenda Penninx, Ville Artto, Mari Kaunisto,
-  Salli Vepsäläinen, Nicholas~G. Martin, Grant~W. Montgomery, Mitja~I. Kurki,
-  Eija Hämäläinen, Hailiang Huang, Jie Huang, Cynthia Sandor, Caleb Webber,
-  Bertram Muller-Myhsok, Stefan Schreiber, Veikko Salomaa, Elizabeth Loehrer,
-  Hartmut Göbel, Alfons Macaya, Patricia Pozo-Rosich, Thomas Hansen, Thomas
-  Werge, Jaakko Kaprio, Andres Metspalu, Christian Kubisch, Michel~D. Ferrari,
-  Andrea~C. Belin, Arn M. J.~M. van~den Maagdenberg, John-Anker Zwart, Dorret
-  Boomsma, Nicholas Eriksson, Jes Olesen, Daniel~I. Chasman, Dale~R. Nyholt,
-  Andreja Avbersek, Larry Baum, Samuel Berkovic, Jonathan Bradfield, Russell~J.
-  Buono, Claudia~B. Catarino, Patrick Cossette, Peter De~Jonghe, Chantal
-  Depondt, Dennis Dlugos, Thomas~N. Ferraro, Jacqueline French, Helle Hjalgrim,
-  Jennifer Jamnadas-Khoda, Reetta Kälviäinen, Wolfram~S. Kunz, Holger Lerche,
-  Costin Leu, Dick Lindhout, Warren Lo, Daniel Lowenstein, Mark McCormack,
-  Rikke~S. Møller, Anne Molloy, Ping-Wing Ng, Karen Oliver, Michael Privitera,
-  Rodney Radtke, Ann-Kathrin Ruppert, Thomas Sander, Steven Schachter,
-  Christoph Schankin, Ingrid Scheffer, Susanne Schoch, Sanjay~M. Sisodiya,
-  Philip Smith, Michael Sperling, Pasquale Striano, Rainer Surges, G.~Neil
-  Thomas, Frank Visscher, Christopher~D. Whelan, Federico Zara, Erin~L.
-  Heinzen, Anthony Marson, Felicitas Becker, Hans Stroink, Fritz Zimprich,
-  Thomas Gasser, Raphael Gibbs, Peter Heutink, Maria Martinez, Huw~R. Morris,
-  Manu Sharma, Mina Ryten, Kin~Y. Mok, Sara Pulit, Steve Bevan, Elizabeth
-  Holliday, John Attia, Thomas Battey, Giorgio Boncoraglio, Vincent Thijs,
-  Wei-Min Chen, Braxton Mitchell, Peter Rothwell, Pankaj Sharma, Cathie Sudlow,
-  Astrid Vicente, Hugh Markus, Christina Kourkoulis, Joana Pera, Miriam
-  Raffeld, Scott Silliman, Vesna Boraska~Perica, Laura~M. Thornton, Laura~M.
-  Huckins, N.~William~Rayner, Cathryn~M. Lewis, Monica Gratacos, Filip
-  Rybakowski, Anna Keski-Rahkonen, Anu Raevuori, James~I. Hudson, Ted
-  Reichborn-Kjennerud, Palmiero Monteleone, Andreas Karwautz, Katrin Mannik,
-  Jessica~H. Baker, Julie~K. O'Toole, Sara~E. Trace, Oliver S.~P. Davis,
-  Sietske~G. Helder, Stefan Ehrlich, Beate Herpertz-Dahlmann, Unna~N. Danner,
-  Annemarie~A. van Elburg, Maurizio Clementi, Monica Forzan, Elisa Docampo,
-  Jolanta Lissowska, Joanna Hauser, Alfonso Tortorella, Mario Maj, Fragiskos
-  Gonidakis, Konstantinos Tziouvas, Hana Papezova, Zeynep Yilmaz, Gudrun
-  Wagner, Sarah Cohen-Woods, Stefan Herms, Antonio Julià, Raquel Rabionet,
-  Danielle~M. Dick, Samuli Ripatti, Ole~A. Andreassen, Thomas Espeseth,
-  Astri~J. Lundervold, Vidar~M. Steen, Dalila Pinto, Stephen~W. Scherer, Harald
-  Aschauer, Alexandra Schosser, Lars Alfredsson, Leonid Padyukov, Katherine~A.
-  Halmi, James Mitchell, Michael Strober, Andrew~W. Bergen, Walter Kaye,
-  Jin~Peng Szatkiewicz, Bru Cormand, Josep~Antoni Ramos-Quiroga, Cristina
-  Sánchez-Mora, Marta Ribasés, Miguel Casas, Amaia Hervas, Maria~Jesús
-  Arranz, Jan Haavik, Tetyana Zayats, Stefan Johansson, Nigel Williams, Astrid
-  Dempfle, Aribert Rothenberger, Jonna Kuntsi, Robert~D. Oades, Tobias
-  Banaschewski, Barbara Franke, Jan~K. Buitelaar, Alejandro Arias~Vasquez,
-  Alysa~E. Doyle, Andreas Reif, Klaus-Peter Lesch, Christine Freitag, Olga
-  Rivero, Haukur Palmason, Marcel Romanos, Kate Langley, Marcella Rietschel,
-  Stephanie~H. Witt, Soeren Dalsgaard, Anders~D. Børglum, Irwin Waldman, Beth
-  Wilmot, Nikolas Molly, Claiton H.~D. Bau, Jennifer Crosbie, Russell Schachar,
-  Sandra~K. Loo, James~J. McGough, Eugenio~H. Grevet, Sarah~E. Medland, Elise
-  Robinson, Lauren~A. Weiss, Elena Bacchelli, Anthony Bailey, Vanessa Bal,
-  Agatino Battaglia, Catalina Betancur, Patrick Bolton, Rita Cantor, Patrícia
-  Celestino-Soper, Geraldine Dawson, Silvia De~Rubeis, Frederico Duque, Andrew
-  Green, Sabine~M. Klauck, Marion Leboyer, Pat Levitt, Elena Maestrini,
-  Shrikant Mane, Daniel~Moreno De-Luca, Jeremy Parr, Regina Regan, Abraham
-  Reichenberg, Sven Sandin, Jacob Vorstman, Thomas Wassink, Ellen Wijsman,
-  Edwin Cook, Susan Santangelo, Richard Delorme, Bernadette Rogé, Tiago
-  Magalhaes, Dan Arking, Thomas~G. Schulze, Robert~C. Thompson, Jana
-  Strohmaier, Keith Matthews, Ingrid Melle, Derek Morris, Douglas Blackwood,
-  Andrew McIntosh, Sarah~E. Bergen, Martin Schalling, Stéphane Jamain, Anna
-  Maaser, Sascha~B. Fischer, Céline~S. Reinbold, Janice~M. Fullerton, José
-  Guzman-Parra, Fermin Mayoral, Peter~R. Schofield, Sven Cichon, Thomas~W.
-  Mühleisen, Franziska Degenhardt, Johannes Schumacher, Michael Bauer,
-  Philip~B. Mitchell, Elliot~S. Gershon, John Rice, James~B. Potash, Peter~P.
-  Zandi, Nick Craddock, I.~Nicol Ferrier, Martin Alda, Guy~A. Rouleau, Gustavo
-  Turecki, Roel Ophoff, Carlos Pato, Adebayo Anjorin, Eli Stahl, Markus Leber,
-  Piotr~M. Czerski, Cristiana Cruceanu, Ian~R. Jones, Danielle Posthuma, Till
-  F.~M. Andlauer, Andreas~J. Forstner, Fabian Streit, Bernhard~T. Baune, Tracy
-  Air, Grant Sinnamon, Naomi~R. Wray, Donald~J. MacIntyre, David Porteous,
-  Georg Homuth, Margarita Rivera, Jakob Grove, Christel~M. Middeldorp, Ian
-  Hickie, Michele Pergadia, Divya Mehta, Johannes~H. Smit, Rick Jansen, Eco
-  de~Geus, Erin Dunn, Qingqin~S. Li, Matthias Nauck, Robert~A. Schoevers,
-  Aartjan~Tf Beekman, James~A. Knowles, Alexander Viktorin, Paul Arnold,
-  Cathy~L. Barr, Gabriel Bedoya-Berrio, O.~Joseph Bienvenu, Helena Brentani,
-  Christie Burton, Beatriz Camarena, Carolina Cappi, Danielle Cath, Maria
-  Cavallini, Daniele Cusi, Sabrina Darrow, Damiaan Denys, Eske~M. Derks, Andrea
-  Dietrich, Thomas Fernandez, Martijn Figee, Nelson Freimer, Gloria Gerber,
-  Marco Grados, Erica Greenberg, Gregory~L. Hanna, Andreas Hartmann, Matthew~E.
-  Hirschtritt, Pieter~J. Hoekstra, Alden Huang, Chaim Huyser, Cornelia Illmann,
-  Michael Jenike, Samuel Kuperman, Bennett Leventhal, Christine Lochner,
-  Gholson~J. Lyon, Fabio Macciardi, Marcos Madruga-Garrido, Irene~A. Malaty,
-  Athanasios Maras, Lauren McGrath, Eurípedes~C. Miguel, Pablo Mir, Gerald
-  Nestadt, Humberto Nicolini, Michael~S. Okun, Andrew Pakstis, Peristera
-  Paschou, John Piacentini, Christopher Pittenger, Kerstin Plessen, Vasily
-  Ramensky, Eliana~M. Ramos, Victor Reus, Margaret~A. Richter, Mark~A. Riddle,
-  Mary~M. Robertson, Veit Roessner, Maria Rosário, Jack~F. Samuels, Paul
-  Sandor, Dan~J. Stein, Fotis Tsetsos, Filip Van~Nieuwerburgh, Sarah
-  Weatherall, Jens~R. Wendland, Tomasz Wolanczyk, Yulia Worbe, Gwyneth Zai,
-  Fernando~S. Goes, Nicole McLaughlin, Paul~S. Nestadt, Hans-Jorgen Grabe,
-  Christel Depienne, Anuar Konkashbaev, Nuria Lanzagorta, Ana Valencia-Duarte,
-  Elvira Bramon, Nancy Buccola, Wiepke Cahn, Murray Cairns, Siow~A. Chong,
-  David Cohen, Benedicto Crespo-Facorro, James Crowley, Michael Davidson, Lynn
-  DeLisi, Timothy Dinan, Gary Donohoe, Elodie Drapeau, Jubao Duan, Lieuwe Haan,
-  David Hougaard, Sena Karachanak-Yankova, Andrey Khrunin, Janis Klovins,
-  Vaidutis Kučinskas, Jimmy Lee Chee~Keong, Svetlana Limborska, Carmel
-  Loughland, Jouko Lönnqvist, Brion Maher, Manuel Mattheisen, Colm McDonald,
-  Kieran~C. Murphy, Igor Nenadic, Jim van Os, Christos Pantelis, Michele Pato,
-  Tracey Petryshen, Digby Quested, Panos Roussos, Alan~R. Sanders, Ulrich
-  Schall, Sibylle~G. Schwab, Kang Sim, Hon-Cheong So, Elisabeth Stögmann,
-  Mythily Subramaniam, Draga Toncheva, John Waddington, James Walters, Mark
-  Weiser, Wei Cheng, Robert Cloninger, David Curtis, Pablo~V. Gejman, Frans
-  Henskens, Morten Mattingsdal, Sang-Yun Oh, Rodney Scott, Bradley Webb, Gerome
-  Breen, Claire Churchhouse, Cynthia~M. Bulik, Mark Daly, Martin Dichgans,
-  Stephen~V. Faraone, Rita Guerreiro, Peter Holmans, Kenneth~S. Kendler, Bobby
-  Koeleman, Carol~A. Mathews, Alkes Price, Jeremiah Scharf, Pamela Sklar, Julie
-  Williams, Nicholas~W. Wood, Chris Cotsapas, Aarno Palotie, Jordan~W. Smoller,
-  Patrick Sullivan, Jonathan Rosand, Aiden Corvin, Benjamin~M. Neale,
-  Jonathan~M. Schott, Richard Anney, Josephine Elia, Maria
-  Grigoroiu-Serbanescu, Howard~J. Edenberg, and Robin Murray.
-\newblock Analysis of shared heritability in common disorders of the brain.
-\newblock \emph{Science (New York, N.Y.)}, 360, June 2018.
-\newblock ISSN 1095-9203.
-\newblock \doi{10.1126/science.aap8757}.
-
-\bibitem[De~Miranda et~al.(2013)De~Miranda, Miller, Hansen, Lunghofer, Safe,
-  Gustafson, Colagiovanni, and Tjalkens]{DeMiranda2013}
-Briana~R. De~Miranda, James~A. Miller, Ryan~J. Hansen, Paul~J. Lunghofer,
-  Stephen Safe, Daniel~L. Gustafson, Dorothy Colagiovanni, and Ronald~B.
-  Tjalkens.
-\newblock Neuroprotective efficacy and pharmacokinetic behavior of novel
+%%% 21
+\bibitem[\protect\citeauthoryear{De~Miranda et~al.}{2013}]{DeMiranda2013}
+\begin{barticle}
+\bauthor{\bsnm{De~Miranda}, \binits{B.R.}},
+\bauthor{\bsnm{Miller}, \binits{J.A.}},
+\bauthor{\bsnm{Hansen}, \binits{R.J.}},
+\bauthor{\bsnm{Lunghofer}, \binits{P.J.}},
+\bauthor{\bsnm{Safe}, \binits{S.}},
+\bauthor{\bsnm{Gustafson}, \binits{D.L.}},
+\bauthor{\bsnm{Colagiovanni}, \binits{D.}},
+\bauthor{\bsnm{Tjalkens}, \binits{R.B.}}:
+\batitle{Neuroprotective efficacy and pharmacokinetic behavior of novel
   anti-inflammatory para-phenyl substituted diindolylmethanes in a mouse model
-  of parkinson{\textquoteright}s disease.
-\newblock \emph{Journal of Pharmacology and Experimental Therapeutics},
-  345\penalty0 (1):\penalty0 125--138, 2013.
-\newblock ISSN 0022-3565.
-\newblock \doi{10.1124/jpet.112.201558}.
-\newblock URL \url{https://jpet.aspetjournals.org/content/345/1/125}.
+  of parkinson{\textquoteright}s disease}.
+\bjtitle{Journal of Pharmacology and Experimental Therapeutics}
+\bvolume{345}(\bissue{1}),
+\bfpage{125}--\blpage{138}
+(\byear{2013})
+\doiurl{10.1124/jpet.112.201558}
+{\href{https://arxiv.org/abs/https://jpet.aspetjournals.org/content/345/1/125.full.pdf}{{https://jpet.aspetjournals.org/content/345/1/125.full.pdf}}}
+\end{barticle}
+\endbibitem
 
-\bibitem[De~Miranda et~al.(2014)De~Miranda, Popichak, Hammond, Miller, Safe,
-  and Tjalkens]{DeMiranda2014}
-Briana~R. De~Miranda, Katriana~A. Popichak, Sean~L. Hammond, James~A. Miller,
-  Stephen Safe, and Ronald~B. Tjalkens.
-\newblock {Novel Para-Phenyl Substituted Diindolylmethanes Protect Against MPTP
-  Neurotoxicity and Suppress Glial Activation in a Mouse Model of Parkinson’s
-  Disease}.
-\newblock \emph{Toxicological Sciences}, 143\penalty0 (2):\penalty0 360--373,
-  11 2014.
-\newblock ISSN 1096-6080.
-\newblock \doi{10.1093/toxsci/kfu236}.
-\newblock URL \url{https://doi.org/10.1093/toxsci/kfu236}.
-
-\bibitem[De~Strooper and Karran(2016)]{DeStrooper2016}
-Bart De~Strooper and Eric Karran.
-\newblock The cellular phase of alzheimer's disease.
-\newblock \emph{Cell}, 164:\penalty0 603--15, Feb 2016.
-\newblock \doi{https://doi.org/10.1016/j.cell.2015.12.056}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0092867415017201?via=ihub}.
-
-\bibitem[Desai et~al.(2022)Desai, Mahesri, Lee, Varma, Loeffler, Schilcher,
-  Gerhard, Segal, Ritchey, Horton, Kim, Schneeweiss, and
-  Thambisetty]{Desai2022a}
-Rishi~J Desai, Mufaddal Mahesri, Su~Been Lee, Vijay~R Varma, Tina Loeffler,
-  Irene Schilcher, Tobias Gerhard, Jodi~B Segal, Mary~E Ritchey, Daniel~B
-  Horton, Seoyoung~C Kim, Sebastian Schneeweiss, and Madhav Thambisetty.
-\newblock {No association between initiation of phosphodiesterase-5 inhibitors
-  and risk of incident Alzheimer’s disease and related dementia: results from
-  the Drug Repurposing for Effective Alzheimer’s Medicines study}.
-\newblock \emph{Brain Communications}, 4\penalty0 (5), 10 2022.
-\newblock ISSN 2632-1297.
-\newblock \doi{10.1093/braincomms/fcac247}.
-\newblock URL \url{https://doi.org/10.1093/braincomms/fcac247}.
-\newblock fcac247.
-
-\bibitem[Elvsåshagen et~al.(2021)Elvsåshagen, Shadrin, Frei, van~der Meer,
-  Bahrami, Kumar, Smeland, Westlye, Andreassen, and Kaufmann]{Elvsaashagen2021}
-Torbjørn Elvsåshagen, Alexey Shadrin, Oleksandr Frei, Dennis van~der Meer,
-  Shahram Bahrami, Vinod~Jangir Kumar, Olav Smeland, Lars~T. Westlye, Ole~A.
-  Andreassen, and Tobias Kaufmann.
-\newblock The genetic architecture of the human thalamus and its overlap with
-  ten common brain disorders.
-\newblock \emph{Nature Communications}, 12\penalty0 (1):\penalty0 2909, 2021.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-021-23175-z}.
-\newblock URL \url{https://doi.org/10.1038/s41467-021-23175-z}.
-
-\bibitem[Fang et~al.(2021)Fang, Zhang, Zhou, Chiang, Tan, Hou, Stauffer, Li,
-  Pieper, Cummings, and Cheng]{Fang2021}
-Jiansong Fang, Pengyue Zhang, Yadi Zhou, Chien-Wei Chiang, Juan Tan, Yuan Hou,
-  Shaun Stauffer, Lang Li, Andrew~A. Pieper, Jeffrey Cummings, and Feixiong
-  Cheng.
-\newblock Endophenotype-based in silico network medicine discovery combined
-  with insurance record data mining identifies sildenafil as a candidate drug
-  for alzheimer’s disease.
-\newblock \emph{Nature Aging}, 1\penalty0 (12):\penalty0 1175--1188, 2021.
-\newblock ISSN 2662-8465.
-\newblock \doi{10.1038/s43587-021-00138-z}.
-\newblock URL \url{https://doi.org/10.1038/s43587-021-00138-z}.
-
-\bibitem[Gaulton et~al.(2017)Gaulton, Hersey, Nowotka, Bento, Chambers, Mendez,
-  Mutowo, Atkinson, Bellis, Cibrián-Uhalte, Davies, Dedman, Karlsson,
-  Magariños, Overington, Papadatos, Smit, and Leach]{Gaulton2017}
-Anna Gaulton, Anne Hersey, Michał Nowotka, A.~Patrícia Bento, Jon Chambers,
-  David Mendez, Prudence Mutowo, Francis Atkinson, Louisa~J. Bellis, Elena
-  Cibrián-Uhalte, Mark Davies, Nathan Dedman, Anneli Karlsson, María~Paula
-  Magariños, John~P. Overington, George Papadatos, Ines Smit, and Andrew~R.
-  Leach.
-\newblock The chembl database in 2017.
-\newblock \emph{Nucleic acids research}, 45:\penalty0 D945--D954, Jan 2017.
-
-\bibitem[Gerring et~al.(2020)Gerring, Lupton, Edey, Gamazon, and
-  Derks]{Gerring2020}
-Zachary~F. Gerring, Michelle~K. Lupton, Daniel Edey, Eric~R. Gamazon, and
-  Eske~M. Derks.
-\newblock An analysis of genetically regulated gene expression across multiple
-  tissues implicates novel gene candidates in alzheimer's disease.
-\newblock \emph{Alzheimer's research \& therapy}, 12\penalty0
-  (32299494):\penalty0 43--43, April 2020.
-\newblock ISSN 1758-9193.
-\newblock \doi{10.1186/s13195-020-00611-8}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7164172/}.
-
-\bibitem[Guney et~al.(2016)Guney, Menche, Vidal, and Barabási]{Guney2016}
-Emre Guney, Jörg Menche, Marc Vidal, and Albert-László Barabási.
-\newblock Network-based in silico drug efficacy screening.
-\newblock \emph{Nature communications}, 7\penalty0 (26831545):\penalty0
-  10331--10331, February 2016.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/ncomms10331}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4740350/}.
-
-\bibitem[Hegde et~al.(2019)Hegde, Smith, Duke, Pourquoi, and Vaz]{Hegde2019}
-Ashok~N. Hegde, Spencer~G. Smith, Lindsey~M. Duke, Allison Pourquoi, and
-  Savannah Vaz.
-\newblock Perturbations of ubiquitin-proteasome-mediated proteolysis in aging
-  and alzheimer’s disease.
-\newblock \emph{Frontiers in Aging Neuroscience}, 11, 2019.
-\newblock ISSN 1663-4365.
-\newblock \doi{10.3389/fnagi.2019.00324}.
-\newblock URL
-  \url{https://www.frontiersin.org/articles/10.3389/fnagi.2019.00324}.
-
-\bibitem[Iturria-Medina et~al.(2022)Iturria-Medina, Adewale, Khan, Ducharme,
-  Rosa-Neto, O’Donnell, Petyuk, Gauthier, Jager, Breitner, and
-  Bennett]{IturriaMedina2022}
-Yasser Iturria-Medina, Quadri Adewale, Ahmed~F. Khan, Simon Ducharme, Pedro
-  Rosa-Neto, Kieran O’Donnell, Vladislav~A. Petyuk, Serge Gauthier, Philip
-  L.~De Jager, John Breitner, and David~A. Bennett.
-\newblock Unified epigenomic, transcriptomic, proteomic, and metabolomic
-  taxonomy of alzheimer\&\#x2019;s disease progression and heterogeneity.
-\newblock \emph{Science Advances}, 8\penalty0 (46):\penalty0 eabo6764, 2022.
-\newblock \doi{10.1126/sciadv.abo6764}.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/sciadv.abo6764}.
-
-\bibitem[Jansen et~al.(2019)Jansen, Savage, Watanabe, Bryois, Williams,
-  Steinberg, Sealock, Karlsson, Hägg, Athanasiu, Voyle, Proitsi, Witoelar,
-  Stringer, Aarsland, Almdahl, Andersen, Bergh, Bettella, Bjornsson, Brækhus,
-  Bråthen, de~Leeuw, Desikan, Djurovic, Dumitrescu, Fladby, Hohman, Jonsson,
-  Kiddle, Rongve, Saltvedt, Sando, Selbæk, Shoai, Skene, Snaedal, Stordal,
-  Ulstein, Wang, White, Hardy, Hjerling-Leffler, Sullivan, van~der Flier,
-  Dobson, Davis, Stefansson, Stefansson, Pedersen, Ripke, Andreassen, and
-  Posthuma]{Jansen2019}
-Iris~E. Jansen, Jeanne~E. Savage, Kyoko Watanabe, Julien Bryois, Dylan~M.
-  Williams, Stacy Steinberg, Julia Sealock, Ida~K. Karlsson, Sara Hägg,
-  Lavinia Athanasiu, Nicola Voyle, Petroula Proitsi, Aree Witoelar, Sven
-  Stringer, Dag Aarsland, Ina~S. Almdahl, Fred Andersen, Sverre Bergh,
-  Francesco Bettella, Sigurbjorn Bjornsson, Anne Brækhus, Geir Bråthen,
-  Christiaan de~Leeuw, Rahul~S. Desikan, Srdjan Djurovic, Logan Dumitrescu,
-  Tormod Fladby, Timothy~J. Hohman, Palmi~V. Jonsson, Steven~J. Kiddle, Arvid
-  Rongve, Ingvild Saltvedt, Sigrid~B. Sando, Geir Selbæk, Maryam Shoai,
-  Nathan~G. Skene, Jon Snaedal, Eystein Stordal, Ingun~D. Ulstein, Yunpeng
-  Wang, Linda~R. White, John Hardy, Jens Hjerling-Leffler, Patrick~F. Sullivan,
-  Wiesje~M. van~der Flier, Richard Dobson, Lea~K. Davis, Hreinn Stefansson,
-  Kari Stefansson, Nancy~L. Pedersen, Stephan Ripke, Ole~A. Andreassen, and
-  Danielle Posthuma.
-\newblock Genome-wide meta-analysis identifies new loci and functional pathways
-  influencing alzheimer's disease risk.
-\newblock \emph{Nature genetics}, 51\penalty0 (30617256):\penalty0 404--413,
-  March 2019.
-\newblock ISSN 1061-4036.
-\newblock \doi{10.1038/s41588-018-0311-9}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6836675/}.
-
-\bibitem[Keene et~al.(2002)Keene, Rodrigues, Eich, Chhabra, Steer, and
-  Low]{Keene2002}
-C.~Dirk Keene, Cecilia M.~P. Rodrigues, Tacjana Eich, Manik~S. Chhabra,
-  Clifford~J. Steer, and Walter~C. Low.
-\newblock Tauroursodeoxycholic acid, a bile acid, is neuroprotective in a
-  transgenic animal model of huntington's disease.
-\newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
-  (16):\penalty0 10671--10676, 2002.
-\newblock \doi{10.1073/pnas.162362299}.
-\newblock URL \url{https://www.pnas.org/doi/abs/10.1073/pnas.162362299}.
-
-\bibitem[Kunkle et~al.(2019)Kunkle, Grenier-Boley, Sims, Bis, Damotte, Naj,
-  Boland, Vronskaya, van~der Lee, Amlie-Wolf, Bellenguez, Frizatti, Chouraki,
-  Martin, Sleegers, Badarinarayan, Jakobsdottir, Hamilton-Nelson, Moreno-Grau,
-  Olaso, Raybould, Chen, Kuzma, Hiltunen, Morgan, Ahmad, Vardarajan, Epelbaum,
-  Hoffmann, Boada, Beecham, Garnier, Harold, Fitzpatrick, Valladares, Moutet,
-  Gerrish, Smith, Qu, Bacq, Denning, Jian, Zhao, Del~Zompo, Fox, Choi, Mateo,
-  Hughes, Adams, Malamon, Sanchez-Garcia, Patel, Brody, Dombroski, Naranjo,
-  Daniilidou, Eiriksdottir, Mukherjee, Wallon, Uphill, Aspelund, Cantwell,
-  Garzia, Galimberti, Hofer, Butkiewicz, Fin, Scarpini, Sarnowski, Bush,
-  Meslage, Kornhuber, White, Song, Barber, Engelborghs, Sordon, Voijnovic,
-  Adams, Vandenberghe, Mayhaus, Cupples, Albert, De~Deyn, Gu, Himali, Beekly,
-  Squassina, Hartmann, Orellana, Blacker, Rodriguez-Rodriguez, Lovestone,
-  Garcia, Doody, Munoz-Fernadez, Sussams, Lin, Fairchild, Benito, Holmes,
-  Karamujić-Čomić, Frosch, Thonberg, Maier, Roshchupkin, Ghetti, Giedraitis,
-  Kawalia, Li, Huebinger, Kilander, Moebus, Hernández, Kamboh, Brundin,
-  Turton, Yang, Katz, Concari, Lord, Beiser, Keene, Helisalmi, Kloszewska,
-  Kukull, Koivisto, Lynch, Tarraga, Larson, Haapasalo, Lawlor, Mosley, Lipton,
-  Solfrizzi, Gill, Longstreth, Montine, Frisardi, Diez-Fairen, Rivadeneira,
-  Petersen, Deramecourt, Alvarez, Salani, Ciaramella, Boerwinkle, Reiman,
-  Fievet, Rotter, Reisch, Hanon, Cupidi, Andre~Uitterlinden, Royall, Dufouil,
-  Maletta, de~Rojas, Sano, Brice, Cecchetti, George-Hyslop, Ritchie, Tsolaki,
-  Tsuang, Dubois, Craig, Wu, Soininen, Avramidou, Albin, Fratiglioni, Germanou,
-  Apostolova, Keller, Koutroumani, Arnold, Panza, Gkatzima, Asthana, Hannequin,
-  Whitehead, Atwood, Caffarra, Hampel, Quintela, Carracedo, Lannfelt,
-  Rubinsztein, Barnes, Pasquier, Frölich, Barral, McGuinness, Beach, Johnston,
-  Becker, Passmore, Bigio, Schott, Bird, Warren, Boeve, Lupton, Bowen, Proitsi,
-  Boxer, Powell, Burke, Kauwe, Burns, Mancuso, Buxbaum, Bonuccelli, Cairns,
-  McQuillin, Cao, Livingston, Carlson, Bass, Carlsson, Hardy, Carney, Bras,
-  Carrasquillo, Guerreiro, Allen, Chui, Fisher, Masullo, Crocco, DeCarli,
-  Bisceglio, Dick, Ma, Duara, Graff-Radford, Evans, Hodges, Faber, Scherer,
-  Fallon, Riemenschneider, Fardo, Heun, Farlow, Kölsch, Ferris, Leber, Foroud,
-  Heuser, Galasko, Giegling, Gearing, Hüll, Geschwind, Gilbert, Morris, Green,
-  Mayo, Growdon, Feulner, Hamilton, Harrell, Drichel, Honig, Cushion,
-  Huentelman, Hollingworth, Hulette, Hyman, Marshall, Jarvik, Meggy, Abner,
-  Menzies, Jin, Leonenko, Real, Jun, Baldwin, Grozeva, Karydas, Russo, Kaye,
-  Kim, Jessen, Kowall, Vellas, Kramer, Vardy, LaFerla, Jöckel, Lah, Dichgans,
-  Leverenz, Mann, Levey, Pickering-Brown, Lieberman, Klopp, Lunetta, Wichmann,
-  Lyketsos, Morgan, Marson, Brown, Martiniuk, Medway, Mash, Nöthen, Masliah,
-  Hooper, McCormick, Daniele, McCurry, Bayer, McDavid, Gallacher, McKee,
-  van~den Bussche, Mesulam, Brayne, Miller, Riedel-Heller, Miller, Miller,
-  Al-Chalabi, Morris, Shaw, Myers, Wiltfang, O'Bryant, Olichney, Alvarez,
-  Parisi, Singleton, Paulson, Collinge, Perry, Mead, Peskind, Cribbs, Rossor,
-  Pierce, Ryan, Poon, Nacmias, Potter, Sorbi, Quinn, Sacchinelli, Raj,
-  Spalletta, Raskind, Caltagirone, Bossù, Orfei, Reisberg, Clarke, Reitz,
-  Smith, Ringman, Warden, Roberson, Wilcock, Rogaeva, Bruni, Rosen, Gallo,
-  Rosenberg, Ben-Shlomo, Sager, Mecocci, Saykin, Pastor, Cuccaro, Vance,
-  Schneider, Schneider, Slifer, Seeley, Smith, Sonnen, Spina, Stern, Swerdlow,
-  Tang, Tanzi, Trojanowski, Troncoso, Van~Deerlin, Van~Eldik, Vinters,
-  Vonsattel, Weintraub, Welsh-Bohmer, Wilhelmsen, Williamson, Wingo, Woltjer,
-  Wright, Yu, Yu, Saba, Pilotto, Bullido, Peters, Crane, Bennett, Bosco, Coto,
-  Boccardi, De~Jager, Lleo, Warner, Lopez, Ingelsson, Deloukas, Cruchaga,
-  Graff, Gwilliam, Fornage, Goate, Sanchez-Juan, Kehoe, Amin, Ertekin-Taner,
-  Berr, Debette, Love, Launer, Younkin, Dartigues, Corcoran, Ikram, Dickson,
-  Nicolas, Campion, Tschanz, Schmidt, Hakonarson, Clarimon, Munger, Schmidt,
-  Farrer, Van~Broeckhoven, C~O'Donovan, DeStefano, Jones, Haines, Deleuze,
-  Owen, Gudnason, Mayeux, Escott-Price, Psaty, Ramirez, Wang, Ruiz, van Duijn,
-  Holmans, Seshadri, Williams, Amouyel, Schellenberg, Lambert, Pericak-Vance,
-  (ADGC), (EADI), for Heart, in~Genomic Epidemiology Consortium~(CHARGE),
-  Genetic, Environmental Risk~in AD/Defining~Genetic, and for Alzheimer’s
-  Disease Consortium~(GERAD/PERADES)]{Kunkle2019}
-Brian~W. Kunkle, Benjamin Grenier-Boley, Rebecca Sims, Joshua~C. Bis, Vincent
-  Damotte, Adam~C. Naj, Anne Boland, Maria Vronskaya, Sven~J. van~der Lee,
-  Alexandre Amlie-Wolf, Céline Bellenguez, Aura Frizatti, Vincent Chouraki,
-  Eden~R. Martin, Kristel Sleegers, Nandini Badarinarayan, Johanna
-  Jakobsdottir, Kara~L. Hamilton-Nelson, Sonia Moreno-Grau, Robert Olaso,
-  Rachel Raybould, Yuning Chen, Amanda~B. Kuzma, Mikko Hiltunen, Taniesha
-  Morgan, Shahzad Ahmad, Badri~N. Vardarajan, Jacques Epelbaum, Per Hoffmann,
-  Merce Boada, Gary~W. Beecham, Jean-Guillaume Garnier, Denise Harold,
-  Annette~L. Fitzpatrick, Otto Valladares, Marie-Laure Moutet, Amy Gerrish,
-  Albert~V. Smith, Liming Qu, Delphine Bacq, Nicola Denning, Xueqiu Jian,
-  Yi~Zhao, Maria Del~Zompo, Nick~C. Fox, Seung-Hoan Choi, Ignacio Mateo,
-  Joseph~T. Hughes, Hieab~H. Adams, John Malamon, Florentino Sanchez-Garcia,
-  Yogen Patel, Jennifer~A. Brody, Beth~A. Dombroski, Maria Candida~Deniz
-  Naranjo, Makrina Daniilidou, Gudny Eiriksdottir, Shubhabrata Mukherjee, David
-  Wallon, James Uphill, Thor Aspelund, Laura~B. Cantwell, Fabienne Garzia,
-  Daniela Galimberti, Edith Hofer, Mariusz Butkiewicz, Bertrand Fin, Elio
-  Scarpini, Chloe Sarnowski, Will~S. Bush, Stéphane Meslage, Johannes
-  Kornhuber, Charles~C. White, Yuenjoo Song, Robert~C. Barber, Sebastiaan
-  Engelborghs, Sabrina Sordon, Dina Voijnovic, Perrie~M. Adams, Rik
-  Vandenberghe, Manuel Mayhaus, L.~Adrienne Cupples, Marilyn~S. Albert,
-  Peter~P. De~Deyn, Wei Gu, Jayanadra~J. Himali, Duane Beekly, Alessio
-  Squassina, Annette~M. Hartmann, Adelina Orellana, Deborah Blacker, Eloy
-  Rodriguez-Rodriguez, Simon Lovestone, Melissa~E. Garcia, Rachelle~S. Doody,
-  Carmen Munoz-Fernadez, Rebecca Sussams, Honghuang Lin, Thomas~J. Fairchild,
-  Yolanda~A. Benito, Clive Holmes, Hata Karamujić-Čomić, Matthew~P. Frosch,
-  Hakan Thonberg, Wolfgang Maier, Gennady Roshchupkin, Bernardino Ghetti,
-  Vilmantas Giedraitis, Amit Kawalia, Shuo Li, Ryan~M. Huebinger, Lena
-  Kilander, Susanne Moebus, Isabel Hernández, M.~Ilyas Kamboh, RoseMarie
-  Brundin, James Turton, Qiong Yang, Mindy~J. Katz, Letizia Concari, Jenny
-  Lord, Alexa~S. Beiser, C.~Dirk Keene, Seppo Helisalmi, Iwona Kloszewska,
-  Walter~A. Kukull, Anne~Maria Koivisto, Aoibhinn Lynch, Lluís Tarraga,
-  Eric~B. Larson, Annakaisa Haapasalo, Brian Lawlor, Thomas~H. Mosley,
-  Richard~B. Lipton, Vincenzo Solfrizzi, Michael Gill, Jr~Longstreth, W~T,
-  Thomas~J. Montine, Vincenza Frisardi, Monica Diez-Fairen, Fernando
-  Rivadeneira, Ronald~C. Petersen, Vincent Deramecourt, Ignacio Alvarez,
-  Francesca Salani, Antonio Ciaramella, Eric Boerwinkle, Eric~M. Reiman,
-  Nathalie Fievet, Jerome~I. Rotter, Joan~S. Reisch, Olivier Hanon, Chiara
-  Cupidi, A.~G. Andre~Uitterlinden, Donald~R. Royall, Carole Dufouil,
-  Raffaele~Giovanni Maletta, Itziar de~Rojas, Mary Sano, Alexis Brice, Roberta
-  Cecchetti, Peter~St George-Hyslop, Karen Ritchie, Magda Tsolaki, Debby~W.
-  Tsuang, Bruno Dubois, David Craig, Chuang-Kuo Wu, Hilkka Soininen, Despoina
-  Avramidou, Roger~L. Albin, Laura Fratiglioni, Antonia Germanou, Liana~G.
-  Apostolova, Lina Keller, Maria Koutroumani, Steven~E. Arnold, Francesco
-  Panza, Olymbia Gkatzima, Sanjay Asthana, Didier Hannequin, Patrice Whitehead,
-  Craig~S. Atwood, Paolo Caffarra, Harald Hampel, Inés Quintela, Ángel
-  Carracedo, Lars Lannfelt, David~C. Rubinsztein, Lisa~L. Barnes, Florence
-  Pasquier, Lutz Frölich, Sandra Barral, Bernadette McGuinness, Thomas~G.
-  Beach, Janet~A. Johnston, James~T. Becker, Peter Passmore, Eileen~H. Bigio,
-  Jonathan~M. Schott, Thomas~D. Bird, Jason~D. Warren, Bradley~F. Boeve,
-  Michelle~K. Lupton, James~D. Bowen, Petra Proitsi, Adam Boxer, John~F.
-  Powell, James~R. Burke, John S.~K. Kauwe, Jeffrey~M. Burns, Michelangelo
-  Mancuso, Joseph~D. Buxbaum, Ubaldo Bonuccelli, Nigel~J. Cairns, Andrew
-  McQuillin, Chuanhai Cao, Gill Livingston, Chris~S. Carlson, Nicholas~J. Bass,
-  Cynthia~M. Carlsson, John Hardy, Regina~M. Carney, Jose Bras, Minerva~M.
-  Carrasquillo, Rita Guerreiro, Mariet Allen, Helena~C. Chui, Elizabeth Fisher,
-  Carlo Masullo, Elizabeth~A. Crocco, Charles DeCarli, Gina Bisceglio, Malcolm
-  Dick, Li~Ma, Ranjan Duara, Neill~R. Graff-Radford, Denis~A. Evans, Angela
-  Hodges, Kelley~M. Faber, Martin Scherer, Kenneth~B. Fallon, Matthias
-  Riemenschneider, David~W. Fardo, Reinhard Heun, Martin~R. Farlow, Heike
-  Kölsch, Steven Ferris, Markus Leber, Tatiana~M. Foroud, Isabella Heuser,
-  Douglas~R. Galasko, Ina Giegling, Marla Gearing, Michael Hüll, Daniel~H.
-  Geschwind, John~R. Gilbert, John Morris, Robert~C. Green, Kevin Mayo, John~H.
-  Growdon, Thomas Feulner, Ronald~L. Hamilton, Lindy~E. Harrell, Dmitriy
-  Drichel, Lawrence~S. Honig, Thomas~D. Cushion, Matthew~J. Huentelman, Paul
-  Hollingworth, Christine~M. Hulette, Bradley~T. Hyman, Rachel Marshall,
-  Gail~P. Jarvik, Alun Meggy, Erin Abner, Georgina~E. Menzies, Lee-Way Jin,
-  Ganna Leonenko, Luis~M. Real, Gyungah~R. Jun, Clinton~T. Baldwin, Detelina
-  Grozeva, Anna Karydas, Giancarlo Russo, Jeffrey~A. Kaye, Ronald Kim, Frank
-  Jessen, Neil~W. Kowall, Bruno Vellas, Joel~H. Kramer, Emma Vardy, Frank~M.
-  LaFerla, Karl-Heinz Jöckel, James~J. Lah, Martin Dichgans, James~B.
-  Leverenz, David Mann, Allan~I. Levey, Stuart Pickering-Brown, Andrew~P.
-  Lieberman, Norman Klopp, Kathryn~L. Lunetta, H.-Erich Wichmann,
-  Constantine~G. Lyketsos, Kevin Morgan, Daniel~C. Marson, Kristelle Brown,
-  Frank Martiniuk, Christopher Medway, Deborah~C. Mash, Markus~M. Nöthen,
-  Eliezer Masliah, Nigel~M. Hooper, Wayne~C. McCormick, Antonio Daniele,
-  Susan~M. McCurry, Anthony Bayer, Andrew~N. McDavid, John Gallacher, Ann~C.
-  McKee, Hendrik van~den Bussche, Marsel Mesulam, Carol Brayne, Bruce~L.
-  Miller, Steffi Riedel-Heller, Carol~A. Miller, Joshua~W. Miller, Ammar
-  Al-Chalabi, John~C. Morris, Christopher~E. Shaw, Amanda~J. Myers, Jens
-  Wiltfang, Sid O'Bryant, John~M. Olichney, Victoria Alvarez, Joseph~E. Parisi,
-  Andrew~B. Singleton, Henry~L. Paulson, John Collinge, William~R. Perry, Simon
-  Mead, Elaine Peskind, David~H. Cribbs, Martin Rossor, Aimee Pierce,
-  Natalie~S. Ryan, Wayne~W. Poon, Benedetta Nacmias, Huntington Potter, Sandro
-  Sorbi, Joseph~F. Quinn, Eleonora Sacchinelli, Ashok Raj, Gianfranco
-  Spalletta, Murray Raskind, Carlo Caltagirone, Paola Bossù, Maria~Donata
-  Orfei, Barry Reisberg, Robert Clarke, Christiane Reitz, A.~David Smith,
-  John~M. Ringman, Donald Warden, Erik~D. Roberson, Gordon Wilcock, Ekaterina
-  Rogaeva, Amalia~Cecilia Bruni, Howard~J. Rosen, Maura Gallo, Roger~N.
-  Rosenberg, Yoav Ben-Shlomo, Mark~A. Sager, Patrizia Mecocci, Andrew~J.
-  Saykin, Pau Pastor, Michael~L. Cuccaro, Jeffery~M. Vance, Julie~A. Schneider,
-  Lori~S. Schneider, Susan Slifer, William~W. Seeley, Amanda~G. Smith,
-  Joshua~A. Sonnen, Salvatore Spina, Robert~A. Stern, Russell~H. Swerdlow,
-  Mitchell Tang, Rudolph~E. Tanzi, John~Q. Trojanowski, Juan~C. Troncoso,
-  Vivianna~M. Van~Deerlin, Linda~J. Van~Eldik, Harry~V. Vinters, Jean~Paul
-  Vonsattel, Sandra Weintraub, Kathleen~A. Welsh-Bohmer, Kirk~C. Wilhelmsen,
-  Jennifer Williamson, Thomas~S. Wingo, Randall~L. Woltjer, Clinton~B. Wright,
-  Chang-En Yu, Lei Yu, Yasaman Saba, Alberto Pilotto, Maria~J. Bullido, Oliver
-  Peters, Paul~K. Crane, David Bennett, Paola Bosco, Eliecer Coto, Virginia
-  Boccardi, Phil~L. De~Jager, Alberto Lleo, Nick Warner, Oscar~L. Lopez, Martin
-  Ingelsson, Panagiotis Deloukas, Carlos Cruchaga, Caroline Graff, Rhian
-  Gwilliam, Myriam Fornage, Alison~M. Goate, Pascual Sanchez-Juan, Patrick~G.
-  Kehoe, Najaf Amin, Nilifur Ertekin-Taner, Claudine Berr, Stéphanie Debette,
-  Seth Love, Lenore~J. Launer, Steven~G. Younkin, Jean-Francois Dartigues,
-  Chris Corcoran, M.~Arfan Ikram, Dennis~W. Dickson, Gael Nicolas, Dominique
-  Campion, JoAnn Tschanz, Helena Schmidt, Hakon Hakonarson, Jordi Clarimon, Ron
-  Munger, Reinhold Schmidt, Lindsay~A. Farrer, Christine Van~Broeckhoven,
-  Michael C~O'Donovan, Anita~L. DeStefano, Lesley Jones, Jonathan~L. Haines,
-  Jean-Francois Deleuze, Michael~J. Owen, Vilmundur Gudnason, Richard Mayeux,
-  Valentina Escott-Price, Bruce~M. Psaty, Alfredo Ramirez, Li-San Wang, Agustin
-  Ruiz, Cornelia~M. van Duijn, Peter~A. Holmans, Sudha Seshadri, Julie
-  Williams, Phillippe Amouyel, Gerard~D. Schellenberg, Jean-Charles Lambert,
-  Margaret~A. Pericak-Vance, Alzheimer Disease Genetics~Consortium (ADGC),
-  European Alzheimer’s Disease~Initiative (EADI), Cohorts for Heart,
-  Aging~Research in~Genomic Epidemiology Consortium~(CHARGE), Genetic,
-  Polygenic Environmental Risk~in AD/Defining~Genetic, and Environmental~Risk
-  for Alzheimer’s Disease Consortium~(GERAD/PERADES).
-\newblock Genetic meta-analysis of diagnosed alzheimer's disease identifies new
-  risk loci and implicates a$\beta$, tau, immunity and lipid processing.
-\newblock \emph{Nature genetics}, 51\penalty0 (30820047):\penalty0 414--430,
-  March 2019.
-\newblock ISSN 1061-4036.
-\newblock \doi{10.1038/s41588-019-0358-2}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463297/}.
-
-\bibitem[Kuo et~al.(2022)Kuo, Schrack, Levine, Shardell, Simonsick, Chia,
-  Moore, Tanaka, An, Karikkineth, AlGhatrif, Elango, Zukley, Egan, de~Cabo,
-  Resnick, and Ferrucci]{Kuo2022}
-Pei-Lun Kuo, Jennifer~A. Schrack, Morgan~E. Levine, Michelle~D. Shardell,
-  Eleanor~M. Simonsick, Chee~W. Chia, Ann~Zenobia Moore, Toshiko Tanaka, Yang
-  An, Ajoy Karikkineth, Majd AlGhatrif, Palchamy Elango, Linda~M. Zukley,
-  Josephine~M. Egan, Rafael de~Cabo, Susan~M. Resnick, and Luigi Ferrucci.
-\newblock Longitudinal phenotypic aging metrics in the baltimore longitudinal
-  study of aging.
-\newblock \emph{Nature Aging}, 2\penalty0 (7):\penalty0 635--643, 2022.
-\newblock ISSN 2662-8465.
-\newblock \doi{10.1038/s43587-022-00243-7}.
-\newblock URL \url{https://doi.org/10.1038/s43587-022-00243-7}.
-
-\bibitem[Lamb et~al.(2006)Lamb, Crawford, Peck, Modell, Blat, Wrobel, Lerner,
-  Brunet, Subramanian, Ross, Reich, Hieronymus, Wei, Armstrong, Haggarty,
-  Clemons, Wei, Carr, Lander, and Golub]{Lamb2006}
-Justin Lamb, Emily~D. Crawford, David Peck, Joshua~W. Modell, Irene~C. Blat,
-  Matthew~J. Wrobel, Jim Lerner, Jean-Philippe Brunet, Aravind Subramanian,
-  Kenneth~N. Ross, Michael Reich, Haley Hieronymus, Guo Wei, Scott~A.
-  Armstrong, Stephen~J. Haggarty, Paul~A. Clemons, Ru~Wei, Steven~A. Carr,
-  Eric~S. Lander, and Todd~R. Golub.
-\newblock The connectivity map: Using gene-expression signatures to connect
-  small molecules, genes, and disease.
-\newblock \emph{Science}, 313\penalty0 (5795):\penalty0 1929--1935, 2006.
-\newblock \doi{10.1126/science.1132939}.
-\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1132939}.
-
-\bibitem[Lau and So(2020)]{Lau2020}
-Alexandria Lau and Hon-Cheong So.
-\newblock Turning genome-wide association study findings into opportunities for
-  drug repositioning.
-\newblock \emph{Computational and structural biotechnology journal},
-  18:\penalty0 1639--1650, 2020.
-\newblock ISSN 2001-0370.
-\newblock \doi{10.1016/j.csbj.2020.06.015}.
-
-\bibitem[Lee et~al.(2019)Lee, Yoo, Baek, Li, Sok, and Kim]{Lee2019}
-Bo~Dam Lee, Jae-Myung Yoo, Seong~Yeon Baek, Fu~Yi Li, Dai-Eun Sok, and Mee~Ree
-  Kim.
-\newblock 3,3'-diindolylmethane promotes bdnf and antioxidant enzyme formation
-  via trkb/akt pathway activation for neuroprotection against oxidative
+%%% 22
+\bibitem[\protect\citeauthoryear{Lee et~al.}{2019}]{Lee2019}
+\begin{botherref}
+\oauthor{\bsnm{Lee}, \binits{B.D.}},
+\oauthor{\bsnm{Yoo}, \binits{J.-M.}},
+\oauthor{\bsnm{Baek}, \binits{S.Y.}},
+\oauthor{\bsnm{Li}, \binits{F.Y.}},
+\oauthor{\bsnm{Sok}, \binits{D.-E.}},
+\oauthor{\bsnm{Kim}, \binits{M.R.}}:
+3,3'-diindolylmethane promotes bdnf and antioxidant enzyme formation via
+  trkb/akt pathway activation for neuroprotection against oxidative
   stress-induced apoptosis in hippocampal neuronal cells.
-\newblock \emph{Antioxidants (Basel, Switzerland)}, 9, Dec 2019.
+Antioxidants (Basel, Switzerland)
+\textbf{9}
+(2019)
+\end{botherref}
+\endbibitem
 
-\bibitem[Lin et~al.(2018)Lin, Seo, Gao, Feldman, Wen, Penney, Cam, Gjoneska,
-  Raja, Cheng, Rueda, Kritskiy, Abdurrob, Peng, Milo, Yu, Elmsaouri, Dey, Ko,
-  Yankner, and Tsai]{Lin2018}
-Yuan-Ta Lin, Jinsoo Seo, Fan Gao, Heather~M. Feldman, Hsin-Lan Wen, Jay Penney,
-  Hugh~P. Cam, Elizabeta Gjoneska, Waseem~K. Raja, Jemmie Cheng, Richard Rueda,
-  Oleg Kritskiy, Fatema Abdurrob, Zhuyu Peng, Blerta Milo, Chung~Jong Yu, Sara
-  Elmsaouri, Dilip Dey, Tak Ko, Bruce~A. Yankner, and Li-Huei Tsai.
-\newblock Apoe4 causes widespread molecular and cellular alterations associated
-  with alzheimer's disease phenotypes in human ipsc-derived brain cell types.
-\newblock \emph{Neuron}, 98\penalty0 (29861287):\penalty0 1141--1154.e7, June
-  2018.
-\newblock ISSN 0896-6273.
-\newblock \doi{10.1016/j.neuron.2018.05.008}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6023751/}.
-
-\bibitem[Lopes et~al.(2022)Lopes, Snijders, Humphrey, Allan, Sneeboer, Navarro,
-  Schilder, Vialle, Parks, Missall, van Zuiden, Gigase, Kübler, van Berlekom,
-  Hicks, B\"{o}ttcher, Priller, Kahn, de~Witte, and Raj]{Lopes2022}
-Katia de~Paiva Lopes, Gijsje J.~L. Snijders, Jack Humphrey, Amanda Allan,
-  Marjolein A.~M. Sneeboer, Elisa Navarro, Brian~M. Schilder, Ricardo~A.
-  Vialle, Madison Parks, Roy Missall, Welmoed van Zuiden, Frederieke A.~J.
-  Gigase, Raphael Kübler, Amber~Berdenis van Berlekom, Emily~M. Hicks, Chotima
-  B\"{o}ttcher, Josef Priller, René~S. Kahn, Lot~D. de~Witte, and Towfique
-  Raj.
-\newblock Genetic analysis of the human microglial transcriptome across brain
-  regions, aging and disease pathologies.
-\newblock \emph{Nature Genetics}, 54\penalty0 (1):\penalty0 4--17, 2022.
-\newblock ISSN 1546-1718.
-\newblock \doi{10.1038/s41588-021-00976-y}.
-\newblock URL \url{https://doi.org/10.1038/s41588-021-00976-y}.
-
-\bibitem[Masters et~al.(2015)Masters, Bateman, Blennow, Rowe, Sperling, and
-  Cummings]{Masters2015}
-Colin~L. Masters, Randall Bateman, Kaj Blennow, Christopher~C. Rowe, Reisa~A.
-  Sperling, and Jeffrey~L. Cummings.
-\newblock Alzheimer's disease.
-\newblock \emph{Nature reviews. Disease primers}, 1:\penalty0 15056, Oct 2015.
-\newblock URL \url{https://www.nature.com/articles/nrdp201556}.
-
-\bibitem[Mathys et~al.(2019)Mathys, Davila-Velderrain, Peng, Gao, Mohammadi,
-  Young, Menon, He, Abdurrob, Jiang, Martorell, Ransohoff, Hafler, Bennett,
-  Kellis, and Tsai]{Mathys2019}
-Hansruedi Mathys, Jose Davila-Velderrain, Zhuyu Peng, Fan Gao, Shahin
-  Mohammadi, Jennie~Z. Young, Madhvi Menon, Liang He, Fatema Abdurrob, Xueqiao
-  Jiang, Anthony~J. Martorell, Richard~M. Ransohoff, Brian~P. Hafler, David~A.
-  Bennett, Manolis Kellis, and Li-Huei Tsai.
-\newblock Single-cell transcriptomic analysis of alzheimer's disease.
-\newblock \emph{Nature}, 570\penalty0 (31042697):\penalty0 332--337, June 2019.
-\newblock ISSN 0028-0836.
-\newblock \doi{10.1038/s41586-019-1195-2}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865822/}.
-
-\bibitem[Meng et~al.(2021)Meng, Xi, Huang, and Ayers]{Meng2021}
-Fanwang Meng, Yang Xi, Jinfeng Huang, and Paul~W. Ayers.
-\newblock A curated diverse molecular database of blood-brain barrier
-  permeability with chemical descriptors.
-\newblock \emph{Scientific Data}, 8\penalty0 (1):\penalty0 289, 2021.
-\newblock ISSN 2052-4463.
-\newblock \doi{10.1038/s41597-021-01069-5}.
-\newblock URL \url{https://doi.org/10.1038/s41597-021-01069-5}.
-
-\bibitem[Nakamura et~al.(2021)Nakamura, Yamamoto, Xu, Kobayashi, Tanaka,
-  Tamitani, Saito, Saido, and Yano]{Nakamura2021}
-Yoshihide Nakamura, Takeshi Yamamoto, Xiaojuan Xu, Shigeki Kobayashi, Shinji
-  Tanaka, Masaki Tamitani, Takashi Saito, Takaomi~C. Saido, and Masafumi Yano.
-\newblock Enhancing calmodulin binding to ryanodine receptor is crucial to
-  limit neuronal cell loss in alzheimer disease.
-\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 7289, 2021.
-\newblock ISSN 2045-2322.
-\newblock \doi{10.1038/s41598-021-86822-x}.
-\newblock URL \url{https://doi.org/10.1038/s41598-021-86822-x}.
-
-\bibitem[Neff et~al.(2021)Neff, Wang, Vatansever, Guo, Ming, Wang, Wang,
-  Horgusluoglu-Moloch, Song, Li, Castranio, Tcw, Ho, Goate, Fossati, Noggle,
-  Gandy, Ehrlich, Katsel, Schadt, Cai, Brennand, Haroutunian, and
-  Zhang]{Neff2021}
-Ryan~A. Neff, Minghui Wang, Sezen Vatansever, Lei Guo, Chen Ming, Qian Wang,
-  Erming Wang, Emrin Horgusluoglu-Moloch, Won-Min Song, Aiqun Li, Emilie~L.
-  Castranio, Julia Tcw, Lap Ho, Alison Goate, Valentina Fossati, Scott Noggle,
-  Sam Gandy, Michelle~E. Ehrlich, Pavel Katsel, Eric Schadt, Dongming Cai,
-  Kristen~J. Brennand, Vahram Haroutunian, and Bin Zhang.
-\newblock Molecular subtyping of alzheimer's disease using rna sequencing data
-  reveals novel mechanisms and targets.
-\newblock \emph{Science advances}, 7\penalty0 (33523961):\penalty0 eabb5398,
-  January 2021.
-\newblock ISSN 2375-2548.
-\newblock \doi{10.1126/sciadv.abb5398}.
-\newblock URL \url{https://www.science.org/doi/10.1126/sciadv.abb5398}.
-
-\bibitem[NIH/NIA(2016)]{NIH/NIA}
-NIH/NIA.
-\newblock Drug repurposing: Translational bioinformatics and network
-  pharmacology, 2016.
-\newblock URL
-  \url{https://www.nia.nih.gov/research/milestones/translational-clinical-research/pharmacological/milestone-7-b}.
-
-\bibitem[Paul and Snyder(2019)]{Paul2019}
-Bindu~D. Paul and Solomon~H. Snyder.
-\newblock Therapeutic applications of cysteamine and cystamine in
-  neurodegenerative and neuropsychiatric diseases.
-\newblock \emph{Frontiers in Neurology}, 10, 2019.
-\newblock ISSN 1664-2295.
-\newblock \doi{10.3389/fneur.2019.01315}.
-\newblock URL
-  \url{https://www.frontiersin.org/articles/10.3389/fneur.2019.01315}.
-
-\bibitem[Pletscher-Frankild et~al.(2015)Pletscher-Frankild, Pallejà, Tsafou,
-  Binder, and Jensen]{PletscherFrankild2015}
-Sune Pletscher-Frankild, Albert Pallejà, Kalliopi Tsafou, Janos~X. Binder, and
-  Lars~Juhl Jensen.
-\newblock Diseases: text mining and data integration of disease-gene
-  associations.
-\newblock \emph{Methods (San Diego, Calif.)}, 74:\penalty0 83--9, Mar 2015.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S1046202314003831}.
-
-\bibitem[Pushpakom et~al.(2019)Pushpakom, Iorio, Eyers, Escott, Hopper, Wells,
-  Doig, Guilliams, Latimer, McNamee, Norris, Sanseau, Cavalla, and
-  Pirmohamed]{Pushpakom2019}
-Sudeep Pushpakom, Francesco Iorio, Patrick~A. Eyers, K.~Jane Escott, Shirley
-  Hopper, Andrew Wells, Andrew Doig, Tim Guilliams, Joanna Latimer, Christine
-  McNamee, Alan Norris, Philippe Sanseau, David Cavalla, and Munir Pirmohamed.
-\newblock Drug repurposing: progress, challenges and recommendations.
-\newblock \emph{Nature Reviews Drug Discovery}, 18\penalty0 (1):\penalty0
-  41--58, 2019.
-\newblock ISSN 1474-1784.
-\newblock \doi{10.1038/nrd.2018.168}.
-\newblock URL \url{https://doi.org/10.1038/nrd.2018.168}.
-
-\bibitem[Reis et~al.(2022)Reis, Patrun, Ackl, Winter, Scheifele, Danek, and
-  Nolte]{Reis2022}
-Marlen~Colleen Reis, Julia Patrun, Nibal Ackl, Pia Winter, Maximilian
-  Scheifele, Adrian Danek, and Dagmar Nolte.
-\newblock A severe dementia syndrome caused by intron retention and cryptic
-  splice site activation in stub1 and exacerbated by tbp repeat expansions.
-\newblock \emph{Frontiers in Molecular Neuroscience}, 15, 2022.
-\newblock ISSN 1662-5099.
-\newblock \doi{10.3389/fnmol.2022.878236}.
-\newblock URL
-  \url{https://www.frontiersin.org/articles/10.3389/fnmol.2022.878236}.
-
-\bibitem[Rzemieniec et~al.(2019)Rzemieniec, Wnuk, Lasoń, Bilecki, and
-  Kajta]{Rzemieniec2019}
-J.~Rzemieniec, A.~Wnuk, W.~Lasoń, W.~Bilecki, and M.~Kajta.
-\newblock The neuroprotective action of 3,3'-diindolylmethane against ischemia
+%%% 23
+\bibitem[\protect\citeauthoryear{Rzemieniec et~al.}{2019}]{Rzemieniec2019}
+\begin{barticle}
+\bauthor{\bsnm{Rzemieniec}, \binits{J.}},
+\bauthor{\bsnm{Wnuk}, \binits{A.}},
+\bauthor{\bsnm{Lasoń}, \binits{W.}},
+\bauthor{\bsnm{Bilecki}, \binits{W.}},
+\bauthor{\bsnm{Kajta}, \binits{M.}}:
+\batitle{The neuroprotective action of 3,3'-diindolylmethane against ischemia
   involves an inhibition of apoptosis and autophagy that depends on hdac and
-  ahr/cyp1a1 but not er$\alpha$/cyp19a1 signaling.
-\newblock \emph{Apoptosis : an international journal on programmed cell death},
-  24:\penalty0 435--452, Jun 2019.
+  ahr/cyp1a1 but not er$\alpha$/cyp19a1 signaling.}
+\bjtitle{Apoptosis : an international journal on programmed cell death}
+\bvolume{24},
+\bfpage{435}--\blpage{452}
+(\byear{2019})
+\end{barticle}
+\endbibitem
 
-\bibitem[Santiago and Potashkin(2021)]{Santiago2021}
-Jose~A. Santiago and Judith~A. Potashkin.
-\newblock The impact of disease comorbidities in alzheimer's disease.
-\newblock \emph{Frontiers in aging neuroscience}, 13\penalty0
-  (33643025):\penalty0 631770--631770, February 2021.
-\newblock ISSN 1663-4365.
-\newblock \doi{10.3389/fnagi.2021.631770}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906983/}.
+%%% 24
+\bibitem[\protect\citeauthoryear{Keene et~al.}{2002}]{Keene2002}
+\begin{barticle}
+\bauthor{\bsnm{Keene}, \binits{C.D.}},
+\bauthor{\bsnm{Rodrigues}, \binits{C.M.P.}},
+\bauthor{\bsnm{Eich}, \binits{T.}},
+\bauthor{\bsnm{Chhabra}, \binits{M.S.}},
+\bauthor{\bsnm{Steer}, \binits{C.J.}},
+\bauthor{\bsnm{Low}, \binits{W.C.}}:
+\batitle{Tauroursodeoxycholic acid, a bile acid, is neuroprotective in a
+  transgenic animal model of huntington's disease}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{99}(\bissue{16}),
+\bfpage{10671}--\blpage{10676}
+(\byear{2002})
+\doiurl{10.1073/pnas.162362299}
+{\href{https://arxiv.org/abs/https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}{{https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}}}
+\end{barticle}
+\endbibitem
 
-\bibitem[Schwartzentruber et~al.(2021)Schwartzentruber, Cooper, Liu,
-  Barrio-Hernandez, Bello, Kumasaka, Young, Franklin, Johnson, Estrada,
-  Gaffney, Beltrao, and Bassett]{Schwartzentruber2021}
-Jeremy Schwartzentruber, Sarah Cooper, Jimmy~Z. Liu, Inigo Barrio-Hernandez,
-  Erica Bello, Natsuhiko Kumasaka, Adam M.~H. Young, Robin J.~M. Franklin, Toby
-  Johnson, Karol Estrada, Daniel~J. Gaffney, Pedro Beltrao, and Andrew Bassett.
-\newblock Genome-wide meta-analysis, fine-mapping and integrative
-  prioritization implicate new alzheimer's disease risk genes.
-\newblock \emph{Nature genetics}, 53\penalty0 (33589840):\penalty0 392--402,
-  March 2021.
-\newblock ISSN 1061-4036.
-\newblock \doi{10.1038/s41588-020-00776-w}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610386/}.
+%%% 25
+\bibitem[\protect\citeauthoryear{Varma et~al.}{2021}]{Varma2021}
+\begin{barticle}
+\bauthor{\bsnm{Varma}, \binits{V.R.}},
+\bauthor{\bsnm{Wang}, \binits{Y.}},
+\bauthor{\bsnm{An}, \binits{Y.}},
+\bauthor{\bsnm{Varma}, \binits{S.}},
+\bauthor{\bsnm{Bilgel}, \binits{M.}},
+\bauthor{\bsnm{Doshi}, \binits{J.}},
+\bauthor{\bsnm{Legido-Quigley}, \binits{C.}},
+\bauthor{\bsnm{Delgado}, \binits{J.C.}},
+\bauthor{\bsnm{Oommen}, \binits{A.M.}},
+\bauthor{\bsnm{Roberts}, \binits{J.A.}},
+\bauthor{\bsnm{Wong}, \binits{D.F.}},
+\bauthor{\bsnm{Davatzikos}, \binits{C.}},
+\bauthor{\bsnm{Resnick}, \binits{S.M.}},
+\bauthor{\bsnm{Troncoso}, \binits{J.C.}},
+\bauthor{\bsnm{Pletnikova}, \binits{O.}},
+\bauthor{\bsnm{O’Brien}, \binits{R.}},
+\bauthor{\bsnm{Hak}, \binits{E.}},
+\bauthor{\bsnm{Baak}, \binits{B.N.}},
+\bauthor{\bsnm{Pfeiffer}, \binits{R.}},
+\bauthor{\bsnm{Baloni}, \binits{P.}},
+\bauthor{\bsnm{Mohmoudiandehkordi}, \binits{S.}},
+\bauthor{\bsnm{Nho}, \binits{K.}},
+\bauthor{\bsnm{Kaddurah-Daouk}, \binits{R.}},
+\bauthor{\bsnm{Bennett}, \binits{D.A.}},
+\bauthor{\bsnm{Gadalla}, \binits{S.M.}},
+\bauthor{\bsnm{Thambisetty}, \binits{M.}}:
+\batitle{Bile acid synthesis, modulation, and dementia: A metabolomic,
+  transcriptomic, and pharmacoepidemiologic study}.
+\bjtitle{PLOS Medicine}
+\bvolume{18}(\bissue{5}),
+\bfpage{1003615}
+(\byear{2021})
+\doiurl{10.1371/journal.pmed.1003615}
+\end{barticle}
+\endbibitem
 
-\bibitem[Sekar et~al.(2016)Sekar, Bialas, de~Rivera, Davis, Hammond, Kamitaki,
-  Tooley, Presumey, Baum, Van~Doren, Genovese, Rose, Handsaker, Daly, Carroll,
-  Stevens, and McCarroll]{Sekar2016a}
-Aswin Sekar, Allison~R. Bialas, Heather de~Rivera, Avery Davis, Timothy~R.
-  Hammond, Nolan Kamitaki, Katherine Tooley, Jessy Presumey, Matthew Baum,
-  Vanessa Van~Doren, Giulio Genovese, Samuel~A. Rose, Robert~E. Handsaker,
-  Mark~J. Daly, Michael~C. Carroll, Beth Stevens, and Steven~A. McCarroll.
-\newblock Schizophrenia risk from complex variation of complement component 4.
-\newblock \emph{Nature}, 530:\penalty0 177--83, Feb 2016.
-\newblock URL \url{http://www.nature.com/doifinder/10.1038/nature16549}.
+%%% 26
+\bibitem[\protect\citeauthoryear{Baloni et~al.}{2020}]{Baloni2020}
+\begin{barticle}
+\bauthor{\bsnm{Baloni}, \binits{P.}},
+\bauthor{\bsnm{Funk}, \binits{C.C.}},
+\bauthor{\bsnm{Yan}, \binits{J.}},
+\bauthor{\bsnm{Yurkovich}, \binits{J.T.}},
+\bauthor{\bsnm{Kueider-Paisley}, \binits{A.}},
+\bauthor{\bsnm{Nho}, \binits{K.}},
+\bauthor{\bsnm{Heinken}, \binits{A.}},
+\bauthor{\bsnm{Jia}, \binits{W.}},
+\bauthor{\bsnm{Mahmoudiandehkordi}, \binits{S.}},
+\bauthor{\bsnm{Louie}, \binits{G.}},
+\bauthor{\bsnm{Saykin}, \binits{A.J.}},
+\bauthor{\bsnm{Arnold}, \binits{M.}},
+\bauthor{\bsnm{Kastenmüller}, \binits{G.}},
+\bauthor{\bsnm{Griffiths}, \binits{W.J.}},
+\bauthor{\bsnm{Thiele}, \binits{I.}},
+\bauthor{\bsnm{Kaddurah-Daouk}, \binits{R.}},
+\bauthor{\bsnm{Price}, \binits{N.D.}}:
+\batitle{Metabolic network analysis reveals altered bile acid synthesis and
+  metabolism in alzheimer's disease.}
+\bjtitle{Cell reports. Medicine}
+\bvolume{1},
+\bfpage{100138}
+(\byear{2020})
+\doiurl{10.1016/j.xcrm.2020.100138}
+\end{barticle}
+\endbibitem
 
-\bibitem[Sigismund et~al.(2018)Sigismund, Avanzato, and
-  Lanzetti]{Sigismund2018}
-Sara Sigismund, Daniele Avanzato, and Letizia Lanzetti.
-\newblock Emerging functions of the egfr in cancer.
-\newblock \emph{Molecular oncology}, 12:\penalty0 3--20, Jan 2018.
+%%% 27
+\bibitem[\protect\citeauthoryear{Besouw et~al.}{2013}]{Besouw2013}
+\begin{barticle}
+\bauthor{\bsnm{Besouw}, \binits{M.}},
+\bauthor{\bsnm{Masereeuw}, \binits{R.}},
+\bauthor{\bsnm{{van den Heuvel}}, \binits{L.}},
+\bauthor{\bsnm{Levtchenko}, \binits{E.}}:
+\batitle{Cysteamine: an old drug with new potential}.
+\bjtitle{Drug Discovery Today}
+\bvolume{18}(\bissue{15}),
+\bfpage{785}--\blpage{792}
+(\byear{2013})
+\doiurl{10.1016/j.drudis.2013.02.003}
+\end{barticle}
+\endbibitem
 
-\bibitem[Taubes et~al.(2021)Taubes, Nova, Zalocusky, Kosti, Bicak, Zilberter,
-  Hao, Yoon, Oskotsky, Pineda, Chen, Aery~Jones, Choudhary, Grone, Balestra,
-  Chaudhry, Paranjpe, De~Freitas, Koutsodendris, Chen, Wang, Chang, An,
-  Glicksberg, Sirota, and Huang]{Taubes2021}
-Alice Taubes, Phil Nova, Kelly~A. Zalocusky, Idit Kosti, Mesude Bicak, Misha~Y.
-  Zilberter, Yanxia Hao, Seo~Yeon Yoon, Tomiko Oskotsky, Silvia Pineda, Bin
-  Chen, Emily~A. Aery~Jones, Krishna Choudhary, Brian Grone, Maureen~E.
-  Balestra, Fayzan Chaudhry, Ishan Paranjpe, Jessica De~Freitas, Nicole
-  Koutsodendris, Nuo Chen, Celine Wang, William Chang, Alice An, Benjamin~S.
-  Glicksberg, Marina Sirota, and Yadong Huang.
-\newblock Experimental and real-world evidence supporting the computational
-  repurposing of bumetanide for apoe4-related alzheimer’s disease.
-\newblock \emph{Nature Aging}, 1\penalty0 (10):\penalty0 932--947, 2021.
-\newblock ISSN 2662-8465.
-\newblock \doi{10.1038/s43587-021-00122-7}.
-\newblock URL \url{https://doi.org/10.1038/s43587-021-00122-7}.
+%%% 28
+\bibitem[\protect\citeauthoryear{Paul and Snyder}{2019}]{Paul2019}
+\begin{botherref}
+\oauthor{\bsnm{Paul}, \binits{B.D.}},
+\oauthor{\bsnm{Snyder}, \binits{S.H.}}:
+Therapeutic applications of cysteamine and cystamine in neurodegenerative and
+  neuropsychiatric diseases.
+Frontiers in Neurology
+\textbf{10}
+(2019)
+\doiurl{10.3389/fneur.2019.01315}
+\end{botherref}
+\endbibitem
 
-\bibitem[Varma(2020)]{Varma2020}
-Sudhir Varma.
-\newblock Blind estimation and correction of microarray batch effect.
-\newblock \emph{PloS one}, 15\penalty0 (32271844):\penalty0 e0231446--e0231446,
-  April 2020.
-\newblock ISSN 1932-6203.
-\newblock \doi{10.1371/journal.pone.0231446}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145015/}.
+%%% 29
+\bibitem[\protect\citeauthoryear{Zhu et~al.}{2018}]{Zhu2018}
+\begin{barticle}
+\bauthor{\bsnm{Zhu}, \binits{Z.}},
+\bauthor{\bsnm{Zheng}, \binits{Z.}},
+\bauthor{\bsnm{Zhang}, \binits{F.}},
+\bauthor{\bsnm{Wu}, \binits{Y.}},
+\bauthor{\bsnm{Trzaskowski}, \binits{M.}},
+\bauthor{\bsnm{Maier}, \binits{R.}},
+\bauthor{\bsnm{Robinson}, \binits{M.R.}},
+\bauthor{\bsnm{McGrath}, \binits{J.J.}},
+\bauthor{\bsnm{Visscher}, \binits{P.M.}},
+\bauthor{\bsnm{Wray}, \binits{N.R.}},
+\bauthor{\bsnm{Yang}, \binits{J.}}:
+\batitle{Causal associations between risk factors and common diseases inferred
+  from gwas summary data}.
+\bjtitle{Nature Communications}
+\bvolume{9}(\bissue{1}),
+\bfpage{224}
+(\byear{2018})
+\doiurl{10.1038/s41467-017-02317-2}
+\end{barticle}
+\endbibitem
 
-\bibitem[Varma et~al.(2021{\natexlab{a}})Varma, Büşra~Lüleci, Oommen, Varma,
-  Blackshear, Griswold, An, Roberts, O’Brien, Pletnikova, Troncoso, Bennett,
-  Çakır, Legido-Quigley, and Thambisetty]{Varma2021a}
-Vijay~R. Varma, H.~Büşra~Lüleci, Anup~M. Oommen, Sudhir Varma, Chad~T.
-  Blackshear, Michael~E. Griswold, Yang An, Jackson~A. Roberts, Richard
-  O’Brien, Olga Pletnikova, Juan~C. Troncoso, David~A. Bennett, Tunahan
-  Çakır, Cristina Legido-Quigley, and Madhav Thambisetty.
-\newblock Abnormal brain cholesterol homeostasis in alzheimer’s disease--a
-  targeted metabolomic and transcriptomic study.
-\newblock \emph{npj Aging and Mechanisms of Disease}, 7\penalty0 (1):\penalty0
-  11, 2021{\natexlab{a}}.
-\newblock ISSN 2056-3973.
-\newblock \doi{10.1038/s41514-021-00064-9}.
-\newblock URL \url{https://doi.org/10.1038/s41514-021-00064-9}.
+%%% 30
+\bibitem[\protect\citeauthoryear{Lau and So}{2020}]{Lau2020}
+\begin{barticle}
+\bauthor{\bsnm{Lau}, \binits{A.}},
+\bauthor{\bsnm{So}, \binits{H.-C.}}:
+\batitle{Turning genome-wide association study findings into opportunities for
+  drug repositioning.}
+\bjtitle{Computational and structural biotechnology journal}
+\bvolume{18},
+\bfpage{1639}--\blpage{1650}
+(\byear{2020})
+\doiurl{10.1016/j.csbj.2020.06.015}
+\end{barticle}
+\endbibitem
 
-\bibitem[Varma et~al.(2021{\natexlab{b}})Varma, Wang, An, Varma, Bilgel, Doshi,
-  Legido-Quigley, Delgado, Oommen, Roberts, Wong, Davatzikos, Resnick,
-  Troncoso, Pletnikova, O’Brien, Hak, Baak, Pfeiffer, Baloni,
-  Mohmoudiandehkordi, Nho, Kaddurah-Daouk, Bennett, Gadalla, and
-  Thambisetty]{Varma2021}
-Vijay~R. Varma, Youjin Wang, Yang An, Sudhir Varma, Murat Bilgel, Jimit Doshi,
-  Cristina Legido-Quigley, João~C. Delgado, Anup~M. Oommen, Jackson~A.
-  Roberts, Dean~F. Wong, Christos Davatzikos, Susan~M. Resnick, Juan~C.
-  Troncoso, Olga Pletnikova, Richard O’Brien, Eelko Hak, Brenda~N. Baak, Ruth
-  Pfeiffer, Priyanka Baloni, Siamak Mohmoudiandehkordi, Kwangsik Nho, Rima
-  Kaddurah-Daouk, David~A. Bennett, Shahinaz~M. Gadalla, and Madhav
-  Thambisetty.
-\newblock Bile acid synthesis, modulation, and dementia: A metabolomic,
-  transcriptomic, and pharmacoepidemiologic study.
-\newblock \emph{PLOS Medicine}, 18\penalty0 (5):\penalty0 e1003615, May
-  2021{\natexlab{b}}.
-\newblock \doi{10.1371/journal.pmed.1003615}.
-\newblock URL \url{https://doi.org/10.1371/journal.pmed.1003615}.
+%%% 31
+\bibitem[\protect\citeauthoryear{Chowdari et~al.}{2002}]{Chowdari2002}
+\begin{barticle}
+\bauthor{\bsnm{Chowdari}, \binits{K.V.}},
+\bauthor{\bsnm{Mirnics}, \binits{K.}},
+\bauthor{\bsnm{Semwal}, \binits{P.}},
+\bauthor{\bsnm{Wood}, \binits{J.}},
+\bauthor{\bsnm{Lawrence}, \binits{E.}},
+\bauthor{\bsnm{Bhatia}, \binits{T.}},
+\bauthor{\bsnm{Deshpande}, \binits{S.N.}},
+\bauthor{\bsnm{B.K.}, \binits{T.}},
+\bauthor{\bsnm{Ferrell}, \binits{R.E.}},
+\bauthor{\bsnm{Middleton}, \binits{F.A.}},
+\bauthor{\bsnm{Devlin}, \binits{B.}},
+\bauthor{\bsnm{Levitt}, \binits{P.}},
+\bauthor{\bsnm{Lewis}, \binits{D.A.}},
+\bauthor{\bsnm{Nimgaonkar}, \binits{V.L.}}:
+\batitle{{ Association and linkage analyses of RGS4 polymorphisms in
+  schizophrenia }}.
+\bjtitle{Human Molecular Genetics}
+\bvolume{11}(\bissue{12}),
+\bfpage{1373}--\blpage{1380}
+(\byear{2002})
+\doiurl{10.1093/hmg/11.12.1373}
+{\href{https://arxiv.org/abs/https://academic.oup.com/hmg/article-pdf/11/12/1373/6947216/ddf141.pdf}{{https://academic.oup.com/hmg/article-pdf/11/12/1373/6947216/ddf141.pdf}}}
+\end{barticle}
+\endbibitem
 
-\bibitem[Wang(2016)]{Wang2016c}
-Zhixiang Wang.
-\newblock Transactivation of epidermal growth factor receptor by g
-  protein-coupled receptors: Recent progress, challenges and future research.
-\newblock \emph{International Journal of Molecular Sciences}, 17\penalty0 (1),
-  2016.
-\newblock ISSN 1422-0067.
-\newblock \doi{10.3390/ijms17010095}.
-\newblock URL \url{https://www.mdpi.com/1422-0067/17/1/95}.
+%%% 32
+\bibitem[\protect\citeauthoryear{Consortium et~al.}{2018}]{Consortium2018}
+\begin{botherref}
+\oauthor{\bsnm{Consortium}, \binits{B.}},
+\oauthor{\bsnm{Anttila}, \binits{V.}},
+\oauthor{\bsnm{Bulik-Sullivan}, \binits{B.}},
+\oauthor{\bsnm{Finucane}, \binits{H.K.}},
+\oauthor{\bsnm{Walters}, \binits{R.K.}},
+\oauthor{\bsnm{Bras}, \binits{J.}},
+\oauthor{\bsnm{Duncan}, \binits{L.}},
+\oauthor{\bsnm{Escott-Price}, \binits{V.}},
+\oauthor{\bsnm{Falcone}, \binits{G.J.}},
+\oauthor{\bsnm{Gormley}, \binits{P.}},
+\oauthor{\bsnm{Malik}, \binits{R.}},
+\oauthor{\bsnm{Patsopoulos}, \binits{N.A.}},
+\oauthor{\bsnm{Ripke}, \binits{S.}},
+\oauthor{\bsnm{Wei}, \binits{Z.}},
+\oauthor{\bsnm{Yu}, \binits{D.}},
+\oauthor{\bsnm{Lee}, \binits{P.H.}},
+\oauthor{\bsnm{Turley}, \binits{P.}},
+\oauthor{\bsnm{Grenier-Boley}, \binits{B.}},
+\oauthor{\bsnm{Chouraki}, \binits{V.}},
+\oauthor{\bsnm{Kamatani}, \binits{Y.}},
+\oauthor{\bsnm{Berr}, \binits{C.}},
+\oauthor{\bsnm{Letenneur}, \binits{L.}},
+\oauthor{\bsnm{Hannequin}, \binits{D.}},
+\oauthor{\bsnm{Amouyel}, \binits{P.}},
+\oauthor{\bsnm{Boland}, \binits{A.}},
+\oauthor{\bsnm{Deleuze}, \binits{J.-F.}},
+\oauthor{\bsnm{Duron}, \binits{E.}},
+\oauthor{\bsnm{Vardarajan}, \binits{B.N.}},
+\oauthor{\bsnm{Reitz}, \binits{C.}},
+\oauthor{\bsnm{Goate}, \binits{A.M.}},
+\oauthor{\bsnm{Huentelman}, \binits{M.J.}},
+\oauthor{\bsnm{Kamboh}, \binits{M.I.}},
+\oauthor{\bsnm{Larson}, \binits{E.B.}},
+\oauthor{\bsnm{Rogaeva}, \binits{E.}},
+\oauthor{\bsnm{St~George-Hyslop}, \binits{P.}},
+\oauthor{\bsnm{Hakonarson}, \binits{H.}},
+\oauthor{\bsnm{Kukull}, \binits{W.A.}},
+\oauthor{\bsnm{Farrer}, \binits{L.A.}},
+\oauthor{\bsnm{Barnes}, \binits{L.L.}},
+\oauthor{\bsnm{Beach}, \binits{T.G.}},
+\oauthor{\bsnm{Demirci}, \binits{F.Y.}},
+\oauthor{\bsnm{Head}, \binits{E.}},
+\oauthor{\bsnm{Hulette}, \binits{C.M.}},
+\oauthor{\bsnm{Jicha}, \binits{G.A.}},
+\oauthor{\bsnm{Kauwe}, \binits{J.S.K.}},
+\oauthor{\bsnm{Kaye}, \binits{J.A.}},
+\oauthor{\bsnm{Leverenz}, \binits{J.B.}},
+\oauthor{\bsnm{Levey}, \binits{A.I.}},
+\oauthor{\bsnm{Lieberman}, \binits{A.P.}},
+\oauthor{\bsnm{Pankratz}, \binits{V.S.}},
+\oauthor{\bsnm{Poon}, \binits{W.W.}},
+\oauthor{\bsnm{Quinn}, \binits{J.F.}},
+\oauthor{\bsnm{Saykin}, \binits{A.J.}},
+\oauthor{\bsnm{Schneider}, \binits{L.S.}},
+\oauthor{\bsnm{Smith}, \binits{A.G.}},
+\oauthor{\bsnm{Sonnen}, \binits{J.A.}},
+\oauthor{\bsnm{Stern}, \binits{R.A.}},
+\oauthor{\bsnm{Van~Deerlin}, \binits{V.M.}},
+\oauthor{\bsnm{Van~Eldik}, \binits{L.J.}},
+\oauthor{\bsnm{Harold}, \binits{D.}},
+\oauthor{\bsnm{Russo}, \binits{G.}},
+\oauthor{\bsnm{Rubinsztein}, \binits{D.C.}},
+\oauthor{\bsnm{Bayer}, \binits{A.}},
+\oauthor{\bsnm{Tsolaki}, \binits{M.}},
+\oauthor{\bsnm{Proitsi}, \binits{P.}},
+\oauthor{\bsnm{Fox}, \binits{N.C.}},
+\oauthor{\bsnm{Hampel}, \binits{H.}},
+\oauthor{\bsnm{Owen}, \binits{M.J.}},
+\oauthor{\bsnm{Mead}, \binits{S.}},
+\oauthor{\bsnm{Passmore}, \binits{P.}},
+\oauthor{\bsnm{Morgan}, \binits{K.}},
+\oauthor{\bsnm{Nöthen}, \binits{M.M.}},
+\oauthor{\bsnm{Rossor}, \binits{M.}},
+\oauthor{\bsnm{Lupton}, \binits{M.K.}},
+\oauthor{\bsnm{Hoffmann}, \binits{P.}},
+\oauthor{\bsnm{Kornhuber}, \binits{J.}},
+\oauthor{\bsnm{Lawlor}, \binits{B.}},
+\oauthor{\bsnm{McQuillin}, \binits{A.}},
+\oauthor{\bsnm{Al-Chalabi}, \binits{A.}},
+\oauthor{\bsnm{Bis}, \binits{J.C.}},
+\oauthor{\bsnm{Ruiz}, \binits{A.}},
+\oauthor{\bsnm{Boada}, \binits{M.}},
+\oauthor{\bsnm{Seshadri}, \binits{S.}},
+\oauthor{\bsnm{Beiser}, \binits{A.}},
+\oauthor{\bsnm{Rice}, \binits{K.}},
+\oauthor{\bsnm{Lee}, \binits{S.J.}},
+\oauthor{\bsnm{De~Jager}, \binits{P.L.}},
+\oauthor{\bsnm{Geschwind}, \binits{D.H.}},
+\oauthor{\bsnm{Riemenschneider}, \binits{M.}},
+\oauthor{\bsnm{Riedel-Heller}, \binits{S.}},
+\oauthor{\bsnm{Rotter}, \binits{J.I.}},
+\oauthor{\bsnm{Ransmayr}, \binits{G.}},
+\oauthor{\bsnm{Hyman}, \binits{B.T.}},
+\oauthor{\bsnm{Cruchaga}, \binits{C.}},
+\oauthor{\bsnm{Alegret}, \binits{M.}},
+\oauthor{\bsnm{Winsvold}, \binits{B.}},
+\oauthor{\bsnm{Palta}, \binits{P.}},
+\oauthor{\bsnm{Farh}, \binits{K.-H.}},
+\oauthor{\bsnm{Cuenca-Leon}, \binits{E.}},
+\oauthor{\bsnm{Furlotte}, \binits{N.}},
+\oauthor{\bsnm{Kurth}, \binits{T.}},
+\oauthor{\bsnm{Ligthart}, \binits{L.}},
+\oauthor{\bsnm{Terwindt}, \binits{G.M.}},
+\oauthor{\bsnm{Freilinger}, \binits{T.}},
+\oauthor{\bsnm{Ran}, \binits{C.}},
+\oauthor{\bsnm{Gordon}, \binits{S.D.}},
+\oauthor{\bsnm{Borck}, \binits{G.}},
+\oauthor{\bsnm{Adams}, \binits{H.H.H.}},
+\oauthor{\bsnm{Lehtimäki}, \binits{T.}},
+\oauthor{\bsnm{Wedenoja}, \binits{J.}},
+\oauthor{\bsnm{Buring}, \binits{J.E.}},
+\oauthor{\bsnm{Schürks}, \binits{M.}},
+\oauthor{\bsnm{Hrafnsdottir}, \binits{M.}},
+\oauthor{\bsnm{Hottenga}, \binits{J.-J.}},
+\oauthor{\bsnm{Penninx}, \binits{B.}},
+\oauthor{\bsnm{Artto}, \binits{V.}},
+\oauthor{\bsnm{Kaunisto}, \binits{M.}},
+\oauthor{\bsnm{Vepsäläinen}, \binits{S.}},
+\oauthor{\bsnm{Martin}, \binits{N.G.}},
+\oauthor{\bsnm{Montgomery}, \binits{G.W.}},
+\oauthor{\bsnm{Kurki}, \binits{M.I.}},
+\oauthor{\bsnm{Hämäläinen}, \binits{E.}},
+\oauthor{\bsnm{Huang}, \binits{H.}},
+\oauthor{\bsnm{Huang}, \binits{J.}},
+\oauthor{\bsnm{Sandor}, \binits{C.}},
+\oauthor{\bsnm{Webber}, \binits{C.}},
+\oauthor{\bsnm{Muller-Myhsok}, \binits{B.}},
+\oauthor{\bsnm{Schreiber}, \binits{S.}},
+\oauthor{\bsnm{Salomaa}, \binits{V.}},
+\oauthor{\bsnm{Loehrer}, \binits{E.}},
+\oauthor{\bsnm{Göbel}, \binits{H.}},
+\oauthor{\bsnm{Macaya}, \binits{A.}},
+\oauthor{\bsnm{Pozo-Rosich}, \binits{P.}},
+\oauthor{\bsnm{Hansen}, \binits{T.}},
+\oauthor{\bsnm{Werge}, \binits{T.}},
+\oauthor{\bsnm{Kaprio}, \binits{J.}},
+\oauthor{\bsnm{Metspalu}, \binits{A.}},
+\oauthor{\bsnm{Kubisch}, \binits{C.}},
+\oauthor{\bsnm{Ferrari}, \binits{M.D.}},
+\oauthor{\bsnm{Belin}, \binits{A.C.}},
+\oauthor{\bsnm{Maagdenberg}, \binits{A.M.J.M.}},
+\oauthor{\bsnm{Zwart}, \binits{J.-A.}},
+\oauthor{\bsnm{Boomsma}, \binits{D.}},
+\oauthor{\bsnm{Eriksson}, \binits{N.}},
+\oauthor{\bsnm{Olesen}, \binits{J.}},
+\oauthor{\bsnm{Chasman}, \binits{D.I.}},
+\oauthor{\bsnm{Nyholt}, \binits{D.R.}},
+\oauthor{\bsnm{Avbersek}, \binits{A.}},
+\oauthor{\bsnm{Baum}, \binits{L.}},
+\oauthor{\bsnm{Berkovic}, \binits{S.}},
+\oauthor{\bsnm{Bradfield}, \binits{J.}},
+\oauthor{\bsnm{Buono}, \binits{R.J.}},
+\oauthor{\bsnm{Catarino}, \binits{C.B.}},
+\oauthor{\bsnm{Cossette}, \binits{P.}},
+\oauthor{\bsnm{De~Jonghe}, \binits{P.}},
+\oauthor{\bsnm{Depondt}, \binits{C.}},
+\oauthor{\bsnm{Dlugos}, \binits{D.}},
+\oauthor{\bsnm{Ferraro}, \binits{T.N.}},
+\oauthor{\bsnm{French}, \binits{J.}},
+\oauthor{\bsnm{Hjalgrim}, \binits{H.}},
+\oauthor{\bsnm{Jamnadas-Khoda}, \binits{J.}},
+\oauthor{\bsnm{Kälviäinen}, \binits{R.}},
+\oauthor{\bsnm{Kunz}, \binits{W.S.}},
+\oauthor{\bsnm{Lerche}, \binits{H.}},
+\oauthor{\bsnm{Leu}, \binits{C.}},
+\oauthor{\bsnm{Lindhout}, \binits{D.}},
+\oauthor{\bsnm{Lo}, \binits{W.}},
+\oauthor{\bsnm{Lowenstein}, \binits{D.}},
+\oauthor{\bsnm{McCormack}, \binits{M.}},
+\oauthor{\bsnm{Møller}, \binits{R.S.}},
+\oauthor{\bsnm{Molloy}, \binits{A.}},
+\oauthor{\bsnm{Ng}, \binits{P.-W.}},
+\oauthor{\bsnm{Oliver}, \binits{K.}},
+\oauthor{\bsnm{Privitera}, \binits{M.}},
+\oauthor{\bsnm{Radtke}, \binits{R.}},
+\oauthor{\bsnm{Ruppert}, \binits{A.-K.}},
+\oauthor{\bsnm{Sander}, \binits{T.}},
+\oauthor{\bsnm{Schachter}, \binits{S.}},
+\oauthor{\bsnm{Schankin}, \binits{C.}},
+\oauthor{\bsnm{Scheffer}, \binits{I.}},
+\oauthor{\bsnm{Schoch}, \binits{S.}},
+\oauthor{\bsnm{Sisodiya}, \binits{S.M.}},
+\oauthor{\bsnm{Smith}, \binits{P.}},
+\oauthor{\bsnm{Sperling}, \binits{M.}},
+\oauthor{\bsnm{Striano}, \binits{P.}},
+\oauthor{\bsnm{Surges}, \binits{R.}},
+\oauthor{\bsnm{Thomas}, \binits{G.N.}},
+\oauthor{\bsnm{Visscher}, \binits{F.}},
+\oauthor{\bsnm{Whelan}, \binits{C.D.}},
+\oauthor{\bsnm{Zara}, \binits{F.}},
+\oauthor{\bsnm{Heinzen}, \binits{E.L.}},
+\oauthor{\bsnm{Marson}, \binits{A.}},
+\oauthor{\bsnm{Becker}, \binits{F.}},
+\oauthor{\bsnm{Stroink}, \binits{H.}},
+\oauthor{\bsnm{Zimprich}, \binits{F.}},
+\oauthor{\bsnm{Gasser}, \binits{T.}},
+\oauthor{\bsnm{Gibbs}, \binits{R.}},
+\oauthor{\bsnm{Heutink}, \binits{P.}},
+\oauthor{\bsnm{Martinez}, \binits{M.}},
+\oauthor{\bsnm{Morris}, \binits{H.R.}},
+\oauthor{\bsnm{Sharma}, \binits{M.}},
+\oauthor{\bsnm{Ryten}, \binits{M.}},
+\oauthor{\bsnm{Mok}, \binits{K.Y.}},
+\oauthor{\bsnm{Pulit}, \binits{S.}},
+\oauthor{\bsnm{Bevan}, \binits{S.}},
+\oauthor{\bsnm{Holliday}, \binits{E.}},
+\oauthor{\bsnm{Attia}, \binits{J.}},
+\oauthor{\bsnm{Battey}, \binits{T.}},
+\oauthor{\bsnm{Boncoraglio}, \binits{G.}},
+\oauthor{\bsnm{Thijs}, \binits{V.}},
+\oauthor{\bsnm{Chen}, \binits{W.-M.}},
+\oauthor{\bsnm{Mitchell}, \binits{B.}},
+\oauthor{\bsnm{Rothwell}, \binits{P.}},
+\oauthor{\bsnm{Sharma}, \binits{P.}},
+\oauthor{\bsnm{Sudlow}, \binits{C.}},
+\oauthor{\bsnm{Vicente}, \binits{A.}},
+\oauthor{\bsnm{Markus}, \binits{H.}},
+\oauthor{\bsnm{Kourkoulis}, \binits{C.}},
+\oauthor{\bsnm{Pera}, \binits{J.}},
+\oauthor{\bsnm{Raffeld}, \binits{M.}},
+\oauthor{\bsnm{Silliman}, \binits{S.}},
+\oauthor{\bsnm{Boraska~Perica}, \binits{V.}},
+\oauthor{\bsnm{Thornton}, \binits{L.M.}},
+\oauthor{\bsnm{Huckins}, \binits{L.M.}},
+\oauthor{\bsnm{William~Rayner}, \binits{N.}},
+\oauthor{\bsnm{Lewis}, \binits{C.M.}},
+\oauthor{\bsnm{Gratacos}, \binits{M.}},
+\oauthor{\bsnm{Rybakowski}, \binits{F.}},
+\oauthor{\bsnm{Keski-Rahkonen}, \binits{A.}},
+\oauthor{\bsnm{Raevuori}, \binits{A.}},
+\oauthor{\bsnm{Hudson}, \binits{J.I.}},
+\oauthor{\bsnm{Reichborn-Kjennerud}, \binits{T.}},
+\oauthor{\bsnm{Monteleone}, \binits{P.}},
+\oauthor{\bsnm{Karwautz}, \binits{A.}},
+\oauthor{\bsnm{Mannik}, \binits{K.}},
+\oauthor{\bsnm{Baker}, \binits{J.H.}},
+\oauthor{\bsnm{O'Toole}, \binits{J.K.}},
+\oauthor{\bsnm{Trace}, \binits{S.E.}},
+\oauthor{\bsnm{Davis}, \binits{O.S.P.}},
+\oauthor{\bsnm{Helder}, \binits{S.G.}},
+\oauthor{\bsnm{Ehrlich}, \binits{S.}},
+\oauthor{\bsnm{Herpertz-Dahlmann}, \binits{B.}},
+\oauthor{\bsnm{Danner}, \binits{U.N.}},
+\oauthor{\bsnm{Elburg}, \binits{A.A.}},
+\oauthor{\bsnm{Clementi}, \binits{M.}},
+\oauthor{\bsnm{Forzan}, \binits{M.}},
+\oauthor{\bsnm{Docampo}, \binits{E.}},
+\oauthor{\bsnm{Lissowska}, \binits{J.}},
+\oauthor{\bsnm{Hauser}, \binits{J.}},
+\oauthor{\bsnm{Tortorella}, \binits{A.}},
+\oauthor{\bsnm{Maj}, \binits{M.}},
+\oauthor{\bsnm{Gonidakis}, \binits{F.}},
+\oauthor{\bsnm{Tziouvas}, \binits{K.}},
+\oauthor{\bsnm{Papezova}, \binits{H.}},
+\oauthor{\bsnm{Yilmaz}, \binits{Z.}},
+\oauthor{\bsnm{Wagner}, \binits{G.}},
+\oauthor{\bsnm{Cohen-Woods}, \binits{S.}},
+\oauthor{\bsnm{Herms}, \binits{S.}},
+\oauthor{\bsnm{Julià}, \binits{A.}},
+\oauthor{\bsnm{Rabionet}, \binits{R.}},
+\oauthor{\bsnm{Dick}, \binits{D.M.}},
+\oauthor{\bsnm{Ripatti}, \binits{S.}},
+\oauthor{\bsnm{Andreassen}, \binits{O.A.}},
+\oauthor{\bsnm{Espeseth}, \binits{T.}},
+\oauthor{\bsnm{Lundervold}, \binits{A.J.}},
+\oauthor{\bsnm{Steen}, \binits{V.M.}},
+\oauthor{\bsnm{Pinto}, \binits{D.}},
+\oauthor{\bsnm{Scherer}, \binits{S.W.}},
+\oauthor{\bsnm{Aschauer}, \binits{H.}},
+\oauthor{\bsnm{Schosser}, \binits{A.}},
+\oauthor{\bsnm{Alfredsson}, \binits{L.}},
+\oauthor{\bsnm{Padyukov}, \binits{L.}},
+\oauthor{\bsnm{Halmi}, \binits{K.A.}},
+\oauthor{\bsnm{Mitchell}, \binits{J.}},
+\oauthor{\bsnm{Strober}, \binits{M.}},
+\oauthor{\bsnm{Bergen}, \binits{A.W.}},
+\oauthor{\bsnm{Kaye}, \binits{W.}},
+\oauthor{\bsnm{Szatkiewicz}, \binits{J.P.}},
+\oauthor{\bsnm{Cormand}, \binits{B.}},
+\oauthor{\bsnm{Ramos-Quiroga}, \binits{J.A.}},
+\oauthor{\bsnm{Sánchez-Mora}, \binits{C.}},
+\oauthor{\bsnm{Ribasés}, \binits{M.}},
+\oauthor{\bsnm{Casas}, \binits{M.}},
+\oauthor{\bsnm{Hervas}, \binits{A.}},
+\oauthor{\bsnm{Arranz}, \binits{M.J.}},
+\oauthor{\bsnm{Haavik}, \binits{J.}},
+\oauthor{\bsnm{Zayats}, \binits{T.}},
+\oauthor{\bsnm{Johansson}, \binits{S.}},
+\oauthor{\bsnm{Williams}, \binits{N.}},
+\oauthor{\bsnm{Dempfle}, \binits{A.}},
+\oauthor{\bsnm{Rothenberger}, \binits{A.}},
+\oauthor{\bsnm{Kuntsi}, \binits{J.}},
+\oauthor{\bsnm{Oades}, \binits{R.D.}},
+\oauthor{\bsnm{Banaschewski}, \binits{T.}},
+\oauthor{\bsnm{Franke}, \binits{B.}},
+\oauthor{\bsnm{Buitelaar}, \binits{J.K.}},
+\oauthor{\bsnm{Arias~Vasquez}, \binits{A.}},
+\oauthor{\bsnm{Doyle}, \binits{A.E.}},
+\oauthor{\bsnm{Reif}, \binits{A.}},
+\oauthor{\bsnm{Lesch}, \binits{K.-P.}},
+\oauthor{\bsnm{Freitag}, \binits{C.}},
+\oauthor{\bsnm{Rivero}, \binits{O.}},
+\oauthor{\bsnm{Palmason}, \binits{H.}},
+\oauthor{\bsnm{Romanos}, \binits{M.}},
+\oauthor{\bsnm{Langley}, \binits{K.}},
+\oauthor{\bsnm{Rietschel}, \binits{M.}},
+\oauthor{\bsnm{Witt}, \binits{S.H.}},
+\oauthor{\bsnm{Dalsgaard}, \binits{S.}},
+\oauthor{\bsnm{Børglum}, \binits{A.D.}},
+\oauthor{\bsnm{Waldman}, \binits{I.}},
+\oauthor{\bsnm{Wilmot}, \binits{B.}},
+\oauthor{\bsnm{Molly}, \binits{N.}},
+\oauthor{\bsnm{Bau}, \binits{C.H.D.}},
+\oauthor{\bsnm{Crosbie}, \binits{J.}},
+\oauthor{\bsnm{Schachar}, \binits{R.}},
+\oauthor{\bsnm{Loo}, \binits{S.K.}},
+\oauthor{\bsnm{McGough}, \binits{J.J.}},
+\oauthor{\bsnm{Grevet}, \binits{E.H.}},
+\oauthor{\bsnm{Medland}, \binits{S.E.}},
+\oauthor{\bsnm{Robinson}, \binits{E.}},
+\oauthor{\bsnm{Weiss}, \binits{L.A.}},
+\oauthor{\bsnm{Bacchelli}, \binits{E.}},
+\oauthor{\bsnm{Bailey}, \binits{A.}},
+\oauthor{\bsnm{Bal}, \binits{V.}},
+\oauthor{\bsnm{Battaglia}, \binits{A.}},
+\oauthor{\bsnm{Betancur}, \binits{C.}},
+\oauthor{\bsnm{Bolton}, \binits{P.}},
+\oauthor{\bsnm{Cantor}, \binits{R.}},
+\oauthor{\bsnm{Celestino-Soper}, \binits{P.}},
+\oauthor{\bsnm{Dawson}, \binits{G.}},
+\oauthor{\bsnm{De~Rubeis}, \binits{S.}},
+\oauthor{\bsnm{Duque}, \binits{F.}},
+\oauthor{\bsnm{Green}, \binits{A.}},
+\oauthor{\bsnm{Klauck}, \binits{S.M.}},
+\oauthor{\bsnm{Leboyer}, \binits{M.}},
+\oauthor{\bsnm{Levitt}, \binits{P.}},
+\oauthor{\bsnm{Maestrini}, \binits{E.}},
+\oauthor{\bsnm{Mane}, \binits{S.}},
+\oauthor{\bsnm{De-Luca}, \binits{D.M.}},
+\oauthor{\bsnm{Parr}, \binits{J.}},
+\oauthor{\bsnm{Regan}, \binits{R.}},
+\oauthor{\bsnm{Reichenberg}, \binits{A.}},
+\oauthor{\bsnm{Sandin}, \binits{S.}},
+\oauthor{\bsnm{Vorstman}, \binits{J.}},
+\oauthor{\bsnm{Wassink}, \binits{T.}},
+\oauthor{\bsnm{Wijsman}, \binits{E.}},
+\oauthor{\bsnm{Cook}, \binits{E.}},
+\oauthor{\bsnm{Santangelo}, \binits{S.}},
+\oauthor{\bsnm{Delorme}, \binits{R.}},
+\oauthor{\bsnm{Rogé}, \binits{B.}},
+\oauthor{\bsnm{Magalhaes}, \binits{T.}},
+\oauthor{\bsnm{Arking}, \binits{D.}},
+\oauthor{\bsnm{Schulze}, \binits{T.G.}},
+\oauthor{\bsnm{Thompson}, \binits{R.C.}},
+\oauthor{\bsnm{Strohmaier}, \binits{J.}},
+\oauthor{\bsnm{Matthews}, \binits{K.}},
+\oauthor{\bsnm{Melle}, \binits{I.}},
+\oauthor{\bsnm{Morris}, \binits{D.}},
+\oauthor{\bsnm{Blackwood}, \binits{D.}},
+\oauthor{\bsnm{McIntosh}, \binits{A.}},
+\oauthor{\bsnm{Bergen}, \binits{S.E.}},
+\oauthor{\bsnm{Schalling}, \binits{M.}},
+\oauthor{\bsnm{Jamain}, \binits{S.}},
+\oauthor{\bsnm{Maaser}, \binits{A.}},
+\oauthor{\bsnm{Fischer}, \binits{S.B.}},
+\oauthor{\bsnm{Reinbold}, \binits{C.S.}},
+\oauthor{\bsnm{Fullerton}, \binits{J.M.}},
+\oauthor{\bsnm{Guzman-Parra}, \binits{J.}},
+\oauthor{\bsnm{Mayoral}, \binits{F.}},
+\oauthor{\bsnm{Schofield}, \binits{P.R.}},
+\oauthor{\bsnm{Cichon}, \binits{S.}},
+\oauthor{\bsnm{Mühleisen}, \binits{T.W.}},
+\oauthor{\bsnm{Degenhardt}, \binits{F.}},
+\oauthor{\bsnm{Schumacher}, \binits{J.}},
+\oauthor{\bsnm{Bauer}, \binits{M.}},
+\oauthor{\bsnm{Mitchell}, \binits{P.B.}},
+\oauthor{\bsnm{Gershon}, \binits{E.S.}},
+\oauthor{\bsnm{Rice}, \binits{J.}},
+\oauthor{\bsnm{Potash}, \binits{J.B.}},
+\oauthor{\bsnm{Zandi}, \binits{P.P.}},
+\oauthor{\bsnm{Craddock}, \binits{N.}},
+\oauthor{\bsnm{Ferrier}, \binits{I.N.}},
+\oauthor{\bsnm{Alda}, \binits{M.}},
+\oauthor{\bsnm{Rouleau}, \binits{G.A.}},
+\oauthor{\bsnm{Turecki}, \binits{G.}},
+\oauthor{\bsnm{Ophoff}, \binits{R.}},
+\oauthor{\bsnm{Pato}, \binits{C.}},
+\oauthor{\bsnm{Anjorin}, \binits{A.}},
+\oauthor{\bsnm{Stahl}, \binits{E.}},
+\oauthor{\bsnm{Leber}, \binits{M.}},
+\oauthor{\bsnm{Czerski}, \binits{P.M.}},
+\oauthor{\bsnm{Cruceanu}, \binits{C.}},
+\oauthor{\bsnm{Jones}, \binits{I.R.}},
+\oauthor{\bsnm{Posthuma}, \binits{D.}},
+\oauthor{\bsnm{Andlauer}, \binits{T.F.M.}},
+\oauthor{\bsnm{Forstner}, \binits{A.J.}},
+\oauthor{\bsnm{Streit}, \binits{F.}},
+\oauthor{\bsnm{Baune}, \binits{B.T.}},
+\oauthor{\bsnm{Air}, \binits{T.}},
+\oauthor{\bsnm{Sinnamon}, \binits{G.}},
+\oauthor{\bsnm{Wray}, \binits{N.R.}},
+\oauthor{\bsnm{MacIntyre}, \binits{D.J.}},
+\oauthor{\bsnm{Porteous}, \binits{D.}},
+\oauthor{\bsnm{Homuth}, \binits{G.}},
+\oauthor{\bsnm{Rivera}, \binits{M.}},
+\oauthor{\bsnm{Grove}, \binits{J.}},
+\oauthor{\bsnm{Middeldorp}, \binits{C.M.}},
+\oauthor{\bsnm{Hickie}, \binits{I.}},
+\oauthor{\bsnm{Pergadia}, \binits{M.}},
+\oauthor{\bsnm{Mehta}, \binits{D.}},
+\oauthor{\bsnm{Smit}, \binits{J.H.}},
+\oauthor{\bsnm{Jansen}, \binits{R.}},
+\oauthor{\bsnm{Geus}, \binits{E.}},
+\oauthor{\bsnm{Dunn}, \binits{E.}},
+\oauthor{\bsnm{Li}, \binits{Q.S.}},
+\oauthor{\bsnm{Nauck}, \binits{M.}},
+\oauthor{\bsnm{Schoevers}, \binits{R.A.}},
+\oauthor{\bsnm{Beekman}, \binits{A.T.}},
+\oauthor{\bsnm{Knowles}, \binits{J.A.}},
+\oauthor{\bsnm{Viktorin}, \binits{A.}},
+\oauthor{\bsnm{Arnold}, \binits{P.}},
+\oauthor{\bsnm{Barr}, \binits{C.L.}},
+\oauthor{\bsnm{Bedoya-Berrio}, \binits{G.}},
+\oauthor{\bsnm{Bienvenu}, \binits{O.J.}},
+\oauthor{\bsnm{Brentani}, \binits{H.}},
+\oauthor{\bsnm{Burton}, \binits{C.}},
+\oauthor{\bsnm{Camarena}, \binits{B.}},
+\oauthor{\bsnm{Cappi}, \binits{C.}},
+\oauthor{\bsnm{Cath}, \binits{D.}},
+\oauthor{\bsnm{Cavallini}, \binits{M.}},
+\oauthor{\bsnm{Cusi}, \binits{D.}},
+\oauthor{\bsnm{Darrow}, \binits{S.}},
+\oauthor{\bsnm{Denys}, \binits{D.}},
+\oauthor{\bsnm{Derks}, \binits{E.M.}},
+\oauthor{\bsnm{Dietrich}, \binits{A.}},
+\oauthor{\bsnm{Fernandez}, \binits{T.}},
+\oauthor{\bsnm{Figee}, \binits{M.}},
+\oauthor{\bsnm{Freimer}, \binits{N.}},
+\oauthor{\bsnm{Gerber}, \binits{G.}},
+\oauthor{\bsnm{Grados}, \binits{M.}},
+\oauthor{\bsnm{Greenberg}, \binits{E.}},
+\oauthor{\bsnm{Hanna}, \binits{G.L.}},
+\oauthor{\bsnm{Hartmann}, \binits{A.}},
+\oauthor{\bsnm{Hirschtritt}, \binits{M.E.}},
+\oauthor{\bsnm{Hoekstra}, \binits{P.J.}},
+\oauthor{\bsnm{Huang}, \binits{A.}},
+\oauthor{\bsnm{Huyser}, \binits{C.}},
+\oauthor{\bsnm{Illmann}, \binits{C.}},
+\oauthor{\bsnm{Jenike}, \binits{M.}},
+\oauthor{\bsnm{Kuperman}, \binits{S.}},
+\oauthor{\bsnm{Leventhal}, \binits{B.}},
+\oauthor{\bsnm{Lochner}, \binits{C.}},
+\oauthor{\bsnm{Lyon}, \binits{G.J.}},
+\oauthor{\bsnm{Macciardi}, \binits{F.}},
+\oauthor{\bsnm{Madruga-Garrido}, \binits{M.}},
+\oauthor{\bsnm{Malaty}, \binits{I.A.}},
+\oauthor{\bsnm{Maras}, \binits{A.}},
+\oauthor{\bsnm{McGrath}, \binits{L.}},
+\oauthor{\bsnm{Miguel}, \binits{E.C.}},
+\oauthor{\bsnm{Mir}, \binits{P.}},
+\oauthor{\bsnm{Nestadt}, \binits{G.}},
+\oauthor{\bsnm{Nicolini}, \binits{H.}},
+\oauthor{\bsnm{Okun}, \binits{M.S.}},
+\oauthor{\bsnm{Pakstis}, \binits{A.}},
+\oauthor{\bsnm{Paschou}, \binits{P.}},
+\oauthor{\bsnm{Piacentini}, \binits{J.}},
+\oauthor{\bsnm{Pittenger}, \binits{C.}},
+\oauthor{\bsnm{Plessen}, \binits{K.}},
+\oauthor{\bsnm{Ramensky}, \binits{V.}},
+\oauthor{\bsnm{Ramos}, \binits{E.M.}},
+\oauthor{\bsnm{Reus}, \binits{V.}},
+\oauthor{\bsnm{Richter}, \binits{M.A.}},
+\oauthor{\bsnm{Riddle}, \binits{M.A.}},
+\oauthor{\bsnm{Robertson}, \binits{M.M.}},
+\oauthor{\bsnm{Roessner}, \binits{V.}},
+\oauthor{\bsnm{Rosário}, \binits{M.}},
+\oauthor{\bsnm{Samuels}, \binits{J.F.}},
+\oauthor{\bsnm{Sandor}, \binits{P.}},
+\oauthor{\bsnm{Stein}, \binits{D.J.}},
+\oauthor{\bsnm{Tsetsos}, \binits{F.}},
+\oauthor{\bsnm{Van~Nieuwerburgh}, \binits{F.}},
+\oauthor{\bsnm{Weatherall}, \binits{S.}},
+\oauthor{\bsnm{Wendland}, \binits{J.R.}},
+\oauthor{\bsnm{Wolanczyk}, \binits{T.}},
+\oauthor{\bsnm{Worbe}, \binits{Y.}},
+\oauthor{\bsnm{Zai}, \binits{G.}},
+\oauthor{\bsnm{Goes}, \binits{F.S.}},
+\oauthor{\bsnm{McLaughlin}, \binits{N.}},
+\oauthor{\bsnm{Nestadt}, \binits{P.S.}},
+\oauthor{\bsnm{Grabe}, \binits{H.-J.}},
+\oauthor{\bsnm{Depienne}, \binits{C.}},
+\oauthor{\bsnm{Konkashbaev}, \binits{A.}},
+\oauthor{\bsnm{Lanzagorta}, \binits{N.}},
+\oauthor{\bsnm{Valencia-Duarte}, \binits{A.}},
+\oauthor{\bsnm{Bramon}, \binits{E.}},
+\oauthor{\bsnm{Buccola}, \binits{N.}},
+\oauthor{\bsnm{Cahn}, \binits{W.}},
+\oauthor{\bsnm{Cairns}, \binits{M.}},
+\oauthor{\bsnm{Chong}, \binits{S.A.}},
+\oauthor{\bsnm{Cohen}, \binits{D.}},
+\oauthor{\bsnm{Crespo-Facorro}, \binits{B.}},
+\oauthor{\bsnm{Crowley}, \binits{J.}},
+\oauthor{\bsnm{Davidson}, \binits{M.}},
+\oauthor{\bsnm{DeLisi}, \binits{L.}},
+\oauthor{\bsnm{Dinan}, \binits{T.}},
+\oauthor{\bsnm{Donohoe}, \binits{G.}},
+\oauthor{\bsnm{Drapeau}, \binits{E.}},
+\oauthor{\bsnm{Duan}, \binits{J.}},
+\oauthor{\bsnm{Haan}, \binits{L.}},
+\oauthor{\bsnm{Hougaard}, \binits{D.}},
+\oauthor{\bsnm{Karachanak-Yankova}, \binits{S.}},
+\oauthor{\bsnm{Khrunin}, \binits{A.}},
+\oauthor{\bsnm{Klovins}, \binits{J.}},
+\oauthor{\bsnm{Kučinskas}, \binits{V.}},
+\oauthor{\bsnm{Lee Chee~Keong}, \binits{J.}},
+\oauthor{\bsnm{Limborska}, \binits{S.}},
+\oauthor{\bsnm{Loughland}, \binits{C.}},
+\oauthor{\bsnm{Lönnqvist}, \binits{J.}},
+\oauthor{\bsnm{Maher}, \binits{B.}},
+\oauthor{\bsnm{Mattheisen}, \binits{M.}},
+\oauthor{\bsnm{McDonald}, \binits{C.}},
+\oauthor{\bsnm{Murphy}, \binits{K.C.}},
+\oauthor{\bsnm{Nenadic}, \binits{I.}},
+\oauthor{\bsnm{Os}, \binits{J.}},
+\oauthor{\bsnm{Pantelis}, \binits{C.}},
+\oauthor{\bsnm{Pato}, \binits{M.}},
+\oauthor{\bsnm{Petryshen}, \binits{T.}},
+\oauthor{\bsnm{Quested}, \binits{D.}},
+\oauthor{\bsnm{Roussos}, \binits{P.}},
+\oauthor{\bsnm{Sanders}, \binits{A.R.}},
+\oauthor{\bsnm{Schall}, \binits{U.}},
+\oauthor{\bsnm{Schwab}, \binits{S.G.}},
+\oauthor{\bsnm{Sim}, \binits{K.}},
+\oauthor{\bsnm{So}, \binits{H.-C.}},
+\oauthor{\bsnm{Stögmann}, \binits{E.}},
+\oauthor{\bsnm{Subramaniam}, \binits{M.}},
+\oauthor{\bsnm{Toncheva}, \binits{D.}},
+\oauthor{\bsnm{Waddington}, \binits{J.}},
+\oauthor{\bsnm{Walters}, \binits{J.}},
+\oauthor{\bsnm{Weiser}, \binits{M.}},
+\oauthor{\bsnm{Cheng}, \binits{W.}},
+\oauthor{\bsnm{Cloninger}, \binits{R.}},
+\oauthor{\bsnm{Curtis}, \binits{D.}},
+\oauthor{\bsnm{Gejman}, \binits{P.V.}},
+\oauthor{\bsnm{Henskens}, \binits{F.}},
+\oauthor{\bsnm{Mattingsdal}, \binits{M.}},
+\oauthor{\bsnm{Oh}, \binits{S.-Y.}},
+\oauthor{\bsnm{Scott}, \binits{R.}},
+\oauthor{\bsnm{Webb}, \binits{B.}},
+\oauthor{\bsnm{Breen}, \binits{G.}},
+\oauthor{\bsnm{Churchhouse}, \binits{C.}},
+\oauthor{\bsnm{Bulik}, \binits{C.M.}},
+\oauthor{\bsnm{Daly}, \binits{M.}},
+\oauthor{\bsnm{Dichgans}, \binits{M.}},
+\oauthor{\bsnm{Faraone}, \binits{S.V.}},
+\oauthor{\bsnm{Guerreiro}, \binits{R.}},
+\oauthor{\bsnm{Holmans}, \binits{P.}},
+\oauthor{\bsnm{Kendler}, \binits{K.S.}},
+\oauthor{\bsnm{Koeleman}, \binits{B.}},
+\oauthor{\bsnm{Mathews}, \binits{C.A.}},
+\oauthor{\bsnm{Price}, \binits{A.}},
+\oauthor{\bsnm{Scharf}, \binits{J.}},
+\oauthor{\bsnm{Sklar}, \binits{P.}},
+\oauthor{\bsnm{Williams}, \binits{J.}},
+\oauthor{\bsnm{Wood}, \binits{N.W.}},
+\oauthor{\bsnm{Cotsapas}, \binits{C.}},
+\oauthor{\bsnm{Palotie}, \binits{A.}},
+\oauthor{\bsnm{Smoller}, \binits{J.W.}},
+\oauthor{\bsnm{Sullivan}, \binits{P.}},
+\oauthor{\bsnm{Rosand}, \binits{J.}},
+\oauthor{\bsnm{Corvin}, \binits{A.}},
+\oauthor{\bsnm{Neale}, \binits{B.M.}},
+\oauthor{\bsnm{Schott}, \binits{J.M.}},
+\oauthor{\bsnm{Anney}, \binits{R.}},
+\oauthor{\bsnm{Elia}, \binits{J.}},
+\oauthor{\bsnm{Grigoroiu-Serbanescu}, \binits{M.}},
+\oauthor{\bsnm{Edenberg}, \binits{H.J.}},
+\oauthor{\bsnm{Murray}, \binits{R.}}:
+Analysis of shared heritability in common disorders of the brain.
+Science (New York, N.Y.)
+\textbf{360}
+(2018)
+\doiurl{10.1126/science.aap8757}
+\end{botherref}
+\endbibitem
 
-\bibitem[Wightman et~al.(2021)Wightman, Jansen, Savage, Shadrin, Bahrami,
-  Holland, Rongve, Børte, Winsvold, Drange, Martinsen, Skogholt, Willer,
-  Bråthen, Bosnes, Nielsen, Fritsche, Thomas, Pedersen, Gabrielsen, Johnsen,
-  Meisingset, Zhou, Proitsi, Hodges, Dobson, Velayudhan, Sealock, Davis,
-  Pedersen, Reynolds, Karlsson, Magnusson, Stefansson, Thordardottir, Jonsson,
-  Snaedal, Zettergren, Skoog, Kern, Waern, Zetterberg, Blennow, Stordal, Hveem,
-  Zwart, Athanasiu, Selnes, Saltvedt, Sando, Ulstein, Djurovic, Fladby,
-  Aarsland, Selbæk, Ripke, Stefansson, Andreassen, and Posthuma]{Wightman2021}
-Douglas~P. Wightman, Iris~E. Jansen, Jeanne~E. Savage, Alexey~A. Shadrin,
-  Shahram Bahrami, Dominic Holland, Arvid Rongve, Sigrid Børte, Bendik~S.
-  Winsvold, Ole~Kristian Drange, Amy~E. Martinsen, Anne~Heidi Skogholt, Cristen
-  Willer, Geir Bråthen, Ingunn Bosnes, Jonas~Bille Nielsen, Lars~G. Fritsche,
-  Laurent~F. Thomas, Linda~M. Pedersen, Maiken~E. Gabrielsen, Marianne~Bakke
-  Johnsen, Tore~Wergeland Meisingset, Wei Zhou, Petroula Proitsi, Angela
-  Hodges, Richard Dobson, Latha Velayudhan, Julia~M. Sealock, Lea~K. Davis,
-  Nancy~L. Pedersen, Chandra~A. Reynolds, Ida~K. Karlsson, Sigurdur Magnusson,
-  Hreinn Stefansson, Steinunn Thordardottir, Palmi~V. Jonsson, Jon Snaedal,
-  Anna Zettergren, Ingmar Skoog, Silke Kern, Margda Waern, Henrik Zetterberg,
-  Kaj Blennow, Eystein Stordal, Kristian Hveem, John-Anker Zwart, Lavinia
-  Athanasiu, Per Selnes, Ingvild Saltvedt, Sigrid~B. Sando, Ingun Ulstein,
-  Srdjan Djurovic, Tormod Fladby, Dag Aarsland, Geir Selbæk, Stephan Ripke,
-  Kari Stefansson, Ole~A. Andreassen, and Danielle Posthuma.
-\newblock A genome-wide association study with 1,126,563 individuals identifies
-  new risk loci for alzheimer's disease.
-\newblock \emph{Nature genetics}, 53:\penalty0 1276--1282, Sep 2021.
-\newblock URL \url{https://pubmed.ncbi.nlm.nih.gov/34493870/}.
+%%% 33
+\bibitem[\protect\citeauthoryear{Sekar et~al.}{2016}]{Sekar2016a}
+\begin{barticle}
+\bauthor{\bsnm{Sekar}, \binits{A.}},
+\bauthor{\bsnm{Bialas}, \binits{A.R.}},
+\bauthor{\bsnm{Rivera}, \binits{H.}},
+\bauthor{\bsnm{Davis}, \binits{A.}},
+\bauthor{\bsnm{Hammond}, \binits{T.R.}},
+\bauthor{\bsnm{Kamitaki}, \binits{N.}},
+\bauthor{\bsnm{Tooley}, \binits{K.}},
+\bauthor{\bsnm{Presumey}, \binits{J.}},
+\bauthor{\bsnm{Baum}, \binits{M.}},
+\bauthor{\bsnm{Van~Doren}, \binits{V.}},
+\bauthor{\bsnm{Genovese}, \binits{G.}},
+\bauthor{\bsnm{Rose}, \binits{S.A.}},
+\bauthor{\bsnm{Handsaker}, \binits{R.E.}},
+\bauthor{\bsnm{Daly}, \binits{M.J.}},
+\bauthor{\bsnm{Carroll}, \binits{M.C.}},
+\bauthor{\bsnm{Stevens}, \binits{B.}},
+\bauthor{\bsnm{McCarroll}, \binits{S.A.}}:
+\batitle{Schizophrenia risk from complex variation of complement component 4.}
+\bjtitle{Nature}
+\bvolume{530},
+\bfpage{177}--\blpage{83}
+(\byear{2016})
+\end{barticle}
+\endbibitem
 
-\bibitem[Wingo et~al.(2021)Wingo, Liu, Gerasimov, Gockley, Logsdon, Duong,
-  Dammer, Robins, Beach, Reiman, Epstein, De~Jager, Lah, Bennett, Seyfried,
-  Levey, and Wingo]{Wingo2021}
-Aliza~P. Wingo, Yue Liu, Ekaterina~S. Gerasimov, Jake Gockley, Benjamin~A.
-  Logsdon, Duc~M. Duong, Eric~B. Dammer, Chloe Robins, Thomas~G. Beach, Eric~M.
-  Reiman, Michael~P. Epstein, Philip~L. De~Jager, James~J. Lah, David~A.
-  Bennett, Nicholas~T. Seyfried, Allan~I. Levey, and Thomas~S. Wingo.
-\newblock Integrating human brain proteomes with genome-wide association data
-  implicates new proteins in alzheimer's disease pathogenesis.
-\newblock \emph{Nature genetics}, 53\penalty0 (33510477):\penalty0 143--146,
-  February 2021.
-\newblock ISSN 1061-4036.
-\newblock \doi{10.1038/s41588-020-00773-z}.
-\newblock URL \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8130821/}.
+%%% 34
+\bibitem[\protect\citeauthoryear{Wang}{2016}]{Wang2016c}
+\begin{botherref}
+\oauthor{\bsnm{Wang}, \binits{Z.}}:
+Transactivation of epidermal growth factor receptor by g protein-coupled
+  receptors: Recent progress, challenges and future research.
+International Journal of Molecular Sciences
+\textbf{17}(1)
+(2016)
+\doiurl{10.3390/ijms17010095}
+\end{botherref}
+\endbibitem
 
-\bibitem[Yamazaki et~al.(2019)Yamazaki, Zhao, Caulfield, Liu, and
-  Bu]{Yamazaki2019}
-Yu~Yamazaki, Na~Zhao, Thomas~R. Caulfield, Chia-Chen Liu, and Guojun Bu.
-\newblock Apolipoprotein e and alzheimer disease: pathobiology and targeting
-  strategies.
-\newblock \emph{Nature Reviews Neurology}, 15\penalty0 (9):\penalty0 501--518,
-  2019.
-\newblock ISSN 1759-4766.
-\newblock \doi{10.1038/s41582-019-0228-7}.
-\newblock URL \url{https://doi.org/10.1038/s41582-019-0228-7}.
+%%% 35
+\bibitem[\protect\citeauthoryear{Sigismund et~al.}{2018}]{Sigismund2018}
+\begin{barticle}
+\bauthor{\bsnm{Sigismund}, \binits{S.}},
+\bauthor{\bsnm{Avanzato}, \binits{D.}},
+\bauthor{\bsnm{Lanzetti}, \binits{L.}}:
+\batitle{Emerging functions of the egfr in cancer.}
+\bjtitle{Molecular oncology}
+\bvolume{12},
+\bfpage{3}--\blpage{20}
+(\byear{2018})
+\end{barticle}
+\endbibitem
 
-\bibitem[Zhu et~al.(2018)Zhu, Zheng, Zhang, Wu, Trzaskowski, Maier, Robinson,
-  McGrath, Visscher, Wray, and Yang]{Zhu2018}
-Zhihong Zhu, Zhili Zheng, Futao Zhang, Yang Wu, Maciej Trzaskowski, Robert
-  Maier, Matthew~R. Robinson, John~J. McGrath, Peter~M. Visscher, Naomi~R.
-  Wray, and Jian Yang.
-\newblock Causal associations between risk factors and common diseases inferred
-  from gwas summary data.
-\newblock \emph{Nature Communications}, 9\penalty0 (1):\penalty0 224, 2018.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-017-02317-2}.
-\newblock URL \url{https://doi.org/10.1038/s41467-017-02317-2}.
+%%% 36
+\bibitem[\protect\citeauthoryear{Bellenguez et~al.}{2022}]{Bellenguez2022}
+\begin{barticle}
+\bauthor{\bsnm{Bellenguez}, \binits{C.}},
+\bauthor{\bsnm{Küçükali}, \binits{F.}},
+\bauthor{\bsnm{Jansen}, \binits{I.E.}},
+\bauthor{\bsnm{Kleineidam}, \binits{L.}},
+\bauthor{\bsnm{Moreno-Grau}, \binits{S.}},
+\bauthor{\bsnm{Amin}, \binits{N.}},
+\bauthor{\bsnm{Naj}, \binits{A.C.}},
+\bauthor{\bsnm{Campos-Martin}, \binits{R.}},
+\bauthor{\bsnm{Grenier-Boley}, \binits{B.}},
+\bauthor{\bsnm{Andrade}, \binits{V.}},
+\bauthor{\bsnm{Holmans}, \binits{P.A.}},
+\bauthor{\bsnm{Boland}, \binits{A.}},
+\bauthor{\bsnm{Damotte}, \binits{V.}},
+\bauthor{\bsnm{Lee}, \binits{S.J.}},
+\bauthor{\bsnm{Costa}, \binits{M.R.}},
+\bauthor{\bsnm{Kuulasmaa}, \binits{T.}},
+\bauthor{\bsnm{Yang}, \binits{Q.}},
+\bauthor{\bsnm{Rojas}, \binits{I.}},
+\bauthor{\bsnm{Bis}, \binits{J.C.}},
+\bauthor{\bsnm{Yaqub}, \binits{A.}},
+\bauthor{\bsnm{Prokic}, \binits{I.}},
+\bauthor{\bsnm{Chapuis}, \binits{J.}},
+\bauthor{\bsnm{Ahmad}, \binits{S.}},
+\bauthor{\bsnm{Giedraitis}, \binits{V.}},
+\bauthor{\bsnm{Aarsland}, \binits{D.}},
+\bauthor{\bsnm{Garcia-Gonzalez}, \binits{P.}},
+\bauthor{\bsnm{Abdelnour}, \binits{C.}},
+\bauthor{\bsnm{Alarcón-Martín}, \binits{E.}},
+\bauthor{\bsnm{Alcolea}, \binits{D.}},
+\bauthor{\bsnm{Alegret}, \binits{M.}},
+\bauthor{\bsnm{Alvarez}, \binits{I.}},
+\bauthor{\bsnm{Álvarez}, \binits{V.}},
+\bauthor{\bsnm{Armstrong}, \binits{N.J.}},
+\bauthor{\bsnm{Tsolaki}, \binits{A.}},
+\bauthor{\bsnm{Antúnez}, \binits{C.}},
+\bauthor{\bsnm{Appollonio}, \binits{I.}},
+\bauthor{\bsnm{Arcaro}, \binits{M.}},
+\bauthor{\bsnm{Archetti}, \binits{S.}},
+\bauthor{\bsnm{Pastor}, \binits{A.A.}},
+\bauthor{\bsnm{Arosio}, \binits{B.}},
+\bauthor{\bsnm{Athanasiu}, \binits{L.}},
+\bauthor{\bsnm{Bailly}, \binits{H.}},
+\bauthor{\bsnm{Banaj}, \binits{N.}},
+\bauthor{\bsnm{Baquero}, \binits{M.}},
+\bauthor{\bsnm{Barral}, \binits{S.}},
+\bauthor{\bsnm{Beiser}, \binits{A.}},
+\bauthor{\bsnm{Pastor}, \binits{A.B.}},
+\bauthor{\bsnm{Below}, \binits{J.E.}},
+\bauthor{\bsnm{Benchek}, \binits{P.}},
+\bauthor{\bsnm{Benussi}, \binits{L.}},
+\bauthor{\bsnm{Berr}, \binits{C.}},
+\bauthor{\bsnm{Besse}, \binits{C.}},
+\bauthor{\bsnm{Bessi}, \binits{V.}},
+\bauthor{\bsnm{Binetti}, \binits{G.}},
+\bauthor{\bsnm{Bizarro}, \binits{A.}},
+\bauthor{\bsnm{Blesa}, \binits{R.}},
+\bauthor{\bsnm{Boada}, \binits{M.}},
+\bauthor{\bsnm{Boerwinkle}, \binits{E.}},
+\bauthor{\bsnm{Borroni}, \binits{B.}},
+\bauthor{\bsnm{Boschi}, \binits{S.}},
+\bauthor{\bsnm{Bossù}, \binits{P.}},
+\bauthor{\bsnm{Bråthen}, \binits{G.}},
+\bauthor{\bsnm{Bressler}, \binits{J.}},
+\bauthor{\bsnm{Bresner}, \binits{C.}},
+\bauthor{\bsnm{Brodaty}, \binits{H.}},
+\bauthor{\bsnm{Brookes}, \binits{K.J.}},
+\bauthor{\bsnm{Brusco}, \binits{L.I.}},
+\bauthor{\bsnm{Buiza-Rueda}, \binits{D.}},
+\bauthor{\bsnm{Bûrger}, \binits{K.}},
+\bauthor{\bsnm{Burholt}, \binits{V.}},
+\bauthor{\bsnm{Bush}, \binits{W.S.}},
+\bauthor{\bsnm{Calero}, \binits{M.}},
+\bauthor{\bsnm{Cantwell}, \binits{L.B.}},
+\bauthor{\bsnm{Chene}, \binits{G.}},
+\bauthor{\bsnm{Chung}, \binits{J.}},
+\bauthor{\bsnm{Cuccaro}, \binits{M.L.}},
+\bauthor{\bsnm{Carracedo}, \binits{�.}},
+\bauthor{\bsnm{Cecchetti}, \binits{R.}},
+\bauthor{\bsnm{Cervera-Carles}, \binits{L.}},
+\bauthor{\bsnm{Charbonnier}, \binits{C.}},
+\bauthor{\bsnm{Chen}, \binits{H.-H.}},
+\bauthor{\bsnm{Chillotti}, \binits{C.}},
+\bauthor{\bsnm{Ciccone}, \binits{S.}},
+\bauthor{\bsnm{Claassen}, \binits{J.A.H.R.}},
+\bauthor{\bsnm{Clark}, \binits{C.}},
+\bauthor{\bsnm{Conti}, \binits{E.}},
+\bauthor{\bsnm{Corma-Gómez}, \binits{A.}},
+\bauthor{\bsnm{Costantini}, \binits{E.}},
+\bauthor{\bsnm{Custodero}, \binits{C.}},
+\bauthor{\bsnm{Daian}, \binits{D.}},
+\bauthor{\bsnm{Dalmasso}, \binits{M.C.}},
+\bauthor{\bsnm{Daniele}, \binits{A.}},
+\bauthor{\bsnm{Dardiotis}, \binits{E.}},
+\bauthor{\bsnm{Dartigues}, \binits{J.-F.}},
+\bauthor{\bsnm{Deyn}, \binits{P.P.}},
+\bauthor{\bsnm{Paiva~Lopes}, \binits{K.}},
+\bauthor{\bsnm{Witte}, \binits{L.D.}},
+\bauthor{\bsnm{Debette}, \binits{S.}},
+\bauthor{\bsnm{Deckert}, \binits{J.}},
+\bauthor{\bsnm{Ser}, \binits{T.}},
+\bauthor{\bsnm{Denning}, \binits{N.}},
+\bauthor{\bsnm{DeStefano}, \binits{A.}},
+\bauthor{\bsnm{Dichgans}, \binits{M.}},
+\bauthor{\bsnm{Diehl-Schmid}, \binits{J.}},
+\bauthor{\bsnm{Diez-Fairen}, \binits{M.}},
+\bauthor{\bsnm{Rossi}, \binits{P.D.}},
+\bauthor{\bsnm{Djurovic}, \binits{S.}},
+\bauthor{\bsnm{Duron}, \binits{E.}},
+\bauthor{\bsnm{Düzel}, \binits{E.}},
+\bauthor{\bsnm{Dufouil}, \binits{C.}},
+\bauthor{\bsnm{Eiriksdottir}, \binits{G.}},
+\bauthor{\bsnm{Engelborghs}, \binits{S.}},
+\bauthor{\bsnm{Escott-Price}, \binits{V.}},
+\bauthor{\bsnm{Espinosa}, \binits{A.}},
+\bauthor{\bsnm{Ewers}, \binits{M.}},
+\bauthor{\bsnm{Faber}, \binits{K.M.}},
+\bauthor{\bsnm{Fabrizio}, \binits{T.}},
+\bauthor{\bsnm{Nielsen}, \binits{S.F.}},
+\bauthor{\bsnm{Fardo}, \binits{D.W.}},
+\bauthor{\bsnm{Farotti}, \binits{L.}},
+\bauthor{\bsnm{Fenoglio}, \binits{C.}},
+\bauthor{\bsnm{Fernández-Fuertes}, \binits{M.}},
+\bauthor{\bsnm{Ferrari}, \binits{R.}},
+\bauthor{\bsnm{Ferreira}, \binits{C.B.}},
+\bauthor{\bsnm{Ferri}, \binits{E.}},
+\bauthor{\bsnm{Fin}, \binits{B.}},
+\bauthor{\bsnm{Fischer}, \binits{P.}},
+\bauthor{\bsnm{Fladby}, \binits{T.}},
+\bauthor{\bsnm{Fließbach}, \binits{K.}},
+\bauthor{\bsnm{Fongang}, \binits{B.}},
+\bauthor{\bsnm{Fornage}, \binits{M.}},
+\bauthor{\bsnm{Fortea}, \binits{J.}},
+\bauthor{\bsnm{Foroud}, \binits{T.M.}},
+\bauthor{\bsnm{Fostinelli}, \binits{S.}},
+\bauthor{\bsnm{Fox}, \binits{N.C.}},
+\bauthor{\bsnm{Franco-Macías}, \binits{E.}},
+\bauthor{\bsnm{Bullido}, \binits{M.J.}},
+\bauthor{\bsnm{Frank-García}, \binits{A.}},
+\bauthor{\bsnm{Froelich}, \binits{L.}},
+\bauthor{\bsnm{Fulton-Howard}, \binits{B.}},
+\bauthor{\bsnm{Galimberti}, \binits{D.}},
+\bauthor{\bsnm{García-Alberca}, \binits{J.M.}},
+\bauthor{\bsnm{García-González}, \binits{P.}},
+\bauthor{\bsnm{Garcia-Madrona}, \binits{S.}},
+\bauthor{\bsnm{Garcia-Ribas}, \binits{G.}},
+\bauthor{\bsnm{Ghidoni}, \binits{R.}},
+\bauthor{\bsnm{Giegling}, \binits{I.}},
+\bauthor{\bsnm{Giorgio}, \binits{G.}},
+\bauthor{\bsnm{Goate}, \binits{A.M.}},
+\bauthor{\bsnm{Goldhardt}, \binits{O.}},
+\bauthor{\bsnm{Gomez-Fonseca}, \binits{D.}},
+\bauthor{\bsnm{González-Pérez}, \binits{A.}},
+\bauthor{\bsnm{Graff}, \binits{C.}},
+\bauthor{\bsnm{Grande}, \binits{G.}},
+\bauthor{\bsnm{Green}, \binits{E.}},
+\bauthor{\bsnm{Grimmer}, \binits{T.}},
+\bauthor{\bsnm{Grünblatt}, \binits{E.}},
+\bauthor{\bsnm{Grunin}, \binits{M.}},
+\bauthor{\bsnm{Gudnason}, \binits{V.}},
+\bauthor{\bsnm{Guetta-Baranes}, \binits{T.}},
+\bauthor{\bsnm{Haapasalo}, \binits{A.}},
+\bauthor{\bsnm{Hadjigeorgiou}, \binits{G.}},
+\bauthor{\bsnm{Haines}, \binits{J.L.}},
+\bauthor{\bsnm{Hamilton-Nelson}, \binits{K.L.}},
+\bauthor{\bsnm{Hampel}, \binits{H.}},
+\bauthor{\bsnm{Hanon}, \binits{O.}},
+\bauthor{\bsnm{Hardy}, \binits{J.}},
+\bauthor{\bsnm{Hartmann}, \binits{A.M.}},
+\bauthor{\bsnm{Hausner}, \binits{L.}},
+\bauthor{\bsnm{Harwood}, \binits{J.}},
+\bauthor{\bsnm{Heilmann-Heimbach}, \binits{S.}},
+\bauthor{\bsnm{Helisalmi}, \binits{S.}},
+\bauthor{\bsnm{Heneka}, \binits{M.T.}},
+\bauthor{\bsnm{Hernández}, \binits{I.}},
+\bauthor{\bsnm{Herrmann}, \binits{M.J.}},
+\bauthor{\bsnm{Hoffmann}, \binits{P.}},
+\bauthor{\bsnm{Holmes}, \binits{C.}},
+\bauthor{\bsnm{Holstege}, \binits{H.}},
+\bauthor{\bsnm{Vilas}, \binits{R.H.}},
+\bauthor{\bsnm{Hulsman}, \binits{M.}},
+\bauthor{\bsnm{Humphrey}, \binits{J.}},
+\bauthor{\bsnm{Biessels}, \binits{G.J.}},
+\bauthor{\bsnm{Jian}, \binits{X.}},
+\bauthor{\bsnm{Johansson}, \binits{C.}},
+\bauthor{\bsnm{Jun}, \binits{G.R.}},
+\bauthor{\bsnm{Kastumata}, \binits{Y.}},
+\bauthor{\bsnm{Kauwe}, \binits{J.}},
+\bauthor{\bsnm{Kehoe}, \binits{P.G.}},
+\bauthor{\bsnm{Kilander}, \binits{L.}},
+\bauthor{\bsnm{Ståhlbom}, \binits{A.K.}},
+\bauthor{\bsnm{Kivipelto}, \binits{M.}},
+\bauthor{\bsnm{Koivisto}, \binits{A.}},
+\bauthor{\bsnm{Kornhuber}, \binits{J.}},
+\bauthor{\bsnm{Kosmidis}, \binits{M.H.}},
+\bauthor{\bsnm{Kukull}, \binits{W.A.}},
+\bauthor{\bsnm{Kuksa}, \binits{P.P.}},
+\bauthor{\bsnm{Kunkle}, \binits{B.W.}},
+\bauthor{\bsnm{Kuzma}, \binits{A.B.}},
+\bauthor{\bsnm{Lage}, \binits{C.}},
+\bauthor{\bsnm{Laukka}, \binits{E.J.}},
+\bauthor{\bsnm{Launer}, \binits{L.}},
+\bauthor{\bsnm{Lauria}, \binits{A.}},
+\bauthor{\bsnm{Lee}, \binits{C.-Y.}},
+\bauthor{\bsnm{Lehtisalo}, \binits{J.}},
+\bauthor{\bsnm{Lerch}, \binits{O.}},
+\bauthor{\bsnm{Lleó}, \binits{A.}},
+\bauthor{\bsnm{Longstreth}, \binits{W.}},
+\bauthor{\bsnm{Lopez}, \binits{O.}},
+\bauthor{\bsnm{Munain}, \binits{A.L.}},
+\bauthor{\bsnm{Love}, \binits{S.}},
+\bauthor{\bsnm{Löwemark}, \binits{M.}},
+\bauthor{\bsnm{Luckcuck}, \binits{L.}},
+\bauthor{\bsnm{Lunetta}, \binits{K.L.}},
+\bauthor{\bsnm{Ma}, \binits{Y.}},
+\bauthor{\bsnm{Macías}, \binits{J.}},
+\bauthor{\bsnm{MacLeod}, \binits{C.A.}},
+\bauthor{\bsnm{Maier}, \binits{W.}},
+\bauthor{\bsnm{Mangialasche}, \binits{F.}},
+\bauthor{\bsnm{Spallazzi}, \binits{M.}},
+\bauthor{\bsnm{Marquié}, \binits{M.}},
+\bauthor{\bsnm{Marshall}, \binits{R.}},
+\bauthor{\bsnm{Martin}, \binits{E.R.}},
+\bauthor{\bsnm{Montes}, \binits{A.M.}},
+\bauthor{\bsnm{Rodríguez}, \binits{C.M.}},
+\bauthor{\bsnm{Masullo}, \binits{C.}},
+\bauthor{\bsnm{Mayeux}, \binits{R.}},
+\bauthor{\bsnm{Mead}, \binits{S.}},
+\bauthor{\bsnm{Mecocci}, \binits{P.}},
+\bauthor{\bsnm{Medina}, \binits{M.}},
+\bauthor{\bsnm{Meggy}, \binits{A.}},
+\bauthor{\bsnm{Mehrabian}, \binits{S.}},
+\bauthor{\bsnm{Mendoza}, \binits{S.}},
+\bauthor{\bsnm{Menéndez-González}, \binits{M.}},
+\bauthor{\bsnm{Mir}, \binits{P.}},
+\bauthor{\bsnm{Moebus}, \binits{S.}},
+\bauthor{\bsnm{Mol}, \binits{M.}},
+\bauthor{\bsnm{Molina-Porcel}, \binits{L.}},
+\bauthor{\bsnm{Montrreal}, \binits{L.}},
+\bauthor{\bsnm{Morelli}, \binits{L.}},
+\bauthor{\bsnm{Moreno}, \binits{F.}},
+\bauthor{\bsnm{Morgan}, \binits{K.}},
+\bauthor{\bsnm{Mosley}, \binits{T.}},
+\bauthor{\bsnm{Nöthen}, \binits{M.M.}},
+\bauthor{\bsnm{Muchnik}, \binits{C.}},
+\bauthor{\bsnm{Mukherjee}, \binits{S.}},
+\bauthor{\bsnm{Nacmias}, \binits{B.}},
+\bauthor{\bsnm{Ngandu}, \binits{T.}},
+\bauthor{\bsnm{Nicolas}, \binits{G.}},
+\bauthor{\bsnm{Nordestgaard}, \binits{B.G.}},
+\bauthor{\bsnm{Olaso}, \binits{R.}},
+\bauthor{\bsnm{Orellana}, \binits{A.}},
+\bauthor{\bsnm{Orsini}, \binits{M.}},
+\bauthor{\bsnm{Ortega}, \binits{G.}},
+\bauthor{\bsnm{Padovani}, \binits{A.}},
+\bauthor{\bsnm{Paolo}, \binits{C.}},
+\bauthor{\bsnm{Papenberg}, \binits{G.}},
+\bauthor{\bsnm{Parnetti}, \binits{L.}},
+\bauthor{\bsnm{Pasquier}, \binits{F.}},
+\bauthor{\bsnm{Pastor}, \binits{P.}},
+\bauthor{\bsnm{Peloso}, \binits{G.}},
+\bauthor{\bsnm{Pérez-Cordón}, \binits{A.}},
+\bauthor{\bsnm{Pérez-Tur}, \binits{J.}},
+\bauthor{\bsnm{Pericard}, \binits{P.}},
+\bauthor{\bsnm{Peters}, \binits{O.}},
+\bauthor{\bsnm{Pijnenburg}, \binits{Y.A.L.}},
+\bauthor{\bsnm{Pineda}, \binits{J.A.}},
+\bauthor{\bsnm{Piñol-Ripoll}, \binits{G.}},
+\bauthor{\bsnm{Pisanu}, \binits{C.}},
+\bauthor{\bsnm{Polak}, \binits{T.}},
+\bauthor{\bsnm{Popp}, \binits{J.}},
+\bauthor{\bsnm{Posthuma}, \binits{D.}},
+\bauthor{\bsnm{Priller}, \binits{J.}},
+\bauthor{\bsnm{Puerta}, \binits{R.}},
+\bauthor{\bsnm{Quenez}, \binits{O.}},
+\bauthor{\bsnm{Quintela}, \binits{I.}},
+\bauthor{\bsnm{Thomassen}, \binits{J.Q.}},
+\bauthor{\bsnm{Rábano}, \binits{A.}},
+\bauthor{\bsnm{Rainero}, \binits{I.}},
+\bauthor{\bsnm{Rajabli}, \binits{F.}},
+\bauthor{\bsnm{Ramakers}, \binits{I.}},
+\bauthor{\bsnm{Real}, \binits{L.M.}},
+\bauthor{\bsnm{Reinders}, \binits{M.J.T.}},
+\bauthor{\bsnm{Reitz}, \binits{C.}},
+\bauthor{\bsnm{Reyes-Dumeyer}, \binits{D.}},
+\bauthor{\bsnm{Ridge}, \binits{P.}},
+\bauthor{\bsnm{Riedel-Heller}, \binits{S.}},
+\bauthor{\bsnm{Riederer}, \binits{P.}},
+\bauthor{\bsnm{Roberto}, \binits{N.}},
+\bauthor{\bsnm{Rodriguez-Rodriguez}, \binits{E.}},
+\bauthor{\bsnm{Rongve}, \binits{A.}},
+\bauthor{\bsnm{Allende}, \binits{I.R.}},
+\bauthor{\bsnm{Rosende-Roca}, \binits{M.}},
+\bauthor{\bsnm{Royo}, \binits{J.L.}},
+\bauthor{\bsnm{Rubino}, \binits{E.}},
+\bauthor{\bsnm{Rujescu}, \binits{D.}},
+\bauthor{\bsnm{Sáez}, \binits{M.E.}},
+\bauthor{\bsnm{Sakka}, \binits{P.}},
+\bauthor{\bsnm{Saltvedt}, \binits{I.}},
+\bauthor{\bsnm{Sanabria}, \binits{�.}},
+\bauthor{\bsnm{Sánchez-Arjona}, \binits{M.B.}}:
+\batitle{New insights into the genetic etiology of alzheimer’s disease and
+  related dementias}.
+\bjtitle{Nature Genetics}
+\bvolume{54}(\bissue{4}),
+\bfpage{412}--\blpage{436}
+(\byear{2022})
+\doiurl{10.1038/s41588-022-01024-z}
+\end{barticle}
+\endbibitem
+
+%%% 37
+\bibitem[\protect\citeauthoryear{Nakamura et~al.}{2021}]{Nakamura2021}
+\begin{barticle}
+\bauthor{\bsnm{Nakamura}, \binits{Y.}},
+\bauthor{\bsnm{Yamamoto}, \binits{T.}},
+\bauthor{\bsnm{Xu}, \binits{X.}},
+\bauthor{\bsnm{Kobayashi}, \binits{S.}},
+\bauthor{\bsnm{Tanaka}, \binits{S.}},
+\bauthor{\bsnm{Tamitani}, \binits{M.}},
+\bauthor{\bsnm{Saito}, \binits{T.}},
+\bauthor{\bsnm{Saido}, \binits{T.C.}},
+\bauthor{\bsnm{Yano}, \binits{M.}}:
+\batitle{Enhancing calmodulin binding to ryanodine receptor is crucial to limit
+  neuronal cell loss in alzheimer disease}.
+\bjtitle{Scientific Reports}
+\bvolume{11}(\bissue{1}),
+\bfpage{7289}
+(\byear{2021})
+\doiurl{10.1038/s41598-021-86822-x}
+\end{barticle}
+\endbibitem
+
+%%% 38
+\bibitem[\protect\citeauthoryear{Hegde et~al.}{2019}]{Hegde2019}
+\begin{botherref}
+\oauthor{\bsnm{Hegde}, \binits{A.N.}},
+\oauthor{\bsnm{Smith}, \binits{S.G.}},
+\oauthor{\bsnm{Duke}, \binits{L.M.}},
+\oauthor{\bsnm{Pourquoi}, \binits{A.}},
+\oauthor{\bsnm{Vaz}, \binits{S.}}:
+Perturbations of ubiquitin-proteasome-mediated proteolysis in aging and
+  alzheimer’s disease.
+Frontiers in Aging Neuroscience
+\textbf{11}
+(2019)
+\doiurl{10.3389/fnagi.2019.00324}
+\end{botherref}
+\endbibitem
+
+%%% 39
+\bibitem[\protect\citeauthoryear{Alfonso et~al.}{2016}]{Alfonso2016}
+\begin{barticle}
+\bauthor{\bsnm{Alfonso}, \binits{S.I.}},
+\bauthor{\bsnm{Callender}, \binits{J.A.}},
+\bauthor{\bsnm{Hooli}, \binits{B.}},
+\bauthor{\bsnm{Antal}, \binits{C.E.}},
+\bauthor{\bsnm{Mullin}, \binits{K.}},
+\bauthor{\bsnm{Sherman}, \binits{M.A.}},
+\bauthor{\bsnm{Lesné}, \binits{S.E.}},
+\bauthor{\bsnm{Leitges}, \binits{M.}},
+\bauthor{\bsnm{Newton}, \binits{A.C.}},
+\bauthor{\bsnm{Tanzi}, \binits{R.E.}},
+\bauthor{\bsnm{Malinow}, \binits{R.}}:
+\batitle{Gain-of-function mutations in protein kinase c\&\#x3b1; (pkc\&\#x3b1;)
+  may promote synaptic defects in alzheimer\&\#x2019;s disease}.
+\bjtitle{Science Signaling}
+\bvolume{9}(\bissue{427}),
+\bfpage{47}--\blpage{47}
+(\byear{2016})
+\doiurl{10.1126/scisignal.aaf6209}
+{\href{https://arxiv.org/abs/https://www.science.org/doi/pdf/10.1126/scisignal.aaf6209}{{https://www.science.org/doi/pdf/10.1126/scisignal.aaf6209}}}
+\end{barticle}
+\endbibitem
+
+%%% 40
+\bibitem[\protect\citeauthoryear{Barbeira et~al.}{2018}]{Barbeira2018}
+\begin{barticle}
+\bauthor{\bsnm{Barbeira}, \binits{A.N.}},
+\bauthor{\bsnm{Dickinson}, \binits{S.P.}},
+\bauthor{\bsnm{Bonazzola}, \binits{R.}},
+\bauthor{\bsnm{Zheng}, \binits{J.}},
+\bauthor{\bsnm{Wheeler}, \binits{H.E.}},
+\bauthor{\bsnm{Torres}, \binits{J.M.}},
+\bauthor{\bsnm{Torstenson}, \binits{E.S.}},
+\bauthor{\bsnm{Shah}, \binits{K.P.}},
+\bauthor{\bsnm{Garcia}, \binits{T.}},
+\bauthor{\bsnm{Edwards}, \binits{T.L.}},
+\bauthor{\bsnm{Stahl}, \binits{E.A.}},
+\bauthor{\bsnm{Huckins}, \binits{L.M.}},
+\bauthor{\bsnm{Aguet}, \binits{F.}},
+\bauthor{\bsnm{Ardlie}, \binits{K.G.}},
+\bauthor{\bsnm{Cummings}, \binits{B.B.}},
+\bauthor{\bsnm{Gelfand}, \binits{E.T.}},
+\bauthor{\bsnm{Getz}, \binits{G.}},
+\bauthor{\bsnm{Hadley}, \binits{K.}},
+\bauthor{\bsnm{Handsaker}, \binits{R.E.}},
+\bauthor{\bsnm{Huang}, \binits{K.H.}},
+\bauthor{\bsnm{Kashin}, \binits{S.}},
+\bauthor{\bsnm{Karczewski}, \binits{K.J.}},
+\bauthor{\bsnm{Lek}, \binits{M.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{MacArthur}, \binits{D.G.}},
+\bauthor{\bsnm{Nedzel}, \binits{J.L.}},
+\bauthor{\bsnm{Nguyen}, \binits{D.T.}},
+\bauthor{\bsnm{Noble}, \binits{M.S.}},
+\bauthor{\bsnm{Segrè}, \binits{A.V.}},
+\bauthor{\bsnm{Trowbridge}, \binits{C.A.}},
+\bauthor{\bsnm{Tukiainen}, \binits{T.}},
+\bauthor{\bsnm{Abell}, \binits{N.S.}},
+\bauthor{\bsnm{Balliu}, \binits{B.}},
+\bauthor{\bsnm{Barshir}, \binits{R.}},
+\bauthor{\bsnm{Basha}, \binits{O.}},
+\bauthor{\bsnm{Battle}, \binits{A.}},
+\bauthor{\bsnm{Bogu}, \binits{G.K.}},
+\bauthor{\bsnm{Brown}, \binits{A.}},
+\bauthor{\bsnm{Brown}, \binits{C.D.}},
+\bauthor{\bsnm{Castel}, \binits{S.E.}},
+\bauthor{\bsnm{Chen}, \binits{L.S.}},
+\bauthor{\bsnm{Chiang}, \binits{C.}},
+\bauthor{\bsnm{Conrad}, \binits{D.F.}},
+\bauthor{\bsnm{Damani}, \binits{F.N.}},
+\bauthor{\bsnm{Davis}, \binits{J.R.}},
+\bauthor{\bsnm{Delaneau}, \binits{O.}},
+\bauthor{\bsnm{Dermitzakis}, \binits{E.T.}},
+\bauthor{\bsnm{Engelhardt}, \binits{B.E.}},
+\bauthor{\bsnm{Eskin}, \binits{E.}},
+\bauthor{\bsnm{Ferreira}, \binits{P.G.}},
+\bauthor{\bsnm{Frésard}, \binits{L.}},
+\bauthor{\bsnm{Gamazon}, \binits{E.R.}},
+\bauthor{\bsnm{Garrido-Martín}, \binits{D.}},
+\bauthor{\bsnm{Gewirtz}, \binits{A.D.H.}},
+\bauthor{\bsnm{Gliner}, \binits{G.}},
+\bauthor{\bsnm{Gloudemans}, \binits{M.J.}},
+\bauthor{\bsnm{Guigo}, \binits{R.}},
+\bauthor{\bsnm{Hall}, \binits{I.M.}},
+\bauthor{\bsnm{Han}, \binits{B.}},
+\bauthor{\bsnm{He}, \binits{Y.}},
+\bauthor{\bsnm{Hormozdiari}, \binits{F.}},
+\bauthor{\bsnm{Howald}, \binits{C.}},
+\bauthor{\bsnm{Jo}, \binits{B.}},
+\bauthor{\bsnm{Kang}, \binits{E.Y.}},
+\bauthor{\bsnm{Kim}, \binits{Y.}},
+\bauthor{\bsnm{Kim-Hellmuth}, \binits{S.}},
+\bauthor{\bsnm{Lappalainen}, \binits{T.}},
+\bauthor{\bsnm{Li}, \binits{G.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{Liu}, \binits{B.}},
+\bauthor{\bsnm{Mangul}, \binits{S.}},
+\bauthor{\bsnm{McCarthy}, \binits{M.I.}},
+\bauthor{\bsnm{McDowell}, \binits{I.C.}},
+\bauthor{\bsnm{Mohammadi}, \binits{P.}},
+\bauthor{\bsnm{Monlong}, \binits{J.}},
+\bauthor{\bsnm{Montgomery}, \binits{S.B.}},
+\bauthor{\bsnm{Muñoz-Aguirre}, \binits{M.}},
+\bauthor{\bsnm{Ndungu}, \binits{A.W.}},
+\bauthor{\bsnm{Nobel}, \binits{A.B.}},
+\bauthor{\bsnm{Oliva}, \binits{M.}},
+\bauthor{\bsnm{Ongen}, \binits{H.}},
+\bauthor{\bsnm{Palowitch}, \binits{J.J.}},
+\bauthor{\bsnm{Panousis}, \binits{N.}},
+\bauthor{\bsnm{Papasaikas}, \binits{P.}},
+\bauthor{\bsnm{Park}, \binits{Y.}},
+\bauthor{\bsnm{Parsana}, \binits{P.}},
+\bauthor{\bsnm{Payne}, \binits{A.J.}},
+\bauthor{\bsnm{Peterson}, \binits{C.B.}},
+\bauthor{\bsnm{Quan}, \binits{J.}},
+\bauthor{\bsnm{Reverter}, \binits{F.}},
+\bauthor{\bsnm{Sabatti}, \binits{C.}},
+\bauthor{\bsnm{Saha}, \binits{A.}},
+\bauthor{\bsnm{Sammeth}, \binits{M.}},
+\bauthor{\bsnm{Scott}, \binits{A.J.}},
+\bauthor{\bsnm{Shabalin}, \binits{A.A.}},
+\bauthor{\bsnm{Sodaei}, \binits{R.}},
+\bauthor{\bsnm{Stephens}, \binits{M.}},
+\bauthor{\bsnm{Stranger}, \binits{B.E.}},
+\bauthor{\bsnm{Strober}, \binits{B.J.}},
+\bauthor{\bsnm{Sul}, \binits{J.H.}},
+\bauthor{\bsnm{Tsang}, \binits{E.K.}},
+\bauthor{\bsnm{Urbut}, \binits{S.}},
+\bauthor{\bsnm{Bunt}, \binits{M.}},
+\bauthor{\bsnm{Wang}, \binits{G.}},
+\bauthor{\bsnm{Wen}, \binits{X.}},
+\bauthor{\bsnm{Wright}, \binits{F.A.}},
+\bauthor{\bsnm{Xi}, \binits{H.S.}},
+\bauthor{\bsnm{Yeger-Lotem}, \binits{E.}},
+\bauthor{\bsnm{Zappala}, \binits{Z.}},
+\bauthor{\bsnm{Zaugg}, \binits{J.B.}},
+\bauthor{\bsnm{Zhou}, \binits{Y.-H.}},
+\bauthor{\bsnm{Akey}, \binits{J.M.}},
+\bauthor{\bsnm{Bates}, \binits{D.}},
+\bauthor{\bsnm{Chan}, \binits{J.}},
+\bauthor{\bsnm{Chen}, \binits{L.S.}},
+\bauthor{\bsnm{Claussnitzer}, \binits{M.}},
+\bauthor{\bsnm{Demanelis}, \binits{K.}},
+\bauthor{\bsnm{Diegel}, \binits{M.}},
+\bauthor{\bsnm{Doherty}, \binits{J.A.}},
+\bauthor{\bsnm{Feinberg}, \binits{A.P.}},
+\bauthor{\bsnm{Fernando}, \binits{M.S.}},
+\bauthor{\bsnm{Halow}, \binits{J.}},
+\bauthor{\bsnm{Hansen}, \binits{K.D.}},
+\bauthor{\bsnm{Haugen}, \binits{E.}},
+\bauthor{\bsnm{Hickey}, \binits{P.F.}},
+\bauthor{\bsnm{Hou}, \binits{L.}},
+\bauthor{\bsnm{Jasmine}, \binits{F.}},
+\bauthor{\bsnm{Jian}, \binits{R.}},
+\bauthor{\bsnm{Jiang}, \binits{L.}},
+\bauthor{\bsnm{Johnson}, \binits{A.}},
+\bauthor{\bsnm{Kaul}, \binits{R.}},
+\bauthor{\bsnm{Kellis}, \binits{M.}},
+\bauthor{\bsnm{Kibriya}, \binits{M.G.}},
+\bauthor{\bsnm{Lee}, \binits{K.}},
+\bauthor{\bsnm{Li}, \binits{J.B.}},
+\bauthor{\bsnm{Li}, \binits{Q.}},
+\bauthor{\bsnm{Li}, \binits{X.}},
+\bauthor{\bsnm{Lin}, \binits{J.}},
+\bauthor{\bsnm{Lin}, \binits{S.}},
+\bauthor{\bsnm{Linder}, \binits{S.}},
+\bauthor{\bsnm{Linke}, \binits{C.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Maurano}, \binits{M.T.}},
+\bauthor{\bsnm{Molinie}, \binits{B.}},
+\bauthor{\bsnm{Montgomery}, \binits{S.B.}},
+\bauthor{\bsnm{Nelson}, \binits{J.}},
+\bauthor{\bsnm{Neri}, \binits{F.J.}},
+\bauthor{\bsnm{Oliva}, \binits{M.}},
+\bauthor{\bsnm{Park}, \binits{Y.}},
+\bauthor{\bsnm{Pierce}, \binits{B.L.}},
+\bauthor{\bsnm{Rinaldi}, \binits{N.J.}},
+\bauthor{\bsnm{Rizzardi}, \binits{L.F.}},
+\bauthor{\bsnm{Sandstrom}, \binits{R.}},
+\bauthor{\bsnm{Skol}, \binits{A.}},
+\bauthor{\bsnm{Smith}, \binits{K.S.}},
+\bauthor{\bsnm{Snyder}, \binits{M.P.}},
+\bauthor{\bsnm{Stamatoyannopoulos}, \binits{J.}},
+\bauthor{\bsnm{Stranger}, \binits{B.E.}},
+\bauthor{\bsnm{Tang}, \binits{H.}},
+\bauthor{\bsnm{Tsang}, \binits{E.K.}},
+\bauthor{\bsnm{Wang}, \binits{L.}},
+\bauthor{\bsnm{Wang}, \binits{M.}},
+\bauthor{\bsnm{Van~Wittenberghe}, \binits{N.}},
+\bauthor{\bsnm{Wu}, \binits{F.}},
+\bauthor{\bsnm{Zhang}, \binits{R.}},
+\bauthor{\bsnm{Nierras}, \binits{C.R.}},
+\bauthor{\bsnm{Branton}, \binits{P.A.}},
+\bauthor{\bsnm{Carithers}, \binits{L.J.}},
+\bauthor{\bsnm{Guan}, \binits{P.}},
+\bauthor{\bsnm{Moore}, \binits{H.M.}},
+\bauthor{\bsnm{Rao}, \binits{A.}},
+\bauthor{\bsnm{Vaught}, \binits{J.B.}},
+\bauthor{\bsnm{Gould}, \binits{S.E.}},
+\bauthor{\bsnm{Lockart}, \binits{N.C.}},
+\bauthor{\bsnm{Martin}, \binits{C.}},
+\bauthor{\bsnm{Struewing}, \binits{J.P.}},
+\bauthor{\bsnm{Volpi}, \binits{S.}},
+\bauthor{\bsnm{Addington}, \binits{A.M.}},
+\bauthor{\bsnm{Koester}, \binits{S.E.}},
+\bauthor{\bsnm{Little}, \binits{A.R.}},
+\bauthor{\bsnm{Brigham}, \binits{L.E.}},
+\bauthor{\bsnm{Hasz}, \binits{R.}},
+\bauthor{\bsnm{Hunter}, \binits{M.}},
+\bauthor{\bsnm{Johns}, \binits{C.}},
+\bauthor{\bsnm{Johnson}, \binits{M.}},
+\bauthor{\bsnm{Kopen}, \binits{G.}},
+\bauthor{\bsnm{Leinweber}, \binits{W.F.}},
+\bauthor{\bsnm{Lonsdale}, \binits{J.T.}},
+\bauthor{\bsnm{McDonald}, \binits{A.}},
+\bauthor{\bsnm{Mestichelli}, \binits{B.}},
+\bauthor{\bsnm{Myer}, \binits{K.}},
+\bauthor{\bsnm{Roe}, \binits{B.}},
+\bauthor{\bsnm{Salvatore}, \binits{M.}},
+\bauthor{\bsnm{Shad}, \binits{S.}},
+\bauthor{\bsnm{Thomas}, \binits{J.A.}},
+\bauthor{\bsnm{Walters}, \binits{G.}},
+\bauthor{\bsnm{Washington}, \binits{M.}},
+\bauthor{\bsnm{Wheeler}, \binits{J.}},
+\bauthor{\bsnm{Bridge}, \binits{J.}},
+\bauthor{\bsnm{Foster}, \binits{B.A.}},
+\bauthor{\bsnm{Gillard}, \binits{B.M.}},
+\bauthor{\bsnm{Karasik}, \binits{E.}},
+\bauthor{\bsnm{Kumar}, \binits{R.}},
+\bauthor{\bsnm{Miklos}, \binits{M.}},
+\bauthor{\bsnm{Moser}, \binits{M.T.}},
+\bauthor{\bsnm{Jewell}, \binits{S.D.}},
+\bauthor{\bsnm{Montroy}, \binits{R.G.}},
+\bauthor{\bsnm{Rohrer}, \binits{D.C.}},
+\bauthor{\bsnm{Valley}, \binits{D.R.}},
+\bauthor{\bsnm{Davis}, \binits{D.A.}},
+\bauthor{\bsnm{Mash}, \binits{D.C.}},
+\bauthor{\bsnm{Undale}, \binits{A.H.}},
+\bauthor{\bsnm{Smith}, \binits{A.M.}},
+\bauthor{\bsnm{Tabor}, \binits{D.E.}},
+\bauthor{\bsnm{Roche}, \binits{N.V.}},
+\bauthor{\bsnm{McLean}, \binits{J.A.}},
+\bauthor{\bsnm{Vatanian}, \binits{N.}},
+\bauthor{\bsnm{Robinson}, \binits{K.L.}},
+\bauthor{\bsnm{Sobin}, \binits{L.}},
+\bauthor{\bsnm{Barcus}, \binits{M.E.}},
+\bauthor{\bsnm{Valentino}, \binits{K.M.}},
+\bauthor{\bsnm{Qi}, \binits{L.}},
+\bauthor{\bsnm{Hunter}, \binits{S.}},
+\bauthor{\bsnm{Hariharan}, \binits{P.}},
+\bauthor{\bsnm{Singh}, \binits{S.}},
+\bauthor{\bsnm{Um}, \binits{K.S.}},
+\bauthor{\bsnm{Matose}, \binits{T.}},
+\bauthor{\bsnm{Tomaszewski}, \binits{M.M.}},
+\bauthor{\bsnm{Barker}, \binits{L.K.}},
+\bauthor{\bsnm{Mosavel}, \binits{M.}},
+\bauthor{\bsnm{Siminoff}, \binits{L.A.}},
+\bauthor{\bsnm{Traino}, \binits{H.M.}},
+\bauthor{\bsnm{Flicek}, \binits{P.}},
+\bauthor{\bsnm{Juettemann}, \binits{T.}},
+\bauthor{\bsnm{Ruffier}, \binits{M.}},
+\bauthor{\bsnm{Sheppard}, \binits{D.}},
+\bauthor{\bsnm{Taylor}, \binits{K.}},
+\bauthor{\bsnm{Trevanion}, \binits{S.J.}},
+\bauthor{\bsnm{Zerbino}, \binits{D.R.}},
+\bauthor{\bsnm{Craft}, \binits{B.}},
+\bauthor{\bsnm{Goldman}, \binits{M.}},
+\bauthor{\bsnm{Haeussler}, \binits{M.}},
+\bauthor{\bsnm{Kent}, \binits{W.J.}},
+\bauthor{\bsnm{Lee}, \binits{C.M.}},
+\bauthor{\bsnm{Paten}, \binits{B.}},
+\bauthor{\bsnm{Rosenbloom}, \binits{K.R.}},
+\bauthor{\bsnm{Vivian}, \binits{J.}},
+\bauthor{\bsnm{Zhu}, \binits{J.}},
+\bauthor{\bsnm{Nicolae}, \binits{D.L.}},
+\bauthor{\bsnm{Cox}, \binits{N.J.}},
+\bauthor{\bsnm{Im}, \binits{H.K.}},
+\bauthor{\bsnm{Consortium}, \binits{G.}},
+\bauthor{\bsnm{Laboratory}, \binits{D.A..C.C.L.-A.W.G.}},
+\bauthor{\bsnm{Group}, \binits{S.M.g.-A.W.}},
+\bauthor{\bsnm{groups}, \binits{E.G.}},
+\bauthor{\bsnm{Fund}, \binits{N.I.H.C.}},
+\bauthor{\bsnm{NIH/NCI}},
+\bauthor{\bsnm{NIH/NHGrI}},
+\bauthor{\bsnm{NIH/NIMH}},
+\bauthor{\bsnm{NIH/NIDA}},
+\bauthor{\bsnm{Site-NDrI}, \binits{B.C.S.}},
+\bauthor{\bsnm{Site-rPCI}, \binits{B.C.S.}},
+\bauthor{\bsnm{resource-VArI}, \binits{B.C.}},
+\bauthor{\bsnm{Miami Brain Endowment~Bank}, \binits{B.B.r.-U.}},
+\bauthor{\bsnm{Management}, \binits{L.B.-P.}},
+\bauthor{\bsnm{Study}, \binits{E.L.S.I.}},
+\bauthor{\bsnm{Visualization-EBI}, \binits{G.B.D.I..}},
+\bauthor{\bsnm{Genome Browser Data Integration \& Visualization-UCSC
+  Genomics~Institute}, \binits{U.o.C.S.C.}}:
+\batitle{Exploring the phenotypic consequences of tissue specific gene
+  expression variation inferred from gwas summary statistics}.
+\bjtitle{Nature Communications}
+\bvolume{9}(\bissue{1}),
+\bfpage{1825}
+(\byear{2018})
+\doiurl{10.1038/s41467-018-03621-1}
+\end{barticle}
+\endbibitem
+
+%%% 41
+\bibitem[\protect\citeauthoryear{Gaulton et~al.}{2017}]{Gaulton2017}
+\begin{barticle}
+\bauthor{\bsnm{Gaulton}, \binits{A.}},
+\bauthor{\bsnm{Hersey}, \binits{A.}},
+\bauthor{\bsnm{Nowotka}, \binits{M.}},
+\bauthor{\bsnm{Bento}, \binits{A.P.}},
+\bauthor{\bsnm{Chambers}, \binits{J.}},
+\bauthor{\bsnm{Mendez}, \binits{D.}},
+\bauthor{\bsnm{Mutowo}, \binits{P.}},
+\bauthor{\bsnm{Atkinson}, \binits{F.}},
+\bauthor{\bsnm{Bellis}, \binits{L.J.}},
+\bauthor{\bsnm{Cibrián-Uhalte}, \binits{E.}},
+\bauthor{\bsnm{Davies}, \binits{M.}},
+\bauthor{\bsnm{Dedman}, \binits{N.}},
+\bauthor{\bsnm{Karlsson}, \binits{A.}},
+\bauthor{\bsnm{Magariños}, \binits{M.P.}},
+\bauthor{\bsnm{Overington}, \binits{J.P.}},
+\bauthor{\bsnm{Papadatos}, \binits{G.}},
+\bauthor{\bsnm{Smit}, \binits{I.}},
+\bauthor{\bsnm{Leach}, \binits{A.R.}}:
+\batitle{The chembl database in 2017.}
+\bjtitle{Nucleic acids research}
+\bvolume{45},
+\bfpage{945}--\blpage{954}
+(\byear{2017})
+\end{barticle}
+\endbibitem
+
+%%% 42
+\bibitem[\protect\citeauthoryear{Cheng et~al.}{2019}]{Cheng2019}
+\begin{barticle}
+\bauthor{\bsnm{Cheng}, \binits{F.}},
+\bauthor{\bsnm{Kovács}, \binits{I.A.}},
+\bauthor{\bsnm{Barabási}, \binits{A.-L.}}:
+\batitle{Network-based prediction of drug combinations.}
+\bjtitle{Nature communications}
+\bvolume{10},
+\bfpage{1197}
+(\byear{2019})
+\end{barticle}
+\endbibitem
+
+%%% 43
+\bibitem[\protect\citeauthoryear{Lamb et~al.}{2006}]{Lamb2006}
+\begin{barticle}
+\bauthor{\bsnm{Lamb}, \binits{J.}},
+\bauthor{\bsnm{Crawford}, \binits{E.D.}},
+\bauthor{\bsnm{Peck}, \binits{D.}},
+\bauthor{\bsnm{Modell}, \binits{J.W.}},
+\bauthor{\bsnm{Blat}, \binits{I.C.}},
+\bauthor{\bsnm{Wrobel}, \binits{M.J.}},
+\bauthor{\bsnm{Lerner}, \binits{J.}},
+\bauthor{\bsnm{Brunet}, \binits{J.-P.}},
+\bauthor{\bsnm{Subramanian}, \binits{A.}},
+\bauthor{\bsnm{Ross}, \binits{K.N.}},
+\bauthor{\bsnm{Reich}, \binits{M.}},
+\bauthor{\bsnm{Hieronymus}, \binits{H.}},
+\bauthor{\bsnm{Wei}, \binits{G.}},
+\bauthor{\bsnm{Armstrong}, \binits{S.A.}},
+\bauthor{\bsnm{Haggarty}, \binits{S.J.}},
+\bauthor{\bsnm{Clemons}, \binits{P.A.}},
+\bauthor{\bsnm{Wei}, \binits{R.}},
+\bauthor{\bsnm{Carr}, \binits{S.A.}},
+\bauthor{\bsnm{Lander}, \binits{E.S.}},
+\bauthor{\bsnm{Golub}, \binits{T.R.}}:
+\batitle{The connectivity map: Using gene-expression signatures to connect
+  small molecules, genes, and disease}.
+\bjtitle{Science}
+\bvolume{313}(\bissue{5795}),
+\bfpage{1929}--\blpage{1935}
+(\byear{2006})
+\doiurl{10.1126/science.1132939}
+{\href{https://arxiv.org/abs/https://www.science.org/doi/pdf/10.1126/science.1132939}{{https://www.science.org/doi/pdf/10.1126/science.1132939}}}
+\end{barticle}
+\endbibitem
+
+%%% 44
+\bibitem[\protect\citeauthoryear{Varma}{2020}]{Varma2020}
+\begin{barticle}
+\bauthor{\bsnm{Varma}, \binits{S.}}:
+\batitle{Blind estimation and correction of microarray batch effect}.
+\bjtitle{PloS one}
+\bvolume{15}(\bissue{32271844}),
+\bfpage{0231446}--\blpage{0231446}
+(\byear{2020})
+\doiurl{10.1371/journal.pone.0231446}
+\end{barticle}
+\endbibitem
+
+%%% 45
+\bibitem[\protect\citeauthoryear{Desai et~al.}{2022}]{Desai2022a}
+\begin{botherref}
+\oauthor{\bsnm{Desai}, \binits{R.J.}},
+\oauthor{\bsnm{Mahesri}, \binits{M.}},
+\oauthor{\bsnm{Lee}, \binits{S.B.}},
+\oauthor{\bsnm{Varma}, \binits{V.R.}},
+\oauthor{\bsnm{Loeffler}, \binits{T.}},
+\oauthor{\bsnm{Schilcher}, \binits{I.}},
+\oauthor{\bsnm{Gerhard}, \binits{T.}},
+\oauthor{\bsnm{Segal}, \binits{J.B.}},
+\oauthor{\bsnm{Ritchey}, \binits{M.E.}},
+\oauthor{\bsnm{Horton}, \binits{D.B.}},
+\oauthor{\bsnm{Kim}, \binits{S.C.}},
+\oauthor{\bsnm{Schneeweiss}, \binits{S.}},
+\oauthor{\bsnm{Thambisetty}, \binits{M.}}:
+{No association between initiation of phosphodiesterase-5 inhibitors and risk
+  of incident Alzheimer’s disease and related dementia: results from the Drug
+  Repurposing for Effective Alzheimer’s Medicines study}.
+Brain Communications
+\textbf{4}(5)
+(2022)
+\doiurl{10.1093/braincomms/fcac247}
+{\href{https://arxiv.org/abs/https://academic.oup.com/braincomms/article-pdf/4/5/fcac247/46694025/fcac247.pdf}{{https://academic.oup.com/braincomms/article-pdf/4/5/fcac247/46694025/fcac247.pdf}}}.
+fcac247
+\end{botherref}
+\endbibitem
+
+%%% 46
+\bibitem[\protect\citeauthoryear{Pletscher-Frankild
+  et~al.}{2015}]{PletscherFrankild2015}
+\begin{barticle}
+\bauthor{\bsnm{Pletscher-Frankild}, \binits{S.}},
+\bauthor{\bsnm{Pallejà}, \binits{A.}},
+\bauthor{\bsnm{Tsafou}, \binits{K.}},
+\bauthor{\bsnm{Binder}, \binits{J.X.}},
+\bauthor{\bsnm{Jensen}, \binits{L.J.}}:
+\batitle{Diseases: text mining and data integration of disease-gene
+  associations.}
+\bjtitle{Methods (San Diego, Calif.)}
+\bvolume{74},
+\bfpage{83}--\blpage{9}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 47
+\bibitem[\protect\citeauthoryear{De~Miranda et~al.}{2014}]{DeMiranda2014}
+\begin{barticle}
+\bauthor{\bsnm{De~Miranda}, \binits{B.R.}},
+\bauthor{\bsnm{Popichak}, \binits{K.A.}},
+\bauthor{\bsnm{Hammond}, \binits{S.L.}},
+\bauthor{\bsnm{Miller}, \binits{J.A.}},
+\bauthor{\bsnm{Safe}, \binits{S.}},
+\bauthor{\bsnm{Tjalkens}, \binits{R.B.}}:
+\batitle{{Novel Para-Phenyl Substituted Diindolylmethanes Protect Against MPTP
+  Neurotoxicity and Suppress Glial Activation in a Mouse Model of Parkinson’s
+  Disease}}.
+\bjtitle{Toxicological Sciences}
+\bvolume{143}(\bissue{2}),
+\bfpage{360}--\blpage{373}
+(\byear{2014})
+\doiurl{10.1093/toxsci/kfu236}
+{\href{https://arxiv.org/abs/https://academic.oup.com/toxsci/article-pdf/143/2/360/10915824/kfu236.pdf}{{https://academic.oup.com/toxsci/article-pdf/143/2/360/10915824/kfu236.pdf}}}
+\end{barticle}
+\endbibitem
+
+%%% 48
+\bibitem[\protect\citeauthoryear{Cicchetti et~al.}{2019}]{Cicchetti2019}
+\begin{barticle}
+\bauthor{\bsnm{Cicchetti}, \binits{F.}},
+\bauthor{\bsnm{David}, \binits{L.S.}},
+\bauthor{\bsnm{Siddu}, \binits{A.}},
+\bauthor{\bsnm{Denis}, \binits{H.L.}}:
+\batitle{Cysteamine as a novel disease-modifying compound for parkinson's
+  disease: Over a decade of research supporting a clinical trial}.
+\bjtitle{Neurobiology of Disease}
+\bvolume{130},
+\bfpage{104530}
+(\byear{2019})
+\doiurl{10.1016/j.nbd.2019.104530}
+\end{barticle}
+\endbibitem
+
+%%% 49
+\bibitem[\protect\citeauthoryear{Meng et~al.}{2021}]{Meng2021}
+\begin{barticle}
+\bauthor{\bsnm{Meng}, \binits{F.}},
+\bauthor{\bsnm{Xi}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{J.}},
+\bauthor{\bsnm{Ayers}, \binits{P.W.}}:
+\batitle{A curated diverse molecular database of blood-brain barrier
+  permeability with chemical descriptors}.
+\bjtitle{Scientific Data}
+\bvolume{8}(\bissue{1}),
+\bfpage{289}
+(\byear{2021})
+\doiurl{10.1038/s41597-021-01069-5}
+\end{barticle}
+\endbibitem
 
 \end{thebibliography}

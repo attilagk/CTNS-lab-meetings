@@ -59,7 +59,6 @@ Computational validation	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Com
 Computational validation	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Computational validation}$/;"	b
 Computational validation	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Computational validation}$/;"	b
 Computational validation	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Computational validation}$/;"	b
-Computational validation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Computational validation}$/;"	b
 Computational validation of network based screen	repurposing-ms/repurposing-ms-v2.tex	/^\\subsection{Computational validation of network based screen}$/;"	b
 Conclusion	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Conclusion}\\label{sec13}$/;"	s
 Declarations	repurposing-ms/repurposing-ms-v11.tex	/^\\section*{Declarations}$/;"	s
@@ -87,7 +86,6 @@ Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
-Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
 Experimental validation	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Experimental validation}$/;"	b
 Experimental validation	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Experimental validation}$/;"	b
 Experimental validation	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Experimental validation}$/;"	b
@@ -97,6 +95,7 @@ Experimental validation	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Expe
 Experimental validation	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Experimental validation}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
+Further prioritization of top ranking candidate AD drugs	repurposing-ms/repurposing-ms.tex	/^\\subsection{Further prioritization of top ranking candidate AD drugs}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v4.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
@@ -110,6 +109,7 @@ Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repu
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Introduction	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
+Introduction	repurposing-ms/repurposing-ms.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v11.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v4.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
@@ -170,7 +170,6 @@ Results	repurposing-ms/repurposing-ms-v4.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v7.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v8.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v9.tex	/^\\section{Results}$/;"	s
-Results	repurposing-ms/repurposing-ms.tex	/^\\section{Results}$/;"	s
 Sci Transl Med 2017	lab-meetings/2021-05-13-covid19-repurposing/2021-05-13-covid19-repurposing.tex	/^\\section{Sci Transl Med 2017}$/;"	s
 Selected top drugs	repurposing-ms/repurposing-ms-v2.tex	/^\\subsection{Selected top drugs}$/;"	b
 Selected top ranking drugs	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Selected top ranking drugs}$/;"	b
@@ -180,6 +179,7 @@ Supplementary Material	repurposing-ms/repurposing-ms-supp.tex	/^\\section*{Suppl
 Supplementary Material	repurposing-ms/repurposing-ms-v1.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v11.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v2.tex	/^\\section*{Supplementary Material}$/;"	s
+Supplementary Material	repurposing-ms/repurposing-ms.tex	/^\\section*{Supplementary Material}$/;"	s
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b

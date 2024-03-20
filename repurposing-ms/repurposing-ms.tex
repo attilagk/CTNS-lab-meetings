@@ -1,136 +1,213 @@
-\documentclass[letterpaper]{article}
-%\documentclass[12pt,letterpaper]{article}
-%\setlength{\textwidth}{480pt}
-%\setlength{\textheight}{630pt}
-%\setlength{\voffset}{0pt}
+%Version 3 October 2023
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amsmath, geometry, graphicx}
-\usepackage{natbib}
-%\usepackage{float}
-\usepackage{url,hyperref}
-\usepackage{booktabs}
-\bibliographystyle{plainnat}
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
 
-% https://tex.stackexchange.com/questions/6758/how-can-i-create-a-bibliography-like-a-section
-%\usepackage{etoolbox}
-%\patchcmd{\thebibliography}{\section*}{\section}{}{}
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
 
-\pagestyle{plain}
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
 
-\title{Novel Drug Repurposing Opportunities for Alzheimer's Disease from
-  Genomic Fine Mapping and Transcriptomic Disease Signatures}
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
 
-  \author{Attila Jones, Evan Wu, Sudhir Varma, Tina(?), ..., Hae Kyung Im, Madhav Thambisetty}
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
 
-\date{National Institute on Aging, NIH}
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove “Numbered” in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-vancouver.bst, sn-chicago.bst%  
+ 
+%%\documentclass[sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+%%\documentclass[sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\UseRawInputEncoding
 
 \begin{document}
 
-\maketitle
-\section{Introduction}
+\title[Article Title]{Network proximity-based screening and experimental validation of novel drug repurposing candidates in Alzheimer¿s Disease}
 
-Late onset Alzheimer's disease (AD) is a progressive neurodegenerative disorder and the most
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author*[1,2]{\fnm{First} \sur{Author}}\email{iauthor@gmail.com}
+
+\author[2,3]{\fnm{Second} \sur{Author}}\email{iiauthor@gmail.com}
+\equalcont{These authors contributed equally to this work.}
+
+\author[1,2]{\fnm{Third} \sur{Author}}\email{iiiauthor@gmail.com}
+\equalcont{These authors contributed equally to this work.}
+
+\affil*[1]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{100190}, \state{State}, \country{Country}}}
+
+\affil[2]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{10587}, \state{State}, \country{Country}}}
+
+\affil[3]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{610101}, \state{State}, \country{Country}}}
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. Authors are advised to check the author instructions for the journal they are submitting to for word limits and if structural elements like subheadings, citations, or equations are permitted.}
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+\keywords{keyword1, Keyword2, Keyword3, Keyword4}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{sec1}
+
+Alzheimer's disease (AD) is a progressive neurodegenerative disorder and the most
 common form of dementia affecting a growing number of individuals in ageing
 societies for which effective treatments are
-unavailable~\citep{Bondi2017,Masters2015}.  Repurposing drugs approved for other indications is
+unavailable~\cite{Bondi2017,Masters2015}.  Repurposing drugs approved for other indications is
 a promising approach  towards identification of effective disease-modifying AD
-treatments~\citep{Pushpakom2019,Fang2021,Taubes2021}.  One of the 
-milestones of the National Plan for Alzheimerâ€™s Disease is to ``Initiate
+treatments~\cite{Pushpakom2019,Fang2021,Taubes2021}.  One of the 
+milestones of the National Plan for Alzheimer's Disease is to ``Initiate
 research programs for translational bioinformatics and network pharmacology to
-support rational drug repositioning''~\citep{NIH/NIA}.%~\citep{Aging}.
+support rational drug repositioning''~\cite{NIH/NIA}.%~\citep{Aging}.
 
 Although a few major genetic risk factors for AD are known---most importantly
 the $\epsilon 4$ allele of the apolipoprotein E gene (APOE4)
 \cite{Yamazaki2019}---our understanding of the early etiological triggers of
 the disease is still limited.  Among several reasons for this lack of clarity
 are the considerable genetic and cellular complexity of AD, and the
-confounding early etiological processes by compensatory and degenerative
-pathologies over the decades-long disease progression~\citep{DeStrooper2016}.
+confounding of early etiological processes by compensatory and degenerative
+pathologies over the decades-long disease progression~\cite{DeStrooper2016}.
 Consequently, discovering treatments targeting early causal drivers of AD
 pathogenesis has been a major hurdle to developing effective treatments.  In
 this study, we attempted to address this challenge in two ways.  Firstly, we
 derived plausible mechanistic insights into AD from previous genome-,
 transcriptome- and proteome-wide association studies (GWAS, TWAS, PWAS,
-respectively)~\citep{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021}
+respectively)~\cite{Jansen2019,Kunkle2019,Gerring2020,Baird2021,Schwartzentruber2021,Wightman2021,Wingo2021}
 comparing AD and control samples, including analyses of differentially
 expressed genes (DEGs) in APOE3/3 versus APOE4/4 individuals as
 well as from comparison of DEGs in iPSC-derived neurons, astrocytes and
 microglia from APOE3/3 versus APOE4/4
-individuals~\citep{Taubes2021,Lin2018}~(Fig.~\ref{fig:workflow}A).
-
-\begin{figure}
-\includegraphics[width=1.0\textwidth]{figures/Fig1.png}
-\caption{
-  A) Workflow of computational drug repurposing in Alzheimer's disease (AD).
-  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5
-  are plausible candidate AD drugs because they target either directly or
-  indirectly an AD risk gene (i.e a gene mechanistically involved in AD), respectively .  On the other
-  hand, drugs 1--3 only target genes at least three interactions away from AD
-  genes and therefore are likely not plausible candidate AD drugs.
-}
-\label{fig:workflow}
-\end{figure}
+individuals~\cite{Taubes2021,Lin2018}~(Fig.~\ref{fig:workflow}A).
 
 Second, we exploited rich, mechanistic information represented by two
 interconnected networks (Fig~\ref{fig:workflow}B): (1) the network formed by
 all drugs and their target genes (drug-target network) and (2) the human
 gene-gene interaction network---known as the interactome---, whose Alzheimer's
-subnetwork---named Alzheimer's disease module~\citep{Barabasi2011}---we
+subnetwork---named Alzheimer's disease module (AD module)~\cite{Barabasi2011}---we
 defined based on sets of AD risk genes from
 the aforementioned omic studies.  Combining these two networks, we then
 estimated the potential efficacy of each drug for AD by evaluating its network
-proximity~\citep{Guney2016}, which is based on the drug's network topological
-distance from the AD module.  Network proximity was shown~\citep{Cheng2018} to
+proximity~\cite{Guney2016}, which is based on the drug's network topological
+distance from the AD module.  Network proximity was shown~\cite{Cheng2018} to
 be a powerful, systems-level, alternative to merely correlative approaches to
-computational drug repurposing such as the connectivity map,
-CMap~\citep{Lamb2006}.  We present the results and computational validation of
+computational drug repurposing.  We present the results and computational validation of
 our network proximity-based drug screen as well as experimental validation of
 selected top ranking plausible novel candidate AD drugs.
 
 \section{Results}
 
 \subsection{Evaluating drugs' network proximities to Alzheimer's disease
-modules in the interactome}
+modules in the human gene-gene interaction network}
 
-Drugs proximal to some disease module in the human interactome were previously
-shown to be good candidates for repurposing to that disease~\citep{Cheng2018}.
+Drugs proximal to a given disease module in the human interactome were previously
+shown to be good candidates for repurposing to that disease~\cite{Cheng2018}.
 We therefore performed a network proximity-based drug repurposing screen for
 AD using 2413 drugs from ChEMBL that were either approved by the United States
-Food and Drug Administration, or are in phase 3 clinical trials, for any
-disease indication (Fig.~\ref{fig:workflow}A).  We evaluated each drug's
-network proximity to each of eight AD modules, which we derived from distinct
-complementary information sources (one curated, knowledge-based source and
-seven multi-omic sources, Table~\ref{tab:genesets}).  This resulted in eight
-distinct lists of the same 2413 drugs ranked according to increasing network
-proximity score and hence decreasing relevance for AD
-(Fig.~\ref{fig:workflow}A). We then nominated the top-ranking drugs as
-promising novel candidates for repurposing in AD.
+Food and Drug Administration, or tested in phase 3 clinical trials, for any
+disease indication (Fig.~\ref{fig:workflow}A).
 
-\begin{table}
-\footnotesize
-\begin{tabular}{rrll}
-\toprule
-AD risk gene set          &Size & Description & Reference  \\
-\hline                     
-knowledge            &  27 & curated AD risk genes from the DISEASES database & \cite{PletscherFrankild2015} \\
-TWAS2+               &  32 & genes supported by $\ge 2$ AD-TWAS/PWAS & Ref.~in caption  \\
-agora2+              &  64 & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
-AD DE APOE3-APOE3    & 277 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
-AD DE APOE4-APOE4    & 274 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
-APOE3-4 DE neuron    &  46 & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
-APOE3-4 DE astrocyte & 128 & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
-APOE3-4 DE microglia & 140 & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
-\bottomrule
-\end{tabular}
-\caption{
-AD risk gene sets used as inputs to drug repurposing screens of this study.  For
-the TWAS2+ gene set we combined gene sets from the prior published TWAS of
-\cite{Gerring2020,Baird2021,Jansen2019,Kunkle2019,Wingo2021,Schwartzentruber2021}
-as well as from our own TWAS (Methods).  The genes in each set are listed in
-Table~S\ref{tab:genes-in-genesets}.
-}
-\label{tab:genesets}
-\end{table}
+We evaluated each drug's network proximity to each of eight AD modules, which
+we derived from distinct complementary information sources (one curated,
+knowledge-based source and seven multi-omic sources,
+Table~\ref{tab:genesets}).  Thus, given each AD module, we obtained a ranking
+of the 2413 drugs according to network proximity such that drugs with the
+strongest potential efficiacy for AD were at or near the top (rank 1)
+(Fig.~\ref{fig:workflow}A, Fig.~\ref{fig:screen}A-B).
 
 Although the eight input AD risk gene sets had little overlap with each other
 (Fig.~S\ref{fig:gset-jaccard}), the resulting eight vectors of network proximity had
@@ -140,58 +217,33 @@ This suggests that even though the input AD risk gene sets share only a few gene
 the corresponding network modules are close enough to one another in network
 topological space to exhibit similar network proximity to any given drug.
 
-\begin{figure}
-\includegraphics[]{figures/proximity-ranked-drugs.pdf}
-\caption{Scoring and ranking 2413 drugs based on their network proximity to
-  various AD risk gene sets.  (A-B) Eight AD risk gene sets were input to the workflow.
-  The separate drug rankings across imput AD risk gene sets were aggregated into a
-  single final ranking, which is color coded (yellow: top-ranked drugs, blue:
-  bottom-ranked drugs).  Note that the area delimited by red rectangle in A)
-  is expanded into B).
-}
-\label{fig:screen}
-\end{figure}
+Assuming our eight input AD risk gene sets were all equally relevant to
+Alzheimer's disease, we aggregated the corresponding drug rankings giving
+uniform weight to all gene sets.  This yielded a single final ranked list of
+the top 605 drugs (Fig.~\ref{fig:screen}A,
+Table~S\ref{tab:genes-in-genesets}).  The highest ranked drugs on the final
+list also tended to be ranked high in a majority (five out of eight) of
+input-specific rankings (Fig.~\ref{fig:screen}B, Fig.~S\ref{fig:rank-diff}).
 
-Assuming our eight input AD risk gene sets were all equally relevant to Alzheimer's
-disease, we aggregated the corresponding drug rankings giving uniform weight
-to all gene sets.  This yielded a single final ranked list of the top 605
-drugs (Fig.~\ref{fig:screen}A, Table~S\ref{tab:genes-in-genesets}).  The very
-top ranked drugs on the final list also tended to be top ranked in a majority
-(five out of eight) of input-specific rankings (Fig.~\ref{fig:screen}B,
-Fig.~S\ref{fig:rank-diff}).
+\subsection{Computational validation of network proximity-based drug screening}
 
-\subsection{Computational validation}
-
-To validate our network-based drug screen, we asked to what extent the
-top-ranked drugs were enriched in drugs already investigated or approved for
-AD.  To quantify such enrichment, we defined \emph{rediscovery rate} (Methods,
-Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked by network
-proximity, relative to that for the bottom-$1808$ drugs.  The top left panel
-of Fig.~\ref{fig:ad-drug-rediscovery-multi} shows that the rediscovery rate
-for AD in the top-$k$ drugs was about $2-3$-fold greater than that for the
-bottom drugs depending on the value of $k$.  This finding suggests that our
-computational approach to AD drug discovery yields both novel drug candidates
-as well as those that with a biological rationale justifying their current
-status as approved AD drugs or testing in prior human clinical trials, thereby
-providing a measure of methodological validation.
-
-\begin{figure}[p]
-\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
-\caption{
-Network proximity-based rediscovery of drugs in phase 1--4 clinical trials for
-AD and 35 other disease indications.  Disease indications written on top of
-individual plots.  Blue dots: rediscovery rate (Eq.~\ref{eq:rediscovery-rate})
-for the top-$k$ drugs, ranked by network proximity, relative to that for the
-bottom-$1808$ drugs.  Rediscovery rate of $>1$ means that top-ranked drugs
-tend to be those that are in phase 1--4 clinical trials for the given
-indication; these drugs are marked by orange symbols above the $x$ axes.
-}
-\label{fig:ad-drug-rediscovery-multi}
-\end{figure}
+To validate our network-based drug screen, we asked to what extent the highly
+ranked candidate AD drugs were enriched in drugs already investigated in or
+approved for treatment of AD.  To quantify such enrichment, we defined \emph{rediscovery
+rate} (Methods, Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked
+by network proximity, relative to that for the bottom-$1808$ drugs.  The top
+left panel of Fig.~\ref{fig:ad-drug-rediscovery-multi} shows that the
+rediscovery rate for AD in the top-$k$ drugs was about $2-3$-fold greater than
+that for the bottom drugs depending on the value of $k$.  This finding
+suggests that our computational approach to AD drug discovery yields both
+novel drug candidates as well as those that with a biological rationale
+justifying their current status as approved AD drugs or testing in prior human
+clinical trials, thereby providing a measure of methodological validation of
+the network proximity-based drug screening approach.
 
 We then re-evaluated rediscovery rate using the same, network proximity-based,
-drug ranking as above but this time we queried the rediscovery of drugs for
-some other common indication rather than for AD.  Besides AD, there was
+drug ranking as above by assessing the rediscovery of drugs for common
+indications other than for AD.  Besides AD, there was
 sufficient data (i.e~at least 100 drugs approved or in phase $\ge 1$ clinical
 trials) for 35 common indications (Fig.~\ref{fig:ad-drug-rediscovery-multi}).
 Interestingly, several, but not all, of these indications showed a similar
@@ -214,89 +266,87 @@ overlapping molecular mechanism(s) in other diseases such as cancer.
 %network approach, we did not analyze the results obtained with CMap any
 %further.
 
-\subsection{Selected top ranking candidate AD drugs}
+\subsection{Further prioritization of top ranking candidate AD drugs}
 
-We selected three top ranking compounds for further experimental validation as
-plausible candidate AD treatments using cell culture based phenotypic assays
-that probe key molecular outcomes relevant to AD pathogenesis
-(Table~\ref{tab:selected-drugs}). These candidate drugs were selected based on the following criteria:
-\begin{enumerate}
-  \item brain penetration/permeability across the blood brain barrier,
-  \item close network proximity of the drug target genes to AD risk genes through short path lengths connected by single mediator genes,
-  \item prior evidence for roles in molecular mechanisms relevant to neurodegeneration.
-\end{enumerate}
+We further priorirtized the network proximity-ranked compounds based on (1)
+blood-brain barrier permeability taken from the BBB database
+(Table~\ref{tab:selected-drugs}) and (2) prior evidence for roles in molecular
+mechanisms relevant to AD pathogenesis (below).  Our prioritization resulted
+in three drugs: Arundine, Chenodiol, Cysteamine
+(Table~\ref{tab:selected-drugs}).
 
 Arundine, also known as 3,3-diindolylmethane, is the dimeric product of the
 natural product indole-3-carbinol.  While Arundine has been mostly
-investigated in the context of drug resistant tumors~\citep{Biersack2020}, its
+investigated in the context of drug resistant tumors~\cite{Biersack2020}, its
 close analogs have been found to cross the blood-brain barrier and protect
 mice from 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP)-induced neurotoxicity and
-neurodegeneration~\citep{DeMiranda2013}.
+neurodegeneration~\cite{DeMiranda2013}.
 Moreover, Arundine was shown to inhibit oxidative stress induced apoptosis in
-hippocampal neuronal cells~\citep{Lee2019} and protected primary hippocampal
+hippocampal neuronal cells~\cite{Lee2019} and protected primary hippocampal
 cell cultures from ischemia induced apoptosis and
-autophagy~\citep{Rzemieniec2019}.  Interestingly, the latter effect was found
+autophagy~\cite{Rzemieniec2019}.  Interestingly, the latter effect was found
 to depend on Arundine binding to the Aryl Hydrocarbon Receptor, product of the
-AHR gene,~\citep{Rzemieniec2019}.
+AHR gene,~\cite{Rzemieniec2019}.
 
 One of the Arundine targets that our analysis accounted for is the RGS4 gene
 (regulator of G-protein signalling 4). RGS4 is notable because it is also
 targeted by Chenodiol, another of our selected top-ranking drugs.  Chenodiol,
 or Chenodeoxycholic acid, has been shown to be neuroprotective in Huntington's
-disease~\citep{Keene2002}.  Moreover, Chenodiol is a bile acid, and plausibly
+disease~\cite{Keene2002}.  Moreover, Chenodiol is a bile acid, and plausibly
 linked to AD based on recent evidence from our group and
-others~\citep{Varma2021,Baloni2020}.
+others~\cite{Varma2021,Baloni2020}.
 
 Our third selected top drugs was Cysteamine.  Cysteamine, whose targets also
 include RGS4, is a derivative of the amino acid cysteine.  Cysteamine can
 traverse the blood brain barrier, was approved for cystinosis (MeSH:D005128).
 More recently it has been studied as a potential drug for Huntington's and
 Parkinson's disease due to its neuroprotective
-activity~\citep{Besouw2013,Paul2019}.
-
-\begin{table}
-\footnotesize
-\begin{tabular}{r|c|c|c}
-%\begin{tabular}{p{0.2\textwidth} | p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-%\begin{tabular}{l | p{3cm} p{3cm} p{3cm}}
-\toprule
-                                              Name &                           Arundine &              Chenodiol &                          Cysteamine \\
-\midrule
-\multicolumn{4}{c}{\scshape General information} \\
-\midrule
-                                           Synonym &               3,3-Diindolylmethane &  Chenodeoxycholic acid &                            Cystagon \\
-                                         ChEMBL ID &                       CHEMBL446452 &           CHEMBL240597 &                           CHEMBL602 \\
-                              Approved indications &          cervical cancer, phase 3 & cholesterol gallstones &            cystinosis, eye diseases \\
-%                                  Alternative form &                                    &                        & Cysteamine-HCl$^\ast$ \\
-\midrule
-\multicolumn{4}{c}{\scshape Target genes} \\
-\midrule
-                                      %Gene targets &                                    &                        &                                     \\
-   In present screen &
-   RGS4 &            RGS4, SLC10A2 &                         RGS4, CYP3A4 \\
-%                        ChEMBL, human (alt. form) &                                    &                        & GEMI, LMNA, PLK1, BLM, NF2L2, TYDP1 \\
-                                             Other &                                AHR &                        &                                     \\
-\midrule
-\multicolumn{4}{c}{\scshape Relevance to Alzheimer's disease} \\
-\midrule
-                                             Rank (present screen)  &                                  4 &                     28 &                                  51 \\
-%\midrule
-%\multicolumn{4}{l}{\scshape AD-relevance, previous studies} \\
-               \emph{In vivo} evidence & \cite{DeMiranda2013,DeMiranda2014} &       \cite{Keene2002} &                \cite{Cicchetti2019} \\
-               \emph{In vitro} evidence &      \cite{Lee2019,Rzemieniec2019} &                        &          \cite{Besouw2013,Paul2019} \\
-\bottomrule
-\end{tabular}
-\caption{
-Selected drugs ranked high in our present computational screen of 2413 drugs
-from ChEMBL.  Notes: Targets in the present screen were taken from ChEMBL filtering for human
-experiments. ``Other'' targets refer to those we found manually in the
-biomedical literature.
-%$^\ast$Cysteamine-HCl (CHEMBL1256137) was ranked 323 and targets GEMI, LMNA, PLK1, BLM, NF2L2, and TYDP1 (ChEMBL, human).
-}
-\label{tab:selected-drugs}
-\end{table}
+activity~\cite{Besouw2013,Paul2019}.
 
 %\subsection{Molecular pathways from the selected drugs to AD risk genes}
+\subsection{Experimental validation}
+
+We evaluated the ability of Chenodiol, Arundine and Cysteamine to ameliorate
+molecular abnormalities relevant to AD in cell culture-based phenotypic
+assays. In these studies, we used TUDCA, the taurine conjugated epimer of
+chenodiol/chenodeoxycholic acid as prior studies have shown that TUDCA may
+exert a neuroprotective role. We also chose to test the hydrochloride salt of
+cysteamine (cysteamine hydrochloride) as this drug has been approved by the
+FDA for the treatment of corneal cystine crystal deposits in patients with
+cystinosis~\cite{key1,key2}{Liang2021,Gahl2002}. Cysteamine hydrochloride has  also been shown to improve renal
+function in pediatric patients with cystinosis~\cite{key1,key2}{Markello1993}.
+
+By fitting a Bayesian nonlinear regression model
+(Fig.~S\ref{fig:model-2-plate}) onto the measured dose-response relationships,
+we estimated the fold change
+(Fig.~S\ref{fig:prior-posterior-fit-H102},~S\ref{fig:violin-posterior-assays})
+and, based on that,
+the posterior probability of protective effect for each
+drug and assay (Fig.~\ref{fig:cell-based-assays}A) and, after aggregating assays, for each drug and
+experiment (Fig.~\ref{fig:cell-based-assays}B).  This revealed that TUDCA
+and Arundine, but not Cysteamine, are protective with high probability in
+several assays. On the other hand, each drug was found to have an adverse
+effect with high probability in several other assays.
+
+Fig.~\ref{fig:cell-based-assays}A-~\ref{fig:cell-based-assays}B shows that both
+TUDCA and Arundine exhibited strongly protective effects in A$\beta$ clearance
+(BV2 cells) and LPS induced neuroinflammation (iPSCs).  Moreover, TUDCA also
+proved to be protective in A$\beta$ release (H4 cells), whereas Arundine
+showed a beneficial effect in lowering LPS induced neuroinflammation (BV2
+cells).  Substantial adverse effects were inferred for TUDCA and Arundine in
+A$\beta$ clearance (iPSCs) and for all three drugs in LPS induced
+neuroinflammation (BV2 cells).
+
+In a smaller study, which included 15 of the 33 cell-based assays, we examined
+two analogs of Arundine (Table~S\ref{tab:arundine-analogs}).  We found that
+these analogs had mostly adverse or neutral effects in contrast to the
+typically protective or neutral effects of Arundine
+(Fig.S~\ref{fig:violin-posterior-assays-dim}-\ref{fig:bar-posterior-assays-dim}).
+This results suggests a highly specific structure-activity relationship for
+Arundine. This in turn suggests that the protective effects of Arundine and
+TUDCA we discovered above may be rare in the vast chemical space of
+drug-like compounds.
+
 \subsection{Hypothetical molecular pathways linking selected drugs to AD}
 
 Next we aimed at elucidating hypothetical, AD-relevant molecular mechanisms of
@@ -307,18 +357,6 @@ length, defined as the least number of gene-gene interactions connecting a
 given target to a given AD risk gene, ranged typically from 2 to 4 for most
 combinations of target and AD risk gene set
 (Fig.~S\ref{fig:shortest-path-lengths}).
-
-\begin{figure}
-\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
-\caption{Hypothetical molecular mechanisms linking drugs selected for
-  experimental validation (red nodes), targets
-  (salmon nodes) and AD risk genes (light blue nodes).  Targets interact with AD
-  genes via mediators (salmon) like UBC (ubiquitin C), EGFR, or CALM1
-  (calmodulin 1).  Such target$\rightarrow$mediator$\rightarrow$AD risk gene paths
-  are highlighted with colored, thick edges.
-}
-\label{fig:drug-AD-genes-network}
-\end{figure}
 
 We primarily focused on paths of length 2 as these are both short and
 frequently observed (Fig.~S\ref{fig:shortest-path-lengths}) thereby explaining
@@ -364,77 +402,16 @@ tyrosine kinase-dependent and (4) G-protein dependent signal transduction, (5)
 Ca$^{2+}$-calmodulin, and (5) the coatomer complex.  We shall return to the
 relevance of these mechanisms to AD in the present Discussion.
 
-\subsection{Experimental validation}
-
-We evaluated the three selected drugs' utility for repurposing to AD
-experimentally in 33 AD-related cell-based assays from 9 experiments that are
-labeled as (a)--(i) in Fig.~\ref{fig:cell-based-assays}.  Note that we
-approximated Chenodiol's performance with a similar compound,
-tauroursodeoxycholic acid (TUDCA), because TODO: justify using TUDCA instead
-of Chenodiol.  Likewise, for Cysteamine, we tested its hydrochloride
-conjugated version.
-
-By fitting a Bayesian nonlinear regression model
-(Fig.~S\ref{fig:model-2-plate}) onto the measured dose-response relationships,
-we estimated the fold change
-(Fig.~S\ref{fig:prior-posterior-fit-H102},~S\ref{fig:violin-posterior-assays})
-and, based on that,
-the posterior probability of protective, neutral and adverse effect for each
-drug and assay (Fig.~\ref{fig:cell-based-assays}A).  This revealed that TUDCA
-and Arundine, but not Cysteamine, are protective with high probability in
-several assays. On the other hand, each drug was found to have an adverse
-effect with high probability in several other assays.
-
-Since drug effects appeared fairly homogeneous across assays within
-any given experiment (Fig.~\ref{fig:cell-based-assays}A), we aggregated those
-effects by averaging probabilities given each experiment, drug and hypothesis
-to arrive at a higher level summary (Fig.~\ref{fig:cell-based-assays}B)
-of the above results.  As Fig.~\ref{fig:cell-based-assays}B shows, both TUDCA
-and Arundine exhibited strongly protective effects in A$\beta$ clearance (BV2 cells)
-and LPS induced neuroinflammation (iPSCs).  Moreover, TUDCA also proved to be
-protective in A$\beta$ release (H4 cells), whereas Arundine in LPS induced
-neuroinflammation (BV2 cells).  Substantial adverse effects were inferred for
-TUDCA and Arundine in A$\beta$ clearance (iPSCs) and for all three drugs in
-LPS induced neuroinflammation (BV2 cells).
-
-\begin{figure}
-\includegraphics[]{figures/H102-posterior-assays-experiments.pdf}
-%\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
-\caption{Three selected drugs' performance (A) in 33 cell-based assays from 9
-  experiments, labeled as (a)--(i), as well as the drugs' aggregated
-  performance (B) in the 9 experiments.
-  In both (A) and (B), performance is characterized by the posterior
-  probability of protective, neutral, and adverse effect (hypothesis $H_1, H_0, H_2$,
-  respectively).  Note that these three probabilities sum up to 1 ($x$ axes).
-  Prior probabilities are marked by green and red vertical lines as a
-  reference.  Blank (white) slots indicate either that the experiment was not
-  performed on the drug or that model fit was poor.  The probabilities in (B)
-  were calculated by averaging the probabilities in (A) across all assays in
-  any given experiment. 
-}
-\label{fig:cell-based-assays}
-\end{figure}
-
-In a smaller study, which included 15 of the 33 cell-based assays, we examined
-two analogs of Arundine (Table~S\ref{tab:arundine-analogs}).  We found that
-these analogs had mostly adverse or neutral effects in contrast to the
-typically protective or neutral effects of Arundine
-(Fig.S~\ref{fig:violin-posterior-assays-dim}-\ref{fig:bar-posterior-assays-dim}).
-This results suggests a highly specific structure-activity relationship for
-Arundine. This in turn suggests that the protective effects of Arundine and
-TUDCA we discovered above may be rare in the vast chemical space of
-drug-like compounds.
-
 \section{Discussion}
 
 In this study, we combined network pharmacology analyses with cell-based
 experimental validation to discover novel drug
 repurposing opportunities in AD. We defined AD risk gene sets from diverse
 sources, including knowledge bases and DEGs from transcriptomic studies as
-well as single cell RNA-Seq data from APOE $\eps$4 and $\eps$3-iPSC derived
+well as single cell RNA-Seq data from APOE $\epsilon$4 and $\epsilon$3-iPSC derived
 microglia, astrocytes, and neurons. We also included results of the most
 recent genomic fine mapping studies (GWAS, TWAS and PWAS) in
-AD~\citep{Zhu2018,Lau2020}. Our approach exploits the rich information in
+AD~\cite{Zhu2018,Lau2020}. Our approach exploits the rich information in
 gene-gene and drug-target networks to identify drugs that plausibly target
 causal disease pathways in AD. Using this strategy, we nominated Arundine,
 Chenodiol and Cysteamine as candidate AD drugs that act proximally to
@@ -450,10 +427,10 @@ therapeutic actions of these drugs in AD
 (Fig.~\ref{fig:drug-AD-genes-network}).  All three potential AD drugs target
 RGS4 (Regulator of G-Protein Signalling 4) which is differentially expressed
 in the AD brain.  RGS4 was found to be associated
-with schizophrenia~\citep{Chowdari2002}, which shares substantial
-heritability with AD~\citep{Consortium2018} and in which, similar to AD,
+with schizophrenia~\cite{Chowdari2002}, which shares substantial
+heritability with AD~\cite{Consortium2018} and in which, similar to AD,
 autoimmune pathways have been found to play a significant
-role~\citep{Sekar2016a}.  Moreover, RGS4 is among the few hundred
+role~\cite{Sekar2016a}.  Moreover, RGS4 is among the few hundred
 differentially expressed genes in the brain in AD
 \cite{Taubes2021}.
 
@@ -484,8 +461,8 @@ pathogenesis~\cite{Hegde2019,Alfonso2016}.
 
 Computational drug repurposing is a new, rapidly evolving field with a
 multitude of varied approaches applicable to a growing, diverse multi-omic
-datasets and curated knowledge~\citep{Pushpakom2019} with a few recent
-applications to AD~\citep{Taubes2021,Fang2021}. A key strengths of our
+datasets and curated knowledge~\cite{Pushpakom2019} with a few recent
+applications to AD~\cite{Taubes2021,Fang2021}. A key strengths of our
 computational drug screen is the utilization of multiple, diverse AD risk gene sets
 including the most recent genomic fine mapping studies and single cell
 transcriptomic data from iPSC-derived neurons, microglia and astrocytes.
@@ -504,13 +481,13 @@ drugs as novel experimental AD treatments.
 %    But our work is unique in that it also leverages results of the most
 %    recent genomic fine mapping studies (GWAS, TWAS and PWAS) on AD, which
 %    detect causative AD risk genes with much higher specificity than DEG
-%    analyses~\citep{Zhu2018,Lau2020}.
+%    analyses~\cite{Zhu2018,Lau2020}.
 %\item We and~\cite{Fang2021} used a systems-based network pharmacology
-%  approach~\citep{Guney2016,Cheng2018}, which exploits the rich information in
+%  approach~\cite{Guney2016,Cheng2018}, which exploits the rich information in
 %  available drug-target and gene-gene networks to identify drugs that are
 %  mechanistically supported to target putative disease pathways in AD.  In
 %  contrast, \cite{Taubes2021} used CMap, a merely correlative
-%  approach~\citep{Lamb2006}, which cannot incorporate existing knowledge on
+%  approach~\cite{Lamb2006}, which cannot incorporate existing knowledge on
 %  the molecular pathomechanisms of AD.  Intrestingly, our present work also
 %  shows that these two approaches to fully discordant, uncorrelated results.
 %  Moreover, besides the aforementioned shortcoming of CMap, we find that its
@@ -525,22 +502,22 @@ drugs as novel experimental AD treatments.
 %  drugs demonstrating the robustness of our workflow.  The non-neuronal AD
 %  gene sets were exception of this tendency pointing at the value of further
 %  characterization of non-neuronal cells in
-%  AD~\citep{Lopes2022,Mathys2019,DeStrooper2016}.
+%  AD~\cite{Lopes2022,Mathys2019,DeStrooper2016}.
 %\end{enumerate}
 
 %Our computational validation, based on the rediscovery of drugs previously
 %developed or repurposed for AD, revealed the enrichment of our top ranked
 %drugs for also some common non-AD indications.  Genetic correlations between
-%disease phenotypes~\citep{Consortium2018}, market-driven selection biases, and
+%disease phenotypes~\cite{Consortium2018}, market-driven selection biases, and
 %other factors may underlie not only this observation but also the known
-%comorbidities of AD~\citep{Santiago2021}.  Such overlap between different
+%comorbidities of AD~\cite{Santiago2021}.  Such overlap between different
 %drugs' indications is also consistent with the known relationship between drug
-%repurposing and side effects~\citep{Ye2014}.  Further research is needed to
+%repurposing and side effects~\cite{Ye2014}.  Further research is needed to
 %dissect relationships between genetic correlations, comorbidities, side
 %effects, protein and gene network topology, etc to be able to harness these and
 %integrate into drug repurposing techniques.  That, in combination with
 %expanding multi-celltype, multi-omic characterization of AD and its molecular
-%subtypes~\citep{Neff2021}, will herald a new generation of drugs for
+%subtypes~\cite{Neff2021}, will herald a new generation of drugs for
 %Alzheimer's disease.
 
 Some methodological limitations of our work that must be considered include
@@ -568,7 +545,7 @@ molecular abnormalities associated with AD pathogenesis.
 Given an AD risk gene set, the network structure of the human interactome, and
 another network formed by drugs and their targets (drug-target network), the
 topological proximity of a given drug to the AD risk gene set can be
-quantified\citep{Guney2016} and used as evidence for repurposing that drug for
+quantified\cite{Guney2016} and used as evidence for repurposing that drug for
 AD.  Rather than compiling a single AD risk gene set from multiple studies, we
 opted for evaluating the proximity of any drug separately for multiple AD risk gene
 sets and aggregate the multiple proximity values subsequently (see
@@ -579,8 +556,8 @@ this study.  The genes contained in each set are listed in Table~S1.
 
 We obtained AD risk gene sets from multiple TWAS.  Besides collecting AD risk genes from
 previous transcriptome- and proteome-wide association studies (TWAS, PWAS) we
-conducted our own applying the S-MultiXcan approach~\citep{Barbeira2018} to
-the two largest AD-GWAS to date~\citep{Schwartzentruber2021,Wightman2021}.
+conducted our own applying the S-MultiXcan approach~\cite{Barbeira2018} to
+the two largest AD-GWAS to date~\cite{Schwartzentruber2021,Wightman2021}.
 S-MultiXcan borrows statistical strength from multiple tissue types; we used a
 predictive model of gene expression built on all tissues of the GTEx data set
 or on only brain tissues.
@@ -597,7 +574,7 @@ between the only PWAS in our collection and all the other studies.
 
 \subsection{Drug-target network}
 
-We queried ChEMBL~\citep{Gaulton2017} (v29, July 2021) for phase 3 and 4 drugs
+We queried ChEMBL~\cite{Gaulton2017} (v29, July 2021) for phase 3 and 4 drugs
 and those of their targets that satisfied the following conditions: (1) the
 target is a human protein (2) its average $-\log_{10}\mathrm{Activity}$ or
 $p\mathrm{Activity}$ is $\ge 5$, which corresponds to $\le 10 \mu M$
@@ -665,7 +642,7 @@ The $r_l(k, i)$ notation emphasizes the facts that
 \subsection{CMap analyses}
 
 Since there are several implementations of CMap (Connectivity Map) analysis was carried out with several tools.  First, we used
-\url{https://clue.io/} \citep{Lamb2006} and, for each drug, averaged
+\url{https://clue.io/} \cite{Lamb2006} and, for each drug, averaged
 ``norm\_cs'',
 the normalized connectivity scores.  Second, we used L1000CDS$^2$ at
 \url{https://maayanlab.cloud/L1000CDS2} and the averaged ``score'' variable.
@@ -676,7 +653,7 @@ Third, we used... TODO: ask Sudhir what implementation he used.
 As Fig.~\ref{fig:workflow} shows, we aggregated 8 lists of network
 proximity-ranked drugs into a single list with rank aggregation algorithms.
 We performed rank aggregation with the TopKLists R package
-%\citep{Schimek2015}
+%\cite{Schimek2015}
 several times, each time with different algorithm.  Then we assessed those
 algorithm's performance with Modified Kendall Distance and found the MC3
 algorithm to perform the best (Fig.~S\ref{fig:kendall-dist}).  Finally, we
@@ -688,7 +665,7 @@ We tested whether our selected drugs can rescue molecular phenotypes relevant
 to Alzheimer's disease including tau phosphorylation, A$\beta$1-42 clearance,
 A$\beta$ secretion, A$\beta$ toxicity, lipopolysaccharide (LPS)-induced
 neuroinflammation, cell death due to trophic factor withdrawal and neurite
-outgrowth and neurogenesis~\citep{Varma2020,Desai2022a}. In all assays,
+outgrowth and neurogenesis~\cite{Varma2020,Desai2022a}. In all assays,
 described in the following subsections, cells treated with drugs were compared to either the vehicle
 control (VC) or lesion control.
 %was performed in GraphPad Prism. Group differences
@@ -715,7 +692,7 @@ saturating drug concentration and define fold change as $\mathrm{FC}_y = y_1 /
 y_0$ (Fig~S\ref{fig:prior-posterior-fit-H102}).  We chose a gamma prior density for the fold change as
 \begin{equation}
   \label{eq:priors}
-  \mathrm{FC}_y &\sim& \Gamma(\alpha = 5, \beta = 5),
+  \mathrm{FC}_y \sim \Gamma(\alpha = 5, \beta = 5),
 \end{equation}
 and performed Bayesian estimation of the posterior density of the fold change
 using default settings of the Markov chain Monte Carlo sampler implemented by
@@ -790,7 +767,7 @@ determined by immunosorbent assay from Mesoscale Discovery
 
 \subsubsection{LPS-induced neuroinflammation}
 
-The murine microglial cell line BV2 was cultivated in Dulbeccoâ€™s modified
+The murine microglial cell line BV2 was cultivated in Dulbecco¿s modified
 Eagle's medium (DMEM) medium supplemented with 10\% fetal calf serum (FCS),
 1\% penicillin/streptomycin, and 2 mM l-glutamine (culture medium). For LPS
 stimulation assay, 5000 BV2 cells per well (uncoated 96-well plates) were
@@ -812,7 +789,7 @@ C57BL/6JRccHsd mice as previously described. Cells were seeded in
 poly-D-lysine pre-coated 96-well plates at a density of 2.6 $\times$ 104
 cells/well in medium (Neurobasal,
 2\% B-27, 0.5 mM glutamine, 25 $\mu$M glutamate,
-1\% Penicillinâ€“Streptomycin). Directly on DIV1, the drug of interest or VC was
+1\% Penicillin¿Streptomycin). Directly on DIV1, the drug of interest or VC was
 applied. On DIV2, 10 $\mu$M Bromodeuxyuridine (BrdU; B5002 Sigma Aldrich) was
 added and cells were fixed after additional 24h. Cells were permeabilized with
 0.1\% Triton-X and incubated with primary Beta Tubulin Isotype III (T8660,
@@ -836,14 +813,218 @@ was carried out. On DIV8, a full medium exchange to B-27 free medium
 (Neurobasal, 0.5 mM glutamine, and 1\% penicillin-streptomycin) was performed
 and drug compounds were applied thereafter. The experiment was carried out
 with six technical replicates per condition, and vehicle-treated cells
-served as control. After 28 hours on B-27â€“free medium, cells were subjected to
+served as control. After 28 hours on B-27¿free medium, cells were subjected to
 YO-PRO/propidium iodide (PI) and MTT as well as lactate dehydrogenase (LDH)
 assay.
 
 
-\bibliography{repurposing-ms}
 
-\newpage
+
+\backmatter
+
+\bmhead{Supplementary information}
+
+If your article has accompanying supplementary file/s please state so here. 
+
+Authors reporting data from electrophoretic gels and blots should supply the full unprocessed scans for key as part of their Supplementary information. This may be requested by the editorial team/s if it is missing.
+
+Please refer to Journal-level guidance for any specific requirements.
+
+\bmhead{Acknowledgements}
+
+Acknowledgements are not compulsory. Where included they should be brief. Grant or contribution numbers may be acknowledged.
+
+Please refer to Journal-level guidance for any specific requirements.
+
+\section*{Declarations}
+
+Some journals require declarations to be submitted in a standardised format. Please check the Instructions for Authors of the journal to which you are submitting to see if you need to complete this section. If yes, your manuscript must contain the following sections under the heading `Declarations':
+
+\begin{itemize}
+\item Funding
+\item Conflict of interest/Competing interests (check journal-specific guidelines for which heading to use)
+\item Ethics approval and consent to participate
+\item Consent for publication
+\item Data availability 
+\item Materials availability
+\item Code availability 
+\item Author contribution
+\end{itemize}
+
+\noindent
+If any of the sections are not relevant to your manuscript, please include the heading and write `Not applicable' for that section. 
+
+%%===================================================%%
+%% For presentation purpose, we have included        %%
+%% \bigskip command. Please ignore this.             %%
+%%===================================================%%
+\bigskip
+\begin{flushleft}%
+Editorial Policies for:
+
+\bigskip\noindent
+Springer journals and proceedings: \url{https://www.springer.com/gp/editorial-policies}
+
+\bigskip\noindent
+Nature Portfolio journals: \url{https://www.nature.com/nature-research/editorial-policies}
+
+\bigskip\noindent
+\textit{Scientific Reports}: \url{https://www.nature.com/srep/journal-policies/editorial-policies}
+
+\bigskip\noindent
+BMC journals: \url{https://www.biomedcentral.com/getpublished/editorial-policies}
+\end{flushleft}
+
+\clearpage
+\section{Tables}
+
+\begin{table}[h]
+\footnotesize
+\begin{tabular}{rrll}
+\toprule
+AD risk gene set          &Size & Description & Reference  \\
+\hline                     
+knowledge            &  27 & curated AD risk genes from the DISEASES database & \cite{PletscherFrankild2015} \\
+TWAS2+               &  32 & genes supported by $\ge 2$ AD-TWAS/PWAS & \cite{Gerring2020,Baird2021,Jansen2019,Kunkle2019,Wingo2021,Schwartzentruber2021}  \\
+agora2+              &  64 & genes supported by $\ge 2$ Agora studies & https://agora.adknowledgeportal.org \\
+AD DE APOE3-APOE3    & 277 & AD vs control DEGs: APOE3/APOE3 background & \cite{Taubes2021} \\
+AD DE APOE4-APOE4    & 274 & AD vs control DEGs: APOE4/APOE4 background & \cite{Taubes2021} \\
+APOE3-4 DE neuron    &  46 & APOE4 vs APOE3 DEGs: iPSC-derived neurons& \cite{Lin2018} \\
+APOE3-4 DE astrocyte & 128 & APOE4 vs APOE3 DEGs: iPSC-derived astrocytes& \cite{Lin2018} \\
+APOE3-4 DE microglia & 140 & APOE4 vs APOE3 DEGs: iPSC-derived microglia& \cite{Lin2018} \\
+\bottomrule
+\end{tabular}
+\caption{
+AD risk gene sets used as inputs to drug repurposing screens of this study.  For
+the TWAS2+ gene set we combined gene sets from the prior published TWAS with
+the gene set from our own TWAS (Methods).  The genes in each set are listed in
+Table~S\ref{tab:genes-in-genesets}.
+}
+\label{tab:genesets}
+\end{table}
+
+\begin{sidewaystable}[h]
+\footnotesize
+\begin{tabular}{rr|ccc}
+%\begin{tabular}{p{0.2\textwidth} | p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+%\begin{tabular}{l | p{3cm} p{3cm} p{3cm}}
+\toprule
+&                                              Name &                           Arundine &              Chenodiol &                          Cysteamine \\
+\midrule
+  \multirow{3}{*}{General} & Synonym & 3,3-Diindolylmethane & Chenodeoxycholic acid & Cystagon \\
+  & ChEMBL ID & CHEMBL446452 &           CHEMBL240597 &                           CHEMBL602 \\
+  & Approved indications &          cervical cancer, phase 3 & cholesterol gallstones &            cystinosis, eye diseases \\
+\midrule
+  \multirow{2}{*}{Target genes} & In present screen &    RGS4 &            RGS4, SLC10A2 &                         RGS4, CYP3A4 \\
+                                & Additional targets$^\ast$ &    AHR \cite{Rzemieniec2019} &             &                          \\
+\midrule
+  \multirow{3}{*}{Relevance to AD}
+  & Rank (present screen)  &                                  4 &                     28 &                                  51 \\
+  & \emph{In vivo} evidence & \cite{DeMiranda2013,DeMiranda2014} &       \cite{Keene2002} &                \cite{Cicchetti2019} \\
+\end{tabular}
+\caption{
+Selected drugs ranked high by the present computational screening of 2413
+drugs from ChEMBL. ChEMBL Ranking was established based on a given drug¿s
+permeability across the blood-brain barrier, network proximity of drug-target
+and AD risk genes and their prior evidence for roles in AD pathogenesis.
+Notes: Targets in the present screen were taken from ChEMBL filtering for
+human experiments. $^\ast$``Additional targets '' refer to those we found
+manually in the biomedical literature and are not in the drug-target network
+used for our screen.
+%$^\ast$Cysteamine-HCl (CHEMBL1256137) was ranked 323 and targets GEMI, LMNA, PLK1, BLM, NF2L2, and TYDP1 (ChEMBL, human).
+}
+\label{tab:selected-drugs}
+\end{sidewaystable}
+
+\clearpage
+%\newpage
+\section{Figures}
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/Fig1.png}
+\caption{
+  A) Workflow of computational drug repurposing in Alzheimer's disease (AD).
+  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5
+  are plausible candidate AD drugs because they target either directly or
+  indirectly an AD risk gene (i.e a gene mechanistically involved in AD), respectively .  On the other
+  hand, drugs 1--3 only target genes at least three interactions away from AD
+  genes and therefore are likely not plausible candidate AD drugs.
+}
+\label{fig:workflow}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[]{figures/proximity-ranked-drugs.pdf}
+
+C
+
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\caption{Scoring and ranking 2413 drugs based on their network proximity to
+  various AD risk gene sets.  (A-B) Eight AD risk gene sets were input to the workflow.
+  The separate drug rankings across imput AD risk gene sets were aggregated into a
+  single final ranking, which is color coded (yellow: top-ranked drugs, blue:
+  bottom-ranked drugs).  Note that the area delimited by red rectangle in A)
+  is expanded into B).
+}
+\label{fig:screen}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\caption{
+Network proximity-based rediscovery of drugs in phase 1--4 clinical trials for
+AD and 35 other disease indications.  Disease indications written on top of
+individual plots.  Orange ticks: drugs that are in phase 1 or more advanced
+clinical study for the given indication. Blue dots: rediscovery rate
+(Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked by network
+proximity, relative to that for the bottom-$1808$ drugs.  Rediscovery rate of
+$>1$ means that top-ranked drugs tend to be those that are in phase 1--4
+clinical trials for the given indication; these drugs are marked by orange
+symbols above the $x$ axes.
+}
+\label{fig:ad-drug-rediscovery-multi}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
+\caption{Hypothetical molecular mechanisms linking drugs selected for
+  experimental validation (red nodes), targets
+  (salmon nodes) and AD risk genes (light blue nodes).  Targets interact with AD
+  genes via mediators (salmon) like UBC (ubiquitin C), EGFR, or CALM1
+  (calmodulin 1).  Such target$\rightarrow$mediator$\rightarrow$AD risk gene paths
+  are highlighted with colored, thick edges.
+}
+\label{fig:drug-AD-genes-network}
+\end{figure}
+
+\begin{figure}[h]
+%\includegraphics[]{figures/H102-posterior-assays-experiments.pdf}
+%\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
+A
+
+\includegraphics[scale=0.45]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors.pdf}
+
+B
+
+\includegraphics[scale=0.45]{../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg-TUDCA.pdf}
+\caption{A) Assessing the hypothetical neuroprotective effect of Arundine, Cysteamine and TUDCA in 33 cell-based assays from 9
+  experiments, labeled as (a)--(i).  Green bars indicate significant evidence
+  for protective effect as quantified by the Bayes factor, which is the posterior odds
+  of protective and neutral effect.  Blank (white) slots indicate either that the experiment was not
+  performed on the drug or that model fit was poor.
+  B) Effect of TUDCA on the longitudinal trajectory of plasma Nfl level
+  measured \emph{in vivo} in wild type (WT) or transgenic 5xFAD mice.  Note
+  the inverted U shape of the average Nfl trajectory (quadratic fit) in saline
+  treated WT and 5xFAD mice and the flattened trajectory in TUDCA treated
+  5xFAD.
+}
+\label{fig:cell-based-assays}
+\end{figure}
+
+%\newpage
+
+\clearpage
+\begin{appendices}
 
 \section*{Supplementary Material}
 
@@ -858,28 +1039,32 @@ assay.
 \renewcommand{\figurename}{Figure S} % nice
 \makeatother
 
-\begin{table}[p]
-  See file Table-S1.xlsx
+\begin{table}[h]
+  \begin{tabular}{p{0.8\textwidth}}
+  See file Table-S1.xlsx \\
+  \end{tabular}
 \caption{
   Genes of the AD risk gene sets used as inputs to the present computational drug screen.
 }
 \label{tab:genes-in-genesets}
 \end{table}
 
-\begin{table}[p]
-  See file Table-S2.csv
+\begin{table}[h]
+  \begin{tabular}{p{0.8\textwidth}}
+  See file Table-S2.csv \\
+  \end{tabular}
 \caption{
   The 2413 drugs ranked according to their network proximity to each of the eight
   AD risk gene sets used as input.  The drugs' final, aggregate rank is also shown
   as well as their ChEMBL ID, standard InChI, indication class, and
   blood-brain-barrier permeability taken (if available) from the BBB
-  database~\citep{Meng2021}.  Moreover, the UniProt name of each drug's
+  database~\cite{Meng2021}.  Moreover, the UniProt name of each drug's
   targets is also indicated.
 }
 \label{tab:ranked-drugs}
 \end{table}
 
-\begin{table}[p]
+\begin{table}[h]
 \begin{tabular}{ll|rrrrrrrr}
 \toprule
        &       &   \multicolumn{8}{c}{AD risk gene set$^\ast$} \\
@@ -917,7 +1102,7 @@ CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
 \label{tab:mediators}
 \end{table}
 
-\begin{table}[p]
+\begin{table}[h]
 \begin{tabular}{cc||c|c|c}
 \toprule
                        &                     &  \multicolumn{3}{c}{target}        \\
@@ -946,7 +1131,7 @@ shortest path length   & AD risk gene set         &  \multicolumn{3}{c}{AD risk 
 \label{tab:nearest-ADgenes}
 \end{table}
 
-\begin{table}[p]
+\begin{table}[h]
 \begin{tabular}{lll}
 \toprule
 experiment & assay & ideal effect  \\
@@ -962,39 +1147,39 @@ LPS neuroinflammation (BV2 cells) & IFN-$\gamma$ & decrease \\
  & IL-6 & decrease \\
  & KC/GRO & decrease \\
  & TNF-$\alpha$ & decrease \\
-\cline{1-3}
+\hline
 A$\beta$ toxicity (primary neurons) & MTT & increase \\
-\cline{1-3}
+\hline
 A$\beta$ release (H4 cells) & A$\beta$38 & decrease \\
  & A$\beta$40 & decrease \\
  & A$\beta$42 & decrease \\
-\cline{1-3}
+\hline
 A$\beta$ clearance (BV2 cells) & A$\beta$42 SN & decrease \\
  & A$\beta$42 Ly & increase \\
-\cline{1-3}
+\hline
 Trophic factor withdrawal (primary neurons) & PI & decrease \\
  & YOPRO & decrease \\
  & MTT & increase \\
  & LDH & decrease \\
-\cline{1-3}
+\hline
 Tau phosphorylation & Tau & increase \\
  & pTau (T231) & decrease \\
  & pT/T ratio & decrease \\
-\cline{1-3}
+\hline
 Neurite outgrowth (primary neurons) & $\sum$ neurite area & increase \\
  & branch points & increase \\
  & neurogenesis & increase \\
  & longest neurite & increase \\
-\cline{1-3}
+\hline
 A$\beta$ clearance (iPSC) & pHrodo-4h & increase \\
  & supernatant & decrease \\
-\cline{1-3}
+\hline
 LPS neuroinflammation (iPSC) & IL-1$\beta$ & decrease \\
  & IL-6 & decrease \\
  & IL-8 & decrease \\
  & MTT & decrease \\
  & TNF-$\alpha$ & decrease \\
-\cline{1-3}
+\hline
 \bottomrule
 \end{tabular}
 \caption{
@@ -1005,8 +1190,7 @@ LPS neuroinflammation (iPSC) & IL-1$\beta$ & decrease \\
 \label{tab:protect-sign}
 \end{table}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
 \includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
 \caption{
@@ -1016,16 +1200,7 @@ resulting from each network proximity based drug screen.
 \label{fig:rank-diff}
 \end{figure}
 
-%\begin{figure}[p]
-%\includegraphics[scale=0.28]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/prox-z-scatterplot_matrix.png}
-%\caption{
-%Z score of 2413 drugs (points) based on various input AD risk gene sets (rows and
-%columns).
-%}
-%\label{fig:prox-z-scatterplot-m}
-%\end{figure}
-
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
 \caption{
 Similarity of TWA/PWA studies on AD in terms of shared genes.
@@ -1033,8 +1208,7 @@ Similarity of TWA/PWA studies on AD in terms of shared genes.
 \label{fig:twas-clustermap}
 \end{figure}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.6]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-input-AD-sets.pdf}
 \caption{
 Eight AD risk gene sets were input to the workflow.
@@ -1044,8 +1218,7 @@ Eight AD risk gene sets were input to the workflow.
 \label{fig:gset-jaccard}
 \end{figure}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.6]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
 \caption{
 The network proximity scores of all
@@ -1055,34 +1228,7 @@ The network proximity scores of all
 \label{fig:gset-corr}
 \end{figure}
 
-
-%\begin{figure}[p]
-%\includegraphics[scale=0.6]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-apoe4apoe4.png}
-%\caption{
-%Drug repurposing scores obtained by network proximity approach and CMap
-%}
-%\label{fig:proxim-cmap}
-%\end{figure}
-
-%\begin{figure}[p]
-%\includegraphics[scale=0.4]{../../notebooks/2021-11-30-proximity-cmap/named-figure/cmap-proxim-celltype-apoe4-apoe4.png}
-%\caption{
-%Drug repurposing scores obtained by network proximity approach and CMap in
-%given the cell type of the CMap expression profiling.
-%}
-%\label{fig:proxim-cmap-celltype}
-%\end{figure}
-
-%\begin{figure}[p]
-%\includegraphics[scale=0.6]{../../notebooks/2021-10-04-CMap-discussion/named-figure/cmap-tools-consistency.pdf}
-%\caption{
-%Results under different implementations of CMap.
-%TODO: remove Sudhir's?
-%}
-%\label{fig:cmap-cmap}
-%\end{figure}
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.4]{../../results/2022-01-14-rank-aggregation/kendall-distance.png}
 \caption{
 Several rank aggregation algorithms' performance assessed by modified Kendall
@@ -1091,14 +1237,7 @@ distance.
 \label{fig:kendall-dist}
 \end{figure}
 
-%\begin{figure}[p]
-%\includegraphics[scale=0.6]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
-%\caption{
-%  Computational validation. }
-%\label{fig:ad-drug-rediscovery}
-%\end{figure}
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-gsets-hist_noHCl.pdf}
 \caption{
   Shortest path length distribution from a given drug target (columns) to a given AD risk gene
@@ -1107,21 +1246,7 @@ distance.
 \label{fig:shortest-path-lengths}
 \end{figure}
 
-
-%\begin{figure}[p]
-%\includegraphics[scale=0.5]{../../notebooks/2022-09-21-cell-based-assays/named-figure/cell-based-assays-simplified-arundine.pdf}
-%\caption{Results of cell-based assays: testing AD-relevant protective effects
-%  of Arundine and its analogs C-DIM12 and DIM-C-pPhOCH3.
-%  Drug effect in a given assay is either statistically not significant (n.s,
-%  $p \ge 0.05$, yellow), or significantly protective (green) or adverse (red).
-%  White cells indicate that the corresponding drug was not tested in the given
-%  assay.  For the description of various assay classes from A) to G) see the
-%  legend of~Fig.~\ref{fig:cell-based-assays}.
-%}
-%\label{fig:arundine-analogs}
-%\end{figure}
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[height=0.5\textheight]{../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/sigmoid-2.png}
 \caption{Dependency graph of the Bayesian nonlinear regression model used to
   fit dose-response ($x$--$y$) data from cell-based assays.
@@ -1133,8 +1258,7 @@ distance.
 \label{fig:model-2-plate}
 \end{figure}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[]{figures/prior-posterior-fit-H102.pdf}
 \caption{Estimating the prior and posterior probability of the protective, neutral
   and adverse effect of a drug in a cell-based assay.  (A) Sigmoid regression
@@ -1158,8 +1282,7 @@ distance.
 \label{fig:prior-posterior-fit-H102}
 \end{figure}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/violin-posterior-pdf-legend.pdf}
 \caption{Posterior probability density of drug-induced fold change in
   bioactivity across three candidate
@@ -1176,8 +1299,7 @@ distance.
 \label{fig:violin-posterior-assays}
 \end{figure}
 
-
-\begin{table}[p]
+\begin{table}[h]
 \begin{tabular}{lll}
 \toprule
 name & ChEMBL ID & standard InChI \\
@@ -1193,8 +1315,7 @@ C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
 \label{tab:arundine-analogs}
 \end{table}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.5]{../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/violin-posterior-pdf-legend.pdf}
 \caption{Posterior probability density of drug-induced fold change in
   bioactivity for Arundine and its two analogs.  For details see
@@ -1203,8 +1324,7 @@ C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
 \label{fig:violin-posterior-assays-dim}
 \end{figure}
 
-
-\begin{figure}[p]
+\begin{figure}[h]
 \includegraphics[scale=0.5]{../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
 \caption{The posterior probability of protective, neutral and adverse effect
   for Arundine and its two analogs.  For details see
@@ -1213,6 +1333,19 @@ C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
 \label{fig:bar-posterior-assays-dim}
 \end{figure}
 
+\end{appendices}
 
+\clearpage
+%%===========================================================================================%%
+%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+%% system, please include the references within the manuscript file itself. You may do this  %%
+%% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
+%% file, and delete the associated \verb+\bibliography+ commands.                            %%
+%%===========================================================================================%%
+
+%\bibliography{sn-bibliography}% common bib file
+\bibliography{repurposing-ms}
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
 
 \end{document}
