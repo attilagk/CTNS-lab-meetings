@@ -1,0 +1,87 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Discussion: repurposing Arundine and Chenodiol/TUDCA to Alzheimer's
+disease}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}[label=network]{Network proximity-based screen for drug repurposing
+  opportunities}
+\includegraphics[width=1.0\textwidth]{../../repurposing-ms/figures/drug-target-mediator-AD_gene.pdf}
+\end{frame}
+
+\begin{frame}{Cell-based assays: old presentation}
+\begin{center}
+\includegraphics[scale=0.45]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart-e2l_textbox-avg.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}[plain]%{Cell-based assays: new presentation}
+\begin{center}
+\includegraphics[scale=0.35]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Longitudinal measurement of Nfl \emph{in vivo}}{Future analyses:
+    estimate curvature of quadratic fit}
+\includegraphics[scale=0.5]{../../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg-TUDCA.pdf}
+\end{frame}
+
+\againframe{network}
+
+\begin{frame}{Rediscovery of anti-cancer drugs}
+\includegraphics[scale=0.2]{../../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
