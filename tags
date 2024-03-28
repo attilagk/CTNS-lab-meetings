@@ -69,6 +69,7 @@ Discussion	repurposing-ms/repurposing-ms-v2.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v4.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v5.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v6.tex	/^\\section{Discussion}$/;"	s
+Discussion	repurposing-ms/repurposing-ms.tex	/^\\section{Discussion}$/;"	s
 Drug target network	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Drug-target network}$/;"	b
 Drug target network	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Drug-target network}$/;"	b
 Drug target network	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Drug-target network}$/;"	b
@@ -108,6 +109,7 @@ Gene gene interaction network	repurposing-ms/repurposing-ms.tex	/^\\subsection{G
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
+Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Introduction	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 Introduction	repurposing-ms/repurposing-ms.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
@@ -179,7 +181,6 @@ Supplementary Material	repurposing-ms/repurposing-ms-supp.tex	/^\\section*{Suppl
 Supplementary Material	repurposing-ms/repurposing-ms-v1.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v11.tex	/^\\section*{Supplementary Material}$/;"	s
 Supplementary Material	repurposing-ms/repurposing-ms-v2.tex	/^\\section*{Supplementary Material}$/;"	s
-Supplementary Material	repurposing-ms/repurposing-ms.tex	/^\\section*{Supplementary Material}$/;"	s
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b

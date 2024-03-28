@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: repurposing-ms.aux
 The style file: sn-mathphys-num.bst
@@ -21,52 +21,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: repurposing-ms.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for "key1"
-Warning--I didn't find a database entry for "key2"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 49 entries,
+You've used 64 entries,
             7480 wiz_defined-function locations,
-            1638 strings with 73421 characters,
-and the built_in function-call counts, 1310493 in all, are:
-= -- 143896
-> -- 9650
-< -- 892
-+ -- 8357
-- -- 4366
-* -- 126028
-:= -- 266052
-add.period$ -- 50
-call.type$ -- 49
-change.case$ -- 255
-chr.to.int$ -- 2524
-cite$ -- 49
-duplicate$ -- 10318
-empty$ -- 110143
-format.name$ -- 12909
-if$ -- 268736
+            1770 strings with 77839 characters,
+and the built_in function-call counts, 1370006 in all, are:
+= -- 151602
+> -- 10174
+< -- 1105
++ -- 10097
+- -- 4546
+* -- 129811
+:= -- 278077
+add.period$ -- 67
+call.type$ -- 64
+change.case$ -- 347
+chr.to.int$ -- 3070
+cite$ -- 64
+duplicate$ -- 11021
+empty$ -- 113698
+format.name$ -- 13310
+if$ -- 282536
 int.to.chr$ -- 1
-int.to.str$ -- 61
+int.to.str$ -- 93
 missing$ -- 0
-newline$ -- 2738
-num.names$ -- 245
-pop$ -- 8913
+newline$ -- 2973
+num.names$ -- 320
+pop$ -- 9266
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 284
 quote$ -- 0
-skip$ -- 54534
+skip$ -- 58787
 stack$ -- 0
-substring$ -- 261071
-swap$ -- 5404
-text.length$ -- 571
+substring$ -- 268293
+swap$ -- 5768
+text.length$ -- 780
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2115
+type$ -- 2692
 warning$ -- 0
-while$ -- 7328
+while$ -- 7804
 width$ -- 0
-write$ -- 3030
-(There were 2 warnings)
+write$ -- 3355

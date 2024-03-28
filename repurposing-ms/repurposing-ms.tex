@@ -207,7 +207,7 @@ knowledge-based source and seven multi-omic sources,
 Table~\ref{tab:genesets}).  Thus, given each AD module, we obtained a ranking
 of the 2413 drugs according to network proximity such that drugs with the
 strongest potential efficiacy for AD were at or near the top (rank 1)
-(Fig.~\ref{fig:workflow}A, Fig.~\ref{fig:screen}A-B).
+(Fig.~\ref{fig:workflow}A, Fig.~\ref{fig:screen}A-B, Table~S\ref{tab:ranked-drugs}).
 
 Although the eight input AD risk gene sets had little overlap with each other
 (Fig.~S\ref{fig:gset-jaccard}), the resulting eight vectors of network proximity had
@@ -229,23 +229,26 @@ input-specific rankings (Fig.~\ref{fig:screen}B, Fig.~S\ref{fig:rank-diff}).
 
 To validate our network-based drug screen, we asked to what extent the highly
 ranked candidate AD drugs were enriched in drugs already investigated in or
-approved for treatment of AD.  To quantify such enrichment, we defined \emph{rediscovery
-rate} (Methods, Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked
-by network proximity, relative to that for the bottom-$1808$ drugs.  The top
-left panel of Fig.~\ref{fig:ad-drug-rediscovery-multi} shows that the
-rediscovery rate for AD in the top-$k$ drugs was about $2-3$-fold greater than
-that for the bottom drugs depending on the value of $k$.  This finding
-suggests that our computational approach to AD drug discovery yields both
-novel drug candidates as well as those that with a biological rationale
-justifying their current status as approved AD drugs or testing in prior human
-clinical trials, thereby providing a measure of methodological validation of
-the network proximity-based drug screening approach.
+approved for treatment of AD.  To quantify such enrichment, we defined
+\emph{rediscovery rate} (Methods, Eq.~\ref{eq:rediscovery-rate}) as a function
+of the number $k$, delineating the set of top-$k$ drugs.  Rediscovery rate
+compares the fraction of drugs investigated for AD in the top-$k$ drugs to
+that in the bottom 1000 drugs, while taking into account what stage of
+clinical study each drug is in for the treatment of AD.
+Fig.~\ref{fig:screen}C shows that the rediscovery rate for AD in the top-$k$
+drugs was about $2-3$-fold greater than that for the bottom drugs depending on
+the value of $k$.  This finding suggests that our computational approach to AD
+drug discovery yields both novel drug candidates as well as those that with a
+biological rationale justifying their current status as approved AD drugs or
+testing in prior human clinical trials, thereby providing a measure of
+methodological validation of the network proximity-based drug screening
+approach.
 
 We then re-evaluated rediscovery rate using the same, network proximity-based,
-drug ranking as above by assessing the rediscovery of drugs for common
-indications other than for AD.  Besides AD, there was
+drug ranking as above by assessing the rediscovery of drugs for the treatment
+of several common indications other than for AD.  Besides AD, there was
 sufficient data (i.e~at least 100 drugs approved or in phase $\ge 1$ clinical
-trials) for 35 common indications (Fig.~\ref{fig:ad-drug-rediscovery-multi}).
+trials) for 35 common indications (Fig.~S\ref{fig:ad-drug-rediscovery-multi}).
 Interestingly, several, but not all, of these indications showed a similar
 enrichment pattern to that derived earlier for AD.  We observed that approved
 and experimental drugs for various cancers especially overlapped with
@@ -309,43 +312,56 @@ activity~\cite{Besouw2013,Paul2019}.
 We evaluated the ability of Chenodiol, Arundine and Cysteamine to ameliorate
 molecular abnormalities relevant to AD in cell culture-based phenotypic
 assays. In these studies, we used TUDCA, the taurine conjugated epimer of
-chenodiol/chenodeoxycholic acid as prior studies have shown that TUDCA may
+Chenodiol as prior studies (TODO: reference) have shown that TUDCA may
 exert a neuroprotective role. We also chose to test the hydrochloride salt of
 cysteamine (cysteamine hydrochloride) as this drug has been approved by the
 FDA for the treatment of corneal cystine crystal deposits in patients with
-cystinosis~\cite{key1,key2}{Liang2021,Gahl2002}. Cysteamine hydrochloride has  also been shown to improve renal
-function in pediatric patients with cystinosis~\cite{key1,key2}{Markello1993}.
+cystinosis~\cite{Liang2021,Gahl2002}. Cysteamine hydrochloride has  also been shown to improve renal
+function in pediatric patients with cystinosis~\cite{Markello1993}.
 
-By fitting a Bayesian nonlinear regression model
-(Fig.~S\ref{fig:model-2-plate}) onto the measured dose-response relationships,
-we estimated the fold change
-(Fig.~S\ref{fig:prior-posterior-fit-H102},~S\ref{fig:violin-posterior-assays})
-and, based on that,
-the posterior probability of protective effect for each
-drug and assay (Fig.~\ref{fig:cell-based-assays}A) and, after aggregating assays, for each drug and
-experiment (Fig.~\ref{fig:cell-based-assays}B).  This revealed that TUDCA
-and Arundine, but not Cysteamine, are protective with high probability in
-several assays. On the other hand, each drug was found to have an adverse
-effect with high probability in several other assays.
+By modeling each measured dose-response relationship (Methods: Cell-based
+assays, section~\ref{sec:methods-cba}), we evaluated the Bayes
+factor, defined as the posterior odds of protective and neutral effect.  We
+then used $2 \times \log$ of the Bayes factor to quantify the evidence for
+protective effect across drugs and assays (Fig.~\ref{fig:cell-based-assays}A).
+Firstly, we found strong to very strong evidence that both Arundine and TUDCA
+protect iPSCs in four of five assays of LPS-induced neuroinflammation
+(namely in the IL-1$\beta$, IL-6, IL-8 and TNF-$\alpha$ assay,
+Fig.~\ref{fig:cell-based-assays}Af).  Secondly, moderate evidence suggested
+that Arundine also protects BV2 cells in two assays of LPS-induced
+neuroinflammation (IL-12p70 and IL-5 assays,
+Fig.~\ref{fig:cell-based-assays}Ae).  Thirdly, moderate to very strong
+evidence supported that Arundine and TUDCA, respectively, facilitate the
+clearance of A$\beta$ peptide in BV2 cells (A$\beta$42 Ly assay,
+Fig.~\ref{fig:cell-based-assays}Aa).  Fourthly, we found moderate evidence
+that TUDCA protects H4 cells by inhibiting the release of two of three
+A$\beta$ species (A$\beta$40, A$\beta$42, Fig.~\ref{fig:cell-based-assays}Ac).
 
-Fig.~\ref{fig:cell-based-assays}A-~\ref{fig:cell-based-assays}B shows that both
-TUDCA and Arundine exhibited strongly protective effects in A$\beta$ clearance
-(BV2 cells) and LPS induced neuroinflammation (iPSCs).  Moreover, TUDCA also
-proved to be protective in A$\beta$ release (H4 cells), whereas Arundine
-showed a beneficial effect in lowering LPS induced neuroinflammation (BV2
-cells).  Substantial adverse effects were inferred for TUDCA and Arundine in
-A$\beta$ clearance (iPSCs) and for all three drugs in LPS induced
-neuroinflammation (BV2 cells).
+In a smaller study, which included only 15 of the 33 cell-based assays, we
+examined two analogs of Arundine (Table~S\ref{tab:arundine-analogs}).  We
+found that the analogs did not improve the performance of Arundine
+(Fig.S~\ref{fig:violin-posterior-assays-dim},
+S\ref{fig:bar-posterior-assays-dim}, S\ref{fig:cell-based-assays-dim}) in the
+15 assays, which notably did not include the ones Arunden performed well in
+the experiments shown in Fig.~\ref{fig:cell-based-assays}A.
 
-In a smaller study, which included 15 of the 33 cell-based assays, we examined
-two analogs of Arundine (Table~S\ref{tab:arundine-analogs}).  We found that
-these analogs had mostly adverse or neutral effects in contrast to the
-typically protective or neutral effects of Arundine
-(Fig.S~\ref{fig:violin-posterior-assays-dim}-\ref{fig:bar-posterior-assays-dim}).
-This results suggests a highly specific structure-activity relationship for
-Arundine. This in turn suggests that the protective effects of Arundine and
-TUDCA we discovered above may be rare in the vast chemical space of
-drug-like compounds.
+TODO: in Discussion, explain the benefits of our Bayesian approach: no need
+for adjustment of multiple hypothesis testing.
+
+We further studied TUDCA's potential utility for AD treatment \emph{in vivo}
+in the 5xFAD trangenic mouse model of A$\beta$ pathology by probing
+Nfl, a known biomarker of
+axonal degeneration.  We measured plasma Nfl longitudinally at 4 sequential
+time points after saline injection and found an inverted U-shaped average Nfl
+trajectory, which we observed in both wild type (WT) and 5xFAD mice
+(Fig.~\ref{fig:cell-based-assays}B left and center panel, respectively),
+although the latter had expectedly higher baseline.  In saline-treated 5xFAD
+mice, the log-transformed trajectory displayed an initial increase by $38.4 \pm 9.8 \%$ until
+week 8, relative to baseline Nfl at week 0.  In TUDCA-treated 5xFAD, however,
+the aforementioned relative increase was reduced by $-34.0 \pm 13.8 \%$
+relative to baseline ($p=0.02$, $H_0$: zero reduction w.r.t saline).  Thus,
+TUDCA effectively abolished the relative increase of Nfl flattening the
+inverted U-shaped trajectory (Fig.~\ref{fig:cell-based-assays}B right).
 
 \subsection{Hypothetical molecular pathways linking selected drugs to AD}
 
@@ -366,16 +382,16 @@ where \emph{mediator} is a gene transmitting the drug's presumed effect between 
 and an AD risk gene (Fig.~\ref{fig:drug-AD-genes-network} thick, colored edges).
 The mediator interacting with the largest number of AD risk genes is UBC encoding Ubiquitin C
 (Fig.~\ref{fig:drug-AD-genes-network} green edges, Table
-S\ref{tab:mediators}). Mediator UBC interacts both with the Cysteamine target
+Mediator UBC interacts both with the Cysteamine target
 CYP3A4 and with the Chenodiol target SLC10A2.  Target CYP3A4 has several
 other mediators that interact with multiple AD risk genes: ubiquitin ligases STUB1
 and AMFR as well as PRKCA/PRKACA encoding subunits of protein kinase-C
-(Table S\ref{tab:mediators}, Fig.~\ref{fig:drug-AD-genes-network}).
+(Table Fig.~\ref{fig:drug-AD-genes-network}).
 
 Mediators for RGS4 include receptor tyrosine protein kinases EGFR and ERBB3,
 as well as CALM1 (calmodulin 1), COPB1 (coatomer protein complex subunit
 $\beta$), and genes encoding for various G protein subunits (Table
-S\ref{tab:mediators}, Fig.~\ref{fig:drug-AD-genes-network}).  Among these
+Fig.~\ref{fig:drug-AD-genes-network}).  Among these
 mediators EGFR interacts with the most AD risk genes, including well-established
 knowledge based AD risk genes of crucial relevance to AD: APP (amyloid precursor
 protein, amyloid-$\beta$), MAPT (tau), SNCA---$\alpha$-synuclein
@@ -403,6 +419,63 @@ Ca$^{2+}$-calmodulin, and (5) the coatomer complex.  We shall return to the
 relevance of these mechanisms to AD in the present Discussion.
 
 \section{Discussion}
+
+In this work, we present Chenodiol, its close analog TUDCA as well as Arundine
+as promising drug repurposing opportunities to AD.  Evidence for this comes
+from our network proximity analysis that ranked these drugs high, our data
+from several cell based assays relevant to AD, and, for TUDCA, our \emph{in
+vivo} Nfl measurements in the 5xFAD transgenic mouse model of AD.
+
+Detailed look (Fig~\ref{fig:drug-AD-genes-network},
+Table~S\ref{tab:nearest-ADgenes}) at the network paths between Chenodiol,
+Arundine and our diverse collection of AD genes reveal Regulator of G protein
+signaling 4 (RGS4) as a key target linking these drugs to AD.  RGS itself may
+be classified as an AD gene as it is differentially expressed in AD
+brains~\cite{Taubes2021}.  Moreover, previous analyses of gene networks as well
+as diverse transcriptomic and genomic data sets implicated RGS4 not only in
+AD~\cite{Gns2021,Chen2022b,Talwar2014} but also in Parkinson's
+disease~\cite{AhlersDannen2020} and
+schizophrenia~\cite{Chowdari2002,Schwarz2018}.
+
+RGS4 interacts with several AD genes either directly
+(Table~S\ref{tab:nearest-ADgenes}) or indirectly, through mediator genes
+(Fig~\ref{fig:drug-AD-genes-network}).  These interactions implicate several
+molecular pathways in the RGS4-dependent mechanism of action of Arundine and
+Chenodiol/TUDCA. These include two signalling pathways via the interaction of
+RGS4 with two receptor tyrosin kinase of the ErbB familys: the MAPK/ERK
+pathway via Epidermal growth factor receptor, or ErbB1 (EGFR), and the
+PI3K/AKT/mTOR pathway via ErbB3 (ERBB3).  EGFR and ErbB3 regulate cellular
+proliferation, differentiation and maturation in the nervous system and
+elsewhere and play important role in
+cancer~\cite{GandulloSanchez2022,Wee2017}. While relatively little knonw about
+ErbB3 in the context of neurodegenerative diseases~\cite{Ou2021}, there is
+broad evidence for EGFR dysregulation in AD, Parkinson's disease and
+ALS~\cite{Romano2020}.  EGFR dysregulation was found to be associated with
+cognition, A$\beta$ pathology and neuroinflammation in multiple
+studies~\cite{Choi2023}.  Intriguingly, our present results from cell-based
+assays provide evidence that Arundine and TUDCA protect cells by inhibiting
+neuroinflammation, by facilitating A$\beta$ clearance and inhibiting A$\beta$
+release, which suggests these drugs exerted their protective effects, at least
+partly, via acting on EGFR.  EGFR's critical role in development and
+differentiation, particularly of epithelial and glial cells, gave rise to FDA
+approved EGFR-targeted therapies, including EGFR inhibitors, especially for
+head and neck cancers~\cite{Xu2017}.  This explains the unexpected result of
+our computational validation, that drugs approved for gliobastoma, carcinomas,
+and various neoplasms were rediscovered by our computational screen aimed at
+AD.  Thus, our results prompt the repurposing potential of anti-cancer EGFR
+inhibitor drugs to AD, which was recently pointed out~\cite{Choi2023}.
+
+Notably, RGS4 is also well-positioned in the network to modulate cellular AD
+pathologies via the COPB1 (part of the COPI complex in vesicle trafficking)
+and CALM1 (calmodulin 1)~\cite{Tan2019,Nakamura2021}
+
+Our network pharmacology approach
+is limited by the underlying data, in particular by the completeness and accuracy
+of the gene-gene interaction network and the drug-target network.  
+Arundine and Chenodiol/TUDCA may, therefore, have exerted their neuroprotective
+effects seen in our cell-based assays partly via pathways missing
+that are missing from Fig
+
 
 In this study, we combined network pharmacology analyses with cell-based
 experimental validation to discover novel drug
@@ -660,18 +733,18 @@ algorithm to perform the best (Fig.~S\ref{fig:kendall-dist}).  Finally, we
 used the MC3-aggregated list in our workflow.
 
 \subsection{Cell-based assays}
+\label{sec:methods-cba}
 
 We tested whether our selected drugs can rescue molecular phenotypes relevant
-to Alzheimer's disease including tau phosphorylation, A$\beta$1-42 clearance,
-A$\beta$ secretion, A$\beta$ toxicity, lipopolysaccharide (LPS)-induced
-neuroinflammation, cell death due to trophic factor withdrawal and neurite
-outgrowth and neurogenesis~\cite{Varma2020,Desai2022a}. In all assays,
-described in the following subsections, cells treated with drugs were compared to either the vehicle
-control (VC) or lesion control.
-%was performed in GraphPad Prism. Group differences
-%were evaluated for each test item separately by one-way analysis of variance
-%(ANOVA) followed by Dunnett's multiple comparison test versus vehicle or
-%lesion control.
+to Alzheimer's disease in 33 cell-based assays grouped into nine
+experiments~\cite{Varma2020,Desai2022a}. Table~S\ref{tab:protect-sign} lists
+these assay and experiments and, for each assay, indicates whether the ideal,
+neuroprotective effect corresponds to an increase or decrease in bioactivity.
+In all assays, described in the following subsections, cells treated with
+drugs were compared to either the vehicle control (VC) or lesion control.
+%was performed in GraphPad Prism. Group differences were evaluated for each
+%test item separately by one-way analysis of variance (ANOVA) followed by
+%Dunnett's multiple comparison test versus vehicle or lesion control.
 
 For each combination of drugs and assays we evaluated the posterior
 probability $P(H_i|\mathrm{data})$ of protective, neutral and adverse drug
@@ -818,7 +891,47 @@ YO-PRO/propidium iodide (PI) and MTT as well as lactate dehydrogenase (LDH)
 assay.
 
 
+\subsection{In vivo plasma Nfl measurements}
+\label{sec:methods-nfl}
 
+The NF-light (Neurofilament-light) ELISA 10-7001 CE from UmanDiagnostics was
+used for analysis. Samples were diluted to 1:3 in assay buffer and analyzed
+according to the manufacturers protocol. CSF and in vivo samples are analyzed
+in single replicates only, due to limited sample volume.
+
+In brief, after dilution, 100 $\mu$l of sample were added to the pre-coated
+wells and incubated for 1.5 hours at RT with gentle agitation (800 rpm).
+
+Wells were washed three times with assay wash buffer and 100 $\mu$l of the tracer
+antibody are added. After 45 min incubation (RT, 800 rpm) wells are again
+washed three times.
+
+Thereafter 100$\mu$l of conjugate were added and incubated for 30 min (RT, 800
+rpm). After 3 $\times$ washing 100 $\mu$l of TMB substrate are added to each well and
+incubated for 15 min at RT.
+
+50 $\mu$l stop reagent were added and after short gentle agitation, the plate
+was
+read at 450 nm (reference 620-650 nm) on the Cytation 5 multimode reader
+(Biotek).
+
+Data were evaluated in comparison to calibration curves provided in the kit and
+were expressed as pg/ml plasma.
+
+Inspecting the data we found that log-transformed fold change of Nfl level at
+week 8 w.r.t week 0 was approximately
+normally distributed.  We fitted the following model to the data:
+
+\begin{equation}
+  \log \frac{\mathrm{Nfl}_8}{\mathrm{Nfl}_0} = \beta_0 + \beta_1 x + \epsilon
+  \label{eq:nfl}
+\end{equation}
+
+where $\mathrm{Nfl}_t$ is the Nfl level at week $t\in \{0, 8\}$; $x=0$ for
+saline treated mice and $x=1$ for TUDCA treated mice; $\epsilon$ is a normally
+distributed noise term, i.i.d across mouse subjects.  Our inference is based on coefficient $\beta_1$,
+which mediates the effect of TUDCA; our null hypothesis is $H_0: \; \beta_1 =
+0$, which means TUDCA has no effect.
 
 \backmatter
 
@@ -943,8 +1056,8 @@ used for our screen.
 \begin{figure}[h]
 \includegraphics[width=1.0\textwidth]{figures/Fig1.png}
 \caption{
-  A) Workflow of computational drug repurposing in Alzheimer's disease (AD).
-  B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5
+  (A) Workflow of computational drug repurposing in Alzheimer's disease (AD).
+  (B) Principle of network proximity-based drug screen for AD.  Drug 4 and 5
   are plausible candidate AD drugs because they target either directly or
   indirectly an AD risk gene (i.e a gene mechanistically involved in AD), respectively .  On the other
   hand, drugs 1--3 only target genes at least three interactions away from AD
@@ -954,71 +1067,68 @@ used for our screen.
 \end{figure}
 
 \begin{figure}[h]
-\includegraphics[]{figures/proximity-ranked-drugs.pdf}
-
-C
-
-\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
-\caption{Scoring and ranking 2413 drugs based on their network proximity to
-  various AD risk gene sets.  (A-B) Eight AD risk gene sets were input to the workflow.
+\includegraphics[]{figures/screen-rediscovery.pdf}
+%\includegraphics[]{figures/proximity-ranked-drugs.pdf}
+%\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+\caption{Computational drug screen and computational validation.  (A-B) Scoring and ranking 2413 drugs based on their network proximity to
+  various AD risk gene sets.  Eight AD risk gene sets were input to the workflow.
   The separate drug rankings across imput AD risk gene sets were aggregated into a
   single final ranking, which is color coded (yellow: top-ranked drugs, blue:
-  bottom-ranked drugs).  Note that the area delimited by red rectangle in A)
-  is expanded into B).
+  bottom-ranked drugs). (A) shows the top $\approx 600$ drugs while (B) only
+  the top 51.  (C) Rediscovery rate $>1$ for the top-$k$ drugs suggests these
+  drugs, highly ranked by network proximity, are enriched in drugs already investigated or approved
+  for AD.
 }
 \label{fig:screen}
 \end{figure}
 
 \begin{figure}[h]
-\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\includegraphics[]{figures/experimental-validation.pdf}
+%\includegraphics[scale=0.45]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors.pdf}
+%\includegraphics[scale=0.45]{../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg-TUDCA.pdf}
 \caption{
-Network proximity-based rediscovery of drugs in phase 1--4 clinical trials for
-AD and 35 other disease indications.  Disease indications written on top of
-individual plots.  Orange ticks: drugs that are in phase 1 or more advanced
-clinical study for the given indication. Blue dots: rediscovery rate
-(Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked by network
-proximity, relative to that for the bottom-$1808$ drugs.  Rediscovery rate of
-$>1$ means that top-ranked drugs tend to be those that are in phase 1--4
-clinical trials for the given indication; these drugs are marked by orange
-symbols above the $x$ axes.
-}
-\label{fig:ad-drug-rediscovery-multi}
-\end{figure}
-
-\begin{figure}[h]
-\includegraphics[width=0.95\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn.sif.pdf}
-\caption{Hypothetical molecular mechanisms linking drugs selected for
-  experimental validation (red nodes), targets
-  (salmon nodes) and AD risk genes (light blue nodes).  Targets interact with AD
-  genes via mediators (salmon) like UBC (ubiquitin C), EGFR, or CALM1
-  (calmodulin 1).  Such target$\rightarrow$mediator$\rightarrow$AD risk gene paths
-  are highlighted with colored, thick edges.
-}
-\label{fig:drug-AD-genes-network}
-\end{figure}
-
-\begin{figure}[h]
-%\includegraphics[]{figures/H102-posterior-assays-experiments.pdf}
-%\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-exper-mean-barchart.pdf}
-A
-
-\includegraphics[scale=0.45]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors.pdf}
-
-B
-
-\includegraphics[scale=0.45]{../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg-TUDCA.pdf}
-\caption{A) Assessing the hypothetical neuroprotective effect of Arundine, Cysteamine and TUDCA in 33 cell-based assays from 9
-  experiments, labeled as (a)--(i).  Green bars indicate significant evidence
-  for protective effect as quantified by the Bayes factor, which is the posterior odds
-  of protective and neutral effect.  Blank (white) slots indicate either that the experiment was not
-  performed on the drug or that model fit was poor.
-  B) Effect of TUDCA on the longitudinal trajectory of plasma Nfl level
-  measured \emph{in vivo} in wild type (WT) or transgenic 5xFAD mice.  Note
-  the inverted U shape of the average Nfl trajectory (quadratic fit) in saline
-  treated WT and 5xFAD mice and the flattened trajectory in TUDCA treated
-  5xFAD.
+  Experimental validation. (A) Assessing the hypothetical neuroprotective effect of Arundine, Cysteamine
+  and TUDCA in 33 cell-based assays from 9 experiments, labeled as (a)--(i).
+  Note that TUDCA is the taurine conjugated epimer of Chenodiol.  Green bars
+  indicate moderate to very strong evidence for protective effect as quantified by the
+  Bayes factor, which is the posterior odds of protective and neutral effect.
+  Blank (white) slots indicate either that the experiment was not performed on
+  the drug or that model fit was poor.  (B) Effect of TUDCA on the longitudinal
+  trajectory of plasma Nfl level measured \emph{in vivo} in wild type (WT) or
+  transgenic 5xFAD mice.  Observe the inverted U shape of the average Nfl
+  trajectory (quadratic fit) in saline treated WT and 5xFAD mice and the
+  flattened trajectory in TUDCA treated 5xFAD.
 }
 \label{fig:cell-based-assays}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=1.0\textwidth]{figures/drug-target-mediator-AD_gene.pdf}
+\caption{RGS4 (Regulator of G protein signaling 4) is a key target of
+  Arundine, Chenodiol, and Cysteamine, suggested by network paths between these
+  drugs and AD genes.  The figure depicts only three edge-long paths, which
+  all have the form: drug $\xrightarrow{1}$ target $\xrightarrow{2}$  mediator
+  $\xrightarrow{3}$ AD gene. Such paths are both relatively frequent and
+  short to explain potential pharmacological effects on AD genes. There are
+  only 4 two edge-long paths; all of those involve RGS4 as target (drug
+  $\xrightarrow{1}$ RGS4 $\xrightarrow{2}$  AD gene, see
+  Table~S\ref{tab:nearest-ADgenes}).  Moreover, RGS4 can itself be considered
+  an AD gene based on its membership in two of the eight AD
+  gene sets of this study (one edge-long paths, Table~S\ref{tab:nearest-ADgenes}).
+  (A) The top, middle and bottom panel shows mediators (rows, $y$ axis)
+  interacting with drug targets RGS4, SLC10A2, CYP3A4, respectively.  The
+  heatmaps show both the fraction of genes in a given AD gene set (columns,
+  $x$ axis) that interact with a given mediator.  The number of interacting AD
+  genes is also indicated as text inside the heatmap's cells. 
+  (B) All three edge-long paths between the three drugs and knowledge-based AD
+  genes. For mediator genes thick, color edges mark paths formed by target
+  $\rightarrow$  mediator $\rightarrow$ AD gene. For paths involving
+  RGS4, the color codes for mediator genes are as follows.  Orange: EGFR
+  (Epidermal growth factor receptor), purple: CALM1 (Calmodulin 1), gray: COPB1
+  (Coatomer subunit beta), also gray: GNAO1 (Guanine nucleotide-binding
+  protein G(o) subunit alpha).
+}
+\label{fig:drug-AD-genes-network}
 \end{figure}
 
 %\newpage
@@ -1065,44 +1175,6 @@ B
 \end{table}
 
 \begin{table}[h]
-\begin{tabular}{ll|rrrrrrrr}
-\toprule
-       &       &   \multicolumn{8}{c}{AD risk gene set$^\ast$} \\
-       &       &   A &   B &   C &    D &    E &   F &   G &   H \\
-target & mediator &     &     &     &      &      &     &     &     \\
-\midrule
-RGS4 & EGFR &   4 &   2 &   0 &    0 &    0 &   0 &   8 &   6 \\
-       & CALM1 &   3 &   0 &   0 &    0 &    0 &   0 &   0 &   3 \\
-       & GNAO1 &   1 &   0 &   0 &    0 &    0 &   0 &   1 &   1 \\
-       & ERBB3 &   0 &   1 &   0 &    0 &    0 &   0 &   1 &   0 \\
-       & GNAI1 &   0 &   0 &   0 &    0 &    0 &   0 &   1 &   1 \\
-       & GNAQ &   0 &   0 &   0 &    0 &    0 &   0 &   2 &   0 \\
-       & COPB1 &   1 &   0 &   0 &    0 &    0 &   0 &   0 &   0 \\
-       & GNAI2 &   0 &   0 &   0 &    0 &    0 &   0 &   1 &   0 \\
-\midrule
-SLC10A2 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
-\midrule
-CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
-       & PRKACA &   4 &   1 &   6 &   16 &   17 &   3 &   7 &   5 \\
-       & PRKCA &   4 &   0 &   4 &   15 &   16 &   3 &   7 &   5 \\
-       & STUB1 &   3 &   2 &   2 &    5 &    5 &   0 &   2 &   1 \\
-       & AMFR &   0 &   0 &   1 &    2 &    2 &   0 &   0 &   0 \\
-       & GK &   1 &   0 &   0 &    0 &    0 &   0 &   0 &   1 \\
-       & CYB5A &   0 &   0 &   0 &    0 &    1 &   0 &   0 &   0 \\
-\bottomrule
-\end{tabular}
-\caption{
-  Number of AD risk genes $g$ interacting with a given mediator gene and forming
-  network paths of the form: $\mathrm{drug} \rightarrow \mathrm{target}
-  \rightarrow \mathrm{mediator} \rightarrow g$.  $^\ast$Code for AD risk gene sets:
-  A: knowledge, B: TWAS2+, C: agora2+, D: AD DE APOE3-APOE3, E: AD DE
-  APOE4-APOE4, F: APOE3-4 DE neuron, G: APOE3-4 DE astrocyte, H: APOE3-4 DE
-  microglia.
-}
-\label{tab:mediators}
-\end{table}
-
-\begin{table}[h]
 \begin{tabular}{cc||c|c|c}
 \toprule
                        &                     &  \multicolumn{3}{c}{target}        \\
@@ -1111,22 +1183,21 @@ CYP3A4 & UBC &  16 &  19 &  39 &  157 &  162 &  34 &  60 &  97 \\
 \midrule
 shortest path length   & AD risk gene set         &  \multicolumn{3}{c}{AD risk genes}        \\
 \midrule
-                    0  &   AD DE APOE3-APOE3 &    -    &          RGS4 &    -     \\
-                    0  &   AD DE APOE4-APOE4 &    -    &          RGS4 &    -     \\
+                    1  &   AD DE APOE3-APOE3 &    -    &          RGS4 &    -     \\
+                    1  &   AD DE APOE4-APOE4 &    -    &          RGS4 &    -     \\
 \midrule
-                    1  &   agora2+           &    -    &         ERBB3 &    -     \\
-                    1  &   AD DE APOE3-APOE3 &    -    &         GNAI2 &    -     \\
-                    1  &   AD DE APOE4-APOE4 &    -    &  CALM1; GNAI2 &    -     \\
-                    1  &   APOE3-4 DE neuron &    -    &         PLCB1 &    -     \\
+                    2  &   agora2+           &    -    &         ERBB3 &    -     \\
+                    2  &   AD DE APOE3-APOE3 &    -    &         GNAI2 &    -     \\
+                    2  &   AD DE APOE4-APOE4 &    -    &  CALM1; GNAI2 &    -     \\
+                    2  &   APOE3-4 DE neuron &    -    &         PLCB1 &    -     \\
 \bottomrule
 \end{tabular}
 \caption{
-  AD risk genes $g$ that are either targets ($\mathrm{target} = g$; shortest path length $=0$) or directly
-  interact with a target ($\mathrm{target} \rightarrow g$; shortest path length $=1$).
-  Nearest AD risk gene(s) to a given target.  For paths of the form $\mathrm{target}
-  \rightarrow \mathrm{mediator} \rightarrow
-  \mathrm{mediator}_n \rightarrow g$ (shortest path length $= 2$) see Table
-  S\ref{tab:mediators}.
+  AD risk genes $g$ that are either targets of Arundine, Cysteamine or
+  Chenodiol, or directly
+  interact with a target of those drugs.  The length of the network path
+  between a drug and an AD gene is 1 for the former and 2 for the latter
+  category.
 }
 \label{tab:nearest-ADgenes}
 \end{table}
@@ -1190,6 +1261,24 @@ LPS neuroinflammation (iPSC) & IL-1$\beta$ & decrease \\
 \label{tab:protect-sign}
 \end{table}
 
+\begin{table}[h]
+\begin{tabular}{lll}
+\toprule
+name & ChEMBL ID & standard InChI \\
+\midrule
+Arundine & CHEMBL446452 & VFTRKSBEFQDZKX-UHFFFAOYSA-N \\
+C-DIM5 & CHEMBL1939127 & QCPDFNWJBQMXLI-UHFFFAOYSA-N \\
+C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
+\bottomrule
+\end{tabular}
+\caption{
+  Arundine and its two analogs that were tested in cell-based assays.
+}
+\label{tab:arundine-analogs}
+\end{table}
+
+\clearpage
+
 \begin{figure}[h]
 \includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
 \includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
@@ -1235,6 +1324,22 @@ Several rank aggregation algorithms' performance assessed by modified Kendall
 distance.
 }
 \label{fig:kendall-dist}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\caption{
+Network proximity-based rediscovery of drugs in phase 1--4 clinical trials for
+AD and 35 other disease indications.  Disease indications written on top of
+individual plots.  Orange ticks: drugs that are in phase 1 or more advanced
+clinical study for the given indication. Blue dots: rediscovery rate
+(Eq.~\ref{eq:rediscovery-rate}) for the top-$k$ drugs, ranked by network
+proximity, relative to that for the bottom-$1808$ drugs.  Rediscovery rate of
+$>1$ means that top-ranked drugs tend to be those that are in phase 1--4
+clinical trials for the given indication; these drugs are marked by orange
+symbols above the $x$ axes.
+}
+\label{fig:ad-drug-rediscovery-multi}
 \end{figure}
 
 \begin{figure}[h]
@@ -1299,22 +1404,6 @@ distance.
 \label{fig:violin-posterior-assays}
 \end{figure}
 
-\begin{table}[h]
-\begin{tabular}{lll}
-\toprule
-name & ChEMBL ID & standard InChI \\
-\midrule
-Arundine & CHEMBL446452 & VFTRKSBEFQDZKX-UHFFFAOYSA-N \\
-C-DIM5 & CHEMBL1939127 & QCPDFNWJBQMXLI-UHFFFAOYSA-N \\
-C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
-\bottomrule
-\end{tabular}
-\caption{
-  Arundine and its two analogs that were tested in cell-based assays.
-}
-\label{tab:arundine-analogs}
-\end{table}
-
 \begin{figure}[h]
 \includegraphics[scale=0.5]{../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/violin-posterior-pdf-legend.pdf}
 \caption{Posterior probability density of drug-induced fold change in
@@ -1325,12 +1414,29 @@ C-DIM12 & CHEMBL2376559 & LTLRXTDMXOFBDW-UHFFFAOYSA-N \\
 \end{figure}
 
 \begin{figure}[h]
+\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
+\caption{The posterior probability of protective, neutral and adverse effect
+  for Arundine, Cysteamine
+  and TUDCA.
+}
+\label{fig:bar-posterior-assays}
+\end{figure}
+
+\begin{figure}[h]
 \includegraphics[scale=0.5]{../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
 \caption{The posterior probability of protective, neutral and adverse effect
-  for Arundine and its two analogs.  For details see
-  the caption of Fig.~\ref{fig:cell-based-assays}.
+  for Arundine and its two analogs.
 }
 \label{fig:bar-posterior-assays-dim}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.45]{../../notebooks/2024-01-21-cell-bayes-assays-dim/named-figure/H10-bayes-factors.pdf}
+\caption{Assessing the hypothetical neuroprotective effect of Arundine and its
+  two analogs in 15 cell-based assays from 5 experiments, labeled as (a)--(e).  For details see
+  the caption of Fig.~\ref{fig:cell-based-assays}.
+}
+\label{fig:cell-based-assays-dim}
 \end{figure}
 
 \end{appendices}
