@@ -175,7 +175,7 @@ microglia from APOE3/3 versus APOE4/4
 individuals~\cite{Taubes2021,Lin2018}~(Fig.~\ref{fig:workflow}A).
 
 Second, we exploited rich, mechanistic information represented by two
-interconnected networks (Fig~\ref{fig:workflow}B): (1) the network formed by
+interconnected networks (Fig.~\ref{fig:workflow}B): (1) the network formed by
 all drugs and their target genes (drug-target network) and (2) the human
 gene-gene interaction network---known as the interactome---, whose Alzheimer's
 subnetwork---named Alzheimer's disease module (AD module)~\cite{Barabasi2011}---we
@@ -426,7 +426,7 @@ from our network proximity analysis that ranked these drugs high, our data
 from several cell based assays relevant to AD, and, for TUDCA, our \emph{in
 vivo} Nfl measurements in the 5xFAD transgenic mouse model of AD.
 
-Detailed look (Fig~\ref{fig:drug-AD-genes-network},
+Detailed look (Fig.~\ref{fig:drug-AD-genes-network},
 Table~S\ref{tab:nearest-ADgenes}) at the network paths between Chenodiol,
 Arundine and our diverse collection of AD genes reveal Regulator of G protein
 signaling 4 (RGS4) as a key target linking these drugs to AD.  RGS itself may
@@ -439,12 +439,12 @@ schizophrenia~\cite{Chowdari2002,Schwarz2018}.
 
 RGS4 interacts with several AD genes either directly
 (Table~S\ref{tab:nearest-ADgenes}) or indirectly, through mediator genes
-(Fig~\ref{fig:drug-AD-genes-network}).  These interactions implicate several
+(Fig.~\ref{fig:drug-AD-genes-network}).  These interactions implicate several
 molecular pathways in the RGS4-dependent mechanism of action of Arundine and
 Chenodiol/TUDCA. These include two signalling pathways via the interaction of
 RGS4 with two receptor tyrosin kinase of the ErbB familys: the MAPK/ERK
 pathway via Epidermal growth factor receptor, or ErbB1 (EGFR), and the
-PI3K/AKT/mTOR pathway via ErbB3 (ERBB3).  EGFR and ErbB3 regulate cellular
+PI3K/Akt/mTOR pathway via ErbB3 (ERBB3).  EGFR and ErbB3 regulate cellular
 proliferation, differentiation and maturation in the nervous system and
 elsewhere and play important role in
 cancer~\cite{GandulloSanchez2022,Wee2017}. While relatively little knonw about
@@ -456,81 +456,86 @@ studies~\cite{Choi2023}.  Intriguingly, our present results from cell-based
 assays provide evidence that Arundine and TUDCA protect cells by inhibiting
 neuroinflammation, by facilitating A$\beta$ clearance and inhibiting A$\beta$
 release, which suggests these drugs exerted their protective effects, at least
-partly, via acting on EGFR.  EGFR's critical role in development and
-differentiation, particularly of epithelial and glial cells, gave rise to FDA
-approved EGFR-targeted therapies, including EGFR inhibitors, especially for
-head and neck cancers~\cite{Xu2017}.  This explains the unexpected result of
-our computational validation, that drugs approved for gliobastoma, carcinomas,
-and various neoplasms were rediscovered by our computational screen aimed at
-AD.  Thus, our results prompt the repurposing potential of anti-cancer EGFR
-inhibitor drugs to AD, which was recently pointed out~\cite{Choi2023}.
+partly, via acting on EGFR.  Moreover, Arundine was shown to exert
+neuroprotective effect in hippocampal neurons through activating the TrkB/AKT
+pathway~\cite{Lee2019} cosistent with the possibility of upstream EGFR action
+by the drug.
+
+EGFR's critical role in development and differentiation, particularly of
+epithelial and glial cells, gave rise to FDA approved EGFR-targeted therapies,
+including EGFR inhibitors, especially for head and neck cancers~\cite{Xu2017}.
+This explains the unexpected result of our computational validation, that
+drugs approved for gliobastoma, carcinomas, and various neoplasms were
+rediscovered by our computational screen aimed at AD.  Thus, our results
+prompt the repurposing potential of anti-cancer EGFR inhibitor drugs to AD,
+which was recently pointed out~\cite{Choi2023}.
 
 Notably, RGS4 is also well-positioned in the network to modulate cellular AD
 pathologies via the COPB1 (part of the COPI complex in vesicle trafficking)
 and CALM1 (calmodulin 1)~\cite{Tan2019,Nakamura2021}
 
-Our network pharmacology approach
-is limited by the underlying data, in particular by the completeness and accuracy
-of the gene-gene interaction network and the drug-target network.  
-Arundine and Chenodiol/TUDCA may, therefore, have exerted their neuroprotective
-effects seen in our cell-based assays partly via pathways missing
-that are missing from Fig
+Our network pharmacology approach is limited by the underlying data, in
+particular by the completeness and accuracy of the gene-gene interaction
+network and the drug-target network.  Arundine and Chenodiol/TUDCA may,
+therefore, have exerted their neuroprotective effects seen in our cell-based
+assays partly via molecular mechanisms that are missing from
+Fig.~\ref{fig:drug-AD-genes-network}.  One such mechanism is Arundine
+targeting AHR (aryl hydrocarbon receptor), which was previously shown to
+protect mouse hippocampal neurons against ischemia~\cite{Rzemieniec2019}. 
 
 
-In this study, we combined network pharmacology analyses with cell-based
-experimental validation to discover novel drug
-repurposing opportunities in AD. We defined AD risk gene sets from diverse
-sources, including knowledge bases and DEGs from transcriptomic studies as
-well as single cell RNA-Seq data from APOE $\epsilon$4 and $\epsilon$3-iPSC derived
-microglia, astrocytes, and neurons. We also included results of the most
-recent genomic fine mapping studies (GWAS, TWAS and PWAS) in
-AD~\cite{Zhu2018,Lau2020}. Our approach exploits the rich information in
-gene-gene and drug-target networks to identify drugs that plausibly target
-causal disease pathways in AD. Using this strategy, we nominated Arundine,
-Chenodiol and Cysteamine as candidate AD drugs that act proximally to
-established AD risk genes. Moreover, using cell culture-based phenotypic assays,
-we show that both Arundine and the Chenodiol-like TUDCA exhibit protective
-effects given several molecular perturbations relevant to AD pathogenesis.  In
-spite of some adverse effects, this further validates our computational drug
-discovery methodology.
-
-Our present work
-also reveals several plausible molecular mechanisms for the potential
-therapeutic actions of these drugs in AD
-(Fig.~\ref{fig:drug-AD-genes-network}).  All three potential AD drugs target
-RGS4 (Regulator of G-Protein Signalling 4) which is differentially expressed
-in the AD brain.  RGS4 was found to be associated
-with schizophrenia~\cite{Chowdari2002}, which shares substantial
-heritability with AD~\cite{Consortium2018} and in which, similar to AD,
-autoimmune pathways have been found to play a significant
-role~\cite{Sekar2016a}.  Moreover, RGS4 is among the few hundred
-differentially expressed genes in the brain in AD
-\cite{Taubes2021}.
-
-Our network analysis also revealed the receptor tyrosine kinase EGFR as the key
-molecular link between RGS4 and crucial AD risk genes like APP (producing
-A$\beta$), MAPT (tau), SNCA ($\alpha$-synuclein) and PICALM.  Interaction
-between RGS4 and EGFR might play a role in the known crosstalk between EGFR
-and GPCRs~\cite{Wang2016c}.  Moreoveer, EGFR's driver role in several forms of
-cancer~\cite{Sigismund2018} converges with our obvervation that our present
-drug repurposing screen identifies drugs previously tested or
-approved not only for AD but also for various cancers.  While
-the network proximity based screen in this study suggested EGFR as a novel
-regulator of previously known AD risk genes, at the time of our analyses there was
-little additional evidence for this notion.  A recent GWAS also
-discovered AD-associated SNPs regulating EGFR expression, establishing EGFR as
-a novel AD risk gene~\cite{Bellenguez2022}.  Besides EGFR, our network analysis implicates
-other genes, notably CALM1 (calmodulin 1), that link the drug target gene RGS4 to
-other AD risk genes.  Binding of calmodulin to ryanodine receptor was recently found
-to be neuroprotective in AD~\cite{Nakamura2021}.
-
-AHR (aryl hydrocarbon receptor) is known as another target of Arundine.  The
-Arundine--AHR interaction was previously shown to protect mouse hippocampal
-neurons against ischemia~\cite{Rzemieniec2019}.  We also found that SLC10A2
-and CYP3A4---targeted by Chenodiol and Cysteamine, respectively---may act
-through ubiquitination and, in the case of CYP3A4, also through PKC-dependent
-phosphorylation.  Both mechanisms have been implicated in AD
-pathogenesis~\cite{Hegde2019,Alfonso2016}.
+%In this study, we combined network pharmacology analyses with cell-based
+%experimental validation to discover novel drug
+%repurposing opportunities in AD. We defined AD risk gene sets from diverse
+%sources, including knowledge bases and DEGs from transcriptomic studies as
+%well as single cell RNA-Seq data from APOE $\epsilon$4 and $\epsilon$3-iPSC derived
+%microglia, astrocytes, and neurons. We also included results of the most
+%recent genomic fine mapping studies (GWAS, TWAS and PWAS) in
+%AD~\cite{Zhu2018,Lau2020}. Our approach exploits the rich information in
+%gene-gene and drug-target networks to identify drugs that plausibly target
+%causal disease pathways in AD. Using this strategy, we nominated Arundine,
+%Chenodiol and Cysteamine as candidate AD drugs that act proximally to
+%established AD risk genes. Moreover, using cell culture-based phenotypic assays,
+%we show that both Arundine and the Chenodiol-like TUDCA exhibit protective
+%effects given several molecular perturbations relevant to AD pathogenesis.  In
+%spite of some adverse effects, this further validates our computational drug
+%discovery methodology.
+%
+%Our present work
+%also reveals several plausible molecular mechanisms for the potential
+%therapeutic actions of these drugs in AD
+%(Fig.~\ref{fig:drug-AD-genes-network}).  All three potential AD drugs target
+%RGS4 (Regulator of G-Protein Signalling 4) which is differentially expressed
+%in the AD brain.  RGS4 was found to be associated
+%with schizophrenia~\cite{Chowdari2002}, which shares substantial
+%heritability with AD~\cite{Consortium2018} and in which, similar to AD,
+%autoimmune pathways have been found to play a significant
+%role~\cite{Sekar2016a}.  Moreover, RGS4 is among the few hundred
+%differentially expressed genes in the brain in AD
+%\cite{Taubes2021}.
+%
+%Our network analysis also revealed the receptor tyrosine kinase EGFR as the key
+%molecular link between RGS4 and crucial AD risk genes like APP (producing
+%A$\beta$), MAPT (tau), SNCA ($\alpha$-synuclein) and PICALM.  Interaction
+%between RGS4 and EGFR might play a role in the known crosstalk between EGFR
+%and GPCRs~\cite{Wang2016c}.  Moreoveer, EGFR's driver role in several forms of
+%cancer~\cite{Sigismund2018} converges with our obvervation that our present
+%drug repurposing screen identifies drugs previously tested or
+%approved not only for AD but also for various cancers.  While
+%the network proximity based screen in this study suggested EGFR as a novel
+%regulator of previously known AD risk genes, at the time of our analyses there was
+%little additional evidence for this notion.  A recent GWAS also
+%discovered AD-associated SNPs regulating EGFR expression, establishing EGFR as
+%a novel AD risk gene~\cite{Bellenguez2022}.  Besides EGFR, our network analysis implicates
+%other genes, notably CALM1 (calmodulin 1), that link the drug target gene RGS4 to
+%other AD risk genes.  Binding of calmodulin to ryanodine receptor was recently found
+%to be neuroprotective in AD~\cite{Nakamura2021}.
+%
+% We also found that SLC10A2
+%and CYP3A4---targeted by Chenodiol and Cysteamine, respectively---may act
+%through ubiquitination and, in the case of CYP3A4, also through PKC-dependent
+%phosphorylation.  Both mechanisms have been implicated in AD
+%pathogenesis~\cite{Hegde2019,Alfonso2016}.
 
 Computational drug repurposing is a new, rapidly evolving field with a
 multitude of varied approaches applicable to a growing, diverse multi-omic
@@ -593,16 +598,16 @@ drugs as novel experimental AD treatments.
 %subtypes~\cite{Neff2021}, will herald a new generation of drugs for
 %Alzheimer's disease.
 
-Some methodological limitations of our work that must be considered include
-the inability of the AD risk gene sets utilized to capture longitudinal changes
-reflecting the long preclinical prodromal phase of disease progression. We
-also did not account for distinct pathological phenotypes of AD based on
-transcriptomic profiling of the disease or the role of interactions between
-specific cell types in influencing disease progression. 
-
-In summary, we have applied a network pharmacology approach to identify novel
-candidate AD treatments that target causal disease pathways and correct key
-molecular abnormalities associated with AD pathogenesis.
+%Some methodological limitations of our work that must be considered include
+%the inability of the AD risk gene sets utilized to capture longitudinal changes
+%reflecting the long preclinical prodromal phase of disease progression. We
+%also did not account for distinct pathological phenotypes of AD based on
+%transcriptomic profiling of the disease or the role of interactions between
+%specific cell types in influencing disease progression. 
+%
+%In summary, we have applied a network pharmacology approach to identify novel
+%candidate AD treatments that target causal disease pathways and correct key
+%molecular abnormalities associated with AD pathogenesis.
 
 %TODOs
 %\begin{itemize}
@@ -762,7 +767,7 @@ model shown in Fig.~S\ref{fig:model-2-plate} after comparing the fit of several 
 
 We interpret the parameter $y_0, y_1$ as expected bioactivity at zero and
 saturating drug concentration and define fold change as $\mathrm{FC}_y = y_1 /
-y_0$ (Fig~S\ref{fig:prior-posterior-fit-H102}).  We chose a gamma prior density for the fold change as
+y_0$ (Fig.~S\ref{fig:prior-posterior-fit-H102}).  We chose a gamma prior density for the fold change as
 \begin{equation}
   \label{eq:priors}
   \mathrm{FC}_y \sim \Gamma(\alpha = 5, \beta = 5),
@@ -781,7 +786,7 @@ errors) for the goodness of fit and excluded three poorly fitted data sets of
 a total of 91 data sets.  The estimated posterior densities of fold change are
 presented in Fig.~S\ref{fig:violin-posterior-assays}.
 
-Fig~S\ref{fig:prior-posterior-fit-H102} explains how we defined the hypothesis
+Fig.~S\ref{fig:prior-posterior-fit-H102} explains how we defined the hypothesis
 of protective, neutral and adverse drug effect ($H_1, H_0, H_2$, respectively)
 and how we used the posterior density estimate of fold change to calculate the
 posterior probability of each of the three hypotheses.  Note that
@@ -789,7 +794,7 @@ Eq.~\ref{eq:priors} implies that the prior mean of fold change is 1, which
 means we expect zero effect of any drug a priori.  Moreover, the hypotheses were
 defined such that any drug has 0.2 probability of having protective or adverse
 effect and thus 0.6 probability of neutral effect \emph{a
-priori}~(Fig~S\ref{fig:prior-posterior-fit-H102}).
+priori}~(Fig.~S\ref{fig:prior-posterior-fit-H102}).
 
 \subsubsection{A$\beta$ clearance}
 
@@ -1397,7 +1402,7 @@ symbols above the $x$ axes.
   posterior density has a green, gray and red component corresponding to
   protective, neutral and adverse drug effect given the direction of the
   desired drug effect and fold-change thresholds $t_1, t_2$ (see
-  Fig~S\ref{fig:prior-posterior-fit-H102}).  The posterior mean (and standard
+  Fig.~S\ref{fig:prior-posterior-fit-H102}).  The posterior mean (and standard
   deviation) of fold change is shown as a yellow circle (and yellow error
   bars).
 }
