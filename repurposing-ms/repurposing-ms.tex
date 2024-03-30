@@ -319,8 +319,8 @@ FDA for the treatment of corneal cystine crystal deposits in patients with
 cystinosis~\cite{Liang2021,Gahl2002}. Cysteamine hydrochloride has  also been shown to improve renal
 function in pediatric patients with cystinosis~\cite{Markello1993}.
 
-By modeling each measured dose-response relationship (Methods: Cell-based
-assays, section~\ref{sec:methods-cba}), we evaluated the Bayes
+Bayesian modeling of each measured dose-response relationship (Methods: Cell-based
+assays, section~\ref{sec:methods-cba}) allowed us to evaluate the Bayes
 factor, defined as the posterior odds of protective and neutral effect.  We
 then used $2 \times \log$ of the Bayes factor to quantify the evidence for
 protective effect across drugs and assays (Fig.~\ref{fig:cell-based-assays}A).
@@ -362,61 +362,6 @@ the aforementioned relative increase was reduced by $-34.0 \pm 13.8 \%$
 relative to baseline ($p=0.02$, $H_0$: zero reduction w.r.t saline).  Thus,
 TUDCA effectively abolished the relative increase of Nfl flattening the
 inverted U-shaped trajectory (Fig.~\ref{fig:cell-based-assays}B right).
-
-\subsection{Hypothetical molecular pathways linking selected drugs to AD}
-
-Next we aimed at elucidating hypothetical, AD-relevant molecular mechanisms of
-the selected drugs.  We identified all of the shortest network paths from each selected
-drug to each AD risk gene set in the same interactome and drug-target network that
-we used for our network proximity based drug screen.  The shortest path
-length, defined as the least number of gene-gene interactions connecting a
-given target to a given AD risk gene, ranged typically from 2 to 4 for most
-combinations of target and AD risk gene set
-(Fig.~S\ref{fig:shortest-path-lengths}).
-
-We primarily focused on paths of length 2 as these are both short and
-frequently observed (Fig.~S\ref{fig:shortest-path-lengths}) thereby explaining
-a drug's hypothetical beneficial effect in AD.  Such paths have the form:
-$\mathrm{target} \rightarrow \mathrm{mediator} \rightarrow \mathrm{AD risk gene}$,
-where \emph{mediator} is a gene transmitting the drug's presumed effect between a target
-and an AD risk gene (Fig.~\ref{fig:drug-AD-genes-network} thick, colored edges).
-The mediator interacting with the largest number of AD risk genes is UBC encoding Ubiquitin C
-(Fig.~\ref{fig:drug-AD-genes-network} green edges, Table
-Mediator UBC interacts both with the Cysteamine target
-CYP3A4 and with the Chenodiol target SLC10A2.  Target CYP3A4 has several
-other mediators that interact with multiple AD risk genes: ubiquitin ligases STUB1
-and AMFR as well as PRKCA/PRKACA encoding subunits of protein kinase-C
-(Table Fig.~\ref{fig:drug-AD-genes-network}).
-
-Mediators for RGS4 include receptor tyrosine protein kinases EGFR and ERBB3,
-as well as CALM1 (calmodulin 1), COPB1 (coatomer protein complex subunit
-$\beta$), and genes encoding for various G protein subunits (Table
-Fig.~\ref{fig:drug-AD-genes-network}).  Among these
-mediators EGFR interacts with the most AD risk genes, including well-established
-knowledge based AD risk genes of crucial relevance to AD: APP (amyloid precursor
-protein, amyloid-$\beta$), MAPT (tau), SNCA---$\alpha$-synuclein
-(Fig.~\ref{fig:drug-AD-genes-network}); also including AD risk genes strongly
-supported by functional genomics studies (TWAS2+ AD risk gene set): PICALM and
-PTK2B.
-
-A few paths were of the form $\mathrm{target} \rightarrow \mathrm{AD risk gene}$
-(path length 1).  This was the case only for target RGS4 and 4 genes in 4
-relatively large AD risk gene sets (Table~S\ref{tab:nearest-ADgenes}).  Three of
-these four genes---ERBB3, GNAI2, CALM1---were noted above as mediators in the
-context of other, smaller, AD risk gene sets.  Moreover, RGS4 was found to be an AD
-gene itself (path length$=0$) that belongs to the two largest AD risk gene sets
-(Table~S\ref{tab:nearest-ADgenes}).
-
-(Note to Madhav: although you asked me to move the next paragraph to
-Discussion, I would still keep it here because I already recapitulated and
-expanded on it in the Discussion.)
-
-Taken together, these observations suggest that our candidate AD drugs might modulate
-multiple key molecular mechanisms: (1)
-ubiquitination, (2) protein kinase-C dependent phosphorylation, (3) receptor
-tyrosine kinase-dependent and (4) G-protein dependent signal transduction, (5)
-Ca$^{2+}$-calmodulin, and (5) the coatomer complex.  We shall return to the
-relevance of these mechanisms to AD in the present Discussion.
 
 \section{Discussion}
 
@@ -483,59 +428,22 @@ Fig.~\ref{fig:drug-AD-genes-network}.  One such mechanism is Arundine
 targeting AHR (aryl hydrocarbon receptor), which was previously shown to
 protect mouse hippocampal neurons against ischemia~\cite{Rzemieniec2019}. 
 
-
-%In this study, we combined network pharmacology analyses with cell-based
-%experimental validation to discover novel drug
-%repurposing opportunities in AD. We defined AD risk gene sets from diverse
-%sources, including knowledge bases and DEGs from transcriptomic studies as
-%well as single cell RNA-Seq data from APOE $\epsilon$4 and $\epsilon$3-iPSC derived
-%microglia, astrocytes, and neurons. We also included results of the most
-%recent genomic fine mapping studies (GWAS, TWAS and PWAS) in
-%AD~\cite{Zhu2018,Lau2020}. Our approach exploits the rich information in
-%gene-gene and drug-target networks to identify drugs that plausibly target
-%causal disease pathways in AD. Using this strategy, we nominated Arundine,
-%Chenodiol and Cysteamine as candidate AD drugs that act proximally to
-%established AD risk genes. Moreover, using cell culture-based phenotypic assays,
-%we show that both Arundine and the Chenodiol-like TUDCA exhibit protective
-%effects given several molecular perturbations relevant to AD pathogenesis.  In
-%spite of some adverse effects, this further validates our computational drug
-%discovery methodology.
-%
-%Our present work
-%also reveals several plausible molecular mechanisms for the potential
-%therapeutic actions of these drugs in AD
-%(Fig.~\ref{fig:drug-AD-genes-network}).  All three potential AD drugs target
-%RGS4 (Regulator of G-Protein Signalling 4) which is differentially expressed
-%in the AD brain.  RGS4 was found to be associated
-%with schizophrenia~\cite{Chowdari2002}, which shares substantial
-%heritability with AD~\cite{Consortium2018} and in which, similar to AD,
-%autoimmune pathways have been found to play a significant
-%role~\cite{Sekar2016a}.  Moreover, RGS4 is among the few hundred
-%differentially expressed genes in the brain in AD
-%\cite{Taubes2021}.
-%
-%Our network analysis also revealed the receptor tyrosine kinase EGFR as the key
-%molecular link between RGS4 and crucial AD risk genes like APP (producing
-%A$\beta$), MAPT (tau), SNCA ($\alpha$-synuclein) and PICALM.  Interaction
-%between RGS4 and EGFR might play a role in the known crosstalk between EGFR
-%and GPCRs~\cite{Wang2016c}.  Moreoveer, EGFR's driver role in several forms of
-%cancer~\cite{Sigismund2018} converges with our obvervation that our present
-%drug repurposing screen identifies drugs previously tested or
-%approved not only for AD but also for various cancers.  While
-%the network proximity based screen in this study suggested EGFR as a novel
-%regulator of previously known AD risk genes, at the time of our analyses there was
-%little additional evidence for this notion.  A recent GWAS also
-%discovered AD-associated SNPs regulating EGFR expression, establishing EGFR as
-%a novel AD risk gene~\cite{Bellenguez2022}.  Besides EGFR, our network analysis implicates
-%other genes, notably CALM1 (calmodulin 1), that link the drug target gene RGS4 to
-%other AD risk genes.  Binding of calmodulin to ryanodine receptor was recently found
-%to be neuroprotective in AD~\cite{Nakamura2021}.
-%
-% We also found that SLC10A2
-%and CYP3A4---targeted by Chenodiol and Cysteamine, respectively---may act
-%through ubiquitination and, in the case of CYP3A4, also through PKC-dependent
-%phosphorylation.  Both mechanisms have been implicated in AD
-%pathogenesis~\cite{Hegde2019,Alfonso2016}.
+Network incompleteness becomes even more pronounced for the bile acids of our
+study, Chenodiol and TUDCA, because metabolic interactions are poorly
+represented in the gene-gene network underlying our network pharmacology
+approach.  Moreover, bile acids bind to various brain-expressed receptors,
+from which signal may be tranduced through multiple pathways, including the
+Akt pathway mentioned above in the context of EGFR~\cite{Zangerolamo2021}.
+Regardless the precise molecular pathways, bile acids and particularly TUDCA
+have been shown to exibit a wide range of neuroprotective effects casting them
+as potential modifiers of neurodegenerative
+diseases~\cite{Zangerolamo2021,Hurley2022}, in particular of
+AD~\cite{Song2024}.  Indeed, our cell-based assays provided further evidence
+that TUDCA is beneficial in A$\beta$ clearance, A$\beta$ release and, most
+profoundly, in LPS induced neuroinflammation, although we found the latter
+effect to be cell type specific.  Moreover, our \emph{in vivo} Nfl
+measurements suggest TUDCA prevented some of the nerve fiber loss observed in
+the 5xFAD mouse model of AD.
 
 Computational drug repurposing is a new, rapidly evolving field with a
 multitude of varied approaches applicable to a growing, diverse multi-omic
@@ -551,70 +459,6 @@ demonstration that selected top-ranking drugs from this approach ameliorate
 key molecular abnormalities in AD provides (i) further evidence of the utility
 of our strategy and (ii) a biological rationale for further testing these
 drugs as novel experimental AD treatments.
-
-%\begin{enumerate}
-%  \item We based our screen on a more diverse collection of AD risk gene sets than
-%    either \cite{Taubes2021} or \cite{Fang2021}.  Like these authors, we also
-%    used gene sets from knowledge bases and DEGs from transcriptomic studies.
-%    But our work is unique in that it also leverages results of the most
-%    recent genomic fine mapping studies (GWAS, TWAS and PWAS) on AD, which
-%    detect causative AD risk genes with much higher specificity than DEG
-%    analyses~\cite{Zhu2018,Lau2020}.
-%\item We and~\cite{Fang2021} used a systems-based network pharmacology
-%  approach~\cite{Guney2016,Cheng2018}, which exploits the rich information in
-%  available drug-target and gene-gene networks to identify drugs that are
-%  mechanistically supported to target putative disease pathways in AD.  In
-%  contrast, \cite{Taubes2021} used CMap, a merely correlative
-%  approach~\cite{Lamb2006}, which cannot incorporate existing knowledge on
-%  the molecular pathomechanisms of AD.  Intrestingly, our present work also
-%  shows that these two approaches to fully discordant, uncorrelated results.
-%  Moreover, besides the aforementioned shortcoming of CMap, we find that its
-%  various published implementations lead to quite different, albeit still
-%  correlated, results.
-%\item We aggregated results of multiple drug screens (each conditioned on a
-%  different gene set) with a probabilistic rank aggregation algorithm with an
-%  optimality criterion.  \cite{Fang2021} also carried multiple screens but
-%  their aggregation was a less principled, ad-hoc method.  Notably, our rank
-%  aggregation strategy also revealed that even some non-overlapping AD risk gene
-%  sets resulted lead to the discovery of highly overlapping sets of very top
-%  drugs demonstrating the robustness of our workflow.  The non-neuronal AD
-%  gene sets were exception of this tendency pointing at the value of further
-%  characterization of non-neuronal cells in
-%  AD~\cite{Lopes2022,Mathys2019,DeStrooper2016}.
-%\end{enumerate}
-
-%Our computational validation, based on the rediscovery of drugs previously
-%developed or repurposed for AD, revealed the enrichment of our top ranked
-%drugs for also some common non-AD indications.  Genetic correlations between
-%disease phenotypes~\cite{Consortium2018}, market-driven selection biases, and
-%other factors may underlie not only this observation but also the known
-%comorbidities of AD~\cite{Santiago2021}.  Such overlap between different
-%drugs' indications is also consistent with the known relationship between drug
-%repurposing and side effects~\cite{Ye2014}.  Further research is needed to
-%dissect relationships between genetic correlations, comorbidities, side
-%effects, protein and gene network topology, etc to be able to harness these and
-%integrate into drug repurposing techniques.  That, in combination with
-%expanding multi-celltype, multi-omic characterization of AD and its molecular
-%subtypes~\cite{Neff2021}, will herald a new generation of drugs for
-%Alzheimer's disease.
-
-%Some methodological limitations of our work that must be considered include
-%the inability of the AD risk gene sets utilized to capture longitudinal changes
-%reflecting the long preclinical prodromal phase of disease progression. We
-%also did not account for distinct pathological phenotypes of AD based on
-%transcriptomic profiling of the disease or the role of interactions between
-%specific cell types in influencing disease progression. 
-%
-%In summary, we have applied a network pharmacology approach to identify novel
-%candidate AD treatments that target causal disease pathways and correct key
-%molecular abnormalities associated with AD pathogenesis.
-
-%TODOs
-%\begin{itemize}
-%  \item Discussion: what have I missed?
-%  \item Ask Vijay or Tina to decipher the drug concentrations for cell based
-%    assays
-%\end{itemize}
 
 \section{Methods}
 

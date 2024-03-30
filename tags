@@ -33,13 +33,13 @@ AD risk gene sets	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{AD risk g
 AD risk gene sets	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{AD risk gene sets}$/;"	b
 AD risk gene sets	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{AD risk gene sets}$/;"	b
 AD risk gene sets	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{AD risk gene sets}$/;"	b
-AD risk gene sets	repurposing-ms/repurposing-ms.tex	/^\\subsection{AD risk gene sets}$/;"	b
 Aggregated drug ranking	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Aggregated drug ranking}$/;"	b
 Aggregated drug ranking	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Aggregated drug ranking}$/;"	b
 Bumetanide paper	lab-meetings/2021-10-19-bumetanide-and-progress/2021-10-19-bumetanide-and-progress.tex	/^\\section{Bumetanide paper}$/;"	s
 CMap analyses	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{CMap analyses}$/;"	b
+CMap analyses	repurposing-ms/repurposing-ms.tex	/^\\subsection{CMap analyses}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Cell-based assays}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Cell-based assays}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v4.tex	/^\\subsection{Cell-based assays}$/;"	b
@@ -48,7 +48,6 @@ Cell based assays	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Cell-based
 Cell based assays	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Cell-based assays}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Cell-based assays}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Cell-based assays}$/;"	b
-Cell based assays	repurposing-ms/repurposing-ms.tex	/^\\subsection{Cell-based assays}$/;"	b
 Computational drug screen evaluating network proximity	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Computational drug screen: evaluating network proximity}$/;"	b
 Computational drug screen evaluating network proximity	repurposing-ms/repurposing-ms-v4.tex	/^\\subsection{Computational drug screen: evaluating network proximity}$/;"	b
 Computational validation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Computational validation}$/;"	b
@@ -81,7 +80,6 @@ Drug target network	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Drug-tar
 Drug target network	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Drug-target network}$/;"	b
 Drug target network	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Drug-target network}$/;"	b
 Drug target network	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Drug-target network}$/;"	b
-Drug target network	repurposing-ms/repurposing-ms.tex	/^\\subsection{Drug-target network}$/;"	b
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
 Evaluating drugs s disease modules in the interactome	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Evaluating drugs' network proximities to Alzheimer's disease$/;"	b
@@ -105,11 +103,9 @@ Gene gene interaction network	repurposing-ms/repurposing-ms-v6.tex	/^\\subsectio
 Gene gene interaction network	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
-Gene gene interaction network	repurposing-ms/repurposing-ms.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
-Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Introduction	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 Introduction	repurposing-ms/repurposing-ms.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
@@ -133,7 +129,6 @@ Methods	repurposing-ms/repurposing-ms-v6.tex	/^\\section{Methods}$/;"	s
 Methods	repurposing-ms/repurposing-ms-v7.tex	/^\\section{Methods}$/;"	s
 Methods	repurposing-ms/repurposing-ms-v8.tex	/^\\section{Methods}$/;"	s
 Methods	repurposing-ms/repurposing-ms-v9.tex	/^\\section{Methods}$/;"	s
-Methods	repurposing-ms/repurposing-ms.tex	/^\\section{Methods}$/;"	s
 Network proximity calculations	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Network proximity calculations}$/;"	b
@@ -145,7 +140,6 @@ Network proximity calculations	repurposing-ms/repurposing-ms-v6.tex	/^\\subsecti
 Network proximity calculations	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Network proximity calculations	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Network proximity calculations}$/;"	b
-Network proximity calculations	repurposing-ms/repurposing-ms.tex	/^\\subsection{Network proximity calculations}$/;"	b
 Our data	lab-meetings/2023-10-19-morris-water-maze/2023-10-19-morris-water-maze.tex	/^\\section{Our data}$/;"	s
 Preliminary analysis	lab-meetings/2023-10-19-morris-water-maze/2023-10-19-morris-water-maze.tex	/^\\section{Preliminary analysis}$/;"	s
 Present TWAS and meta analysis with previous TWAS results	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Present TWAS and meta-analysis with previous TWAS results}$/;"	b
@@ -159,10 +153,11 @@ Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v6.tex	/^\\subsectio
 Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v7.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
 Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v8.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
 Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
-Previous and novel TWAS on AD	repurposing-ms/repurposing-ms.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Rank aggregation}$/;"	b
+Rank aggregation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rank aggregation}$/;"	b
+Rediscovery rate of drugs for a disease indication	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rediscovery rate of drugs for a disease indication}$/;"	b
 Results	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v10.tex	/^\\section{Results}$/;"	s

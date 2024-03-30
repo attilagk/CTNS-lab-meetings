@@ -20,50 +20,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: repurposing-ms.bib
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 64 entries,
+You've used 58 entries,
             7480 wiz_defined-function locations,
-            1770 strings with 77839 characters,
-and the built_in function-call counts, 1370006 in all, are:
-= -- 151602
-> -- 10174
-< -- 1105
-+ -- 10097
-- -- 4546
-* -- 129811
-:= -- 278077
-add.period$ -- 67
-call.type$ -- 64
-change.case$ -- 347
-chr.to.int$ -- 3070
-cite$ -- 64
-duplicate$ -- 11021
-empty$ -- 113698
-format.name$ -- 13310
-if$ -- 282536
+            1727 strings with 56479 characters,
+and the built_in function-call counts, 840193 in all, are:
+= -- 94523
+> -- 6402
+< -- 1014
++ -- 7772
+- -- 2706
+* -- 77429
+:= -- 169728
+add.period$ -- 61
+call.type$ -- 58
+change.case$ -- 314
+chr.to.int$ -- 2824
+cite$ -- 58
+duplicate$ -- 7170
+empty$ -- 67635
+format.name$ -- 7813
+if$ -- 175696
 int.to.chr$ -- 1
-int.to.str$ -- 93
+int.to.str$ -- 84
 missing$ -- 0
-newline$ -- 2973
-num.names$ -- 320
-pop$ -- 9266
+newline$ -- 1993
+num.names$ -- 290
+pop$ -- 5567
 preamble$ -- 1
-purify$ -- 284
+purify$ -- 257
 quote$ -- 0
-skip$ -- 58787
+skip$ -- 38582
 stack$ -- 0
-substring$ -- 268293
-swap$ -- 5768
-text.length$ -- 780
+substring$ -- 157949
+swap$ -- 3817
+text.length$ -- 707
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2692
+type$ -- 2457
 warning$ -- 0
-while$ -- 7804
+while$ -- 4946
 width$ -- 0
-write$ -- 3355
+write$ -- 2339
