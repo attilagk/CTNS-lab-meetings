@@ -1,0 +1,105 @@
+\documentclass{tikzposter} %Options for format can be included here
+%\documentclass[a1paper,16pt]{tikzposter} %Options for format can be included here
+
+\geometry{paperwidth=48in,paperheight=48in}
+\makeatletter
+\setlength{\TP@visibletextwidth}{\textwidth-2\TP@innermargin}
+\setlength{\TP@visibletextheight}{\textheight-2\TP@innermargin}
+\makeatother
+
+\usepackage{tikz}
+\usepackage{multicol}
+\setlength{\columnsep}{0.7cm}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+%\bibliographystyle{unsrtnat}
+\author{Attila Jones, Madhav Thambisetty}
+\title{Drug Repurposing to Alzheimer’s from Genomics}
+
+\institute{Clinical \& Translational Neuroscience Section, LBN}
+
+ %Choose Layout
+\usetheme{default}
+%\usecolortheme{seagull}
+
+\begin{document}
+\maketitle
+
+\begin{columns}
+\column{0.5}
+
+\block{1. Network proximity for computational drug repurposing}{
+\begin{center}
+\includegraphics[width=0.2\textwidth]{../../../figures/from-others/drug-repurposing-valli-et-al-2020.png}
+\includegraphics[width=0.2\textwidth]{../../../figures/by-me/drug-target-disgene-network/drug-target-disgene-network-scores.pdf}
+\end{center}
+
+Top left: Drug repurposing.  Top right: scoring approved or investigational
+drugs according to their topological network proximity to AD genes.  Bottom:
+three high-scoring drugs, A-C, their targets, mediators and AD genes.
+
+\begin{center}
+\includegraphics[width=0.35\textwidth]{../../results/2022-09-26-selected-drugs/knowledge-dtn-anonymized.sif.png}
+\end{center}
+}
+
+\block{2. Bayesian dose-response analysis}{
+\begin{center}
+\includegraphics[width=0.25\columnwidth]{../../../figures/from-others/BV2_DC_10PS_20X_2-20211206160943680-wide.png}
+\end{center}
+
+Top: AD relevant assays in BV2 and other cell lines.
+
+Bottom: comparison of
+frequentist hypothesis test at each drug dose with Bayesian regression based
+hypothesis test.
+
+\includegraphics[width=0.225\textwidth]{../../notebooks/2024-02-14-cell-bayes/named-figure/feq-bayes-dose-response-TI1.pdf}
+\includegraphics[width=0.225\textwidth]{../../notebooks/2024-02-14-cell-bayes/named-figure/feq-bayes-dose-response-TI6.pdf}
+
+\emph{Acknowledgements}:
+We thank Vijay Varma, Yang An, Jackson Roberts for feedback and the NIH HPC
+group for excellent service.
+}
+
+\column{0.5}
+
+%\block{5. Computational validation}{
+%\begin{center}
+%\includegraphics[width=0.35\columnwidth]{../../../CTNS/notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k.pdf}
+%\end{center}
+%
+%Here we validate our network proximity based drug ranking by showing that the
+%top-$t$ drugs are enriched in drugs developed for Alzheimer's.
+%}
+
+%\bibliography{attila-poster}
+
+\block{3. Protective effects, cell-based assays }{
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors-anonym_drugs.pdf}
+\end{center}
+
+Protective effect of drug A and C in experiments a), c), f) as evidenced by
+the Bayes factor (BF). The BF is analogous to the $p$ value but, unlike the $p$
+value, the BF also expresses effect size.
+}
+
+\block{4. Protective effect in mice }{
+\begin{center}
+\includegraphics[width=0.4\textwidth]{../../notebooks/2023-11-15-5xfad-nfl-gfap/named-figure/NF-L-in-vivo-treatments-tg-TUDCA-anonym.pdf}
+\end{center}
+
+Drug C was given to 5xFAD mice and was found to protect against axonal
+degeneration as measured by plasma Nfl \emph{in vivo}.
+}
+
+%\block{7. Acknowledgements}{
+%We thank Vijay Varma, Yang An, Jackson Roberts for feedback and the NIH HPC
+%group for excellent service.}
+
+\end{columns}
+
+
+\end{document}

@@ -1238,6 +1238,23 @@ Frontiers in Neurology
 \endbibitem
 
 %%% 30
+\bibitem[\protect\citeauthoryear{Zangerolamo et~al.}{2021}]{Zangerolamo2021}
+\begin{barticle}
+\bauthor{\bsnm{Zangerolamo}, \binits{L.}},
+\bauthor{\bsnm{Vettorazzi}, \binits{J.F.}},
+\bauthor{\bsnm{Rosa}, \binits{L.R.O.}},
+\bauthor{\bsnm{Carneiro}, \binits{E.M.}},
+\bauthor{\bsnm{Barbosa}, \binits{H.C.L.}}:
+\batitle{The bile acid tudca and neurodegenerative disorders: An overview}.
+\bjtitle{Life Sciences}
+\bvolume{272},
+\bfpage{119252}
+(\byear{2021})
+\doiurl{10.1016/j.lfs.2021.119252}
+\end{barticle}
+\endbibitem
+
+%%% 31
 \bibitem[\protect\citeauthoryear{Albanese et~al.}{2022}]{Albanese2022}
 \begin{botherref}
 \oauthor{\bsnm{Albanese}, \binits{A.}},
@@ -1346,7 +1363,7 @@ Frontiers in Neurology
 \end{botherref}
 \endbibitem
 
-%%% 31
+%%% 32
 \bibitem[\protect\citeauthoryear{Liang et~al.}{2021}]{Liang2021}
 \begin{barticle}
 \bauthor{\bsnm{Liang}, \binits{H.}},
@@ -1365,7 +1382,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 33
 \bibitem[\protect\citeauthoryear{Gahl et~al.}{2002}]{Gahl2002}
 \begin{barticle}
 \bauthor{\bsnm{Gahl}, \binits{W.A.}},
@@ -1382,7 +1399,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 34
 \bibitem[\protect\citeauthoryear{Markello et~al.}{1993}]{Markello1993}
 \begin{barticle}
 \bauthor{\bsnm{Markello}, \binits{T.C.}},
@@ -1400,7 +1417,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 35
 \bibitem[\protect\citeauthoryear{Gns et~al.}{2021}]{Gns2021}
 \begin{botherref}
 \oauthor{\bsnm{Gns}, \binits{H.S.}},
@@ -1416,7 +1433,7 @@ Journal of molecular neuroscience : MN
 \end{botherref}
 \endbibitem
 
-%%% 35
+%%% 36
 \bibitem[\protect\citeauthoryear{Chen et~al.}{2022}]{Chen2022b}
 \begin{botherref}
 \oauthor{\bsnm{Chen}, \binits{D.}},
@@ -1436,7 +1453,7 @@ Frontiers in Aging Neuroscience
 \end{botherref}
 \endbibitem
 
-%%% 36
+%%% 37
 \bibitem[\protect\citeauthoryear{Talwar et~al.}{2014}]{Talwar2014}
 \begin{barticle}
 \bauthor{\bsnm{Talwar}, \binits{P.}},
@@ -1456,7 +1473,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 38
 \bibitem[\protect\citeauthoryear{Ahlers-Dannen et~al.}{2020}]{AhlersDannen2020}
 \begin{barticle}
 \bauthor{\bsnm{Ahlers-Dannen}, \binits{K.E.}},
@@ -1473,7 +1490,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 39
 \bibitem[\protect\citeauthoryear{Chowdari et~al.}{2002}]{Chowdari2002}
 \begin{barticle}
 \bauthor{\bsnm{Chowdari}, \binits{K.V.}},
@@ -1501,7 +1518,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 40
 \bibitem[\protect\citeauthoryear{Schwarz}{2018}]{Schwarz2018}
 \begin{barticle}
 \bauthor{\bsnm{Schwarz}, \binits{E.}}:
@@ -1517,7 +1534,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 40
+%%% 41
 \bibitem[\protect\citeauthoryear{Gandullo-Sánchez
   et~al.}{2022}]{GandulloSanchez2022}
 \begin{barticle}
@@ -1533,7 +1550,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 41
+%%% 42
 \bibitem[\protect\citeauthoryear{Wee and Wang}{2017}]{Wee2017}
 \begin{botherref}
 \oauthor{\bsnm{Wee}, \binits{P.}},
@@ -1546,7 +1563,7 @@ Cancers
 \end{botherref}
 \endbibitem
 
-%%% 42
+%%% 43
 \bibitem[\protect\citeauthoryear{Ou et~al.}{2021}]{Ou2021}
 \begin{botherref}
 \oauthor{\bsnm{Ou}, \binits{G.-y.}},
@@ -1560,7 +1577,7 @@ Frontiers in Aging Neuroscience
 \end{botherref}
 \endbibitem
 
-%%% 43
+%%% 44
 \bibitem[\protect\citeauthoryear{Romano and Bucci}{2020}]{Romano2020}
 \begin{botherref}
 \oauthor{\bsnm{Romano}, \binits{R.}},
@@ -1573,7 +1590,7 @@ Cells
 \end{botherref}
 \endbibitem
 
-%%% 44
+%%% 45
 \bibitem[\protect\citeauthoryear{Choi et~al.}{2023}]{Choi2023}
 \begin{botherref}
 \oauthor{\bsnm{Choi}, \binits{H.-J.}},
@@ -1588,7 +1605,7 @@ Frontiers in Pharmacology
 \end{botherref}
 \endbibitem
 
-%%% 45
+%%% 46
 \bibitem[\protect\citeauthoryear{Xu et~al.}{2017}]{Xu2017}
 \begin{barticle}
 \bauthor{\bsnm{Xu}, \binits{M.J.}},
@@ -1603,7 +1620,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 46
+%%% 47
 \bibitem[\protect\citeauthoryear{Tan and Gleeson}{2019}]{Tan2019}
 \begin{barticle}
 \bauthor{\bsnm{Tan}, \binits{J.Z.A.}},
@@ -1618,7 +1635,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 47
+%%% 48
 \bibitem[\protect\citeauthoryear{Nakamura et~al.}{2021}]{Nakamura2021}
 \begin{barticle}
 \bauthor{\bsnm{Nakamura}, \binits{Y.}},
@@ -1637,23 +1654,6 @@ Frontiers in Pharmacology
 \bfpage{7289}
 (\byear{2021})
 \doiurl{10.1038/s41598-021-86822-x}
-\end{barticle}
-\endbibitem
-
-%%% 48
-\bibitem[\protect\citeauthoryear{Zangerolamo et~al.}{2021}]{Zangerolamo2021}
-\begin{barticle}
-\bauthor{\bsnm{Zangerolamo}, \binits{L.}},
-\bauthor{\bsnm{Vettorazzi}, \binits{J.F.}},
-\bauthor{\bsnm{Rosa}, \binits{L.R.O.}},
-\bauthor{\bsnm{Carneiro}, \binits{E.M.}},
-\bauthor{\bsnm{Barbosa}, \binits{H.C.L.}}:
-\batitle{The bile acid tudca and neurodegenerative disorders: An overview}.
-\bjtitle{Life Sciences}
-\bvolume{272},
-\bfpage{119252}
-(\byear{2021})
-\doiurl{10.1016/j.lfs.2021.119252}
 \end{barticle}
 \endbibitem
 

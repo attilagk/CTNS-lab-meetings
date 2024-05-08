@@ -1,0 +1,153 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Towards probabilistic prioritization of drugs from cell-based assays}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Hypothesis testing with Bayes factors instead of $p$-values}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-violin-vertical.pdf}
+\end{column}
+\end{columns}
+The Bayes factor is the posterior odds of hypothesis $H_1$ relative to $H_0 \cap H_2$
+\begin{equation}
+  \mathrm{BF} = \frac{P(H_1)}{P(H_0) + P(H_2)}
+\end{equation}
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\begin{columns}[t]
+\begin{column}{0.6\textwidth}
+
+  \includegraphics[scale=0.3]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/cell-based-assays-summary-all.pdf}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+
+  \includegraphics[scale=0.3]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/cell-based-assays-summary-all-agg.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Aβ-clearance-BV2-cells.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Aβ-release-H4-cells.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  \flushright
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Aβ-clearance-iPSC.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Aβ-toxicity-primary-neurons.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-LPS-neuroinflammation-BV2-cells.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \flushright
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-LPS-neuroinflammation-iPSC.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Trophic-factor-withdrawal-primary-neurons.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-A-317567.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-Phenamil-methanesulfonate-salt.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-5-N-Ethyl-N-isopropyl-amiloride.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-Benzamil-hydrochloride-hydrate.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-Amiloride.pdf}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/drug-barplot-HCQ-TUDCA.pdf}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

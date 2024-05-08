@@ -6,6 +6,8 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 A$ beta$ clearance	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
 A$ beta$ clearance	repurposing-ms/repurposing-ms-v11.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
+A$ beta$ clearance	repurposing-ms/repurposing-ms-v12.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
+A$ beta$ clearance	repurposing-ms/repurposing-ms-v13.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
 A$ beta$ clearance	repurposing-ms/repurposing-ms-v4.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
 A$ beta$ clearance	repurposing-ms/repurposing-ms-v5.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
 A$ beta$ clearance	repurposing-ms/repurposing-ms-v6.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
@@ -15,6 +17,8 @@ A$ beta$ clearance	repurposing-ms/repurposing-ms-v9.tex	/^\\subsubsection{A$\\be
 A$ beta$ clearance	repurposing-ms/repurposing-ms.tex	/^\\subsubsection{A$\\beta$ clearance}$/;"	b
 A$ beta$ secretion	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
 A$ beta$ secretion	repurposing-ms/repurposing-ms-v11.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
+A$ beta$ secretion	repurposing-ms/repurposing-ms-v12.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
+A$ beta$ secretion	repurposing-ms/repurposing-ms-v13.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
 A$ beta$ secretion	repurposing-ms/repurposing-ms-v4.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
 A$ beta$ secretion	repurposing-ms/repurposing-ms-v5.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
 A$ beta$ secretion	repurposing-ms/repurposing-ms-v6.tex	/^\\subsubsection{A$\\beta$ secretion}$/;"	b
@@ -38,6 +42,8 @@ Aggregated drug ranking	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Aggr
 Bumetanide paper	lab-meetings/2021-10-19-bumetanide-and-progress/2021-10-19-bumetanide-and-progress.tex	/^\\section{Bumetanide paper}$/;"	s
 CMap analyses	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{CMap analyses}$/;"	b
+CMap analyses	repurposing-ms/repurposing-ms-v12.tex	/^\\subsection{CMap analyses}$/;"	b
+CMap analyses	repurposing-ms/repurposing-ms-v13.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{CMap analyses}$/;"	b
 CMap analyses	repurposing-ms/repurposing-ms.tex	/^\\subsection{CMap analyses}$/;"	b
 Cell based assays	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Cell-based assays}$/;"	b
@@ -64,6 +70,8 @@ Declarations	repurposing-ms/repurposing-ms-v11.tex	/^\\section*{Declarations}$/;
 Discussion	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Discussion}$/;"	s
+Discussion	repurposing-ms/repurposing-ms-v12.tex	/^\\section{Discussion}$/;"	s
+Discussion	repurposing-ms/repurposing-ms-v13.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v2.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v4.tex	/^\\section{Discussion}$/;"	s
 Discussion	repurposing-ms/repurposing-ms-v5.tex	/^\\section{Discussion}$/;"	s
@@ -94,6 +102,8 @@ Experimental validation	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Expe
 Experimental validation	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Experimental validation}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
 Factors affecting computational drug repurposing	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Factors affecting computational drug repurposing}$/;"	b
+Further prioritization of top ranking candidate AD drugs	repurposing-ms/repurposing-ms-v12.tex	/^\\subsection{Further prioritization of top ranking candidate AD drugs}$/;"	b
+Further prioritization of top ranking candidate AD drugs	repurposing-ms/repurposing-ms-v13.tex	/^\\subsection{Further prioritization of top ranking candidate AD drugs}$/;"	b
 Further prioritization of top ranking candidate AD drugs	repurposing-ms/repurposing-ms.tex	/^\\subsection{Further prioritization of top ranking candidate AD drugs}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v10.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
 Gene gene interaction network	repurposing-ms/repurposing-ms-v11.tex	/^\\subsection{Gene-gene interaction network}$/;"	b
@@ -107,9 +117,13 @@ Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repu
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v5.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Hypothetical molecular pathways linking selected drugs to AD	repurposing-ms/repurposing-ms-v6.tex	/^\\subsection{Hypothetical molecular pathways linking selected drugs to AD}$/;"	b
 Introduction	repurposing-ms/repurposing-ms-v11.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
+Introduction	repurposing-ms/repurposing-ms-v12.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
+Introduction	repurposing-ms/repurposing-ms-v13.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 Introduction	repurposing-ms/repurposing-ms.tex	/^\\section{Introduction}\\label{sec1}$/;"	s
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v11.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
+LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v12.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
+LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v13.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v4.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v5.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
 LPS induced neuroinflammation	repurposing-ms/repurposing-ms-v6.tex	/^\\subsubsection{LPS-induced neuroinflammation}$/;"	b
@@ -155,8 +169,12 @@ Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v8.tex	/^\\subsectio
 Previous and novel TWAS on AD	repurposing-ms/repurposing-ms-v9.tex	/^\\subsection{Previous and novel TWAS on AD}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{Rank aggregation}$/;"	b
+Rank aggregation	repurposing-ms/repurposing-ms-v12.tex	/^\\subsection{Rank aggregation}$/;"	b
+Rank aggregation	repurposing-ms/repurposing-ms-v13.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms-v3.tex	/^\\subsection{Rank aggregation}$/;"	b
 Rank aggregation	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rank aggregation}$/;"	b
+Rediscovery rate of drugs for a disease indication	repurposing-ms/repurposing-ms-v12.tex	/^\\subsection{Rediscovery rate of drugs for a disease indication}$/;"	b
+Rediscovery rate of drugs for a disease indication	repurposing-ms/repurposing-ms-v13.tex	/^\\subsection{Rediscovery rate of drugs for a disease indication}$/;"	b
 Rediscovery rate of drugs for a disease indication	repurposing-ms/repurposing-ms.tex	/^\\subsection{Rediscovery rate of drugs for a disease indication}$/;"	b
 Results	repurposing-ms/repurposing-ms-supp.tex	/^\\section{Results}$/;"	s
 Results	repurposing-ms/repurposing-ms-v1.tex	/^\\section{Results}$/;"	s
@@ -180,6 +198,8 @@ TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-supp.tex	/^\\subsection
 TWAS on AD using PrediXcan	repurposing-ms/repurposing-ms-v1.tex	/^\\subsection{TWAS on AD using PrediXcan}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v10.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v11.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
+Tau phosphorylation	repurposing-ms/repurposing-ms-v12.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
+Tau phosphorylation	repurposing-ms/repurposing-ms-v13.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v4.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v5.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b
 Tau phosphorylation	repurposing-ms/repurposing-ms-v6.tex	/^\\subsubsection{Tau phosphorylation}$/;"	b

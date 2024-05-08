@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: repurposing-ms.aux
+The top-level auxiliary file: repurposing-ms-v12.aux
 The style file: sn-mathphys-num.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -26,44 +26,44 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 59 entries,
+You've used 58 entries,
             7480 wiz_defined-function locations,
-            1733 strings with 58774 characters,
-and the built_in function-call counts, 896339 in all, are:
-= -- 100582
-> -- 6798
-< -- 1016
-+ -- 8040
-- -- 2903
-* -- 82873
-:= -- 181264
-add.period$ -- 62
-call.type$ -- 59
-change.case$ -- 319
-chr.to.int$ -- 2828
-cite$ -- 59
-duplicate$ -- 7578
-empty$ -- 72520
-format.name$ -- 8399
-if$ -- 187003
+            1728 strings with 56501 characters,
+and the built_in function-call counts, 840193 in all, are:
+= -- 94523
+> -- 6402
+< -- 1014
++ -- 7772
+- -- 2706
+* -- 77429
+:= -- 169728
+add.period$ -- 61
+call.type$ -- 58
+change.case$ -- 314
+chr.to.int$ -- 2824
+cite$ -- 58
+duplicate$ -- 7170
+empty$ -- 67635
+format.name$ -- 7813
+if$ -- 175696
 int.to.chr$ -- 1
-int.to.str$ -- 85
+int.to.str$ -- 84
 missing$ -- 0
-newline$ -- 2101
-num.names$ -- 295
-pop$ -- 5966
+newline$ -- 1993
+num.names$ -- 290
+pop$ -- 5567
 preamble$ -- 1
-purify$ -- 261
+purify$ -- 257
 quote$ -- 0
-skip$ -- 40817
+skip$ -- 38582
 stack$ -- 0
-substring$ -- 169588
-swap$ -- 4014
-text.length$ -- 718
+substring$ -- 157949
+swap$ -- 3817
+text.length$ -- 707
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2484
+type$ -- 2457
 warning$ -- 0
-while$ -- 5252
+while$ -- 4946
 width$ -- 0
-write$ -- 2453
+write$ -- 2339

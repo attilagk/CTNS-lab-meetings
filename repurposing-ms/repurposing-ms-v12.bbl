@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{59}
+\begin{thebibliography}{58}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -1028,53 +1028,100 @@ Drug Repurposing: Translational Bioinformatics And Network Pharmacology
 \endbibitem
 
 %%% 20
-\bibitem[\protect\citeauthoryear{Meng et~al.}{2021}]{Meng2021}
+\bibitem[\protect\citeauthoryear{Biersack}{2020}]{Biersack2020}
 \begin{barticle}
-\bauthor{\bsnm{Meng}, \binits{F.}},
-\bauthor{\bsnm{Xi}, \binits{Y.}},
-\bauthor{\bsnm{Huang}, \binits{J.}},
-\bauthor{\bsnm{Ayers}, \binits{P.W.}}:
-\batitle{A curated diverse molecular database of blood-brain barrier
-  permeability with chemical descriptors}.
-\bjtitle{Scientific Data}
-\bvolume{8}(\bissue{1}),
-\bfpage{289}
-(\byear{2021})
-\doiurl{10.1038/s41597-021-01069-5}
+\bauthor{\bsnm{Biersack}, \binits{B.}}:
+\batitle{3,3’-diindolylmethane and its derivatives: nature-inspired
+  strategies tackling drug resistant tumors by regulation of signal
+  transduction, transcription factors and micrornas}.
+\bjtitle{Cancer Drug Resistance}
+\bvolume{3}(\bissue{4}),
+\bfpage{867}--\blpage{878}
+(\byear{2020})
+\doiurl{10.20517/cdr.2020.53}
 \end{barticle}
 \endbibitem
 
 %%% 21
-\bibitem[\protect\citeauthoryear{Baloni et~al.}{2020}]{Baloni2020}
+\bibitem[\protect\citeauthoryear{De~Miranda et~al.}{2013}]{DeMiranda2013}
 \begin{barticle}
-\bauthor{\bsnm{Baloni}, \binits{P.}},
-\bauthor{\bsnm{Funk}, \binits{C.C.}},
-\bauthor{\bsnm{Yan}, \binits{J.}},
-\bauthor{\bsnm{Yurkovich}, \binits{J.T.}},
-\bauthor{\bsnm{Kueider-Paisley}, \binits{A.}},
-\bauthor{\bsnm{Nho}, \binits{K.}},
-\bauthor{\bsnm{Heinken}, \binits{A.}},
-\bauthor{\bsnm{Jia}, \binits{W.}},
-\bauthor{\bsnm{Mahmoudiandehkordi}, \binits{S.}},
-\bauthor{\bsnm{Louie}, \binits{G.}},
-\bauthor{\bsnm{Saykin}, \binits{A.J.}},
-\bauthor{\bsnm{Arnold}, \binits{M.}},
-\bauthor{\bsnm{Kastenmüller}, \binits{G.}},
-\bauthor{\bsnm{Griffiths}, \binits{W.J.}},
-\bauthor{\bsnm{Thiele}, \binits{I.}},
-\bauthor{\bsnm{Kaddurah-Daouk}, \binits{R.}},
-\bauthor{\bsnm{Price}, \binits{N.D.}}:
-\batitle{Metabolic network analysis reveals altered bile acid synthesis and
-  metabolism in alzheimer's disease.}
-\bjtitle{Cell reports. Medicine}
-\bvolume{1},
-\bfpage{100138}
-(\byear{2020})
-\doiurl{10.1016/j.xcrm.2020.100138}
+\bauthor{\bsnm{De~Miranda}, \binits{B.R.}},
+\bauthor{\bsnm{Miller}, \binits{J.A.}},
+\bauthor{\bsnm{Hansen}, \binits{R.J.}},
+\bauthor{\bsnm{Lunghofer}, \binits{P.J.}},
+\bauthor{\bsnm{Safe}, \binits{S.}},
+\bauthor{\bsnm{Gustafson}, \binits{D.L.}},
+\bauthor{\bsnm{Colagiovanni}, \binits{D.}},
+\bauthor{\bsnm{Tjalkens}, \binits{R.B.}}:
+\batitle{Neuroprotective efficacy and pharmacokinetic behavior of novel
+  anti-inflammatory para-phenyl substituted diindolylmethanes in a mouse model
+  of parkinson{\textquoteright}s disease}.
+\bjtitle{Journal of Pharmacology and Experimental Therapeutics}
+\bvolume{345}(\bissue{1}),
+\bfpage{125}--\blpage{138}
+(\byear{2013})
+\doiurl{10.1124/jpet.112.201558}
+{\href{https://arxiv.org/abs/https://jpet.aspetjournals.org/content/345/1/125.full.pdf}{{https://jpet.aspetjournals.org/content/345/1/125.full.pdf}}}
 \end{barticle}
 \endbibitem
 
 %%% 22
+\bibitem[\protect\citeauthoryear{Lee et~al.}{2019}]{Lee2019}
+\begin{botherref}
+\oauthor{\bsnm{Lee}, \binits{B.D.}},
+\oauthor{\bsnm{Yoo}, \binits{J.-M.}},
+\oauthor{\bsnm{Baek}, \binits{S.Y.}},
+\oauthor{\bsnm{Li}, \binits{F.Y.}},
+\oauthor{\bsnm{Sok}, \binits{D.-E.}},
+\oauthor{\bsnm{Kim}, \binits{M.R.}}:
+3,3'-diindolylmethane promotes bdnf and antioxidant enzyme formation via
+  trkb/akt pathway activation for neuroprotection against oxidative
+  stress-induced apoptosis in hippocampal neuronal cells.
+Antioxidants (Basel, Switzerland)
+\textbf{9}
+(2019)
+\end{botherref}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Rzemieniec et~al.}{2019}]{Rzemieniec2019}
+\begin{barticle}
+\bauthor{\bsnm{Rzemieniec}, \binits{J.}},
+\bauthor{\bsnm{Wnuk}, \binits{A.}},
+\bauthor{\bsnm{Lasoń}, \binits{W.}},
+\bauthor{\bsnm{Bilecki}, \binits{W.}},
+\bauthor{\bsnm{Kajta}, \binits{M.}}:
+\batitle{The neuroprotective action of 3,3'-diindolylmethane against ischemia
+  involves an inhibition of apoptosis and autophagy that depends on hdac and
+  ahr/cyp1a1 but not er$\alpha$/cyp19a1 signaling.}
+\bjtitle{Apoptosis : an international journal on programmed cell death}
+\bvolume{24},
+\bfpage{435}--\blpage{452}
+(\byear{2019})
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Keene et~al.}{2002}]{Keene2002}
+\begin{barticle}
+\bauthor{\bsnm{Keene}, \binits{C.D.}},
+\bauthor{\bsnm{Rodrigues}, \binits{C.M.P.}},
+\bauthor{\bsnm{Eich}, \binits{T.}},
+\bauthor{\bsnm{Chhabra}, \binits{M.S.}},
+\bauthor{\bsnm{Steer}, \binits{C.J.}},
+\bauthor{\bsnm{Low}, \binits{W.C.}}:
+\batitle{Tauroursodeoxycholic acid, a bile acid, is neuroprotective in a
+  transgenic animal model of huntington's disease}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{99}(\bissue{16}),
+\bfpage{10671}--\blpage{10676}
+(\byear{2002})
+\doiurl{10.1073/pnas.162362299}
+{\href{https://arxiv.org/abs/https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}{{https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}}}
+\end{barticle}
+\endbibitem
+
+%%% 25
 \bibitem[\protect\citeauthoryear{Varma et~al.}{2021}]{Varma2021}
 \begin{barticle}
 \bauthor{\bsnm{Varma}, \binits{V.R.}},
@@ -1113,101 +1160,37 @@ Drug Repurposing: Translational Bioinformatics And Network Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 23
-\bibitem[\protect\citeauthoryear{Keene et~al.}{2002}]{Keene2002}
-\begin{barticle}
-\bauthor{\bsnm{Keene}, \binits{C.D.}},
-\bauthor{\bsnm{Rodrigues}, \binits{C.M.P.}},
-\bauthor{\bsnm{Eich}, \binits{T.}},
-\bauthor{\bsnm{Chhabra}, \binits{M.S.}},
-\bauthor{\bsnm{Steer}, \binits{C.J.}},
-\bauthor{\bsnm{Low}, \binits{W.C.}}:
-\batitle{Tauroursodeoxycholic acid, a bile acid, is neuroprotective in a
-  transgenic animal model of huntington's disease}.
-\bjtitle{Proceedings of the National Academy of Sciences}
-\bvolume{99}(\bissue{16}),
-\bfpage{10671}--\blpage{10676}
-(\byear{2002})
-\doiurl{10.1073/pnas.162362299}
-{\href{https://arxiv.org/abs/https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}{{https://www.pnas.org/doi/pdf/10.1073/pnas.162362299}}}
-\end{barticle}
-\endbibitem
-
-%%% 24
-\bibitem[\protect\citeauthoryear{Biersack}{2020}]{Biersack2020}
-\begin{barticle}
-\bauthor{\bsnm{Biersack}, \binits{B.}}:
-\batitle{3,3’-diindolylmethane and its derivatives: nature-inspired
-  strategies tackling drug resistant tumors by regulation of signal
-  transduction, transcription factors and micrornas}.
-\bjtitle{Cancer Drug Resistance}
-\bvolume{3}(\bissue{4}),
-\bfpage{867}--\blpage{878}
-(\byear{2020})
-\doiurl{10.20517/cdr.2020.53}
-\end{barticle}
-\endbibitem
-
-%%% 25
-\bibitem[\protect\citeauthoryear{De~Miranda et~al.}{2013}]{DeMiranda2013}
-\begin{barticle}
-\bauthor{\bsnm{De~Miranda}, \binits{B.R.}},
-\bauthor{\bsnm{Miller}, \binits{J.A.}},
-\bauthor{\bsnm{Hansen}, \binits{R.J.}},
-\bauthor{\bsnm{Lunghofer}, \binits{P.J.}},
-\bauthor{\bsnm{Safe}, \binits{S.}},
-\bauthor{\bsnm{Gustafson}, \binits{D.L.}},
-\bauthor{\bsnm{Colagiovanni}, \binits{D.}},
-\bauthor{\bsnm{Tjalkens}, \binits{R.B.}}:
-\batitle{Neuroprotective efficacy and pharmacokinetic behavior of novel
-  anti-inflammatory para-phenyl substituted diindolylmethanes in a mouse model
-  of parkinson{\textquoteright}s disease}.
-\bjtitle{Journal of Pharmacology and Experimental Therapeutics}
-\bvolume{345}(\bissue{1}),
-\bfpage{125}--\blpage{138}
-(\byear{2013})
-\doiurl{10.1124/jpet.112.201558}
-{\href{https://arxiv.org/abs/https://jpet.aspetjournals.org/content/345/1/125.full.pdf}{{https://jpet.aspetjournals.org/content/345/1/125.full.pdf}}}
-\end{barticle}
-\endbibitem
-
 %%% 26
-\bibitem[\protect\citeauthoryear{Lee et~al.}{2019}]{Lee2019}
-\begin{botherref}
-\oauthor{\bsnm{Lee}, \binits{B.D.}},
-\oauthor{\bsnm{Yoo}, \binits{J.-M.}},
-\oauthor{\bsnm{Baek}, \binits{S.Y.}},
-\oauthor{\bsnm{Li}, \binits{F.Y.}},
-\oauthor{\bsnm{Sok}, \binits{D.-E.}},
-\oauthor{\bsnm{Kim}, \binits{M.R.}}:
-3,3'-diindolylmethane promotes bdnf and antioxidant enzyme formation via
-  trkb/akt pathway activation for neuroprotection against oxidative
-  stress-induced apoptosis in hippocampal neuronal cells.
-Antioxidants (Basel, Switzerland)
-\textbf{9}
-(2019)
-\end{botherref}
+\bibitem[\protect\citeauthoryear{Baloni et~al.}{2020}]{Baloni2020}
+\begin{barticle}
+\bauthor{\bsnm{Baloni}, \binits{P.}},
+\bauthor{\bsnm{Funk}, \binits{C.C.}},
+\bauthor{\bsnm{Yan}, \binits{J.}},
+\bauthor{\bsnm{Yurkovich}, \binits{J.T.}},
+\bauthor{\bsnm{Kueider-Paisley}, \binits{A.}},
+\bauthor{\bsnm{Nho}, \binits{K.}},
+\bauthor{\bsnm{Heinken}, \binits{A.}},
+\bauthor{\bsnm{Jia}, \binits{W.}},
+\bauthor{\bsnm{Mahmoudiandehkordi}, \binits{S.}},
+\bauthor{\bsnm{Louie}, \binits{G.}},
+\bauthor{\bsnm{Saykin}, \binits{A.J.}},
+\bauthor{\bsnm{Arnold}, \binits{M.}},
+\bauthor{\bsnm{Kastenmüller}, \binits{G.}},
+\bauthor{\bsnm{Griffiths}, \binits{W.J.}},
+\bauthor{\bsnm{Thiele}, \binits{I.}},
+\bauthor{\bsnm{Kaddurah-Daouk}, \binits{R.}},
+\bauthor{\bsnm{Price}, \binits{N.D.}}:
+\batitle{Metabolic network analysis reveals altered bile acid synthesis and
+  metabolism in alzheimer's disease.}
+\bjtitle{Cell reports. Medicine}
+\bvolume{1},
+\bfpage{100138}
+(\byear{2020})
+\doiurl{10.1016/j.xcrm.2020.100138}
+\end{barticle}
 \endbibitem
 
 %%% 27
-\bibitem[\protect\citeauthoryear{Rzemieniec et~al.}{2019}]{Rzemieniec2019}
-\begin{barticle}
-\bauthor{\bsnm{Rzemieniec}, \binits{J.}},
-\bauthor{\bsnm{Wnuk}, \binits{A.}},
-\bauthor{\bsnm{Lasoń}, \binits{W.}},
-\bauthor{\bsnm{Bilecki}, \binits{W.}},
-\bauthor{\bsnm{Kajta}, \binits{M.}}:
-\batitle{The neuroprotective action of 3,3'-diindolylmethane against ischemia
-  involves an inhibition of apoptosis and autophagy that depends on hdac and
-  ahr/cyp1a1 but not er$\alpha$/cyp19a1 signaling.}
-\bjtitle{Apoptosis : an international journal on programmed cell death}
-\bvolume{24},
-\bfpage{435}--\blpage{452}
-(\byear{2019})
-\end{barticle}
-\endbibitem
-
-%%% 28
 \bibitem[\protect\citeauthoryear{Besouw et~al.}{2013}]{Besouw2013}
 \begin{barticle}
 \bauthor{\bsnm{Besouw}, \binits{M.}},
@@ -1223,7 +1206,7 @@ Antioxidants (Basel, Switzerland)
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 28
 \bibitem[\protect\citeauthoryear{Paul and Snyder}{2019}]{Paul2019}
 \begin{botherref}
 \oauthor{\bsnm{Paul}, \binits{B.D.}},
@@ -1237,116 +1220,7 @@ Frontiers in Neurology
 \end{botherref}
 \endbibitem
 
-%%% 30
-\bibitem[\protect\citeauthoryear{Albanese et~al.}{2022}]{Albanese2022}
-\begin{botherref}
-\oauthor{\bsnm{Albanese}, \binits{A.}},
-\oauthor{\bsnm{Ludolph}, \binits{A.C.}},
-\oauthor{\bsnm{McDermott}, \binits{C.J.}},
-\oauthor{\bsnm{Corcia}, \binits{P.}},
-\oauthor{\bsnm{Van~Damme}, \binits{P.}},
-\oauthor{\bsnm{Berg}, \binits{L.H.}},
-\oauthor{\bsnm{Hardiman}, \binits{O.}},
-\oauthor{\bsnm{Rinaldi}, \binits{G.}},
-\oauthor{\bsnm{Vanacore}, \binits{N.}},
-\oauthor{\bsnm{Dickie}, \binits{B.}},
-\oauthor{, \binits{T.-A.S.G.}},
-\oauthor{\bsnm{Tornese}, \binits{P.}},
-\oauthor{\bsnm{Cocco}, \binits{A.}},
-\oauthor{\bsnm{Giudice}, \binits{M.L.}},
-\oauthor{\bsnm{Matteoli}, \binits{M.}},
-\oauthor{\bsnm{Lauranzano}, \binits{E.}},
-\oauthor{\bsnm{Malosio}, \binits{M.L.}},
-\oauthor{\bsnm{Adriana~Elia}, \binits{C.}},
-\oauthor{\bsnm{Lombardo}, \binits{F.}},
-\oauthor{\bsnm{Mayer}, \binits{F.}},
-\oauthor{\bsnm{Puopolo}, \binits{M.}},
-\oauthor{\bsnm{Alegiani}, \binits{S.S.}},
-\oauthor{\bsnm{Chiò}, \binits{A.}},
-\oauthor{\bsnm{Manera}, \binits{U.}},
-\oauthor{\bsnm{Moglia}, \binits{C.}},
-\oauthor{\bsnm{Calvo}, \binits{A.}},
-\oauthor{\bsnm{Salamone}, \binits{P.}},
-\oauthor{\bsnm{Fuda}, \binits{G.}},
-\oauthor{\bsnm{Colosimo}, \binits{C.}},
-\oauthor{\bsnm{Spera}, \binits{C.}},
-\oauthor{\bsnm{Ranchicchio}, \binits{P.C.}},
-\oauthor{\bsnm{Stipa}, \binits{G.}},
-\oauthor{\bsnm{Frondizi}, \binits{D.}},
-\oauthor{\bsnm{Lunetta}, \binits{C.}},
-\oauthor{\bsnm{Sansone}, \binits{V.}},
-\oauthor{\bsnm{Tarlarini}, \binits{C.}},
-\oauthor{\bsnm{Gerardi}, \binits{F.}},
-\oauthor{\bsnm{Silani}, \binits{V.}},
-\oauthor{\bsnm{Doretti}, \binits{A.}},
-\oauthor{\bsnm{Colombo}, \binits{E.}},
-\oauthor{\bsnm{Demirtzidis}, \binits{G.}},
-\oauthor{\bsnm{Tedeschi}, \binits{G.}},
-\oauthor{\bsnm{Trojsi}, \binits{F.}},
-\oauthor{\bsnm{Passaniti}, \binits{C.}},
-\oauthor{\bsnm{Ballestrero}, \binits{S.}},
-\oauthor{\bsnm{Dorst}, \binits{J.}},
-\oauthor{\bsnm{Weiland}, \binits{U.}},
-\oauthor{\bsnm{Fromm}, \binits{A.}},
-\oauthor{\bsnm{Wiesenfarth}, \binits{M.}},
-\oauthor{\bsnm{Kandler}, \binits{K.}},
-\oauthor{\bsnm{Witzel}, \binits{S.}},
-\oauthor{\bsnm{Otto}, \binits{M.}},
-\oauthor{\bsnm{Schuster}, \binits{J.}},
-\oauthor{\bsnm{Meyer}, \binits{T.}},
-\oauthor{\bsnm{Maier}, \binits{A.}},
-\oauthor{\bsnm{Kettemann}, \binits{D.}},
-\oauthor{\bsnm{Petri}, \binits{S.}},
-\oauthor{\bsnm{Müschen}, \binits{L.}},
-\oauthor{\bsnm{Wohnrade}, \binits{C.}},
-\oauthor{\bsnm{Sarikidi}, \binits{A.}},
-\oauthor{\bsnm{Osmanovic}, \binits{A.}},
-\oauthor{\bsnm{Grosskreutz}, \binits{J.}},
-\oauthor{\bsnm{Rödiger}, \binits{A.}},
-\oauthor{\bsnm{Steinbach}, \binits{R.}},
-\oauthor{\bsnm{Ilse}, \binits{B.}},
-\oauthor{\bsnm{Smesny}, \binits{U.}},
-\oauthor{\bsnm{Untucht}, \binits{R.}},
-\oauthor{\bsnm{Günther}, \binits{R.}},
-\oauthor{\bsnm{Vidovic}, \binits{M.}},
-\oauthor{\bsnm{Shaw}, \binits{P.}},
-\oauthor{\bsnm{Collins}, \binits{A.}},
-\oauthor{\bsnm{Wollff}, \binits{H.}},
-\oauthor{\bsnm{Walsh}, \binits{T.}},
-\oauthor{\bsnm{Tuddenham}, \binits{L.}},
-\oauthor{\bsnm{Kazoka}, \binits{M.}},
-\oauthor{\bsnm{White}, \binits{D.}},
-\oauthor{\bsnm{Young}, \binits{S.}},
-\oauthor{\bsnm{Thompson}, \binits{B.}},
-\oauthor{\bsnm{Madarshahian}, \binits{D.}},
-\oauthor{\bsnm{Chhetri}, \binits{S.K.}},
-\oauthor{\bsnm{Chaouch}, \binits{A.}},
-\oauthor{\bsnm{Young}, \binits{C.A.}},
-\oauthor{\bsnm{Arndt}, \binits{H.}},
-\oauthor{\bsnm{Hanemann}, \binits{O.C.}},
-\oauthor{\bsnm{Lambert}, \binits{T.}},
-\oauthor{\bsnm{Beltran}, \binits{S.}},
-\oauthor{\bsnm{Couratier}, \binits{P.}},
-\oauthor{\bsnm{Esselin}, \binits{F.}},
-\oauthor{\bsnm{Camu}, \binits{W.}},
-\oauthor{\bsnm{De}, \binits{E.}},
-\oauthor{\bsnm{Cruz}, \binits{L.}},
-\oauthor{\bsnm{Lemasson}, \binits{G.}},
-\oauthor{\bsnm{Masrori}, \binits{P.}},
-\oauthor{\bsnm{Maguire}, \binits{S.}},
-\oauthor{\bsnm{Fogarty}, \binits{L.}},
-\oauthor{\bsnm{Atoyebi}, \binits{T.}},
-\oauthor{\bsnm{Obáin}, \binits{N.N.}}:
-Tauroursodeoxycholic acid in patients with amyotrophic lateral sclerosis: The
-  tudca-als trial protocol.
-Frontiers in Neurology
-\textbf{13}
-(2022)
-\doiurl{10.3389/fneur.2022.1009113}
-\end{botherref}
-\endbibitem
-
-%%% 31
+%%% 29
 \bibitem[\protect\citeauthoryear{Liang et~al.}{2021}]{Liang2021}
 \begin{barticle}
 \bauthor{\bsnm{Liang}, \binits{H.}},
@@ -1365,7 +1239,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 30
 \bibitem[\protect\citeauthoryear{Gahl et~al.}{2002}]{Gahl2002}
 \begin{barticle}
 \bauthor{\bsnm{Gahl}, \binits{W.A.}},
@@ -1382,7 +1256,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 31
 \bibitem[\protect\citeauthoryear{Markello et~al.}{1993}]{Markello1993}
 \begin{barticle}
 \bauthor{\bsnm{Markello}, \binits{T.C.}},
@@ -1400,7 +1274,7 @@ Frontiers in Neurology
 \end{barticle}
 \endbibitem
 
-%%% 34
+%%% 32
 \bibitem[\protect\citeauthoryear{Gns et~al.}{2021}]{Gns2021}
 \begin{botherref}
 \oauthor{\bsnm{Gns}, \binits{H.S.}},
@@ -1416,7 +1290,7 @@ Journal of molecular neuroscience : MN
 \end{botherref}
 \endbibitem
 
-%%% 35
+%%% 33
 \bibitem[\protect\citeauthoryear{Chen et~al.}{2022}]{Chen2022b}
 \begin{botherref}
 \oauthor{\bsnm{Chen}, \binits{D.}},
@@ -1436,7 +1310,7 @@ Frontiers in Aging Neuroscience
 \end{botherref}
 \endbibitem
 
-%%% 36
+%%% 34
 \bibitem[\protect\citeauthoryear{Talwar et~al.}{2014}]{Talwar2014}
 \begin{barticle}
 \bauthor{\bsnm{Talwar}, \binits{P.}},
@@ -1456,7 +1330,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 37
+%%% 35
 \bibitem[\protect\citeauthoryear{Ahlers-Dannen et~al.}{2020}]{AhlersDannen2020}
 \begin{barticle}
 \bauthor{\bsnm{Ahlers-Dannen}, \binits{K.E.}},
@@ -1473,7 +1347,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 38
+%%% 36
 \bibitem[\protect\citeauthoryear{Chowdari et~al.}{2002}]{Chowdari2002}
 \begin{barticle}
 \bauthor{\bsnm{Chowdari}, \binits{K.V.}},
@@ -1501,7 +1375,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 39
+%%% 37
 \bibitem[\protect\citeauthoryear{Schwarz}{2018}]{Schwarz2018}
 \begin{barticle}
 \bauthor{\bsnm{Schwarz}, \binits{E.}}:
@@ -1517,7 +1391,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 40
+%%% 38
 \bibitem[\protect\citeauthoryear{Gandullo-Sánchez
   et~al.}{2022}]{GandulloSanchez2022}
 \begin{barticle}
@@ -1525,7 +1399,7 @@ Frontiers in Aging Neuroscience
 \bauthor{\bsnm{Ocaña}, \binits{A.}},
 \bauthor{\bsnm{Pandiella}, \binits{A.}}:
 \batitle{Her3 in cancer: from the bench to the bedside}.
-\bjtitle{Journal of Experimental & Clinical Cancer Research}
+\bjtitle{Journal of Experimental \& Clinical Cancer Research}
 \bvolume{41}(\bissue{1}),
 \bfpage{310}
 (\byear{2022})
@@ -1533,7 +1407,7 @@ Frontiers in Aging Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 41
+%%% 39
 \bibitem[\protect\citeauthoryear{Wee and Wang}{2017}]{Wee2017}
 \begin{botherref}
 \oauthor{\bsnm{Wee}, \binits{P.}},
@@ -1546,7 +1420,7 @@ Cancers
 \end{botherref}
 \endbibitem
 
-%%% 42
+%%% 40
 \bibitem[\protect\citeauthoryear{Ou et~al.}{2021}]{Ou2021}
 \begin{botherref}
 \oauthor{\bsnm{Ou}, \binits{G.-y.}},
@@ -1560,7 +1434,7 @@ Frontiers in Aging Neuroscience
 \end{botherref}
 \endbibitem
 
-%%% 43
+%%% 41
 \bibitem[\protect\citeauthoryear{Romano and Bucci}{2020}]{Romano2020}
 \begin{botherref}
 \oauthor{\bsnm{Romano}, \binits{R.}},
@@ -1573,7 +1447,7 @@ Cells
 \end{botherref}
 \endbibitem
 
-%%% 44
+%%% 42
 \bibitem[\protect\citeauthoryear{Choi et~al.}{2023}]{Choi2023}
 \begin{botherref}
 \oauthor{\bsnm{Choi}, \binits{H.-J.}},
@@ -1588,7 +1462,7 @@ Frontiers in Pharmacology
 \end{botherref}
 \endbibitem
 
-%%% 45
+%%% 43
 \bibitem[\protect\citeauthoryear{Xu et~al.}{2017}]{Xu2017}
 \begin{barticle}
 \bauthor{\bsnm{Xu}, \binits{M.J.}},
@@ -1603,7 +1477,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 46
+%%% 44
 \bibitem[\protect\citeauthoryear{Tan and Gleeson}{2019}]{Tan2019}
 \begin{barticle}
 \bauthor{\bsnm{Tan}, \binits{J.Z.A.}},
@@ -1618,7 +1492,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 47
+%%% 45
 \bibitem[\protect\citeauthoryear{Nakamura et~al.}{2021}]{Nakamura2021}
 \begin{barticle}
 \bauthor{\bsnm{Nakamura}, \binits{Y.}},
@@ -1640,7 +1514,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 48
+%%% 46
 \bibitem[\protect\citeauthoryear{Zangerolamo et~al.}{2021}]{Zangerolamo2021}
 \begin{barticle}
 \bauthor{\bsnm{Zangerolamo}, \binits{L.}},
@@ -1657,7 +1531,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 49
+%%% 47
 \bibitem[\protect\citeauthoryear{Hurley et~al.}{2022}]{Hurley2022}
 \begin{barticle}
 \bauthor{\bsnm{Hurley}, \binits{M.J.}},
@@ -1665,7 +1539,7 @@ Frontiers in Pharmacology
 \bauthor{\bsnm{Macnaughtan}, \binits{J.}},
 \bauthor{\bsnm{Schapira}, \binits{A.H.V.}}:
 \batitle{Bile acids and neurological disease}.
-\bjtitle{Pharmacology & Therapeutics}
+\bjtitle{Pharmacology \& Therapeutics}
 \bvolume{240},
 \bfpage{108311}
 (\byear{2022})
@@ -1673,7 +1547,7 @@ Frontiers in Pharmacology
 \end{barticle}
 \endbibitem
 
-%%% 50
+%%% 48
 \bibitem[\protect\citeauthoryear{Song et~al.}{2024}]{Song2024}
 \begin{botherref}
 \oauthor{\bsnm{Song}, \binits{H.}},
@@ -1693,7 +1567,7 @@ Frontiers in Neuroscience
 \end{botherref}
 \endbibitem
 
-%%% 51
+%%% 49
 \bibitem[\protect\citeauthoryear{Barbeira et~al.}{2018}]{Barbeira2018}
 \begin{barticle}
 \bauthor{\bsnm{Barbeira}, \binits{A.N.}},
@@ -1975,7 +1849,7 @@ Frontiers in Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 52
+%%% 50
 \bibitem[\protect\citeauthoryear{Gaulton et~al.}{2017}]{Gaulton2017}
 \begin{barticle}
 \bauthor{\bsnm{Gaulton}, \binits{A.}},
@@ -2005,7 +1879,7 @@ Frontiers in Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 53
+%%% 51
 \bibitem[\protect\citeauthoryear{Cheng et~al.}{2019}]{Cheng2019}
 \begin{barticle}
 \bauthor{\bsnm{Cheng}, \binits{F.}},
@@ -2019,7 +1893,7 @@ Frontiers in Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 54
+%%% 52
 \bibitem[\protect\citeauthoryear{Lamb et~al.}{2006}]{Lamb2006}
 \begin{barticle}
 \bauthor{\bsnm{Lamb}, \binits{J.}},
@@ -2053,7 +1927,7 @@ Frontiers in Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 55
+%%% 53
 \bibitem[\protect\citeauthoryear{Varma}{2020}]{Varma2020}
 \begin{barticle}
 \bauthor{\bsnm{Varma}, \binits{S.}}:
@@ -2066,7 +1940,7 @@ Frontiers in Neuroscience
 \end{barticle}
 \endbibitem
 
-%%% 56
+%%% 54
 \bibitem[\protect\citeauthoryear{Desai et~al.}{2022}]{Desai2022a}
 \begin{botherref}
 \oauthor{\bsnm{Desai}, \binits{R.J.}},
@@ -2094,7 +1968,7 @@ fcac247
 \end{botherref}
 \endbibitem
 
-%%% 57
+%%% 55
 \bibitem[\protect\citeauthoryear{Pletscher-Frankild
   et~al.}{2015}]{PletscherFrankild2015}
 \begin{barticle}
@@ -2112,7 +1986,7 @@ fcac247
 \end{barticle}
 \endbibitem
 
-%%% 58
+%%% 56
 \bibitem[\protect\citeauthoryear{De~Miranda et~al.}{2014}]{DeMiranda2014}
 \begin{barticle}
 \bauthor{\bsnm{De~Miranda}, \binits{B.R.}},
@@ -2133,7 +2007,7 @@ fcac247
 \end{barticle}
 \endbibitem
 
-%%% 59
+%%% 57
 \bibitem[\protect\citeauthoryear{Cicchetti et~al.}{2019}]{Cicchetti2019}
 \begin{barticle}
 \bauthor{\bsnm{Cicchetti}, \binits{F.}},
@@ -2147,6 +2021,23 @@ fcac247
 \bfpage{104530}
 (\byear{2019})
 \doiurl{10.1016/j.nbd.2019.104530}
+\end{barticle}
+\endbibitem
+
+%%% 58
+\bibitem[\protect\citeauthoryear{Meng et~al.}{2021}]{Meng2021}
+\begin{barticle}
+\bauthor{\bsnm{Meng}, \binits{F.}},
+\bauthor{\bsnm{Xi}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{J.}},
+\bauthor{\bsnm{Ayers}, \binits{P.W.}}:
+\batitle{A curated diverse molecular database of blood-brain barrier
+  permeability with chemical descriptors}.
+\bjtitle{Scientific Data}
+\bvolume{8}(\bissue{1}),
+\bfpage{289}
+(\byear{2021})
+\doiurl{10.1038/s41597-021-01069-5}
 \end{barticle}
 \endbibitem
 
