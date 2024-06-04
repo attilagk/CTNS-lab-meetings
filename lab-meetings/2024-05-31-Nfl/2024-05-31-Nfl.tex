@@ -1,0 +1,169 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Drug effects on Nfl level \emph{in vivo}}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Studies}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+  CO28152 (study 52)
+\begin{enumerate}
+      \item Amiloride
+      \item HCQ
+      \item HCQ nano
+      \item Saline
+      \item R-HCQ
+      \item S-HCQ
+      \item TUDCA
+      \item Saline WT
+      \item TUDCA WT
+      \item DMSO WT
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+  CO28154 (study 54)
+\begin{enumerate}
+  \item Saline
+  \item Amiloride + HCQ
+  \item TUDCA + HCQ
+  \item Arundine low dose
+  \item Arundine mid dose
+  \item Arundine high dose
+  \item Vehicle (Arundine)
+  \item Arundine high dose WT
+  \item Amiloride + HCQ WT
+  \item TUDCA + HCQ WT
+  \item Saline WT
+  \item Vehicle (Arundine) WT
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Treatments on 5xFAD (study 52)}
+  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/lineplot-tg-CO28152.pdf}
+\end{frame}
+
+\begin{frame}{Treatments on 5xFAD (study 54)}
+  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/lineplot-tg-CO28154.pdf}
+\end{frame}
+
+
+\begin{frame}{HCQ and TUDCA}
+\begin{columns}[t]
+\begin{column}{0.6\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/lineplot-HCQ-TUDCA-CO28152.pdf}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/lineplot-HCQ_TUDCA-CO28152.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{t-test at given times}
+\begin{columns}[t]
+
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-CO28152-vs-CO28154-saline.pdf}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-saline-vs-TUDCA-CO28152.pdf}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-saline-vs-TUDCA_HCQ-CO28154.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Change of Nfl relative to baseline (week 0)}
+  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/nfl_week0-vs-study-sex-cohort.pdf}
+\end{frame}
+
+\begin{frame}{Change of Nfl relative to baseline (week 0)}
+  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/data-violinplot.pdf}
+\end{frame}
+
+
+\begin{frame}{Modeling: lifespan as covariate?  Uninformative.}
+  \includegraphics<1>[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/scatter-vs-max_ΔNfl-lifespan_CO28152.pdf}
+  \includegraphics<2>[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/scatter-vs-max_ΔNfl-lifespan_CO28154.pdf}
+\end{frame}
+
+\begin{frame}{Modeling: baseline Nfl as covariate?  Possibly (conditionally) ininformative.}
+  \includegraphics<1>[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/scatter-max_ΔNfl-vs-Nfl-week-0_CO28152.pdf}
+  \includegraphics<2>[scale=0.5]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/scatter-max_ΔNfl-vs-Nfl-week-0_CO28154.pdf}
+\end{frame}
+
+\begin{frame}{Posterior probabilities of drug effect}
+  \includegraphics<1>[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/violinplot-CO28152.pdf}
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/violinplot-CO28154a.pdf}
+  \includegraphics<3>[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/violinplot-CO28154b.pdf}
+\end{frame}
+
+
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
