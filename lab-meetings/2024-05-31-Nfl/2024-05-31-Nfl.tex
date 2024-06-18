@@ -11,6 +11,8 @@
 \usepackage{xcolor}
 \definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
 \usepackage{url}
+\usepackage[export]{adjustbox}
+\usepackage[normalem]{ulem}
 
 % TikZ
 \usepackage{tikz}
@@ -109,12 +111,13 @@
 
 
 \begin{frame}{Large variation of Nfl across animal subjects}
-  {Known variables do not explain it}
+  {Known variables do not explain variation}
   \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/nfl_week0-vs-study-sex-cohort.pdf}
 \end{frame}
 
 
 \begin{frame}{t-test at given times: TUDCA + HCQ}
+  {Problematic assumption: independent drug effects at various times}
 \begin{columns}[t]
 
 \begin{column}{0.33\textwidth}
@@ -136,26 +139,42 @@
 
 
 \begin{frame}{t-test at given times: all treatments}
+
+\uline{\textsc{5xFAD}\hfill}
+
 \begin{columns}[t]
 \begin{column}{0.33\textwidth}
 
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-CO28152-tg.pdf}
-
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-CO28152-wt.pdf}
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-CO28152-tg.pdf}
 \end{column}
 
 \begin{column}{0.33\textwidth}
 
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-TUDCA_HCQ-tg.pdf}
-
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-TUDCA_HCQ-wt.pdf}
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-TUDCA_HCQ-tg.pdf}
 \end{column}
 
 \begin{column}{0.33\textwidth}
 
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-arundine-tg.pdf}
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-arundine-tg.pdf}
+\end{column}
+\end{columns}
 
-  \includegraphics[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-arundine-wt.pdf}
+\uline{\textsc{WT}\hfill}
+
+\begin{columns}[t]
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-CO28152-wt.pdf}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-TUDCA_HCQ-wt.pdf}
+\end{column}
+
+\begin{column}{0.33\textwidth}
+
+  \includegraphics[scale=0.4, right]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/ttest-heatmap-arundine-wt.pdf}
 \end{column}
 \end{columns}
 \end{frame}
@@ -180,7 +199,30 @@
   \includegraphics<3>[scale=0.4]{../../../notebooks/2024-05-20-nfl-modeling/named-figure/violinplot-CO28154b.pdf}
 \end{frame}
 
+\begin{frame}{Escape latency during training $\Rightarrow$ learning rate}
+  {Morris Water Maze}
+  \includegraphics<1>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-HCQ.pdf}
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-low-dose.pdf}
+  \includegraphics<3>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-mid-dose.pdf}
+  \includegraphics<4>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-high-dose.pdf}
+  \includegraphics<5>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-high-dose-WT.pdf}
+  \includegraphics<6>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-HCQ-WT.pdf}
+\end{frame}
 
+\begin{frame}{Drug effects on learning rate}
+  {Posterior mean and 94\% credible interval}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/effect-on-learning-rate-tg.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/effect-on-learning-rate-wt.pdf}
+\end{column}
+\end{columns}
+\end{frame}
 
 
 \end{document}

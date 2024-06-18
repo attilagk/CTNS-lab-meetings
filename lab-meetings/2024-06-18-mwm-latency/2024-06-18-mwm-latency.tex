@@ -1,0 +1,164 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Training in Morris' Water Maze: Inferring Treatment Effects}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Introduction}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+  \item WT and 5xFAD mice $\pm$ drug $X$
+  \item Morris water maze 
+  \begin{itemize}
+    \item day 1-4 training probes: \alerg{escape latency} appears as a sensitive outcome
+    \item day 5 test probes: avg.~distance to platform
+  \end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/MorrisWaterMaze.svg.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Escape latency during training $\Rightarrow$ learning rate}
+  {Morris Water Maze}
+  \includegraphics<1>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Amiloride-10-TG.pdf}
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Amiloride-12-TG.pdf}
+  \includegraphics<3>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-HCQ-TG.pdf}
+  \includegraphics<4>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-HCQ-nano-TG.pdf}
+  \includegraphics<5>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-R-HCQ-TG.pdf}
+  \includegraphics<6>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-S-HCQ-TG.pdf}
+  \includegraphics<7>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-TG.pdf}
+  \includegraphics<8>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-HCQ-TG.pdf}
+  \includegraphics<9>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-WT.pdf}
+  \includegraphics<10>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-TUDCA-HCQ-WT.pdf}
+  \includegraphics<11>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-low-dose-TG.pdf}
+  \includegraphics<12>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-mid-dose-TG.pdf}
+  \includegraphics<13>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-high-dose-TG.pdf}
+  \includegraphics<14>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/latency-Arundine-high-dose-WT.pdf}
+\end{frame}
+
+\begin{frame}{Bayesian generalized linear model of escape latency $Y$}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{center}
+  Model selection
+\end{center}
+
+\includegraphics[scale=0.5]{../../../notebooks/2023-10-13-5xfad-maze/named-figure/model-comparison-all.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{center}
+  Selected model
+\end{center}
+  \footnotesize
+\begin{itemize}
+  \item time-to-failure error distribution $Y &\sim& \text{Weibull}(k,
+    \lambda)$
+  \item censoring $\mu &=& \lambda \Gamma(1 + 1/k)$
+  \item linear predictor with $\log$ link function
+  \item exponential decay
+  \item subject-to-subject variability as random effect
+  \item treatment effect additive (log-latency) or multiplicative
+    (linear-scaled latency)
+\end{itemize}
+\begin{equation*}
+  \log(\mu) = \beta_0 + \overbrace{\beta_\mathrm{treat} x_\mathrm{treat}}^\text{drug or gt} +
+  \beta_\mathrm{day} x_\mathrm{day} &+& \overbrace{\gamma z}^\text{subject}
+\end{equation*}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Bayesian ``fitted line'': treatment effect}
+
+  \includegraphics<1>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/model-latency-CO28154-TUDCA_HCQ-TG.pdf}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/model-latency-CO28154-TUDCA_HCQ-TG-log.pdf}
+\end{frame}
+
+
+\begin{frame}{Bayesian ``fitted line'': treatment effect}
+
+  \includegraphics<1>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/model-latency-CO28152-TUDCA-HCQ-TG.pdf}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/model-latency-CO28152-TUDCA-HCQ-TG-log.pdf}
+\end{frame}
+
+\begin{frame}{Testing alternative hypotheses of increasing strength}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics<1->[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/CI-BF-TUDCA-HCQ.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/CI-BF-others.pdf}
+\end{column}
+\end{columns}
+  \begin{itemize}
+    \item TUDCA + HCQ: very strong support for full rescue
+    \item<2> Arundine: moderate support for slight improvement
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
