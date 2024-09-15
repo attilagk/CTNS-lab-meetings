@@ -1,0 +1,201 @@
+\documentclass[aspectratio=169]{beamer}
+%\documentclass[handout]{beamer}
+
+% language settings
+%\usepackage{fontspec, polyglossia}
+%\setdefaultlanguage{magyar}
+
+% common packages
+\usepackage{amsmath, multimedia, hyperref, color, multirow}
+%\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0}
+\usepackage{url}
+\usepackage[export]{adjustbox}
+\usepackage[normalem]{ulem}
+
+% TikZ
+\usepackage{tikz}
+%\usetikzlibrary{arrows.meta, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric,mindmap}
+%\usetikzlibrary{shapes.geometric,fadings,bayesnet}
+
+% beamer styles
+\mode<presentation>{
+%\usetheme{Madrid}
+\usetheme{default}
+%\usetheme{Antibes}
+%\usecolortheme{beaver}
+\usecolortheme{default}
+%\usecolortheme{dove}
+%\usefonttheme{structureitalicserif}
+\setbeamercovered{transparent}
+}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\AtBeginSubsection[]{
+  \begin{frame}<beamer>{Contents}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+%\useoutertheme[]{tree}
+
+% title, etc
+\title{Drug effects on Nfl level \emph{in vivo}}
+\subtitle{}
+\author{Attila Jones}
+\date{}
+
+\begin{document}
+
+\titlepage
+
+\begin{frame}{Frequentist and Bayesian statistics}
+  \footnotesize
+\begin{columns}[t]
+\begin{column}{0.45\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{~/figures/from-others/Fisher-Bayes-cartoon.jpeg}
+
+  \tiny{\url{https://agostontorok.github.io/2017/03/26/bayes_vs_frequentist/}}
+\end{column}
+
+\begin{column}{0.55\textwidth}
+
+  \begin{tabular}{c|c|c}
+    & Frequentist & Bayesian \\
+    \hline
+    key quantity & likelihood & posterior distribution \\
+                 & $P(\mathrm{data} | \mathrm{model})$ & $P(\mathrm{model} | \mathrm{data})$ \\
+    \hline
+    parameters & fixed & random \\
+    \hline
+    estimation & max.~likelihood & posterior summary \\
+    \hline
+    computation & least squares & MCMC \\
+  \end{tabular}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Application I.: Drug dose-response analysis in cell-based assays}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+\includegraphics<1>[width=\columnwidth]{~/figures/from-others/BV2_DC_10PS_20X_2-20211206160943680.png}
+
+\only<2>{Model as depenency graph}
+
+\includegraphics<2>[height=0.7\textheight]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/sigmoid-2.png}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=\columnwidth]{~/figures/from-others/dose-response-curve-stimulation-wikipedia.jpg}
+
+\tiny{\url{https://en.wikipedia.org/wiki/Dose-response\_relationship}}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Approximate posterior distribution with Markov Chain Monte-Carlo}
+\begin{columns}%[t]
+\begin{column}{0.3\textwidth}
+
+\includegraphics[height=0.7\textheight]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/sigmoid-2.png}
+\end{column}
+
+\begin{column}{0.7\textwidth}
+
+\includegraphics[width=1.0\columnwidth]{../../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/mcmc-trace-sigmoid-2.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{\only<1>{Curves from the posterior.  Hypotheses}\only<2>{Bayesian hypothesis testing}}
+  \small
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics<1>[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-curves-sigmoid-2.pdf}
+
+  \only<2>{
+      \begin{itemize}
+        \item $p$-value: evidence against $H_0$
+        \item Bayes factor: evidence for $H_1$
+      \end{itemize}
+    
+    \begin{eqnarray*}
+      \mathrm{BF} &=& \frac{P(H_1|\mathrm{data})}{P(H_0|\mathrm{data}) + P(H_2|\mathrm{data})} \\
+       %&=& \frac{0.9}{0.1 + 0} = 9 \\
+      2 \times \log \mathrm{BF} &\approx& 4.4
+    \end{eqnarray*}
+
+    \begin{tabular}{c|l}
+      $2 \times \log \mathrm{BF}$ & Strength of evidence \\
+      \hline
+      $ < 0 $ & nonexistent \\
+      0 to 2 & negligible \\
+      2 to 6 & moderate \\
+      6 to 10 & strong \\
+      $ 10 \ge$ & very strong \\
+    \end{tabular}
+  }
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.5]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/prior-posterior-density-violin-vertical.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{}
+  \includegraphics[height=1.0\textheight]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors-anonym_drugs.pdf}
+\end{frame}
+
+\begin{frame}{Application II.: Testing drugs in cognitively impaired transgenic (TG) mice}
+  \small
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+  \item WT (wild type) and TG (5xFAD) mice
+  \item confirm cognitive impairment of TG (5xFAD) w.r.t WT (wild type) mice
+  \item Morris Water Maze
+  \item training probe: \alert{escape latency} is a sensitive outcome
+  \item test drug A and drug B together or separately in TG mice
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Morris water maze
+
+\includegraphics[width=\columnwidth]{../../../../figures/from-others/MorrisWaterMaze.svg.png}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Bayesian regression of escape latency}
+
+  \begin{center}
+  \includegraphics[scale=0.5]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/model-latency-CO28154-TUDCA_HCQ-TG-anonym.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Testing drug-induced rescue of TG phenotype}
+
+  \begin{center}
+  \includegraphics[scale=0.5]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/CI-BF-TUDCA-HCQ-anonym.pdf}
+  \end{center}
+\end{frame}
+
+\end{document}
+
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}

@@ -1,0 +1,426 @@
+%Version 3 October 2023
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove “Numbered” in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-vancouver.bst, sn-chicago.bst%  
+ 
+%%\documentclass[sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+%%\documentclass[sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\UseRawInputEncoding
+
+\begin{document}
+
+\title[Article Title]{Network pharmacology-based discovery and experimental validation of novel drug repurposing candidates in Alzheimer's Disease}
+
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%%  \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+\author*[1]{\fnm{Attila} \sur{Jones}}\email{attila.g.jones@gmail.com}
+
+\author[2]{\fnm{Tina} \sur{Loeffler}}\email{tlo@scantox.com}
+%\equalcont{These authors contributed equally to this work.}
+
+\author[3]{\fnm{Evan} \sur{Wu}}\email{evanwu@uchicago.edu}
+%\equalcont{These authors contributed equally to this work.}
+
+\author[1]{\fnm{Vijay R.} \sur{Varma}}\email{vijay.varma01@gmail.com}
+
+\author[3]{\fnm{Hae Kyung} \sur{Im}}\email{haky@uchicago.edu}
+
+\author*[1]{\fnm{Madhav} \sur{Thambisetty}}\email{madhavtr71@gmail.com}
+
+%\affil*[1]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{100190}, \state{State}, \country{Country}}}
+
+%\affil[2]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{10587}, \state{State}, \country{Country}}}
+
+%\affil[3]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \city{City}, \postcode{610101}, \state{State}, \country{Country}}}
+
+
+\clearpage
+
+%%==================================%%
+%% Sample for unstructured abstract %%
+%%==================================%%
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+% \abstract{\textbf{Purpose:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Methods:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Results:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.
+% 
+% \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
+
+%\keywords{keyword1, Keyword2, Keyword3, Keyword4}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section*{Supplemental Information}
+
+\setcounter{table}{0}
+\makeatletter 
+\renewcommand{\tablename}{Table S} % nice
+%\renewcommand{\figurename}{Table S} % nice
+\makeatother
+
+\setcounter{figure}{0}
+\makeatletter 
+\renewcommand{\figurename}{Figure S} % nice
+\makeatother
+
+\begin{table}[h]
+  \begin{tabular}{p{0.8\textwidth}}
+  See file Table-S1.xlsx \\
+  \end{tabular}
+\caption{
+  Genes of the AD risk gene sets used as inputs to the present computational drug screen.
+}
+\label{tab:genes-in-genesets}
+\end{table}
+
+\begin{table}[h]
+  \begin{tabular}{p{0.8\textwidth}}
+  See file Table-S2.csv \\
+  \end{tabular}
+\caption{
+  The 2413 drugs ranked according to their network proximity to each of the eight
+  AD risk gene sets used as input.  The drugs' final, aggregate rank is also shown
+  as well as their ChEMBL ID, standard InChI, indication class, and
+  blood-brain-barrier permeability taken (if available) from the BBB
+  database~\cite{Meng2021}.  Moreover, the UniProt name of each drug's
+  targets is also indicated.
+}
+\label{tab:ranked-drugs}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{cc||c|c|c}
+\toprule
+                       &                     &  \multicolumn{3}{c}{target}        \\
+\midrule
+                       &   {}                &  CYP3A4 &          RGS4 &  SLC10A2 \\
+\midrule
+shortest path length   & AD risk gene set         &  \multicolumn{3}{c}{AD risk genes}        \\
+\midrule
+                    1  &   AD DE APOE3-APOE3 &    -    &          RGS4 &    -     \\
+                    1  &   AD DE APOE4-APOE4 &    -    &          RGS4 &    -     \\
+\midrule
+                    2  &   agora2+           &    -    &         ERBB3 &    -     \\
+                    2  &   AD DE APOE3-APOE3 &    -    &         GNAI2 &    -     \\
+                    2  &   AD DE APOE4-APOE4 &    -    &  CALM1; GNAI2 &    -     \\
+                    2  &   APOE3-4 DE neuron &    -    &         PLCB1 &    -     \\
+\bottomrule
+\end{tabular}
+\caption{
+Targets of the drugs Arundine, Cysteamine or Chenodiol: CYP3A4, RGS4 and
+SLC10A2 and network paths going from the drugs through the targets to AD genes
+in some AD gene set. When the target is itself an AD gene, the shortest path
+length is 1.  When the target directly interacts with an AD gene, the path
+length is 2.  We see that RGS4 is the only target that fulfils either
+criterion.
+}
+\label{tab:nearest-ADgenes}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{lll}
+\toprule
+experiment & assay & desired effect  \\
+\midrule
+%\multirow[t]{10}{*}{LPS neuroinflammation (BV2 cells)} & IFN-$\gamma$ & decrease \\
+LPS neuroinflammation (BV2 cells) & IFN-$\gamma$ & decrease \\
+ & IL-10 & decrease \\
+ & IL-12p70 & decrease \\
+ & IL-1$\beta$ & decrease \\
+ & IL-2 & decrease \\
+ & IL-4 & decrease \\
+ & IL-5 & decrease \\
+ & IL-6 & decrease \\
+ & KC/GRO & decrease \\
+ & TNF-$\alpha$ & decrease \\
+\hline
+A$\beta$ toxicity (primary neurons) & MTT & increase \\
+\hline
+A$\beta$ release (H4 cells) & A$\beta$38 & decrease \\
+ & A$\beta$40 & decrease \\
+ & A$\beta$42 & decrease \\
+\hline
+A$\beta$ clearance (BV2 cells) & A$\beta$42 SN & decrease \\
+ & A$\beta$42 Ly & increase \\
+\hline
+Trophic factor withdrawal (primary neurons) & PI & decrease \\
+ & YOPRO & decrease \\
+ & MTT & increase \\
+ & LDH & decrease \\
+\hline
+Tau phosphorylation & Tau & increase \\
+ & pTau (T231) & decrease \\
+ & pT/T ratio & decrease \\
+\hline
+Neurite outgrowth (primary neurons) & $\sum$ neurite area & increase \\
+ & branch points & increase \\
+ & neurogenesis & increase \\
+ & longest neurite & increase \\
+\hline
+A$\beta$ clearance (iPSC) & pHrodo-4h & increase \\
+ & supernatant & decrease \\
+\hline
+LPS neuroinflammation (iPSC) & IL-1$\beta$ & decrease \\
+ & IL-6 & decrease \\
+ & IL-8 & decrease \\
+ & MTT & decrease \\
+ & TNF-$\alpha$ & decrease \\
+\hline
+\bottomrule
+\end{tabular}
+\caption{
+  Desired, neuroprotective, effect for each assay.  Desired effect is the
+  direction of effect of an ideal, hypothetical, neuroprotective drug on a
+  given assay.
+}
+\label{tab:protect-sign}
+\end{table}
+
+\clearpage
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff.pdf}
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/rank-diff-100.pdf}
+\caption{
+Difference of drug rank between the final, aggregated list and the list
+resulting from each network proximity based drug screen.
+}
+\label{fig:rank-diff}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.6]{../../notebooks/2021-07-01-high-conf-ADgenes/named-figure/cluster-experiments-genes.pdf}
+\caption{
+Similarity of TWA/PWA studies on AD in terms of shared genes.
+}
+\label{fig:twas-clustermap}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.6]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/jaccard-input-AD-sets.pdf}
+\caption{
+Eight AD risk gene sets were input to the workflow.
+  Jaccard indices quantifying shared genes show that the sets are highly
+  dissimilar to each other.
+}
+\label{fig:gset-jaccard}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.6]{../../notebooks/2021-12-02-proximity-various-ADgenesets/named-figure/corr-coef-input-AD-sets.pdf}
+\caption{
+The network proximity scores of all
+  screened drugs are fairly similar to each other across the different input
+  AD risk gene sets, in spite of the marked dissimilarity among those.
+}
+\label{fig:gset-corr}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../results/2022-01-14-rank-aggregation/kendall-distance.png}
+\caption{
+Several rank aggregation algorithms' performance assessed by modified Kendall
+distance.
+}
+\label{fig:kendall-dist}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../notebooks/2022-01-14-top-drugs/named-figure/top-bottom-ratio-top-k-multi-1.pdf}
+\caption{
+Network proximity-based rediscovery of drugs in phase 1--4 clinical trials for
+AD and 35 other disease indications.  Disease indications written on top of
+individual plots.  Orange ticks: drugs that are in phase 1 or more advanced
+clinical study for the given indication. Blue dots: rediscovery rate
+(Eq.~3, Methods}) for the top-$k$ drugs, ranked by network
+proximity, relative to that for the bottom-$1808$ drugs.  Rediscovery rate of
+$>1$ means that top-ranked drugs tend to be those that are in phase 1--4
+clinical trials for the given indication; these drugs are marked by orange
+symbols above the $x$ axes.
+}
+\label{fig:ad-drug-rediscovery-multi}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{../../notebooks/2022-09-26-selected-drugs/named-figure/shortest-path-lengths-gsets-hist_noHCl.pdf}
+\caption{
+  Shortest path length distribution from a given drug target (columns) to a given AD risk gene
+  set (rows) across all genes in the set.
+}
+\label{fig:shortest-path-lengths}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[height=0.5\textheight]{../../notebooks/2023-09-13-cell-based-assays-bayes/named-figure/sigmoid-2.png}
+\caption{Dependency graph of the Bayesian nonlinear regression model used to
+  fit dose-response ($x$--$y$) data from cell-based assays.
+  For more details see~Eq.4 in Methods.  This model is named ``sigmoid 2'' in
+  \url{https://github.com/attilagk/CTNS-notebook/blob/main/src/cellbayesassay.py}
+  (see the definition of the sample\_sigmoid\_2 function therein).
+}
+\label{fig:model-2-plate}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[]{figures/prior-posterior-fit-H102.pdf}
+\caption{Estimating the prior and posterior probability of the protective, neutral
+  and adverse effect of a drug in a cell-based assay.  (A) Sigmoid regression
+  curves sampled from the prior or posterior distribution of model parameters.
+  The desired direction of drug effect (decrease in this particular assay) and
+  thresholds $t_1<1$ and $t_2>1$ together define the three hypotheses of
+  interest: protective ($H_1$), neutral ($H_0$) and adverse ($H_2$) drug
+  effect.  The average fold change of expected bioactivity $\mathrm{FC}_y$ at
+  saturating concentration, $y_1=\mathrm{FC}_y y_0$, relative to the expected activity
+  at zero drug concentration, $y_0$, is marked by a dashed horizontal line
+  given a sample from the prior or posterior distribution.  (B) Prior and
+  posterior probability density of fold change for the same drug and assay as
+  in (A).  Observe how the posterior density is shifted towards the desired
+  direction and has a decreased standard deviation (vertical error bar)
+  relative to the prior density.  Note that the prior density (as well as
+  $t_1, t_2$) was chosen such
+  that the mean fold change is 1 and such that the prior probability of
+  protective ($H_1$) and adverse ($H_2$) effect is both 0.2, whereas that of
+  neutral ($H_0$) effect is 0.6.
+}
+\label{fig:prior-posterior-fit-H102}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/violin-posterior-pdf-legend.pdf}
+\caption{Posterior probability density of drug-induced fold change in
+  bioactivity across three candidate
+  drugs and 33 cell-based assays. Blank (white) slots indicate either that the experiment was not
+  performed on the drug or that model fit was poor.  One or more assays constitute an experiment
+  (see parenthesized one-letter codes and the right center legend).  Each
+  posterior density has a green, gray and red component corresponding to
+  protective, neutral and adverse drug effect given the direction of the
+  desired drug effect and fold-change thresholds $t_1, t_2$ (see
+  Fig.~S\ref{fig:prior-posterior-fit-H102}).  The posterior mean (and standard
+  deviation) of fold change is shown as a yellow circle (and yellow error
+  bars).
+}
+\label{fig:violin-posterior-assays}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H102_posteriors-barchart-e2l_textbox.pdf}
+\caption{Posterior probability of protective, neutral and adverse effect
+  for Arundine, Cysteamine
+  and TUDCA.
+}
+\label{fig:bar-posterior-assays}
+\end{figure}
+
+\end{appendices}
+%%===========================================================================================%%
+%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+%% system, please include the references within the manuscript file itself. You may do this  %%
+%% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
+%% file, and delete the associated \verb+\bibliography+ commands.                            %%
+%%===========================================================================================%%
+
+%\bibliography{sn-bibliography}% common bib file
+\bibliography{repurposing-ms}
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+\end{document}
