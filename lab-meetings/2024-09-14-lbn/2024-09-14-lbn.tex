@@ -39,14 +39,22 @@
 %\useoutertheme[]{tree}
 
 % title, etc
-\title{Drug effects on Nfl level \emph{in vivo}}
+\title{Bayesian Drug Discovery for Alzheimer's Disease}
 \subtitle{}
-\author{Attila Jones}
+\author{Attila Jones, Vijay Varma, Scantox, (Yang An), Madhav Thambisetty}
 \date{}
 
 \begin{document}
 
 \titlepage
+
+\begin{frame}{Outline}
+  \begin{enumerate}
+    \item Frequentist (classical) and Bayesian statistics
+    \item Application I.: Drug dose-response analysis in cell-based assays
+    \item Application II.: Testing drugs in cognitively impaired transgenic (TG) mice
+  \end{enumerate}
+\end{frame}
 
 \begin{frame}{Frequentist and Bayesian statistics}
   \footnotesize
@@ -151,7 +159,35 @@
 \end{frame}
 
 \begin{frame}{}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
   \includegraphics[height=1.0\textheight]{../../../notebooks/2023-09-26-cell-bayes-assays/named-figure/H10-bayes-factors-anonym_drugs.pdf}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \only<2>{Aggregation: Bayesian model averaging}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-drug-A.pdf}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-drug-B.pdf}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-drug-C.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Drug prioritization with Bayesian model averaging}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+
+  \includegraphics[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-Aβ-release-H4-cells-TI.pdf}
+\end{column}
+\begin{column}{0.5\textwidth}
+
+  \includegraphics<2>[scale=0.4]{../../../notebooks/2024-04-09-qps-results-summary/named-figure/exper-barplot-LPS-neuroinflammation-BV2-cells-TI.pdf}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Application II.: Testing drugs in cognitively impaired transgenic (TG) mice}
@@ -187,6 +223,13 @@
   \begin{center}
   \includegraphics[scale=0.5]{../../../notebooks/2024-06-04-5xfad-behavior-CO28154/named-figure/CI-BF-TUDCA-HCQ-anonym.pdf}
   \end{center}
+\end{frame}
+
+\begin{frame}{Conclusion: the benefits of Bayesian statistics}
+\begin{itemize}
+  \item hypothesis testing with biologically meaningful effect sizes
+  \item aggregation of results using Bayesian model averaging
+\end{itemize}
 \end{frame}
 
 \end{document}
